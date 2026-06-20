@@ -1,0 +1,49 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import {
+  getCategoryArticles,
+  getCategoryBySlug,
+  getCategoryCounts,
+  getPublishedUpdates,
+  type ArticleWithMeta,
+  type CategoryDefinition,
+} from '../../lib/content';
+
+export async function getStaticPaths() {
+  const updates = await getPublishedUpdates();
+  const counts = getCategoryCounts(updates);
+
+  return counts
+    .filter((category) => category.count > 0)
+    .map((category) => ({
+      params: { category: category.slug },
+      props: {
+        category: getCategoryBySlug(category.slug) as CategoryDefinition,
+        articles: getCategoryArticles(updates, category.name),
+      },
+    }));
+}
+
+const { category, articles } = Astro.props as {
+  category: CategoryDefinition;
+  articles: ArticleWithMeta[];
+};
+---
+
+<BaseLayout
+  title={`${category.name} | MS Blogs Update Tracker`}
+  description={`${category.name} に関連する Microsoft ブログ更新一覧です。`}
+>
+  <section class="page-header">
+    <p class="eyebrow">Category view</p>
+    <h1>{category.name}</h1>
+    <p>{category.description}</p>
+  </section>
+
+  <div class="grid three-column">
+    {articles.map((article) => (
+      <ArticleCard article={article} />
+    ))}
+  </div>
+</BaseLayout>
