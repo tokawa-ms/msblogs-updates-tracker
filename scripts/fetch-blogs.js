@@ -6,7 +6,7 @@ const cheerio = require('cheerio');
 const RssParser = require('rss-parser');
 
 const logger = require('./utils/logger');
-const { parseToIsoString, toDateString } = require('./utils/date-utils');
+const { isDateString, parseToIsoString, toDateString } = require('./utils/date-utils');
 const {
   ensureCacheDirs,
   sourceCacheFile,
@@ -162,7 +162,11 @@ function dedupeByUrl(articles) {
 
 async function main() {
   await ensureCacheDirs();
-  const today = toDateString();
+  const today = process.argv[2] || process.env.TARGET_DATE || toDateString();
+  if (!isDateString(today)) {
+    throw new Error(`Invalid target date: ${today}. Expected YYYY-MM-DD.`);
+  }
+
   const configText = await fs.readFile(SOURCE_CONFIG, 'utf8');
   const sources = JSON.parse(configText);
 

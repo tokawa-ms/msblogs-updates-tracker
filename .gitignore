@@ -1,9 +1,5 @@
 node_modules/
-cache/blogs/*.json
-cache/diff/*.json
-content/updates/*.md
 content/category/*.md
-src/content/updates/????-??-??.md
 cache/manifest.json
 diff-result.json
 .env
