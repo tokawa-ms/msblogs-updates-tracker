@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "permissions": {
+    "network": {
+      "allow": [
+        "https://github.blog/*",
+        "https://code.visualstudio.com/*",
+        "https://azure.microsoft.com/*",
+        "https://www.microsoft.com/*",
+        "https://powerbi.microsoft.com/*",
+        "https://blogs.microsoft.com/*"
+      ]
+    }
+  }
+}
