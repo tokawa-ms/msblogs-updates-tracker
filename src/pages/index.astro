@@ -1,0 +1,99 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import UpdateCard from '../components/UpdateCard.astro';
+import { getCategoryCounts, getPublishedUpdates, getRecentArticles } from '../lib/content';
+
+const updates = await getPublishedUpdates();
+const latestUpdates = updates.slice(0, 7);
+const recentArticles = getRecentArticles(updates, 9);
+const categoryCounts = getCategoryCounts(updates);
+const totalArticles = updates.reduce((count, entry) => count + entry.data.newCount, 0);
+---
+
+<BaseLayout
+  title="MS Blogs Update Tracker"
+  description="Microsoft と GitHub の主要ブログ更新を日次で確認できる Astro サイトです。"
+>
+  <section class="hero">
+    <p class="eyebrow">Phase 3: Astro Web サイト</p>
+    <h1>Microsoft ブログ更新を 1 画面で追跡</h1>
+    <p class="hero-copy">
+      GitHub、VSCode、Azure、Microsoft 365、Fabric、AI Blog の日次差分を Astro で見やすく整理し、
+      日付別・カテゴリ別にたどれるサイトとして公開できる状態にしました。
+    </p>
+    <div class="hero-grid">
+      <article class="metric-card">
+        <span>更新日数</span>
+        <strong>{updates.length}</strong>
+      </article>
+      <article class="metric-card">
+        <span>新規記事数</span>
+        <strong>{totalArticles}</strong>
+      </article>
+      <article class="metric-card">
+        <span>カテゴリ</span>
+        <strong>{categoryCounts.filter((category) => category.count > 0).length}</strong>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-heading">
+      <h2>最新の更新日</h2>
+      <a href="/updates/">すべて見る</a>
+    </div>
+    {
+      latestUpdates.length > 0 ? (
+        <div class="grid two-column">
+          {latestUpdates.map((entry) => (
+            <UpdateCard entry={entry} />
+          ))}
+        </div>
+      ) : (
+        <div class="card empty-state">
+          <h3>更新データはまだありません</h3>
+          <p>`npm run fetch` → `npm run diff` → `npm run generate` の順で実行すると一覧に反映されます。</p>
+        </div>
+      )
+    }
+  </section>
+
+  <section class="section">
+    <div class="section-heading">
+      <h2>注目カテゴリ</h2>
+      <a href="/categories/">カテゴリ一覧</a>
+    </div>
+    <div class="grid three-column">
+      {categoryCounts.map((category) => (
+        <article class="card">
+          <p class="eyebrow">{category.count} articles</p>
+          <h3>
+            {category.count > 0 ? (
+              <a href={`/categories/${category.slug}/`}>{category.name}</a>
+            ) : (
+              category.name
+            )}
+          </h3>
+          <p>{category.description}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-heading">
+      <h2>最新記事</h2>
+      <a href="/updates/">更新日別に見る</a>
+    </div>
+    {
+      recentArticles.length > 0 ? (
+        <div class="grid three-column">
+          {recentArticles.map((article) => (
+            <ArticleCard article={article} />
+          ))}
+        </div>
+      ) : null
+    }
+  </section>
+</BaseLayout>

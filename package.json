@@ -4,11 +4,14 @@
   "description": "Automated daily blog tracking for Microsoft & GitHub",
   "main": "scripts/fetch-blogs.js",
   "scripts": {
-    "dev": "nodemon scripts/fetch-blogs.js",
+    "dev": "astro dev",
+    "dev:fetch": "nodemon scripts/fetch-blogs.js",
     "fetch": "node scripts/fetch-blogs.js",
     "diff": "node scripts/diff-analyzer.js",
     "generate": "node scripts/generate-daily-page.js",
-    "build": "node scripts/generate-site.js",
+    "build": "astro build",
+    "build:static": "node scripts/generate-site.js",
+    "preview": "astro preview",
     "test": "node --test 'tests/**/*.test.js'",
     "lint": "eslint \"scripts/**/*.js\" \"tests/**/*.js\"",
     "format": "prettier --write ."
@@ -28,8 +31,10 @@
     "rss-parser": "^3.13.0"
   },
   "devDependencies": {
+    "astro": "^6.4.8",
     "eslint": "^9.0.0",
     "nodemon": "^3.0.0",
-    "prettier": "^3.0.0"
+    "prettier": "^3.0.0",
+    "typescript": "^6.0.3"
   }
 }

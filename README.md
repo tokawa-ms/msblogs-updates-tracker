@@ -10,6 +10,7 @@ Microsoft と GitHub の主要ブログから毎日のアップデート情報�
 - **`docs/AGENT_INSTRUCTIONS.md`** - AI エージェント指示書
 - **`docs/IMPLEMENTATION_PLAN.md`** - 4 週間の実装計画
 - **`docs/PROJECT_START_GUIDE.md`** - プロジェクト開始ガイド
+- **`README-en.md`** - English quick start
 
 ## 🚀 クイックスタート
 
@@ -19,20 +20,33 @@ Microsoft と GitHub の主要ブログから毎日のアップデート情報�
 # 依存パッケージインストール
 npm install
 
-# ブログ取得テスト
+# ブログ取得
 npm run fetch
 
-# 差分検出テスト
+# 差分検出
 npm run diff
 
-# 日付別ページ生成
+# Markdown 更新ページ生成
 npm run generate
 
-# 静的サイトビルド（GitHub Pages 用）
-npm run build
+# Astro サイト起動（ローカル開発）
+npm run dev
 
 # テスト実行
 npm test
+```
+
+### 開発用スクリプト
+
+```bash
+# Astro 本番ビルド
+npm run build
+
+# 取得スクリプトのウォッチ実行
+npm run dev:fetch
+
+# 静的 HTML サイト生成（GitHub Pages 用）
+npm run build:static
 ```
 
 ### 対象ブログソース
