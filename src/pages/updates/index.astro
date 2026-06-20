@@ -1,0 +1,33 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import UpdateCard from '../../components/UpdateCard.astro';
+import { getPublishedUpdates } from '../../lib/content';
+
+const updates = await getPublishedUpdates();
+---
+
+<BaseLayout
+  title="Updates | MS Blogs Update Tracker"
+  description="日付ごとの Microsoft ブログ更新一覧です。"
+>
+  <section class="page-header">
+    <p class="eyebrow">Updates archive</p>
+    <h1>日次更新一覧</h1>
+    <p>生成済みの更新ページを新しい順に確認できます。</p>
+  </section>
+
+  {
+    updates.length > 0 ? (
+      <div class="grid two-column">
+        {updates.map((entry) => (
+          <UpdateCard entry={entry} />
+        ))}
+      </div>
+    ) : (
+      <div class="card empty-state">
+        <h2>まだ更新ページがありません</h2>
+        <p>日次スクリプトが実行されると、ここに日付別の更新ページが並びます。</p>
+      </div>
+    )
+  }
+</BaseLayout>

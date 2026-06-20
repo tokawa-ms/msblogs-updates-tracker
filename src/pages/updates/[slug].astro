@@ -1,0 +1,70 @@
+---
+import { render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import {
+  formatDate,
+  formatDateTime,
+  getGroupedArticles,
+  getPublishedUpdates,
+  getUpdateSlug,
+  type UpdateEntry,
+} from '../../lib/content';
+
+export async function getStaticPaths() {
+  const updates = await getPublishedUpdates();
+  return updates.map((entry) => ({
+    params: { slug: getUpdateSlug(entry) },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props as { entry: UpdateEntry };
+const { Content } = await render(entry);
+const groupedArticles = getGroupedArticles(entry);
+---
+
+<BaseLayout title={`${entry.data.title} | MS Blogs Update Tracker`} description={entry.data.description}>
+  <section class="page-header">
+    <p class="eyebrow">Daily update detail</p>
+    <h1>{entry.data.title}</h1>
+    <p>{entry.data.description}</p>
+  </section>
+
+  <section class="section">
+    <div class="grid three-column">
+      <article class="metric-card">
+        <span>対象日</span>
+        <strong>{formatDate(entry.data.date)}</strong>
+      </article>
+      <article class="metric-card">
+        <span>新規記事</span>
+        <strong>{entry.data.newCount}</strong>
+      </article>
+      <article class="metric-card">
+        <span>最終生成</span>
+        <strong>{formatDateTime(entry.data.lastUpdated)}</strong>
+      </article>
+    </div>
+  </section>
+
+  <section class="section prose-card">
+    <Content />
+  </section>
+
+  {
+    groupedArticles.map((group) => (
+      <section class="section">
+        <div class="section-heading">
+          <h2>{group.sourceName}</h2>
+          <span>{group.articles.length} articles</span>
+        </div>
+        <div class="grid two-column">
+          {group.articles.map((article) => (
+            <ArticleCard article={article} />
+          ))}
+        </div>
+      </section>
+    ))
+  }
+</BaseLayout>
