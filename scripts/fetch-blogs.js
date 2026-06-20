@@ -3,7 +3,7 @@ const fs = require('fs/promises');
 const crypto = require('crypto');
 const axios = require('axios');
 const cheerio = require('cheerio');
-const FeedParser = require('feedparser');
+const RssParser = require('rss-parser');
 
 const logger = require('./utils/logger');
 const { parseToIsoString, toDateString } = require('./utils/date-utils');
@@ -52,37 +52,26 @@ class BaseFetcher {
 }
 
 class RssFetcher extends BaseFetcher {
+  constructor(source) {
+    super(source);
+    this.parser = new RssParser();
+  }
+
   async fetch() {
     const feedUrl = this.source.feedUrl || this.source.url;
     const response = await axios.get(feedUrl, {
-      responseType: 'stream',
+      responseType: 'text',
       timeout: 20000,
       headers: { 'User-Agent': 'msblogs-updates-tracker/1.0' },
     });
-
-    const parser = new FeedParser();
-    const items = [];
-
-    return new Promise((resolve, reject) => {
-      response.data.pipe(parser);
-
-      parser.on('error', (error) => reject(error));
-      parser.on('readable', function onReadable() {
-        let item = this.read();
-        while (item) {
-          items.push({
-            title: item.title,
-            url: item.link,
-            date: item.pubDate || item.date,
-            summary: item.summary || item.description || '',
-          });
-          item = this.read();
-        }
-      });
-      parser.on('end', () => {
-        resolve(items.slice(0, this.source.limit || 30));
-      });
-    });
+    const parsed = await this.parser.parseString(response.data);
+    const items = (parsed.items || []).map((item) => ({
+      title: item.title,
+      url: item.link,
+      date: item.isoDate || item.pubDate || item.published || item.dcDate,
+      summary: item.contentSnippet || item.content || item.summary || item.description || '',
+    }));
+    return items.slice(0, this.source.limit || 30);
   }
 }
 
