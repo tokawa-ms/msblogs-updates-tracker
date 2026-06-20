@@ -3,6 +3,7 @@ cache/blogs/*.json
 cache/diff/*.json
 content/updates/*.md
 content/category/*.md
+src/content/updates/????-??-??.md
 cache/manifest.json
 diff-result.json
 .env
@@ -17,6 +18,7 @@ pnpm-debug.log*
 coverage/
 dist/
 build/
+.astro/
 .eslintcache
 .DS_Store
 Thumbs.db

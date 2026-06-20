@@ -7,12 +7,81 @@ const { diffFile, fileExists, readJson } = require('./utils/cache-manager');
 
 const ROOT = path.resolve(__dirname, '..');
 const UPDATES_DIR = path.join(ROOT, 'content', 'updates');
+const ASTRO_UPDATES_DIR = path.join(ROOT, 'src', 'content', 'updates');
 const INDEX_FILE = path.join(UPDATES_DIR, 'index.md');
 
 function cleanText(value) {
   return String(value || '')
     .replace(/\s+/g, ' ')
     .trim();
+}
+
+function toTag(sourceId) {
+  return String(sourceId || '')
+    .replace(/-blog$/u, '')
+    .replace(/^microsoft-/u, '')
+    .replace(/-/gu, '')
+    .trim();
+}
+
+function yamlScalar(value) {
+  return JSON.stringify(value ?? '');
+}
+
+function pushYamlList(lines, key, values) {
+  lines.push(`${key}:`);
+  if (!values || values.length === 0) {
+    lines.push('  []');
+    return;
+  }
+
+  for (const value of values) {
+    lines.push(`  - ${yamlScalar(value)}`);
+  }
+}
+
+function pushYamlArticles(lines, articles) {
+  lines.push('articles:');
+  if (!articles || articles.length === 0) {
+    lines.push('  []');
+    return;
+  }
+
+  for (const article of articles) {
+    lines.push('  -');
+    lines.push(`    title: ${yamlScalar(cleanText(article.title))}`);
+    lines.push(`    url: ${yamlScalar(cleanText(article.url))}`);
+    lines.push(`    sourceId: ${yamlScalar(cleanText(article.source_id))}`);
+    lines.push(`    sourceName: ${yamlScalar(cleanText(article.source_name))}`);
+    lines.push(`    publishedAt: ${yamlScalar(cleanText(article.published_at))}`);
+    lines.push(`    summary: ${yamlScalar(cleanText(article.summary))}`);
+  }
+}
+
+function pushYamlSourceBreakdown(lines, diff) {
+  lines.push('sourceBreakdown:');
+  const entries = Object.entries(diff.by_source || {})
+    .map(([sourceId, summary]) => ({
+      sourceId,
+      sourceName:
+        cleanText(summary?.source_name) ||
+        diff.new_articles?.find((article) => article.source_id === sourceId)?.source_name ||
+        sourceId,
+      newCount: summary?.new_count || 0,
+    }))
+    .filter((entry) => entry.newCount > 0);
+
+  if (entries.length === 0) {
+    lines.push('  []');
+    return;
+  }
+
+  for (const entry of entries) {
+    lines.push('  -');
+    lines.push(`    sourceId: ${yamlScalar(entry.sourceId)}`);
+    lines.push(`    sourceName: ${yamlScalar(entry.sourceName)}`);
+    lines.push(`    newCount: ${entry.newCount}`);
+  }
 }
 
 function splitSentences(text) {
@@ -98,23 +167,59 @@ function buildGroundedSummary(article, articleText) {
   return summary;
 }
 
+function buildFrontmatter(date, diff) {
+  const tags = Array.from(
+    new Set((diff.new_articles || []).map((article) => toTag(article.source_id)).filter(Boolean)),
+  );
+
+  const lines = ['---'];
+  lines.push(`title: ${yamlScalar(`Microsoft Technology Updates - ${date}`)}`);
+  lines.push(`date: ${yamlScalar(date)}`);
+  lines.push(
+    `description: ${yamlScalar(
+      `Daily updates from GitHub, VSCode, Azure, Microsoft 365, Fabric, and AI blogs for ${date}.`,
+    )}`,
+  );
+  pushYamlList(lines, 'tags', tags);
+  lines.push('draft: false');
+  lines.push(`lastUpdated: ${yamlScalar(new Date().toISOString())}`);
+  lines.push(`newCount: ${diff.new_count || 0}`);
+  lines.push(`removedCount: ${diff.removed_count || 0}`);
+  lines.push(`sourceCount: ${diff.source_count || 0}`);
+  lines.push(`comparedWith: ${yamlScalar(diff.compared_with || '')}`);
+  pushYamlArticles(lines, diff.new_articles || []);
+  pushYamlSourceBreakdown(lines, diff);
+  lines.push('---', '');
+  return lines.join('\n');
+}
+
 async function toMarkdown(date, diff) {
   const lines = [
-    `# Daily Updates - ${date}`,
+    buildFrontmatter(date, diff),
+    `# Daily Blog Updates - ${date}`,
+    '',
+    '## Summary',
     '',
     `- Date: ${date}`,
     `- New articles: ${diff.new_count || 0}`,
     `- Removed articles: ${diff.removed_count || 0}`,
+    `- Compared with: ${diff.compared_with || 'unknown'}`,
+    `- Source count: ${diff.source_count || 0}`,
     '',
-    '## New Articles',
+    '## Articles by Source',
     '',
   ];
 
-  if (!diff.new_articles || diff.new_articles.length === 0) {
+  const articlesBySource = new Map();
+  const sortedArticles = [...(diff.new_articles || [])].sort((left, right) =>
+    cleanText(left.source_name).localeCompare(cleanText(right.source_name)),
+  );
+
+  if (sortedArticles.length === 0) {
     lines.push('No new articles.');
   } else {
     const textCache = new Map();
-    for (const article of diff.new_articles) {
+    for (const article of sortedArticles) {
       const articleUrl = cleanText(article.url);
       let articleText = textCache.get(articleUrl) || '';
       if (!articleText && articleUrl) {
@@ -126,20 +231,39 @@ async function toMarkdown(date, diff) {
         }
       }
 
-      lines.push(`- [${article.title}](${article.url})`);
-      lines.push(`  - Source: ${article.source_name || article.source_id || 'unknown'}`);
-      lines.push(`  - Published: ${article.published_at || 'unknown'}`);
-      lines.push(`  - Summary: ${buildGroundedSummary(article, articleText)}`);
+      const sourceName = cleanText(article.source_name) || cleanText(article.source_id) || 'unknown';
+      if (!articlesBySource.has(sourceName)) {
+        articlesBySource.set(sourceName, []);
+      }
+
+      articlesBySource.get(sourceName).push({
+        title: cleanText(article.title),
+        url: cleanText(article.url),
+        publishedAt: cleanText(article.published_at) || 'unknown',
+        summary: buildGroundedSummary(article, articleText),
+      });
+    }
+
+    for (const [sourceName, articles] of articlesBySource.entries()) {
+      lines.push(`### ${sourceName} (${articles.length})`);
+      lines.push('');
+      for (const article of articles) {
+        lines.push(`#### [${article.title}](${article.url})`);
+        lines.push(`- Published: ${article.publishedAt}`);
+        lines.push(`- Summary: ${article.summary}`);
+        lines.push('');
+      }
     }
   }
+
   lines.push('');
   return lines.join('\n');
 }
 
-async function updateIndex(date) {
+async function updateIndex(date, newCount) {
   await fs.mkdir(UPDATES_DIR, { recursive: true });
-  const entry = `- [${date}](./${date}.md)`;
-  let current = '# Updates Index\n\n';
+  const entry = `- [${date}](./${date}.md) - ${newCount} articles`;
+  let current = '# Updates Index\n\n## Recent Updates\n\n';
   if (await fileExists(INDEX_FILE)) {
     current = await fs.readFile(INDEX_FILE, 'utf8');
   }
@@ -147,6 +271,19 @@ async function updateIndex(date) {
     current += `${entry}\n`;
     await fs.writeFile(INDEX_FILE, current, 'utf8');
   }
+}
+
+async function writeUpdateFiles(date, markdown) {
+  await fs.mkdir(UPDATES_DIR, { recursive: true });
+  await fs.mkdir(ASTRO_UPDATES_DIR, { recursive: true });
+
+  const rootOutput = path.join(UPDATES_DIR, `${date}.md`);
+  const astroOutput = path.join(ASTRO_UPDATES_DIR, `${date}.md`);
+
+  await fs.writeFile(rootOutput, markdown, 'utf8');
+  await fs.writeFile(astroOutput, markdown, 'utf8');
+
+  return rootOutput;
 }
 
 async function main() {
@@ -158,10 +295,8 @@ async function main() {
 
   const diff = await readJson(diffPath);
   const markdown = await toMarkdown(date, diff);
-  await fs.mkdir(UPDATES_DIR, { recursive: true });
-  const output = path.join(UPDATES_DIR, `${date}.md`);
-  await fs.writeFile(output, markdown, 'utf8');
-  await updateIndex(date);
+  const output = await writeUpdateFiles(date, markdown);
+  await updateIndex(date, diff.new_count || 0);
   console.log(JSON.stringify({ date, output_file: output }, null, 2));
 }
 

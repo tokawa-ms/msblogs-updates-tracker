@@ -1,0 +1,36 @@
+---
+import CategoryPill from './CategoryPill.astro';
+import { formatDate, slugify, type ArticleWithMeta } from '../lib/content';
+
+interface Props {
+  article: ArticleWithMeta;
+}
+
+const { article } = Astro.props;
+---
+
+<article class="card article-card">
+  <div class="card-header">
+    <p class="eyebrow">{article.sourceName}</p>
+    <h3>
+      <a href={article.url} target="_blank" rel="noreferrer">{article.title}</a>
+    </h3>
+  </div>
+  <p>{article.summary}</p>
+  <div class="pill-row">
+    {article.categories.map((category) => (
+      <CategoryPill name={category} href={`/categories/${slugify(category)}/`} />
+    ))}
+    <span class="pill importance">{article.importance.badge}</span>
+  </div>
+  <dl class="stats-inline compact">
+    <div>
+      <dt>掲載日</dt>
+      <dd>{formatDate(article.updateDate)}</dd>
+    </div>
+    <div>
+      <dt>公開日時</dt>
+      <dd>{formatDate(article.publishedAt)}</dd>
+    </div>
+  </dl>
+</article>
