@@ -1,6 +1,6 @@
 # MS Blogs Update Tracker
 
-An Agentic Workflow project that automatically collects daily update information from major Microsoft and GitHub blogs and generates date-organized pages.
+An Agentic Workflow project that automatically collects daily update information from major Microsoft and GitHub blogs and generates date-organized pages and an Astro website.
 
 This repository serves as both a production-ready update tracking system and a demo implementation of GitHub Agentic Workflows.
 
@@ -13,29 +13,39 @@ This repository serves as both a production-ready update tracking system and a d
 
 ## 🚀 Quick Start
 
-### Local Development Setup
+### Local development setup
 
 ```bash
 # Install dependencies
 npm install
 
-# Test blog fetching
+# Fetch blogs
 npm run fetch
 
-# Test diff detection
+# Detect diffs
 npm run diff
 
-# Generate daily page
+# Generate markdown update pages
 npm run generate
 
-# Build static site (for GitHub Pages)
-npm run build
+# Start the Astro website
+npm run dev
 
 # Run tests
 npm test
 ```
 
-### Target Blog Sources
+### Development scripts
+
+```bash
+# Build the Astro site
+npm run build
+
+# Watch the fetch script
+npm run dev:fetch
+
+# Generate static HTML site (for GitHub Pages)
+npm run build:static
 
 - 🐙 GitHub Blog
 - 💻 VSCode Blog
@@ -50,40 +60,42 @@ npm test
 |-------|---------|--------|
 | **Phase 1** (Week 1) | Blog fetch & diff detection scripts | ✅ Done |
 | **Phase 2** (Week 2) | GitHub Actions workflows & AI integration | ✅ Done |
-| **Phase 3** (Week 3) | Static site generation script | ✅ Done |
+| **Phase 3** (Week 3) | Astro website | ✅ Done |
 | **Phase 4** (Week 4) | Testing, deployment & operationalization | ✅ Done |
 
 ## 🔁 GitHub Actions Workflows
 
 | Workflow | Trigger | Description |
 |----------|---------|-------------|
-| `daily-blog-scan.yml` | Daily 0:00 UTC / Manual | Fetch → diff → generate → create PR |
+| `daily-blog-scan.yml` | Daily 0:00 UTC / Manual | Fetch -> diff -> generate -> create PR |
 | `analyze-blogs.yml` | Manual / `workflow_call` | Fetch & analyze only |
-| `publish-updates.yml` | Push to `main` / Manual | Build static site → Deploy to GitHub Pages |
+| `publish-updates.yml` | Push to `main` / Manual | Build static site -> Deploy to GitHub Pages |
 
 ## 🧪 Testing
 
 ```bash
 npm test
-# → 40 tests pass (using Node.js built-in test runner)
+# -> 40 tests pass (using Node.js built-in test runner)
 ```
 
 Test coverage:
 
-- `tests/utils/date-utils.test.js` — Date utilities
-- `tests/utils/cache-manager.test.js` — Cache management
-- `tests/diff-analyzer.test.js` — Diff detection logic
-- `tests/generate-daily-page.test.js` — Page generation helpers
+- `tests/utils/date-utils.test.js` - Date utilities
+- `tests/utils/cache-manager.test.js` - Cache management
+- `tests/diff-analyzer.test.js` - Diff detection logic
+- `tests/generate-daily-page.test.js` - Page generation helpers
 
 ## 🌐 GitHub Pages Deployment
 
-1. Set repository Settings → Pages → Source to **GitHub Actions**
+1. Set repository Settings -> Pages -> Source to **GitHub Actions**
 2. Changes to `content/updates/` on `main` branch trigger automatic deployment
-3. Manual deploy: Actions tab → "Publish Updates to GitHub Pages" → "Run workflow"
+3. Manual deploy: Actions tab -> "Publish Updates to GitHub Pages" -> "Run workflow"
 
 ## 🛠️ Tech Stack
 
 - Node.js 24
+- TypeScript
+- Astro
 - GitHub Actions / Agentic Workflows
 - cheerio (HTML parsing)
 - rss-parser (RSS parsing)
