@@ -58,6 +58,7 @@ jobs:
         run: node scripts/generate-daily-page.js "${{ steps.dates.outputs.target_date }}"
 
       - name: Create pull request
+        id: create_pr
         uses: peter-evans/create-pull-request@v6
         with:
           branch: automation/daily-updates-${{ steps.dates.outputs.target_date }}
@@ -74,3 +75,20 @@ jobs:
           add-paths: |
             content/updates
             cache/diff
+
+      - name: Report result
+        shell: bash
+        run: |
+          if [ "${{ steps.create_pr.outputs.pull-request-created }}" = "true" ]; then
+            echo "### ✅ Pull request created" >> "$GITHUB_STEP_SUMMARY"
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            echo "- **PR:** ${{ steps.create_pr.outputs.pull-request-url }}" >> "$GITHUB_STEP_SUMMARY"
+            echo "- **Branch:** \`automation/daily-updates-${{ steps.dates.outputs.target_date }}\`" >> "$GITHUB_STEP_SUMMARY"
+            echo "PR created: ${{ steps.create_pr.outputs.pull-request-url }}"
+          else
+            echo "### ℹ️ No changes detected — PR was not created" >> "$GITHUB_STEP_SUMMARY"
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            echo "- **Date:** \`${{ steps.dates.outputs.target_date }}\`" >> "$GITHUB_STEP_SUMMARY"
+            echo "- **Reason:** The generated files in \`content/updates\` and \`cache/diff\` are identical to the current \`main\` branch." >> "$GITHUB_STEP_SUMMARY"
+            echo "No changes detected for ${{ steps.dates.outputs.target_date }} — PR skipped."
+          fi
