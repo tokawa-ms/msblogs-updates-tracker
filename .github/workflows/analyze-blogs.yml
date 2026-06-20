@@ -29,7 +29,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "24"
           cache: npm
 
       - name: Install dependencies
@@ -45,25 +45,15 @@ jobs:
           else
             TARGET_DATE="$(date -u +%F)"
           fi
+          YESTERDAY_DATE="$(date -u -d "${TARGET_DATE} -1 day" +%F)"
           echo "target_date=${TARGET_DATE}" >> "$GITHUB_OUTPUT"
+          echo "yesterday_date=${YESTERDAY_DATE}" >> "$GITHUB_OUTPUT"
 
-      - name: Check diff input
-        shell: bash
-        run: |
-          DIFF_FILE="cache/diff/diff-${{ steps.dates.outputs.target_date }}.json"
-          if [ ! -f "${DIFF_FILE}" ]; then
-            echo "Diff file not found: ${DIFF_FILE}" >&2
-            exit 1
-          fi
+      - name: Fetch latest blogs
+        run: node scripts/fetch-blogs.js
+
+      - name: Analyze diff
+        run: node scripts/diff-analyzer.js "${{ steps.dates.outputs.target_date }}" "${{ steps.dates.outputs.yesterday_date }}"
 
       - name: Generate daily markdown page
         run: node scripts/generate-daily-page.js "${{ steps.dates.outputs.target_date }}"
-
-      - name: Upload generated content
-        uses: actions/upload-artifact@v4
-        with:
-          name: generated-content-${{ steps.dates.outputs.target_date }}
-          path: |
-            content/updates
-            cache/diff/diff-${{ steps.dates.outputs.target_date }}.json
-          if-no-files-found: error
