@@ -1,0 +1,112 @@
+name: Daily Blog Scan
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+    inputs:
+      target_date:
+        description: "Scan date (YYYY-MM-DD, UTC). Empty uses today."
+        required: false
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: daily-blog-scan-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    outputs:
+      target_date: ${{ steps.dates.outputs.target_date }}
+      yesterday_date: ${{ steps.dates.outputs.yesterday_date }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Resolve dates
+        id: dates
+        shell: bash
+        run: |
+          if [ -n "${{ github.event.inputs.target_date }}" ]; then
+            TARGET_DATE="${{ github.event.inputs.target_date }}"
+          else
+            TARGET_DATE="$(date -u +%F)"
+          fi
+          YESTERDAY_DATE="$(date -u -d "${TARGET_DATE} -1 day" +%F)"
+          echo "target_date=${TARGET_DATE}" >> "$GITHUB_OUTPUT"
+          echo "yesterday_date=${YESTERDAY_DATE}" >> "$GITHUB_OUTPUT"
+
+      - name: Fetch latest blogs
+        run: node scripts/fetch-blogs.js
+
+      - name: Analyze diff
+        run: node scripts/diff-analyzer.js "${{ steps.dates.outputs.target_date }}" "${{ steps.dates.outputs.yesterday_date }}"
+
+      - name: Upload raw scan artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: raw-scan-${{ steps.dates.outputs.target_date }}
+          path: |
+            cache/blogs
+            cache/diff
+            cache/manifest.json
+          if-no-files-found: warn
+
+  analyze:
+    needs: scan
+    uses: ./.github/workflows/analyze-blogs.yml
+    with:
+      target_date: ${{ needs.scan.outputs.target_date }}
+    secrets: inherit
+
+  create_pr:
+    needs:
+      - scan
+      - analyze
+    runs-on: ubuntu-latest
+    if: ${{ always() && needs.scan.result == 'success' && needs.analyze.result == 'success' }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Download generated content
+        uses: actions/download-artifact@v4
+        with:
+          name: generated-content-${{ needs.scan.outputs.target_date }}
+          path: .
+
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: automation/daily-updates-${{ needs.scan.outputs.target_date }}
+          delete-branch: true
+          title: "chore: daily blog updates for ${{ needs.scan.outputs.target_date }}"
+          body: |
+            ## Daily blog updates
+
+            - Date: `${{ needs.scan.outputs.target_date }}`
+            - Compared with: `${{ needs.scan.outputs.yesterday_date }}`
+            - Triggered by: `${{ github.workflow }}`
+          commit-message: "chore: generate daily blog updates (${{ needs.scan.outputs.target_date }})"
+          labels: automation
+          add-paths: |
+            content/updates
+            cache/diff
