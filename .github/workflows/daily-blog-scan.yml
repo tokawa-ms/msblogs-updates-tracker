@@ -19,11 +19,8 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  scan:
+  scan_and_create_pr:
     runs-on: ubuntu-latest
-    outputs:
-      target_date: ${{ steps.dates.outputs.target_date }}
-      yesterday_date: ${{ steps.dates.outputs.yesterday_date }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -33,7 +30,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "24"
           cache: npm
 
       - name: Install dependencies
@@ -58,54 +55,22 @@ jobs:
       - name: Analyze diff
         run: node scripts/diff-analyzer.js "${{ steps.dates.outputs.target_date }}" "${{ steps.dates.outputs.yesterday_date }}"
 
-      - name: Upload raw scan artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: raw-scan-${{ steps.dates.outputs.target_date }}
-          path: |
-            cache/blogs
-            cache/diff
-            cache/manifest.json
-          if-no-files-found: warn
-
-  analyze:
-    needs: scan
-    uses: ./.github/workflows/analyze-blogs.yml
-    with:
-      target_date: ${{ needs.scan.outputs.target_date }}
-    secrets: inherit
-
-  create_pr:
-    needs:
-      - scan
-      - analyze
-    runs-on: ubuntu-latest
-    if: ${{ always() && needs.scan.result == 'success' && needs.analyze.result == 'success' }}
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Download generated content
-        uses: actions/download-artifact@v4
-        with:
-          name: generated-content-${{ needs.scan.outputs.target_date }}
-          path: .
+      - name: Generate daily markdown page
+        run: node scripts/generate-daily-page.js "${{ steps.dates.outputs.target_date }}"
 
       - name: Create pull request
         uses: peter-evans/create-pull-request@v6
         with:
-          branch: automation/daily-updates-${{ needs.scan.outputs.target_date }}
+          branch: automation/daily-updates-${{ steps.dates.outputs.target_date }}
           delete-branch: true
-          title: "chore: daily blog updates for ${{ needs.scan.outputs.target_date }}"
+          title: "chore: daily blog updates for ${{ steps.dates.outputs.target_date }}"
           body: |
             ## Daily blog updates
 
-            - Date: `${{ needs.scan.outputs.target_date }}`
-            - Compared with: `${{ needs.scan.outputs.yesterday_date }}`
+            - Date: `${{ steps.dates.outputs.target_date }}`
+            - Compared with: `${{ steps.dates.outputs.yesterday_date }}`
             - Triggered by: `${{ github.workflow }}`
-          commit-message: "chore: generate daily blog updates (${{ needs.scan.outputs.target_date }})"
+          commit-message: "chore: generate daily blog updates (${{ steps.dates.outputs.target_date }})"
           labels: automation
           add-paths: |
             content/updates
