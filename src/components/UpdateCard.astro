@@ -1,0 +1,35 @@
+---
+import { formatDate, getUpdateSlug } from '../lib/content';
+import type { UpdateEntry } from '../lib/content';
+
+interface Props {
+  entry: UpdateEntry;
+}
+
+const { entry } = Astro.props;
+const updateSlug = getUpdateSlug(entry);
+---
+
+<article class="card">
+  <div class="card-header">
+    <p class="eyebrow">Daily update</p>
+    <h3>
+      <a href={`/updates/${updateSlug}/`}>{entry.data.title}</a>
+    </h3>
+  </div>
+  <p>{entry.data.description}</p>
+  <dl class="stats-inline">
+    <div>
+      <dt>日付</dt>
+      <dd>{formatDate(entry.data.date)}</dd>
+    </div>
+    <div>
+      <dt>新規記事</dt>
+      <dd>{entry.data.newCount}</dd>
+    </div>
+    <div>
+      <dt>ソース</dt>
+      <dd>{entry.data.sourceCount}</dd>
+    </div>
+  </dl>
+</article>
