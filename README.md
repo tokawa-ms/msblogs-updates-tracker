@@ -73,7 +73,6 @@ npm run build:static
 |------------|---------|------|
 | `daily-blog-scan.yml` | 毎日 0:00 UTC / 手動 | ブログ取得→差分検出→ページ生成→PR 作成 |
 | `analyze-blogs.yml` | 手動 / `workflow_call` | ブログ取得・解析のみ |
-| `build-astro-preview.yml` | 手動 | Astro をビルドして HTML アーティファクト（`dist/`）を作成 |
 | `publish-updates.yml` | `main` ブランチ push / 手動 | 静的サイトビルド→GitHub Pages デプロイ |
 
 ## 🧪 テスト
@@ -93,10 +92,9 @@ npm test
 ## 🌐 GitHub Pages デプロイ
 
 1. リポジトリの Settings → Pages → Source を **GitHub Actions** に設定
-2. まずは Actions タブ → **Astro Preview Build** → **Run workflow** で Astro の HTML 出力（`dist/`）だけを安全に確認
-3. 問題なければ `main` ブランチに `content/updates/` または Astro 関連ファイルの変更が push されたタイミングで `publish-updates.yml` が自動デプロイ
+2. まずは Actions タブ → **Publish Updates to GitHub Pages** → **Run workflow** で `build_only = true` を指定し、Astro の HTML 出力（`dist/`）だけを安全に確認
+3. 問題なければ `build_only = false` の通常実行、または `main` ブランチに `content/updates/` / Astro 関連ファイルの変更が push されたタイミングで GitHub Pages へデプロイ
 4. 日次運用は `daily-blog-scan.yml` が毎日 PR を作成し、その PR を `main` に取り込むと `publish-updates.yml` が続けて動くため、追加のデイリー設定は不要
-5. 手動デプロイ: Actions タブ → **Publish Updates to GitHub Pages** → **Run workflow**
 
 ## 🛠️ 技術スタック
 
