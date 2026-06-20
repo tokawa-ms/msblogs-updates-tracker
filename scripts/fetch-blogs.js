@@ -163,7 +163,7 @@ function dedupeByUrl(articles) {
 async function main() {
   await ensureCacheDirs();
   const targetDateArg = [process.argv[2], process.env.TARGET_DATE].find(
-    (value) => value,
+    (value) => value != null && value !== '',
   );
   const today = targetDateArg || toDateString();
   if (!isDateString(today)) {

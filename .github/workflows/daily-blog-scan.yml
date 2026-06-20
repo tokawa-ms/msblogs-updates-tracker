@@ -48,6 +48,7 @@ jobs:
           if [ -n "${{ github.event.inputs.target_date }}" ]; then
             TARGET_DATE="${{ github.event.inputs.target_date }}"
           else
+            # Blog updates are processed by Japanese local date.
             # The scheduled run starts at 23:00 UTC, when the intended scan date is already the next day in JST.
             TARGET_DATE="$(TZ=Asia/Tokyo date +%F)"
           fi
