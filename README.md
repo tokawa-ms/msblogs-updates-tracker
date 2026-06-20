@@ -92,8 +92,9 @@ npm test
 ## 🌐 GitHub Pages デプロイ
 
 1. リポジトリの Settings → Pages → Source を **GitHub Actions** に設定
-2. `main` ブランチに `content/updates/` の変更が push されると自動デプロイ
-3. 手動デプロイ: Actions タブ → "Publish Updates to GitHub Pages" → "Run workflow"
+2. まずは Actions タブ → **Publish Updates to GitHub Pages** → **Run workflow** で `build_only = true` を指定し、Astro の HTML 出力（`dist/`）だけを安全に確認
+3. 問題なければ `build_only = false` の通常実行、または `main` ブランチに `content/updates/` / Astro 関連ファイルの変更が push されたタイミングで GitHub Pages へデプロイ
+4. 日次運用は `daily-blog-scan.yml` が毎日 PR を作成し、その PR を `main` に取り込むと `publish-updates.yml` が続けて動くため、追加のデイリー設定は不要
 
 ## 🛠️ 技術スタック
 

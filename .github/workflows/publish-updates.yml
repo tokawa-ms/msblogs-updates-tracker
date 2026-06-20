@@ -6,10 +6,19 @@ on:
       - main
     paths:
       - "content/updates/**"
+      - "src/**"
+      - "astro.config.mjs"
+      - "package.json"
+      - "package-lock.json"
   workflow_dispatch:
     inputs:
       force:
         description: "Force rebuild even if no content changes"
+        required: false
+        type: boolean
+        default: false
+      build_only:
+        description: "Build and upload Astro HTML only, without deploying to GitHub Pages"
         required: false
         type: boolean
         default: false
@@ -35,6 +44,11 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "24"
+          cache: npm
+
+      - name: Configure GitHub Pages
+        if: ${{ github.event_name != 'workflow_dispatch' || !inputs.build_only }}
+        uses: actions/configure-pages@v5
 
       - name: Install dependencies
         run: npm ci --loglevel=error
@@ -46,11 +60,32 @@ jobs:
         run: npm run build
 
       - name: Upload pages artifact
+        if: ${{ github.event_name != 'workflow_dispatch' || !inputs.build_only }}
         uses: actions/upload-pages-artifact@v3
         with:
-          path: site/
+          path: dist/
+          retention-days: 7
+
+      - name: Report build-only result
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.build_only }}
+        shell: bash
+        run: |
+          mapfile -t html_files < <(find dist -type f -name '*.html' | sort)
+          if [ "${#html_files[@]}" -eq 0 ]; then
+            echo "No HTML files were generated in dist/." >&2
+            exit 1
+          fi
+          echo "### ✅ Astro HTML build completed" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "- **Mode:** Build only (no Pages deployment)" >> "$GITHUB_STEP_SUMMARY"
+          echo "- **Output directory:** \`dist/\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "- **Generated HTML files:**" >> "$GITHUB_STEP_SUMMARY"
+          for file in "${html_files[@]}"; do
+            echo "  - \`${file}\`" >> "$GITHUB_STEP_SUMMARY"
+          done
 
   deploy:
+    if: ${{ github.event_name != 'workflow_dispatch' || !inputs.build_only }}
     name: Deploy to GitHub Pages
     needs: build
     runs-on: ubuntu-latest
