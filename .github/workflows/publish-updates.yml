@@ -18,15 +18,13 @@ on:
         type: boolean
         default: false
       build_only:
-        description: "Build and upload Astro HTML only, without deploying to GitHub Pages"
+        description: "Build Astro HTML only, without publishing to gh-pages"
         required: false
         type: boolean
         default: false
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
   group: pages
@@ -34,11 +32,13 @@ concurrency:
 
 jobs:
   build:
-    name: Build static site
+    name: Build and publish static site
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -46,9 +46,13 @@ jobs:
           node-version: "24"
           cache: npm
 
-      - name: Configure GitHub Pages
-        if: ${{ github.event_name != 'workflow_dispatch' || !inputs.build_only }}
-        uses: actions/configure-pages@v5
+      - name: Validate publish branch
+        if: ${{ github.event_name == 'workflow_dispatch' && !inputs.build_only && github.ref_name != 'main' }}
+        shell: bash
+        run: |
+          echo "Manual publishing to gh-pages is only allowed from the main branch." >&2
+          echo "Use build_only=true when you want to test a feature branch build." >&2
+          exit 1
 
       - name: Install dependencies
         run: npm ci --loglevel=error
@@ -59,12 +63,15 @@ jobs:
       - name: Generate static site
         run: npm run build
 
-      - name: Upload pages artifact
+      - name: Publish to gh-pages branch
         if: ${{ github.event_name != 'workflow_dispatch' || !inputs.build_only }}
-        uses: actions/upload-pages-artifact@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          path: dist/
-          retention-days: 7
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gh-pages
+          force_orphan: true
+          enable_jekyll: false
 
       - name: Report build-only result
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.build_only }}
@@ -84,24 +91,13 @@ jobs:
             echo "  - \`${file}\`" >> "$GITHUB_STEP_SUMMARY"
           done
 
-  deploy:
-    if: ${{ github.event_name != 'workflow_dispatch' || !inputs.build_only }}
-    name: Deploy to GitHub Pages
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
-
-      - name: Report deployment
+      - name: Report gh-pages publish
+        if: ${{ github.event_name != 'workflow_dispatch' || !inputs.build_only }}
         shell: bash
         run: |
-          echo "### ✅ Deployed to GitHub Pages" >> "$GITHUB_STEP_SUMMARY"
+          echo "### ✅ Published to gh-pages" >> "$GITHUB_STEP_SUMMARY"
           echo "" >> "$GITHUB_STEP_SUMMARY"
-          echo "- **URL:** ${{ steps.deployment.outputs.page_url }}" >> "$GITHUB_STEP_SUMMARY"
-          echo "- **Ref:** \`${{ github.ref_name }}\`" >> "$GITHUB_STEP_SUMMARY"
-          echo "- **Commit:** \`${{ github.sha }}\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "- **Branch:** \`gh-pages\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "- **URL:** https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}/" >> "$GITHUB_STEP_SUMMARY"
+          echo "- **Source ref:** \`${GITHUB_REF_NAME}\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "- **Commit:** \`${GITHUB_SHA}\`" >> "$GITHUB_STEP_SUMMARY"

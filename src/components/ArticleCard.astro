@@ -1,6 +1,7 @@
 ---
 import CategoryPill from './CategoryPill.astro';
 import { formatDate, slugify, type ArticleWithMeta } from '../lib/content';
+import { withBase } from '../lib/site';
 
 interface Props {
   article: ArticleWithMeta;
@@ -19,7 +20,7 @@ const { article } = Astro.props;
   <p>{article.summary}</p>
   <div class="pill-row">
     {article.categories.map((category) => (
-      <CategoryPill name={category} href={`/categories/${slugify(category)}/`} />
+      <CategoryPill name={category} href={withBase(`categories/${slugify(category)}/`)} />
     ))}
     <span class="pill importance">{article.importance.badge}</span>
   </div>

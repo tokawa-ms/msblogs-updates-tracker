@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import { withBase } from '../lib/site';
 
 interface Props {
   title: string;
@@ -20,11 +21,11 @@ const { title, description } = Astro.props;
   <body>
     <header class="site-header">
       <div class="shell header-shell">
-        <a class="brand" href="/">MS Blogs Update Tracker</a>
+        <a class="brand" href={withBase()}>MS Blogs Update Tracker</a>
         <nav class="nav">
-          <a href="/">Home</a>
-          <a href="/updates/">Updates</a>
-          <a href="/categories/">Categories</a>
+          <a href={withBase()}>Home</a>
+          <a href={withBase('updates/')}>Updates</a>
+          <a href={withBase('categories/')}>Categories</a>
         </nav>
       </div>
     </header>
