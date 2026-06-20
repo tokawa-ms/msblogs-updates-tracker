@@ -69,6 +69,7 @@ npm run build:static
 |----------|---------|-------------|
 | `daily-blog-scan.yml` | Daily 0:00 UTC / Manual | Fetch -> diff -> generate -> create PR |
 | `analyze-blogs.yml` | Manual / `workflow_call` | Fetch & analyze only |
+| `build-astro-preview.yml` | Manual | Build Astro and upload the generated HTML artifact (`dist/`) |
 | `publish-updates.yml` | Push to `main` / Manual | Build static site -> Deploy to GitHub Pages |
 
 ## 🧪 Testing
@@ -88,8 +89,10 @@ Test coverage:
 ## 🌐 GitHub Pages Deployment
 
 1. Set repository Settings -> Pages -> Source to **GitHub Actions**
-2. Changes to `content/updates/` on `main` branch trigger automatic deployment
-3. Manual deploy: Actions tab -> "Publish Updates to GitHub Pages" -> "Run workflow"
+2. First, use Actions -> **Astro Preview Build** -> **Run workflow** to safely confirm that Astro generates the HTML output in `dist/`
+3. Once that looks good, pushes to `main` that change `content/updates/` or Astro-related files automatically trigger `publish-updates.yml`
+4. Daily operation does not need another scheduler: `daily-blog-scan.yml` already creates the daily PR, and merging that PR into `main` triggers `publish-updates.yml`
+5. Manual deploy: Actions -> **Publish Updates to GitHub Pages** -> **Run workflow**
 
 ## 🛠️ Tech Stack
 
