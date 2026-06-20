@@ -1,0 +1,52 @@
+[
+  {
+    "id": "github-blog",
+    "name": "GitHub Blog",
+    "type": "rss",
+    "url": "https://github.blog",
+    "feedUrl": "https://github.blog/feed/",
+    "limit": 30
+  },
+  {
+    "id": "vscode-blog",
+    "name": "VSCode Blog",
+    "type": "rss",
+    "url": "https://code.visualstudio.com/blogs",
+    "feedUrl": "https://code.visualstudio.com/feed.xml",
+    "filterUrlIncludes": ["/blogs/"],
+    "limit": 30
+  },
+  {
+    "id": "azure-blog",
+    "name": "Azure Blog",
+    "type": "rss",
+    "url": "https://azure.microsoft.com/en-us/blog/",
+    "feedUrl": "https://azure.microsoft.com/en-us/blog/feed/",
+    "limit": 30
+  },
+  {
+    "id": "m365-blog",
+    "name": "Microsoft 365 Blog",
+    "type": "rss",
+    "url": "https://www.microsoft.com/en-us/microsoft-365/blog/",
+    "feedUrl": "https://www.microsoft.com/en-us/microsoft-365/blog/feed/",
+    "limit": 30
+  },
+  {
+    "id": "fabric-blog",
+    "name": "Microsoft Fabric Blog",
+    "type": "rss",
+    "url": "https://powerbi.microsoft.com/en-us/blog/",
+    "feedUrl": "https://powerbi.microsoft.com/en-us/blog/feed/",
+    "limit": 30
+  },
+  {
+    "id": "microsoft-ai-blog",
+    "name": "Microsoft AI Blog",
+    "type": "rss",
+    "url": "https://blogs.microsoft.com/ai/",
+    "feedUrl": "https://blogs.microsoft.com/feed/",
+    "filterUrlIncludes": ["/ai/"],
+    "limit": 30
+  }
+]
