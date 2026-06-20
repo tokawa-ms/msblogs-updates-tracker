@@ -4,11 +4,11 @@
   "description": "Automated daily blog tracking for Microsoft & GitHub",
   "main": "scripts/fetch-blogs.js",
   "scripts": {
-    "dev": "ts-node scripts/fetch-blogs.ts",
+    "dev": "nodemon scripts/fetch-blogs.js",
     "fetch": "node scripts/fetch-blogs.js",
     "diff": "node scripts/diff-analyzer.js",
     "generate": "node scripts/generate-daily-page.js",
-    "lint": "eslint .",
+    "lint": "eslint \"scripts/**/*.js\"",
     "format": "prettier --write ."
   },
   "keywords": [
