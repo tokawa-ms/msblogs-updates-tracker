@@ -44,10 +44,12 @@ describe('getYesterdayDateString', () => {
 });
 
 describe('isDateString', () => {
-  it('YYYY-MM-DD 形式だけ true を返す', () => {
+  it('実在する YYYY-MM-DD 形式だけ true を返す', () => {
     assert.equal(isDateString('2026-06-20'), true);
     assert.equal(isDateString('2026-6-20'), false);
     assert.equal(isDateString('2026-06-20T00:00:00Z'), false);
+    assert.equal(isDateString('2026-13-20'), false);
+    assert.equal(isDateString('2026-02-30'), false);
     assert.equal(isDateString(null), false);
   });
 });

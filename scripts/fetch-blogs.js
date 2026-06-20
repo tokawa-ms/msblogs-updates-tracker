@@ -162,10 +162,15 @@ function dedupeByUrl(articles) {
 
 async function main() {
   await ensureCacheDirs();
-  const targetDateArg = [process.argv[2], process.env.TARGET_DATE].find(
-    (value) => value != null && value !== '',
-  );
-  const today = targetDateArg || toDateString();
+  const cliTargetDate = process.argv[2];
+  const envTargetDate = process.env.TARGET_DATE;
+  let today = toDateString();
+  if (cliTargetDate != null && cliTargetDate !== '') {
+    today = cliTargetDate;
+  } else if (envTargetDate != null && envTargetDate !== '') {
+    today = envTargetDate;
+  }
+
   if (!isDateString(today)) {
     throw new Error(`Invalid target date: ${today}. Expected YYYY-MM-DD.`);
   }
