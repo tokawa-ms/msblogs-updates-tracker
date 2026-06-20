@@ -10,8 +10,10 @@
     "diff": "node scripts/diff-analyzer.js",
     "generate": "node scripts/generate-daily-page.js",
     "build": "astro build",
+    "build:static": "node scripts/generate-site.js",
     "preview": "astro preview",
-    "lint": "eslint \"scripts/**/*.js\"",
+    "test": "node --test 'tests/**/*.test.js'",
+    "lint": "eslint \"scripts/**/*.js\" \"tests/**/*.js\"",
     "format": "prettier --write ."
   },
   "keywords": [
