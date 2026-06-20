@@ -69,7 +69,7 @@ npm run build:static
 |----------|---------|-------------|
 | `daily-blog-scan.yml` | Daily 0:00 UTC / Manual | Fetch -> diff -> generate -> create PR |
 | `analyze-blogs.yml` | Manual / `workflow_call` | Fetch & analyze only |
-| `publish-updates.yml` | Push to `main` / Manual | Build static site -> Deploy to GitHub Pages |
+| `publish-updates.yml` | Push to `main` / Manual | Build Astro and publish the output to the `gh-pages` branch |
 
 ## 🧪 Testing
 
@@ -87,10 +87,12 @@ Test coverage:
 
 ## 🌐 GitHub Pages Deployment
 
-1. Set repository Settings -> Pages -> Source to **GitHub Actions**
-2. First, use Actions -> **Publish Updates to GitHub Pages** -> **Run workflow** with `build_only = true` to safely confirm that Astro generates the HTML output in `dist/`
-3. Once that looks good, run it normally with `build_only = false`, or push changes to `main` that affect `content/updates/` or Astro-related files to deploy automatically
-4. Daily operation does not need another scheduler: `daily-blog-scan.yml` already creates the daily PR, and merging that PR into `main` triggers `publish-updates.yml`
+1. In Settings -> Pages -> **Build and deployment**, choose **Deploy from a branch**
+2. Set the branch to **`gh-pages` / `(root)`**
+3. First, use Actions -> **Publish Updates to GitHub Pages** -> **Run workflow** with `build_only = true` to safely confirm that Astro generates the HTML output
+4. Once that looks good, run it normally with `build_only = false`, or push changes to `main` that affect `content/updates/` or Astro-related files to publish to `gh-pages` automatically
+5. Daily operation does not need another scheduler: `daily-blog-scan.yml` already creates the daily PR, and merging that PR into `main` triggers `publish-updates.yml`
+6. The published URL is `https://tokawa-ms.github.io/msblogs-updates-tracker/`
 
 ## 🛠️ Tech Stack
 
