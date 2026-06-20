@@ -87,12 +87,11 @@ Test coverage:
 
 ## 🌐 GitHub Pages Deployment
 
-1. In Settings -> Pages -> **Build and deployment**, choose **Deploy from a branch**
-2. Set the branch to **`gh-pages` / `(root)`**
-3. First, use Actions -> **Publish Updates to GitHub Pages** -> **Run workflow** with `build_only = true` to safely confirm that Astro generates the HTML output
-4. Once that looks good, run it normally with `build_only = false`, or push changes to `main` that affect `content/updates/` or Astro-related files to publish to `gh-pages` automatically
-5. Daily operation does not need another scheduler: `daily-blog-scan.yml` already creates the daily PR, and merging that PR into `main` triggers `publish-updates.yml`
-6. The published URL is `https://tokawa-ms.github.io/msblogs-updates-tracker/`
+1. In Settings -> Pages -> **Build and deployment**, choose **GitHub Actions**
+2. In Actions -> **Publish Updates to GitHub Pages** -> **Run workflow**, first run with `build_only = true` to confirm Astro HTML output safely
+3. If that passes, run with `build_only = false`, or push changes to `main` that affect `content/updates/` or Astro-related files for automatic deployment
+4. Daily operation needs no extra scheduler: `daily-blog-scan.yml` creates the daily PR, and merging it into `main` triggers `publish-updates.yml`
+5. The published URL is `https://tokawa-ms.github.io/msblogs-updates-tracker/`
 
 ## 🛠️ Tech Stack
 
