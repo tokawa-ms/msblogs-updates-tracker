@@ -23,14 +23,11 @@
   "dependencies": {
     "axios": "^1.6.0",
     "cheerio": "^1.0.0",
-    "feedparser": "^2.2.11"
+    "rss-parser": "^3.13.0"
   },
   "devDependencies": {
-    "@typescript-eslint/parser": "^6.0.0",
-    "eslint": "^8.0.0",
+    "eslint": "^9.0.0",
     "nodemon": "^3.0.0",
-    "prettier": "^3.0.0",
-    "ts-node": "^10.9.0",
-    "typescript": "^5.0.0"
+    "prettier": "^3.0.0"
   }
 }
