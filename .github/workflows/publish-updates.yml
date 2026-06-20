@@ -47,6 +47,7 @@ jobs:
           cache: npm
 
       - name: Configure GitHub Pages
+        if: ${{ github.event_name != 'workflow_dispatch' || !inputs.build_only }}
         uses: actions/configure-pages@v5
 
       - name: Install dependencies
@@ -58,7 +59,17 @@ jobs:
       - name: Generate static site
         run: npm run build
 
+      - name: Upload Astro preview artifact
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.build_only }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: astro-dist
+          path: dist/
+          if-no-files-found: error
+          retention-days: 7
+
       - name: Upload pages artifact
+        if: ${{ github.event_name != 'workflow_dispatch' || !inputs.build_only }}
         uses: actions/upload-pages-artifact@v3
         with:
           path: dist/
@@ -71,6 +82,7 @@ jobs:
           echo "### ✅ Astro HTML build completed" >> "$GITHUB_STEP_SUMMARY"
           echo "" >> "$GITHUB_STEP_SUMMARY"
           echo "- **Mode:** Build only (no Pages deployment)" >> "$GITHUB_STEP_SUMMARY"
+          echo "- **Artifact:** \`astro-dist\`" >> "$GITHUB_STEP_SUMMARY"
           echo "- **Artifact path:** \`dist/\`" >> "$GITHUB_STEP_SUMMARY"
 
   deploy:
