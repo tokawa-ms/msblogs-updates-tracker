@@ -73,7 +73,7 @@ npm run build:static
 |------------|---------|------|
 | `daily-blog-scan.yml` | 毎日 0:00 UTC / 手動 | ブログ取得→差分検出→ページ生成→PR 作成 |
 | `analyze-blogs.yml` | 手動 / `workflow_call` | ブログ取得・解析のみ |
-| `publish-updates.yml` | `main` ブランチ push / 手動 | 静的サイトビルド→GitHub Pages デプロイ |
+| `publish-updates.yml` | `main` ブランチ push / 手動 | Astro をビルドして `gh-pages` ブランチへ公開 |
 
 ## 🧪 テスト
 
@@ -91,10 +91,12 @@ npm test
 
 ## 🌐 GitHub Pages デプロイ
 
-1. リポジトリの Settings → Pages → Source を **GitHub Actions** に設定
-2. まずは Actions タブ → **Publish Updates to GitHub Pages** → **Run workflow** で `build_only = true` を指定し、Astro の HTML 出力（`dist/`）だけを安全に確認
-3. 問題なければ `build_only = false` の通常実行、または `main` ブランチに `content/updates/` / Astro 関連ファイルの変更が push されたタイミングで GitHub Pages へデプロイ
-4. 日次運用は `daily-blog-scan.yml` が毎日 PR を作成し、その PR を `main` に取り込むと `publish-updates.yml` が続けて動くため、追加のデイリー設定は不要
+1. リポジトリの Settings → Pages → **Build and deployment** で **Deploy from a branch** を選択
+2. Branch は **`gh-pages` / `(root)`** を指定
+3. まずは Actions タブ → **Publish Updates to GitHub Pages** → **Run workflow** で `build_only = true` を指定し、Astro の HTML 出力だけを安全に確認
+4. 問題なければ `build_only = false` の通常実行、または `main` ブランチに `content/updates/` / Astro 関連ファイルの変更が push されたタイミングで `gh-pages` ブランチへ自動公開
+5. 日次運用は `daily-blog-scan.yml` が毎日 PR を作成し、その PR を `main` に取り込むと `publish-updates.yml` が続けて動くため、追加のデイリー設定は不要
+6. 公開 URL は `https://tokawa-ms.github.io/msblogs-updates-tracker/`
 
 ## 🛠️ 技術スタック
 

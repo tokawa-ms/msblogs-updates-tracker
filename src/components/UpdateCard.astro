@@ -1,5 +1,6 @@
 ---
 import { formatDate, getUpdateSlug } from '../lib/content';
+import { withBase } from '../lib/site';
 import type { UpdateEntry } from '../lib/content';
 
 interface Props {
@@ -14,7 +15,7 @@ const updateSlug = getUpdateSlug(entry);
   <div class="card-header">
     <p class="eyebrow">Daily update</p>
     <h3>
-      <a href={`/updates/${updateSlug}/`}>{entry.data.title}</a>
+      <a href={withBase(`updates/${updateSlug}/`)}>{entry.data.title}</a>
     </h3>
   </div>
   <p>{entry.data.description}</p>
