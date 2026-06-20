@@ -1,0 +1,36 @@
+{
+  "name": "blog-updates-tracker",
+  "version": "0.1.0",
+  "description": "Automated daily blog tracking for Microsoft & GitHub",
+  "main": "scripts/fetch-blogs.js",
+  "scripts": {
+    "dev": "ts-node scripts/fetch-blogs.ts",
+    "fetch": "node scripts/fetch-blogs.js",
+    "diff": "node scripts/diff-analyzer.js",
+    "generate": "node scripts/generate-daily-page.js",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "keywords": [
+    "blog",
+    "tracking",
+    "automation",
+    "github-actions",
+    "agentic-workflow"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "cheerio": "^1.0.0",
+    "feedparser": "^2.2.11"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "nodemon": "^3.0.0",
+    "prettier": "^3.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  }
+}
