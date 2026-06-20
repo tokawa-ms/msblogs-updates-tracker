@@ -1,9 +1,9 @@
 # Microsoft ブログ差分追跡システム - 詳細設計書
 
-**プロジェクト名**: Blog Updates Tracker  
+**プロジェクト名**: MS Blogs Update Tracker  
 **バージョン**: 1.0  
 **作成日**: 2026-06-20  
-**最終更新**: 2026-06-20  
+**最終更新**: 2026-06-20
 
 ---
 
@@ -27,14 +27,14 @@ Microsoft と GitHub の主要ブログから毎日のアップデート情報�
 
 ### 対象ブログソース
 
-| ブログ名 | URL | 更新頻度 | 取得方法 |
-|---------|-----|--------|--------|
-| GitHub Blog | https://github.blog | RSS | RSS フィード |
-| VSCode Blog | https://code.visualstudio.com/blogs | HTML | スクレイピング |
-| Azure Blog | https://azure.microsoft.com/en-us/blog/ | RSS | RSS フィード |
-| Microsoft 365 Blog | https://www.microsoft.com/en-us/microsoft-365/business/microsoft-365-blog | HTML | スクレイピング |
-| Microsoft Fabric Blog | https://powerbi.microsoft.com/en-us/blog/ | RSS | RSS フィード |
-| Microsoft AI Blog | https://blogs.microsoft.com/ai/ | RSS | RSS フィード |
+| ブログ名              | URL                                                                       | 更新頻度 | 取得方法       |
+| --------------------- | ------------------------------------------------------------------------- | -------- | -------------- |
+| GitHub Blog           | https://github.blog                                                       | RSS      | RSS フィード   |
+| VSCode Blog           | https://code.visualstudio.com/blogs                                       | HTML     | スクレイピング |
+| Azure Blog            | https://azure.microsoft.com/en-us/blog/                                   | RSS      | RSS フィード   |
+| Microsoft 365 Blog    | https://www.microsoft.com/en-us/microsoft-365/business/microsoft-365-blog | HTML     | スクレイピング |
+| Microsoft Fabric Blog | https://powerbi.microsoft.com/en-us/blog/                                 | RSS      | RSS フィード   |
+| Microsoft AI Blog     | https://blogs.microsoft.com/ai/                                           | RSS      | RSS フィード   |
 
 ### 主要な特徴
 
@@ -43,7 +43,7 @@ Microsoft と GitHub の主要ブログから毎日のアップデート情報�
 ✅ **AI 解析**: Agentic Workflow による知的なサマリー生成  
 ✅ **日付別ページ生成**: `content/updates/{YYYY-MM-DD}.md` の自動生成  
 ✅ **PR ベースレビュー**: 生成された内容を PR で確認可能  
-✅ **Web サイト化**: Astro で Web サイトとしてデプロイ可能  
+✅ **Web サイト化**: Astro で Web サイトとしてデプロイ可能
 
 ---
 
@@ -105,6 +105,7 @@ Microsoft と GitHub の主要ブログから毎日のアップデート情報�
 #### A. ブログ取得エンジン (`scripts/fetch-blogs.js`)
 
 **責務**:
+
 - 各ブログの最新記事を取得
 - RSS フィード/HTML スクレイピングを統一インターフェースで提供
 - 取得データを JSON キャッシュとして保存
@@ -113,6 +114,7 @@ Microsoft と GitHub の主要ブログから毎日のアップデート情報�
 **出力**: `cache/blogs/{source-name}-{YYYY-MM-DD}.json`
 
 **処理フロー**:
+
 ```javascript
 for each blog source:
   1. RSS/HTML から記事取得
@@ -124,15 +126,18 @@ for each blog source:
 #### B. 差分検出エンジン (`scripts/diff-analyzer.js`)
 
 **責務**:
+
 - 前日のキャッシュと本日のキャッシュを比較
 - 新規記事を特定
 - 削除/更新記事を検出
 
-**入力**: 
+**入力**:
+
 - `cache/blogs/{source-name}-{YESTERDAY}.json`
 - `cache/blogs/{source-name}-{TODAY}.json`
 
-**出力**: 
+**出力**:
+
 ```json
 {
   "source": "github-blog",
@@ -153,6 +158,7 @@ for each blog source:
 #### C. Agentic Workflow 生成エンジン
 
 **責務**:
+
 - 差分検出結果をもとに動的ワークフロー MD ファイル生成
 - AI エージェント用のプロンプト構築
 
@@ -161,6 +167,7 @@ for each blog source:
 #### D. AI エージェント (`blog-diff-analyzer.md`)
 
 **責務**:
+
 - 各記事の詳細解析
 - 意味のあるサマリーとキーポイント生成
 - カテゴリ/タグ付け
@@ -169,6 +176,7 @@ for each blog source:
 #### E. ページ生成エンジン
 
 **責備**:
+
 - `content/updates/{YYYY-MM-DD}.md` 生成
 - インデックスページ更新（最新 7 日分表示）
 

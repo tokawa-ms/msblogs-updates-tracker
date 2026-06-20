@@ -1,5 +1,5 @@
 {
-  "name": "blog-updates-tracker",
+  "name": "msblogs-updates-tracker",
   "version": "0.1.0",
   "description": "Automated daily blog tracking for Microsoft & GitHub",
   "main": "scripts/fetch-blogs.js",

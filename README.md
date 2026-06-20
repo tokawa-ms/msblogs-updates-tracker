@@ -1,6 +1,8 @@
-# Blog Updates Tracker
+# MS Blogs Update Tracker
 
 Microsoft と GitHub の主要ブログから毎日のアップデート情報を自動収集し、日付ごとに整理されたページを生成する Agentic Workflow プロジェクトです。
+
+このリポジトリは、実運用を想定した更新追跡システムであると同時に、GitHub の Agentic Workflow のデモ実装を兼ねています。
 
 ## 📚 ドキュメント
 
@@ -20,7 +22,7 @@ npm install
 # ブログ取得テスト
 npm run fetch
 
-# 差分検出テスト  
+# 差分検出テスト
 npm run diff
 ```
 
@@ -56,6 +58,6 @@ npm run diff
 
 ---
 
-**プロジェクト名**: Blog Updates Tracker  
+**プロジェクト名**: MS Blogs Update Tracker  
 **開始日**: 2026-06-20  
 **状態**: Development (Phase 1)

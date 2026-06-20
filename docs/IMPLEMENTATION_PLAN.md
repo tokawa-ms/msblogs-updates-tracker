@@ -1,14 +1,15 @@
 # 実装計画 & タスクリスト
 
-**プロジェクト**: Blog Updates Tracker  
+**プロジェクト**: MS Blogs Update Tracker  
 **開始日**: 2026-06-20  
-**目標完了**: 2026-07-18（4 週間）  
+**目標完了**: 2026-07-18（4 週間）
 
 ---
 
 ## Phase 1: 基盤設定 & 環境構築（Week 1）
 
 ### Week 1 目標
+
 - GitHub リポジトリ作成
 - プロジェクト構造初期化
 - ブログ取得スクリプト実装完了
@@ -21,8 +22,9 @@
 **Task**: リポジトリ作成と基本セットアップ  
 **所要時間**: 1 時間  
 **チェックリスト**:
+
 - [ ] GitHub 新規リポジトリ作成（public）
-- [ ] リポジトリ名: `blog-updates-tracker`
+- [ ] リポジトリ名: `msblogs-updates-tracker`
 - [ ] 説明: "Automated daily blog tracking for Microsoft & GitHub"
 - [ ] README.md 初期化
 - [ ] LICENSE 追加（MIT）
@@ -34,6 +36,7 @@
 **Task**: npm セットアップ、依存パッケージ管理  
 **所要時間**: 30 分  
 **チェックリスト**:
+
 - [ ] `npm init -y` で package.json 初期化
 - [ ] TypeScript インストール: `npm install -D typescript`
 - [ ] ESLint インストール: `npm install -D eslint @typescript-eslint/parser`
@@ -45,6 +48,7 @@
 - [ ] `.eslintrc.json` 作成
 
 **package.json scripts**:
+
 ```json
 {
   "scripts": {
@@ -63,8 +67,9 @@
 **Task**: プロジェクト全体のフォルダ構成初期化  
 **所要時間**: 30 分  
 **作成するディレクトリ**:
+
 ```
-blog-updates-tracker/
+msblogs-updates-tracker/
 ├── scripts/              # 処理スクリプト
 │   ├── fetch-blogs.js
 │   ├── diff-analyzer.js
@@ -111,6 +116,7 @@ blog-updates-tracker/
 ```
 
 **チェックリスト**:
+
 - [ ] すべてのディレクトリ作成
 - [ ] git add & commit
 
@@ -119,9 +125,10 @@ blog-updates-tracker/
 #### 1.4 ブログソース設定
 
 **Task**: `config/blog-sources.json` 作成  
-**所要時間**: 1 時間  
+**所要時間**: 1 時間
 
 **チェックリスト**:
+
 - [ ] すべてのブログ URL 動作確認
 - [ ] RSS フィード有効性確認
 - [ ] セレクター精度テスト
@@ -133,6 +140,7 @@ blog-updates-tracker/
 **Task**: `scripts/fetch-blogs.js` の基本実装  
 **所要時間**: 3 時間  
 **要件**:
+
 - RSS フィード取得（4 ソース）
 - HTML スクレイピング（2 ソース）
 - データ正規化
@@ -141,17 +149,18 @@ blog-updates-tracker/
 **実装ステップ**:
 
 1. **Base Fetcher Class 作成**
+
 ```javascript
 class BaseFetcher {
   constructor(source) {
     this.source = source;
     this.cache = null;
   }
-  
+
   async fetch() {
     // 実装サブクラスで
   }
-  
+
   async saveCache() {
     // JSON ファイル保存
   }
@@ -159,6 +168,7 @@ class BaseFetcher {
 ```
 
 2. **RSS Fetcher 実装**
+
 ```javascript
 class RSSFetcher extends BaseFetcher {
   async fetch() {
@@ -168,6 +178,7 @@ class RSSFetcher extends BaseFetcher {
 ```
 
 3. **HTML Scraper 実装**
+
 ```javascript
 class HTMLScraper extends BaseFetcher {
   async fetch() {
@@ -177,6 +188,7 @@ class HTMLScraper extends BaseFetcher {
 ```
 
 4. **Article Normalizer**
+
 ```javascript
 function normalizeArticle(raw) {
   return {
@@ -184,19 +196,21 @@ function normalizeArticle(raw) {
     title: raw.title,
     url: raw.url,
     published_at: parseDate(raw.date),
-    summary: raw.summary || '',
+    summary: raw.summary || "",
     // ...
   };
 }
 ```
 
 **テスト**:
+
 ```bash
 node scripts/fetch-blogs.js
 # 出力確認: cache/blogs/ に JSON ファイルが生成されるか
 ```
 
 **チェックリスト**:
+
 - [ ] RSS フィード取得テスト成功
 - [ ] HTML スクレイピング成功
 - [ ] キャッシュファイル生成成功
@@ -210,6 +224,7 @@ node scripts/fetch-blogs.js
 **Task**: `scripts/diff-analyzer.js` 実装  
 **所要時間**: 2 時間  
 **要件**:
+
 - 前日キャッシュ取得
 - 本日キャッシュ比較
 - 新規記事特定
@@ -223,36 +238,38 @@ class DiffAnalyzer {
     // 1. ファイル読み込み
     const todayData = await loadCache(today);
     const yesterdayData = await loadCache(yesterday);
-    
+
     // 2. URL セット化
-    const todayURLs = new Set(todayData.map(a => a.url));
-    const yesterdayURLs = new Set(yesterdayData.map(a => a.url));
-    
+    const todayURLs = new Set(todayData.map((a) => a.url));
+    const yesterdayURLs = new Set(yesterdayData.map((a) => a.url));
+
     // 3. 新規記事特定
-    const newArticles = todayData.filter(a => !yesterdayURLs.has(a.url));
-    
+    const newArticles = todayData.filter((a) => !yesterdayURLs.has(a.url));
+
     // 4. 削除記事特定
-    const removedArticles = yesterdayData.filter(a => !todayURLs.has(a.url));
-    
+    const removedArticles = yesterdayData.filter((a) => !todayURLs.has(a.url));
+
     // 5. 結果出力
     return {
       date: today,
       new_count: newArticles.length,
       removed_count: removedArticles.length,
       new_articles: newArticles,
-      diff_result: true
+      diff_result: true,
     };
   }
 }
 ```
 
 **テスト**:
+
 ```bash
 node scripts/diff-analyzer.js
 # 出力: diff-result.json に差分結果が保存されるか確認
 ```
 
 **チェックリスト**:
+
 - [ ] 差分検出ロジック実装
 - [ ] 新規記事正確に抽出
 - [ ] 重複除外機能実装
@@ -274,6 +291,7 @@ node scripts/diff-analyzer.js
 ## Phase 2: ワークフロー & AI 統合（Week 2）
 
 ### Week 2 目標
+
 - GitHub Actions ワークフロー作成
 - Agentic Workflow エージェント定義
 - ページ生成スクリプト実装
@@ -284,9 +302,10 @@ node scripts/diff-analyzer.js
 #### 2.1 GitHub Actions ワークフロー実装
 
 **Task**: `.github/workflows/daily-blog-scan.yml` 作成  
-**所要時間**: 2 時間  
+**所要時間**: 2 時間
 
 **チェックリスト**:
+
 - [ ] YAML 構文正確
 - [ ] permissions 正確に設定
 - [ ] 手動トリガー動作確認
@@ -297,11 +316,12 @@ node scripts/diff-analyzer.js
 #### 2.2 Agentic Workflow エージェント定義
 
 **Task**: `.github/agents/blog-diff-analyzer.md` 作成  
-**所要時間**: 2 時間  
+**所要時間**: 2 時間
 
 **参照**: AGENT_INSTRUCTIONS.md
 
 **チェックリスト**:
+
 - [ ] エージェント MD ファイル作成
 - [ ] MCP.json 設定（ネットワークアクセス）
 - [ ] GitHub にアップロード
@@ -311,9 +331,10 @@ node scripts/diff-analyzer.js
 #### 2.3 ページ生成スクリプト実装
 
 **Task**: `scripts/generate-daily-page.js` 実装  
-**所要時間**: 3 時間  
+**所要時間**: 3 時間
 
 **チェックリスト**:
+
 - [ ] マークダウン生成機能実装
 - [ ] メタデータ付与機能実装
 - [ ] インデックス更新機能実装
@@ -334,6 +355,7 @@ node scripts/diff-analyzer.js
 ## Phase 3: Web サイト化 & UI 構築（Week 3）
 
 ### Week 3 目標
+
 - Astro プロジェクト初期化
 - マークダウン コレクション設定
 - Web UI コンポーネント実装
@@ -344,6 +366,7 @@ node scripts/diff-analyzer.js
 ## Phase 4: テスト & 運用化（Week 4）
 
 ### Week 4 目標
+
 - エンドツーエンドテスト実行
 - 本番ワークフロー設定
 - デプロイ設定
@@ -356,12 +379,14 @@ node scripts/diff-analyzer.js
 本番運用開始前に以下を確認してください：
 
 ### コード品質
+
 - [ ] すべてのテスト成功
 - [ ] ESLint エラーなし
 - [ ] TypeScript エラーなし
 - [ ] コードレビュー完了
 
 ### 機能確認
+
 - [ ] ブログ取得： 6 ソースすべて取得可能
 - [ ] 差分検出： 重複なく新規記事抽出
 - [ ] ページ生成： マークダウン形式正確
@@ -369,6 +394,7 @@ node scripts/diff-analyzer.js
 - [ ] Web サイト： 全ページ表示可能
 
 ### 運用準備
+
 - [ ] GitHub Pages 公開確認
 - [ ] ワークフロー スケジュール設定確認
 - [ ] ドキュメント完成
@@ -377,6 +403,6 @@ node scripts/diff-analyzer.js
 ---
 
 **作成日**: 2026-06-20  
-**次回レビュー**: 2026-07-04  
+**次回レビュー**: 2026-07-04
 
 詳細は docs/ ディレクトリの各ドキュメントを参照してください。
