@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCategoryCounts, getPublishedUpdates } from '../../lib/content';
+import { withBase } from '../../lib/site';
 
 const updates = await getPublishedUpdates();
 const categoryCounts = getCategoryCounts(updates);
@@ -21,7 +22,7 @@ const categoryCounts = getCategoryCounts(updates);
       <article class="card">
         <p class="eyebrow">{category.count} articles</p>
         <h2>
-          {category.count > 0 ? <a href={`/categories/${category.slug}/`}>{category.name}</a> : category.name}
+          {category.count > 0 ? <a href={withBase(`categories/${category.slug}/`)}>{category.name}</a> : category.name}
         </h2>
         <p>{category.description}</p>
       </article>

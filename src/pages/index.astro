@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import ArticleCard from '../components/ArticleCard.astro';
 import UpdateCard from '../components/UpdateCard.astro';
 import { getCategoryCounts, getPublishedUpdates, getRecentArticles } from '../lib/content';
+import { withBase } from '../lib/site';
 
 const updates = await getPublishedUpdates();
 const latestUpdates = updates.slice(0, 7);
@@ -41,7 +42,7 @@ const totalArticles = updates.reduce((count, entry) => count + entry.data.newCou
   <section class="section">
     <div class="section-heading">
       <h2>最新の更新日</h2>
-      <a href="/updates/">すべて見る</a>
+      <a href={withBase('updates/')}>すべて見る</a>
     </div>
     {
       latestUpdates.length > 0 ? (
@@ -62,7 +63,7 @@ const totalArticles = updates.reduce((count, entry) => count + entry.data.newCou
   <section class="section">
     <div class="section-heading">
       <h2>注目カテゴリ</h2>
-      <a href="/categories/">カテゴリ一覧</a>
+      <a href={withBase('categories/')}>カテゴリ一覧</a>
     </div>
     <div class="grid three-column">
       {categoryCounts.map((category) => (
@@ -70,7 +71,7 @@ const totalArticles = updates.reduce((count, entry) => count + entry.data.newCou
           <p class="eyebrow">{category.count} articles</p>
           <h3>
             {category.count > 0 ? (
-              <a href={`/categories/${category.slug}/`}>{category.name}</a>
+              <a href={withBase(`categories/${category.slug}/`)}>{category.name}</a>
             ) : (
               category.name
             )}
@@ -84,7 +85,7 @@ const totalArticles = updates.reduce((count, entry) => count + entry.data.newCou
   <section class="section">
     <div class="section-heading">
       <h2>最新記事</h2>
-      <a href="/updates/">更新日別に見る</a>
+      <a href={withBase('updates/')}>更新日別に見る</a>
     </div>
     {
       recentArticles.length > 0 ? (
