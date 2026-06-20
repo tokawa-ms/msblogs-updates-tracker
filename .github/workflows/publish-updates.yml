@@ -6,6 +6,10 @@ on:
       - main
     paths:
       - "content/updates/**"
+      - "src/**"
+      - "astro.config.mjs"
+      - "package.json"
+      - "package-lock.json"
   workflow_dispatch:
     inputs:
       force:
@@ -35,6 +39,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "24"
+          cache: npm
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
 
       - name: Install dependencies
         run: npm ci --loglevel=error
@@ -48,7 +56,8 @@ jobs:
       - name: Upload pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: site/
+          path: dist/
+          retention-days: 7
 
   deploy:
     name: Deploy to GitHub Pages
