@@ -1,15 +1,15 @@
 # MS Blogs Update Tracker
 
-An Agentic Workflow project that collects daily updates from major Microsoft and GitHub blogs and publishes them as date-based pages and an Astro website.
+An Agentic Workflow project that automatically collects daily update information from major Microsoft and GitHub blogs and generates date-organized pages and an Astro website.
 
-This repository is both a production-oriented update tracking system and a demo implementation for GitHub Agentic Workflows.
+This repository serves as both a production-ready update tracking system and a demo implementation of GitHub Agentic Workflows.
 
 ## 📚 Documentation
 
-- **`docs/DETAILED_DESIGN.md`** - System architecture design
-- **`docs/AGENT_INSTRUCTIONS.md`** - AI agent instructions
-- **`docs/IMPLEMENTATION_PLAN.md`** - Four-week implementation plan
-- **`docs/PROJECT_START_GUIDE.md`** - Project start guide
+- **`docs/DETAILED_DESIGN.md`** - System architecture design (Japanese)
+- **`docs/AGENT_INSTRUCTIONS.md`** - AI agent instructions (Japanese)
+- **`docs/IMPLEMENTATION_PLAN.md`** - 4-week implementation plan (Japanese)
+- **`docs/PROJECT_START_GUIDE.md`** - Project start guide (Japanese)
 
 ## 🚀 Quick Start
 
@@ -30,6 +30,9 @@ npm run generate
 
 # Start the Astro website
 npm run dev
+
+# Run tests
+npm test
 ```
 
 ### Development scripts
@@ -40,9 +43,9 @@ npm run build
 
 # Watch the fetch script
 npm run dev:fetch
-```
 
-### Target blog sources
+# Generate static HTML site (for GitHub Pages)
+npm run build:static
 
 - 🐙 GitHub Blog
 - 💻 VSCode Blog
@@ -53,27 +56,57 @@ npm run dev:fetch
 
 ## 📋 Implementation Phases
 
-- **Phase 1** (Week 1): Blog fetch and diff detection scripts
-- **Phase 2** (Week 2): GitHub Actions workflows and AI integration
-- **Phase 3** (Week 3): Astro website
-- **Phase 4** (Week 4): Testing, deployment, and operations
+| Phase | Content | Status |
+|-------|---------|--------|
+| **Phase 1** (Week 1) | Blog fetch & diff detection scripts | ✅ Done |
+| **Phase 2** (Week 2) | GitHub Actions workflows & AI integration | ✅ Done |
+| **Phase 3** (Week 3) | Astro website | ✅ Done |
+| **Phase 4** (Week 4) | Testing, deployment & operationalization | ✅ Done |
 
-## 🛠️ Technology Stack
+## 🔁 GitHub Actions Workflows
 
-- Node.js 18+
+| Workflow | Trigger | Description |
+|----------|---------|-------------|
+| `daily-blog-scan.yml` | Daily 0:00 UTC / Manual | Fetch -> diff -> generate -> create PR |
+| `analyze-blogs.yml` | Manual / `workflow_call` | Fetch & analyze only |
+| `publish-updates.yml` | Push to `main` / Manual | Build static site -> Deploy to GitHub Pages |
+
+## 🧪 Testing
+
+```bash
+npm test
+# -> 40 tests pass (using Node.js built-in test runner)
+```
+
+Test coverage:
+
+- `tests/utils/date-utils.test.js` - Date utilities
+- `tests/utils/cache-manager.test.js` - Cache management
+- `tests/diff-analyzer.test.js` - Diff detection logic
+- `tests/generate-daily-page.test.js` - Page generation helpers
+
+## 🌐 GitHub Pages Deployment
+
+1. Set repository Settings -> Pages -> Source to **GitHub Actions**
+2. Changes to `content/updates/` on `main` branch trigger automatic deployment
+3. Manual deploy: Actions tab -> "Publish Updates to GitHub Pages" -> "Run workflow"
+
+## 🛠️ Tech Stack
+
+- Node.js 24
 - TypeScript
-- GitHub Actions
-- Agentic Workflows
 - Astro
+- GitHub Actions / Agentic Workflows
 - cheerio (HTML parsing)
-- feed-parser (RSS parsing)
+- rss-parser (RSS parsing)
+- Node.js built-in test runner (`node:test`)
 
-## 📖 More Details
+## 📖 Detailed Documentation
 
-See the documents under `docs/` for full implementation details.
+See the `docs/` directory for implementation details.
 
 ---
 
 **Project**: MS Blogs Update Tracker  
 **Start Date**: 2026-06-20  
-**Status**: Development (Phase 3)
+**Status**: ✅ Production Ready (Phase 4 complete)

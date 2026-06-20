@@ -29,8 +29,11 @@ npm run diff
 # Markdown 更新ページ生成
 npm run generate
 
-# Astro サイト起動
+# Astro サイト起動（ローカル開発）
 npm run dev
+
+# テスト実行
+npm test
 ```
 
 ### 開発用スクリプト
@@ -41,6 +44,9 @@ npm run build
 
 # 取得スクリプトのウォッチ実行
 npm run dev:fetch
+
+# 静的 HTML サイト生成（GitHub Pages 用）
+npm run build:static
 ```
 
 ### 対象ブログソース
@@ -54,20 +60,48 @@ npm run dev:fetch
 
 ## 📋 実装フェーズ
 
-- **Phase 1** (Week 1): ブログ取得・差分検出スクリプト実装
-- **Phase 2** (Week 2): GitHub Actions ワークフロー & AI 統合
-- **Phase 3** (Week 3): Astro Web サイト化
-- **Phase 4** (Week 4): テスト・デプロイ・運用化
+| Phase | 内容 | 状態 |
+|-------|------|------|
+| **Phase 1** (Week 1) | ブログ取得・差分検出スクリプト実装 | ✅ 完了 |
+| **Phase 2** (Week 2) | GitHub Actions ワークフロー & AI 統合 | ✅ 完了 |
+| **Phase 3** (Week 3) | 静的サイト生成スクリプト実装 | ✅ 完了 |
+| **Phase 4** (Week 4) | テスト・デプロイ・運用化 | ✅ 完了 |
+
+## 🔁 GitHub Actions ワークフロー
+
+| ワークフロー | トリガー | 概要 |
+|------------|---------|------|
+| `daily-blog-scan.yml` | 毎日 0:00 UTC / 手動 | ブログ取得→差分検出→ページ生成→PR 作成 |
+| `analyze-blogs.yml` | 手動 / `workflow_call` | ブログ取得・解析のみ |
+| `publish-updates.yml` | `main` ブランチ push / 手動 | 静的サイトビルド→GitHub Pages デプロイ |
+
+## 🧪 テスト
+
+```bash
+npm test
+# → 40 テスト全件パス（Node.js 組み込みテストランナー使用）
+```
+
+テスト対象:
+
+- `tests/utils/date-utils.test.js` — 日付ユーティリティ
+- `tests/utils/cache-manager.test.js` — キャッシュ管理
+- `tests/diff-analyzer.test.js` — 差分検出ロジック
+- `tests/generate-daily-page.test.js` — ページ生成ヘルパー
+
+## 🌐 GitHub Pages デプロイ
+
+1. リポジトリの Settings → Pages → Source を **GitHub Actions** に設定
+2. `main` ブランチに `content/updates/` の変更が push されると自動デプロイ
+3. 手動デプロイ: Actions タブ → "Publish Updates to GitHub Pages" → "Run workflow"
 
 ## 🛠️ 技術スタック
 
-- Node.js 18+
-- TypeScript
-- GitHub Actions
-- Agentic Workflows
-- Astro
-- cheerio (HTML parsing)
-- feed-parser (RSS parsing)
+- Node.js 24
+- GitHub Actions / Agentic Workflows
+- cheerio（HTML パース）
+- rss-parser（RSS パース）
+- Node.js 組み込みテストランナー（`node:test`）
 
 ## 📖 詳細ドキュメント
 
@@ -77,4 +111,4 @@ npm run dev:fetch
 
 **プロジェクト名**: MS Blogs Update Tracker  
 **開始日**: 2026-06-20  
-**状態**: Development (Phase 3)
+**状態**: ✅ Production Ready (Phase 4 完了)
