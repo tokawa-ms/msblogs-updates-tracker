@@ -16,11 +16,6 @@ on:
         type: boolean
         default: false
 
-permissions:
-  contents: write
-  pages: write
-  id-token: write
-
 concurrency:
   group: daily-blog-scan-${{ github.ref }}
   cancel-in-progress: false
@@ -29,6 +24,9 @@ jobs:
   scan_commit_and_build:
     name: Scan, commit, and build
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
     outputs:
       changes_detected: ${{ steps.changes.outputs.changes_detected }}
     steps:
@@ -161,7 +159,7 @@ jobs:
     runs-on: ubuntu-latest
     concurrency:
       group: pages
-      cancel-in-progress: true
+      cancel-in-progress: false
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
