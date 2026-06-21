@@ -50,7 +50,10 @@ jobs:
         run: npm ci --loglevel=error
 
       - name: Run tests
-        run: npm test
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm test
 
       - name: Resolve dates
         id: dates
@@ -87,15 +90,13 @@ jobs:
             "${{ github.run_id }}" \
             > cache/forced-run.json
 
-      - name: Detect and stage generated changes
+      - name: Detect generated changes
         id: changes
         shell: bash
         run: |
-          read -r -a tracked_paths <<< "$TRACKED_UPDATE_PATHS"
-          if [ -z "$(git status --porcelain -- "${tracked_paths[@]}")" ]; then
+          if [ -z "$(git status --porcelain -- $TRACKED_UPDATE_PATHS)" ]; then
             echo "changes_detected=false" >> "$GITHUB_OUTPUT"
           else
-            git add "${tracked_paths[@]}"
             echo "changes_detected=true" >> "$GITHUB_OUTPUT"
           fi
 
@@ -128,10 +129,14 @@ jobs:
         if: ${{ steps.changes.outputs.changes_detected == 'true' }}
         shell: bash
         run: |
+          git add $TRACKED_UPDATE_PATHS
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "chore: generate daily blog updates (${{ steps.dates.outputs.target_date }})"
-          git push origin HEAD:main
+          if ! git push origin HEAD:main; then
+            echo "::error::Failed to push generated updates to main. Check Actions workflow permissions and branch protection rules for github-actions[bot]." >&2
+            exit 1
+          fi
 
       - name: Report update result
         if: ${{ steps.changes.outputs.changes_detected == 'true' }}
