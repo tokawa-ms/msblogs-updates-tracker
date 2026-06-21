@@ -94,7 +94,8 @@ jobs:
         id: changes
         shell: bash
         run: |
-          if [ -z "$(git status --porcelain -- $TRACKED_UPDATE_PATHS)" ]; then
+          IFS=' ' read -r -a tracked_paths <<< "$TRACKED_UPDATE_PATHS"
+          if [ -z "$(git status --porcelain -- "${tracked_paths[@]}")" ]; then
             echo "changes_detected=false" >> "$GITHUB_OUTPUT"
           else
             echo "changes_detected=true" >> "$GITHUB_OUTPUT"
@@ -129,12 +130,13 @@ jobs:
         if: ${{ steps.changes.outputs.changes_detected == 'true' }}
         shell: bash
         run: |
-          git add $TRACKED_UPDATE_PATHS
+          IFS=' ' read -r -a tracked_paths <<< "$TRACKED_UPDATE_PATHS"
+          git add "${tracked_paths[@]}"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "chore: generate daily blog updates (${{ steps.dates.outputs.target_date }})"
           if ! git push origin HEAD:main; then
-            echo "::error::Failed to push generated updates to main. Check Actions workflow permissions and branch protection rules for github-actions[bot]." >&2
+            echo "::error::Failed to push generated updates to main. Ensure Actions workflow has Read and write permissions enabled in Settings > Actions > General > Workflow permissions, and verify that github-actions[bot] can push to the main branch in branch protection rules." >&2
             exit 1
           fi
 
