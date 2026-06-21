@@ -20,6 +20,14 @@ concurrency:
   group: daily-blog-scan-main
   cancel-in-progress: false
 
+env:
+  TRACKED_UPDATE_PATHS: >-
+    cache/blogs
+    cache/diff
+    content/updates
+    src/content/updates
+    cache/forced-run.json
+
 jobs:
   scan_commit_and_build:
     name: Scan, commit, and build
@@ -42,6 +50,7 @@ jobs:
         with:
           node-version: "24"
           cache: npm
+          cache-dependency-path: package-lock.json
 
       - name: Install dependencies
         run: npm ci --loglevel=error
@@ -81,11 +90,14 @@ jobs:
             "${{ github.run_id }}" \
             > cache/forced-run.json
 
+      - name: Run tests
+        run: npm test
+
       - name: Detect generated changes
         id: changes
         shell: bash
         run: |
-          if [ -z "$(git status --porcelain -- cache/blogs cache/diff content/updates src/content/updates cache/forced-run.json)" ]; then
+          if [ -z "$(git status --porcelain -- ${TRACKED_UPDATE_PATHS})" ]; then
             echo "changes_detected=false" >> "$GITHUB_OUTPUT"
           else
             echo "changes_detected=true" >> "$GITHUB_OUTPUT"
@@ -101,10 +113,6 @@ jobs:
           echo "- **Reason:** The generated files and cache snapshots are identical to the current \`main\` branch." >> "$GITHUB_STEP_SUMMARY"
           echo "- **Tip:** Re-run with \`force: true\` to commit and deploy regardless of content changes." >> "$GITHUB_STEP_SUMMARY"
           echo "No changes detected for ${{ steps.dates.outputs.target_date }} — main update and Pages deployment skipped."
-
-      - name: Run tests
-        if: ${{ steps.changes.outputs.changes_detected == 'true' }}
-        run: npm test
 
       - name: Generate static site
         if: ${{ steps.changes.outputs.changes_detected == 'true' }}
@@ -124,10 +132,7 @@ jobs:
         if: ${{ steps.changes.outputs.changes_detected == 'true' }}
         shell: bash
         run: |
-          git add cache/blogs cache/diff content/updates src/content/updates
-          if [ -f cache/forced-run.json ]; then
-            git add cache/forced-run.json
-          fi
+          git add ${TRACKED_UPDATE_PATHS}
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "chore: generate daily blog updates (${{ steps.dates.outputs.target_date }})"
