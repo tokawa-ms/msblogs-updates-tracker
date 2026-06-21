@@ -2,11 +2,12 @@ name: Daily Blog Scan
 
 on:
   schedule:
-    - cron: "0 0 * * *"
+    # 23:00 UTC every day, which is 08:00 JST (UTC+9) on the next day.
+    - cron: "0 23 * * *"
   workflow_dispatch:
     inputs:
       target_date:
-        description: "Scan date (YYYY-MM-DD, UTC). Empty uses today."
+        description: "Scan date (YYYY-MM-DD, JST). Empty uses today in Japan."
         required: false
         type: string
       force:
@@ -47,14 +48,16 @@ jobs:
           if [ -n "${{ github.event.inputs.target_date }}" ]; then
             TARGET_DATE="${{ github.event.inputs.target_date }}"
           else
-            TARGET_DATE="$(date -u +%F)"
+            # Blog updates are processed by Japanese local date.
+            # The scheduled run starts at 23:00 UTC, when the intended scan date is already the next day in JST.
+            TARGET_DATE="$(TZ=Asia/Tokyo date +%F)"
           fi
-          YESTERDAY_DATE="$(date -u -d "${TARGET_DATE} -1 day" +%F)"
+          YESTERDAY_DATE="$(TZ=Asia/Tokyo date -d "${TARGET_DATE} -1 day" +%F)"
           echo "target_date=${TARGET_DATE}" >> "$GITHUB_OUTPUT"
           echo "yesterday_date=${YESTERDAY_DATE}" >> "$GITHUB_OUTPUT"
 
       - name: Fetch latest blogs
-        run: node scripts/fetch-blogs.js
+        run: node scripts/fetch-blogs.js "${{ steps.dates.outputs.target_date }}"
 
       - name: Analyze diff
         run: node scripts/diff-analyzer.js "${{ steps.dates.outputs.target_date }}" "${{ steps.dates.outputs.yesterday_date }}"
@@ -90,8 +93,10 @@ jobs:
           commit-message: "chore: generate daily blog updates (${{ steps.dates.outputs.target_date }})"
           labels: automation
           add-paths: |
-            content/updates
+            cache/blogs
             cache/diff
+            content/updates
+            src/content/updates
             cache/forced-run.json
 
       - name: Report result
@@ -108,7 +113,7 @@ jobs:
             echo "### ℹ️ No changes detected — PR was not created" >> "$GITHUB_STEP_SUMMARY"
             echo "" >> "$GITHUB_STEP_SUMMARY"
             echo "- **Date:** \`${{ steps.dates.outputs.target_date }}\`" >> "$GITHUB_STEP_SUMMARY"
-            echo "- **Reason:** The generated files in \`content/updates\` and \`cache/diff\` are identical to the current \`main\` branch." >> "$GITHUB_STEP_SUMMARY"
+            echo "- **Reason:** The generated files and cache snapshots are identical to the current \`main\` branch." >> "$GITHUB_STEP_SUMMARY"
             echo "- **Tip:** Re-run with \`force: true\` to create a PR regardless of changes." >> "$GITHUB_STEP_SUMMARY"
             echo "No changes detected for ${{ steps.dates.outputs.target_date }} — PR skipped."
           fi

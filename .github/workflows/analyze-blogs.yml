@@ -4,13 +4,13 @@ on:
   workflow_call:
     inputs:
       target_date:
-        description: "Analysis date (YYYY-MM-DD, UTC)"
+        description: "Analysis date (YYYY-MM-DD, JST)"
         required: true
         type: string
   workflow_dispatch:
     inputs:
       target_date:
-        description: "Analysis date (YYYY-MM-DD, UTC). Empty uses today."
+        description: "Analysis date (YYYY-MM-DD, JST). Empty uses today in Japan."
         required: false
         type: string
 
@@ -42,14 +42,14 @@ jobs:
           if [ -n "${DATE_INPUT}" ]; then
             TARGET_DATE="${DATE_INPUT}"
           else
-            TARGET_DATE="$(date -u +%F)"
+            TARGET_DATE="$(TZ=Asia/Tokyo date +%F)"
           fi
-          YESTERDAY_DATE="$(date -u -d "${TARGET_DATE} -1 day" +%F)"
+          YESTERDAY_DATE="$(TZ=Asia/Tokyo date -d "${TARGET_DATE} -1 day" +%F)"
           echo "target_date=${TARGET_DATE}" >> "$GITHUB_OUTPUT"
           echo "yesterday_date=${YESTERDAY_DATE}" >> "$GITHUB_OUTPUT"
 
       - name: Fetch latest blogs
-        run: node scripts/fetch-blogs.js
+        run: node scripts/fetch-blogs.js "${{ steps.dates.outputs.target_date }}"
 
       - name: Analyze diff
         run: node scripts/diff-analyzer.js "${{ steps.dates.outputs.target_date }}" "${{ steps.dates.outputs.yesterday_date }}"
