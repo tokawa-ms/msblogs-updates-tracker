@@ -2,7 +2,12 @@
 
 const { describe, it } = require('node:test');
 const assert = require('node:assert/strict');
-const { toDateString, getYesterdayDateString, parseToIsoString } = require('../../scripts/utils/date-utils');
+const {
+  toDateString,
+  isDateString,
+  getYesterdayDateString,
+  parseToIsoString,
+} = require('../../scripts/utils/date-utils');
 
 describe('toDateString', () => {
   it('固定日付を YYYY-MM-DD 形式で返す', () => {
@@ -35,6 +40,17 @@ describe('getYesterdayDateString', () => {
   it('引数なしで昨日の日付を返す（形式チェック）', () => {
     const result = getYesterdayDateString();
     assert.match(result, /^\d{4}-\d{2}-\d{2}$/);
+  });
+});
+
+describe('isDateString', () => {
+  it('実在する YYYY-MM-DD 形式だけ true を返す', () => {
+    assert.equal(isDateString('2026-06-20'), true);
+    assert.equal(isDateString('2026-6-20'), false);
+    assert.equal(isDateString('2026-06-20T00:00:00Z'), false);
+    assert.equal(isDateString('2026-13-20'), false);
+    assert.equal(isDateString('2026-02-30'), false);
+    assert.equal(isDateString(null), false);
   });
 });
 
