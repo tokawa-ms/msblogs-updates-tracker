@@ -104,7 +104,7 @@ npm run diff
 - [ ] `generate-daily-page.js` 実装
 - [ ] エンドツーエンドテスト
 
-**期待結果**: GitHub Actions で手動実行 → PR 作成完了
+**期待結果**: GitHub Actions で手動実行 → `main` への自動コミットと GitHub Pages 公開完了
 
 ---
 
@@ -241,7 +241,7 @@ IDE: VS Code + 拡張機能
 | RSS フィード取得 404 | URL が変わった   | `blog-sources.json` を更新          |
 | スクレイピング失敗   | HTML 構造変更    | CSS セレクター修正                  |
 | キャッシュ競合       | 同時実行         | workflow に `concurrency` 追加      |
-| PR 作成失敗          | トークン権限不足 | GitHub Settings で permissions 確認 |
+| 自動コミット失敗     | トークン権限不足 | GitHub Settings で permissions 確認 |
 | Astro build 失敗     | 依存関係崩れ     | `npm install` 再実行                |
 
 **詳細**: DETAILED_DESIGN.md > トラブルシューティング

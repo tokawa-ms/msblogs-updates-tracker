@@ -71,9 +71,9 @@ npm run build:static
 
 | ワークフロー | トリガー | 概要 |
 |------------|---------|------|
-| `daily-blog-scan.yml` | 毎日 23:00 UTC（日本時間 8:00）/ 手動 | ブログ取得→差分検出→ページ生成→PR 作成 |
+| `daily-blog-scan.yml` | 毎日 23:00 UTC（日本時間 8:00）/ 手動 | ブログ取得→差分検出→ページ生成→`main` へ自動コミット→GitHub Pages へ公開 |
 | `analyze-blogs.yml` | 手動 / `workflow_call` | ブログ取得・解析のみ |
-| `publish-updates.yml` | `main` ブランチ push / 手動 | Astro をビルドして `gh-pages` ブランチへ公開 |
+| `publish-updates.yml` | `main` ブランチ push / 手動 | Astro をビルドして GitHub Pages へ公開 |
 
 ## 🧪 テスト
 
@@ -94,7 +94,7 @@ npm test
 1. リポジトリの Settings → Pages → **Build and deployment** で **GitHub Actions** を選択
 2. Actions タブ → **Publish Updates to GitHub Pages** → **Run workflow** で、まず `build_only = true` を実行し Astro の HTML 出力だけを確認
 3. 問題なければ `build_only = false` で実行、または `main` ブランチに `content/updates/` / Astro 関連ファイルの変更を push すると自動デプロイ
-4. 日次運用は `daily-blog-scan.yml` が日本時間 8:00 に PR を作成し、その PR を `main` に取り込むと `publish-updates.yml` が続けて動くため、追加設定は不要
+4. 日次運用は `daily-blog-scan.yml` が日本時間 8:00 に更新を確認し、変更がある場合は `main` へ自動コミットして GitHub Pages へ公開するため、PR の手動マージは不要
 5. 公開 URL は `https://tokawa-ms.github.io/msblogs-updates-tracker/`
 
 ## 🛠️ 技術スタック
