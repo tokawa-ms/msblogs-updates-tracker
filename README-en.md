@@ -91,7 +91,7 @@ Test coverage:
 2. In Actions -> **Publish Updates to GitHub Pages** -> **Run workflow**, first run with `build_only = true` to confirm Astro HTML output safely
 3. If that passes, run with `build_only = false`, or push changes to `main` that affect `content/updates/` or Astro-related files for automatic deployment
 4. Daily operation needs no manual merge: `daily-blog-scan.yml` checks for updates at 08:00 JST, commits changes directly to `main`, and publishes to GitHub Pages when changes are detected
-5. For automatic commits from `daily-blog-scan.yml`, enable Read and write permissions in Actions **Workflow permissions** and adjust branch protection as needed so `github-actions[bot]` can push to `main`
+5. For automatic commits from `daily-blog-scan.yml`, enable Read and write permissions in Actions **Workflow permissions** and adjust branch protection as needed so `github-actions[bot]` can push to `main`.
 6. The published URL is `https://tokawa-ms.github.io/msblogs-updates-tracker/`
 
 ## 🛠️ Tech Stack
