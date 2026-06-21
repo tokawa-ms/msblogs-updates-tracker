@@ -17,7 +17,7 @@ on:
         default: false
 
 concurrency:
-  group: daily-blog-scan-${{ github.ref }}
+  group: daily-blog-scan-main
   cancel-in-progress: false
 
 jobs:
@@ -33,6 +33,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
+          ref: main
           fetch-depth: 0
 
       - name: Setup Node.js
@@ -40,13 +41,6 @@ jobs:
         with:
           node-version: "24"
           cache: npm
-
-      - name: Validate target branch
-        if: ${{ github.ref_name != 'main' }}
-        shell: bash
-        run: |
-          echo "Daily Blog Scan commits directly to main and must run from the main branch." >&2
-          exit 1
 
       - name: Install dependencies
         run: npm ci --loglevel=error
