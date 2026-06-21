@@ -21,12 +21,7 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  TRACKED_UPDATE_PATHS: >-
-    cache/blogs
-    cache/diff
-    content/updates
-    src/content/updates
-    cache/forced-run.json
+  TRACKED_UPDATE_PATHS: "cache/blogs cache/diff content/updates src/content/updates cache/forced-run.json"
 
 jobs:
   scan_commit_and_build:
@@ -34,14 +29,13 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      pages: write
     outputs:
       changes_detected: ${{ steps.changes.outputs.changes_detected }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          # Manual dispatch can be started from another branch, but daily publishing always updates main.
+          # Manual dispatch can be started from another branch, but daily publishing always updates the `main` branch.
           ref: main
           fetch-depth: 0
 
