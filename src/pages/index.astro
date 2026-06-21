@@ -68,7 +68,7 @@ const totalArticles = updates.reduce((count, entry) => count + entry.data.newCou
     <div class="grid three-column">
       {categoryCounts.map((category) => (
         <article class="card">
-          <p class="eyebrow">{category.count} articles</p>
+          <p class="eyebrow">{category.count} 件の記事</p>
           <h3>
             {category.count > 0 ? (
               <a href={withBase(`categories/${category.slug}/`)}>{category.name}</a>

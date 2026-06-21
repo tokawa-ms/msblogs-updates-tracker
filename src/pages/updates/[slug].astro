@@ -26,7 +26,7 @@ const groupedArticles = getGroupedArticles(entry);
 
 <BaseLayout title={`${entry.data.title} | MS Blogs Update Tracker`} description={entry.data.description}>
   <section class="page-header">
-    <p class="eyebrow">Daily update detail</p>
+    <p class="eyebrow">日次更新の詳細</p>
     <h1>{entry.data.title}</h1>
     <p>{entry.data.description}</p>
   </section>
@@ -57,7 +57,7 @@ const groupedArticles = getGroupedArticles(entry);
       <section class="section">
         <div class="section-heading">
           <h2>{group.sourceName}</h2>
-          <span>{group.articles.length} articles</span>
+          <span>{group.articles.length} 件の記事</span>
         </div>
         <div class="grid two-column">
           {group.articles.map((article) => (

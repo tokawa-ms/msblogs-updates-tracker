@@ -8,11 +8,11 @@ const categoryCounts = getCategoryCounts(updates);
 ---
 
 <BaseLayout
-  title="Categories | MS Blogs Update Tracker"
+  title="カテゴリ | MS Blogs Update Tracker"
   description="カテゴリ別に Microsoft ブログ更新を確認できます。"
 >
   <section class="page-header">
-    <p class="eyebrow">Categories</p>
+    <p class="eyebrow">カテゴリ</p>
     <h1>カテゴリ一覧</h1>
     <p>記事タイトルと概要から推定したカテゴリで横断的に追跡できます。</p>
   </section>
@@ -20,7 +20,7 @@ const categoryCounts = getCategoryCounts(updates);
   <div class="grid three-column">
     {categoryCounts.map((category) => (
       <article class="card">
-        <p class="eyebrow">{category.count} articles</p>
+        <p class="eyebrow">{category.count} 件の記事</p>
         <h2>
           {category.count > 0 ? <a href={withBase(`categories/${category.slug}/`)}>{category.name}</a> : category.name}
         </h2>
