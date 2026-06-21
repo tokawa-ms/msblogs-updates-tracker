@@ -33,6 +33,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
+          # Manual dispatch can be started from another branch, but daily publishing always updates main.
           ref: main
           fetch-depth: 0
 
@@ -80,16 +81,11 @@ jobs:
             "${{ github.run_id }}" \
             > cache/forced-run.json
 
-      - name: Stage generated changes
+      - name: Detect generated changes
         id: changes
         shell: bash
         run: |
-          git add cache/blogs cache/diff content/updates src/content/updates
-          if [ -f cache/forced-run.json ]; then
-            git add cache/forced-run.json
-          fi
-
-          if git diff --cached --quiet; then
+          if [ -z "$(git status --porcelain -- cache/blogs cache/diff content/updates src/content/updates cache/forced-run.json)" ]; then
             echo "changes_detected=false" >> "$GITHUB_OUTPUT"
           else
             echo "changes_detected=true" >> "$GITHUB_OUTPUT"
@@ -128,6 +124,10 @@ jobs:
         if: ${{ steps.changes.outputs.changes_detected == 'true' }}
         shell: bash
         run: |
+          git add cache/blogs cache/diff content/updates src/content/updates
+          if [ -f cache/forced-run.json ]; then
+            git add cache/forced-run.json
+          fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "chore: generate daily blog updates (${{ steps.dates.outputs.target_date }})"
