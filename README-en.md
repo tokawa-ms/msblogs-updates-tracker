@@ -67,7 +67,7 @@ npm run build:static
 
 | Workflow | Trigger | Description |
 |----------|---------|-------------|
-| `daily-blog-scan.yml` | Daily 23:00 UTC / Manual | Fetch -> diff -> generate -> auto-commit to `main` -> publish to GitHub Pages |
+| `daily-blog-scan.yml` | Daily 23:00 UTC (08:00 JST) / Manual | Fetch -> diff -> generate -> auto-commit to `main` -> publish to GitHub Pages |
 | `analyze-blogs.yml` | Manual / `workflow_call` | Fetch & analyze only |
 | `publish-updates.yml` | Push to `main` / Manual | Build Astro and publish to GitHub Pages |
 
