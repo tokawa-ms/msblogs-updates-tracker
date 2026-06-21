@@ -55,6 +55,9 @@ jobs:
       - name: Install dependencies
         run: npm ci --loglevel=error
 
+      - name: Run tests
+        run: npm test
+
       - name: Resolve dates
         id: dates
         shell: bash
@@ -90,14 +93,12 @@ jobs:
             "${{ github.run_id }}" \
             > cache/forced-run.json
 
-      - name: Run tests
-        run: npm test
-
       - name: Detect generated changes
         id: changes
         shell: bash
         run: |
-          if [ -z "$(git status --porcelain -- ${TRACKED_UPDATE_PATHS})" ]; then
+          read -r -a tracked_paths <<< "$TRACKED_UPDATE_PATHS"
+          if [ -z "$(git status --porcelain -- "${tracked_paths[@]}")" ]; then
             echo "changes_detected=false" >> "$GITHUB_OUTPUT"
           else
             echo "changes_detected=true" >> "$GITHUB_OUTPUT"
@@ -132,7 +133,8 @@ jobs:
         if: ${{ steps.changes.outputs.changes_detected == 'true' }}
         shell: bash
         run: |
-          git add ${TRACKED_UPDATE_PATHS}
+          read -r -a tracked_paths <<< "$TRACKED_UPDATE_PATHS"
+          git add "${tracked_paths[@]}"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "chore: generate daily blog updates (${{ steps.dates.outputs.target_date }})"
