@@ -11,22 +11,26 @@ on:
         required: false
         type: string
       force:
-        description: "Force PR creation even if no content changes are detected."
+        description: "Force deployment even if no content changes are detected."
         required: false
         type: boolean
         default: false
 
 permissions:
   contents: write
-  pull-requests: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: daily-blog-scan-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
-  scan_and_create_pr:
+  scan_commit_and_build:
+    name: Scan, commit, and build
     runs-on: ubuntu-latest
+    outputs:
+      changes_detected: ${{ steps.changes.outputs.changes_detected }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -37,6 +41,14 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "24"
+          cache: npm
+
+      - name: Validate target branch
+        if: ${{ github.ref_name != 'main' }}
+        shell: bash
+        run: |
+          echo "Daily Blog Scan commits directly to main and must run from the main branch." >&2
+          exit 1
 
       - name: Install dependencies
         run: npm ci --loglevel=error
@@ -76,44 +88,87 @@ jobs:
             "${{ github.run_id }}" \
             > cache/forced-run.json
 
-      - name: Create pull request
-        id: create_pr
-        uses: peter-evans/create-pull-request@v6
-        with:
-          branch: automation/daily-updates-${{ steps.dates.outputs.target_date }}
-          delete-branch: true
-          title: "chore: daily blog updates for ${{ steps.dates.outputs.target_date }}"
-          body: |
-            ## Daily blog updates
-
-            - Date: `${{ steps.dates.outputs.target_date }}`
-            - Compared with: `${{ steps.dates.outputs.yesterday_date }}`
-            - Triggered by: `${{ github.workflow }}`
-            - Forced: `${{ inputs.force }}`
-          commit-message: "chore: generate daily blog updates (${{ steps.dates.outputs.target_date }})"
-          labels: automation
-          add-paths: |
-            cache/blogs
-            cache/diff
-            content/updates
-            src/content/updates
-            cache/forced-run.json
-
-      - name: Report result
+      - name: Stage generated changes
+        id: changes
         shell: bash
         run: |
-          if [ "${{ steps.create_pr.outputs.pull-request-created }}" = "true" ]; then
-            echo "### ✅ Pull request created" >> "$GITHUB_STEP_SUMMARY"
-            echo "" >> "$GITHUB_STEP_SUMMARY"
-            echo "- **PR:** ${{ steps.create_pr.outputs.pull-request-url }}" >> "$GITHUB_STEP_SUMMARY"
-            echo "- **Branch:** \`automation/daily-updates-${{ steps.dates.outputs.target_date }}\`" >> "$GITHUB_STEP_SUMMARY"
-            echo "- **Forced:** \`${{ inputs.force }}\`" >> "$GITHUB_STEP_SUMMARY"
-            echo "PR created: ${{ steps.create_pr.outputs.pull-request-url }}"
-          else
-            echo "### ℹ️ No changes detected — PR was not created" >> "$GITHUB_STEP_SUMMARY"
-            echo "" >> "$GITHUB_STEP_SUMMARY"
-            echo "- **Date:** \`${{ steps.dates.outputs.target_date }}\`" >> "$GITHUB_STEP_SUMMARY"
-            echo "- **Reason:** The generated files and cache snapshots are identical to the current \`main\` branch." >> "$GITHUB_STEP_SUMMARY"
-            echo "- **Tip:** Re-run with \`force: true\` to create a PR regardless of changes." >> "$GITHUB_STEP_SUMMARY"
-            echo "No changes detected for ${{ steps.dates.outputs.target_date }} — PR skipped."
+          git add cache/blogs cache/diff content/updates src/content/updates
+          if [ -f cache/forced-run.json ]; then
+            git add cache/forced-run.json
           fi
+
+          if git diff --cached --quiet; then
+            echo "changes_detected=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changes_detected=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Report no changes
+        if: ${{ steps.changes.outputs.changes_detected == 'false' }}
+        shell: bash
+        run: |
+          echo "### ℹ️ No changes detected — main was not updated" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "- **Date:** \`${{ steps.dates.outputs.target_date }}\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "- **Reason:** The generated files and cache snapshots are identical to the current \`main\` branch." >> "$GITHUB_STEP_SUMMARY"
+          echo "- **Tip:** Re-run with \`force: true\` to commit and deploy regardless of content changes." >> "$GITHUB_STEP_SUMMARY"
+          echo "No changes detected for ${{ steps.dates.outputs.target_date }} — main update and Pages deployment skipped."
+
+      - name: Run tests
+        if: ${{ steps.changes.outputs.changes_detected == 'true' }}
+        run: npm test
+
+      - name: Generate static site
+        if: ${{ steps.changes.outputs.changes_detected == 'true' }}
+        run: npm run build
+
+      - name: Setup Pages
+        if: ${{ steps.changes.outputs.changes_detected == 'true' }}
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        if: ${{ steps.changes.outputs.changes_detected == 'true' }}
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+
+      - name: Commit and push changes
+        if: ${{ steps.changes.outputs.changes_detected == 'true' }}
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: generate daily blog updates (${{ steps.dates.outputs.target_date }})"
+          git push origin HEAD:main
+
+      - name: Report update result
+        if: ${{ steps.changes.outputs.changes_detected == 'true' }}
+        shell: bash
+        run: |
+          echo "### ✅ Daily updates committed and Pages artifact prepared" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "- **Date:** \`${{ steps.dates.outputs.target_date }}\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "- **Compared with:** \`${{ steps.dates.outputs.yesterday_date }}\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "- **Branch:** \`main\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "- **Forced:** \`${{ inputs.force }}\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "- **Deployment mode:** \`GitHub Actions\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "- **Artifact:** \`dist/\`" >> "$GITHUB_STEP_SUMMARY"
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: scan_commit_and_build
+    if: ${{ needs.scan_commit_and_build.outputs.changes_detected == 'true' }}
+    runs-on: ubuntu-latest
+    concurrency:
+      group: pages
+      cancel-in-progress: true
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      pages: write
+      id-token: write
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -67,9 +67,9 @@ npm run build:static
 
 | Workflow | Trigger | Description |
 |----------|---------|-------------|
-| `daily-blog-scan.yml` | Daily 0:00 UTC / Manual | Fetch -> diff -> generate -> create PR |
+| `daily-blog-scan.yml` | Daily 23:00 UTC / Manual | Fetch -> diff -> generate -> auto-commit to `main` -> publish to GitHub Pages |
 | `analyze-blogs.yml` | Manual / `workflow_call` | Fetch & analyze only |
-| `publish-updates.yml` | Push to `main` / Manual | Build Astro and publish the output to the `gh-pages` branch |
+| `publish-updates.yml` | Push to `main` / Manual | Build Astro and publish to GitHub Pages |
 
 ## 🧪 Testing
 
@@ -90,7 +90,7 @@ Test coverage:
 1. In Settings -> Pages -> **Build and deployment**, choose **GitHub Actions**
 2. In Actions -> **Publish Updates to GitHub Pages** -> **Run workflow**, first run with `build_only = true` to confirm Astro HTML output safely
 3. If that passes, run with `build_only = false`, or push changes to `main` that affect `content/updates/` or Astro-related files for automatic deployment
-4. Daily operation needs no extra scheduler: `daily-blog-scan.yml` creates the daily PR, and merging it into `main` triggers `publish-updates.yml`
+4. Daily operation needs no manual merge: `daily-blog-scan.yml` checks for updates at 08:00 JST, commits changes directly to `main`, and publishes to GitHub Pages when changes are detected
 5. The published URL is `https://tokawa-ms.github.io/msblogs-updates-tracker/`
 
 ## 🛠️ Tech Stack
