@@ -95,7 +95,8 @@ npm test
 2. Actions タブ → **Publish Updates to GitHub Pages** → **Run workflow** で、まず `build_only = true` を実行し Astro の HTML 出力だけを確認
 3. 問題なければ `build_only = false` で実行、または `main` ブランチに `content/updates/` / Astro 関連ファイルの変更を push すると自動デプロイ
 4. 日次運用は `daily-blog-scan.yml` が日本時間 8:00 に更新を確認し、変更がある場合は `main` へ自動コミットして GitHub Pages へ公開するため、PR の手動マージは不要
-5. 公開 URL は `https://tokawa-ms.github.io/msblogs-updates-tracker/`
+5. `daily-blog-scan.yml` の自動コミットには、Actions の **Workflow permissions** で Read and write permissions を有効にし、必要に応じて `github-actions[bot]` が `main` へ push できるようにブランチ保護を調整
+6. 公開 URL は `https://tokawa-ms.github.io/msblogs-updates-tracker/`
 
 ## 🛠️ 技術スタック
 
