@@ -24,43 +24,91 @@ export interface ArticleWithMeta extends UpdateArticle {
 
 const CATEGORY_DESCRIPTIONS: Record<string, string> = {
   AI: 'Copilot、モデル、エージェント、生成 AI の更新を集約します。',
-  'Developer Tools': 'GitHub、VS Code、開発体験、CI/CD に関するアップデートです。',
-  Cloud: 'Azure を中心としたクラウド基盤、運用、インフラ関連の更新です。',
-  Security: '脆弱性対応、認証、ゼロトラスト、コンプライアンスに関する変更です。',
-  Productivity: 'Teams、Outlook、Microsoft 365 など業務生産性に関する更新です。',
-  'Data & Analytics': 'Fabric、Power BI、データ基盤、分析ワークロードの更新です。',
+  開発ツール: 'GitHub、VS Code、開発体験、CI/CD に関するアップデートです。',
+  クラウド: 'Azure を中心としたクラウド基盤、運用、インフラ関連の更新です。',
+  セキュリティ: '脆弱性対応、認証、ゼロトラスト、コンプライアンスに関する変更です。',
+  生産性: 'Teams、Outlook、Microsoft 365 など業務生産性に関する更新です。',
+  データ分析: 'Fabric、Power BI、データ基盤、分析ワークロードの更新です。',
+};
+
+const CATEGORY_SLUGS: Record<string, string> = {
+  AI: 'ai',
+  開発ツール: 'developer-tools',
+  クラウド: 'cloud',
+  セキュリティ: 'security',
+  生産性: 'productivity',
+  データ分析: 'data-and-analytics',
 };
 
 const SOURCE_CATEGORY_MAP: Record<string, string[]> = {
-  'github-blog': ['Developer Tools'],
-  'vscode-blog': ['Developer Tools'],
-  'azure-blog': ['Cloud'],
-  'm365-blog': ['Productivity'],
-  'fabric-blog': ['Data & Analytics'],
+  'github-blog': ['開発ツール'],
+  'vscode-blog': ['開発ツール'],
+  'azure-blog': ['クラウド'],
+  'm365-blog': ['生産性'],
+  'fabric-blog': ['データ分析'],
   'microsoft-ai-blog': ['AI'],
 };
 
 const CATEGORY_KEYWORDS: Record<string, string[]> = {
   AI: ['ai', 'copilot', 'agent', 'model', 'llm', 'machine learning', 'openai'],
-  'Developer Tools': ['github', 'vscode', 'visual studio', 'codespaces', 'actions', 'extension', 'devops'],
-  Cloud: ['azure', 'kubernetes', 'container', 'cloud', 'infrastructure', 'serverless'],
-  Security: ['security', 'identity', 'compliance', 'vulnerability', 'cve', 'defender', 'zero trust'],
-  Productivity: ['microsoft 365', 'teams', 'outlook', 'office', 'productivity', 'copilot for microsoft 365'],
-  'Data & Analytics': ['fabric', 'power bi', 'analytics', 'lakehouse', 'data', 'warehouse', 'semantic model'],
+  開発ツール: ['github', 'vscode', 'visual studio', 'codespaces', 'actions', 'extension', 'devops'],
+  クラウド: ['azure', 'kubernetes', 'container', 'cloud', 'infrastructure', 'serverless'],
+  セキュリティ: [
+    'security',
+    'identity',
+    'compliance',
+    'vulnerability',
+    'cve',
+    'defender',
+    'zero trust',
+  ],
+  生産性: [
+    'microsoft 365',
+    'teams',
+    'outlook',
+    'office',
+    'productivity',
+    'copilot for microsoft 365',
+  ],
+  データ分析: [
+    'fabric',
+    'power bi',
+    'analytics',
+    'lakehouse',
+    'data',
+    'warehouse',
+    'semantic model',
+  ],
 };
 
 const IMPORTANCE_RULES: Array<{ keywords: string[]; importance: ImportanceDefinition }> = [
   {
     keywords: ['critical vulnerability', 'cve', 'security incident', 'service outage', 'breach'],
-    importance: { label: 'Critical', badge: '🔴 Critical' },
+    importance: { label: 'Critical', badge: '🔴 最重要' },
   },
   {
-    keywords: ['breaking change', 'deprecated', 'deprecation', 'end of support', 'security', 'retire', 'retirement'],
-    importance: { label: 'High', badge: '🟠 High' },
+    keywords: [
+      'breaking change',
+      'deprecated',
+      'deprecation',
+      'end of support',
+      'security',
+      'retire',
+      'retirement',
+    ],
+    importance: { label: 'High', badge: '🟠 高' },
   },
   {
-    keywords: ['announc', 'launch', 'release', 'general availability', 'preview', 'feature update', 'new feature'],
-    importance: { label: 'Medium', badge: '🟡 Medium' },
+    keywords: [
+      'announc',
+      'launch',
+      'release',
+      'general availability',
+      'preview',
+      'feature update',
+      'new feature',
+    ],
+    importance: { label: 'Medium', badge: '🟡 中' },
   },
 ];
 
@@ -71,6 +119,10 @@ export const CATEGORY_DEFINITIONS: CategoryDefinition[] = categoryNames.map((nam
 }));
 
 export function slugify(value: string) {
+  if (CATEGORY_SLUGS[value]) {
+    return CATEGORY_SLUGS[value];
+  }
+
   return value
     .toLowerCase()
     .replace(/&/gu, 'and')
@@ -81,7 +133,7 @@ export function slugify(value: string) {
 export function formatDate(value: Date | string) {
   const date = value instanceof Date ? value : new Date(value);
   if (Number.isNaN(date.getTime())) {
-    return 'Unknown';
+    return '不明';
   }
   return new Intl.DateTimeFormat('ja-JP', { dateStyle: 'long' }).format(date);
 }
@@ -89,7 +141,7 @@ export function formatDate(value: Date | string) {
 export function formatDateTime(value: string) {
   const date = new Date(value);
   if (Number.isNaN(date.getTime())) {
-    return 'Unknown';
+    return '不明';
   }
 
   return new Intl.DateTimeFormat('ja-JP', {
@@ -123,7 +175,7 @@ export function detectCategories(article: UpdateArticle) {
     }
   }
 
-  return categories.size > 0 ? Array.from(categories) : ['Developer Tools'];
+  return categories.size > 0 ? Array.from(categories) : ['開発ツール'];
 }
 
 export function detectImportance(article: UpdateArticle) {
@@ -132,7 +184,7 @@ export function detectImportance(article: UpdateArticle) {
     rule.keywords.some((keyword) => haystack.includes(keyword)),
   );
 
-  return matched?.importance || { label: 'Low', badge: '🟢 Low' };
+  return matched?.importance || { label: 'Low', badge: '🟢 低' };
 }
 
 export function withArticleMeta(entry: UpdateEntry, article: UpdateArticle): ArticleWithMeta {
