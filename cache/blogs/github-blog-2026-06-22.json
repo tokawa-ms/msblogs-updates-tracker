@@ -1,0 +1,102 @@
+[
+  {
+    "id": "3c538b4fb66edae9",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "How we built an internal data analytics agent",
+    "url": "https://github.blog/ai-and-ml/github-copilot/how-we-built-an-internal-data-analytics-agent/",
+    "published_at": "2026-06-19T16:00:00.000Z",
+    "summary": "Qubot, our internal Copilot-powered analytics agent, allows any GitHub employee to ask questions about our data in plain language. Here's what we learned as we built it.\nThe post How we built an internal data analytics agent appeared first on The GitHub Blog.",
+    "fetched_at": "2026-06-22T00:18:02.343Z"
+  },
+  {
+    "id": "cfc389705fb4ffe7",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "How pull request limits are cutting down the noise",
+    "url": "https://github.blog/open-source/maintainers/how-pull-request-limits-are-cutting-down-the-noise/",
+    "published_at": "2026-06-18T16:00:00.000Z",
+    "summary": "Learn how pull request limits can help manage contribution volume in your repositories, and see what’s next on the roadmap.\nThe post How pull request limits are cutting down the noise appeared first on The GitHub Blog.",
+    "fetched_at": "2026-06-22T00:18:02.343Z"
+  },
+  {
+    "id": "c657b6576b9758fc",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "Getting more from each token: How Copilot improves context handling and model routing",
+    "url": "https://github.blog/ai-and-ml/github-copilot/getting-more-from-each-token-how-copilot-improves-context-handling-and-model-routing/",
+    "published_at": "2026-06-17T19:41:46.000Z",
+    "summary": "How GitHub Copilot is making more of each session go toward useful work, so your credits go further.\nThe post Getting more from each token: How Copilot improves context handling and model routing appeared first on The GitHub Blog.",
+    "fetched_at": "2026-06-22T00:18:02.343Z"
+  },
+  {
+    "id": "2f0101a4921237ff",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "What are git worktrees, and why should I use them?",
+    "url": "https://github.blog/ai-and-ml/github-copilot/what-are-git-worktrees-and-why-should-i-use-them/",
+    "published_at": "2026-06-16T20:58:54.000Z",
+    "summary": "Git worktrees have been around since 2015, but it wasn't until recently they became popular. Learn what they are, how to use them, and why you might.\nThe post What are git worktrees, and why should I use them? appeared first on The GitHub Blog.",
+    "fetched_at": "2026-06-22T00:18:02.343Z"
+  },
+  {
+    "id": "0ba3272de0f7841b",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "GitHub Copilot CLI for Beginners: Overview of common slash commands",
+    "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-overview-of-common-slash-commands/",
+    "published_at": "2026-06-15T20:15:31.000Z",
+    "summary": "GitHub Copilot CLI for Beginners: Learn how to use slash commands to control your terminal AI agent.\nThe post GitHub Copilot CLI for Beginners: Overview of common slash commands appeared first on The GitHub Blog.",
+    "fetched_at": "2026-06-22T00:18:02.343Z"
+  },
+  {
+    "id": "96fb7a7ce20e279d",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "Accelerating researchers and developers building multilingual AI with a new open dataset",
+    "url": "https://github.blog/ai-and-ml/llms/accelerating-researchers-and-developers-building-multilingual-ai-with-a-new-open-dataset/",
+    "published_at": "2026-06-15T19:17:30.000Z",
+    "summary": "A new repository-level dataset, published on GitHub under CC0-1.0, helps researchers and developers discover multilingual developer content across READMEs, issues, and pull requests.\nThe post Accelerating researchers and developers building multilingual AI with a new open dataset appeared first on The GitHub Blog.",
+    "fetched_at": "2026-06-22T00:18:02.343Z"
+  },
+  {
+    "id": "a4e98f8026414be2",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "How we made GitHub Copilot CLI more selective about delegation",
+    "url": "https://github.blog/ai-and-ml/how-we-made-github-copilot-cli-more-selective-about-delegation/",
+    "published_at": "2026-06-12T22:26:23.000Z",
+    "summary": "Better orchestration, fewer handoffs, faster progress, without a single new knob.\nThe post How we made GitHub Copilot CLI more selective about delegation appeared first on The GitHub Blog.",
+    "fetched_at": "2026-06-22T00:18:02.343Z"
+  },
+  {
+    "id": "cc6860205a960411",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "GitHub availability report: May 2026",
+    "url": "https://github.blog/news-insights/company-news/github-availability-report-may-2026/",
+    "published_at": "2026-06-11T21:30:15.000Z",
+    "summary": "In May, we experienced nine incidents that resulted in degraded performance across GitHub services.\nThe post GitHub availability report: May 2026 appeared first on The GitHub Blog.",
+    "fetched_at": "2026-06-22T00:18:02.343Z"
+  },
+  {
+    "id": "5d3a5202c9c67ca4",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "Making secret scanning more trustworthy: Reducing false positives at scale",
+    "url": "https://github.blog/security/making-secret-scanning-more-trustworthy-reducing-false-positives-at-scale/",
+    "published_at": "2026-06-11T16:00:00.000Z",
+    "summary": "Alerts are more trustworthy and actionable when noise is reduced. See how we improved the verification step with context-aware LLM reasoning.\nThe post Making secret scanning more trustworthy: Reducing false positives at scale appeared first on The GitHub Blog.",
+    "fetched_at": "2026-06-22T00:18:02.343Z"
+  },
+  {
+    "id": "b71b55ee3a5cc253",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "Give GitHub Copilot CLI real code intelligence with language servers",
+    "url": "https://github.blog/ai-and-ml/github-copilot/give-github-copilot-cli-real-code-intelligence-with-language-servers/",
+    "published_at": "2026-06-10T16:00:00.000Z",
+    "summary": "Install and configure LSP servers for GitHub Copilot CLI, replacing brute-force grep/decompile with real code intelligence. \nThe post Give GitHub Copilot CLI real code intelligence with language servers appeared first on The GitHub Blog.",
+    "fetched_at": "2026-06-22T00:18:02.343Z"
+  }
+]
