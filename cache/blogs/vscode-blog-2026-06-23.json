@@ -1,0 +1,122 @@
+[
+  {
+    "id": "0badf82f3d5386bc",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "What 50,000 Runs of a 5-Line Eval Taught Us",
+    "url": "https://code.visualstudio.com/blogs/2026/06/19/what-50000-runs-taught-us",
+    "published_at": "2026-06-19T00:00:00.000Z",
+    "summary": "How AI coding models calibrate effort, token cost, and tool use on even the simplest task, and what that means for model selection and cost.\nRead the full article",
+    "fetched_at": "2026-06-23T00:14:09.886Z"
+  },
+  {
+    "id": "2dd4ff8e6412d009",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "Use your own language model key in VS Code",
+    "url": "https://code.visualstudio.com/blogs/2026/06/18/byok-vscode",
+    "published_at": "2026-06-18T00:00:00.000Z",
+    "summary": "Learn how to use bring your own key (BYOK) in VS Code to add models from providers like Azure, Anthropic, Gemini, OpenAI, Huggingface, OpenRouter, or use a local model with Ollama, Foundry Local, and more.\nRead the full article",
+    "fetched_at": "2026-06-23T00:14:09.886Z"
+  },
+  {
+    "id": "092029380cc76d99",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "Improving token efficiency for GitHub Copilot in VS Code",
+    "url": "https://code.visualstudio.com/blogs/2026/06/17/improving-token-efficiency-in-github-copilot",
+    "published_at": "2026-06-17T00:00:00.000Z",
+    "summary": "Learn how we're improving token efficiency for GitHub Copilot to reduce costs and latency for VS Code users.\nRead the full article",
+    "fetched_at": "2026-06-23T00:14:09.886Z"
+  },
+  {
+    "id": "e4865dee295d5546",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "The Coding Harness Behind GitHub Copilot in VS Code",
+    "url": "https://code.visualstudio.com/blogs/2026/05/15/agent-harnesses-github-copilot-vscode",
+    "published_at": "2026-05-15T00:00:00.000Z",
+    "summary": "Learn why the coding harness around GitHub Copilot in VS Code matters as models, tools, agents, and providers evolve.\nRead the full article",
+    "fetched_at": "2026-06-23T00:14:09.886Z"
+  },
+  {
+    "id": "0e850ae5c0cccb15",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "How VS Code Builds with AI",
+    "url": "https://code.visualstudio.com/blogs/2026/03/13/how-VS-Code-Builds-with-AI",
+    "published_at": "2026-03-13T00:00:00.000Z",
+    "summary": "Learn how VS Code uses AI across its own development workflow with GitHub Copilot agent mode, automated testing, and AI-powered code review.\nRead the full article",
+    "fetched_at": "2026-06-23T00:14:09.886Z"
+  },
+  {
+    "id": "d30d1b0fe3636ede",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "Making agents practical for real-world development",
+    "url": "https://code.visualstudio.com/blogs/2026/03/05/making-agents-practical-for-real-world-development",
+    "published_at": "2026-03-05T00:00:00.000Z",
+    "summary": "Explore agent orchestration, extensibility, and continuity in VS Code 1.110: lifecycle hooks, agent skills, session memory, and integrated browser tools.\nRead the full article",
+    "fetched_at": "2026-06-23T00:14:09.886Z"
+  },
+  {
+    "id": "94971b434ca4c8a9",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "Building Long-Distance Next Edit Suggestions",
+    "url": "https://code.visualstudio.com/blogs/2026/02/26/long-distance-nes",
+    "published_at": "2026-02-26T00:00:00.000Z",
+    "summary": "Learn how we extended next edit suggestions to work across your entire file, reducing friction and improving productivity in GitHub Copilot.\nRead the full article",
+    "fetched_at": "2026-06-23T00:14:09.886Z"
+  },
+  {
+    "id": "7984e37741c8865e",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "Your Home for Multi-Agent Development",
+    "url": "https://code.visualstudio.com/blogs/2026/02/05/multi-agent-development",
+    "published_at": "2026-02-05T00:00:00.000Z",
+    "summary": "VS Code has become the unified interface for all your coding agents. Manage local, background, and cloud agents in one place, use Claude and Codex agents alongside Copilot, and benefit from open standards like MCP and Agent Skills.\nRead the full article",
+    "fetched_at": "2026-06-23T00:14:09.886Z"
+  },
+  {
+    "id": "45ffe1ce89885428",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "Giving Agents a Visual Voice: MCP Apps Support in VS Code",
+    "url": "https://code.visualstudio.com/blogs/2026/01/26/mcp-apps-support",
+    "published_at": "2026-01-26T00:00:00.000Z",
+    "summary": "VS Code now supports MCP Apps, enabling AI agents to display interactive UIs for richer developer workflows.\nRead the full article",
+    "fetched_at": "2026-06-23T00:14:09.886Z"
+  },
+  {
+    "id": "b7ee04c92c6213bb",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "Building docfind: Fast Client-Side Search with Rust and WebAssembly",
+    "url": "https://code.visualstudio.com/blogs/2026/01/15/docfind",
+    "published_at": "2026-01-15T00:00:00.000Z",
+    "summary": "How we built docfind, a high-performance client-side search engine using Rust and WebAssembly, and how GitHub Copilot accelerated development.\nRead the full article",
+    "fetched_at": "2026-06-23T00:14:09.886Z"
+  },
+  {
+    "id": "77eb2a33c46983c3",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "Introducing the VS Code Insiders Podcast",
+    "url": "https://code.visualstudio.com/blogs/2025/12/03/introducing-vs-code-insiders-podcast",
+    "published_at": "2025-12-03T00:00:00.000Z",
+    "summary": "The VS Code Insiders Podcast is your insider's guide to the features, decisions, and people shaping the future of Visual Studio Code.\nRead the full article",
+    "fetched_at": "2026-06-23T00:14:09.886Z"
+  },
+  {
+    "id": "57011fa557caf1c6",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "Introducing the Visual Studio Code Private Marketplace: Your Team's Secure, Curated Extension Hub 🎉",
+    "url": "https://code.visualstudio.com/blogs/2025/11/18/PrivateMarketplace",
+    "published_at": "2025-11-18T00:00:00.000Z",
+    "summary": "Private Marketplace for VS Code extensions now generally available.\nRead the full article",
+    "fetched_at": "2026-06-23T00:14:09.886Z"
+  }
+]

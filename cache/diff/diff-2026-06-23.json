@@ -1,0 +1,112 @@
+{
+  "date": "2026-06-23",
+  "compared_with": "2026-06-22",
+  "source_count": 6,
+  "new_count": 2,
+  "removed_count": 2,
+  "new_articles": [
+    {
+      "id": "000d25b5f79df03b",
+      "source_id": "fabric-blog",
+      "source_name": "Microsoft Fabric Blog",
+      "title": "Protect once, enforce everywhere: Protection policies for Power BI (Generally Available)",
+      "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Protect-once-enforce-everywhere-Protection-policies-for-Power-BI/ba-p/5223932",
+      "published_at": "2026-06-22T17:42:32.000Z",
+      "summary": "How to use sensitivity labels and Protection Policies to secure your Power BI estate — and why it matters more than ever in the age of AI.",
+      "fetched_at": "2026-06-23T00:14:10.453Z"
+    },
+    {
+      "id": "9af07bc56ca77892",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "From pledge to practice: Building a more inclusive open source ecosystem",
+      "url": "https://github.blog/open-source/from-pledge-to-practice-building-a-more-inclusive-open-source-ecosystem/",
+      "published_at": "2026-06-22T17:20:31.000Z",
+      "summary": "Learn about the progress we’ve made toward our accessibility goals and how you can help make open source more inclusive. \nThe post From pledge to practice: Building a more inclusive open source ecosystem appeared first on The GitHub Blog.",
+      "fetched_at": "2026-06-23T00:14:09.852Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "fabric-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "000d25b5f79df03b",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Protect once, enforce everywhere: Protection policies for Power BI (Generally Available)",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Protect-once-enforce-everywhere-Protection-policies-for-Power-BI/ba-p/5223932",
+          "published_at": "2026-06-22T17:42:32.000Z",
+          "summary": "How to use sensitivity labels and Protection Policies to secure your Power BI estate — and why it matters more than ever in the age of AI.",
+          "fetched_at": "2026-06-23T00:14:10.453Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "77332677f32a956a",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Dataflows: Thank you for eight years of Gen1—and why Gen2 is the future",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Dataflows-Thank-you-for-eight-years-of-Gen1-and-why-Gen2-is-the/ba-p/5173910",
+          "published_at": "2026-04-02T16:00:00.000Z",
+          "summary": "Updated on 20 April 2026: Thanks so much for all the engagement on this topic since the original publishing of this blog post on 2 April 2026. We’ve seen several recurring questions, and we’d like to clarify our position on a few key points. \r\n\r\n\r\nDataflow Gen1 remains supported, but it is in a legacy state and won’t receive future innovation. We understand many customers have built important, business‑critical solutions on Gen1, and those existing workloads can continue to run while future investments are planned around Dataflow Gen2. \r\n\r\n\r\n\r\nPrimary call to action for Premium customers: For Premium customers who already have access to Fabric, Dataflow Gen2 is the recommended path to take advantage of the latest improvements across functionality, productivity, performance, pricing, scale, reliability, and more. Many teams find it helpful to start by evaluating Gen2 for new or evolving workloads where these benefits can be realized quickly. \r\n\r\n\r\n\r\nGuidance for Pro and Premium Per User (PPU) customers: Many customers rely on Dataflow Gen1 in Pro/PPU today, and it can continue to be the right choice depending on the scenario. If Gen1 best fits your current use case, it remains supported and existing workloads can continue to run as-is. As we introduce new Dataflow Gen2 paths for Pro/PPU scenarios, we’ll share clear guidance and recommended steps to help with a smooth transition. \r\n\r\n\r\n\r\nGCC support for Premium customers: For customers using Dataflows Gen1 in GCC environments on Premium, Dataflow Gen2 support in GCC will be available before any future transition milestones, ensuring a supported upgrade path. \r\n\r\n\r\nMore granular Fabric controls: Customers have asked for finer‑grained enablement than today’s all‑or‑nothing Fabric switch. Work is underway to provide more granular administrative controls, including the ability to enable only Dataflow Gen2, so capabilities can be rolled out incrementally with the right governance. \r\n\r\nOriginal post (2 April 2026):\r\n\r\nFor more than eight years, customers have relied on Power BI Dataflows (Gen1) as a core part of their analytics solutions. We’re grateful for the trust you placed in the Power Query experience to build reusable, low-code data preparation pipelines that power reports, semantic models, and downstream analytics.\r\n\r\nNow, we’re sharing an update on the future of Dataflows.\r\n\r\nDataflows Gen2 builds on everything you know from Gen1—preserving the familiar Power Query authoring experience—while delivering major improvements in scale, flexibility, cost efficiency, and manageability. Going forward, all new Dataflow innovation will land only in Dataflows Gen2.\r\n\r\nThe future of Dataflows Gen1\r\n\r\nPower BI Dataflows Gen1 has reached the end of active innovation and is moving into a Legacy state:\r\n\r\n\r\nExisting Gen1 dataflows will continue to work for the foreseeable future. However, specific retirement dates for Gen1 are being finalized, and we’ll share details as plans progress. For customers running Gen1 at Premium capacity, we will provide at least 12 months’ notice before Dataflow Gen1 is retired. (If you’re using Gen1 on Pro or Premium-Peruser, we still strongly recommend planning a move to Dataflows Gen2 to take advantage of the latest investments.)\r\n\r\nIn the meantime, Gen1 artifacts will remain available and will be clearly marked as Legacy in product experiences, including the New Artifact menu.\r\n\r\nNo new features are planned for Dataflows Gen1. Support will be limited to a narrow set of high impact issues, where changes can be delivered safely within the existing architecture. Many of the remaining Gen1 limitations would require significant architecture changes and are best addressed by moving to Dataflows Gen2, which was designed to solve these scenarios more comprehensively.\r\n\r\n\r\nThe previous statements apply to all Dataflows Gen1—including usage on Pro, PPU, and Premium licenses.\r\n\r\nWhat’s new in Dataflows Gen2\r\n\r\nDataflows Gen2 retains the familiar Power Query experience while introducing substantial platform-level improvements to scale, performance, governance, and cost efficiency. The following updates provide additional details on each benefit area to help customers understand the full scope of Gen2 enhancements.\r\n\r\nMore flexible destinations\r\n\r\nDataflows Gen2 supports a significantly broader range of output destinations, enabling alignment with diverse data architectures across business, departmental, and enterprise scenarios.\r\n\r\n\r\nSharePoint and OneDrive are ideal for business users who need refreshed files (CSV, Excel) for downstream workflows, Office automation, or integrations with Power Automate and Teams.\r\n\r\nAzure Data Lake Storage is a great fit for customers building scalable ingestion pipelines for data science, machine learning, or lakehouse scenarios.\r\n\r\nAzure SQL Database / SQL MI enables operational reporting, standardized relational storage, and hybrid analytics scenarios.\r\n\r\nMicrosoft Fabric Lakehouse / Warehouse / SQL analytics endpoints are the most seamless destination option for customers aligning with the Fabric vision. Gen2 integrates deeply with Fabric runtimes, unlocking better performance, more consistent semantics, and governance alignment.\r\n\r\nSnowflake and other cloud databases support multi‑cloud architectures and reduces friction for enterprise customers already standardized on multiple warehouse technologies.\r\n\r\n\r\nThis broader range of destinations allows teams to use dataflows as a general-purpose low-code data ingestion and transformation layer, enabling many more scenarios never supported before with Dataflow Gen1.\r\n\r\nImproved performance and scale\r\n\r\nDataflows Gen2 is built on the Fabric runtime and a modernized execution engine that delivers a step‑change in performance, reliability, and scalability.\r\n\r\n\r\nModern query evaluation leverages Fabric's elastic compute layer to automatically manage scaling behavior, minimizing the need for manual optimization or workload tuning.\r\n\r\nFast Copy technology supports high-throughput ingestion into Fabric destinations, enabling sustained data movement measured in gigabytes per minute.\r\n\r\nParallelized execution enables multiple partitions and transformation steps to be processed concurrently, significantly reducing refresh durations compared to Gen1.\r\n\r\nEnhanced support for large datasets includes improvements in memory handling, high-cardinality data processing, and unbounded ingestion patterns.\r\n\r\nPredictable refresh behavior ensures more consistent performance under varying workload conditions.\r\n\r\n\r\nTogether, these improvements establish a more durable and high-performance engine for data preparation, especially in enterprise environments that rely on large or frequently refreshed dataflows.\r\n\r\nBuilt-in AI assistance\r\n\r\nDataflows Gen2 introduces integrated AI capabilities designed to accelerate development, improve quality, and reduce the learning curve for users working with complex transformations.\r\n\r\n\r\nCopilot-assisted authoring converts natural-language instructions into Power Query logic, improving productivity and lowering the barrier to entry for users with limited M expertise.\r\n\r\nCode explanation capabilities translate complex or legacy M scripts into easy-to-understand natural language descriptions, improving maintainability and simplifying onboarding.\r\n\r\nAutomated performance and foldability recommendations help users align transformations to foldable patterns, resulting in faster load times and lower compute consumption.\r\n\r\nAI-powered data quality insights assist with identifying semantic types, outliers, and join keys and detecting common data issues early in the pipeline.\r\n\r\n\r\nThese capabilities provide consistent guidance across the authoring lifecycle and support organizations with diverse skill levels.\r\n\r\nRicher diagnostics\r\n\r\nGen2 introduces a more comprehensive set of diagnostics designed to improve traceability, troubleshooting, and operational reliability.\r\n\r\n\r\nDetailed refresh history now includes detailed timing information to clarify where time is spent during execution.\r\n\r\nExpanded logging and instrumentation provide visibility into foldability decisions, connector behaviors, authentication flows, and network operations.\r\n\r\nMore consistent refresh semantics across all destinations ensures uniform behavior regardless of the target storage system.\r\n\r\nGreater operational transparency supports root-cause analysis and reduces the time required to identify and resolve failures.\r\n\r\n\r\nThese diagnostic improvements help teams manage dataflows more efficiently and maintain higher levels of operational readiness.\r\n\r\nTiered pricing and potential cost savings\r\n\r\nThe introduction of a tiered pricing model is a major advantage for customers transitioning from Gen1.\r\n\r\n\r\nGen2 decouples Dataflows execution from Premium capacity consumption, aligning compute usage with Fabric’s capacity unit (CU)–based architecture.\r\n\r\nThis model allows customers to pay only for the compute resources required rather than maintaining always-on Premium capacity for workloads that may be intermittent or variable.\r\n\r\nElastic scaling ensures that high-volume or burst workloads can consume proportionally more compute during peak times, while lighter workloads incur lower costs.\r\n\r\nOrganizations with unpredictable or seasonal refresh patterns may see material cost reductions compared to Gen1 running on Premium capacity.\r\n\r\n\r\nThis flexible cost model provides more predictable and efficient resource utilization, particularly for enterprises with diverse or rapidly evolving data refresh patterns.\r\n\r\nOur recommendation: Start planning your upgrade\r\n\r\nIf you’re starting a new project, we strongly recommend using Dataflows Gen2. It offers better performance, richer diagnostics, built‑in AI, broader destination support, and a more flexible cost model.\r\n\r\nFor existing Gen1 dataflows, now is the right time to begin planning your upgrade:\r\n\r\n\r\nUse Save as Dataflow Gen2 for quick, low effort upgrades of individual dataflows.\r\n\r\nFor larger migration scenarios, the Save As API enables bulk migration and automation, supporting CI/CD workflows.\r\n\r\nFor programmatic or large‑scale upgrades, refer to the Migrate to Dataflow Gen2 (CI/CD) guidance.\r\n\r\n\r\nStarting now allows you to modernize incrementally, beginning with a subset of your portfolio while keeping all your Power Query skills fully transferable.\r\n\r\nThank you\r\n\r\nThank you again for your long-standing investment in Dataflows and Power Query. We’re excited to support your transition to Dataflows Gen2 and to help you unlock new capabilities for the next generation of analytics solutions.",
+          "fetched_at": "2026-06-22T00:18:03.073Z"
+        }
+      ]
+    },
+    "github-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "9af07bc56ca77892",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "From pledge to practice: Building a more inclusive open source ecosystem",
+          "url": "https://github.blog/open-source/from-pledge-to-practice-building-a-more-inclusive-open-source-ecosystem/",
+          "published_at": "2026-06-22T17:20:31.000Z",
+          "summary": "Learn about the progress we’ve made toward our accessibility goals and how you can help make open source more inclusive. \nThe post From pledge to practice: Building a more inclusive open source ecosystem appeared first on The GitHub Blog.",
+          "fetched_at": "2026-06-23T00:14:09.852Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "b71b55ee3a5cc253",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "Give GitHub Copilot CLI real code intelligence with language servers",
+          "url": "https://github.blog/ai-and-ml/github-copilot/give-github-copilot-cli-real-code-intelligence-with-language-servers/",
+          "published_at": "2026-06-10T16:00:00.000Z",
+          "summary": "Install and configure LSP servers for GitHub Copilot CLI, replacing brute-force grep/decompile with real code intelligence. \nThe post Give GitHub Copilot CLI real code intelligence with language servers appeared first on The GitHub Blog.",
+          "fetched_at": "2026-06-22T00:18:02.343Z"
+        }
+      ]
+    },
+    "m365-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    }
+  },
+  "diff_result": true
+}
