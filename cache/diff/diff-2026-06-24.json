@@ -1,0 +1,142 @@
+{
+  "date": "2026-06-24",
+  "compared_with": "2026-06-23",
+  "source_count": 6,
+  "new_count": 3,
+  "removed_count": 3,
+  "new_articles": [
+    {
+      "id": "0992bed899b1395e",
+      "source_id": "fabric-blog",
+      "source_name": "Microsoft Fabric Blog",
+      "title": "Microsoft Entra ID single sign-on for the Denodo connector in Power BI (Preview)",
+      "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Microsoft-Entra-ID-single-sign-on-for-the-Denodo-connector-in/ba-p/5193376",
+      "published_at": "2026-06-23T21:00:00.000Z",
+      "summary": "When you configure a Denodo data connection for Entra ID SSO, users querying a semantic model in DirectQuery mode are authenticated to Denodo with their own Microsoft Entra ID identity.",
+      "fetched_at": "2026-06-24T00:03:16.393Z"
+    },
+    {
+      "id": "31da026976d6077c",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "I automated my job (and it made me a better leader)",
+      "url": "https://github.blog/developer-skills/github/i-automated-my-job-and-it-made-me-a-better-leader/",
+      "published_at": "2026-06-23T16:00:00.000Z",
+      "summary": "Explore how my day as a senior leader looks now that I use 40 automations to help, and learn more about some of my favorites.\nThe post I automated my job (and it made me a better leader) appeared first on The GitHub Blog.",
+      "fetched_at": "2026-06-24T00:03:15.754Z"
+    },
+    {
+      "id": "4ee50f139e948419",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "GitHub joins coalition advocating for fixes to California AI Transparency Act to protect open source",
+      "url": "https://github.blog/news-insights/policy-news-and-insights/github-joins-coalition-advocating-for-fixes-to-california-ai-transparency-act-to-protect-open-source/",
+      "published_at": "2026-06-23T15:48:00.000Z",
+      "summary": "We’re calling for targeted amendments to resolve conflicts with open source licensing and align with international transparency frameworks while preserving regulatory intent.\nThe post GitHub joins coalition advocating for fixes to California AI Transparency Act to protect open source appeared first on The GitHub Blog.",
+      "fetched_at": "2026-06-24T00:03:15.754Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "fabric-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "0992bed899b1395e",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Microsoft Entra ID single sign-on for the Denodo connector in Power BI (Preview)",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Microsoft-Entra-ID-single-sign-on-for-the-Denodo-connector-in/ba-p/5193376",
+          "published_at": "2026-06-23T21:00:00.000Z",
+          "summary": "When you configure a Denodo data connection for Entra ID SSO, users querying a semantic model in DirectQuery mode are authenticated to Denodo with their own Microsoft Entra ID identity.",
+          "fetched_at": "2026-06-24T00:03:16.393Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "d7302ddbf763b812",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Translytical Task Flows (Generally Available)",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Translytical-Task-Flows-Generally-Available/ba-p/5173907",
+          "published_at": "2026-04-20T16:00:00.000Z",
+          "summary": "Translytical task flows take interactive Power BI reports to the next level where users can update records, add annotations, and trigger actions in external systems—all without leaving the report.\r\n\r\nWith translytical task flows, report consumers become active participants. Instead of viewing data and then switching to another application to take action, users can complete their entire workflow within the Power BI interface.\r\n\r\nTranslytical task flows connect Power BI reports to Fabric User Data Functions. When a user interacts with a report—selecting a record, entering a value, and clicking a button—the report passes the context of what they have selected to a function to execute the requested action.\r\n\r\nTranslytical_Task_Flows_Generally_Available\r\n\r\nFigure 1: Example of a translytical report experience, where users can review project status and add notes directly in Power BI.\r\nCapabilities\r\n\r\n \tAdding data: Insert new records into your database directly from the report. For example, a customer service representative can add a new customer record while reviewing existing accounts and see it immediately in the report.\r\n \tUpdating data: Update existing records without leaving the report. A logistics coordinator can change an order status or add notes to a shipment record as they work through their queue.\r\n \tDeleting data: Remove records that are no longer needed. An inventory manager can delete discontinued products from active lists while reviewing stock levels.\r\n \tCalling external APIs: Trigger actions in other systems through API requests. A sales representative can request a discount approval that posts directly to Microsoft Teams, where a manager can review and respond. Not only can they trigger these but capture and pass on a message too.An_adaptive_card_requestion_an_update_in_a_Teams_channel\r\nFigure 2: An adaptive card in a Teams channel requesting an update to a status with link to the Power BI report to update it using translytical task flows.\r\n\r\nThese capabilities can work together too. For instance, a sales opportunity report can include a discount request form. When a user selects opportunities from a filtered table, enters a discount percentage, and adds a justification, clicking the submit button sends all that context to a function. The function then processes the discount and posts the request to Teams with the relevant details, creating a complete audit trail from insight to action. The updated data is also immediately visible in the same report!\r\n\r\nOther scenarios for translytical task flows include:\r\n\r\nData annotation and quality management: Field teams often discover data issues while working in reports. With translytical task flows, they can correct a misspelled customer name, update an outdated address, or add contextual notes to records immediately. This approach improves data quality at the point of discovery rather than routing corrections through separate processes.\r\n\r\nWorkflow automation: Business processes frequently require approvals, notifications, or ticket creation. Translytical task flows can trigger these actions based on report context. A procurement analyst reviewing vendor performance can flag a supplier for review, automatically creating a task in the appropriate system with all the supporting data attached.\r\n\r\nAI-assisted decision making: Use AI functions in your extract load and transform process with Fabric Notebooks to categorize or summarize your data. These can then be reviewed and updated in your Power BI report.\r\n\r\nFor data write-back scenarios, User Data Functions currently have native connection management for the following Fabric data sources:\r\n\r\n \tFabric SQL databases\r\n \tFabric warehouses\r\n \tFabric lakehouses (for files)\r\n\r\nOnce you have your scenario in mind, building your first translytical task flow involves these main tasks:\r\n\r\n \tStoring your data in a Fabric data source.\r\n \tDeveloping a User Data Function to handle the action.\r\n \tCreating a Power BI semantic model to use this data.\r\n \tBuilding a Power BI report with interactive elements to capture the user's input and call the function.\r\n\r\nCopilot in Microsoft Fabric is built into many Fabric workflows and GitHub Copilot in Visual Studio Code with MCPs to access learn documentation and connect to Power BI semantic models can help you accelerate this process too.\r\n\r\nTranslytical task flows represent a shift in how organizations can use Power BI. Reports are no longer only for analysis—they enable you to take action. By connecting insight directly to execution, teams can reduce the time between identifying an opportunity and acting on it.\r\nNext steps\r\n\r\n \tLearn more: Refer to the Translytical task flows documentation for detailed guidance on building your first task flow.\r\n \tExplore User Data Functions: Visit the User Data Functions in Fabric documentation to understand all the capabilities it supports.\r\n \tSubmit ideas: Share your feedback and feature requests through the Power BI ideas forum.",
+          "fetched_at": "2026-06-23T00:14:10.453Z"
+        }
+      ]
+    },
+    "github-blog": {
+      "new_count": 2,
+      "removed_count": 2,
+      "new_articles": [
+        {
+          "id": "31da026976d6077c",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "I automated my job (and it made me a better leader)",
+          "url": "https://github.blog/developer-skills/github/i-automated-my-job-and-it-made-me-a-better-leader/",
+          "published_at": "2026-06-23T16:00:00.000Z",
+          "summary": "Explore how my day as a senior leader looks now that I use 40 automations to help, and learn more about some of my favorites.\nThe post I automated my job (and it made me a better leader) appeared first on The GitHub Blog.",
+          "fetched_at": "2026-06-24T00:03:15.754Z"
+        },
+        {
+          "id": "4ee50f139e948419",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "GitHub joins coalition advocating for fixes to California AI Transparency Act to protect open source",
+          "url": "https://github.blog/news-insights/policy-news-and-insights/github-joins-coalition-advocating-for-fixes-to-california-ai-transparency-act-to-protect-open-source/",
+          "published_at": "2026-06-23T15:48:00.000Z",
+          "summary": "We’re calling for targeted amendments to resolve conflicts with open source licensing and align with international transparency frameworks while preserving regulatory intent.\nThe post GitHub joins coalition advocating for fixes to California AI Transparency Act to protect open source appeared first on The GitHub Blog.",
+          "fetched_at": "2026-06-24T00:03:15.754Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "cc6860205a960411",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "GitHub availability report: May 2026",
+          "url": "https://github.blog/news-insights/company-news/github-availability-report-may-2026/",
+          "published_at": "2026-06-11T21:30:15.000Z",
+          "summary": "In May, we experienced nine incidents that resulted in degraded performance across GitHub services.\nThe post GitHub availability report: May 2026 appeared first on The GitHub Blog.",
+          "fetched_at": "2026-06-23T00:14:09.852Z"
+        },
+        {
+          "id": "5d3a5202c9c67ca4",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "Making secret scanning more trustworthy: Reducing false positives at scale",
+          "url": "https://github.blog/security/making-secret-scanning-more-trustworthy-reducing-false-positives-at-scale/",
+          "published_at": "2026-06-11T16:00:00.000Z",
+          "summary": "Alerts are more trustworthy and actionable when noise is reduced. See how we improved the verification step with context-aware LLM reasoning.\nThe post Making secret scanning more trustworthy: Reducing false positives at scale appeared first on The GitHub Blog.",
+          "fetched_at": "2026-06-23T00:14:09.852Z"
+        }
+      ]
+    },
+    "m365-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    }
+  },
+  "diff_result": true
+}
