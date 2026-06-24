@@ -1,0 +1,622 @@
+[
+  {
+    "id": "31da026976d6077c",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "I automated my job (and it made me a better leader)",
+    "url": "https://github.blog/developer-skills/github/i-automated-my-job-and-it-made-me-a-better-leader/",
+    "published_at": "2026-06-23T16:00:00.000Z",
+    "summary": "Explore how my day as a senior leader looks now that I use 40 automations to help, and learn more about some of my favorites.\nThe post I automated my job (and it made me a better leader) appeared first on The GitHub Blog.",
+    "fetched_at": "2026-06-24T00:03:15.754Z"
+  },
+  {
+    "id": "4ee50f139e948419",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "GitHub joins coalition advocating for fixes to California AI Transparency Act to protect open source",
+    "url": "https://github.blog/news-insights/policy-news-and-insights/github-joins-coalition-advocating-for-fixes-to-california-ai-transparency-act-to-protect-open-source/",
+    "published_at": "2026-06-23T15:48:00.000Z",
+    "summary": "We’re calling for targeted amendments to resolve conflicts with open source licensing and align with international transparency frameworks while preserving regulatory intent.\nThe post GitHub joins coalition advocating for fixes to California AI Transparency Act to protect open source appeared first on The GitHub Blog.",
+    "fetched_at": "2026-06-24T00:03:15.754Z"
+  },
+  {
+    "id": "9af07bc56ca77892",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "From pledge to practice: Building a more inclusive open source ecosystem",
+    "url": "https://github.blog/open-source/from-pledge-to-practice-building-a-more-inclusive-open-source-ecosystem/",
+    "published_at": "2026-06-22T17:20:31.000Z",
+    "summary": "Learn about the progress we’ve made toward our accessibility goals and how you can help make open source more inclusive. \nThe post From pledge to practice: Building a more inclusive open source ecosystem appeared first on The GitHub Blog.",
+    "fetched_at": "2026-06-24T00:03:15.754Z"
+  },
+  {
+    "id": "3c538b4fb66edae9",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "How we built an internal data analytics agent",
+    "url": "https://github.blog/ai-and-ml/github-copilot/how-we-built-an-internal-data-analytics-agent/",
+    "published_at": "2026-06-19T16:00:00.000Z",
+    "summary": "Qubot, our internal Copilot-powered analytics agent, allows any GitHub employee to ask questions about our data in plain language. Here's what we learned as we built it.\nThe post How we built an internal data analytics agent appeared first on The GitHub Blog.",
+    "fetched_at": "2026-06-24T00:03:15.754Z"
+  },
+  {
+    "id": "cfc389705fb4ffe7",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "How pull request limits are cutting down the noise",
+    "url": "https://github.blog/open-source/maintainers/how-pull-request-limits-are-cutting-down-the-noise/",
+    "published_at": "2026-06-18T16:00:00.000Z",
+    "summary": "Learn how pull request limits can help manage contribution volume in your repositories, and see what’s next on the roadmap.\nThe post How pull request limits are cutting down the noise appeared first on The GitHub Blog.",
+    "fetched_at": "2026-06-24T00:03:15.754Z"
+  },
+  {
+    "id": "c657b6576b9758fc",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "Getting more from each token: How Copilot improves context handling and model routing",
+    "url": "https://github.blog/ai-and-ml/github-copilot/getting-more-from-each-token-how-copilot-improves-context-handling-and-model-routing/",
+    "published_at": "2026-06-17T19:41:46.000Z",
+    "summary": "How GitHub Copilot is making more of each session go toward useful work, so your credits go further.\nThe post Getting more from each token: How Copilot improves context handling and model routing appeared first on The GitHub Blog.",
+    "fetched_at": "2026-06-24T00:03:15.754Z"
+  },
+  {
+    "id": "2f0101a4921237ff",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "What are git worktrees, and why should I use them?",
+    "url": "https://github.blog/ai-and-ml/github-copilot/what-are-git-worktrees-and-why-should-i-use-them/",
+    "published_at": "2026-06-16T20:58:54.000Z",
+    "summary": "Git worktrees have been around since 2015, but it wasn't until recently they became popular. Learn what they are, how to use them, and why you might.\nThe post What are git worktrees, and why should I use them? appeared first on The GitHub Blog.",
+    "fetched_at": "2026-06-24T00:03:15.754Z"
+  },
+  {
+    "id": "0ba3272de0f7841b",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "GitHub Copilot CLI for Beginners: Overview of common slash commands",
+    "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-overview-of-common-slash-commands/",
+    "published_at": "2026-06-15T20:15:31.000Z",
+    "summary": "GitHub Copilot CLI for Beginners: Learn how to use slash commands to control your terminal AI agent.\nThe post GitHub Copilot CLI for Beginners: Overview of common slash commands appeared first on The GitHub Blog.",
+    "fetched_at": "2026-06-24T00:03:15.754Z"
+  },
+  {
+    "id": "96fb7a7ce20e279d",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "Accelerating researchers and developers building multilingual AI with a new open dataset",
+    "url": "https://github.blog/ai-and-ml/llms/accelerating-researchers-and-developers-building-multilingual-ai-with-a-new-open-dataset/",
+    "published_at": "2026-06-15T19:17:30.000Z",
+    "summary": "A new repository-level dataset, published on GitHub under CC0-1.0, helps researchers and developers discover multilingual developer content across READMEs, issues, and pull requests.\nThe post Accelerating researchers and developers building multilingual AI with a new open dataset appeared first on The GitHub Blog.",
+    "fetched_at": "2026-06-24T00:03:15.754Z"
+  },
+  {
+    "id": "a4e98f8026414be2",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "How we made GitHub Copilot CLI more selective about delegation",
+    "url": "https://github.blog/ai-and-ml/how-we-made-github-copilot-cli-more-selective-about-delegation/",
+    "published_at": "2026-06-12T22:26:23.000Z",
+    "summary": "Better orchestration, fewer handoffs, faster progress, without a single new knob.\nThe post How we made GitHub Copilot CLI more selective about delegation appeared first on The GitHub Blog.",
+    "fetched_at": "2026-06-24T00:03:15.754Z"
+  },
+  {
+    "id": "0badf82f3d5386bc",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "What 50,000 Runs of a 5-Line Eval Taught Us",
+    "url": "https://code.visualstudio.com/blogs/2026/06/19/what-50000-runs-taught-us",
+    "published_at": "2026-06-19T00:00:00.000Z",
+    "summary": "How AI coding models calibrate effort, token cost, and tool use on even the simplest task, and what that means for model selection and cost.\nRead the full article",
+    "fetched_at": "2026-06-24T00:03:15.854Z"
+  },
+  {
+    "id": "2dd4ff8e6412d009",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "Use your own language model key in VS Code",
+    "url": "https://code.visualstudio.com/blogs/2026/06/18/byok-vscode",
+    "published_at": "2026-06-18T00:00:00.000Z",
+    "summary": "Learn how to use bring your own key (BYOK) in VS Code to add models from providers like Azure, Anthropic, Gemini, OpenAI, Huggingface, OpenRouter, or use a local model with Ollama, Foundry Local, and more.\nRead the full article",
+    "fetched_at": "2026-06-24T00:03:15.854Z"
+  },
+  {
+    "id": "092029380cc76d99",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "Improving token efficiency for GitHub Copilot in VS Code",
+    "url": "https://code.visualstudio.com/blogs/2026/06/17/improving-token-efficiency-in-github-copilot",
+    "published_at": "2026-06-17T00:00:00.000Z",
+    "summary": "Learn how we're improving token efficiency for GitHub Copilot to reduce costs and latency for VS Code users.\nRead the full article",
+    "fetched_at": "2026-06-24T00:03:15.854Z"
+  },
+  {
+    "id": "e4865dee295d5546",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "The Coding Harness Behind GitHub Copilot in VS Code",
+    "url": "https://code.visualstudio.com/blogs/2026/05/15/agent-harnesses-github-copilot-vscode",
+    "published_at": "2026-05-15T00:00:00.000Z",
+    "summary": "Learn why the coding harness around GitHub Copilot in VS Code matters as models, tools, agents, and providers evolve.\nRead the full article",
+    "fetched_at": "2026-06-24T00:03:15.854Z"
+  },
+  {
+    "id": "0e850ae5c0cccb15",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "How VS Code Builds with AI",
+    "url": "https://code.visualstudio.com/blogs/2026/03/13/how-VS-Code-Builds-with-AI",
+    "published_at": "2026-03-13T00:00:00.000Z",
+    "summary": "Learn how VS Code uses AI across its own development workflow with GitHub Copilot agent mode, automated testing, and AI-powered code review.\nRead the full article",
+    "fetched_at": "2026-06-24T00:03:15.854Z"
+  },
+  {
+    "id": "d30d1b0fe3636ede",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "Making agents practical for real-world development",
+    "url": "https://code.visualstudio.com/blogs/2026/03/05/making-agents-practical-for-real-world-development",
+    "published_at": "2026-03-05T00:00:00.000Z",
+    "summary": "Explore agent orchestration, extensibility, and continuity in VS Code 1.110: lifecycle hooks, agent skills, session memory, and integrated browser tools.\nRead the full article",
+    "fetched_at": "2026-06-24T00:03:15.854Z"
+  },
+  {
+    "id": "94971b434ca4c8a9",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "Building Long-Distance Next Edit Suggestions",
+    "url": "https://code.visualstudio.com/blogs/2026/02/26/long-distance-nes",
+    "published_at": "2026-02-26T00:00:00.000Z",
+    "summary": "Learn how we extended next edit suggestions to work across your entire file, reducing friction and improving productivity in GitHub Copilot.\nRead the full article",
+    "fetched_at": "2026-06-24T00:03:15.854Z"
+  },
+  {
+    "id": "7984e37741c8865e",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "Your Home for Multi-Agent Development",
+    "url": "https://code.visualstudio.com/blogs/2026/02/05/multi-agent-development",
+    "published_at": "2026-02-05T00:00:00.000Z",
+    "summary": "VS Code has become the unified interface for all your coding agents. Manage local, background, and cloud agents in one place, use Claude and Codex agents alongside Copilot, and benefit from open standards like MCP and Agent Skills.\nRead the full article",
+    "fetched_at": "2026-06-24T00:03:15.854Z"
+  },
+  {
+    "id": "45ffe1ce89885428",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "Giving Agents a Visual Voice: MCP Apps Support in VS Code",
+    "url": "https://code.visualstudio.com/blogs/2026/01/26/mcp-apps-support",
+    "published_at": "2026-01-26T00:00:00.000Z",
+    "summary": "VS Code now supports MCP Apps, enabling AI agents to display interactive UIs for richer developer workflows.\nRead the full article",
+    "fetched_at": "2026-06-24T00:03:15.854Z"
+  },
+  {
+    "id": "b7ee04c92c6213bb",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "Building docfind: Fast Client-Side Search with Rust and WebAssembly",
+    "url": "https://code.visualstudio.com/blogs/2026/01/15/docfind",
+    "published_at": "2026-01-15T00:00:00.000Z",
+    "summary": "How we built docfind, a high-performance client-side search engine using Rust and WebAssembly, and how GitHub Copilot accelerated development.\nRead the full article",
+    "fetched_at": "2026-06-24T00:03:15.854Z"
+  },
+  {
+    "id": "77eb2a33c46983c3",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "Introducing the VS Code Insiders Podcast",
+    "url": "https://code.visualstudio.com/blogs/2025/12/03/introducing-vs-code-insiders-podcast",
+    "published_at": "2025-12-03T00:00:00.000Z",
+    "summary": "The VS Code Insiders Podcast is your insider's guide to the features, decisions, and people shaping the future of Visual Studio Code.\nRead the full article",
+    "fetched_at": "2026-06-24T00:03:15.854Z"
+  },
+  {
+    "id": "57011fa557caf1c6",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "Introducing the Visual Studio Code Private Marketplace: Your Team's Secure, Curated Extension Hub 🎉",
+    "url": "https://code.visualstudio.com/blogs/2025/11/18/PrivateMarketplace",
+    "published_at": "2025-11-18T00:00:00.000Z",
+    "summary": "Private Marketplace for VS Code extensions now generally available.\nRead the full article",
+    "fetched_at": "2026-06-24T00:03:15.854Z"
+  },
+  {
+    "id": "ca810d46696b8ebb",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "Modernize your data with Azure Storage: Plan and migrate with confidence",
+    "url": "https://azure.microsoft.com/en-us/blog/modernize-your-data-with-azure-storage-plan-and-migrate-with-confidence/",
+    "published_at": "2026-06-16T16:00:00.000Z",
+    "summary": "Enterprise storage migrations are rarely just about copying data. They are about protecting business continuity, maintaining performance, managing cost, and giving teams confidence when terabytes or petabytes of data sit at the heart of critical applications.\nThe post Modernize your data with Azure Storage: Plan and migrate with confidence appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-06-24T00:03:15.937Z"
+  },
+  {
+    "id": "815999082b7e74c8",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "3 things leaders need to know from Microsoft Build 2026",
+    "url": "https://azure.microsoft.com/en-us/blog/3-things-leaders-need-to-know-from-microsoft-build-2026/",
+    "published_at": "2026-06-11T19:00:00.000Z",
+    "summary": "At Microsoft Build 2026, AI moved from experimentation to execution—shifting from isolated tools to connected systems grounded in business data. Organizations that win will embed AI across workflows, scale it effectively, and translate it into measurable outcomes like faster growth, lower costs, and better customer experiences.\nThe post 3 things leaders need to know from Microsoft Build 2026 appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-06-24T00:03:15.937Z"
+  },
+  {
+    "id": "4979016e4abdf662",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "Claude Fable 5 available today in Microsoft Foundry: Powering the next era of autonomous agents",
+    "url": "https://azure.microsoft.com/en-us/blog/claude-fable-5-is-now-available-in-microsoft-foundry-powering-the-next-era-of-autonomous-agents/",
+    "published_at": "2026-06-09T17:00:00.000Z",
+    "summary": "Claude Fable 5, Anthropic’s latest Frontier model, available today in Microsoft Foundry, powering agents in GitHub Copilot and Foundry Agent Service.\nThe post Claude Fable 5 available today in Microsoft Foundry: Powering the next era of autonomous agents appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-06-24T00:03:15.937Z"
+  },
+  {
+    "id": "f4124bbb866ef6b0",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "AI alone won’t change your business. The system running it will.",
+    "url": "https://blogs.microsoft.com/blog/2026/06/02/ai-alone-wont-change-your-business-the-system-running-it-will/",
+    "published_at": "2026-06-02T19:15:57.000Z",
+    "summary": "We are building a comprehensive agent platform: one that supports many models, is open, and gives you flexibility at every layer of the stack.\nThe post AI alone won’t change your business. The system running it will. appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-06-24T00:03:15.937Z"
+  },
+  {
+    "id": "9329279c3880d248",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "Announcing Microsoft Discovery general availability and Microsoft Discovery app preview",
+    "url": "https://azure.microsoft.com/en-us/blog/announcing-microsoft-discovery-general-availability-and-microsoft-discovery-app-preview/",
+    "published_at": "2026-06-02T18:15:00.000Z",
+    "summary": "At Microsoft Build, we are announcing that Microsoft Discovery is now generally available for all organizations, providing a comprehensive platform for building and governing agentic AI workflows.\nThe post Announcing Microsoft Discovery general availability and Microsoft Discovery app preview appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-06-24T00:03:15.937Z"
+  },
+  {
+    "id": "68fc44f8bf52ca29",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "Microsoft Build 2026: Building agentic apps with Microsoft Fabric and Microsoft Databases",
+    "url": "https://azure.microsoft.com/en-us/blog/microsoft-build-2026-building-agentic-apps-with-microsoft-fabric-and-microsoft-databases/",
+    "published_at": "2026-06-02T16:59:00.000Z",
+    "summary": "Microsoft Build 2026 highlights advancements in app development with Microsoft Fabric and Microsoft Databases, emphasizing a unified data and AI platform for scalable, agentic applications.\nThe post Microsoft Build 2026: Building agentic apps with Microsoft Fabric and Microsoft Databases appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-06-24T00:03:15.937Z"
+  },
+  {
+    "id": "01787ad8851ad16f",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "New Azure Cobalt 200 VMs deliver 50% performance improvement, fully optimized for modern agentic AI workloads",
+    "url": "https://azure.microsoft.com/en-us/blog/new-azure-cobalt-200-vms-deliver-50-performance-improvement-fully-optimized-for-modern-agentic-ai-workloads/",
+    "published_at": "2026-06-02T16:30:09.000Z",
+    "summary": "We are announcing the early access preview for Azure Cobalt 200 Arm-based Virtual Machines (VMs), designed for Linux-based agentic AI workloads.\nThe post New Azure Cobalt 200 VMs deliver 50% performance improvement, fully optimized for modern agentic AI workloads appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-06-24T00:03:15.937Z"
+  },
+  {
+    "id": "c803d55ec7c78b7d",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "Foundry IQ: Build smarter agents faster with unified knowledge and serverless retrieval",
+    "url": "https://devblogs.microsoft.com/foundry/build-smarter-agents-faster-with-foundry-iq/",
+    "published_at": "2026-06-02T16:00:00.000Z",
+    "summary": "Build smarter agents with Microsoft Foundry IQ, unifying enterprise and external data into a secure, scalable knowledge layer for faster, higher-quality answers.\nThe post Foundry IQ: Build smarter agents faster with unified knowledge and serverless retrieval appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-06-24T00:03:15.937Z"
+  },
+  {
+    "id": "c477fa54ec7d03df",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "A Developer’s Guide to Managing Models, Cost and Quality in Microsoft Foundry",
+    "url": "https://devblogs.microsoft.com/foundry/build-2026-foundry-models/",
+    "published_at": "2026-06-02T16:00:00.000Z",
+    "summary": "Microsoft Foundry helps teams move beyond model access to operate AI at scale—selecting, evaluating, optimizing, and governing models across the full lifecycle.\nThe post A Developer’s Guide to Managing Models, Cost and Quality in Microsoft Foundry appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-06-24T00:03:15.938Z"
+  },
+  {
+    "id": "230c559d467deece",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "Claude Opus 4.8 is now available in Microsoft Foundry",
+    "url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/claude-opus-4-8-is-now-available-in-microsoft-foundry/4523367",
+    "published_at": "2026-05-29T14:46:32.000Z",
+    "summary": "Claude Opus 4.8 is now available in Microsoft Foundry, giving developers and enterprises access to Anthropic’s most capable Opus model for coding, agentic tasks, and professional work.\nThe post Claude Opus 4.8 is now available in Microsoft Foundry appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-06-24T00:03:15.938Z"
+  },
+  {
+    "id": "8149b2cc8cc7d047",
+    "source_id": "m365-blog",
+    "source_name": "Microsoft 365 Blog",
+    "title": "Copilot Cowork is now generally available",
+    "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/16/copilot-cowork-is-now-generally-available/",
+    "published_at": "2026-06-16T15:00:00.000Z",
+    "summary": "Cowork is the fastest growing feature in the history of our Frontier program, and Cowork has among the highest user satisfaction of any Copilot or agent experience we have shipped.\nThe post Copilot Cowork is now generally available appeared first on Microsoft 365 Blog.",
+    "fetched_at": "2026-06-24T00:03:15.997Z"
+  },
+  {
+    "id": "d7e013ca7b7951d6",
+    "source_id": "m365-blog",
+    "source_name": "Microsoft 365 Blog",
+    "title": "Introducing Microsoft Scout: Your always-on personal agent",
+    "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/02/introducing-microsoft-scout-your-always-on-personal-agent/",
+    "published_at": "2026-06-02T18:00:00.000Z",
+    "summary": "Microsoft Scout is integrated across the Microsoft 365 apps you use every day, keeping it grounded in your flow of work.\nThe post Introducing Microsoft Scout: Your always-on personal agent appeared first on Microsoft 365 Blog.",
+    "fetched_at": "2026-06-24T00:03:15.997Z"
+  },
+  {
+    "id": "020093137baaba8b",
+    "source_id": "m365-blog",
+    "source_name": "Microsoft 365 Blog",
+    "title": "Announcing the new Work IQ APIs",
+    "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/02/announcing-the-new-work-iq-apis/",
+    "published_at": "2026-06-02T17:00:15.000Z",
+    "summary": "Work IQ is a new intelligence layer for Microsoft 365, designed to understand how work gets done across your organizations.\nThe post Announcing the new Work IQ APIs appeared first on Microsoft 365 Blog.",
+    "fetched_at": "2026-06-24T00:03:15.997Z"
+  },
+  {
+    "id": "f2fe332742fa6ecf",
+    "source_id": "m365-blog",
+    "source_name": "Microsoft 365 Blog",
+    "title": "Introducing Microsoft 365 Business with Copilot: The new standard for small business",
+    "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/05/28/introducing-microsoft-365-business-with-copilot-the-new-standard-for-small-business/",
+    "published_at": "2026-05-28T19:00:00.000Z",
+    "summary": "On July 1, we're introducing new Microsoft 365 SKUs with Copilot built-in, designed to fit into the way small businesses already work.\nThe post Introducing Microsoft 365 Business with Copilot: The new standard for small business appeared first on Microsoft 365 Blog.",
+    "fetched_at": "2026-06-24T00:03:15.997Z"
+  },
+  {
+    "id": "3ab61e4b3cf2ba71",
+    "source_id": "m365-blog",
+    "source_name": "Microsoft 365 Blog",
+    "title": "Introducing a new design for Microsoft 365 Copilot",
+    "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/05/28/introducing-a-new-design-for-microsoft-365-copilot/",
+    "published_at": "2026-05-28T15:00:00.000Z",
+    "summary": "We’ve redesigned the Copilot app and how Copilot shows up across Microsoft 365 apps to better move with it: cleaner, faster, and in the flow of your work.\nThe post Introducing a new design for Microsoft 365 Copilot appeared first on Microsoft 365 Blog.",
+    "fetched_at": "2026-06-24T00:03:15.997Z"
+  },
+  {
+    "id": "92f9fa8327778c21",
+    "source_id": "m365-blog",
+    "source_name": "Microsoft 365 Blog",
+    "title": "New and improved: Computer-using agents, a new workflows experience, and real-time voice experiences",
+    "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/new-and-improved-computer-using-agents-a-new-workflows-experience-and-real-time-voice-experiences/",
+    "published_at": "2026-05-26T16:00:00.000Z",
+    "summary": "Learn what’s new in Copilot Studio, May 2026: computer-using agents are now generally available, plus redesigned workflows and Work IQ extensibility.\nThe post New and improved: Computer-using agents, a new workflows experience, and real-time voice experiences appeared first on Microsoft 365 Blog.",
+    "fetched_at": "2026-06-24T00:03:15.997Z"
+  },
+  {
+    "id": "6f469e5191a542d3",
+    "source_id": "m365-blog",
+    "source_name": "Microsoft 365 Blog",
+    "title": "New and improved: Agent governance, intelligent workflows, and connected app experiences",
+    "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/new-and-improved-agent-governance-intelligent-workflows-and-connected-app-experiences/",
+    "published_at": "2026-05-11T17:25:12.000Z",
+    "summary": "See what's new in Copilot Studio, April 2026: updates to workflows, increased control over agent operations, and an expanded agent usage estimator.\nThe post New and improved: Agent governance, intelligent workflows, and connected app experiences appeared first on Microsoft 365 Blog.",
+    "fetched_at": "2026-06-24T00:03:15.997Z"
+  },
+  {
+    "id": "53b18e8c0d5271fe",
+    "source_id": "m365-blog",
+    "source_name": "Microsoft 365 Blog",
+    "title": "Copilot Cowork: From conversation to action across skills, integrations, and devices",
+    "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/05/05/copilot-cowork-from-conversation-to-action-across-skills-integrations-and-devices/",
+    "published_at": "2026-05-05T10:00:00.000Z",
+    "summary": "Today, we’re announcing additional capabilities in Cowork to expand on what it can make possible for you.\nThe post Copilot Cowork: From conversation to action across skills, integrations, and devices appeared first on Microsoft 365 Blog.",
+    "fetched_at": "2026-06-24T00:03:15.997Z"
+  },
+  {
+    "id": "af920e380a7f0f0d",
+    "source_id": "m365-blog",
+    "source_name": "Microsoft 365 Blog",
+    "title": "Microsoft 365 Copilot, human agency, and the opportunity for every organization",
+    "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/05/05/microsoft-365-copilot-human-agency-and-the-opportunity-for-every-organization/",
+    "published_at": "2026-05-05T10:00:00.000Z",
+    "summary": "As AI and agents take on more of the execution, people have more agency than ever to unlock their ambition, direct what gets done, and own the outcomes.\nThe post Microsoft 365 Copilot, human agency, and the opportunity for every organization appeared first on Microsoft 365 Blog.",
+    "fetched_at": "2026-06-24T00:03:15.997Z"
+  },
+  {
+    "id": "d98eb9b7432b99a9",
+    "source_id": "m365-blog",
+    "source_name": "Microsoft 365 Blog",
+    "title": "Microsoft Agent 365, now generally available, expands capabilities and integrations",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/",
+    "published_at": "2026-05-01T15:00:00.000Z",
+    "summary": "Microsoft Agent 365 helps you take control of agent sprawl as your control plane to observe, govern, and secure agents and their interactions.\nThe post Microsoft Agent 365, now generally available, expands capabilities and integrations appeared first on Microsoft 365 Blog.",
+    "fetched_at": "2026-06-24T00:03:15.997Z"
+  },
+  {
+    "id": "0992bed899b1395e",
+    "source_id": "fabric-blog",
+    "source_name": "Microsoft Fabric Blog",
+    "title": "Microsoft Entra ID single sign-on for the Denodo connector in Power BI (Preview)",
+    "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Microsoft-Entra-ID-single-sign-on-for-the-Denodo-connector-in/ba-p/5193376",
+    "published_at": "2026-06-23T21:00:00.000Z",
+    "summary": "When you configure a Denodo data connection for Entra ID SSO, users querying a semantic model in DirectQuery mode are authenticated to Denodo with their own Microsoft Entra ID identity.",
+    "fetched_at": "2026-06-24T00:03:16.393Z"
+  },
+  {
+    "id": "000d25b5f79df03b",
+    "source_id": "fabric-blog",
+    "source_name": "Microsoft Fabric Blog",
+    "title": "Protect once, enforce everywhere: Protection policies for Power BI (Generally Available)",
+    "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Protect-once-enforce-everywhere-Protection-policies-for-Power-BI/ba-p/5223932",
+    "published_at": "2026-06-22T17:42:32.000Z",
+    "summary": "How to use sensitivity labels and Protection Policies to secure your Power BI estate — and why it matters more than ever in the age of AI.",
+    "fetched_at": "2026-06-24T00:03:16.393Z"
+  },
+  {
+    "id": "3654fc24a8d2c88b",
+    "source_id": "fabric-blog",
+    "source_name": "Microsoft Fabric Blog",
+    "title": "Microsoft Entra ID single sign-on for the Starburst connector in Power BI (Preview)",
+    "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Microsoft-Entra-ID-single-sign-on-for-the-Starburst-connector-in/ba-p/5193371",
+    "published_at": "2026-06-18T16:00:00.000Z",
+    "summary": "When enabling Microsoft Entra ID single sign-on (SSo) for Starburst (Preview) report viewers querying semantic models in DirectQuery mode authenticate to Starburst with their own Entra ID identity, to Starburst's access policies — including row-level and column-level security rules — are evaluated against the actual end user rather than a fixed connection account.",
+    "fetched_at": "2026-06-24T00:03:16.393Z"
+  },
+  {
+    "id": "0cc859650c5c7b9b",
+    "source_id": "fabric-blog",
+    "source_name": "Microsoft Fabric Blog",
+    "title": "Workspace outbound access protection for Power BI reports (Preview)",
+    "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Workspace-outbound-access-protection-for-Power-BI-reports/ba-p/5193354",
+    "published_at": "2026-06-17T21:00:00.000Z",
+    "summary": "Workspace outbound access protection (OAP) is a workspace-level control in Microsoft Fabric that lets you constrain where the data inside a workspace can flow. With this preview, OAP support now extends to Power BI reports. The good news for report authors and admins: there's nothing new to configure on the report itself. Protection comes from a single, well-defined rule that the workspace enforces automatically as soon as you turn OAP on.",
+    "fetched_at": "2026-06-24T00:03:16.393Z"
+  },
+  {
+    "id": "2b54be786be19003",
+    "source_id": "fabric-blog",
+    "source_name": "Microsoft Fabric Blog",
+    "title": "Org apps with audiences for Power BI and Fabric (Generally Available)",
+    "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Org-apps-with-audiences-for-Power-BI-and-Fabric-Generally/ba-p/5196326",
+    "published_at": "2026-06-16T19:00:00.000Z",
+    "summary": "Announcing general availability of org apps in Power BI and Fabric, including one of the most requested capabilities: audiences.",
+    "fetched_at": "2026-06-24T00:03:16.393Z"
+  },
+  {
+    "id": "983541f3cd29461b",
+    "source_id": "fabric-blog",
+    "source_name": "Microsoft Fabric Blog",
+    "title": "Simplified Oracle connectivity in Power BI (Preview)",
+    "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Simplified-Oracle-connectivity-in-Power-BI-Preview/ba-p/5193366",
+    "published_at": "2026-06-15T17:00:00.000Z",
+    "summary": "Connecting Power BI to Oracle has historically meant extra provider installations and data gateway deployment — even for cloud-hosted databases. Two new Preview capabilities change that. Power BI Desktop now includes a bundled Oracle Managed ODP.NET provider, and the Power BI service supports direct cloud connections without the need for a data gateway to Oracle data sources such as Oracle Autonomous Database.",
+    "fetched_at": "2026-06-24T00:03:16.393Z"
+  },
+  {
+    "id": "1f80bf4839f810a8",
+    "source_id": "fabric-blog",
+    "source_name": "Microsoft Fabric Blog",
+    "title": "Migrating from embedded ODBC drivers to ADBC in Power BI and Fabric",
+    "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Migrating-from-embedded-ODBC-drivers-to-ADBC-in-Power-BI-and/ba-p/5195167",
+    "published_at": "2026-06-18T22:10:45.000Z",
+    "summary": "If you use connectors like Databricks, Snowflake, or BigQuery in Power BI or Fabric, there’s an important change coming. Microsoft is moving from embedded ODBC drivers to ADBC, which affects how connections are established and managed. This post explains what’s changing, who’s impacted, and the steps you can take now to prepare.",
+    "fetched_at": "2026-06-24T00:03:16.393Z"
+  },
+  {
+    "id": "735c132de01e9b41",
+    "source_id": "fabric-blog",
+    "source_name": "Microsoft Fabric Blog",
+    "title": "Power BI June 2026 Feature Summary",
+    "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Power-BI-June-2026-Feature-Summary/ba-p/5193264",
+    "published_at": "2026-06-09T19:48:16.000Z",
+    "summary": "This month, we’re continuing to focus on making every day work a little easier—whether that’s building reports, modeling data, or just getting answers faster. You’ll see progress across Copilot and newer AI-driven experiences, along with a set of practical updates to reporting that help reduce repetitive work.",
+    "fetched_at": "2026-06-24T00:03:16.393Z"
+  },
+  {
+    "id": "69acb0038ac83e12",
+    "source_id": "fabric-blog",
+    "source_name": "Microsoft Fabric Blog",
+    "title": "AI-Powered Power BI reporting: From design to deployment with agent skills (Preview)",
+    "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/AI-Powered-Power-BI-reporting-From-design-to-deployment-with/ba-p/5190703",
+    "published_at": "2026-06-08T17:29:20.000Z",
+    "summary": "AI powered Power BI reporting skills is a collection of multiple skills that enables AI agents to automate report creation, from designing pages to publishing to Fabric. Now available through the Power BI authoring plugin  in Skills for Fabric —a first-party catalog of agent skills for Microsoft Fabric optimized for GitHub Copilot CLI—this capability allows agents to author reports through natural language, write schema-correct PBIR files, reload Power BI Desktop, capture screenshots, and iteratively refine reports for a seamless, end-to-end authoring experience.",
+    "fetched_at": "2026-06-24T00:03:16.393Z"
+  },
+  {
+    "id": "05c30077b81316a5",
+    "source_id": "fabric-blog",
+    "source_name": "Microsoft Fabric Blog",
+    "title": "Copilot in web modeling (Preview)",
+    "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Copilot-in-web-modeling-Preview/ba-p/5182287",
+    "published_at": "2026-06-04T23:36:54.000Z",
+    "summary": "Copilot in web modeling (Preview) in the Power BI service, is an AI-powered assistant helping you analyze and improve your semantic models using natural language so you can spend less time on manual edits.",
+    "fetched_at": "2026-06-24T00:03:16.393Z"
+  },
+  {
+    "id": "49ac15abc4a08ec2",
+    "source_id": "fabric-blog",
+    "source_name": "Microsoft Fabric Blog",
+    "title": "Building in the Agentic Era with Power BI and Fabric",
+    "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Building-in-the-Agentic-Era-with-Power-BI-and-Fabric/ba-p/5190754",
+    "published_at": "2026-06-03T21:20:25.000Z",
+    "summary": "Microsoft Build 2026 marks a major shift in how developers build data experiences with AI agents. Today we're announcing two capabilities that bring agentic analytics to the forefront: Agent Skills for Power BI, which let developers prompt an AI agent to build and refine semantic models and reports, and Fabric Apps for Semantic Models, which enable AI agents to build and deploy Fabric-native web apps on semantic models. Both capabilities will accelerate the time it takes to go from raw data to a polished analytics solution with just natural language prompts.",
+    "fetched_at": "2026-06-24T00:03:16.393Z"
+  },
+  {
+    "id": "cfc546d33138e5d5",
+    "source_id": "fabric-blog",
+    "source_name": "Microsoft Fabric Blog",
+    "title": "Power BI at Microsoft Build 2026: The Agentic Era of analytics",
+    "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Power-BI-at-Microsoft-Build-2026-The-Agentic-Era-of-analytics/ba-p/5191671",
+    "published_at": "2026-06-04T23:35:23.000Z",
+    "summary": "Microsoft Build 2026 brings the next generation of intelligent analytics to Power BI—where agents do the building, apps deliver insights everywhere, and the platform gets more powerful for every user.",
+    "fetched_at": "2026-06-24T00:03:16.393Z"
+  },
+  {
+    "id": "5bd1f57999c17024",
+    "source_id": "fabric-blog",
+    "source_name": "Microsoft Fabric Blog",
+    "title": "DAX User-Defined Functions (Generally Available)",
+    "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/DAX-User-Defined-Functions-Generally-Available/ba-p/5185738",
+    "published_at": "2026-06-02T16:00:00.000Z",
+    "summary": "DAX user-defined functions are now production-ready based on community feedback and internal validation. Their adoption during preview shows that DAX UDFs are quickly becoming a mainstay of Power BI semantic models.",
+    "fetched_at": "2026-06-24T00:03:16.393Z"
+  },
+  {
+    "id": "318ab5e057c4fb88",
+    "source_id": "fabric-blog",
+    "source_name": "Microsoft Fabric Blog",
+    "title": "Power BI Tenant Migration: Trade-offs, risks, and realities",
+    "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Power-BI-Tenant-Migration-Trade-offs-risks-and-realities/ba-p/5187013",
+    "published_at": "2026-05-22T15:05:26.000Z",
+    "summary": "Author: Winnie Li, Cloud Solution Architect",
+    "fetched_at": "2026-06-24T00:03:16.393Z"
+  },
+  {
+    "id": "85f1743533c3e20c",
+    "source_id": "fabric-blog",
+    "source_name": "Microsoft Fabric Blog",
+    "title": "New Power Query experience in Power BI Desktop (Preview)",
+    "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/New-Power-Query-experience-in-Power-BI-Desktop-Preview/ba-p/5181129",
+    "published_at": "2026-05-20T17:30:00.000Z",
+    "summary": "Authored by: Sara Lammini Rodriguez - Product Manager II, and Miguel Escobar - Senior Product Manager",
+    "fetched_at": "2026-06-24T00:03:16.393Z"
+  },
+  {
+    "id": "46bd3768eee83a1f",
+    "source_id": "fabric-blog",
+    "source_name": "Microsoft Fabric Blog",
+    "title": "Power BI May 2026 Feature Summary",
+    "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Power-BI-May-2026-Feature-Summary/ba-p/5182174",
+    "published_at": "2026-06-17T23:07:49.000Z",
+    "summary": "Author: Katie Murray, Senior Program Manager - Power BI continues to evolve with updates that make it easier to explore data, generate insights, and build more polished reports. This month’s release brings improvements across Copilot and AI experiences, reporting and modeling enhancements, new data connectivity flows, and updates to visualizations—helping you move faster from data to decisions.",
+    "fetched_at": "2026-06-24T00:03:16.393Z"
+  },
+  {
+    "id": "46fe35efb554ab15",
+    "source_id": "fabric-blog",
+    "source_name": "Microsoft Fabric Blog",
+    "title": "Outbound Access Protection for semantic models (Preview)",
+    "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Outbound-Access-Protection-for-semantic-models-Preview/ba-p/5184917",
+    "published_at": "2026-05-19T17:00:00.000Z",
+    "summary": "Author: Kay Unkroth, Principl Program Manager - Outbound Access Protection (OAP) is a workspace-level network security and governance feature that blocks outbound traffic from a workspace by default and lets you allow only the destinations you explicitly trust. With this preview, you can now extend OAP to semantic models. Power BI reports aren't part of this preview yet; report support is coming in a separate announcement soon.",
+    "fetched_at": "2026-06-24T00:03:16.393Z"
+  },
+  {
+    "id": "e217ec641840d69f",
+    "source_id": "fabric-blog",
+    "source_name": "Microsoft Fabric Blog",
+    "title": "Execute DAX Queries REST API (Preview)",
+    "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Execute-DAX-Queries-REST-API-Preview/ba-p/5177697",
+    "published_at": "2026-05-07T17:47:39.000Z",
+    "summary": "Author: Kay Unkroth - Principal Program Manager",
+    "fetched_at": "2026-06-24T00:03:16.394Z"
+  },
+  {
+    "id": "81e475d094fdc224",
+    "source_id": "fabric-blog",
+    "source_name": "Microsoft Fabric Blog",
+    "title": "Semantic model settings pane (Preview)",
+    "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Semantic-model-settings-pane-Preview/ba-p/5177694",
+    "published_at": "2026-05-06T18:04:07.000Z",
+    "summary": "Author: Kay Unkroth - Principal Program Manager",
+    "fetched_at": "2026-06-24T00:03:16.394Z"
+  },
+  {
+    "id": "83a039cdadd74de1",
+    "source_id": "fabric-blog",
+    "source_name": "Microsoft Fabric Blog",
+    "title": "Power BI April 2026 Feature Summary",
+    "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Power-BI-April-2026-Feature-Summary/ba-p/5173904",
+    "published_at": "2026-05-14T21:15:35.000Z",
+    "summary": "Welcome to the April Power BI update!Power BI’s April 2026 update is here, bringing continued improvements across Copilot and AI, reporting, visuals, and modeling. This release includes more flexibility when working with layouts and visuals, expanded Copilot experiences—especially on mobile—and several preview features that continue to enhance performance and authoring workflows. You’ll also find important announcements and deprecation notices to keep in mind as you plan ahead. With FabCon fresh on our minds, now is a great time to dive into what’s new and see what’s coming next.Contents  April Power BI VideoDownload Power BI Desktop Version number: v: 2.153.910.0Date published: 21/4/2026Events and AnnouncementsThe FabCon SQLCon live recap series starts April 14thWhether you were there or not, this is your fast track to staying in the loop. In this series, we break down keynotes and corenotes into clear insights and standout demos you can use right away. If it mattered at FabCon, you’ll find it here.Join us, get inspired, and stay connected to what’s happening across the Fabric community. Register now.Could you be the next Power BI Dataviz World Champion?During the recent world championships, one of the finalists confessed that they almost didn’t enter the contest. When we say, “You’ll never know unless you enter!” we really mean it! Don’t miss your chance to enter the next one. Let us know you are interested and we’ll let you know when it starts!GeneralDeprecation of Old File Picker Experience in Power BI DesktopStarting in April, as part of the SU04 release, users will no longer be able to access the old file picker experience in Power BI Desktop. Last January, we announced an updated file picker experience that provides users with a more intuitive, straightforward way of navigating between files and folders. As of SU04, we are moving the updated experience out of preview and making it the default experience in Power BI Desktop. With this change, users will no longer be able to toggle between the old and updated experience. Note: No action is required from users as part of this deprecation; this is simply an informational announcement.Deprecating the Built-In Netezza ODBC DriverThe IBM Netezza ODBC driver has been Generally Available for several weeks, and we are beginning the deprecation from the previously built-in ODBC driver to the newer version. Customers do not need to install the new connector; you may reuse your existing connector but will need to install the new ODBC driver. We encourage customers to do this as soon as possible to ensure a smooth transition.IBM_ODBC_Netezza_driver_that_will_be_deprecated_from_FabricImage: IBM ODBC Netezza driver that will be deprecated from Fabric.Refer to the IBM Netezza ODBC documentation for more information.Copilot and AICopilot in Power BI mobile now offers expanded featuresIn-report Copilot in Power BI Mobile apps just got a major upgrade: you can now have a full, back-and-forth chat with your report, right from your phone or tablet. Instead of stopping at summaries and prebuilt prompts, in-report Copilot in the mobile app now supports open-ended questions and follow-up conversations, all grounded in the specific report you’re viewing. Ask about a metric or KPI, dig into what’s driving the numbers, and even get AI-generated visualizations to take your analysis further.Every answer includes citations back to the exact visuals Copilot used, so it’s easy to validate insights and keep exploring with confidence on the go.On iPhone and iPad, voice dictation makes it even faster to get hands-free answers while you’re prepping for a conversation or reviewing results away from your desk.Two_mobile_phone_screenshots_display_a_sales_report_for_Contoso_showing_revenueFigure: Using in-report Copilot on the Power BI Mobile app to ask natural‑language questions and explore insights directly within a report.To learn more, refer to the documentation In-Report Copilot in Power BI Mobile AppsReportingModern visual defaults and customize theme improvements (Preview)This month's update adds a base theme switcher to the Customize current theme dialog (View ribbon > Themes). If your custom theme doesn't yet work with the new modern defaults, you can use the base theme switcher to revert to the previous base theme until you've had a chance to update your custom theme. You can also use the base theme switcher to update an existing report created with an older base theme to the latest base theme. Screenshot_of_the_Customize_current_theme_dialog_showing_the_base_theme_switcherFigure: Base theme switcher in Customize current theme lets you revert to the previous base theme or update an older report to the latest modern defaults.This update also includes common page sizes for each aspect ratio type in the Canvas settings > Size drop-down. Custom sizing remains available for any dimensions you need.Canvas_settings_panel_in_Power_BI_showing_Type_dropdown_set_to_16_9_and_Size_droFigure: Canvas settings with preset size options for 16:9 aspect ratio reports in Power BI Desktop.Table and matrix built-in styles have been fixed, with banded rows now enabled by default, as well as default +/- buttons for matrix visuals. Axis colors now also use the correct structural color, fixing issues with the Innovate and Orchid custom themes.Additionally, the built-in theme tiles have an updated look and the Reset to default tile is distinguished from the other built-in theme tiles. The behavior of the tile is not new; it simply clears any custom theme applied, leaving any formatting changes to individual visuals untouched until the visual itself is reset to default in the formatting pane.Power_BI_theme_gallery_showing_eight_built-in_theme_options_as_thumbnail_previewFigure: Built-in theme gallery in Power BI Desktop with the \"Reset to default\" option to remove any custom theme and update report to latest base theme.To get the latest version in an existing report, go to the Customize current theme dialog and select Update theme. Or choose the Reset to default tile in the Theme drop-down.Thank you for your feedback during the preview. You can continue to provide feedback and learn more about Visual defaults in Power BI reports.Fixed size layout for card, button slicer, and list slicer visualsCard, button slicer, and list slicer visuals now support a Fixed size option in the Layout section of the format pane. Instead of specifying how many items to display, you can define the exact pixel dimensions for each card, button, or list item. When the visual container isn't large enough to display all items at the specified size, scroll bars appear automatically. This update also renames Autogrid to Fit to space for clarity. When Fit to space is on, items grow or shrink to fill the visual container based on the items present. When Fit to space is off, the visual reserves space for the specified number of items, even when fewer items exist. For list slicer, the Fixed number of buttons option, equivalent to Autogrid off, is also renamed to Fit to space for consistency, especially when changing between visual types.Fixed size gives you precise control over each item's dimensions. As you resize the visual container, items maintain their specified height and width rather than scaling proportionally. This behavior is useful for creating consistent layouts across the report page or ensuring uniform button, list, or card sizes across multiple visuals. For list slicers specifically, fixed size provides a more natural experience when working with hierarchies. Expanding and collapsing hierarchy levels causes the number of visible items to change dramatically, and fixed-size items ensure consistent spacing as you navigate through the data.To use fixed size:Select your visual.Expand the Layout section in the Format pane (found under Multi-card layout or Multi-button layout and toggle Fixed size to On.For Vertical arrangement, set the Height value in pixels.For Horizontal arrangement, set the Width value in pixels.For Grid arrangement, set both Height and Width value in pixels.When Fixed size is enabled, Fit to space is disabled since dimensions are now controlled explicitly. Screenshot_of_Power_BI_Desktop_showing_a_list_slicer_visual_with_the_Format_paneFigure: List slicer with Fixed size enabled and Height set to 30 pixels.To learn more, refer to the documentation for card visuals, button slicers, and list slicers.Card visual: Category interactivity and formatting updatesThe card visual now provides clear visual feedback when you select a category header—the selected card appears highlighted while others dim, making it easy to see your current selection. When you add multiple data columns to the category field, the values concatenate in the category header for a cleaner display. You can also use Edit interactions to control which visuals the card filters, giving you more flexibility in how your report responds to selections. Additionally, top-level images display correctly when the image data is base64 encoded, so you can use images from your data without extra conversion steps. Power_BI_card_visual_with_a_category_header_selected_the_selected_card_is_highliFigure: Card visual showing category header selection highlighting and dimming.For more information about the card visual, refer to Create a card visual in Power BI. Azure Maps visual: Map style picker syncWhen you change the map style using the in-visual style picker, the selected style now persists with the Format pane. Your styling choices stay consistent across both the style picker and the Format pane, giving you predictable behavior as you design your reports. Azure_Map_visual_in_Power_BI_showing_North_America_with_blue_bubble_markers._AnFigure: Azure map updating the format pane style when the report creator adjusts the style on the visual itself.For more information about map styling options, refer to Get started with Azure Maps Power BI visual.Easily identify preview visuals in the Visualizations paneWe appreciate your continued feedback on visuals and have finished addressing the concern that preview visuals weren’t always clearly notifying their preview status. Preview visuals now display (preview) after their names in the Visualizations pane, making it easier to identify which visuals are still in preview. Additionally, preview visuals now appear below the divider in the pane (alongside custom and unpinned visuals), clearly separating them from generally available visuals. These changes help you quickly understand when you’re working with a preview feature. Power_BI_Visualizations_pane_showing_the_Build_visual_tab_with_visual_type_iconsFigure: Visualization pane when editing a report in Power BI Desktop showing preview visuals below the divider line and with (Preview) after their name.For more information about visuals, refer to Visualizations overview in Power BI.Narrative Visual Default Type UpdateThe Narrative visual currently offers two modes: Copilot and Custom, giving report authors flexibility in how they generate and customize summaries. Previously, authors needed to explicitly choose which mode to use when creating the visual. Power_BI_April_2026_Feature_SummaryWe’ve recently improved this experience by introducing a smarter default. If a user has a Copilot license, the Narrative visual now opens in Copilot mode by default, making it quicker to get AI‑powered insights right away. We also increased the character limit to 10,000, enabling richer prompts and more detailed narratives. Authors can still easily toggle between Copilot and Custom modes at any time, ensuring full control over their storytelling workflow.Power_BI_April_2026_Feature_SummaryThis improved default is available now, and learn more with the Create Smart Narrative Summaries documentation.ModelingDirect Lake calculated columns and tables (Preview)Direct Lake storage mode accelerates time to insights by unlocking incredible performance directly against OneLake, without the need to manage costly, time-consuming refreshes for large volumes of data.Calculated columns (unmaterialized) on Direct Lake on OneLake tables are currently in deployment. Availability will follow completion of the service rollout; we will share updates as timing is finalized.Calculated tables referring to Direct Lake on OneLake columns.These features are particularly helpful when adding columns and creating tables upstream isn’t feasible, such as when data preparation in OneLake is owned by another team. Refer to the Create calculated columns in Power BI Desktop documentation for more information on calculated columns. Screenshot_of_DAX_expression_to_define_a_calculated_column_to_define_customer_agFigure: Once available, users will be able to create calculated columns in both the Web and Desktop.User context aware calculated columns (Preview)We are introducing the ability to make calculated columns user-context aware by dynamically responding to DAX functions including UserCulture(), UserPrincipalName(), CustomData(). This enables new scenarios like data translations, and we’re excited to see the creative ways the community will use this! User-context-awareness can be set for calculated columns on Direct Lake on OneLake, Import and DirectQuery tables using the Expression Context property. Direct Lake on OneLake is in the process of deployment and will be available in the service in the next few weeks. Refer to the Create calculated columns in Power BI Desktop documentation for more information on user-context-aware calculated columns.Screenshot_of_a_DAX_expression_in_the_formula_bar_to_dynamically_return_a_columnFigure: A DAX expression in the formula bar to dynamically return a column with translated values based on the USERCULTURE() function.In the following example, a multi-lingual semantic model and report uses both data and metadata translations. By changing the language URL parameters to simulate a different browser locale, everything is displayed in Portuguese, including product names from the Product table.Animated_GIF_of_a_sales_report._The_browser_locale_is_overridden_to_Portuguese_aFigure: To use the feature in Power BI Desktop, you must enable the User-context-aware calculated columns preview feature switch.DAX user-defined functions (Preview)Alongside our ongoing preview of DAX user defined functions, we’ve enhanced the DAX NAMEOF function to give you much finer control over how object names are returned. NAMEOF now supports optional parameters that let you choose exactly which part of a table, column, measure, or calendar name to return, and control how that name is formatted for display. The new function signature is: NAMEOF ( <object> [, <component> [, <escaped>]] )This makes it possible to programmatically reference just the table, just the column, or just the measure and improve usability for display scenarios, while keeping existing behavior unchanged for current models.VisualizationsDate Picker by PowervizThe Powerviz Date Picker offers a modern calendar view, Presets, Pop-up mode, Smart Button Label, Custom Preset Title, and more, making it a must-have date slicer for Power BI reports. Its rich formatting options help with brand consistency and a seamless UI experience. Key FeaturesSmart Button Label: Make the Pop-up button instantly understandable by showing the selected range, preset name, or both as per your choice.Custom Preset Title: Localize preset names to your users’ language. Fully customize what each preset displays across the report.First Day of the Week: Customize your calendar experience by choosing which day your week starts — perfect for global teams and regional preferences.Display Mode: Choose between Pop-up and Canvas modes.Presets: Many commonly used presets like Today, Last Week, YTD, MTD, or create your preset using field.Default Selection: Control the date period selected when the user refreshes or reopens the report.Filter Type: Choose between Range and Start/End types.Themes: 15+ pre-built themes with full customization.Holidays and Weekends: Customize holidays/weekends representation.Month Style: Select single- or double-month date slicer.Other features included are Multiple date ranges, Import/Export Themes and more.Try Date Picker visual for FREE from AppSourceCheck out all features of the visualStep-by-step instructionsYouTube VideoLearn more about visualsFollow PowervizPower_BI_April_2026_Feature_SummaryPower_BI_April_2026_Feature_Summary Drill Down Waterfall PRO by ZoomChartsWith powerful customization options and intuitive interactions, Drill Down Waterfall PRO helps report creators present financial and operational data in a way that is easy to explore and understand. The latest update expands the functionality of Change thresholds with a new Automatic mode that detects subtotals and calculates the difference between consecutive subtotal segments, enabling clearer storytelling in multi-period reports.Key features include:Automatic change thresholds: Automatically detect subtotal columns and calculate the change between each consecutive subtotal and the first and last subtotal.Custom Sequence: Have full control over the column order with the Sequence field.Drill Down: Use multiple categories to enable drill down directly on the chart.Automatic Subtotal Calculation: Automatically calculate subtotals if their fields are empty.Annotations: Display markers and comments on the chart from Comment and Comment Marker fields.Customization: Customize X and Y axes, legends, tooltip content, and adjust the appearance settings for positive, negative and total columns separately.Thresholds: Display up to four constant or dynamic thresholds as lines or areas.Cross-chart filtering: Dynamically filter data across multiple visuals to create interactive, insightful and intuitive reports.Get Drill Down Waterfall PRO on AppSource Power_BI_April_2026_Feature_SummaryPower_BI_April_2026_Feature_SummaryClosingThat’s a wrap for the April 2026 Power BI update. This month’s release builds on recent investments across reporting, modeling, visuals, and Copilot, while introducing new previews for you to explore. As always, we appreciate your feedback—especially on preview features—and encourage you to continue sharing your input as we work on future updates.  Power_BI_April_2026_Feature_Summary",
+    "fetched_at": "2026-06-24T00:03:16.394Z"
+  }
+]
