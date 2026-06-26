@@ -55,6 +55,9 @@ function pushYamlArticles(lines, articles) {
     lines.push(`    sourceName: ${yamlScalar(cleanText(article.source_name))}`);
     lines.push(`    publishedAt: ${yamlScalar(cleanText(article.published_at))}`);
     lines.push(`    summary: ${yamlScalar(cleanText(article.summary))}`);
+    if (cleanText(article.summary_en)) {
+      lines.push(`    summaryEn: ${yamlScalar(cleanText(article.summary_en))}`);
+    }
   }
 }
 
@@ -167,16 +170,134 @@ function buildGroundedSummary(article, articleText) {
   return summary;
 }
 
+const JAPANESE_TOPIC_RULES = [
+  {
+    keywords: ['copilot', 'agent', 'model', 'ai', 'llm', 'machine learning'],
+    text: 'Copilot や AI、エージェントに関する変更点や評価ポイントを確認できます。',
+  },
+  {
+    keywords: ['security', 'identity', 'compliance', 'vulnerability', 'cve', 'defender'],
+    text: 'セキュリティ、ID、コンプライアンスに関する重要な更新を確認できます。',
+  },
+  {
+    keywords: ['azure', 'cloud', 'kubernetes', 'container', 'serverless'],
+    text: 'Azure やクラウド基盤に関する新機能・運用上のポイントを確認できます。',
+  },
+  {
+    keywords: ['teams', 'outlook', 'microsoft 365', 'office', 'productivity'],
+    text: 'Microsoft 365 と業務生産性に関する機能更新を確認できます。',
+  },
+  {
+    keywords: ['fabric', 'power bi', 'analytics', 'data', 'warehouse', 'lakehouse'],
+    text: 'データ分析基盤や Fabric / Power BI に関する更新を確認できます。',
+  },
+  {
+    keywords: ['github', 'vscode', 'visual studio', 'developer', 'extension', 'actions'],
+    text: '開発者向けツールやワークフローに関する更新を確認できます。',
+  },
+];
+
+const JAPANESE_ACTION_RULES = [
+  {
+    keywords: ['general availability', 'ga', 'available', 'launch', 'released', 'introducing'],
+    text: '新機能またはサービス提供開始の内容です。',
+  },
+  {
+    keywords: ['preview', 'beta'],
+    text: 'プレビュー機能や今後利用可能になる機能の案内です。',
+  },
+  {
+    keywords: ['deprecated', 'deprecation', 'retire', 'retirement', 'breaking change'],
+    text: '廃止予定や互換性に影響する変更に注意が必要です。',
+  },
+  {
+    keywords: ['performance', 'efficiency', 'improve', 'improvement', 'best practices'],
+    text: '性能改善やベストプラクティスに関する解説です。',
+  },
+];
+
+function findJapaneseRuleText(text, rules, fallback) {
+  const haystack = cleanText(text).toLowerCase();
+  return rules.find((rule) => rule.keywords.some((keyword) => haystack.includes(keyword)))?.text || fallback;
+}
+
+function buildJapaneseSummary(article, englishSummary) {
+  const title = cleanText(article.title) || '無題の記事';
+  const sourceName = cleanText(article.source_name) || cleanText(article.source_id) || 'Microsoft 関連ブログ';
+  const haystack = `${title} ${englishSummary} ${article.summary}`;
+  const action = findJapaneseRuleText(haystack, JAPANESE_ACTION_RULES, '発表内容や変更点の概要を確認できます。');
+  const topic = findJapaneseRuleText(
+    haystack,
+    JAPANESE_TOPIC_RULES,
+    'Microsoft と GitHub の技術情報に関する更新を確認できます。',
+  );
+
+  return `${sourceName} で「${title}」が公開されました。${action}${topic}`;
+}
+
+async function buildLocalizedArticlesBySource(diff) {
+  const articlesBySource = new Map();
+  const frontmatterArticles = [];
+  const sortedArticles = [...(diff.new_articles || [])].sort((left, right) =>
+    cleanText(left.source_name).localeCompare(cleanText(right.source_name)),
+  );
+
+  const textCache = new Map();
+  for (const article of sortedArticles) {
+    const articleUrl = cleanText(article.url);
+    let articleText = textCache.get(articleUrl) || '';
+    if (!articleText && articleUrl) {
+      try {
+        articleText = await fetchArticleText(articleUrl);
+        textCache.set(articleUrl, articleText);
+      } catch {
+        articleText = '';
+      }
+    }
+
+    const sourceName = cleanText(article.source_name) || cleanText(article.source_id) || 'unknown';
+    const summaryEn = buildGroundedSummary(article, articleText);
+    const summary = buildJapaneseSummary(article, summaryEn);
+    const localizedArticle = {
+      ...article,
+      summary,
+      summary_en: summaryEn,
+    };
+
+    frontmatterArticles.push(localizedArticle);
+
+    if (!articlesBySource.has(sourceName)) {
+      articlesBySource.set(sourceName, []);
+    }
+
+    articlesBySource.get(sourceName).push({
+      title: cleanText(article.title),
+      url: articleUrl,
+      publishedAt: cleanText(article.published_at) || 'unknown',
+      summary,
+      summaryEn,
+    });
+  }
+
+  return { articlesBySource, frontmatterArticles };
+}
+
 function buildFrontmatter(date, diff) {
   const tags = Array.from(
     new Set((diff.new_articles || []).map((article) => toTag(article.source_id)).filter(Boolean)),
   );
 
   const lines = ['---'];
-  lines.push(`title: ${yamlScalar(`Microsoft Technology Updates - ${date}`)}`);
+  lines.push(`title: ${yamlScalar(`Microsoft 技術ブログ更新 - ${date}`)}`);
+  lines.push(`titleEn: ${yamlScalar(`Microsoft Technology Updates - ${date}`)}`);
   lines.push(`date: ${yamlScalar(date)}`);
   lines.push(
     `description: ${yamlScalar(
+      `GitHub、VSCode、Azure、Microsoft 365、Fabric、AI ブログの ${date} の日次更新です。`,
+    )}`,
+  );
+  lines.push(
+    `descriptionEn: ${yamlScalar(
       `Daily updates from GitHub, VSCode, Azure, Microsoft 365, Fabric, and AI blogs for ${date}.`,
     )}`,
   );
@@ -194,63 +315,35 @@ function buildFrontmatter(date, diff) {
 }
 
 async function toMarkdown(date, diff) {
+  const { articlesBySource, frontmatterArticles } = await buildLocalizedArticlesBySource(diff);
+  const localizedDiff = { ...diff, new_articles: frontmatterArticles };
   const lines = [
-    buildFrontmatter(date, diff),
-    `# Daily Blog Updates - ${date}`,
+    buildFrontmatter(date, localizedDiff),
+    `# Microsoft 技術ブログ更新 - ${date}`,
     '',
-    '## Summary',
+    '## サマリー',
     '',
-    `- Date: ${date}`,
-    `- New articles: ${diff.new_count || 0}`,
-    `- Removed articles: ${diff.removed_count || 0}`,
-    `- Compared with: ${diff.compared_with || 'unknown'}`,
-    `- Source count: ${diff.source_count || 0}`,
+    `- 日付: ${date}`,
+    `- 新規記事: ${diff.new_count || 0}`,
+    `- 削除記事: ${diff.removed_count || 0}`,
+    `- 比較対象: ${diff.compared_with || 'unknown'}`,
+    `- ソース数: ${diff.source_count || 0}`,
     '',
-    '## Articles by Source',
+    '## ソース別記事',
     '',
   ];
 
-  const articlesBySource = new Map();
-  const sortedArticles = [...(diff.new_articles || [])].sort((left, right) =>
-    cleanText(left.source_name).localeCompare(cleanText(right.source_name)),
-  );
-
-  if (sortedArticles.length === 0) {
-    lines.push('No new articles.');
+  if (frontmatterArticles.length === 0) {
+    lines.push('新規記事はありません。');
   } else {
-    const textCache = new Map();
-    for (const article of sortedArticles) {
-      const articleUrl = cleanText(article.url);
-      let articleText = textCache.get(articleUrl) || '';
-      if (!articleText && articleUrl) {
-        try {
-          articleText = await fetchArticleText(articleUrl);
-          textCache.set(articleUrl, articleText);
-        } catch {
-          articleText = '';
-        }
-      }
-
-      const sourceName = cleanText(article.source_name) || cleanText(article.source_id) || 'unknown';
-      if (!articlesBySource.has(sourceName)) {
-        articlesBySource.set(sourceName, []);
-      }
-
-      articlesBySource.get(sourceName).push({
-        title: cleanText(article.title),
-        url: cleanText(article.url),
-        publishedAt: cleanText(article.published_at) || 'unknown',
-        summary: buildGroundedSummary(article, articleText),
-      });
-    }
-
     for (const [sourceName, articles] of articlesBySource.entries()) {
       lines.push(`### ${sourceName} (${articles.length})`);
       lines.push('');
       for (const article of articles) {
         lines.push(`#### [${article.title}](${article.url})`);
-        lines.push(`- Published: ${article.publishedAt}`);
-        lines.push(`- Summary: ${article.summary}`);
+        lines.push(`- 公開日時: ${article.publishedAt}`);
+        lines.push(`- 要約: ${article.summary}`);
+        lines.push(`- English summary: ${article.summaryEn}`);
         lines.push('');
       }
     }

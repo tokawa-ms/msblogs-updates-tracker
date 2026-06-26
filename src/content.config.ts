@@ -5,8 +5,10 @@ const updates = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/updates' }),
   schema: z.object({
     title: z.string(),
+    titleEn: z.string().optional(),
     date: z.coerce.date(),
     description: z.string(),
+    descriptionEn: z.string().optional(),
     tags: z.array(z.string()).default([]),
     draft: z.boolean().default(false),
     hidden: z.boolean().default(false),
@@ -24,6 +26,7 @@ const updates = defineCollection({
           sourceName: z.string(),
           publishedAt: z.string(),
           summary: z.string(),
+          summaryEn: z.string().optional(),
         }),
       )
       .default([]),

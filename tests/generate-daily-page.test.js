@@ -7,7 +7,7 @@
 const { describe, it } = require('node:test');
 const assert = require('node:assert/strict');
 
-// --- ヘルパー関数を再現（scripts/generate-daily-page.js と同一） ---
+// --- scripts/generate-daily-page.js のテキスト処理ヘルパーをテスト用に再現 ---
 
 function cleanText(value) {
   return String(value || '')
@@ -42,6 +42,47 @@ function buildGroundedSummary(article, articleText) {
   if (!summary) summary = sourceSentences[0];
   if (summary.length > targetMax) summary = `${summary.slice(0, targetMax - 3).trim()}...`;
   return summary;
+}
+
+const JAPANESE_TOPIC_RULES = [
+  {
+    keywords: ['copilot', 'agent', 'model', 'ai', 'llm', 'machine learning'],
+    text: 'Copilot や AI、エージェントに関する変更点や評価ポイントを確認できます。',
+  },
+  {
+    keywords: ['security', 'identity', 'compliance', 'vulnerability', 'cve', 'defender'],
+    text: 'セキュリティ、ID、コンプライアンスに関する重要な更新を確認できます。',
+  },
+];
+
+const JAPANESE_ACTION_RULES = [
+  {
+    keywords: ['general availability', 'ga', 'available', 'launch', 'released', 'introducing'],
+    text: '新機能またはサービス提供開始の内容です。',
+  },
+  {
+    keywords: ['performance', 'efficiency', 'improve', 'improvement', 'best practices'],
+    text: '性能改善やベストプラクティスに関する解説です。',
+  },
+];
+
+function findJapaneseRuleText(text, rules, fallback) {
+  const haystack = cleanText(text).toLowerCase();
+  return rules.find((rule) => rule.keywords.some((keyword) => haystack.includes(keyword)))?.text || fallback;
+}
+
+function buildJapaneseSummary(article, englishSummary) {
+  const title = cleanText(article.title) || '無題の記事';
+  const sourceName = cleanText(article.source_name) || cleanText(article.source_id) || 'Microsoft 関連ブログ';
+  const haystack = `${title} ${englishSummary} ${article.summary}`;
+  const action = findJapaneseRuleText(haystack, JAPANESE_ACTION_RULES, '発表内容や変更点の概要を確認できます。');
+  const topic = findJapaneseRuleText(
+    haystack,
+    JAPANESE_TOPIC_RULES,
+    'Microsoft と GitHub の技術情報に関する更新を確認できます。',
+  );
+
+  return `${sourceName} で「${title}」が公開されました。${action}${topic}`;
 }
 
 // -------------------------------------------------------------------
@@ -93,6 +134,25 @@ describe('buildGroundedSummary', () => {
     const result = buildGroundedSummary(article, articleText);
     assert.ok(result.length > 0);
     assert.ok(result.length <= 1300);
+  });
+
+  describe('buildJapaneseSummary', () => {
+    it('日本語の主表示用要約を生成する', () => {
+      const result = buildJapaneseSummary(
+        { title: 'Improving Copilot agent performance', source_name: 'GitHub Blog', summary: '' },
+        'This post explains performance and efficiency improvements for Copilot agents.',
+      );
+
+      assert.ok(result.startsWith('GitHub Blog で「Improving Copilot agent performance」が公開されました。'));
+      assert.match(result, /性能改善|Copilot/);
+    });
+
+    it('タイトルやソースが空でもフォールバックを返す', () => {
+      const result = buildJapaneseSummary({ title: '', source_name: '', source_id: '', summary: '' }, '');
+
+      assert.ok(result.includes('Microsoft 関連ブログ'));
+      assert.ok(result.includes('無題の記事'));
+    });
   });
 
   it('articleText が空のとき baseSummary を返す', () => {
