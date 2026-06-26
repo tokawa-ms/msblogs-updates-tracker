@@ -136,25 +136,6 @@ describe('buildGroundedSummary', () => {
     assert.ok(result.length <= 1300);
   });
 
-  describe('buildJapaneseSummary', () => {
-    it('日本語の主表示用要約を生成する', () => {
-      const result = buildJapaneseSummary(
-        { title: 'Improving Copilot agent performance', source_name: 'GitHub Blog', summary: '' },
-        'This post explains performance and efficiency improvements for Copilot agents.',
-      );
-
-      assert.ok(result.startsWith('GitHub Blog で「Improving Copilot agent performance」が公開されました。'));
-      assert.match(result, /性能改善|Copilot/);
-    });
-
-    it('タイトルやソースが空でもフォールバックを返す', () => {
-      const result = buildJapaneseSummary({ title: '', source_name: '', source_id: '', summary: '' }, '');
-
-      assert.ok(result.includes('Microsoft 関連ブログ'));
-      assert.ok(result.includes('無題の記事'));
-    });
-  });
-
   it('articleText が空のとき baseSummary を返す', () => {
     const article = { summary: 'Fallback summary.' };
     const result = buildGroundedSummary(article, '');
@@ -174,5 +155,24 @@ describe('buildGroundedSummary', () => {
       .join(' ');
     const result = buildGroundedSummary(article, longText);
     assert.ok(result.length <= 420);
+  });
+});
+
+describe('buildJapaneseSummary', () => {
+  it('日本語の主表示用要約を生成する', () => {
+    const result = buildJapaneseSummary(
+      { title: 'Improving Copilot agent performance', source_name: 'GitHub Blog', summary: '' },
+      'This post explains performance and efficiency improvements for Copilot agents.',
+    );
+
+    assert.ok(result.startsWith('GitHub Blog で「Improving Copilot agent performance」が公開されました。'));
+    assert.match(result, /性能改善|Copilot/);
+  });
+
+  it('タイトルやソースが空でもフォールバックを返す', () => {
+    const result = buildJapaneseSummary({ title: '', source_name: '', source_id: '', summary: '' }, '');
+
+    assert.ok(result.includes('Microsoft 関連ブログ'));
+    assert.ok(result.includes('無題の記事'));
   });
 });
