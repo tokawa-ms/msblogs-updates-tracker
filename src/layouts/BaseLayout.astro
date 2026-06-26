@@ -20,8 +20,7 @@ const { title, description } = Astro.props;
     <meta name="description" content={description} />
     <script is:inline>
       (() => {
-        const storedLanguage = localStorage.getItem('msblogs-language');
-        if (storedLanguage === 'en') {
+        if (localStorage.getItem('msblogs-language') === 'en') {
           document.documentElement.lang = 'en';
           document.documentElement.dataset.language = 'en';
         }
@@ -60,7 +59,7 @@ const { title, description } = Astro.props;
           }
         };
 
-        applyLanguage(localStorage.getItem(storageKey));
+        applyLanguage(localStorage.getItem(storageKey) === 'en' ? 'en' : 'ja');
         for (const button of buttons) {
           button.addEventListener('click', () => applyLanguage(button.dataset.languageOption));
         }
