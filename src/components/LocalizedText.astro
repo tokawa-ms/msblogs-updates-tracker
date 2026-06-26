@@ -8,9 +8,11 @@ interface Props {
 
 const { ja, en, as = 'span', class: className } = Astro.props;
 const Tag = as;
+// If an English string is not available yet, keep the Japanese primary text visible in both modes.
+const englishText = en ?? ja;
 ---
 
 <Tag class={className}>
   <span data-lang="ja">{ja}</span>
-  <span data-lang="en">{en || ja}</span>
+  <span data-lang="en">{englishText}</span>
 </Tag>

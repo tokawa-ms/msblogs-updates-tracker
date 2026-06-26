@@ -68,7 +68,7 @@ const JAPANESE_ACTION_RULES = [
 
 function findJapaneseRuleText(text, rules, fallback) {
   const haystack = cleanText(text).toLowerCase();
-  // Rules are ordered from more specific to more general; the first match wins.
+  // Rules are evaluated in array order so higher-priority matches can be placed first.
   return rules.find((rule) => rule.keywords.some((keyword) => haystack.includes(keyword)))?.text || fallback;
 }
 
