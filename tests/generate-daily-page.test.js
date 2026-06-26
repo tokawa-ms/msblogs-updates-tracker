@@ -7,7 +7,7 @@
 const { describe, it } = require('node:test');
 const assert = require('node:assert/strict');
 
-// --- ヘルパー関数を再現（scripts/generate-daily-page.js と同一） ---
+// --- scripts/generate-daily-page.js のテキスト処理ヘルパーをテスト用に再現 ---
 
 function cleanText(value) {
   return String(value || '')
@@ -42,6 +42,56 @@ function buildGroundedSummary(article, articleText) {
   if (!summary) summary = sourceSentences[0];
   if (summary.length > targetMax) summary = `${summary.slice(0, targetMax - 3).trim()}...`;
   return summary;
+}
+
+const JAPANESE_TOPIC_RULES = [
+  {
+    keywords: ['copilot', 'agent', 'model', 'ai', 'llm', 'machine learning'],
+    text: 'Copilot や AI、エージェントに関する変更点や評価ポイントを確認できます。',
+  },
+  {
+    keywords: ['security', 'identity', 'compliance', 'vulnerability', 'cve', 'defender'],
+    text: 'セキュリティ、ID、コンプライアンスに関する重要な更新を確認できます。',
+  },
+];
+
+const JAPANESE_ACTION_RULES = [
+  {
+    keywords: ['general availability', 'ga', 'available', 'launch', 'released', 'introducing'],
+    text: '新機能またはサービス提供開始の内容です。',
+  },
+  {
+    keywords: ['performance', 'efficiency', 'improve', 'improvement', 'best practices'],
+    text: '性能改善やベストプラクティスに関する解説です。',
+  },
+];
+
+function escapeRegExp(value) {
+  return value.replace(/[.*+?^${}()|[\]\\]/gu, '\\$&');
+}
+
+function includesKeyword(haystack, keyword) {
+  return new RegExp(`(^|[^a-z0-9])${escapeRegExp(keyword)}([^a-z0-9]|$)`, 'u').test(haystack);
+}
+
+function findJapaneseRuleText(text, rules, fallback) {
+  const haystack = cleanText(text).toLowerCase();
+  // Rules are evaluated in array order so higher-priority matches can be placed first.
+  return rules.find((rule) => rule.keywords.some((keyword) => includesKeyword(haystack, keyword)))?.text || fallback;
+}
+
+function generateJapaneseSummaryFromRules(article, englishSummary) {
+  const title = cleanText(article.title) || '無題の記事';
+  const sourceName = cleanText(article.source_name) || cleanText(article.source_id) || 'Microsoft 関連ブログ';
+  const haystack = `${title} ${englishSummary} ${article.summary}`;
+  const action = findJapaneseRuleText(haystack, JAPANESE_ACTION_RULES, '発表内容や変更点の概要を確認できます。');
+  const topic = findJapaneseRuleText(
+    haystack,
+    JAPANESE_TOPIC_RULES,
+    'Microsoft と GitHub の技術情報に関する更新を確認できます。',
+  );
+
+  return `${sourceName} で「${title}」が公開されました。${action}${topic}`;
 }
 
 // -------------------------------------------------------------------
@@ -114,5 +164,35 @@ describe('buildGroundedSummary', () => {
       .join(' ');
     const result = buildGroundedSummary(article, longText);
     assert.ok(result.length <= 420);
+  });
+});
+
+describe('generateJapaneseSummaryFromRules', () => {
+  it('日本語の主表示用要約を生成する', () => {
+    const result = generateJapaneseSummaryFromRules(
+      { title: 'Improving Copilot agent performance', source_name: 'GitHub Blog', summary: '' },
+      'This post explains performance and efficiency improvements for Copilot agents.',
+    );
+
+    assert.ok(result.startsWith('GitHub Blog で「Improving Copilot agent performance」が公開されました。'));
+    assert.match(result, /性能改善|Copilot/);
+  });
+
+  it('タイトルやソースが空でもフォールバックを返す', () => {
+    const result = generateJapaneseSummaryFromRules({ title: '', source_name: '', source_id: '', summary: '' }, '');
+
+    assert.equal(
+      result,
+      'Microsoft 関連ブログ で「無題の記事」が公開されました。発表内容や変更点の概要を確認できます。Microsoft と GitHub の技術情報に関する更新を確認できます。',
+    );
+  });
+
+  it('キーワードは単語境界で一致させる', () => {
+    const result = generateJapaneseSummaryFromRules(
+      { title: 'Reliable availability update', source_name: 'Azure Blog', summary: '' },
+      '',
+    );
+
+    assert.doesNotMatch(result, /新機能またはサービス提供開始/);
   });
 });

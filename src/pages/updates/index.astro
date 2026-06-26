@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import LocalizedText from '../../components/LocalizedText.astro';
 import UpdateCard from '../../components/UpdateCard.astro';
 import { getPublishedUpdates } from '../../lib/content';
 
@@ -11,9 +12,9 @@ const updates = await getPublishedUpdates();
   description="日付ごとの Microsoft ブログ更新一覧です。"
 >
   <section class="page-header">
-    <p class="eyebrow">Updates archive</p>
-    <h1>日次更新一覧</h1>
-    <p>生成済みの更新ページを新しい順に確認できます。</p>
+    <p class="eyebrow"><LocalizedText ja="更新アーカイブ" en="Updates archive" /></p>
+    <LocalizedText as="h1" ja="日次更新一覧" en="Daily updates" />
+    <LocalizedText as="p" ja="生成済みの更新ページを新しい順に確認できます。" en="Browse generated update pages in reverse chronological order." />
   </section>
 
   {
@@ -25,8 +26,8 @@ const updates = await getPublishedUpdates();
       </div>
     ) : (
       <div class="card empty-state">
-        <h2>まだ更新ページがありません</h2>
-        <p>日次スクリプトが実行されると、ここに日付別の更新ページが並びます。</p>
+        <h2><LocalizedText ja="まだ更新ページがありません" en="No update pages yet" /></h2>
+        <p><LocalizedText ja="日次スクリプトが実行されると、ここに日付別の更新ページが並びます。" en="Daily update pages will appear here after the scheduled script runs." /></p>
       </div>
     )
   }

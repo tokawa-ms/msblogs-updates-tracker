@@ -1,5 +1,6 @@
 ---
 import CategoryPill from './CategoryPill.astro';
+import LocalizedText from './LocalizedText.astro';
 import { formatDate, slugify, type ArticleWithMeta } from '../lib/content';
 import { withBase } from '../lib/site';
 
@@ -17,7 +18,7 @@ const { article } = Astro.props;
       <a href={article.url} target="_blank" rel="noreferrer">{article.title}</a>
     </h3>
   </div>
-  <p>{article.summary}</p>
+  <LocalizedText as="p" ja={article.summary} en={article.summaryEn} />
   <div class="pill-row">
     {article.categories.map((category) => (
       <CategoryPill name={category} href={withBase(`categories/${slugify(category)}/`)} />

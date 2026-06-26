@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ArticleCard from '../components/ArticleCard.astro';
+import LocalizedText from '../components/LocalizedText.astro';
 import UpdateCard from '../components/UpdateCard.astro';
 import { getCategoryCounts, getPublishedUpdates, getRecentArticles } from '../lib/content';
 import { withBase } from '../lib/site';
@@ -17,23 +18,25 @@ const totalArticles = updates.reduce((count, entry) => count + entry.data.newCou
   description="Microsoft と GitHub の主要ブログ更新を日次で確認できる Astro サイトです。"
 >
   <section class="hero">
-    <p class="eyebrow">Phase 3: Astro Web サイト</p>
-    <h1>Microsoft ブログ更新を 1 画面で追跡</h1>
-    <p class="hero-copy">
-      GitHub、VSCode、Azure、Microsoft 365、Fabric、AI Blog の日次差分を Astro で見やすく整理し、
-      日付別・カテゴリ別にたどれるサイトとして公開できる状態にしました。
-    </p>
+    <p class="eyebrow"><LocalizedText ja="日次更新トラッカー" en="Daily update tracker" /></p>
+    <LocalizedText as="h1" ja="Microsoft ブログ更新を 1 画面で追跡" en="Track Microsoft blog updates in one place" />
+    <LocalizedText
+      as="p"
+      class="hero-copy"
+      ja="GitHub、VSCode、Azure、Microsoft 365、Fabric、AI Blog の日次差分を日本語で整理し、英語版にも切り替えられるサイトとして公開しています。"
+      en="Daily updates from GitHub, VSCode, Azure, Microsoft 365, Fabric, and AI blogs are organized with a Japanese primary view and an English switch."
+    />
     <div class="hero-grid">
       <article class="metric-card">
-        <span>更新日数</span>
+        <span><LocalizedText ja="更新日数" en="Update days" /></span>
         <strong>{updates.length}</strong>
       </article>
       <article class="metric-card">
-        <span>新規記事数</span>
+        <span><LocalizedText ja="新規記事数" en="New articles" /></span>
         <strong>{totalArticles}</strong>
       </article>
       <article class="metric-card">
-        <span>カテゴリ</span>
+        <span><LocalizedText ja="カテゴリ" en="Categories" /></span>
         <strong>{categoryCounts.filter((category) => category.count > 0).length}</strong>
       </article>
     </div>
@@ -41,8 +44,8 @@ const totalArticles = updates.reduce((count, entry) => count + entry.data.newCou
 
   <section class="section">
     <div class="section-heading">
-      <h2>最新の更新日</h2>
-      <a href={withBase('updates/')}>すべて見る</a>
+      <h2><LocalizedText ja="最新の更新日" en="Latest updates" /></h2>
+      <a href={withBase('updates/')}><LocalizedText ja="すべて見る" en="View all" /></a>
     </div>
     {
       latestUpdates.length > 0 ? (
@@ -53,8 +56,13 @@ const totalArticles = updates.reduce((count, entry) => count + entry.data.newCou
         </div>
       ) : (
         <div class="card empty-state">
-          <h3>更新データはまだありません</h3>
-          <p>`npm run fetch` → `npm run diff` → `npm run generate` の順で実行すると一覧に反映されます。</p>
+          <h3><LocalizedText ja="更新データはまだありません" en="No update data yet" /></h3>
+          <p>
+            <LocalizedText
+              ja="`npm run fetch` → `npm run diff` → `npm run generate` の順で実行すると一覧に反映されます。"
+              en="Run `npm run fetch`, `npm run diff`, and `npm run generate` to populate this list."
+            />
+          </p>
         </div>
       )
     }
@@ -62,13 +70,13 @@ const totalArticles = updates.reduce((count, entry) => count + entry.data.newCou
 
   <section class="section">
     <div class="section-heading">
-      <h2>注目カテゴリ</h2>
-      <a href={withBase('categories/')}>カテゴリ一覧</a>
+      <h2><LocalizedText ja="注目カテゴリ" en="Featured categories" /></h2>
+      <a href={withBase('categories/')}><LocalizedText ja="カテゴリ一覧" en="All categories" /></a>
     </div>
     <div class="grid three-column">
       {categoryCounts.map((category) => (
         <article class="card">
-          <p class="eyebrow">{category.count} articles</p>
+          <p class="eyebrow"><LocalizedText ja={`${category.count} 件の記事`} en={`${category.count} articles`} /></p>
           <h3>
             {category.count > 0 ? (
               <a href={withBase(`categories/${category.slug}/`)}>{category.name}</a>
@@ -84,8 +92,8 @@ const totalArticles = updates.reduce((count, entry) => count + entry.data.newCou
 
   <section class="section">
     <div class="section-heading">
-      <h2>最新記事</h2>
-      <a href={withBase('updates/')}>更新日別に見る</a>
+      <h2><LocalizedText ja="最新記事" en="Latest articles" /></h2>
+      <a href={withBase('updates/')}><LocalizedText ja="更新日別に見る" en="Browse by update date" /></a>
     </div>
     {
       recentArticles.length > 0 ? (
