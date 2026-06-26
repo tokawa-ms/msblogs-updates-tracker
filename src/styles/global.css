@@ -74,6 +74,44 @@ a:hover {
   font-weight: 600;
 }
 
+.language-switch {
+  display: inline-flex;
+  gap: 0.25rem;
+  padding: 0.25rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+}
+
+.language-switch button {
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.35rem 0.75rem;
+}
+
+.language-switch button[aria-pressed='true'] {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+[data-lang='en'] {
+  display: none;
+}
+
+html[data-language='en'] [data-lang='ja'] {
+  display: none;
+}
+
+html[data-language='en'] [data-lang='en'] {
+  display: revert;
+}
+
 .page-content {
   padding: 3rem 0 4rem;
 }

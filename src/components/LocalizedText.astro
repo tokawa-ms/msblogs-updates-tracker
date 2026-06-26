@@ -1,0 +1,18 @@
+---
+interface Props {
+  ja: string;
+  en?: string;
+  as?: keyof HTMLElementTagNameMap;
+  class?: string;
+}
+
+const { ja, en, as = 'span', class: className } = Astro.props;
+const Tag = as;
+// During content transitions, newly generated items may not have English text yet; keep Japanese visible in both modes.
+const englishText = en ?? ja;
+---
+
+<Tag class={className}>
+  <span data-lang="ja">{ja}</span>
+  <span data-lang="en">{englishText}</span>
+</Tag>
