@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import LocalizedText from '../components/LocalizedText.astro';
 import { withBase } from '../lib/site';
 
 interface Props {
@@ -11,26 +12,59 @@ const { title, description } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="ja">
+<html lang="ja" data-language="ja">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <script is:inline>
+      (() => {
+        const storedLanguage = localStorage.getItem('msblogs-language');
+        if (storedLanguage === 'en') {
+          document.documentElement.lang = 'en';
+          document.documentElement.dataset.language = 'en';
+        }
+      })();
+    </script>
   </head>
   <body>
     <header class="site-header">
       <div class="shell header-shell">
         <a class="brand" href={withBase()}>MS Blogs Update Tracker</a>
-        <nav class="nav">
-          <a href={withBase()}>Home</a>
-          <a href={withBase('updates/')}>Updates</a>
-          <a href={withBase('categories/')}>Categories</a>
+        <nav class="nav" aria-label="Main navigation">
+          <a href={withBase()}><LocalizedText ja="ホーム" en="Home" /></a>
+          <a href={withBase('updates/')}><LocalizedText ja="更新" en="Updates" /></a>
+          <a href={withBase('categories/')}><LocalizedText ja="カテゴリ" en="Categories" /></a>
         </nav>
+        <div class="language-switch" aria-label="Language switcher">
+          <button type="button" data-language-option="ja" aria-pressed="true">日本語</button>
+          <button type="button" data-language-option="en" aria-pressed="false">English</button>
+        </div>
       </div>
     </header>
     <main class="shell page-content">
       <slot />
     </main>
+    <script is:inline>
+      (() => {
+        const storageKey = 'msblogs-language';
+        const buttons = Array.from(document.querySelectorAll('[data-language-option]'));
+        const applyLanguage = (language) => {
+          const normalized = language === 'en' ? 'en' : 'ja';
+          document.documentElement.lang = normalized;
+          document.documentElement.dataset.language = normalized;
+          localStorage.setItem(storageKey, normalized);
+          for (const button of buttons) {
+            button.setAttribute('aria-pressed', String(button.dataset.languageOption === normalized));
+          }
+        };
+
+        applyLanguage(localStorage.getItem(storageKey));
+        for (const button of buttons) {
+          button.addEventListener('click', () => applyLanguage(button.dataset.languageOption));
+        }
+      })();
+    </script>
   </body>
 </html>

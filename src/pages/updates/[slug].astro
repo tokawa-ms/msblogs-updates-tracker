@@ -1,7 +1,7 @@
 ---
-import { render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
+import LocalizedText from '../../components/LocalizedText.astro';
 import {
   formatDate,
   formatDateTime,
@@ -20,36 +20,40 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props as { entry: UpdateEntry };
-const { Content } = await render(entry);
 const groupedArticles = getGroupedArticles(entry);
 ---
 
 <BaseLayout title={`${entry.data.title} | MS Blogs Update Tracker`} description={entry.data.description}>
   <section class="page-header">
-    <p class="eyebrow">Daily update detail</p>
-    <h1>{entry.data.title}</h1>
-    <p>{entry.data.description}</p>
+    <p class="eyebrow"><LocalizedText ja="日次更新詳細" en="Daily update detail" /></p>
+    <LocalizedText as="h1" ja={entry.data.title} en={entry.data.titleEn} />
+    <LocalizedText as="p" ja={entry.data.description} en={entry.data.descriptionEn} />
   </section>
 
   <section class="section">
     <div class="grid three-column">
       <article class="metric-card">
-        <span>対象日</span>
+        <span><LocalizedText ja="対象日" en="Date" /></span>
         <strong>{formatDate(entry.data.date)}</strong>
       </article>
       <article class="metric-card">
-        <span>新規記事</span>
+        <span><LocalizedText ja="新規記事" en="New articles" /></span>
         <strong>{entry.data.newCount}</strong>
       </article>
       <article class="metric-card">
-        <span>最終生成</span>
+        <span><LocalizedText ja="最終生成" en="Last generated" /></span>
         <strong>{formatDateTime(entry.data.lastUpdated)}</strong>
       </article>
     </div>
   </section>
 
   <section class="section prose-card">
-    <Content />
+    <h2><LocalizedText ja="サマリー" en="Summary" /></h2>
+    <ul>
+      <li><LocalizedText ja={`比較対象: ${entry.data.comparedWith || '不明'}`} en={`Compared with: ${entry.data.comparedWith || 'unknown'}`} /></li>
+      <li><LocalizedText ja={`ソース数: ${entry.data.sourceCount}`} en={`Source count: ${entry.data.sourceCount}`} /></li>
+      <li><LocalizedText ja={`削除記事: ${entry.data.removedCount}`} en={`Removed articles: ${entry.data.removedCount}`} /></li>
+    </ul>
   </section>
 
   {
@@ -57,7 +61,9 @@ const groupedArticles = getGroupedArticles(entry);
       <section class="section">
         <div class="section-heading">
           <h2>{group.sourceName}</h2>
-          <span>{group.articles.length} articles</span>
+          <span>
+            <LocalizedText ja={`${group.articles.length} 件の記事`} en={`${group.articles.length} articles`} />
+          </span>
         </div>
         <div class="grid two-column">
           {group.articles.map((article) => (
