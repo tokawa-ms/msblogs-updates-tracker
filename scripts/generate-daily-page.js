@@ -218,10 +218,11 @@ const JAPANESE_ACTION_RULES = [
 
 function findJapaneseRuleText(text, rules, fallback) {
   const haystack = cleanText(text).toLowerCase();
+  // Rules are ordered from more specific to more general; the first match wins.
   return rules.find((rule) => rule.keywords.some((keyword) => haystack.includes(keyword)))?.text || fallback;
 }
 
-function buildJapaneseSummary(article, englishSummary) {
+function generateJapaneseSummaryFromRules(article, englishSummary) {
   const title = cleanText(article.title) || '無題の記事';
   const sourceName = cleanText(article.source_name) || cleanText(article.source_id) || 'Microsoft 関連ブログ';
   const haystack = `${title} ${englishSummary} ${article.summary}`;
@@ -257,7 +258,7 @@ async function buildLocalizedArticlesBySource(diff) {
 
     const sourceName = cleanText(article.source_name) || cleanText(article.source_id) || 'unknown';
     const summaryEn = buildGroundedSummary(article, articleText);
-    const summary = buildJapaneseSummary(article, summaryEn);
+    const summary = generateJapaneseSummaryFromRules(article, summaryEn);
     const localizedArticle = {
       ...article,
       summary,

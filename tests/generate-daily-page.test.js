@@ -68,10 +68,11 @@ const JAPANESE_ACTION_RULES = [
 
 function findJapaneseRuleText(text, rules, fallback) {
   const haystack = cleanText(text).toLowerCase();
+  // Rules are ordered from more specific to more general; the first match wins.
   return rules.find((rule) => rule.keywords.some((keyword) => haystack.includes(keyword)))?.text || fallback;
 }
 
-function buildJapaneseSummary(article, englishSummary) {
+function generateJapaneseSummaryFromRules(article, englishSummary) {
   const title = cleanText(article.title) || '無題の記事';
   const sourceName = cleanText(article.source_name) || cleanText(article.source_id) || 'Microsoft 関連ブログ';
   const haystack = `${title} ${englishSummary} ${article.summary}`;
@@ -158,9 +159,9 @@ describe('buildGroundedSummary', () => {
   });
 });
 
-describe('buildJapaneseSummary', () => {
+describe('generateJapaneseSummaryFromRules', () => {
   it('日本語の主表示用要約を生成する', () => {
-    const result = buildJapaneseSummary(
+    const result = generateJapaneseSummaryFromRules(
       { title: 'Improving Copilot agent performance', source_name: 'GitHub Blog', summary: '' },
       'This post explains performance and efficiency improvements for Copilot agents.',
     );
@@ -170,7 +171,7 @@ describe('buildJapaneseSummary', () => {
   });
 
   it('タイトルやソースが空でもフォールバックを返す', () => {
-    const result = buildJapaneseSummary({ title: '', source_name: '', source_id: '', summary: '' }, '');
+    const result = generateJapaneseSummaryFromRules({ title: '', source_name: '', source_id: '', summary: '' }, '');
 
     assert.ok(result.includes('Microsoft 関連ブログ'));
     assert.ok(result.includes('無題の記事'));
