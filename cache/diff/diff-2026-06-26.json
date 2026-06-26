@@ -1,0 +1,80 @@
+{
+  "date": "2026-06-26",
+  "compared_with": "2026-06-25",
+  "source_count": 6,
+  "new_count": 1,
+  "removed_count": 1,
+  "new_articles": [
+    {
+      "id": "0d180708b9cf8116",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "Evaluating performance and efficiency of the GitHub Copilot agentic harness across models and tasks",
+      "url": "https://github.blog/ai-and-ml/github-copilot/evaluating-performance-and-efficiency-of-the-github-copilot-agentic-harness-across-models-and-tasks/",
+      "published_at": "2026-06-25T22:59:45.000Z",
+      "summary": "Explore how the GitHub Copilot agentic harness delivers strong results across multiple benchmarks and leading token efficiency, while maintaining flexibility to choose among more than 20 models.\nThe post Evaluating performance and efficiency of the GitHub Copilot agentic harness across models and tasks appeared first on The GitHub Blog.",
+      "fetched_at": "2026-06-26T00:15:34.848Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "fabric-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "github-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "0d180708b9cf8116",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "Evaluating performance and efficiency of the GitHub Copilot agentic harness across models and tasks",
+          "url": "https://github.blog/ai-and-ml/github-copilot/evaluating-performance-and-efficiency-of-the-github-copilot-agentic-harness-across-models-and-tasks/",
+          "published_at": "2026-06-25T22:59:45.000Z",
+          "summary": "Explore how the GitHub Copilot agentic harness delivers strong results across multiple benchmarks and leading token efficiency, while maintaining flexibility to choose among more than 20 models.\nThe post Evaluating performance and efficiency of the GitHub Copilot agentic harness across models and tasks appeared first on The GitHub Blog.",
+          "fetched_at": "2026-06-26T00:15:34.848Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "a4e98f8026414be2",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "How we made GitHub Copilot CLI more selective about delegation",
+          "url": "https://github.blog/ai-and-ml/how-we-made-github-copilot-cli-more-selective-about-delegation/",
+          "published_at": "2026-06-12T22:26:23.000Z",
+          "summary": "Better orchestration, fewer handoffs, faster progress, without a single new knob.\nThe post How we made GitHub Copilot CLI more selective about delegation appeared first on The GitHub Blog.",
+          "fetched_at": "2026-06-25T00:18:13.283Z"
+        }
+      ]
+    },
+    "m365-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    }
+  },
+  "diff_result": true
+}
