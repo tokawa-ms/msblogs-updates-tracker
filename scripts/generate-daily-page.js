@@ -216,10 +216,18 @@ const JAPANESE_ACTION_RULES = [
   },
 ];
 
+function escapeRegExp(value) {
+  return value.replace(/[.*+?^${}()|[\]\\]/gu, '\\$&');
+}
+
+function includesKeyword(haystack, keyword) {
+  return new RegExp(`(^|[^a-z0-9])${escapeRegExp(keyword)}([^a-z0-9]|$)`, 'u').test(haystack);
+}
+
 function findJapaneseRuleText(text, rules, fallback) {
   const haystack = cleanText(text).toLowerCase();
   // Rules are evaluated in array order so higher-priority matches can be placed first.
-  return rules.find((rule) => rule.keywords.some((keyword) => haystack.includes(keyword)))?.text || fallback;
+  return rules.find((rule) => rule.keywords.some((keyword) => includesKeyword(haystack, keyword)))?.text || fallback;
 }
 
 function generateJapaneseSummaryFromRules(article, englishSummary) {

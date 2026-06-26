@@ -66,10 +66,18 @@ const JAPANESE_ACTION_RULES = [
   },
 ];
 
+function escapeRegExp(value) {
+  return value.replace(/[.*+?^${}()|[\]\\]/gu, '\\$&');
+}
+
+function includesKeyword(haystack, keyword) {
+  return new RegExp(`(^|[^a-z0-9])${escapeRegExp(keyword)}([^a-z0-9]|$)`, 'u').test(haystack);
+}
+
 function findJapaneseRuleText(text, rules, fallback) {
   const haystack = cleanText(text).toLowerCase();
   // Rules are evaluated in array order so higher-priority matches can be placed first.
-  return rules.find((rule) => rule.keywords.some((keyword) => haystack.includes(keyword)))?.text || fallback;
+  return rules.find((rule) => rule.keywords.some((keyword) => includesKeyword(haystack, keyword)))?.text || fallback;
 }
 
 function generateJapaneseSummaryFromRules(article, englishSummary) {
@@ -173,7 +181,18 @@ describe('generateJapaneseSummaryFromRules', () => {
   it('タイトルやソースが空でもフォールバックを返す', () => {
     const result = generateJapaneseSummaryFromRules({ title: '', source_name: '', source_id: '', summary: '' }, '');
 
-    assert.ok(result.includes('Microsoft 関連ブログ'));
-    assert.ok(result.includes('無題の記事'));
+    assert.equal(
+      result,
+      'Microsoft 関連ブログ で「無題の記事」が公開されました。発表内容や変更点の概要を確認できます。Microsoft と GitHub の技術情報に関する更新を確認できます。',
+    );
+  });
+
+  it('キーワードは単語境界で一致させる', () => {
+    const result = generateJapaneseSummaryFromRules(
+      { title: 'Reliable availability update', source_name: 'Azure Blog', summary: '' },
+      '',
+    );
+
+    assert.doesNotMatch(result, /新機能またはサービス提供開始/);
   });
 });
