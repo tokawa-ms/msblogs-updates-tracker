@@ -230,6 +230,34 @@ function findJapaneseRuleText(text, rules, fallback) {
   return rules.find((rule) => rule.keywords.some((keyword) => includesKeyword(haystack, keyword)))?.text || fallback;
 }
 
+function getArticleDetailSentence(article, englishSummary) {
+  const title = cleanText(article.title).toLowerCase();
+  const candidates = splitSentences(`${englishSummary} ${article.summary}`).filter((sentence) => {
+    const normalized = sentence.toLowerCase();
+    return (
+      !normalized.includes(' appeared first on ') &&
+      !normalized.startsWith('the post ') &&
+      normalized !== title
+    );
+  });
+
+  const detail = candidates[0] || cleanText(englishSummary) || cleanText(article.summary);
+  if (!detail) {
+    return '';
+  }
+
+  return detail.length > 220 ? `${detail.slice(0, 217).trim()}...` : detail;
+}
+
+function buildJapaneseDetailText(article, englishSummary) {
+  const detail = getArticleDetailSentence(article, englishSummary);
+  if (!detail) {
+    return '一覧では、関連する発表内容、変更点、確認すべき観点を短く整理しています。';
+  }
+
+  return `具体的には、原文要約で「${detail}」と説明されており、読者は発表の狙い、対象となる機能やサービス、確認すべき影響を一覧上で把握できます。`;
+}
+
 function generateJapaneseSummaryFromRules(article, englishSummary) {
   const title = cleanText(article.title) || '無題の記事';
   const sourceName = cleanText(article.source_name) || cleanText(article.source_id) || 'Microsoft 関連ブログ';
@@ -240,8 +268,9 @@ function generateJapaneseSummaryFromRules(article, englishSummary) {
     JAPANESE_TOPIC_RULES,
     'Microsoft と GitHub の技術情報に関する更新を確認できます。',
   );
+  const detail = buildJapaneseDetailText(article, englishSummary);
 
-  return `${sourceName} で「${title}」が公開されました。${action}${topic}`;
+  return `${sourceName} で「${title}」が公開されました。${action}${topic}${detail}`;
 }
 
 async function buildLocalizedArticlesBySource(diff) {

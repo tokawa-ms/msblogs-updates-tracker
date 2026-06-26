@@ -80,6 +80,32 @@ function findJapaneseRuleText(text, rules, fallback) {
   return rules.find((rule) => rule.keywords.some((keyword) => includesKeyword(haystack, keyword)))?.text || fallback;
 }
 
+function getArticleDetailSentence(article, englishSummary) {
+  const title = cleanText(article.title).toLowerCase();
+  const candidates = splitSentences(`${englishSummary} ${article.summary}`).filter((sentence) => {
+    const normalized = sentence.toLowerCase();
+    return (
+      !normalized.includes(' appeared first on ') &&
+      !normalized.startsWith('the post ') &&
+      normalized !== title
+    );
+  });
+
+  const detail = candidates[0] || cleanText(englishSummary) || cleanText(article.summary);
+  if (!detail) return '';
+
+  return detail.length > 220 ? `${detail.slice(0, 217).trim()}...` : detail;
+}
+
+function buildJapaneseDetailText(article, englishSummary) {
+  const detail = getArticleDetailSentence(article, englishSummary);
+  if (!detail) {
+    return '一覧では、関連する発表内容、変更点、確認すべき観点を短く整理しています。';
+  }
+
+  return `具体的には、原文要約で「${detail}」と説明されており、読者は発表の狙い、対象となる機能やサービス、確認すべき影響を一覧上で把握できます。`;
+}
+
 function generateJapaneseSummaryFromRules(article, englishSummary) {
   const title = cleanText(article.title) || '無題の記事';
   const sourceName = cleanText(article.source_name) || cleanText(article.source_id) || 'Microsoft 関連ブログ';
@@ -90,8 +116,9 @@ function generateJapaneseSummaryFromRules(article, englishSummary) {
     JAPANESE_TOPIC_RULES,
     'Microsoft と GitHub の技術情報に関する更新を確認できます。',
   );
+  const detail = buildJapaneseDetailText(article, englishSummary);
 
-  return `${sourceName} で「${title}」が公開されました。${action}${topic}`;
+  return `${sourceName} で「${title}」が公開されました。${action}${topic}${detail}`;
 }
 
 // -------------------------------------------------------------------
@@ -183,7 +210,7 @@ describe('generateJapaneseSummaryFromRules', () => {
 
     assert.equal(
       result,
-      'Microsoft 関連ブログ で「無題の記事」が公開されました。発表内容や変更点の概要を確認できます。Microsoft と GitHub の技術情報に関する更新を確認できます。',
+      'Microsoft 関連ブログ で「無題の記事」が公開されました。発表内容や変更点の概要を確認できます。Microsoft と GitHub の技術情報に関する更新を確認できます。一覧では、関連する発表内容、変更点、確認すべき観点を短く整理しています。',
     );
   });
 
@@ -194,5 +221,20 @@ describe('generateJapaneseSummaryFromRules', () => {
     );
 
     assert.doesNotMatch(result, /新機能またはサービス提供開始/);
+  });
+
+  it('原文要約から具体的な詳細を含める', () => {
+    const result = generateJapaneseSummaryFromRules(
+      {
+        title: 'Copilot task evaluation',
+        source_name: 'GitHub Blog',
+        summary: 'The post Copilot task evaluation appeared first on The GitHub Blog.',
+      },
+      'The evaluation compares more than 20 models across repository tasks and highlights token efficiency for agent workflows.',
+    );
+
+    assert.match(result, /more than 20 models/);
+    assert.match(result, /一覧上で把握できます/);
+    assert.doesNotMatch(result, /appeared first on/);
   });
 });
