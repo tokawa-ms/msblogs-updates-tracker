@@ -8,7 +8,7 @@ interface Props {
 
 const { ja, en, as = 'span', class: className } = Astro.props;
 const Tag = as;
-// If an English string is not available yet, keep the Japanese primary text visible in both modes.
+// During content transitions, newly generated items may not have English text yet; keep Japanese visible in both modes.
 const englishText = en ?? ja;
 ---
 
