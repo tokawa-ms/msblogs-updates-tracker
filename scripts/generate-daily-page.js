@@ -9,6 +9,7 @@ const ROOT = path.resolve(__dirname, '..');
 const UPDATES_DIR = path.join(ROOT, 'content', 'updates');
 const ASTRO_UPDATES_DIR = path.join(ROOT, 'src', 'content', 'updates');
 const INDEX_FILE = path.join(UPDATES_DIR, 'index.md');
+const MAX_JAPANESE_DETAIL_LENGTH = 220;
 
 function cleanText(value) {
   return String(value || '')
@@ -246,7 +247,9 @@ function getArticleDetailSentence(article, englishSummary) {
     return '';
   }
 
-  return detail.length > 220 ? `${detail.slice(0, 217).trim()}...` : detail;
+  return detail.length > MAX_JAPANESE_DETAIL_LENGTH
+    ? `${detail.slice(0, MAX_JAPANESE_DETAIL_LENGTH - 3).trim()}...`
+    : detail;
 }
 
 function buildJapaneseDetailText(article, englishSummary) {

@@ -9,6 +9,8 @@ const assert = require('node:assert/strict');
 
 // --- scripts/generate-daily-page.js のテキスト処理ヘルパーをテスト用に再現 ---
 
+const MAX_JAPANESE_DETAIL_LENGTH = 220;
+
 function cleanText(value) {
   return String(value || '')
     .replace(/\s+/g, ' ')
@@ -94,7 +96,9 @@ function getArticleDetailSentence(article, englishSummary) {
   const detail = candidates[0] || cleanText(englishSummary) || cleanText(article.summary);
   if (!detail) return '';
 
-  return detail.length > 220 ? `${detail.slice(0, 217).trim()}...` : detail;
+  return detail.length > MAX_JAPANESE_DETAIL_LENGTH
+    ? `${detail.slice(0, MAX_JAPANESE_DETAIL_LENGTH - 3).trim()}...`
+    : detail;
 }
 
 function buildJapaneseDetailText(article, englishSummary) {
@@ -236,5 +240,34 @@ describe('generateJapaneseSummaryFromRules', () => {
     assert.match(result, /more than 20 models/);
     assert.match(result, /一覧上で把握できます/);
     assert.doesNotMatch(result, /appeared first on/);
+  });
+});
+
+describe('getArticleDetailSentence', () => {
+  it('appeared first の定型文を除外して詳細文を選ぶ', () => {
+    const result = getArticleDetailSentence(
+      {
+        title: 'Copilot task evaluation',
+        summary: 'The post Copilot task evaluation appeared first on The GitHub Blog.',
+      },
+      'The evaluation compares more than 20 models across repository tasks and highlights token efficiency for agent workflows.',
+    );
+
+    assert.match(result, /more than 20 models/);
+    assert.doesNotMatch(result, /appeared first on/);
+  });
+
+  it('詳細文が長すぎる場合は上限で切り詰める', () => {
+    const result = getArticleDetailSentence(
+      { title: 'Long detail', summary: '' },
+      `${'This long sentence contains specific implementation details for readers and stakeholders '.repeat(5)}.`,
+    );
+
+    assert.ok(result.length <= MAX_JAPANESE_DETAIL_LENGTH);
+    assert.ok(result.endsWith('...'));
+  });
+
+  it('利用できる要約がない場合は空文字を返す', () => {
+    assert.equal(getArticleDetailSentence({ title: 'No detail', summary: '' }, ''), '');
   });
 });
