@@ -1,0 +1,174 @@
+{
+  "date": "2026-06-27",
+  "compared_with": "2026-06-26",
+  "source_count": 6,
+  "new_count": 4,
+  "removed_count": 4,
+  "new_articles": [
+    {
+      "id": "230c559d467deece",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "Claude Opus 4.8 is now available in Microsoft Foundry",
+      "url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/claude-opus-4-8-is-now-available-in-microsoft-foundry/4523367",
+      "published_at": "2026-05-29T14:46:32.000Z",
+      "summary": "Claude Opus 4.8 is now available in Microsoft Foundry, giving developers and enterprises access to Anthropic’s most capable Opus model for coding, agentic tasks, and professional work.\nThe post Claude Opus 4.8 is now available in Microsoft Foundry appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-06-27T00:14:09.459Z"
+    },
+    {
+      "id": "3f2100667a87c7b2",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "GitHub and UNDP team up to advance development priorities in Ghana with open source",
+      "url": "https://github.blog/open-source/social-impact/github-and-undp-team-up-to-advance-development-priorities-in-ghana-with-open-source/",
+      "published_at": "2026-06-26T16:53:57.000Z",
+      "summary": "GitHub joined the United Nations Development Programme in Ghana to explore how open source governance can support one of West Africa's most ambitious digital reform efforts. \nThe post GitHub and UNDP team up to advance development priorities in Ghana with open source appeared first on The GitHub Blog.",
+      "fetched_at": "2026-06-27T00:14:09.210Z"
+    },
+    {
+      "id": "d989886b0f49e6a4",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "Transitioning as a Hubber",
+      "url": "https://github.blog/developer-skills/career-growth/transitioning-as-a-hubber/",
+      "published_at": "2026-06-26T12:00:00.000Z",
+      "summary": "How GitHub's culture and benefits helped me be the best version of myself.\nThe post Transitioning as a Hubber appeared first on The GitHub Blog.",
+      "fetched_at": "2026-06-27T00:14:09.210Z"
+    },
+    {
+      "id": "73a2b6a3cf09b4d5",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "Iterating faster with TypeScript 7",
+      "url": "https://code.visualstudio.com/blogs/2026/06/26/iterating-faster-with-ts-7",
+      "published_at": "2026-06-26T00:00:00.000Z",
+      "summary": "How the VS Code and TypeScript teams collaborated to adopt TypeScript 7 and speed up VS Code development\nRead the full article",
+      "fetched_at": "2026-06-27T00:14:09.250Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "230c559d467deece",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Claude Opus 4.8 is now available in Microsoft Foundry",
+          "url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/claude-opus-4-8-is-now-available-in-microsoft-foundry/4523367",
+          "published_at": "2026-05-29T14:46:32.000Z",
+          "summary": "Claude Opus 4.8 is now available in Microsoft Foundry, giving developers and enterprises access to Anthropic’s most capable Opus model for coding, agentic tasks, and professional work.\nThe post Claude Opus 4.8 is now available in Microsoft Foundry appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-06-27T00:14:09.459Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "432094af8571b3dd",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "From insight to action: The next phase of agentic cloud operations",
+          "url": "https://azure.microsoft.com/en-us/blog/from-insight-to-action-the-next-phase-of-agentic-cloud-operations/",
+          "published_at": "2026-06-23T15:45:00.000Z",
+          "summary": "What if your cloud environment could help you move from insight to action in real time, with systems already working through the next set of decisions?\nThe post From insight to action: The next phase of agentic cloud operations appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-06-26T00:15:45.833Z"
+        }
+      ]
+    },
+    "fabric-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "github-blog": {
+      "new_count": 2,
+      "removed_count": 2,
+      "new_articles": [
+        {
+          "id": "3f2100667a87c7b2",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "GitHub and UNDP team up to advance development priorities in Ghana with open source",
+          "url": "https://github.blog/open-source/social-impact/github-and-undp-team-up-to-advance-development-priorities-in-ghana-with-open-source/",
+          "published_at": "2026-06-26T16:53:57.000Z",
+          "summary": "GitHub joined the United Nations Development Programme in Ghana to explore how open source governance can support one of West Africa's most ambitious digital reform efforts. \nThe post GitHub and UNDP team up to advance development priorities in Ghana with open source appeared first on The GitHub Blog.",
+          "fetched_at": "2026-06-27T00:14:09.210Z"
+        },
+        {
+          "id": "d989886b0f49e6a4",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "Transitioning as a Hubber",
+          "url": "https://github.blog/developer-skills/career-growth/transitioning-as-a-hubber/",
+          "published_at": "2026-06-26T12:00:00.000Z",
+          "summary": "How GitHub's culture and benefits helped me be the best version of myself.\nThe post Transitioning as a Hubber appeared first on The GitHub Blog.",
+          "fetched_at": "2026-06-27T00:14:09.210Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "0ba3272de0f7841b",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "GitHub Copilot CLI for Beginners: Overview of common slash commands",
+          "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-overview-of-common-slash-commands/",
+          "published_at": "2026-06-15T20:15:31.000Z",
+          "summary": "GitHub Copilot CLI for Beginners: Learn how to use slash commands to control your terminal AI agent.\nThe post GitHub Copilot CLI for Beginners: Overview of common slash commands appeared first on The GitHub Blog.",
+          "fetched_at": "2026-06-26T00:15:34.848Z"
+        },
+        {
+          "id": "96fb7a7ce20e279d",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "Accelerating researchers and developers building multilingual AI with a new open dataset",
+          "url": "https://github.blog/ai-and-ml/llms/accelerating-researchers-and-developers-building-multilingual-ai-with-a-new-open-dataset/",
+          "published_at": "2026-06-15T19:17:30.000Z",
+          "summary": "A new repository-level dataset, published on GitHub under CC0-1.0, helps researchers and developers discover multilingual developer content across READMEs, issues, and pull requests.\nThe post Accelerating researchers and developers building multilingual AI with a new open dataset appeared first on The GitHub Blog.",
+          "fetched_at": "2026-06-26T00:15:34.848Z"
+        }
+      ]
+    },
+    "m365-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "73a2b6a3cf09b4d5",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Iterating faster with TypeScript 7",
+          "url": "https://code.visualstudio.com/blogs/2026/06/26/iterating-faster-with-ts-7",
+          "published_at": "2026-06-26T00:00:00.000Z",
+          "summary": "How the VS Code and TypeScript teams collaborated to adopt TypeScript 7 and speed up VS Code development\nRead the full article",
+          "fetched_at": "2026-06-27T00:14:09.250Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "77eb2a33c46983c3",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Introducing the VS Code Insiders Podcast",
+          "url": "https://code.visualstudio.com/blogs/2025/12/03/introducing-vs-code-insiders-podcast",
+          "published_at": "2025-12-03T00:00:00.000Z",
+          "summary": "The VS Code Insiders Podcast is your insider's guide to the features, decisions, and people shaping the future of Visual Studio Code.\nRead the full article",
+          "fetched_at": "2026-06-26T00:15:45.703Z"
+        }
+      ]
+    }
+  },
+  "diff_result": true
+}
