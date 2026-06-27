@@ -1,8 +1,8 @@
 # MS Blogs Update Tracker
 
-Microsoft と GitHub の主要ブログから毎日のアップデート情報を自動収集し、日付ごとに整理されたページを生成する Agentic Workflow プロジェクトです。
+Microsoft と GitHub の主要ブログから毎日のアップデート情報を自動収集し、日付ごとに整理されたページを生成するプロジェクトです。
 
-このリポジトリは、実運用を想定した更新追跡システムであると同時に、GitHub の Agentic Workflow のデモ実装を兼ねています。
+このリポジトリは、GitHub Actions を用いた実運用向けの更新追跡システムです。
 
 ## 📚 ドキュメント
 
@@ -63,7 +63,7 @@ npm run build:static
 | Phase | 内容 | 状態 |
 |-------|------|------|
 | **Phase 1** (Week 1) | ブログ取得・差分検出スクリプト実装 | ✅ 完了 |
-| **Phase 2** (Week 2) | GitHub Actions ワークフロー & AI 統合 | ✅ 完了 |
+| **Phase 2** (Week 2) | GitHub Actions ワークフロー整備 | ✅ 完了 |
 | **Phase 3** (Week 3) | 静的サイト生成スクリプト実装 | ✅ 完了 |
 | **Phase 4** (Week 4) | テスト・デプロイ・運用化 | ✅ 完了 |
 
@@ -79,7 +79,7 @@ npm run build:static
 
 ```bash
 npm test
-# → 40 テスト全件パス（Node.js 組み込みテストランナー使用）
+# → 全テストパス（Node.js 組み込みテストランナー使用）
 ```
 
 テスト対象:
@@ -101,7 +101,9 @@ npm test
 ## 🛠️ 技術スタック
 
 - Node.js 24
-- GitHub Actions / Agentic Workflows
+- TypeScript
+- Astro
+- GitHub Actions（標準 Workflow）
 - cheerio（HTML パース）
 - rss-parser（RSS パース）
 - Node.js 組み込みテストランナー（`node:test`）
