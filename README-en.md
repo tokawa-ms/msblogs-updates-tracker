@@ -1,8 +1,8 @@
 # MS Blogs Update Tracker
 
-An Agentic Workflow project that automatically collects daily update information from major Microsoft and GitHub blogs and generates date-organized pages and an Astro website.
+A project that automatically collects daily update information from major Microsoft and GitHub blogs, then generates date-organized pages and an Astro website.
 
-This repository serves as both a production-ready update tracking system and a demo implementation of GitHub Agentic Workflows.
+This repository is a production-oriented update tracking system built with standard GitHub Actions workflows.
 
 ## 📚 Documentation
 
@@ -46,6 +46,9 @@ npm run dev:fetch
 
 # Generate static HTML site (for GitHub Pages)
 npm run build:static
+```
+
+### Target blog sources
 
 - 🐙 GitHub Blog
 - 💻 VSCode Blog
@@ -59,7 +62,7 @@ npm run build:static
 | Phase | Content | Status |
 |-------|---------|--------|
 | **Phase 1** (Week 1) | Blog fetch & diff detection scripts | ✅ Done |
-| **Phase 2** (Week 2) | GitHub Actions workflows & AI integration | ✅ Done |
+| **Phase 2** (Week 2) | GitHub Actions workflow setup | ✅ Done |
 | **Phase 3** (Week 3) | Astro website | ✅ Done |
 | **Phase 4** (Week 4) | Testing, deployment & operationalization | ✅ Done |
 
@@ -75,7 +78,7 @@ npm run build:static
 
 ```bash
 npm test
-# -> 40 tests pass (using Node.js built-in test runner)
+# -> all tests pass (using Node.js built-in test runner)
 ```
 
 Test coverage:
@@ -99,7 +102,7 @@ Test coverage:
 - Node.js 24
 - TypeScript
 - Astro
-- GitHub Actions / Agentic Workflows
+- GitHub Actions (standard workflows)
 - cheerio (HTML parsing)
 - rss-parser (RSS parsing)
 - Node.js built-in test runner (`node:test`)
