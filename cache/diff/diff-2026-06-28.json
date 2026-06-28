@@ -1,0 +1,110 @@
+{
+  "date": "2026-06-28",
+  "compared_with": "2026-06-27",
+  "source_count": 6,
+  "new_count": 2,
+  "removed_count": 2,
+  "new_articles": [
+    {
+      "id": "329ec90a5f02255e",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "The performance dividend: Optimizing PostgreSQL on Azure directly in Visual Studio Code",
+      "url": "https://azure.microsoft.com/en-us/blog/the-performance-dividend-optimizing-postgresql-on-azure-directly-in-visual-studio-code/",
+      "published_at": "2026-06-26T17:00:00.000Z",
+      "summary": "Poor database performance is never just a database problem. In enterprise teams, it shows up as missed SLAs, delayed releases, frustrated development teams, and rising operational risk. The performance problem compounds further in business impact, often resulting in frustrated customers, retention and conversion risk, and lost revenue.\nThe post The performance dividend: Optimizing PostgreSQL on Azure directly in Visual Studio Code appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-06-28T00:08:16.365Z"
+    },
+    {
+      "id": "432094af8571b3dd",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "From insight to action: The next phase of agentic cloud operations",
+      "url": "https://azure.microsoft.com/en-us/blog/from-insight-to-action-the-next-phase-of-agentic-cloud-operations/",
+      "published_at": "2026-06-23T15:45:00.000Z",
+      "summary": "What if your cloud environment could help you move from insight to action in real time, with systems already working through the next set of decisions?\nThe post From insight to action: The next phase of agentic cloud operations appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-06-28T00:08:16.365Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 2,
+      "removed_count": 2,
+      "new_articles": [
+        {
+          "id": "329ec90a5f02255e",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "The performance dividend: Optimizing PostgreSQL on Azure directly in Visual Studio Code",
+          "url": "https://azure.microsoft.com/en-us/blog/the-performance-dividend-optimizing-postgresql-on-azure-directly-in-visual-studio-code/",
+          "published_at": "2026-06-26T17:00:00.000Z",
+          "summary": "Poor database performance is never just a database problem. In enterprise teams, it shows up as missed SLAs, delayed releases, frustrated development teams, and rising operational risk. The performance problem compounds further in business impact, often resulting in frustrated customers, retention and conversion risk, and lost revenue.\nThe post The performance dividend: Optimizing PostgreSQL on Azure directly in Visual Studio Code appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-06-28T00:08:16.365Z"
+        },
+        {
+          "id": "432094af8571b3dd",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "From insight to action: The next phase of agentic cloud operations",
+          "url": "https://azure.microsoft.com/en-us/blog/from-insight-to-action-the-next-phase-of-agentic-cloud-operations/",
+          "published_at": "2026-06-23T15:45:00.000Z",
+          "summary": "What if your cloud environment could help you move from insight to action in real time, with systems already working through the next set of decisions?\nThe post From insight to action: The next phase of agentic cloud operations appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-06-28T00:08:16.365Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "c477fa54ec7d03df",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "A Developer’s Guide to Managing Models, Cost and Quality in Microsoft Foundry",
+          "url": "https://devblogs.microsoft.com/foundry/build-2026-foundry-models/",
+          "published_at": "2026-06-02T16:00:00.000Z",
+          "summary": "Microsoft Foundry helps teams move beyond model access to operate AI at scale—selecting, evaluating, optimizing, and governing models across the full lifecycle.\nThe post A Developer’s Guide to Managing Models, Cost and Quality in Microsoft Foundry appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-06-27T00:14:09.459Z"
+        },
+        {
+          "id": "230c559d467deece",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Claude Opus 4.8 is now available in Microsoft Foundry",
+          "url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/claude-opus-4-8-is-now-available-in-microsoft-foundry/4523367",
+          "published_at": "2026-05-29T14:46:32.000Z",
+          "summary": "Claude Opus 4.8 is now available in Microsoft Foundry, giving developers and enterprises access to Anthropic’s most capable Opus model for coding, agentic tasks, and professional work.\nThe post Claude Opus 4.8 is now available in Microsoft Foundry appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-06-27T00:14:09.459Z"
+        }
+      ]
+    },
+    "fabric-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "github-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "m365-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    }
+  },
+  "diff_result": true
+}
