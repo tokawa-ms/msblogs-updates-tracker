@@ -1,0 +1,102 @@
+[
+  {
+    "id": "329ec90a5f02255e",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "The performance dividend: Optimizing PostgreSQL on Azure directly in Visual Studio Code",
+    "url": "https://azure.microsoft.com/en-us/blog/the-performance-dividend-optimizing-postgresql-on-azure-directly-in-visual-studio-code/",
+    "published_at": "2026-06-26T17:00:00.000Z",
+    "summary": "Poor database performance is never just a database problem. In enterprise teams, it shows up as missed SLAs, delayed releases, frustrated development teams, and rising operational risk. The performance problem compounds further in business impact, often resulting in frustrated customers, retention and conversion risk, and lost revenue.\nThe post The performance dividend: Optimizing PostgreSQL on Azure directly in Visual Studio Code appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-06-30T00:11:33.685Z"
+  },
+  {
+    "id": "432094af8571b3dd",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "From insight to action: The next phase of agentic cloud operations",
+    "url": "https://azure.microsoft.com/en-us/blog/from-insight-to-action-the-next-phase-of-agentic-cloud-operations/",
+    "published_at": "2026-06-23T15:45:00.000Z",
+    "summary": "What if your cloud environment could help you move from insight to action in real time, with systems already working through the next set of decisions?\nThe post From insight to action: The next phase of agentic cloud operations appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-06-30T00:11:33.685Z"
+  },
+  {
+    "id": "ca810d46696b8ebb",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "Modernize your data with Azure Storage: Plan and migrate with confidence",
+    "url": "https://azure.microsoft.com/en-us/blog/modernize-your-data-with-azure-storage-plan-and-migrate-with-confidence/",
+    "published_at": "2026-06-16T16:00:00.000Z",
+    "summary": "Enterprise storage migrations are rarely just about copying data. They are about protecting business continuity, maintaining performance, managing cost, and giving teams confidence when terabytes or petabytes of data sit at the heart of critical applications.\nThe post Modernize your data with Azure Storage: Plan and migrate with confidence appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-06-30T00:11:33.685Z"
+  },
+  {
+    "id": "815999082b7e74c8",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "3 things leaders need to know from Microsoft Build 2026",
+    "url": "https://azure.microsoft.com/en-us/blog/3-things-leaders-need-to-know-from-microsoft-build-2026/",
+    "published_at": "2026-06-11T19:00:00.000Z",
+    "summary": "At Microsoft Build 2026, AI moved from experimentation to execution—shifting from isolated tools to connected systems grounded in business data. Organizations that win will embed AI across workflows, scale it effectively, and translate it into measurable outcomes like faster growth, lower costs, and better customer experiences.\nThe post 3 things leaders need to know from Microsoft Build 2026 appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-06-30T00:11:33.685Z"
+  },
+  {
+    "id": "4979016e4abdf662",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "Claude Fable 5 available today in Microsoft Foundry: Powering the next era of autonomous agents",
+    "url": "https://azure.microsoft.com/en-us/blog/claude-fable-5-is-now-available-in-microsoft-foundry-powering-the-next-era-of-autonomous-agents/",
+    "published_at": "2026-06-09T17:00:00.000Z",
+    "summary": "Claude Fable 5, Anthropic’s latest Frontier model, available today in Microsoft Foundry, powering agents in GitHub Copilot and Foundry Agent Service.\nThe post Claude Fable 5 available today in Microsoft Foundry: Powering the next era of autonomous agents appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-06-30T00:11:33.685Z"
+  },
+  {
+    "id": "f4124bbb866ef6b0",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "AI alone won’t change your business. The system running it will.",
+    "url": "https://blogs.microsoft.com/blog/2026/06/02/ai-alone-wont-change-your-business-the-system-running-it-will/",
+    "published_at": "2026-06-02T19:15:57.000Z",
+    "summary": "We are building a comprehensive agent platform: one that supports many models, is open, and gives you flexibility at every layer of the stack.\nThe post AI alone won’t change your business. The system running it will. appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-06-30T00:11:33.685Z"
+  },
+  {
+    "id": "9329279c3880d248",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "Announcing Microsoft Discovery general availability and Microsoft Discovery app preview",
+    "url": "https://azure.microsoft.com/en-us/blog/announcing-microsoft-discovery-general-availability-and-microsoft-discovery-app-preview/",
+    "published_at": "2026-06-02T18:15:00.000Z",
+    "summary": "At Microsoft Build, we are announcing that Microsoft Discovery is now generally available for all organizations, providing a comprehensive platform for building and governing agentic AI workflows.\nThe post Announcing Microsoft Discovery general availability and Microsoft Discovery app preview appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-06-30T00:11:33.685Z"
+  },
+  {
+    "id": "68fc44f8bf52ca29",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "Microsoft Build 2026: Building agentic apps with Microsoft Fabric and Microsoft Databases",
+    "url": "https://azure.microsoft.com/en-us/blog/microsoft-build-2026-building-agentic-apps-with-microsoft-fabric-and-microsoft-databases/",
+    "published_at": "2026-06-02T16:59:00.000Z",
+    "summary": "Microsoft Build 2026 highlights advancements in app development with Microsoft Fabric and Microsoft Databases, emphasizing a unified data and AI platform for scalable, agentic applications.\nThe post Microsoft Build 2026: Building agentic apps with Microsoft Fabric and Microsoft Databases appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-06-30T00:11:33.685Z"
+  },
+  {
+    "id": "01787ad8851ad16f",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "New Azure Cobalt 200 VMs deliver 50% performance improvement, fully optimized for modern agentic AI workloads",
+    "url": "https://azure.microsoft.com/en-us/blog/new-azure-cobalt-200-vms-deliver-50-performance-improvement-fully-optimized-for-modern-agentic-ai-workloads/",
+    "published_at": "2026-06-02T16:30:09.000Z",
+    "summary": "We are announcing the early access preview for Azure Cobalt 200 Arm-based Virtual Machines (VMs), designed for Linux-based agentic AI workloads.\nThe post New Azure Cobalt 200 VMs deliver 50% performance improvement, fully optimized for modern agentic AI workloads appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-06-30T00:11:33.685Z"
+  },
+  {
+    "id": "c803d55ec7c78b7d",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "Foundry IQ: Build smarter agents faster with unified knowledge and serverless retrieval",
+    "url": "https://devblogs.microsoft.com/foundry/build-smarter-agents-faster-with-foundry-iq/",
+    "published_at": "2026-06-02T16:00:00.000Z",
+    "summary": "Build smarter agents with Microsoft Foundry IQ, unifying enterprise and external data into a secure, scalable knowledge layer for faster, higher-quality answers.\nThe post Foundry IQ: Build smarter agents faster with unified knowledge and serverless retrieval appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-06-30T00:11:33.685Z"
+  }
+]
