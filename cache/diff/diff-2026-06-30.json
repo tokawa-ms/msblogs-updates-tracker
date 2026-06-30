@@ -1,0 +1,110 @@
+{
+  "date": "2026-06-30",
+  "compared_with": "2026-06-29",
+  "source_count": 6,
+  "new_count": 2,
+  "removed_count": 2,
+  "new_articles": [
+    {
+      "id": "d3034b0a9e4e1cee",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "Highlights from Git 2.55",
+      "url": "https://github.blog/open-source/git/highlights-from-git-2-55/",
+      "published_at": "2026-06-29T17:25:25.000Z",
+      "summary": "The open source Git project just released Git 2.55. Here is GitHub’s look at some of the most interesting features and changes introduced since last time.\nThe post Highlights from Git 2.55 appeared first on The GitHub Blog.",
+      "fetched_at": "2026-06-30T00:11:33.592Z"
+    },
+    {
+      "id": "53f94e9675bc8529",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "Inside the Advisory Database and what happens when vulnerability volume breaks records",
+      "url": "https://github.blog/security/supply-chain-security/inside-the-advisory-database-and-what-happens-when-vulnerability-volume-breaks-records/",
+      "published_at": "2026-06-29T16:10:20.000Z",
+      "summary": "The GitHub Advisory Database is processing more vulnerability reports than ever before. Here's what's driving the surge, how we're responding, and how the community can help.\nThe post Inside the Advisory Database and what happens when vulnerability volume breaks records appeared first on The GitHub Blog.",
+      "fetched_at": "2026-06-30T00:11:33.592Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "fabric-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "github-blog": {
+      "new_count": 2,
+      "removed_count": 2,
+      "new_articles": [
+        {
+          "id": "d3034b0a9e4e1cee",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "Highlights from Git 2.55",
+          "url": "https://github.blog/open-source/git/highlights-from-git-2-55/",
+          "published_at": "2026-06-29T17:25:25.000Z",
+          "summary": "The open source Git project just released Git 2.55. Here is GitHub’s look at some of the most interesting features and changes introduced since last time.\nThe post Highlights from Git 2.55 appeared first on The GitHub Blog.",
+          "fetched_at": "2026-06-30T00:11:33.592Z"
+        },
+        {
+          "id": "53f94e9675bc8529",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "Inside the Advisory Database and what happens when vulnerability volume breaks records",
+          "url": "https://github.blog/security/supply-chain-security/inside-the-advisory-database-and-what-happens-when-vulnerability-volume-breaks-records/",
+          "published_at": "2026-06-29T16:10:20.000Z",
+          "summary": "The GitHub Advisory Database is processing more vulnerability reports than ever before. Here's what's driving the surge, how we're responding, and how the community can help.\nThe post Inside the Advisory Database and what happens when vulnerability volume breaks records appeared first on The GitHub Blog.",
+          "fetched_at": "2026-06-30T00:11:33.592Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "c657b6576b9758fc",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "Getting more from each token: How Copilot improves context handling and model routing",
+          "url": "https://github.blog/ai-and-ml/github-copilot/getting-more-from-each-token-how-copilot-improves-context-handling-and-model-routing/",
+          "published_at": "2026-06-17T19:41:46.000Z",
+          "summary": "How GitHub Copilot is making more of each session go toward useful work, so your credits go further.\nThe post Getting more from each token: How Copilot improves context handling and model routing appeared first on The GitHub Blog.",
+          "fetched_at": "2026-06-29T00:13:43.599Z"
+        },
+        {
+          "id": "2f0101a4921237ff",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "What are git worktrees, and why should I use them?",
+          "url": "https://github.blog/ai-and-ml/github-copilot/what-are-git-worktrees-and-why-should-i-use-them/",
+          "published_at": "2026-06-16T20:58:54.000Z",
+          "summary": "Git worktrees have been around since 2015, but it wasn't until recently they became popular. Learn what they are, how to use them, and why you might.\nThe post What are git worktrees, and why should I use them? appeared first on The GitHub Blog.",
+          "fetched_at": "2026-06-29T00:13:43.599Z"
+        }
+      ]
+    },
+    "m365-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    }
+  },
+  "diff_result": true
+}
