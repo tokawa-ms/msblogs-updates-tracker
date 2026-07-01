@@ -1,0 +1,102 @@
+[
+  {
+    "id": "c3c2afe153d073f8",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "How GitHub maintains compliance for open source dependencies",
+    "url": "https://github.blog/enterprise-software/governance-and-compliance/how-github-maintains-compliance-for-open-source-dependencies/",
+    "published_at": "2026-06-30T17:28:16.000Z",
+    "summary": "Explore how the Open Source Program Office uses GitHub’s new license compliance product to manage open source dependencies at scale.\nThe post How GitHub maintains compliance for open source dependencies appeared first on The GitHub Blog.",
+    "fetched_at": "2026-07-01T00:13:34.318Z"
+  },
+  {
+    "id": "d3034b0a9e4e1cee",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "Highlights from Git 2.55",
+    "url": "https://github.blog/open-source/git/highlights-from-git-2-55/",
+    "published_at": "2026-06-29T17:25:25.000Z",
+    "summary": "The open source Git project just released Git 2.55. Here is GitHub’s look at some of the most interesting features and changes introduced since last time.\nThe post Highlights from Git 2.55 appeared first on The GitHub Blog.",
+    "fetched_at": "2026-07-01T00:13:34.318Z"
+  },
+  {
+    "id": "53f94e9675bc8529",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "Inside the Advisory Database and what happens when vulnerability volume breaks records",
+    "url": "https://github.blog/security/supply-chain-security/inside-the-advisory-database-and-what-happens-when-vulnerability-volume-breaks-records/",
+    "published_at": "2026-06-29T16:10:20.000Z",
+    "summary": "The GitHub Advisory Database is processing more vulnerability reports than ever before. Here's what's driving the surge, how we're responding, and how the community can help.\nThe post Inside the Advisory Database and what happens when vulnerability volume breaks records appeared first on The GitHub Blog.",
+    "fetched_at": "2026-07-01T00:13:34.318Z"
+  },
+  {
+    "id": "3f2100667a87c7b2",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "GitHub and UNDP team up to advance development priorities in Ghana with open source",
+    "url": "https://github.blog/open-source/social-impact/github-and-undp-team-up-to-advance-development-priorities-in-ghana-with-open-source/",
+    "published_at": "2026-06-26T16:53:57.000Z",
+    "summary": "GitHub joined the United Nations Development Programme in Ghana to explore how open source governance can support one of West Africa's most ambitious digital reform efforts. \nThe post GitHub and UNDP team up to advance development priorities in Ghana with open source appeared first on The GitHub Blog.",
+    "fetched_at": "2026-07-01T00:13:34.318Z"
+  },
+  {
+    "id": "d989886b0f49e6a4",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "Transitioning as a Hubber",
+    "url": "https://github.blog/developer-skills/career-growth/transitioning-as-a-hubber/",
+    "published_at": "2026-06-26T12:00:00.000Z",
+    "summary": "How GitHub's culture and benefits helped me be the best version of myself.\nThe post Transitioning as a Hubber appeared first on The GitHub Blog.",
+    "fetched_at": "2026-07-01T00:13:34.318Z"
+  },
+  {
+    "id": "0d180708b9cf8116",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "Evaluating performance and efficiency of the GitHub Copilot agentic harness across models and tasks",
+    "url": "https://github.blog/ai-and-ml/github-copilot/evaluating-performance-and-efficiency-of-the-github-copilot-agentic-harness-across-models-and-tasks/",
+    "published_at": "2026-06-25T22:59:45.000Z",
+    "summary": "Explore how the GitHub Copilot agentic harness delivers strong results across multiple benchmarks and leading token efficiency, while maintaining flexibility to choose among more than 20 models.\nThe post Evaluating performance and efficiency of the GitHub Copilot agentic harness across models and tasks appeared first on The GitHub Blog.",
+    "fetched_at": "2026-07-01T00:13:34.318Z"
+  },
+  {
+    "id": "31da026976d6077c",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "I automated my job (and it made me a better leader)",
+    "url": "https://github.blog/developer-skills/github/i-automated-my-job-and-it-made-me-a-better-leader/",
+    "published_at": "2026-06-23T16:00:00.000Z",
+    "summary": "Explore how my day as a senior leader looks now that I use 40 automations to help, and learn more about some of my favorites.\nThe post I automated my job (and it made me a better leader) appeared first on The GitHub Blog.",
+    "fetched_at": "2026-07-01T00:13:34.318Z"
+  },
+  {
+    "id": "4ee50f139e948419",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "GitHub joins coalition advocating for fixes to California AI Transparency Act to protect open source",
+    "url": "https://github.blog/news-insights/policy-news-and-insights/github-joins-coalition-advocating-for-fixes-to-california-ai-transparency-act-to-protect-open-source/",
+    "published_at": "2026-06-23T15:48:00.000Z",
+    "summary": "We’re calling for targeted amendments to resolve conflicts with open source licensing and align with international transparency frameworks while preserving regulatory intent.\nThe post GitHub joins coalition advocating for fixes to California AI Transparency Act to protect open source appeared first on The GitHub Blog.",
+    "fetched_at": "2026-07-01T00:13:34.318Z"
+  },
+  {
+    "id": "9af07bc56ca77892",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "From pledge to practice: Building a more inclusive open source ecosystem",
+    "url": "https://github.blog/open-source/from-pledge-to-practice-building-a-more-inclusive-open-source-ecosystem/",
+    "published_at": "2026-06-22T17:20:31.000Z",
+    "summary": "Learn about the progress we’ve made toward our accessibility goals and how you can help make open source more inclusive. \nThe post From pledge to practice: Building a more inclusive open source ecosystem appeared first on The GitHub Blog.",
+    "fetched_at": "2026-07-01T00:13:34.318Z"
+  },
+  {
+    "id": "3c538b4fb66edae9",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "How we built an internal data analytics agent",
+    "url": "https://github.blog/ai-and-ml/github-copilot/how-we-built-an-internal-data-analytics-agent/",
+    "published_at": "2026-06-19T16:00:00.000Z",
+    "summary": "Qubot, our internal Copilot-powered analytics agent, allows any GitHub employee to ask questions about our data in plain language. Here's what we learned as we built it.\nThe post How we built an internal data analytics agent appeared first on The GitHub Blog.",
+    "fetched_at": "2026-07-01T00:13:34.318Z"
+  }
+]
