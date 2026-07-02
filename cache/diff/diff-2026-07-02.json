@@ -1,0 +1,187 @@
+{
+  "date": "2026-07-02",
+  "compared_with": "2026-07-01",
+  "source_count": 6,
+  "new_count": 4,
+  "removed_count": 5,
+  "new_articles": [
+    {
+      "id": "4c581c445fbb4273",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "Azure IaaS: How to design, build, and optimize cloud infrastructure for long-term cost optimization efficiency",
+      "url": "https://azure.microsoft.com/en-us/blog/azure-iaas-how-to-design-build-and-optimize-cloud-infrastructure-for-long-term-cost-optimization-efficiency/",
+      "published_at": "2026-06-30T16:00:00.000Z",
+      "summary": "As organizations modernize infrastructure, migrate mission-critical workloads, build cloud-native applications, and scale AI—cost efficiency remains a foundational principle of cloud architectures.\nThe post Azure IaaS: How to design, build, and optimize cloud infrastructure for long-term cost optimization efficiency appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-07-02T00:14:50.105Z"
+    },
+    {
+      "id": "f0befc22c60c12e8",
+      "source_id": "fabric-blog",
+      "source_name": "Microsoft Fabric Blog",
+      "title": "Power BI reports and Fabric Apps: Expanding how you build on your semantic model data",
+      "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Power-BI-reports-and-Fabric-Apps-Expanding-how-you-build-on-your/ba-p/5234706",
+      "published_at": "2026-07-01T21:00:00.000Z",
+      "summary": "Power BI reports continue to help analysts build secure, governed BI experiences on semantic models, while Fabric Apps expands what developers can create from the same trusted data.",
+      "fetched_at": "2026-07-02T00:14:50.514Z"
+    },
+    {
+      "id": "9d0b7cca463c54de",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "6 security settings every GitHub maintainer should enable this week",
+      "url": "https://github.blog/security/6-security-settings-every-github-maintainer-should-enable-this-week/",
+      "published_at": "2026-07-01T15:59:29.000Z",
+      "summary": "These six free settings will not make your project unhackable. Nothing will. What they will do is close the easy doors. Turn these on, and your project will be meaningfully harder to attack than it was before.\nThe post 6 security settings every GitHub maintainer should enable this week appeared first on The GitHub Blog.",
+      "fetched_at": "2026-07-02T00:14:49.401Z"
+    },
+    {
+      "id": "8f02988b1b46791a",
+      "source_id": "m365-blog",
+      "source_name": "Microsoft 365 Blog",
+      "title": "Copilot in Excel: Built for the era of Frontier Finance",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/25/copilot-in-excel-built-for-the-era-of-frontier-finance/",
+      "published_at": "2026-06-25T13:00:00.000Z",
+      "summary": "Plenty of AI tools claim to be built for finance; Microsoft 365 Copilot in Excel is proving it in practice.\nThe post Copilot in Excel: Built for the era of Frontier Finance appeared first on Microsoft 365 Blog.",
+      "fetched_at": "2026-07-02T00:14:50.235Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "4c581c445fbb4273",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Azure IaaS: How to design, build, and optimize cloud infrastructure for long-term cost optimization efficiency",
+          "url": "https://azure.microsoft.com/en-us/blog/azure-iaas-how-to-design-build-and-optimize-cloud-infrastructure-for-long-term-cost-optimization-efficiency/",
+          "published_at": "2026-06-30T16:00:00.000Z",
+          "summary": "As organizations modernize infrastructure, migrate mission-critical workloads, build cloud-native applications, and scale AI—cost efficiency remains a foundational principle of cloud architectures.\nThe post Azure IaaS: How to design, build, and optimize cloud infrastructure for long-term cost optimization efficiency appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-07-02T00:14:50.105Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "9329279c3880d248",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Announcing Microsoft Discovery general availability and Microsoft Discovery app preview",
+          "url": "https://azure.microsoft.com/en-us/blog/announcing-microsoft-discovery-general-availability-and-microsoft-discovery-app-preview/",
+          "published_at": "2026-06-02T18:15:00.000Z",
+          "summary": "At Microsoft Build, we are announcing that Microsoft Discovery is now generally available for all organizations, providing a comprehensive platform for building and governing agentic AI workflows.\nThe post Announcing Microsoft Discovery general availability and Microsoft Discovery app preview appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-07-01T00:13:34.729Z"
+        }
+      ]
+    },
+    "fabric-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "f0befc22c60c12e8",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Power BI reports and Fabric Apps: Expanding how you build on your semantic model data",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Power-BI-reports-and-Fabric-Apps-Expanding-how-you-build-on-your/ba-p/5234706",
+          "published_at": "2026-07-01T21:00:00.000Z",
+          "summary": "Power BI reports continue to help analysts build secure, governed BI experiences on semantic models, while Fabric Apps expands what developers can create from the same trusted data.",
+          "fetched_at": "2026-07-02T00:14:50.514Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "81e475d094fdc224",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Semantic model settings pane (Preview)",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Semantic-model-settings-pane-Preview/ba-p/5177694",
+          "published_at": "2026-05-06T18:04:07.000Z",
+          "summary": "Author: Kay Unkroth - Principal Program Manager",
+          "fetched_at": "2026-07-01T00:13:35.230Z"
+        }
+      ]
+    },
+    "github-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "9d0b7cca463c54de",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "6 security settings every GitHub maintainer should enable this week",
+          "url": "https://github.blog/security/6-security-settings-every-github-maintainer-should-enable-this-week/",
+          "published_at": "2026-07-01T15:59:29.000Z",
+          "summary": "These six free settings will not make your project unhackable. Nothing will. What they will do is close the easy doors. Turn these on, and your project will be meaningfully harder to attack than it was before.\nThe post 6 security settings every GitHub maintainer should enable this week appeared first on The GitHub Blog.",
+          "fetched_at": "2026-07-02T00:14:49.401Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "3c538b4fb66edae9",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "How we built an internal data analytics agent",
+          "url": "https://github.blog/ai-and-ml/github-copilot/how-we-built-an-internal-data-analytics-agent/",
+          "published_at": "2026-06-19T16:00:00.000Z",
+          "summary": "Qubot, our internal Copilot-powered analytics agent, allows any GitHub employee to ask questions about our data in plain language. Here's what we learned as we built it.\nThe post How we built an internal data analytics agent appeared first on The GitHub Blog.",
+          "fetched_at": "2026-07-01T00:13:34.318Z"
+        }
+      ]
+    },
+    "m365-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "8f02988b1b46791a",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Copilot in Excel: Built for the era of Frontier Finance",
+          "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/25/copilot-in-excel-built-for-the-era-of-frontier-finance/",
+          "published_at": "2026-06-25T13:00:00.000Z",
+          "summary": "Plenty of AI tools claim to be built for finance; Microsoft 365 Copilot in Excel is proving it in practice.\nThe post Copilot in Excel: Built for the era of Frontier Finance appeared first on Microsoft 365 Blog.",
+          "fetched_at": "2026-07-02T00:14:50.235Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "d98eb9b7432b99a9",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Microsoft Agent 365, now generally available, expands capabilities and integrations",
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/05/01/microsoft-agent-365-now-generally-available-expands-capabilities-and-integrations/",
+          "published_at": "2026-05-01T15:00:00.000Z",
+          "summary": "Microsoft Agent 365 helps you take control of agent sprawl as your control plane to observe, govern, and secure agents and their interactions.\nThe post Microsoft Agent 365, now generally available, expands capabilities and integrations appeared first on Microsoft 365 Blog.",
+          "fetched_at": "2026-07-01T00:13:34.950Z"
+        }
+      ]
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 1,
+      "new_articles": [],
+      "removed_articles": [
+        {
+          "id": "b7ee04c92c6213bb",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Building docfind: Fast Client-Side Search with Rust and WebAssembly",
+          "url": "https://code.visualstudio.com/blogs/2026/01/15/docfind",
+          "published_at": "2026-01-15T00:00:00.000Z",
+          "summary": "How we built docfind, a high-performance client-side search engine using Rust and WebAssembly, and how GitHub Copilot accelerated development.\nRead the full article",
+          "fetched_at": "2026-07-01T00:13:34.452Z"
+        }
+      ]
+    }
+  },
+  "diff_result": true
+}
