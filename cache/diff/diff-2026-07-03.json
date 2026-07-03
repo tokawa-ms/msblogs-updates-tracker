@@ -1,0 +1,234 @@
+{
+  "date": "2026-07-03",
+  "compared_with": "2026-07-02",
+  "source_count": 6,
+  "new_count": 6,
+  "removed_count": 6,
+  "new_articles": [
+    {
+      "id": "9329279c3880d248",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "Announcing Microsoft Discovery general availability and Microsoft Discovery app preview",
+      "url": "https://azure.microsoft.com/en-us/blog/announcing-microsoft-discovery-general-availability-and-microsoft-discovery-app-preview/",
+      "published_at": "2026-06-02T18:15:00.000Z",
+      "summary": "At Microsoft Build, we are announcing that Microsoft Discovery is now generally available for all organizations, providing a comprehensive platform for building and governing agentic AI workflows.\nThe post Announcing Microsoft Discovery general availability and Microsoft Discovery app preview appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-07-03T00:12:02.710Z"
+    },
+    {
+      "id": "68fc44f8bf52ca29",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "Microsoft Build 2026: Building agentic apps with Microsoft Fabric and Microsoft Databases",
+      "url": "https://azure.microsoft.com/en-us/blog/microsoft-build-2026-building-agentic-apps-with-microsoft-fabric-and-microsoft-databases/",
+      "published_at": "2026-06-02T16:59:00.000Z",
+      "summary": "Microsoft Build 2026 highlights advancements in app development with Microsoft Fabric and Microsoft Databases, emphasizing a unified data and AI platform for scalable, agentic applications.\nThe post Microsoft Build 2026: Building agentic apps with Microsoft Fabric and Microsoft Databases appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-07-03T00:12:02.710Z"
+    },
+    {
+      "id": "01787ad8851ad16f",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "New Azure Cobalt 200 VMs deliver 50% performance improvement, fully optimized for modern agentic AI workloads",
+      "url": "https://azure.microsoft.com/en-us/blog/new-azure-cobalt-200-vms-deliver-50-performance-improvement-fully-optimized-for-modern-agentic-ai-workloads/",
+      "published_at": "2026-06-02T16:30:09.000Z",
+      "summary": "We are announcing the early access preview for Azure Cobalt 200 Arm-based Virtual Machines (VMs), designed for Linux-based agentic AI workloads.\nThe post New Azure Cobalt 200 VMs deliver 50% performance improvement, fully optimized for modern agentic AI workloads appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-07-03T00:12:02.710Z"
+    },
+    {
+      "id": "c803d55ec7c78b7d",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "Foundry IQ: Build smarter agents faster with unified knowledge and serverless retrieval",
+      "url": "https://devblogs.microsoft.com/foundry/build-smarter-agents-faster-with-foundry-iq/",
+      "published_at": "2026-06-02T16:00:00.000Z",
+      "summary": "Build smarter agents with Microsoft Foundry IQ, unifying enterprise and external data into a secure, scalable knowledge layer for faster, higher-quality answers.\nThe post Foundry IQ: Build smarter agents faster with unified knowledge and serverless retrieval appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-07-03T00:12:02.710Z"
+    },
+    {
+      "id": "15cf08ac9c539c16",
+      "source_id": "fabric-blog",
+      "source_name": "Microsoft Fabric Blog",
+      "title": "Deep dive into visual calculations: Adding calculations directly to your Power BI visuals (Generally Available)",
+      "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Deep-dive-into-visual-calculations-Adding-calculations-directly/ba-p/5255359",
+      "published_at": "2026-07-02T16:00:00.000Z",
+      "summary": "Visual calculations (Generally Available) in Power BI, making it easier to add DAX calculations directly to the visual where they’re used.",
+      "fetched_at": "2026-07-03T00:12:03.010Z"
+    },
+    {
+      "id": "e0d963130fa3a9f6",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "How GitHub used secret scanning to reach inbox zero",
+      "url": "https://github.blog/security/application-security/how-github-used-secret-scanning-to-reach-inbox-zero/",
+      "published_at": "2026-07-02T16:00:00.000Z",
+      "summary": "GitHub had 20,000+ secret scanning alerts across 15,000 repositories. Here's how we separated signal from noise, built remediation workflows, and reached inbox zero in nine months.\nThe post How GitHub used secret scanning to reach inbox zero appeared first on The GitHub Blog.",
+      "fetched_at": "2026-07-03T00:12:02.610Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 4,
+      "removed_count": 4,
+      "new_articles": [
+        {
+          "id": "9329279c3880d248",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Announcing Microsoft Discovery general availability and Microsoft Discovery app preview",
+          "url": "https://azure.microsoft.com/en-us/blog/announcing-microsoft-discovery-general-availability-and-microsoft-discovery-app-preview/",
+          "published_at": "2026-06-02T18:15:00.000Z",
+          "summary": "At Microsoft Build, we are announcing that Microsoft Discovery is now generally available for all organizations, providing a comprehensive platform for building and governing agentic AI workflows.\nThe post Announcing Microsoft Discovery general availability and Microsoft Discovery app preview appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-07-03T00:12:02.710Z"
+        },
+        {
+          "id": "68fc44f8bf52ca29",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Microsoft Build 2026: Building agentic apps with Microsoft Fabric and Microsoft Databases",
+          "url": "https://azure.microsoft.com/en-us/blog/microsoft-build-2026-building-agentic-apps-with-microsoft-fabric-and-microsoft-databases/",
+          "published_at": "2026-06-02T16:59:00.000Z",
+          "summary": "Microsoft Build 2026 highlights advancements in app development with Microsoft Fabric and Microsoft Databases, emphasizing a unified data and AI platform for scalable, agentic applications.\nThe post Microsoft Build 2026: Building agentic apps with Microsoft Fabric and Microsoft Databases appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-07-03T00:12:02.710Z"
+        },
+        {
+          "id": "01787ad8851ad16f",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "New Azure Cobalt 200 VMs deliver 50% performance improvement, fully optimized for modern agentic AI workloads",
+          "url": "https://azure.microsoft.com/en-us/blog/new-azure-cobalt-200-vms-deliver-50-performance-improvement-fully-optimized-for-modern-agentic-ai-workloads/",
+          "published_at": "2026-06-02T16:30:09.000Z",
+          "summary": "We are announcing the early access preview for Azure Cobalt 200 Arm-based Virtual Machines (VMs), designed for Linux-based agentic AI workloads.\nThe post New Azure Cobalt 200 VMs deliver 50% performance improvement, fully optimized for modern agentic AI workloads appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-07-03T00:12:02.710Z"
+        },
+        {
+          "id": "c803d55ec7c78b7d",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Foundry IQ: Build smarter agents faster with unified knowledge and serverless retrieval",
+          "url": "https://devblogs.microsoft.com/foundry/build-smarter-agents-faster-with-foundry-iq/",
+          "published_at": "2026-06-02T16:00:00.000Z",
+          "summary": "Build smarter agents with Microsoft Foundry IQ, unifying enterprise and external data into a secure, scalable knowledge layer for faster, higher-quality answers.\nThe post Foundry IQ: Build smarter agents faster with unified knowledge and serverless retrieval appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-07-03T00:12:02.710Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "4c581c445fbb4273",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Azure IaaS: How to design, build, and optimize cloud infrastructure for long-term cost optimization efficiency",
+          "url": "https://azure.microsoft.com/en-us/blog/azure-iaas-how-to-design-build-and-optimize-cloud-infrastructure-for-long-term-cost-optimization-efficiency/",
+          "published_at": "2026-06-30T16:00:00.000Z",
+          "summary": "As organizations modernize infrastructure, migrate mission-critical workloads, build cloud-native applications, and scale AI—cost efficiency remains a foundational principle of cloud architectures.\nThe post Azure IaaS: How to design, build, and optimize cloud infrastructure for long-term cost optimization efficiency appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-07-02T00:14:50.105Z"
+        },
+        {
+          "id": "1ed367a47827cb9d",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Claude in Microsoft Foundry is now generally available",
+          "url": "https://azure.microsoft.com/en-us/blog/claude-in-microsoft-foundry-is-now-generally-available/",
+          "published_at": "2026-06-29T17:00:00.000Z",
+          "summary": "Claude in Microsoft Foundry is now generally available, hosted on Azure, and running on NVIDIA GB300 Blackwell Ultra, giving teams a faster path from agent experimentation to production.\nThe post Claude in Microsoft Foundry is now generally available appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-07-02T00:14:50.105Z"
+        },
+        {
+          "id": "599973d29f1df660",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "The 2026 Agent Confidence Index: Where 300 builders see real momentum",
+          "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2026/06/29/the-2026-agent-confidence-index-where-300-builders-see-real-momentum/",
+          "published_at": "2026-06-29T15:15:00.000Z",
+          "summary": "At Microsoft, building trustworthy AI agents is as critical as building powerful ones. New research from the 2026 Agent Confidence Index shows where teams trust agents today—and why human judgment remains the defining skill in the age of AI.\nThe post The 2026 Agent Confidence Index: Where 300 builders see real momentum appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-07-02T00:14:50.105Z"
+        },
+        {
+          "id": "d4652bc8706ea46f",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Accelerate modern Linux workloads with Azure Files",
+          "url": "https://azure.microsoft.com/en-us/blog/accelerate-modern-linux-workloads-with-azure-files/",
+          "published_at": "2026-06-29T15:00:00.000Z",
+          "summary": "Azure Files combines familiar file access with built-in performance, data protection, security, and Azure service integration.\nThe post Accelerate modern Linux workloads with Azure Files appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-07-02T00:14:50.105Z"
+        }
+      ]
+    },
+    "fabric-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "15cf08ac9c539c16",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Deep dive into visual calculations: Adding calculations directly to your Power BI visuals (Generally Available)",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Deep-dive-into-visual-calculations-Adding-calculations-directly/ba-p/5255359",
+          "published_at": "2026-07-02T16:00:00.000Z",
+          "summary": "Visual calculations (Generally Available) in Power BI, making it easier to add DAX calculations directly to the visual where they’re used.",
+          "fetched_at": "2026-07-03T00:12:03.010Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "e217ec641840d69f",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Execute DAX Queries REST API (Preview)",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Execute-DAX-Queries-REST-API-Preview/ba-p/5177697",
+          "published_at": "2026-05-07T17:47:39.000Z",
+          "summary": "Author: Kay Unkroth - Principal Program Manager",
+          "fetched_at": "2026-07-02T00:14:50.514Z"
+        }
+      ]
+    },
+    "github-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "e0d963130fa3a9f6",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "How GitHub used secret scanning to reach inbox zero",
+          "url": "https://github.blog/security/application-security/how-github-used-secret-scanning-to-reach-inbox-zero/",
+          "published_at": "2026-07-02T16:00:00.000Z",
+          "summary": "GitHub had 20,000+ secret scanning alerts across 15,000 repositories. Here's how we separated signal from noise, built remediation workflows, and reached inbox zero in nine months.\nThe post How GitHub used secret scanning to reach inbox zero appeared first on The GitHub Blog.",
+          "fetched_at": "2026-07-03T00:12:02.610Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "9af07bc56ca77892",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "From pledge to practice: Building a more inclusive open source ecosystem",
+          "url": "https://github.blog/open-source/from-pledge-to-practice-building-a-more-inclusive-open-source-ecosystem/",
+          "published_at": "2026-06-22T17:20:31.000Z",
+          "summary": "Learn about the progress we’ve made toward our accessibility goals and how you can help make open source more inclusive. \nThe post From pledge to practice: Building a more inclusive open source ecosystem appeared first on The GitHub Blog.",
+          "fetched_at": "2026-07-02T00:14:49.402Z"
+        }
+      ]
+    },
+    "m365-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    }
+  },
+  "diff_result": true
+}
