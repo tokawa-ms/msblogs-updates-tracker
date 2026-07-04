@@ -1,0 +1,202 @@
+[
+  {
+    "id": "d4cdac2cba83e6a0",
+    "source_id": "fabric-blog",
+    "source_name": "Microsoft Fabric Blog",
+    "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Analytics and Business Intelligence Platforms",
+    "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Microsoft-named-a-Leader-in-the-2026-Gartner-Magic-Quadrant-for/ba-p/5262403",
+    "published_at": "2026-07-03T16:00:00.000Z",
+    "summary": "We’re proud to share that Microsoft has once again been named a Leader in the 2026 Gartner® Magic Quadrant™ for Analytics and Business Intelligence Platforms for the nineteenth consecutive year.",
+    "fetched_at": "2026-07-04T00:10:32.916Z"
+  },
+  {
+    "id": "15cf08ac9c539c16",
+    "source_id": "fabric-blog",
+    "source_name": "Microsoft Fabric Blog",
+    "title": "Deep dive into visual calculations: Adding calculations directly to your Power BI visuals (Generally Available)",
+    "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Deep-dive-into-visual-calculations-Adding-calculations-directly/ba-p/5255359",
+    "published_at": "2026-07-02T16:00:00.000Z",
+    "summary": "Visual calculations (Generally Available) in Power BI, making it easier to add DAX calculations directly to the visual where they’re used.",
+    "fetched_at": "2026-07-04T00:10:32.916Z"
+  },
+  {
+    "id": "f0befc22c60c12e8",
+    "source_id": "fabric-blog",
+    "source_name": "Microsoft Fabric Blog",
+    "title": "Power BI reports and Fabric Apps: Expanding how you build on your semantic model data",
+    "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Power-BI-reports-and-Fabric-Apps-Expanding-how-you-build-on-your/ba-p/5234706",
+    "published_at": "2026-07-01T21:00:00.000Z",
+    "summary": "Power BI reports continue to help analysts build secure, governed BI experiences on semantic models, while Fabric Apps expands what developers can create from the same trusted data.",
+    "fetched_at": "2026-07-04T00:10:32.916Z"
+  },
+  {
+    "id": "f48cc79e22f77a6c",
+    "source_id": "fabric-blog",
+    "source_name": "Microsoft Fabric Blog",
+    "title": "Power BI Desktop Bridge (Preview)",
+    "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Power-BI-Desktop-Bridge-Preview/ba-p/5227769",
+    "published_at": "2026-06-30T19:00:00.000Z",
+    "summary": "Power BI Desktop Bridge (Preview)Power BI Desktop Bridge introduces a new way of working, allowing external applications and agents to interact directly with Power BI Desktop! What is Power BI Desktop Bridge?The bridge is a lightweight local server that lets external applications interact directly with Power BI Desktop. Think of it as a direct, secure channel between your tools and Power BI Desktop. Your agents, scripts, and external applications can now:Check the current state of your report.Trigger key actions, like reloading files after edits.Capture screenshots to validate changes.Iterate and improve in real time, without manual handoffs.The following core capabilities are available through the bridge: Discover What's AvailableMethod: bridge.manifestCapabilities: Returns a complete list of all capabilities and their specifications.Think of this as a \"menu\" of what your version of Desktop can do. Always check this first to see what's available. Check Report StateMethod: application.state.get/v1Capabilities: Returns information about the currently open file and whether there are unsaved changes.In plain language: Know which file is open and if there are pending edits. Essential before running automation that might affect your work. Capture Report SnapshotsMethod: report.snapshot.capture/v1Capabilities: Captures a PNG screenshot of a specific report page at any resolution you want.In plain language: See exactly how your report looks right now. Perfect for validating changes visually or sharing proof of work. Reload files from DiskMethod: file.reload/v1Capabilities: Reloads the open PBIP/PBIR file from disk to pick up on-disk edits.In plain language: After making changes to report files, refresh Desktop to see them. You can control whether the semantic model is also reloaded.Why this is a big step for agents?Before the bridge, agents could be incredibly smart about generating code and automating repetitive tasks. But they hit a wall: they couldn't talk directly to Power BI Desktop. They couldn't reload files to see changes in real time. They couldn't capture screenshots to validate what they'd built. They were flying blind. Now, with the bridge, that changes completely, agents can:Read the current report state.Edit report files directly on disk.Reload to see changes instantly in Desktop.Validate with a live screenshot.Iterate immediately—observing, learning, and improving. Ready to see this in action? The Report Authoring Skill is a perfect example. It leverages the bridge to read state, make edits, reload instantly, validate visually with screenshots, and iterate continuously in one seamless loop. Now, reports that would take hours to build, debug, and refine manually can now be authored, validated, and polished by agents in minutes. But this is just the beginning. The bridge opens the door for you to build the custom solutions you need.How to get startedDesktop Bridge is enabled by default. To disable or enable it:Open Power BI Desktop.Go to File > Options and settings > Options.Open Preview features.Enable external tool access to Power BI Desktop through secure local APIs.Screenshot of Power BI Desktop Options window under Preview features, highlighting the setting “Enable external tool access to Power BI Desktop through secure local APIsStart using the Desktop BridgeThe easiest way to start is with the Power BI Desktop Bridge CLI. It lets you leverage the bridge in a simple, practical way, without building custom integrations first. Built on top of the bridge, it includes a set of intuitive commands ready to use.The reload command is a great example. If you are making external changes to your PBIR files, you can simply run:powerbi-desktop reloadThis command reloads your on-disk changes in Power BI Desktop through the bridge, so you can keep iterating without closing and reopening Desktop.The following are other useful commands at your fingertips:# See what the bridge can dopowerbi-desktop manifest# Check which Desktop instances are runningpowerbi-desktop status# Reload after making editspowerbi-desktop reload# Capture screenshots of every report pagepowerbi-desktop screenshot-all Ready to try it?The Desktop Bridge is here, and it's ready to transform how you work with Power BI Desktop. Stop waiting for manual steps. Start automating.Get started now: Power BI Desktop Bridge.",
+    "fetched_at": "2026-07-04T00:10:32.916Z"
+  },
+  {
+    "id": "0992bed899b1395e",
+    "source_id": "fabric-blog",
+    "source_name": "Microsoft Fabric Blog",
+    "title": "Microsoft Entra ID single sign-on for the Denodo connector in Power BI (Preview)",
+    "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Microsoft-Entra-ID-single-sign-on-for-the-Denodo-connector-in/ba-p/5193376",
+    "published_at": "2026-06-23T21:00:00.000Z",
+    "summary": "When you configure a Denodo data connection for Entra ID SSO, users querying a semantic model in DirectQuery mode are authenticated to Denodo with their own Microsoft Entra ID identity.",
+    "fetched_at": "2026-07-04T00:10:32.916Z"
+  },
+  {
+    "id": "000d25b5f79df03b",
+    "source_id": "fabric-blog",
+    "source_name": "Microsoft Fabric Blog",
+    "title": "Protect once, enforce everywhere: Protection policies for Power BI (Generally Available)",
+    "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Protect-once-enforce-everywhere-Protection-policies-for-Power-BI/ba-p/5223932",
+    "published_at": "2026-06-24T11:22:57.000Z",
+    "summary": "How to use sensitivity labels and Protection Policies to secure your Power BI estate — and why it matters more than ever in the age of AI.",
+    "fetched_at": "2026-07-04T00:10:32.916Z"
+  },
+  {
+    "id": "3654fc24a8d2c88b",
+    "source_id": "fabric-blog",
+    "source_name": "Microsoft Fabric Blog",
+    "title": "Microsoft Entra ID single sign-on for the Starburst connector in Power BI (Preview)",
+    "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Microsoft-Entra-ID-single-sign-on-for-the-Starburst-connector-in/ba-p/5193371",
+    "published_at": "2026-06-18T16:00:00.000Z",
+    "summary": "When enabling Microsoft Entra ID single sign-on (SSo) for Starburst (Preview) report viewers querying semantic models in DirectQuery mode authenticate to Starburst with their own Entra ID identity, to Starburst's access policies — including row-level and column-level security rules — are evaluated against the actual end user rather than a fixed connection account.",
+    "fetched_at": "2026-07-04T00:10:32.916Z"
+  },
+  {
+    "id": "0cc859650c5c7b9b",
+    "source_id": "fabric-blog",
+    "source_name": "Microsoft Fabric Blog",
+    "title": "Workspace outbound access protection for Power BI reports (Preview)",
+    "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Workspace-outbound-access-protection-for-Power-BI-reports/ba-p/5193354",
+    "published_at": "2026-06-17T21:00:00.000Z",
+    "summary": "Workspace outbound access protection (OAP) is a workspace-level control in Microsoft Fabric that lets you constrain where the data inside a workspace can flow. With this preview, OAP support now extends to Power BI reports. The good news for report authors and admins: there's nothing new to configure on the report itself. Protection comes from a single, well-defined rule that the workspace enforces automatically as soon as you turn OAP on.",
+    "fetched_at": "2026-07-04T00:10:32.916Z"
+  },
+  {
+    "id": "2b54be786be19003",
+    "source_id": "fabric-blog",
+    "source_name": "Microsoft Fabric Blog",
+    "title": "Org apps with audiences for Power BI and Fabric (Generally Available)",
+    "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Org-apps-with-audiences-for-Power-BI-and-Fabric-Generally/ba-p/5196326",
+    "published_at": "2026-06-16T19:00:00.000Z",
+    "summary": "Announcing general availability of org apps in Power BI and Fabric, including one of the most requested capabilities: audiences.",
+    "fetched_at": "2026-07-04T00:10:32.916Z"
+  },
+  {
+    "id": "983541f3cd29461b",
+    "source_id": "fabric-blog",
+    "source_name": "Microsoft Fabric Blog",
+    "title": "Simplified Oracle connectivity in Power BI (Preview)",
+    "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Simplified-Oracle-connectivity-in-Power-BI-Preview/ba-p/5193366",
+    "published_at": "2026-06-15T17:00:00.000Z",
+    "summary": "Connecting Power BI to Oracle has historically meant extra provider installations and data gateway deployment — even for cloud-hosted databases. Two new Preview capabilities change that. Power BI Desktop now includes a bundled Oracle Managed ODP.NET provider, and the Power BI service supports direct cloud connections without the need for a data gateway to Oracle data sources such as Oracle Autonomous Database.",
+    "fetched_at": "2026-07-04T00:10:32.916Z"
+  },
+  {
+    "id": "1f80bf4839f810a8",
+    "source_id": "fabric-blog",
+    "source_name": "Microsoft Fabric Blog",
+    "title": "Migrating from embedded ODBC drivers to ADBC in Power BI and Fabric",
+    "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Migrating-from-embedded-ODBC-drivers-to-ADBC-in-Power-BI-and/ba-p/5195167",
+    "published_at": "2026-06-18T22:10:45.000Z",
+    "summary": "If you use connectors like Databricks, Snowflake, or BigQuery in Power BI or Fabric, there’s an important change coming. Microsoft is moving from embedded ODBC drivers to ADBC, which affects how connections are established and managed. This post explains what’s changing, who’s impacted, and the steps you can take now to prepare.",
+    "fetched_at": "2026-07-04T00:10:32.916Z"
+  },
+  {
+    "id": "735c132de01e9b41",
+    "source_id": "fabric-blog",
+    "source_name": "Microsoft Fabric Blog",
+    "title": "Power BI June 2026 Feature Summary",
+    "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Power-BI-June-2026-Feature-Summary/ba-p/5193264",
+    "published_at": "2026-06-09T19:48:16.000Z",
+    "summary": "This month, we’re continuing to focus on making every day work a little easier—whether that’s building reports, modeling data, or just getting answers faster. You’ll see progress across Copilot and newer AI-driven experiences, along with a set of practical updates to reporting that help reduce repetitive work.",
+    "fetched_at": "2026-07-04T00:10:32.916Z"
+  },
+  {
+    "id": "69acb0038ac83e12",
+    "source_id": "fabric-blog",
+    "source_name": "Microsoft Fabric Blog",
+    "title": "AI-Powered Power BI reporting: From design to deployment with agent skills (Preview)",
+    "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/AI-Powered-Power-BI-reporting-From-design-to-deployment-with/ba-p/5190703",
+    "published_at": "2026-06-08T17:29:20.000Z",
+    "summary": "AI powered Power BI reporting skills is a collection of multiple skills that enables AI agents to automate report creation, from designing pages to publishing to Fabric. Now available through the Power BI authoring plugin  in Skills for Fabric —a first-party catalog of agent skills for Microsoft Fabric optimized for GitHub Copilot CLI—this capability allows agents to author reports through natural language, write schema-correct PBIR files, reload Power BI Desktop, capture screenshots, and iteratively refine reports for a seamless, end-to-end authoring experience.",
+    "fetched_at": "2026-07-04T00:10:32.916Z"
+  },
+  {
+    "id": "05c30077b81316a5",
+    "source_id": "fabric-blog",
+    "source_name": "Microsoft Fabric Blog",
+    "title": "Copilot in web modeling (Preview)",
+    "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Copilot-in-web-modeling-Preview/ba-p/5182287",
+    "published_at": "2026-06-04T23:36:54.000Z",
+    "summary": "Copilot in web modeling (Preview) in the Power BI service, is an AI-powered assistant helping you analyze and improve your semantic models using natural language so you can spend less time on manual edits.",
+    "fetched_at": "2026-07-04T00:10:32.916Z"
+  },
+  {
+    "id": "49ac15abc4a08ec2",
+    "source_id": "fabric-blog",
+    "source_name": "Microsoft Fabric Blog",
+    "title": "Building in the Agentic Era with Power BI and Fabric",
+    "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Building-in-the-Agentic-Era-with-Power-BI-and-Fabric/ba-p/5190754",
+    "published_at": "2026-06-03T21:20:25.000Z",
+    "summary": "Microsoft Build 2026 marks a major shift in how developers build data experiences with AI agents. Today we're announcing two capabilities that bring agentic analytics to the forefront: Agent Skills for Power BI, which let developers prompt an AI agent to build and refine semantic models and reports, and Fabric Apps for Semantic Models, which enable AI agents to build and deploy Fabric-native web apps on semantic models. Both capabilities will accelerate the time it takes to go from raw data to a polished analytics solution with just natural language prompts.",
+    "fetched_at": "2026-07-04T00:10:32.916Z"
+  },
+  {
+    "id": "cfc546d33138e5d5",
+    "source_id": "fabric-blog",
+    "source_name": "Microsoft Fabric Blog",
+    "title": "Power BI at Microsoft Build 2026: The Agentic Era of analytics",
+    "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Power-BI-at-Microsoft-Build-2026-The-Agentic-Era-of-analytics/ba-p/5191671",
+    "published_at": "2026-06-04T23:35:23.000Z",
+    "summary": "Microsoft Build 2026 brings the next generation of intelligent analytics to Power BI—where agents do the building, apps deliver insights everywhere, and the platform gets more powerful for every user.",
+    "fetched_at": "2026-07-04T00:10:32.916Z"
+  },
+  {
+    "id": "5bd1f57999c17024",
+    "source_id": "fabric-blog",
+    "source_name": "Microsoft Fabric Blog",
+    "title": "DAX User-Defined Functions (Generally Available)",
+    "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/DAX-User-Defined-Functions-Generally-Available/ba-p/5185738",
+    "published_at": "2026-06-02T16:00:00.000Z",
+    "summary": "DAX user-defined functions are now production-ready based on community feedback and internal validation. Their adoption during preview shows that DAX UDFs are quickly becoming a mainstay of Power BI semantic models.",
+    "fetched_at": "2026-07-04T00:10:32.916Z"
+  },
+  {
+    "id": "318ab5e057c4fb88",
+    "source_id": "fabric-blog",
+    "source_name": "Microsoft Fabric Blog",
+    "title": "Power BI Tenant Migration: Trade-offs, risks, and realities",
+    "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Power-BI-Tenant-Migration-Trade-offs-risks-and-realities/ba-p/5187013",
+    "published_at": "2026-05-22T15:05:26.000Z",
+    "summary": "Author: Winnie Li, Cloud Solution Architect",
+    "fetched_at": "2026-07-04T00:10:32.916Z"
+  },
+  {
+    "id": "85f1743533c3e20c",
+    "source_id": "fabric-blog",
+    "source_name": "Microsoft Fabric Blog",
+    "title": "New Power Query experience in Power BI Desktop (Preview)",
+    "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/New-Power-Query-experience-in-Power-BI-Desktop-Preview/ba-p/5181129",
+    "published_at": "2026-05-20T17:30:00.000Z",
+    "summary": "Authored by: Sara Lammini Rodriguez - Product Manager II, and Miguel Escobar - Senior Product Manager",
+    "fetched_at": "2026-07-04T00:10:32.916Z"
+  },
+  {
+    "id": "46bd3768eee83a1f",
+    "source_id": "fabric-blog",
+    "source_name": "Microsoft Fabric Blog",
+    "title": "Power BI May 2026 Feature Summary",
+    "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Power-BI-May-2026-Feature-Summary/ba-p/5182174",
+    "published_at": "2026-06-17T23:07:49.000Z",
+    "summary": "Author: Katie Murray, Senior Program Manager - Power BI continues to evolve with updates that make it easier to explore data, generate insights, and build more polished reports. This month’s release brings improvements across Copilot and AI experiences, reporting and modeling enhancements, new data connectivity flows, and updates to visualizations—helping you move faster from data to decisions.",
+    "fetched_at": "2026-07-04T00:10:32.916Z"
+  }
+]

@@ -1,0 +1,172 @@
+{
+  "date": "2026-07-04",
+  "compared_with": "2026-07-03",
+  "source_count": 6,
+  "new_count": 4,
+  "removed_count": 4,
+  "new_articles": [
+    {
+      "id": "1ed367a47827cb9d",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "Claude in Microsoft Foundry is now generally available",
+      "url": "https://azure.microsoft.com/en-us/blog/claude-in-microsoft-foundry-is-now-generally-available/",
+      "published_at": "2026-06-29T17:00:00.000Z",
+      "summary": "Claude in Microsoft Foundry is now generally available, hosted on Azure, and running on NVIDIA GB300 Blackwell Ultra, giving teams a faster path from agent experimentation to production.\nThe post Claude in Microsoft Foundry is now generally available appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-07-04T00:10:32.530Z"
+    },
+    {
+      "id": "599973d29f1df660",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "The 2026 Agent Confidence Index: Where 300 builders see real momentum",
+      "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2026/06/29/the-2026-agent-confidence-index-where-300-builders-see-real-momentum/",
+      "published_at": "2026-06-29T15:15:00.000Z",
+      "summary": "At Microsoft, building trustworthy AI agents is as critical as building powerful ones. New research from the 2026 Agent Confidence Index shows where teams trust agents today—and why human judgment remains the defining skill in the age of AI.\nThe post The 2026 Agent Confidence Index: Where 300 builders see real momentum appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-07-04T00:10:32.530Z"
+    },
+    {
+      "id": "d4652bc8706ea46f",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "Accelerate modern Linux workloads with Azure Files",
+      "url": "https://azure.microsoft.com/en-us/blog/accelerate-modern-linux-workloads-with-azure-files/",
+      "published_at": "2026-06-29T15:00:00.000Z",
+      "summary": "Azure Files combines familiar file access with built-in performance, data protection, security, and Azure service integration.\nThe post Accelerate modern Linux workloads with Azure Files appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-07-04T00:10:32.530Z"
+    },
+    {
+      "id": "d4cdac2cba83e6a0",
+      "source_id": "fabric-blog",
+      "source_name": "Microsoft Fabric Blog",
+      "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Analytics and Business Intelligence Platforms",
+      "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Microsoft-named-a-Leader-in-the-2026-Gartner-Magic-Quadrant-for/ba-p/5262403",
+      "published_at": "2026-07-03T16:00:00.000Z",
+      "summary": "We’re proud to share that Microsoft has once again been named a Leader in the 2026 Gartner® Magic Quadrant™ for Analytics and Business Intelligence Platforms for the nineteenth consecutive year.",
+      "fetched_at": "2026-07-04T00:10:32.916Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 3,
+      "removed_count": 3,
+      "new_articles": [
+        {
+          "id": "1ed367a47827cb9d",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Claude in Microsoft Foundry is now generally available",
+          "url": "https://azure.microsoft.com/en-us/blog/claude-in-microsoft-foundry-is-now-generally-available/",
+          "published_at": "2026-06-29T17:00:00.000Z",
+          "summary": "Claude in Microsoft Foundry is now generally available, hosted on Azure, and running on NVIDIA GB300 Blackwell Ultra, giving teams a faster path from agent experimentation to production.\nThe post Claude in Microsoft Foundry is now generally available appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-07-04T00:10:32.530Z"
+        },
+        {
+          "id": "599973d29f1df660",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "The 2026 Agent Confidence Index: Where 300 builders see real momentum",
+          "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2026/06/29/the-2026-agent-confidence-index-where-300-builders-see-real-momentum/",
+          "published_at": "2026-06-29T15:15:00.000Z",
+          "summary": "At Microsoft, building trustworthy AI agents is as critical as building powerful ones. New research from the 2026 Agent Confidence Index shows where teams trust agents today—and why human judgment remains the defining skill in the age of AI.\nThe post The 2026 Agent Confidence Index: Where 300 builders see real momentum appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-07-04T00:10:32.530Z"
+        },
+        {
+          "id": "d4652bc8706ea46f",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Accelerate modern Linux workloads with Azure Files",
+          "url": "https://azure.microsoft.com/en-us/blog/accelerate-modern-linux-workloads-with-azure-files/",
+          "published_at": "2026-06-29T15:00:00.000Z",
+          "summary": "Azure Files combines familiar file access with built-in performance, data protection, security, and Azure service integration.\nThe post Accelerate modern Linux workloads with Azure Files appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-07-04T00:10:32.530Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "68fc44f8bf52ca29",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Microsoft Build 2026: Building agentic apps with Microsoft Fabric and Microsoft Databases",
+          "url": "https://azure.microsoft.com/en-us/blog/microsoft-build-2026-building-agentic-apps-with-microsoft-fabric-and-microsoft-databases/",
+          "published_at": "2026-06-02T16:59:00.000Z",
+          "summary": "Microsoft Build 2026 highlights advancements in app development with Microsoft Fabric and Microsoft Databases, emphasizing a unified data and AI platform for scalable, agentic applications.\nThe post Microsoft Build 2026: Building agentic apps with Microsoft Fabric and Microsoft Databases appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-07-03T00:12:02.710Z"
+        },
+        {
+          "id": "01787ad8851ad16f",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "New Azure Cobalt 200 VMs deliver 50% performance improvement, fully optimized for modern agentic AI workloads",
+          "url": "https://azure.microsoft.com/en-us/blog/new-azure-cobalt-200-vms-deliver-50-performance-improvement-fully-optimized-for-modern-agentic-ai-workloads/",
+          "published_at": "2026-06-02T16:30:09.000Z",
+          "summary": "We are announcing the early access preview for Azure Cobalt 200 Arm-based Virtual Machines (VMs), designed for Linux-based agentic AI workloads.\nThe post New Azure Cobalt 200 VMs deliver 50% performance improvement, fully optimized for modern agentic AI workloads appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-07-03T00:12:02.710Z"
+        },
+        {
+          "id": "c803d55ec7c78b7d",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Foundry IQ: Build smarter agents faster with unified knowledge and serverless retrieval",
+          "url": "https://devblogs.microsoft.com/foundry/build-smarter-agents-faster-with-foundry-iq/",
+          "published_at": "2026-06-02T16:00:00.000Z",
+          "summary": "Build smarter agents with Microsoft Foundry IQ, unifying enterprise and external data into a secure, scalable knowledge layer for faster, higher-quality answers.\nThe post Foundry IQ: Build smarter agents faster with unified knowledge and serverless retrieval appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-07-03T00:12:02.710Z"
+        }
+      ]
+    },
+    "fabric-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "d4cdac2cba83e6a0",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Analytics and Business Intelligence Platforms",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Microsoft-named-a-Leader-in-the-2026-Gartner-Magic-Quadrant-for/ba-p/5262403",
+          "published_at": "2026-07-03T16:00:00.000Z",
+          "summary": "We’re proud to share that Microsoft has once again been named a Leader in the 2026 Gartner® Magic Quadrant™ for Analytics and Business Intelligence Platforms for the nineteenth consecutive year.",
+          "fetched_at": "2026-07-04T00:10:32.916Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "46fe35efb554ab15",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Outbound Access Protection for semantic models (Preview)",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Outbound-Access-Protection-for-semantic-models-Preview/ba-p/5184917",
+          "published_at": "2026-05-19T17:00:00.000Z",
+          "summary": "Author: Kay Unkroth, Principl Program Manager - Outbound Access Protection (OAP) is a workspace-level network security and governance feature that blocks outbound traffic from a workspace by default and lets you allow only the destinations you explicitly trust. With this preview, you can now extend OAP to semantic models. Power BI reports aren't part of this preview yet; report support is coming in a separate announcement soon.",
+          "fetched_at": "2026-07-03T00:12:03.010Z"
+        }
+      ]
+    },
+    "github-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "m365-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    }
+  },
+  "diff_result": true
+}
