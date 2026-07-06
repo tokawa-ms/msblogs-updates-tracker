@@ -1,0 +1,80 @@
+{
+  "date": "2026-07-06",
+  "compared_with": "2026-07-05",
+  "source_count": 6,
+  "new_count": 1,
+  "removed_count": 1,
+  "new_articles": [
+    {
+      "id": "2e0442baa84f7c5a",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "Meet Brain: The AI system behind Azure reliability",
+      "url": "https://azure.microsoft.com/en-us/blog/meet-brain-the-ai-system-behind-azure-reliability/",
+      "published_at": "2026-07-02T16:00:00.000Z",
+      "summary": "Learn how Microsoft is building a digital twin of Azure Service Health and why it changes how hyperscale operates.\nThe post Meet Brain: The AI system behind Azure reliability appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-07-06T00:12:30.824Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "2e0442baa84f7c5a",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Meet Brain: The AI system behind Azure reliability",
+          "url": "https://azure.microsoft.com/en-us/blog/meet-brain-the-ai-system-behind-azure-reliability/",
+          "published_at": "2026-07-02T16:00:00.000Z",
+          "summary": "Learn how Microsoft is building a digital twin of Azure Service Health and why it changes how hyperscale operates.\nThe post Meet Brain: The AI system behind Azure reliability appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-07-06T00:12:30.824Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "4979016e4abdf662",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Claude Fable 5 available today in Microsoft Foundry: Powering the next era of autonomous agents",
+          "url": "https://azure.microsoft.com/en-us/blog/claude-fable-5-is-now-available-in-microsoft-foundry-powering-the-next-era-of-autonomous-agents/",
+          "published_at": "2026-06-09T17:00:00.000Z",
+          "summary": "Claude Fable 5, Anthropic’s latest Frontier model, available today in Microsoft Foundry, powering agents in GitHub Copilot and Foundry Agent Service.\nThe post Claude Fable 5 available today in Microsoft Foundry: Powering the next era of autonomous agents appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-07-05T00:05:58.077Z"
+        }
+      ]
+    },
+    "fabric-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "github-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "m365-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    }
+  },
+  "diff_result": true
+}
