@@ -1,0 +1,112 @@
+{
+  "date": "2026-07-07",
+  "compared_with": "2026-07-06",
+  "source_count": 6,
+  "new_count": 2,
+  "removed_count": 2,
+  "new_articles": [
+    {
+      "id": "7694e5eb7bb01e68",
+      "source_id": "fabric-blog",
+      "source_name": "Microsoft Fabric Blog",
+      "title": "Deep dive into tooltip options in Power BI visuals (Generally Available)",
+      "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Deep-dive-into-tooltip-options-in-Power-BI-visuals-Generally/ba-p/5255518",
+      "published_at": "2026-07-06T17:00:00.000Z",
+      "summary": "Discover how Power BI’s tooltip (Generally Available) options help you tailor hover experiences—from curated field lists and sentence-style insights to fully custom report page tooltips.",
+      "fetched_at": "2026-07-07T00:14:16.787Z"
+    },
+    {
+      "id": "c53fec5d48fc8b10",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "How Prompt Tuning Improved GPT-5.5 in VS Code",
+      "url": "https://code.visualstudio.com/blogs/2026/07/06/optimizing-vscode-coding-harness-model-providers",
+      "published_at": "2026-07-06T00:00:00.000Z",
+      "summary": "See how VS Code and OpenAI tested GPT-5.5 system prompt changes in a two-week experiment, cutting tool calls and tail-end token usage while speeding up edits.\nRead the full article",
+      "fetched_at": "2026-07-07T00:14:16.533Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "fabric-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "7694e5eb7bb01e68",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Deep dive into tooltip options in Power BI visuals (Generally Available)",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Deep-dive-into-tooltip-options-in-Power-BI-visuals-Generally/ba-p/5255518",
+          "published_at": "2026-07-06T17:00:00.000Z",
+          "summary": "Discover how Power BI’s tooltip (Generally Available) options help you tailor hover experiences—from curated field lists and sentence-style insights to fully custom report page tooltips.",
+          "fetched_at": "2026-07-07T00:14:16.787Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "46bd3768eee83a1f",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Power BI May 2026 Feature Summary",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Power-BI-May-2026-Feature-Summary/ba-p/5182174",
+          "published_at": "2026-06-17T23:07:49.000Z",
+          "summary": "Author: Katie Murray, Senior Program Manager - Power BI continues to evolve with updates that make it easier to explore data, generate insights, and build more polished reports. This month’s release brings improvements across Copilot and AI experiences, reporting and modeling enhancements, new data connectivity flows, and updates to visualizations—helping you move faster from data to decisions.",
+          "fetched_at": "2026-07-06T00:12:31.179Z"
+        }
+      ]
+    },
+    "github-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "m365-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "c53fec5d48fc8b10",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "How Prompt Tuning Improved GPT-5.5 in VS Code",
+          "url": "https://code.visualstudio.com/blogs/2026/07/06/optimizing-vscode-coding-harness-model-providers",
+          "published_at": "2026-07-06T00:00:00.000Z",
+          "summary": "See how VS Code and OpenAI tested GPT-5.5 system prompt changes in a two-week experiment, cutting tool calls and tail-end token usage while speeding up edits.\nRead the full article",
+          "fetched_at": "2026-07-07T00:14:16.533Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "45ffe1ce89885428",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Giving Agents a Visual Voice: MCP Apps Support in VS Code",
+          "url": "https://code.visualstudio.com/blogs/2026/01/26/mcp-apps-support",
+          "published_at": "2026-01-26T00:00:00.000Z",
+          "summary": "VS Code now supports MCP Apps, enabling AI agents to display interactive UIs for richer developer workflows.\nRead the full article",
+          "fetched_at": "2026-07-06T00:12:30.725Z"
+        }
+      ]
+    }
+  },
+  "diff_result": true
+}
