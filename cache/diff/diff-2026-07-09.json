@@ -1,0 +1,226 @@
+{
+  "date": "2026-07-09",
+  "compared_with": "2026-07-08",
+  "source_count": 5,
+  "new_count": 6,
+  "removed_count": 6,
+  "new_articles": [
+    {
+      "id": "1ed367a47827cb9d",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "Claude in Microsoft Foundry is now generally available",
+      "url": "https://azure.microsoft.com/en-us/blog/claude-in-microsoft-foundry-is-now-generally-available/",
+      "published_at": "2026-06-29T17:00:00.000Z",
+      "summary": "Claude in Microsoft Foundry is now generally available, hosted on Azure, and running on NVIDIA GB300 Blackwell Ultra, giving teams a faster path from agent experimentation to production.\nThe post Claude in Microsoft Foundry is now generally available appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-07-09T00:17:05.200Z"
+    },
+    {
+      "id": "599973d29f1df660",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "The 2026 Agent Confidence Index: Where 300 builders see real momentum",
+      "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2026/06/29/the-2026-agent-confidence-index-where-300-builders-see-real-momentum/",
+      "published_at": "2026-06-29T15:15:00.000Z",
+      "summary": "At Microsoft, building trustworthy AI agents is as critical as building powerful ones. New research from the 2026 Agent Confidence Index shows where teams trust agents today—and why human judgment remains the defining skill in the age of AI.\nThe post The 2026 Agent Confidence Index: Where 300 builders see real momentum appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-07-09T00:17:05.200Z"
+    },
+    {
+      "id": "d4652bc8706ea46f",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "Accelerate modern Linux workloads with Azure Files",
+      "url": "https://azure.microsoft.com/en-us/blog/accelerate-modern-linux-workloads-with-azure-files/",
+      "published_at": "2026-06-29T15:00:00.000Z",
+      "summary": "Azure Files combines familiar file access with built-in performance, data protection, security, and Azure service integration.\nThe post Accelerate modern Linux workloads with Azure Files appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-07-09T00:17:05.200Z"
+    },
+    {
+      "id": "fed88e5c2993c2e6",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "Automating cross-repo documentation with GitHub Agentic Workflows",
+      "url": "https://github.blog/ai-and-ml/github-copilot/automating-cross-repo-documentation-with-github-agentic-workflows/",
+      "published_at": "2026-07-08T21:11:56.000Z",
+      "summary": "Explore how the Aspire team turns merged product changes into SME-reviewed docs pull requests, closing the gap between release and documentation.\nThe post Automating cross-repo documentation with GitHub Agentic Workflows appeared first on The GitHub Blog.",
+      "fetched_at": "2026-07-09T00:17:04.855Z"
+    },
+    {
+      "id": "1c4dac257710150a",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "GitHub availability report: June 2026",
+      "url": "https://github.blog/news-insights/company-news/github-availability-report-june-2026/",
+      "published_at": "2026-07-08T19:35:51.000Z",
+      "summary": "In June, we experienced six incidents that resulted in degraded performance across GitHub services.\nThe post GitHub availability report: June 2026 appeared first on The GitHub Blog.",
+      "fetched_at": "2026-07-09T00:17:04.855Z"
+    },
+    {
+      "id": "826a407adcaa15ca",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "How GitHub Copilot enables zero DNS configuration for GitHub Pages",
+      "url": "https://github.blog/ai-and-ml/github-copilot/how-github-copilot-enables-zero-dns-configuration-for-github-pages/",
+      "published_at": "2026-07-08T16:00:00.000Z",
+      "summary": "Go from an empty repository to a live custom domain with HTTPS in about 14 minutes, without manually editing a single DNS record.\nThe post How GitHub Copilot enables zero DNS configuration for GitHub Pages appeared first on The GitHub Blog.",
+      "fetched_at": "2026-07-09T00:17:04.855Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 3,
+      "removed_count": 3,
+      "new_articles": [
+        {
+          "id": "1ed367a47827cb9d",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Claude in Microsoft Foundry is now generally available",
+          "url": "https://azure.microsoft.com/en-us/blog/claude-in-microsoft-foundry-is-now-generally-available/",
+          "published_at": "2026-06-29T17:00:00.000Z",
+          "summary": "Claude in Microsoft Foundry is now generally available, hosted on Azure, and running on NVIDIA GB300 Blackwell Ultra, giving teams a faster path from agent experimentation to production.\nThe post Claude in Microsoft Foundry is now generally available appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-07-09T00:17:05.200Z"
+        },
+        {
+          "id": "599973d29f1df660",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "The 2026 Agent Confidence Index: Where 300 builders see real momentum",
+          "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2026/06/29/the-2026-agent-confidence-index-where-300-builders-see-real-momentum/",
+          "published_at": "2026-06-29T15:15:00.000Z",
+          "summary": "At Microsoft, building trustworthy AI agents is as critical as building powerful ones. New research from the 2026 Agent Confidence Index shows where teams trust agents today—and why human judgment remains the defining skill in the age of AI.\nThe post The 2026 Agent Confidence Index: Where 300 builders see real momentum appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-07-09T00:17:05.200Z"
+        },
+        {
+          "id": "d4652bc8706ea46f",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Accelerate modern Linux workloads with Azure Files",
+          "url": "https://azure.microsoft.com/en-us/blog/accelerate-modern-linux-workloads-with-azure-files/",
+          "published_at": "2026-06-29T15:00:00.000Z",
+          "summary": "Azure Files combines familiar file access with built-in performance, data protection, security, and Azure service integration.\nThe post Accelerate modern Linux workloads with Azure Files appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-07-09T00:17:05.200Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "68fc44f8bf52ca29",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Microsoft Build 2026: Building agentic apps with Microsoft Fabric and Microsoft Databases",
+          "url": "https://azure.microsoft.com/en-us/blog/microsoft-build-2026-building-agentic-apps-with-microsoft-fabric-and-microsoft-databases/",
+          "published_at": "2026-06-02T16:59:00.000Z",
+          "summary": "Microsoft Build 2026 highlights advancements in app development with Microsoft Fabric and Microsoft Databases, emphasizing a unified data and AI platform for scalable, agentic applications.\nThe post Microsoft Build 2026: Building agentic apps with Microsoft Fabric and Microsoft Databases appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-07-08T00:03:10.972Z"
+        },
+        {
+          "id": "01787ad8851ad16f",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "New Azure Cobalt 200 VMs deliver 50% performance improvement, fully optimized for modern agentic AI workloads",
+          "url": "https://azure.microsoft.com/en-us/blog/new-azure-cobalt-200-vms-deliver-50-performance-improvement-fully-optimized-for-modern-agentic-ai-workloads/",
+          "published_at": "2026-06-02T16:30:09.000Z",
+          "summary": "We are announcing the early access preview for Azure Cobalt 200 Arm-based Virtual Machines (VMs), designed for Linux-based agentic AI workloads.\nThe post New Azure Cobalt 200 VMs deliver 50% performance improvement, fully optimized for modern agentic AI workloads appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-07-08T00:03:10.972Z"
+        },
+        {
+          "id": "c803d55ec7c78b7d",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Foundry IQ: Build smarter agents faster with unified knowledge and serverless retrieval",
+          "url": "https://devblogs.microsoft.com/foundry/build-smarter-agents-faster-with-foundry-iq/",
+          "published_at": "2026-06-02T16:00:00.000Z",
+          "summary": "Build smarter agents with Microsoft Foundry IQ, unifying enterprise and external data into a secure, scalable knowledge layer for faster, higher-quality answers.\nThe post Foundry IQ: Build smarter agents faster with unified knowledge and serverless retrieval appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-07-08T00:03:10.972Z"
+        }
+      ]
+    },
+    "github-blog": {
+      "new_count": 3,
+      "removed_count": 3,
+      "new_articles": [
+        {
+          "id": "fed88e5c2993c2e6",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "Automating cross-repo documentation with GitHub Agentic Workflows",
+          "url": "https://github.blog/ai-and-ml/github-copilot/automating-cross-repo-documentation-with-github-agentic-workflows/",
+          "published_at": "2026-07-08T21:11:56.000Z",
+          "summary": "Explore how the Aspire team turns merged product changes into SME-reviewed docs pull requests, closing the gap between release and documentation.\nThe post Automating cross-repo documentation with GitHub Agentic Workflows appeared first on The GitHub Blog.",
+          "fetched_at": "2026-07-09T00:17:04.855Z"
+        },
+        {
+          "id": "1c4dac257710150a",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "GitHub availability report: June 2026",
+          "url": "https://github.blog/news-insights/company-news/github-availability-report-june-2026/",
+          "published_at": "2026-07-08T19:35:51.000Z",
+          "summary": "In June, we experienced six incidents that resulted in degraded performance across GitHub services.\nThe post GitHub availability report: June 2026 appeared first on The GitHub Blog.",
+          "fetched_at": "2026-07-09T00:17:04.855Z"
+        },
+        {
+          "id": "826a407adcaa15ca",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "How GitHub Copilot enables zero DNS configuration for GitHub Pages",
+          "url": "https://github.blog/ai-and-ml/github-copilot/how-github-copilot-enables-zero-dns-configuration-for-github-pages/",
+          "published_at": "2026-07-08T16:00:00.000Z",
+          "summary": "Go from an empty repository to a live custom domain with HTTPS in about 14 minutes, without manually editing a single DNS record.\nThe post How GitHub Copilot enables zero DNS configuration for GitHub Pages appeared first on The GitHub Blog.",
+          "fetched_at": "2026-07-09T00:17:04.855Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "d989886b0f49e6a4",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "Transitioning as a Hubber",
+          "url": "https://github.blog/developer-skills/career-growth/transitioning-as-a-hubber/",
+          "published_at": "2026-06-26T12:00:00.000Z",
+          "summary": "How GitHub's culture and benefits helped me be the best version of myself.\nThe post Transitioning as a Hubber appeared first on The GitHub Blog.",
+          "fetched_at": "2026-07-08T00:03:10.366Z"
+        },
+        {
+          "id": "0d180708b9cf8116",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "Evaluating performance and efficiency of the GitHub Copilot agentic harness across models and tasks",
+          "url": "https://github.blog/ai-and-ml/github-copilot/evaluating-performance-and-efficiency-of-the-github-copilot-agentic-harness-across-models-and-tasks/",
+          "published_at": "2026-06-25T22:59:45.000Z",
+          "summary": "Explore how the GitHub Copilot agentic harness delivers strong results across multiple benchmarks and leading token efficiency, while maintaining flexibility to choose among more than 20 models.\nThe post Evaluating performance and efficiency of the GitHub Copilot agentic harness across models and tasks appeared first on The GitHub Blog.",
+          "fetched_at": "2026-07-08T00:03:10.366Z"
+        },
+        {
+          "id": "31da026976d6077c",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "I automated my job (and it made me a better leader)",
+          "url": "https://github.blog/developer-skills/github/i-automated-my-job-and-it-made-me-a-better-leader/",
+          "published_at": "2026-06-23T16:00:00.000Z",
+          "summary": "Explore how my day as a senior leader looks now that I use 40 automations to help, and learn more about some of my favorites.\nThe post I automated my job (and it made me a better leader) appeared first on The GitHub Blog.",
+          "fetched_at": "2026-07-08T00:03:10.366Z"
+        }
+      ]
+    },
+    "m365-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    }
+  },
+  "diff_result": true
+}
