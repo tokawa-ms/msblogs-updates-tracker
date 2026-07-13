@@ -1,0 +1,102 @@
+[
+  {
+    "id": "6e4ea61ea6fdf631",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "Better tools made Copilot code review worse. Here’s how we actually improved it.",
+    "url": "https://github.blog/ai-and-ml/github-copilot/better-tools-made-copilot-code-review-worse-heres-how-we-actually-improved-it/",
+    "published_at": "2026-07-10T15:57:47.000Z",
+    "summary": "How migrating Copilot code review to shared Unix-style code exploration tools reduced review cost by reshaping agent workflows around pull request evidence.\nThe post Better tools made Copilot code review worse. Here’s how we actually improved it. appeared first on The GitHub Blog.",
+    "fetched_at": "2026-07-13T00:00:21.937Z"
+  },
+  {
+    "id": "b2b3646548d6942e",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "How GitHub gave every repository a durable owner",
+    "url": "https://github.blog/security/application-security/how-github-gave-every-repository-a-durable-owner/",
+    "published_at": "2026-07-09T16:29:37.000Z",
+    "summary": "GitHub had over 14,000 repositories. Fewer than half had clear ownership. Here's how we gave every active repository a validated owner in under 45 days, archived the rest, and made ownership the foundation for everything that followed.\nThe post How GitHub gave every repository a durable owner appeared first on The GitHub Blog.",
+    "fetched_at": "2026-07-13T00:00:21.937Z"
+  },
+  {
+    "id": "fed88e5c2993c2e6",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "Automating cross-repo documentation with GitHub Agentic Workflows",
+    "url": "https://github.blog/ai-and-ml/github-copilot/automating-cross-repo-documentation-with-github-agentic-workflows/",
+    "published_at": "2026-07-08T21:11:56.000Z",
+    "summary": "Explore how the Aspire team turns merged product changes into SME-reviewed docs pull requests, closing the gap between release and documentation.\nThe post Automating cross-repo documentation with GitHub Agentic Workflows appeared first on The GitHub Blog.",
+    "fetched_at": "2026-07-13T00:00:21.937Z"
+  },
+  {
+    "id": "1c4dac257710150a",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "GitHub availability report: June 2026",
+    "url": "https://github.blog/news-insights/company-news/github-availability-report-june-2026/",
+    "published_at": "2026-07-08T19:35:51.000Z",
+    "summary": "In June, we experienced six incidents that resulted in degraded performance across GitHub services.\nThe post GitHub availability report: June 2026 appeared first on The GitHub Blog.",
+    "fetched_at": "2026-07-13T00:00:21.937Z"
+  },
+  {
+    "id": "826a407adcaa15ca",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "How GitHub Copilot enables zero DNS configuration for GitHub Pages",
+    "url": "https://github.blog/ai-and-ml/github-copilot/how-github-copilot-enables-zero-dns-configuration-for-github-pages/",
+    "published_at": "2026-07-08T16:00:00.000Z",
+    "summary": "Go from an empty repository to a live custom domain with HTTPS in about 14 minutes, without manually editing a single DNS record.\nThe post How GitHub Copilot enables zero DNS configuration for GitHub Pages appeared first on The GitHub Blog.",
+    "fetched_at": "2026-07-13T00:00:21.937Z"
+  },
+  {
+    "id": "b8f033ffb8550b55",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "Q1 2026 Innovation Graph update: Open source collaboration is accelerating worldwide",
+    "url": "https://github.blog/news-insights/policy-news-and-insights/q1-2026-innovation-graph-update-open-source-collaboration-is-accelerating-worldwide/",
+    "published_at": "2026-07-07T16:00:00.000Z",
+    "summary": "New Innovation Graph data shows global developer communities growing faster than ever, with collaboration reaching new highs across many economies.\nThe post Q1 2026 Innovation Graph update: Open source collaboration is accelerating worldwide appeared first on The GitHub Blog.",
+    "fetched_at": "2026-07-13T00:00:21.937Z"
+  },
+  {
+    "id": "e0d963130fa3a9f6",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "How GitHub used secret scanning to reach inbox zero",
+    "url": "https://github.blog/security/application-security/how-github-used-secret-scanning-to-reach-inbox-zero/",
+    "published_at": "2026-07-02T16:00:00.000Z",
+    "summary": "GitHub had 20,000+ secret scanning alerts across 15,000 repositories. Here's how we separated signal from noise, built remediation workflows, and reached inbox zero in nine months.\nThe post How GitHub used secret scanning to reach inbox zero appeared first on The GitHub Blog.",
+    "fetched_at": "2026-07-13T00:00:21.937Z"
+  },
+  {
+    "id": "9d0b7cca463c54de",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "6 security settings every GitHub maintainer should enable this week",
+    "url": "https://github.blog/security/6-security-settings-every-github-maintainer-should-enable-this-week/",
+    "published_at": "2026-07-01T15:59:29.000Z",
+    "summary": "These six free settings will not make your project unhackable. Nothing will. What they will do is close the easy doors. Turn these on, and your project will be meaningfully harder to attack than it was before.\nThe post 6 security settings every GitHub maintainer should enable this week appeared first on The GitHub Blog.",
+    "fetched_at": "2026-07-13T00:00:21.937Z"
+  },
+  {
+    "id": "c3c2afe153d073f8",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "How GitHub maintains compliance for open source dependencies",
+    "url": "https://github.blog/enterprise-software/governance-and-compliance/how-github-maintains-compliance-for-open-source-dependencies/",
+    "published_at": "2026-06-30T17:28:16.000Z",
+    "summary": "Explore how the Open Source Program Office uses GitHub’s new license compliance product to manage open source dependencies at scale.\nThe post How GitHub maintains compliance for open source dependencies appeared first on The GitHub Blog.",
+    "fetched_at": "2026-07-13T00:00:21.937Z"
+  },
+  {
+    "id": "d3034b0a9e4e1cee",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "Highlights from Git 2.55",
+    "url": "https://github.blog/open-source/git/highlights-from-git-2-55/",
+    "published_at": "2026-06-29T17:25:25.000Z",
+    "summary": "The open source Git project just released Git 2.55. Here is GitHub’s look at some of the most interesting features and changes introduced since last time.\nThe post Highlights from Git 2.55 appeared first on The GitHub Blog.",
+    "fetched_at": "2026-07-13T00:00:21.937Z"
+  }
+]
