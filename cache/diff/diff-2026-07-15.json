@@ -1,0 +1,394 @@
+{
+  "date": "2026-07-15",
+  "compared_with": "2026-07-14",
+  "source_count": 5,
+  "new_count": 10,
+  "removed_count": 15,
+  "new_articles": [
+    {
+      "id": "c53fec5d48fc8b10",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "How Prompt Tuning Improved GPT-5.5 in VS Code",
+      "url": "https://code.visualstudio.com/blogs/2026/07/06/optimizing-vscode-coding-harness-model-providers",
+      "published_at": "2026-07-06T00:00:00.000Z",
+      "summary": "See how VS Code and OpenAI tested GPT-5.5 system prompt changes in a two-week experiment, cutting tool calls and tail-end token usage while speeding up edits.\nRead the full article",
+      "fetched_at": "2026-07-14T23:56:51.964Z"
+    },
+    {
+      "id": "73a2b6a3cf09b4d5",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "Iterating faster with TypeScript 7",
+      "url": "https://code.visualstudio.com/blogs/2026/06/26/iterating-faster-with-ts-7",
+      "published_at": "2026-06-26T00:00:00.000Z",
+      "summary": "How the VS Code and TypeScript teams collaborated to adopt TypeScript 7 and speed up VS Code development\nRead the full article",
+      "fetched_at": "2026-07-14T23:56:51.964Z"
+    },
+    {
+      "id": "0badf82f3d5386bc",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "What 50,000 Runs of a 5-Line Eval Taught Us",
+      "url": "https://code.visualstudio.com/blogs/2026/06/19/what-50000-runs-taught-us",
+      "published_at": "2026-06-19T00:00:00.000Z",
+      "summary": "How AI coding models calibrate effort, token cost, and tool use on even the simplest task, and what that means for model selection and cost.\nRead the full article",
+      "fetched_at": "2026-07-14T23:56:51.964Z"
+    },
+    {
+      "id": "2dd4ff8e6412d009",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "Use your own language model key in VS Code",
+      "url": "https://code.visualstudio.com/blogs/2026/06/18/byok-vscode",
+      "published_at": "2026-06-18T00:00:00.000Z",
+      "summary": "Learn how to use bring your own key (BYOK) in VS Code to add models from providers like Azure, Anthropic, Gemini, OpenAI, Huggingface, OpenRouter, or use a local model with Ollama, Foundry Local, and more.\nRead the full article",
+      "fetched_at": "2026-07-14T23:56:51.964Z"
+    },
+    {
+      "id": "092029380cc76d99",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "Improving token efficiency for GitHub Copilot in VS Code",
+      "url": "https://code.visualstudio.com/blogs/2026/06/17/improving-token-efficiency-in-github-copilot",
+      "published_at": "2026-06-17T00:00:00.000Z",
+      "summary": "Learn how we're improving token efficiency for GitHub Copilot to reduce costs and latency for VS Code users.\nRead the full article",
+      "fetched_at": "2026-07-14T23:56:51.964Z"
+    },
+    {
+      "id": "e4865dee295d5546",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "The Coding Harness Behind GitHub Copilot in VS Code",
+      "url": "https://code.visualstudio.com/blogs/2026/05/15/agent-harnesses-github-copilot-vscode",
+      "published_at": "2026-05-15T00:00:00.000Z",
+      "summary": "Learn why the coding harness around GitHub Copilot in VS Code matters as models, tools, agents, and providers evolve.\nRead the full article",
+      "fetched_at": "2026-07-14T23:56:51.964Z"
+    },
+    {
+      "id": "0e850ae5c0cccb15",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "How VS Code Builds with AI",
+      "url": "https://code.visualstudio.com/blogs/2026/03/13/how-VS-Code-Builds-with-AI",
+      "published_at": "2026-03-13T00:00:00.000Z",
+      "summary": "Learn how VS Code uses AI across its own development workflow with GitHub Copilot agent mode, automated testing, and AI-powered code review.\nRead the full article",
+      "fetched_at": "2026-07-14T23:56:51.964Z"
+    },
+    {
+      "id": "d30d1b0fe3636ede",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "Making agents practical for real-world development",
+      "url": "https://code.visualstudio.com/blogs/2026/03/05/making-agents-practical-for-real-world-development",
+      "published_at": "2026-03-05T00:00:00.000Z",
+      "summary": "Explore agent orchestration, extensibility, and continuity in VS Code 1.110: lifecycle hooks, agent skills, session memory, and integrated browser tools.\nRead the full article",
+      "fetched_at": "2026-07-14T23:56:51.964Z"
+    },
+    {
+      "id": "94971b434ca4c8a9",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "Building Long-Distance Next Edit Suggestions",
+      "url": "https://code.visualstudio.com/blogs/2026/02/26/long-distance-nes",
+      "published_at": "2026-02-26T00:00:00.000Z",
+      "summary": "Learn how we extended next edit suggestions to work across your entire file, reducing friction and improving productivity in GitHub Copilot.\nRead the full article",
+      "fetched_at": "2026-07-14T23:56:51.964Z"
+    },
+    {
+      "id": "7984e37741c8865e",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "Your Home for Multi-Agent Development",
+      "url": "https://code.visualstudio.com/blogs/2026/02/05/multi-agent-development",
+      "published_at": "2026-02-05T00:00:00.000Z",
+      "summary": "VS Code has become the unified interface for all your coding agents. Manage local, background, and cloud agents in one place, use Claude and Codex agents alongside Copilot, and benefit from open standards like MCP and Agent Skills.\nRead the full article",
+      "fetched_at": "2026-07-14T23:56:51.964Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "github-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "m365-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 10,
+      "removed_count": 15,
+      "new_articles": [
+        {
+          "id": "c53fec5d48fc8b10",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "How Prompt Tuning Improved GPT-5.5 in VS Code",
+          "url": "https://code.visualstudio.com/blogs/2026/07/06/optimizing-vscode-coding-harness-model-providers",
+          "published_at": "2026-07-06T00:00:00.000Z",
+          "summary": "See how VS Code and OpenAI tested GPT-5.5 system prompt changes in a two-week experiment, cutting tool calls and tail-end token usage while speeding up edits.\nRead the full article",
+          "fetched_at": "2026-07-14T23:56:51.964Z"
+        },
+        {
+          "id": "73a2b6a3cf09b4d5",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Iterating faster with TypeScript 7",
+          "url": "https://code.visualstudio.com/blogs/2026/06/26/iterating-faster-with-ts-7",
+          "published_at": "2026-06-26T00:00:00.000Z",
+          "summary": "How the VS Code and TypeScript teams collaborated to adopt TypeScript 7 and speed up VS Code development\nRead the full article",
+          "fetched_at": "2026-07-14T23:56:51.964Z"
+        },
+        {
+          "id": "0badf82f3d5386bc",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "What 50,000 Runs of a 5-Line Eval Taught Us",
+          "url": "https://code.visualstudio.com/blogs/2026/06/19/what-50000-runs-taught-us",
+          "published_at": "2026-06-19T00:00:00.000Z",
+          "summary": "How AI coding models calibrate effort, token cost, and tool use on even the simplest task, and what that means for model selection and cost.\nRead the full article",
+          "fetched_at": "2026-07-14T23:56:51.964Z"
+        },
+        {
+          "id": "2dd4ff8e6412d009",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Use your own language model key in VS Code",
+          "url": "https://code.visualstudio.com/blogs/2026/06/18/byok-vscode",
+          "published_at": "2026-06-18T00:00:00.000Z",
+          "summary": "Learn how to use bring your own key (BYOK) in VS Code to add models from providers like Azure, Anthropic, Gemini, OpenAI, Huggingface, OpenRouter, or use a local model with Ollama, Foundry Local, and more.\nRead the full article",
+          "fetched_at": "2026-07-14T23:56:51.964Z"
+        },
+        {
+          "id": "092029380cc76d99",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Improving token efficiency for GitHub Copilot in VS Code",
+          "url": "https://code.visualstudio.com/blogs/2026/06/17/improving-token-efficiency-in-github-copilot",
+          "published_at": "2026-06-17T00:00:00.000Z",
+          "summary": "Learn how we're improving token efficiency for GitHub Copilot to reduce costs and latency for VS Code users.\nRead the full article",
+          "fetched_at": "2026-07-14T23:56:51.964Z"
+        },
+        {
+          "id": "e4865dee295d5546",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "The Coding Harness Behind GitHub Copilot in VS Code",
+          "url": "https://code.visualstudio.com/blogs/2026/05/15/agent-harnesses-github-copilot-vscode",
+          "published_at": "2026-05-15T00:00:00.000Z",
+          "summary": "Learn why the coding harness around GitHub Copilot in VS Code matters as models, tools, agents, and providers evolve.\nRead the full article",
+          "fetched_at": "2026-07-14T23:56:51.964Z"
+        },
+        {
+          "id": "0e850ae5c0cccb15",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "How VS Code Builds with AI",
+          "url": "https://code.visualstudio.com/blogs/2026/03/13/how-VS-Code-Builds-with-AI",
+          "published_at": "2026-03-13T00:00:00.000Z",
+          "summary": "Learn how VS Code uses AI across its own development workflow with GitHub Copilot agent mode, automated testing, and AI-powered code review.\nRead the full article",
+          "fetched_at": "2026-07-14T23:56:51.964Z"
+        },
+        {
+          "id": "d30d1b0fe3636ede",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Making agents practical for real-world development",
+          "url": "https://code.visualstudio.com/blogs/2026/03/05/making-agents-practical-for-real-world-development",
+          "published_at": "2026-03-05T00:00:00.000Z",
+          "summary": "Explore agent orchestration, extensibility, and continuity in VS Code 1.110: lifecycle hooks, agent skills, session memory, and integrated browser tools.\nRead the full article",
+          "fetched_at": "2026-07-14T23:56:51.964Z"
+        },
+        {
+          "id": "94971b434ca4c8a9",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Building Long-Distance Next Edit Suggestions",
+          "url": "https://code.visualstudio.com/blogs/2026/02/26/long-distance-nes",
+          "published_at": "2026-02-26T00:00:00.000Z",
+          "summary": "Learn how we extended next edit suggestions to work across your entire file, reducing friction and improving productivity in GitHub Copilot.\nRead the full article",
+          "fetched_at": "2026-07-14T23:56:51.964Z"
+        },
+        {
+          "id": "7984e37741c8865e",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Your Home for Multi-Agent Development",
+          "url": "https://code.visualstudio.com/blogs/2026/02/05/multi-agent-development",
+          "published_at": "2026-02-05T00:00:00.000Z",
+          "summary": "VS Code has become the unified interface for all your coding agents. Manage local, background, and cloud agents in one place, use Claude and Codex agents alongside Copilot, and benefit from open standards like MCP and Agent Skills.\nRead the full article",
+          "fetched_at": "2026-07-14T23:56:51.964Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "8669db0eb8ec029f",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Introducing auto model selection (preview)",
+          "url": "https://code.visualstudio.com/blogs/2025/09/15/autoModelSelection",
+          "published_at": "2025-09-15T00:00:00.000Z",
+          "summary": "Use auto model selection in VS Code to get faster responses, reduced rate limiting, and a 10% discount on premium requests for paid users.\nRead the full article",
+          "fetched_at": "2026-07-13T23:57:55.926Z"
+        },
+        {
+          "id": "565a3e32944a1afe",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "VS Code Dev Days – Join an event near you to learn about AI-assisted development",
+          "url": "https://code.visualstudio.com/blogs/2025/08/27/vscode-dev-days",
+          "published_at": "2025-08-26T00:00:00.000Z",
+          "summary": "Join a VS Code Dev Days event to learn about GitHub Copilot in VS Code\nRead the full article",
+          "fetched_at": "2026-07-13T23:57:55.926Z"
+        },
+        {
+          "id": "313955e7a1f3b610",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Command GitHub's Coding Agent from VS Code",
+          "url": "https://code.visualstudio.com/blogs/2025/07/17/copilot-coding-agent",
+          "published_at": "2025-07-17T00:00:00.000Z",
+          "summary": "VS Code's integration with GitHub Copilot Coding Agent allows you to delegate tasks to the agent and let it handle them in the background.\nRead the full article",
+          "fetched_at": "2026-07-13T23:57:55.926Z"
+        },
+        {
+          "id": "3db9883a1b5baf28",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Open Source AI Editor: First Milestone",
+          "url": "https://code.visualstudio.com/blogs/2025/06/30/openSourceAIEditorFirstMilestone",
+          "published_at": "2025-06-30T00:00:00.000Z",
+          "summary": "We are open sourcing the GitHub Copilot Chat extension. It’s the first milestone in making VS Code an open source AI editor.\nRead the full article",
+          "fetched_at": "2026-07-13T23:57:55.926Z"
+        },
+        {
+          "id": "c2c747b1b7c7c0ef",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "The Complete MCP Experience: Full Specification Support in VS Code",
+          "url": "https://code.visualstudio.com/blogs/2025/06/12/full-mcp-spec-support",
+          "published_at": "2025-06-12T00:00:00.000Z",
+          "summary": "VS Code now supports the complete Model Context Protocol specification, including authorization, prompts, resources, and sampling.\nRead the full article",
+          "fetched_at": "2026-07-13T23:57:55.926Z"
+        },
+        {
+          "id": "3345d8da467f0302",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Enhance productivity with AI + Remote Dev",
+          "url": "https://code.visualstudio.com/blogs/2025/05/27/ai-and-remote",
+          "published_at": "2025-05-27T00:00:00.000Z",
+          "summary": "Enhance your developer productivity with AI and Remote Development.\nRead the full article",
+          "fetched_at": "2026-07-13T23:57:55.926Z"
+        },
+        {
+          "id": "826138a8e9fbfc8c",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "VS Code: Open Source AI Editor",
+          "url": "https://code.visualstudio.com/blogs/2025/05/19/openSourceAIEditor",
+          "published_at": "2025-05-19T00:00:00.000Z",
+          "summary": "We will open source the GitHub Copilot Chat extension. It’s the next step towards making VS Code an open source AI editor.\nRead the full article",
+          "fetched_at": "2026-07-13T23:57:55.926Z"
+        },
+        {
+          "id": "555f407cf00c03e9",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Beyond the tools, adding MCP in VS Code",
+          "url": "https://code.visualstudio.com/blogs/2025/05/12/agent-mode-meets-mcp",
+          "published_at": "2025-05-14T00:00:00.000Z",
+          "summary": "Bring your own tools to VS Code's agent mode with MCP.\nRead the full article",
+          "fetched_at": "2026-07-13T23:57:55.926Z"
+        },
+        {
+          "id": "32fbeef2dbfcd9e9",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Agent mode: available to all users and supports MCP",
+          "url": "https://code.visualstudio.com/blogs/2025/04/07/agentMode",
+          "published_at": "2025-04-07T00:00:00.000Z",
+          "summary": "Agent mode is now available to all users and supports MCP.\nRead the full article",
+          "fetched_at": "2026-07-13T23:57:55.926Z"
+        },
+        {
+          "id": "a11a4dc3bd023b23",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Context is all you need: Better AI results with custom instructions",
+          "url": "https://code.visualstudio.com/blogs/2025/03/26/custom-instructions",
+          "published_at": "2025-03-26T00:00:00.000Z",
+          "summary": "Announcing the general availability of custom instructions for VS Code.\nRead the full article",
+          "fetched_at": "2026-07-13T23:57:55.926Z"
+        },
+        {
+          "id": "89687e927b755925",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Introducing GitHub Copilot agent mode (preview)",
+          "url": "https://code.visualstudio.com/blogs/2025/02/24/introducing-copilot-agent-mode",
+          "published_at": "2025-02-24T00:00:00.000Z",
+          "summary": "Announcing the GitHub Copilot agent mode in Visual Studio Code.\nRead the full article",
+          "fetched_at": "2026-07-13T23:57:55.926Z"
+        },
+        {
+          "id": "774dad3d748574ef",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Copilot Next Edit Suggestions (preview)",
+          "url": "https://code.visualstudio.com/blogs/2025/02/12/next-edit-suggestions",
+          "published_at": "2025-02-12T00:00:00.000Z",
+          "summary": "Announcing the Next Edit Suggestions and Agent Mode for GitHub Copilot in Visual Studio Code.\nRead the full article",
+          "fetched_at": "2026-07-13T23:57:55.926Z"
+        },
+        {
+          "id": "fb5b9a92c96b7f9c",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Announcing a free GitHub Copilot for VS Code",
+          "url": "https://code.visualstudio.com/blogs/2024/12/18/free-github-copilot",
+          "published_at": "2024-12-18T00:00:00.000Z",
+          "summary": "Announcing a free plan for GitHub Copilot in Visual Studio Code.\nRead the full article",
+          "fetched_at": "2026-07-13T23:57:55.926Z"
+        },
+        {
+          "id": "f816539eda190f75",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Introducing GitHub Copilot for Azure (preview)",
+          "url": "https://code.visualstudio.com/blogs/2024/11/15/introducing-github-copilot-for-azure",
+          "published_at": "2024-11-15T00:00:00.000Z",
+          "summary": "Introducing GitHub Copilot for Azure, a chat participant to ask about Azure and help you manage and troubleshoot your Azure resources.\nRead the full article",
+          "fetched_at": "2026-07-13T23:57:55.926Z"
+        },
+        {
+          "id": "66cc219a90508f20",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Introducing Copilot Edits (preview)",
+          "url": "https://code.visualstudio.com/blogs/2024/11/12/introducing-copilot-edits",
+          "published_at": "2024-11-12T00:00:00.000Z",
+          "summary": "Copilot Edits allows you to get to the changes you need in your workspace, across multiple files, using a UI designed for fast iteration. You can specify a set of files to be edited, and then use natural language to simply ask Copilot what you need. You stay in the flow of your code while reviewing the suggested changes, accepting what works, and iterating with follow-up asks.\nRead the full article",
+          "fetched_at": "2026-07-13T23:57:55.926Z"
+        }
+      ]
+    }
+  },
+  "diff_result": true
+}
