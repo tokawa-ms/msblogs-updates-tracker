@@ -1,0 +1,74 @@
+{
+  "date": "2026-07-21",
+  "compared_with": "2026-07-20",
+  "source_count": 5,
+  "new_count": 1,
+  "removed_count": 1,
+  "new_articles": [
+    {
+      "id": "43e53199b50c66f4",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "$100 million for open source: A milestone built by the community",
+      "url": "https://github.blog/open-source/maintainers/100-million-for-open-source-a-milestone-built-by-the-community/",
+      "published_at": "2026-07-20T16:00:00.000Z",
+      "summary": "Celebrating $100 million contributed by the community to the people who build and sustain open source every day.\nThe post $100 million for open source: A milestone built by the community appeared first on The GitHub Blog.",
+      "fetched_at": "2026-07-21T00:00:49.068Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "github-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "43e53199b50c66f4",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "$100 million for open source: A milestone built by the community",
+          "url": "https://github.blog/open-source/maintainers/100-million-for-open-source-a-milestone-built-by-the-community/",
+          "published_at": "2026-07-20T16:00:00.000Z",
+          "summary": "Celebrating $100 million contributed by the community to the people who build and sustain open source every day.\nThe post $100 million for open source: A milestone built by the community appeared first on The GitHub Blog.",
+          "fetched_at": "2026-07-21T00:00:49.068Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "9d0b7cca463c54de",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "6 security settings every GitHub maintainer should enable this week",
+          "url": "https://github.blog/security/6-security-settings-every-github-maintainer-should-enable-this-week/",
+          "published_at": "2026-07-01T15:59:29.000Z",
+          "summary": "These six free settings will not make your project unhackable. Nothing will. What they will do is close the easy doors. Turn these on, and your project will be meaningfully harder to attack than it was before.\nThe post 6 security settings every GitHub maintainer should enable this week appeared first on The GitHub Blog.",
+          "fetched_at": "2026-07-20T00:01:55.837Z"
+        }
+      ]
+    },
+    "m365-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    }
+  },
+  "diff_result": true
+}
