@@ -1,0 +1,115 @@
+{
+  "date": "2026-07-23",
+  "compared_with": "2026-07-22",
+  "source_count": 5,
+  "new_count": 2,
+  "removed_count": 3,
+  "new_articles": [
+    {
+      "id": "860827f8221d497e",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "Copilot vs. raw API access: What are you actually paying for?",
+      "url": "https://github.blog/ai-and-ml/github-copilot/copilot-vs-raw-api-access-what-are-you-actually-paying-for/",
+      "published_at": "2026-07-22T19:00:00.000Z",
+      "summary": "Copilot now bills usage at listed API rates. Compare direct model access with the coding workflow, policy, and harness work around it.\nThe post Copilot vs. raw API access: What are you actually paying for? appeared first on The GitHub Blog.",
+      "fetched_at": "2026-07-23T00:04:58.870Z"
+    },
+    {
+      "id": "01514fb95de7f68f",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "Next chapter: Restructuring GitHub’s bug bounty program",
+      "url": "https://github.blog/security/next-chapter-restructuring-githubs-bug-bounty-program/",
+      "published_at": "2026-07-22T16:00:00.000Z",
+      "summary": "GitHub is making some significant changes to its bug bounty program, shifting its focus to give researchers a better experience working with the GitHub team.\nThe post Next chapter: Restructuring GitHub’s bug bounty program appeared first on The GitHub Blog.",
+      "fetched_at": "2026-07-23T00:04:58.870Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "github-blog": {
+      "new_count": 2,
+      "removed_count": 2,
+      "new_articles": [
+        {
+          "id": "860827f8221d497e",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "Copilot vs. raw API access: What are you actually paying for?",
+          "url": "https://github.blog/ai-and-ml/github-copilot/copilot-vs-raw-api-access-what-are-you-actually-paying-for/",
+          "published_at": "2026-07-22T19:00:00.000Z",
+          "summary": "Copilot now bills usage at listed API rates. Compare direct model access with the coding workflow, policy, and harness work around it.\nThe post Copilot vs. raw API access: What are you actually paying for? appeared first on The GitHub Blog.",
+          "fetched_at": "2026-07-23T00:04:58.870Z"
+        },
+        {
+          "id": "01514fb95de7f68f",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "Next chapter: Restructuring GitHub’s bug bounty program",
+          "url": "https://github.blog/security/next-chapter-restructuring-githubs-bug-bounty-program/",
+          "published_at": "2026-07-22T16:00:00.000Z",
+          "summary": "GitHub is making some significant changes to its bug bounty program, shifting its focus to give researchers a better experience working with the GitHub team.\nThe post Next chapter: Restructuring GitHub’s bug bounty program appeared first on The GitHub Blog.",
+          "fetched_at": "2026-07-23T00:04:58.870Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "826a407adcaa15ca",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "How GitHub Copilot enables zero DNS configuration for GitHub Pages",
+          "url": "https://github.blog/ai-and-ml/github-copilot/how-github-copilot-enables-zero-dns-configuration-for-github-pages/",
+          "published_at": "2026-07-08T16:00:00.000Z",
+          "summary": "Go from an empty repository to a live custom domain with HTTPS in about 14 minutes, without manually editing a single DNS record.\nThe post How GitHub Copilot enables zero DNS configuration for GitHub Pages appeared first on The GitHub Blog.",
+          "fetched_at": "2026-07-21T23:58:55.511Z"
+        },
+        {
+          "id": "b8f033ffb8550b55",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "Q1 2026 Innovation Graph update: Open source collaboration is accelerating worldwide",
+          "url": "https://github.blog/news-insights/policy-news-and-insights/q1-2026-innovation-graph-update-open-source-collaboration-is-accelerating-worldwide/",
+          "published_at": "2026-07-07T16:00:00.000Z",
+          "summary": "New Innovation Graph data shows global developer communities growing faster than ever, with collaboration reaching new highs across many economies.\nThe post Q1 2026 Innovation Graph update: Open source collaboration is accelerating worldwide appeared first on The GitHub Blog.",
+          "fetched_at": "2026-07-21T23:58:55.511Z"
+        }
+      ]
+    },
+    "m365-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 1,
+      "new_articles": [],
+      "removed_articles": [
+        {
+          "id": "94971b434ca4c8a9",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Building Long-Distance Next Edit Suggestions",
+          "url": "https://code.visualstudio.com/blogs/2026/02/26/long-distance-nes",
+          "published_at": "2026-02-26T00:00:00.000Z",
+          "summary": "Learn how we extended next edit suggestions to work across your entire file, reducing friction and improving productivity in GitHub Copilot.\nRead the full article",
+          "fetched_at": "2026-07-21T23:58:55.541Z"
+        }
+      ]
+    }
+  },
+  "diff_result": true
+}
