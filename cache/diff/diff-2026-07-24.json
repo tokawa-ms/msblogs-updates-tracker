@@ -1,0 +1,106 @@
+{
+  "date": "2026-07-24",
+  "compared_with": "2026-07-23",
+  "source_count": 5,
+  "new_count": 2,
+  "removed_count": 2,
+  "new_articles": [
+    {
+      "id": "bb2f476bc70fd3e3",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "AT&T and Microsoft scale trillion-token workloads with Microsoft Foundry and AMD",
+      "url": "https://azure.microsoft.com/en-us/blog/att-and-microsoft-scale-trillion-token-workloads-with-microsoft-foundry-and-amd/",
+      "published_at": "2026-07-23T18:30:00.000Z",
+      "summary": "AT&T processed approximately one trillion tokens while developing OTel2.0 using Microsoft Foundry Managed Compute, open AI models, and AMD and NVIDIA GPU infrastructure. Discover how flexible model choice and scalable infrastructure are enabling production-scale telecom AI.\nThe post AT&T and Microsoft scale trillion-token workloads with Microsoft Foundry and AMD appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-07-24T00:05:17.934Z"
+    },
+    {
+      "id": "7391ec038d05b55e",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "The case for a cooldown: Why Dependabot now waits before issuing version updates",
+      "url": "https://github.blog/security/supply-chain-security/the-case-for-a-cooldown-why-dependabot-now-waits-before-issuing-version-updates/",
+      "published_at": "2026-07-23T16:00:00.000Z",
+      "summary": "A new default three-day cooldown delays version update pull requests so maintainers and security researchers can address findings in a release before it gets into your code.\nThe post The case for a cooldown: Why Dependabot now waits before issuing version updates appeared first on The GitHub Blog.",
+      "fetched_at": "2026-07-24T00:05:17.856Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "bb2f476bc70fd3e3",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "AT&T and Microsoft scale trillion-token workloads with Microsoft Foundry and AMD",
+          "url": "https://azure.microsoft.com/en-us/blog/att-and-microsoft-scale-trillion-token-workloads-with-microsoft-foundry-and-amd/",
+          "published_at": "2026-07-23T18:30:00.000Z",
+          "summary": "AT&T processed approximately one trillion tokens while developing OTel2.0 using Microsoft Foundry Managed Compute, open AI models, and AMD and NVIDIA GPU infrastructure. Discover how flexible model choice and scalable infrastructure are enabling production-scale telecom AI.\nThe post AT&T and Microsoft scale trillion-token workloads with Microsoft Foundry and AMD appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-07-24T00:05:17.934Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "d4652bc8706ea46f",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Accelerate modern Linux workloads with Azure Files",
+          "url": "https://azure.microsoft.com/en-us/blog/accelerate-modern-linux-workloads-with-azure-files/",
+          "published_at": "2026-06-29T15:00:00.000Z",
+          "summary": "Azure Files combines familiar file access with built-in performance, data protection, security, and Azure service integration.\nThe post Accelerate modern Linux workloads with Azure Files appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-07-23T00:04:59.241Z"
+        }
+      ]
+    },
+    "github-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "7391ec038d05b55e",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "The case for a cooldown: Why Dependabot now waits before issuing version updates",
+          "url": "https://github.blog/security/supply-chain-security/the-case-for-a-cooldown-why-dependabot-now-waits-before-issuing-version-updates/",
+          "published_at": "2026-07-23T16:00:00.000Z",
+          "summary": "A new default three-day cooldown delays version update pull requests so maintainers and security researchers can address findings in a release before it gets into your code.\nThe post The case for a cooldown: Why Dependabot now waits before issuing version updates appeared first on The GitHub Blog.",
+          "fetched_at": "2026-07-24T00:05:17.856Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "1c4dac257710150a",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "GitHub availability report: June 2026",
+          "url": "https://github.blog/news-insights/company-news/github-availability-report-june-2026/",
+          "published_at": "2026-07-08T19:35:51.000Z",
+          "summary": "In June, we experienced six incidents that resulted in degraded performance across GitHub services.\nThe post GitHub availability report: June 2026 appeared first on The GitHub Blog.",
+          "fetched_at": "2026-07-23T00:04:58.870Z"
+        }
+      ]
+    },
+    "m365-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    }
+  },
+  "diff_result": true
+}
