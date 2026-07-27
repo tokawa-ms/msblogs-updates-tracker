@@ -1,0 +1,74 @@
+{
+  "date": "2026-07-27",
+  "compared_with": "2026-07-26",
+  "source_count": 5,
+  "new_count": 1,
+  "removed_count": 1,
+  "new_articles": [
+    {
+      "id": "81450a63388f234a",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "GPT-5.6 now available in Microsoft Foundry",
+      "url": "https://azure.microsoft.com/en-us/blog/gpt-5-6-now-available-in-microsoft-foundry/",
+      "published_at": "2026-07-09T17:00:00.000Z",
+      "summary": "Introducing OpenAI's latest frontier model series, the Asia Pacific Data Zone, and product agent capabilities, all generally available in Microsoft Foundry.\nThe post GPT-5.6 now available in Microsoft Foundry  appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-07-27T00:05:38.590Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "81450a63388f234a",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "GPT-5.6 now available in Microsoft Foundry",
+          "url": "https://azure.microsoft.com/en-us/blog/gpt-5-6-now-available-in-microsoft-foundry/",
+          "published_at": "2026-07-09T17:00:00.000Z",
+          "summary": "Introducing OpenAI's latest frontier model series, the Asia Pacific Data Zone, and product agent capabilities, all generally available in Microsoft Foundry.\nThe post GPT-5.6 now available in Microsoft Foundry  appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-07-27T00:05:38.590Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "4cf2e5e0f821935c",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Frontier models and production agents: Advancing Microsoft Foundry for the agentic era",
+          "url": "https://azure.microsoft.com/en-us/blog/frontier-models-and-production-agents-advancing-microsoft-foundry-for-the-agentic-era/",
+          "published_at": "2026-07-09T17:00:00.000Z",
+          "summary": "Introducing OpenAI's latest frontier model series, the Asia Pacific Data Zone, and product agent capabilities, all generally available in Microsoft Foundry.\nThe post Frontier models and production agents: Advancing Microsoft Foundry for the agentic era appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-07-26T00:04:25.122Z"
+        }
+      ]
+    },
+    "github-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "m365-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    }
+  },
+  "diff_result": true
+}
