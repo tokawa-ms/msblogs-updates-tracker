@@ -1,0 +1,102 @@
+[
+  {
+    "id": "fda5bd9ca453ecca",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "The harness is all you need (mostly)",
+    "url": "https://github.blog/ai-and-ml/github-copilot/the-harness-is-all-you-need-mostly/",
+    "published_at": "2026-07-27T18:00:00.000Z",
+    "summary": "A practical GitHub Copilot workflow for prototyping, planning, implementing, and reviewing software without chasing every new AI tool.\nThe post The harness is all you need (mostly) appeared first on The GitHub Blog.",
+    "fetched_at": "2026-07-28T00:05:48.408Z"
+  },
+  {
+    "id": "989dcdc8f13fc67f",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "GitHub Copilot app for Beginners: Getting started",
+    "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-getting-started/",
+    "published_at": "2026-07-27T16:00:00.000Z",
+    "summary": "New to the GitHub Copilot app? Learn how to start projects, work with AI agents, explore canvases, and streamline your development workflow.\nThe post GitHub Copilot app for Beginners: Getting started appeared first on The GitHub Blog.",
+    "fetched_at": "2026-07-28T00:05:48.408Z"
+  },
+  {
+    "id": "7391ec038d05b55e",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "The case for a cooldown: Why Dependabot now waits before issuing version updates",
+    "url": "https://github.blog/security/supply-chain-security/the-case-for-a-cooldown-why-dependabot-now-waits-before-issuing-version-updates/",
+    "published_at": "2026-07-23T16:00:00.000Z",
+    "summary": "A new default three-day cooldown delays version update pull requests so maintainers and security researchers can address findings in a release before it gets into your code.\nThe post The case for a cooldown: Why Dependabot now waits before issuing version updates appeared first on The GitHub Blog.",
+    "fetched_at": "2026-07-28T00:05:48.408Z"
+  },
+  {
+    "id": "860827f8221d497e",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "Copilot vs. raw API access: What are you actually paying for?",
+    "url": "https://github.blog/ai-and-ml/github-copilot/copilot-vs-raw-api-access-what-are-you-actually-paying-for/",
+    "published_at": "2026-07-22T19:00:00.000Z",
+    "summary": "Copilot now bills usage at listed API rates. Compare direct model access with the coding workflow, policy, and harness work around it.\nThe post Copilot vs. raw API access: What are you actually paying for? appeared first on The GitHub Blog.",
+    "fetched_at": "2026-07-28T00:05:48.408Z"
+  },
+  {
+    "id": "01514fb95de7f68f",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "Next chapter: Restructuring GitHub’s bug bounty program",
+    "url": "https://github.blog/security/next-chapter-restructuring-githubs-bug-bounty-program/",
+    "published_at": "2026-07-22T16:00:00.000Z",
+    "summary": "GitHub is making some significant changes to its bug bounty program, shifting its focus to give researchers a better experience working with the GitHub team.\nThe post Next chapter: Restructuring GitHub’s bug bounty program appeared first on The GitHub Blog.",
+    "fetched_at": "2026-07-28T00:05:48.408Z"
+  },
+  {
+    "id": "3ac65a5d9987462d",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "How to build interactive experiences with canvases",
+    "url": "https://github.blog/ai-and-ml/github-copilot/how-to-build-interactive-experiences-with-canvases/",
+    "published_at": "2026-07-21T16:00:00.000Z",
+    "summary": "Canvases turn AI into interactive workspaces where you can visualize information, explore workflows, and take action across complex tasks.\nThe post How to build interactive experiences with canvases appeared first on The GitHub Blog.",
+    "fetched_at": "2026-07-28T00:05:48.408Z"
+  },
+  {
+    "id": "43e53199b50c66f4",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "$100 million for open source: A milestone built by the community",
+    "url": "https://github.blog/open-source/maintainers/100-million-for-open-source-a-milestone-built-by-the-community/",
+    "published_at": "2026-07-20T16:00:00.000Z",
+    "summary": "Celebrating $100 million contributed by the community to the people who build and sustain open source every day.\nThe post $100 million for open source: A milestone built by the community appeared first on The GitHub Blog.",
+    "fetched_at": "2026-07-28T00:05:48.408Z"
+  },
+  {
+    "id": "6792a6598ab6a153",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "The cost of saying yes has changed",
+    "url": "https://github.blog/engineering/the-cost-of-saying-yes-has-changed/",
+    "published_at": "2026-07-17T16:46:47.000Z",
+    "summary": "The cost of writing code dropped; the cost of owning it didn't. A framework for deciding which changes are actually cheap in the AI era.\nThe post The cost of saying yes has changed appeared first on The GitHub Blog.",
+    "fetched_at": "2026-07-28T00:05:48.408Z"
+  },
+  {
+    "id": "17f1ba5072cbda2c",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "GitHub for Beginners: Your roadmap to mastering the GitHub essentials",
+    "url": "https://github.blog/developer-skills/github/github-for-beginners-your-roadmap-to-mastering-the-github-essentials/",
+    "published_at": "2026-07-15T17:29:31.000Z",
+    "summary": "New to GitHub? This beginner's guide explains version control, repositories, and pull requests—plus everything else you need to start working confidently on GitHub.\nThe post GitHub for Beginners: Your roadmap to mastering the GitHub essentials appeared first on The GitHub Blog.",
+    "fetched_at": "2026-07-28T00:05:48.408Z"
+  },
+  {
+    "id": "6e4ea61ea6fdf631",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "Better tools made Copilot code review worse. Here’s how we actually improved it.",
+    "url": "https://github.blog/ai-and-ml/github-copilot/better-tools-made-copilot-code-review-worse-heres-how-we-actually-improved-it/",
+    "published_at": "2026-07-10T15:57:47.000Z",
+    "summary": "How migrating Copilot code review to shared Unix-style code exploration tools reduced review cost by reshaping agent workflows around pull request evidence.\nThe post Better tools made Copilot code review worse. Here’s how we actually improved it. appeared first on The GitHub Blog.",
+    "fetched_at": "2026-07-28T00:05:48.408Z"
+  }
+]

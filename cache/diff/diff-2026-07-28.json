@@ -1,0 +1,104 @@
+{
+  "date": "2026-07-28",
+  "compared_with": "2026-07-27",
+  "source_count": 5,
+  "new_count": 2,
+  "removed_count": 2,
+  "new_articles": [
+    {
+      "id": "fda5bd9ca453ecca",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "The harness is all you need (mostly)",
+      "url": "https://github.blog/ai-and-ml/github-copilot/the-harness-is-all-you-need-mostly/",
+      "published_at": "2026-07-27T18:00:00.000Z",
+      "summary": "A practical GitHub Copilot workflow for prototyping, planning, implementing, and reviewing software without chasing every new AI tool.\nThe post The harness is all you need (mostly) appeared first on The GitHub Blog.",
+      "fetched_at": "2026-07-28T00:05:48.408Z"
+    },
+    {
+      "id": "989dcdc8f13fc67f",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "GitHub Copilot app for Beginners: Getting started",
+      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-getting-started/",
+      "published_at": "2026-07-27T16:00:00.000Z",
+      "summary": "New to the GitHub Copilot app? Learn how to start projects, work with AI agents, explore canvases, and streamline your development workflow.\nThe post GitHub Copilot app for Beginners: Getting started appeared first on The GitHub Blog.",
+      "fetched_at": "2026-07-28T00:05:48.408Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "github-blog": {
+      "new_count": 2,
+      "removed_count": 2,
+      "new_articles": [
+        {
+          "id": "fda5bd9ca453ecca",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "The harness is all you need (mostly)",
+          "url": "https://github.blog/ai-and-ml/github-copilot/the-harness-is-all-you-need-mostly/",
+          "published_at": "2026-07-27T18:00:00.000Z",
+          "summary": "A practical GitHub Copilot workflow for prototyping, planning, implementing, and reviewing software without chasing every new AI tool.\nThe post The harness is all you need (mostly) appeared first on The GitHub Blog.",
+          "fetched_at": "2026-07-28T00:05:48.408Z"
+        },
+        {
+          "id": "989dcdc8f13fc67f",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "GitHub Copilot app for Beginners: Getting started",
+          "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-getting-started/",
+          "published_at": "2026-07-27T16:00:00.000Z",
+          "summary": "New to the GitHub Copilot app? Learn how to start projects, work with AI agents, explore canvases, and streamline your development workflow.\nThe post GitHub Copilot app for Beginners: Getting started appeared first on The GitHub Blog.",
+          "fetched_at": "2026-07-28T00:05:48.408Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "b2b3646548d6942e",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "How GitHub gave every repository a durable owner",
+          "url": "https://github.blog/security/application-security/how-github-gave-every-repository-a-durable-owner/",
+          "published_at": "2026-07-09T16:29:37.000Z",
+          "summary": "GitHub had over 14,000 repositories. Fewer than half had clear ownership. Here's how we gave every active repository a validated owner in under 45 days, archived the rest, and made ownership the foundation for everything that followed.\nThe post How GitHub gave every repository a durable owner appeared first on The GitHub Blog.",
+          "fetched_at": "2026-07-27T00:05:38.409Z"
+        },
+        {
+          "id": "fed88e5c2993c2e6",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "Automating cross-repo documentation with GitHub Agentic Workflows",
+          "url": "https://github.blog/ai-and-ml/github-copilot/automating-cross-repo-documentation-with-github-agentic-workflows/",
+          "published_at": "2026-07-08T21:11:56.000Z",
+          "summary": "Explore how the Aspire team turns merged product changes into SME-reviewed docs pull requests, closing the gap between release and documentation.\nThe post Automating cross-repo documentation with GitHub Agentic Workflows appeared first on The GitHub Blog.",
+          "fetched_at": "2026-07-27T00:05:38.409Z"
+        }
+      ]
+    },
+    "m365-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    }
+  },
+  "diff_result": true
+}
