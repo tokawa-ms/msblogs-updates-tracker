@@ -1,0 +1,74 @@
+{
+  "date": "2026-07-31",
+  "compared_with": "2026-07-30",
+  "source_count": 5,
+  "new_count": 1,
+  "removed_count": 1,
+  "new_articles": [
+    {
+      "id": "7e5e1e8610f9c5a9",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "Stacked sessions and pull requests in the GitHub Copilot app",
+      "url": "https://github.blog/ai-and-ml/github-copilot/stacked-sessions-and-pull-requests-in-the-github-copilot-app/",
+      "published_at": "2026-07-30T17:30:24.000Z",
+      "summary": "Learn how I modernized an old codebase of mine using stacked sessions and pull requests in the GitHub Copilot app.\nThe post Stacked sessions and pull requests in the GitHub Copilot app appeared first on The GitHub Blog.",
+      "fetched_at": "2026-07-31T00:07:34.955Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "github-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "7e5e1e8610f9c5a9",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "Stacked sessions and pull requests in the GitHub Copilot app",
+          "url": "https://github.blog/ai-and-ml/github-copilot/stacked-sessions-and-pull-requests-in-the-github-copilot-app/",
+          "published_at": "2026-07-30T17:30:24.000Z",
+          "summary": "Learn how I modernized an old codebase of mine using stacked sessions and pull requests in the GitHub Copilot app.\nThe post Stacked sessions and pull requests in the GitHub Copilot app appeared first on The GitHub Blog.",
+          "fetched_at": "2026-07-31T00:07:34.955Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "6792a6598ab6a153",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "The cost of saying yes has changed",
+          "url": "https://github.blog/engineering/the-cost-of-saying-yes-has-changed/",
+          "published_at": "2026-07-17T16:46:47.000Z",
+          "summary": "The cost of writing code dropped; the cost of owning it didn't. A framework for deciding which changes are actually cheap in the AI era.\nThe post The cost of saying yes has changed appeared first on The GitHub Blog.",
+          "fetched_at": "2026-07-30T00:04:06.944Z"
+        }
+      ]
+    },
+    "m365-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    }
+  },
+  "diff_result": true
+}
