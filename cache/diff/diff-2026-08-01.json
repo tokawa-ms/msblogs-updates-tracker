@@ -1,0 +1,74 @@
+{
+  "date": "2026-08-01",
+  "compared_with": "2026-07-31",
+  "source_count": 5,
+  "new_count": 1,
+  "removed_count": 1,
+  "new_articles": [
+    {
+      "id": "c486e857c8e8b077",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "Don’t stop early: Case-folding source code at memory speed",
+      "url": "https://github.blog/engineering/architecture-optimization/dont-stop-early-case-folding-source-code-at-memory-speed/",
+      "published_at": "2026-07-31T16:00:00.000Z",
+      "summary": "How a branch-free loop and byte-space arithmetic let GitHub case-fold every byte of code search at >45 GiB/s on a single core.\nThe post Don’t stop early: Case-folding source code at memory speed appeared first on The GitHub Blog.",
+      "fetched_at": "2026-08-01T00:04:47.011Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "github-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "c486e857c8e8b077",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "Don’t stop early: Case-folding source code at memory speed",
+          "url": "https://github.blog/engineering/architecture-optimization/dont-stop-early-case-folding-source-code-at-memory-speed/",
+          "published_at": "2026-07-31T16:00:00.000Z",
+          "summary": "How a branch-free loop and byte-space arithmetic let GitHub case-fold every byte of code search at >45 GiB/s on a single core.\nThe post Don’t stop early: Case-folding source code at memory speed appeared first on The GitHub Blog.",
+          "fetched_at": "2026-08-01T00:04:47.011Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "43e53199b50c66f4",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "$100 million for open source: A milestone built by the community",
+          "url": "https://github.blog/open-source/maintainers/100-million-for-open-source-a-milestone-built-by-the-community/",
+          "published_at": "2026-07-20T16:00:00.000Z",
+          "summary": "Celebrating $100 million contributed by the community to the people who build and sustain open source every day.\nThe post $100 million for open source: A milestone built by the community appeared first on The GitHub Blog.",
+          "fetched_at": "2026-07-31T00:07:34.955Z"
+        }
+      ]
+    },
+    "m365-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    }
+  },
+  "diff_result": true
+}
