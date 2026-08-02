@@ -1,0 +1,74 @@
+{
+  "date": "2026-08-02",
+  "compared_with": "2026-08-01",
+  "source_count": 5,
+  "new_count": 1,
+  "removed_count": 1,
+  "new_articles": [
+    {
+      "id": "91267fa3779eb30d",
+      "source_id": "m365-blog",
+      "source_name": "Microsoft 365 Blog",
+      "title": "The next measure of AI momentum is work transformed",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/07/30/the-next-measure-of-ai-momentum-is-work-transformed/",
+      "published_at": "2026-07-30T13:00:00.000Z",
+      "summary": "In yesterday’s earnings call, we shared that Microsoft 365 Copilot has surpassed 30 million paid seats, with net seat adds more than doubling quarter over quarter.\nThe post The next measure of AI momentum is work transformed appeared first on Microsoft 365 Blog.",
+      "fetched_at": "2026-08-02T00:02:05.902Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "github-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "m365-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "91267fa3779eb30d",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "The next measure of AI momentum is work transformed",
+          "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/07/30/the-next-measure-of-ai-momentum-is-work-transformed/",
+          "published_at": "2026-07-30T13:00:00.000Z",
+          "summary": "In yesterday’s earnings call, we shared that Microsoft 365 Copilot has surpassed 30 million paid seats, with net seat adds more than doubling quarter over quarter.\nThe post The next measure of AI momentum is work transformed appeared first on Microsoft 365 Blog.",
+          "fetched_at": "2026-08-02T00:02:05.902Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "af920e380a7f0f0d",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Microsoft 365 Copilot, human agency, and the opportunity for every organization",
+          "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/05/05/microsoft-365-copilot-human-agency-and-the-opportunity-for-every-organization/",
+          "published_at": "2026-05-05T10:00:00.000Z",
+          "summary": "As AI and agents take on more of the execution, people have more agency than ever to unlock their ambition, direct what gets done, and own the outcomes.\nThe post Microsoft 365 Copilot, human agency, and the opportunity for every organization appeared first on Microsoft 365 Blog.",
+          "fetched_at": "2026-08-01T00:04:47.405Z"
+        }
+      ]
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    }
+  },
+  "diff_result": true
+}
