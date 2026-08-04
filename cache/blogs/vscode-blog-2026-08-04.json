@@ -1,0 +1,82 @@
+[
+  {
+    "id": "41a705ce032dabca",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "MAI-Code-1-Flash: early results from real developer workflows",
+    "url": "https://code.visualstudio.com/blogs/2026/07/29/mai-code-1-flash",
+    "published_at": "2026-07-29T00:00:00.000Z",
+    "summary": "MAI-Code-1-Flash is a lightweight coding model purpose built for the fast, iterative work developers do every day in GitHub. In this post, we share what the data is telling us about how it performs in real developer workflows.\nRead the full article",
+    "fetched_at": "2026-08-04T00:12:22.755Z"
+  },
+  {
+    "id": "c53fec5d48fc8b10",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "How Prompt Tuning Improved GPT-5.5 in VS Code",
+    "url": "https://code.visualstudio.com/blogs/2026/07/06/optimizing-vscode-coding-harness-model-providers",
+    "published_at": "2026-07-06T00:00:00.000Z",
+    "summary": "See how VS Code and OpenAI tested GPT-5.5 system prompt changes in a two-week experiment, cutting tool calls and tail-end token usage while speeding up edits.\nRead the full article",
+    "fetched_at": "2026-08-04T00:12:22.755Z"
+  },
+  {
+    "id": "73a2b6a3cf09b4d5",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "Iterating faster with TypeScript 7",
+    "url": "https://code.visualstudio.com/blogs/2026/06/26/iterating-faster-with-ts-7",
+    "published_at": "2026-06-26T00:00:00.000Z",
+    "summary": "How the VS Code and TypeScript teams collaborated to adopt TypeScript 7 and speed up VS Code development\nRead the full article",
+    "fetched_at": "2026-08-04T00:12:22.755Z"
+  },
+  {
+    "id": "0badf82f3d5386bc",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "What 50,000 Runs of a 5-Line Eval Taught Us",
+    "url": "https://code.visualstudio.com/blogs/2026/06/19/what-50000-runs-taught-us",
+    "published_at": "2026-06-19T00:00:00.000Z",
+    "summary": "How AI coding models calibrate effort, token cost, and tool use on even the simplest task, and what that means for model selection and cost.\nRead the full article",
+    "fetched_at": "2026-08-04T00:12:22.755Z"
+  },
+  {
+    "id": "2dd4ff8e6412d009",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "Use your own language model key in VS Code",
+    "url": "https://code.visualstudio.com/blogs/2026/06/18/byok-vscode",
+    "published_at": "2026-06-18T00:00:00.000Z",
+    "summary": "Learn how to use bring your own key (BYOK) in VS Code to add models from providers like Azure, Anthropic, Gemini, OpenAI, Huggingface, OpenRouter, or use a local model with Ollama, Foundry Local, and more.\nRead the full article",
+    "fetched_at": "2026-08-04T00:12:22.755Z"
+  },
+  {
+    "id": "092029380cc76d99",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "Improving token efficiency for GitHub Copilot in VS Code",
+    "url": "https://code.visualstudio.com/blogs/2026/06/17/improving-token-efficiency-in-github-copilot",
+    "published_at": "2026-06-17T00:00:00.000Z",
+    "summary": "Learn how we're improving token efficiency for GitHub Copilot to reduce costs and latency for VS Code users.\nRead the full article",
+    "fetched_at": "2026-08-04T00:12:22.755Z"
+  },
+  {
+    "id": "e4865dee295d5546",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "The Coding Harness Behind GitHub Copilot in VS Code",
+    "url": "https://code.visualstudio.com/blogs/2026/05/15/agent-harnesses-github-copilot-vscode",
+    "published_at": "2026-05-15T00:00:00.000Z",
+    "summary": "Learn why the coding harness around GitHub Copilot in VS Code matters as models, tools, agents, and providers evolve.\nRead the full article",
+    "fetched_at": "2026-08-04T00:12:22.755Z"
+  },
+  {
+    "id": "0e850ae5c0cccb15",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "How VS Code Builds with AI",
+    "url": "https://code.visualstudio.com/blogs/2026/03/13/how-VS-Code-Builds-with-AI",
+    "published_at": "2026-03-13T00:00:00.000Z",
+    "summary": "Learn how VS Code uses AI across its own development workflow with GitHub Copilot agent mode, automated testing, and AI-powered code review.\nRead the full article",
+    "fetched_at": "2026-08-04T00:12:22.755Z"
+  }
+]
