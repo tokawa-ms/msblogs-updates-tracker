@@ -1,0 +1,102 @@
+[
+  {
+    "id": "c486e857c8e8b077",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "Don’t stop early: Case-folding source code at memory speed",
+    "url": "https://github.blog/engineering/architecture-optimization/dont-stop-early-case-folding-source-code-at-memory-speed/",
+    "published_at": "2026-07-31T16:00:00.000Z",
+    "summary": "How a branch-free loop and byte-space arithmetic let GitHub case-fold every byte of code search at >45 GiB/s on a single core.\nThe post Don’t stop early: Case-folding source code at memory speed appeared first on The GitHub Blog.",
+    "fetched_at": "2026-08-04T00:12:22.706Z"
+  },
+  {
+    "id": "7e5e1e8610f9c5a9",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "Stacked sessions and pull requests in the GitHub Copilot app",
+    "url": "https://github.blog/ai-and-ml/github-copilot/stacked-sessions-and-pull-requests-in-the-github-copilot-app/",
+    "published_at": "2026-07-30T17:30:24.000Z",
+    "summary": "Learn how I modernized an old codebase of mine using stacked sessions and pull requests in the GitHub Copilot app.\nThe post Stacked sessions and pull requests in the GitHub Copilot app appeared first on The GitHub Blog.",
+    "fetched_at": "2026-08-04T00:12:22.706Z"
+  },
+  {
+    "id": "4bae8ecf85631780",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "Tame Dependabot: Group your updates, slow the cadence, keep security fast",
+    "url": "https://github.blog/security/supply-chain-security/tame-dependabot-group-your-updates-slow-the-cadence-keep-security-fast/",
+    "published_at": "2026-07-29T16:00:00.000Z",
+    "summary": "Dependabot keeps your dependencies current, but its defaults can flood your repository with pull requests. Here's how grouping updates, slowing the cadence, and keeping security fixes fast cut the noise on a Microsoft open source project.\nThe post Tame Dependabot: Group your updates, slow the cadence, keep security fast appeared first on The GitHub Blog.",
+    "fetched_at": "2026-08-04T00:12:22.706Z"
+  },
+  {
+    "id": "4df08dafbca922d1",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "Disrupting supply chain attacks on npm and GitHub Actions",
+    "url": "https://github.blog/security/supply-chain-security/disrupting-supply-chain-attacks-on-npm-and-github-actions/",
+    "published_at": "2026-07-28T16:00:00.000Z",
+    "summary": "Explore the changes we've shipped across npm and GitHub Actions over the past few months to disrupt supply chain attack techniques and limit their impact.\nThe post Disrupting supply chain attacks on npm and GitHub Actions appeared first on The GitHub Blog.",
+    "fetched_at": "2026-08-04T00:12:22.706Z"
+  },
+  {
+    "id": "fda5bd9ca453ecca",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "The harness is all you need (mostly)",
+    "url": "https://github.blog/ai-and-ml/github-copilot/the-harness-is-all-you-need-mostly/",
+    "published_at": "2026-07-27T18:00:00.000Z",
+    "summary": "A practical GitHub Copilot workflow for prototyping, planning, implementing, and reviewing software without chasing every new AI tool.\nThe post The harness is all you need (mostly) appeared first on The GitHub Blog.",
+    "fetched_at": "2026-08-04T00:12:22.706Z"
+  },
+  {
+    "id": "989dcdc8f13fc67f",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "GitHub Copilot app for Beginners: Getting started",
+    "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-getting-started/",
+    "published_at": "2026-07-27T16:00:00.000Z",
+    "summary": "New to the GitHub Copilot app? Learn how to start projects, work with AI agents, explore canvases, and streamline your development workflow.\nThe post GitHub Copilot app for Beginners: Getting started appeared first on The GitHub Blog.",
+    "fetched_at": "2026-08-04T00:12:22.706Z"
+  },
+  {
+    "id": "7391ec038d05b55e",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "The case for a cooldown: Why Dependabot now waits before issuing version updates",
+    "url": "https://github.blog/security/supply-chain-security/the-case-for-a-cooldown-why-dependabot-now-waits-before-issuing-version-updates/",
+    "published_at": "2026-07-23T16:00:00.000Z",
+    "summary": "A new default three-day cooldown delays version update pull requests so maintainers and security researchers can address findings in a release before it gets into your code.\nThe post The case for a cooldown: Why Dependabot now waits before issuing version updates appeared first on The GitHub Blog.",
+    "fetched_at": "2026-08-04T00:12:22.706Z"
+  },
+  {
+    "id": "860827f8221d497e",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "Copilot vs. raw API access: What are you actually paying for?",
+    "url": "https://github.blog/ai-and-ml/github-copilot/copilot-vs-raw-api-access-what-are-you-actually-paying-for/",
+    "published_at": "2026-07-22T19:00:00.000Z",
+    "summary": "Copilot now bills usage at listed API rates. Compare direct model access with the coding workflow, policy, and harness work around it.\nThe post Copilot vs. raw API access: What are you actually paying for? appeared first on The GitHub Blog.",
+    "fetched_at": "2026-08-04T00:12:22.706Z"
+  },
+  {
+    "id": "01514fb95de7f68f",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "Next chapter: Restructuring GitHub’s bug bounty program",
+    "url": "https://github.blog/security/next-chapter-restructuring-githubs-bug-bounty-program/",
+    "published_at": "2026-07-22T16:00:00.000Z",
+    "summary": "GitHub is making some significant changes to its bug bounty program, shifting its focus to give researchers a better experience working with the GitHub team.\nThe post Next chapter: Restructuring GitHub’s bug bounty program appeared first on The GitHub Blog.",
+    "fetched_at": "2026-08-04T00:12:22.706Z"
+  },
+  {
+    "id": "3ac65a5d9987462d",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "How to build interactive experiences with canvases",
+    "url": "https://github.blog/ai-and-ml/github-copilot/how-to-build-interactive-experiences-with-canvases/",
+    "published_at": "2026-07-21T16:00:00.000Z",
+    "summary": "Canvases turn AI into interactive workspaces where you can visualize information, explore workflows, and take action across complex tasks.\nThe post How to build interactive experiences with canvases appeared first on The GitHub Blog.",
+    "fetched_at": "2026-08-04T00:12:22.706Z"
+  }
+]
