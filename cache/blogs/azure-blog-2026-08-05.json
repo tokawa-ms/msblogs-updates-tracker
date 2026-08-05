@@ -1,0 +1,102 @@
+[
+  {
+    "id": "14f52986775b612e",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "What customers value most in Microsoft Databases—from reliability to AI readiness",
+    "url": "https://azure.microsoft.com/en-us/blog/what-customers-value-most-in-microsoft-databases-from-reliability-to-ai-readiness/",
+    "published_at": "2026-07-27T15:00:00.000Z",
+    "summary": "Every day, customers trust Microsoft Databases to power their most critical applications, business processes, and AI-powered experiences.\nThe post What customers value most in Microsoft Databases—from reliability to AI readiness appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-08-05T00:09:25.320Z"
+  },
+  {
+    "id": "bb2f476bc70fd3e3",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "AT&T and Microsoft scale trillion-token workloads with Microsoft Foundry and AMD",
+    "url": "https://azure.microsoft.com/en-us/blog/att-and-microsoft-scale-trillion-token-workloads-with-microsoft-foundry-and-amd/",
+    "published_at": "2026-07-23T18:30:00.000Z",
+    "summary": "AT&T processed approximately one trillion tokens while developing OTel2.0 using Microsoft Foundry Managed Compute, open AI models, and AMD and NVIDIA GPU infrastructure. Discover how flexible model choice and scalable infrastructure are enabling production-scale telecom AI.\nThe post AT&T and Microsoft scale trillion-token workloads with Microsoft Foundry and AMD appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-08-05T00:09:25.320Z"
+  },
+  {
+    "id": "107156ced48d2303",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "Azure Databricks delivers proven business value",
+    "url": "https://azure.microsoft.com/en-us/blog/azure-databricks-delivers-proven-business-value/",
+    "published_at": "2026-07-15T15:00:00.000Z",
+    "summary": "Microsoft Azure Databricks delivers the first-party advantage of Databricks on Microsoft—and for customers, that advantage shows up as real, measurable value. It is the same Databricks platform your teams already know, co-engineered with Microsoft and delivered as a native Azure service, so it fits naturally into the Microsoft tools, identity, and governance your organization already runs.\nThe post Azure Databricks delivers proven business value appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-08-05T00:09:25.320Z"
+  },
+  {
+    "id": "81450a63388f234a",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "GPT-5.6 now available in Microsoft Foundry",
+    "url": "https://azure.microsoft.com/en-us/blog/gpt-5-6-now-available-in-microsoft-foundry/",
+    "published_at": "2026-07-09T17:00:00.000Z",
+    "summary": "Introducing OpenAI's latest frontier model series, the Asia Pacific Data Zone, and product agent capabilities, all generally available in Microsoft Foundry.\nThe post GPT-5.6 now available in Microsoft Foundry  appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-08-05T00:09:25.320Z"
+  },
+  {
+    "id": "f9006e3a544b1e46",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "Built to bounce back: How Azure resiliency evolved",
+    "url": "https://azure.microsoft.com/en-us/blog/built-to-bounce-back-how-azure-resiliency-evolved/",
+    "published_at": "2026-07-08T16:00:00.000Z",
+    "summary": "Cloud resiliency is about ensuring systems can adapt, recover, and keep functioning within real-world constraints.\nThe post Built to bounce back: How Azure resiliency evolved appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-08-05T00:09:25.320Z"
+  },
+  {
+    "id": "28ffa6edec04d12a",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "External key management for Azure Managed HSM is now in public preview",
+    "url": "https://azure.microsoft.com/en-us/blog/external-key-management-for-azure-managed-hsm-is-now-in-public-preview/",
+    "published_at": "2026-07-07T16:00:00.000Z",
+    "summary": "Azure Key Vault Managed Hardware Security Module (HSM) provides strong sovereignty over your encryption keys. Keys are generated and stored in a single-tenant, FIPS 140-3 Level 3 HSM that only you control: Microsoft has no access to your key material, and you govern who can use each key.\nThe post External key management for Azure Managed HSM is now in public preview appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-08-05T00:09:25.320Z"
+  },
+  {
+    "id": "2e0442baa84f7c5a",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "Meet Brain: The AI system behind Azure reliability",
+    "url": "https://azure.microsoft.com/en-us/blog/meet-brain-the-ai-system-behind-azure-reliability/",
+    "published_at": "2026-07-02T16:00:00.000Z",
+    "summary": "Learn how Microsoft is building a digital twin of Azure Service Health and why it changes how hyperscale operates.\nThe post Meet Brain: The AI system behind Azure reliability appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-08-05T00:09:25.320Z"
+  },
+  {
+    "id": "2300a576029dacf0",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "Proving application resilience on Azure with Chaos Studio",
+    "url": "https://azure.microsoft.com/en-us/blog/proving-application-resilience-on-azure-with-chaos-studio/",
+    "published_at": "2026-07-01T16:00:00.000Z",
+    "summary": "Azure Chaos Studio helps organizations validate application resilience by simulating outages, failovers, network disruptions, and infrastructure failures before they impact production.\nThe post Proving application resilience on Azure with Chaos Studio appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-08-05T00:09:25.320Z"
+  },
+  {
+    "id": "4c581c445fbb4273",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "Azure IaaS: How to design, build, and optimize cloud infrastructure for long-term cost efficiency",
+    "url": "https://azure.microsoft.com/en-us/blog/azure-iaas-how-to-design-build-and-optimize-cloud-infrastructure-for-long-term-cost-optimization-efficiency/",
+    "published_at": "2026-06-30T16:00:00.000Z",
+    "summary": "As organizations modernize infrastructure, migrate mission-critical workloads, build cloud-native applications, and scale AI—cost efficiency remains a foundational principle of cloud architectures.\nThe post Azure IaaS: How to design, build, and optimize cloud infrastructure for long-term cost efficiency appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-08-05T00:09:25.320Z"
+  },
+  {
+    "id": "1ed367a47827cb9d",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "Claude in Microsoft Foundry is now generally available",
+    "url": "https://azure.microsoft.com/en-us/blog/claude-in-microsoft-foundry-is-now-generally-available/",
+    "published_at": "2026-06-29T17:00:00.000Z",
+    "summary": "Claude in Microsoft Foundry is now generally available, hosted on Azure, and running on NVIDIA GB300 Blackwell Ultra, giving teams a faster path from agent experimentation to production.\nThe post Claude in Microsoft Foundry is now generally available appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-08-05T00:09:25.320Z"
+  }
+]
