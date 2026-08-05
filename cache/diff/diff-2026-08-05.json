@@ -1,0 +1,104 @@
+{
+  "date": "2026-08-05",
+  "compared_with": "2026-08-04",
+  "source_count": 5,
+  "new_count": 2,
+  "removed_count": 2,
+  "new_articles": [
+    {
+      "id": "7efa45facc6afd34",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "How the GitHub legal team used Copilot CLI to streamline their workflows",
+      "url": "https://github.blog/ai-and-ml/github-copilot/how-the-github-legal-team-used-copilot-cli-to-streamline-their-workflows/",
+      "published_at": "2026-08-04T19:02:34.000Z",
+      "summary": "Learn how to build tools to simplify how you work—without writing a single line of code.\nThe post How the GitHub legal team used Copilot CLI to streamline their workflows appeared first on The GitHub Blog.",
+      "fetched_at": "2026-08-05T00:09:25.069Z"
+    },
+    {
+      "id": "565f8aaf7c40eea7",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "Turn one giant AI-generated pull request to a reviewable stack",
+      "url": "https://github.blog/engineering/turn-one-giant-ai-generated-pull-request-to-a-reviewable-stack/",
+      "published_at": "2026-08-04T16:47:18.000Z",
+      "summary": "Instead of one huge, un-reviewable pull request, teach coding agents to decompose work into a clean, ordered stack with GitHub stacked pull requests.\nThe post Turn one giant AI-generated pull request to a reviewable stack appeared first on The GitHub Blog.",
+      "fetched_at": "2026-08-05T00:09:25.069Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "github-blog": {
+      "new_count": 2,
+      "removed_count": 2,
+      "new_articles": [
+        {
+          "id": "7efa45facc6afd34",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "How the GitHub legal team used Copilot CLI to streamline their workflows",
+          "url": "https://github.blog/ai-and-ml/github-copilot/how-the-github-legal-team-used-copilot-cli-to-streamline-their-workflows/",
+          "published_at": "2026-08-04T19:02:34.000Z",
+          "summary": "Learn how to build tools to simplify how you work—without writing a single line of code.\nThe post How the GitHub legal team used Copilot CLI to streamline their workflows appeared first on The GitHub Blog.",
+          "fetched_at": "2026-08-05T00:09:25.069Z"
+        },
+        {
+          "id": "565f8aaf7c40eea7",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "Turn one giant AI-generated pull request to a reviewable stack",
+          "url": "https://github.blog/engineering/turn-one-giant-ai-generated-pull-request-to-a-reviewable-stack/",
+          "published_at": "2026-08-04T16:47:18.000Z",
+          "summary": "Instead of one huge, un-reviewable pull request, teach coding agents to decompose work into a clean, ordered stack with GitHub stacked pull requests.\nThe post Turn one giant AI-generated pull request to a reviewable stack appeared first on The GitHub Blog.",
+          "fetched_at": "2026-08-05T00:09:25.069Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "01514fb95de7f68f",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "Next chapter: Restructuring GitHub’s bug bounty program",
+          "url": "https://github.blog/security/next-chapter-restructuring-githubs-bug-bounty-program/",
+          "published_at": "2026-07-22T16:00:00.000Z",
+          "summary": "GitHub is making some significant changes to its bug bounty program, shifting its focus to give researchers a better experience working with the GitHub team.\nThe post Next chapter: Restructuring GitHub’s bug bounty program appeared first on The GitHub Blog.",
+          "fetched_at": "2026-08-04T00:12:22.706Z"
+        },
+        {
+          "id": "3ac65a5d9987462d",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "How to build interactive experiences with canvases",
+          "url": "https://github.blog/ai-and-ml/github-copilot/how-to-build-interactive-experiences-with-canvases/",
+          "published_at": "2026-07-21T16:00:00.000Z",
+          "summary": "Canvases turn AI into interactive workspaces where you can visualize information, explore workflows, and take action across complex tasks.\nThe post How to build interactive experiences with canvases appeared first on The GitHub Blog.",
+          "fetched_at": "2026-08-04T00:12:22.706Z"
+        }
+      ]
+    },
+    "m365-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    }
+  },
+  "diff_result": true
+}
