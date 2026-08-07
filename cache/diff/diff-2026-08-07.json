@@ -1,0 +1,104 @@
+{
+  "date": "2026-08-07",
+  "compared_with": "2026-08-06",
+  "source_count": 5,
+  "new_count": 2,
+  "removed_count": 2,
+  "new_articles": [
+    {
+      "id": "851b216e37df4ab0",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "A guide to slash commands in the GitHub Copilot app",
+      "url": "https://github.blog/ai-and-ml/github-copilot/a-guide-to-slash-commands-in-the-github-copilot-app/",
+      "published_at": "2026-08-06T19:49:34.000Z",
+      "summary": "Go beyond chat in the GitHub Copilot app with these slash commands. They'll help you plan, collaborate, automate, and customize your dev workflow.\nThe post A guide to slash commands in the GitHub Copilot app appeared first on The GitHub Blog.",
+      "fetched_at": "2026-08-07T01:42:19.988Z"
+    },
+    {
+      "id": "10e8b50a15deeb27",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "How we took malware advisories beyond npm",
+      "url": "https://github.blog/security/supply-chain-security/how-we-took-malware-advisories-beyond-npm/",
+      "published_at": "2026-08-06T16:51:12.000Z",
+      "summary": "GitHub malware advisories no longer stop at npm. Here's how we wired OpenSSF's malicious-packages data into the Advisory Database, and why we built the pipeline paranoid.\nThe post How we took malware advisories beyond npm appeared first on The GitHub Blog.",
+      "fetched_at": "2026-08-07T01:42:19.988Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "github-blog": {
+      "new_count": 2,
+      "removed_count": 2,
+      "new_articles": [
+        {
+          "id": "851b216e37df4ab0",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "A guide to slash commands in the GitHub Copilot app",
+          "url": "https://github.blog/ai-and-ml/github-copilot/a-guide-to-slash-commands-in-the-github-copilot-app/",
+          "published_at": "2026-08-06T19:49:34.000Z",
+          "summary": "Go beyond chat in the GitHub Copilot app with these slash commands. They'll help you plan, collaborate, automate, and customize your dev workflow.\nThe post A guide to slash commands in the GitHub Copilot app appeared first on The GitHub Blog.",
+          "fetched_at": "2026-08-07T01:42:19.988Z"
+        },
+        {
+          "id": "10e8b50a15deeb27",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "How we took malware advisories beyond npm",
+          "url": "https://github.blog/security/supply-chain-security/how-we-took-malware-advisories-beyond-npm/",
+          "published_at": "2026-08-06T16:51:12.000Z",
+          "summary": "GitHub malware advisories no longer stop at npm. Here's how we wired OpenSSF's malicious-packages data into the Advisory Database, and why we built the pipeline paranoid.\nThe post How we took malware advisories beyond npm appeared first on The GitHub Blog.",
+          "fetched_at": "2026-08-07T01:42:19.988Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "7391ec038d05b55e",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "The case for a cooldown: Why Dependabot now waits before issuing version updates",
+          "url": "https://github.blog/security/supply-chain-security/the-case-for-a-cooldown-why-dependabot-now-waits-before-issuing-version-updates/",
+          "published_at": "2026-07-23T16:00:00.000Z",
+          "summary": "A new default three-day cooldown delays version update pull requests so maintainers and security researchers can address findings in a release before it gets into your code.\nThe post The case for a cooldown: Why Dependabot now waits before issuing version updates appeared first on The GitHub Blog.",
+          "fetched_at": "2026-08-06T00:03:36.147Z"
+        },
+        {
+          "id": "860827f8221d497e",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "Copilot vs. raw API access: What are you actually paying for?",
+          "url": "https://github.blog/ai-and-ml/github-copilot/copilot-vs-raw-api-access-what-are-you-actually-paying-for/",
+          "published_at": "2026-07-22T19:00:00.000Z",
+          "summary": "Copilot now bills usage at listed API rates. Compare direct model access with the coding workflow, policy, and harness work around it.\nThe post Copilot vs. raw API access: What are you actually paying for? appeared first on The GitHub Blog.",
+          "fetched_at": "2026-08-06T00:03:36.147Z"
+        }
+      ]
+    },
+    "m365-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    }
+  },
+  "diff_result": true
+}
