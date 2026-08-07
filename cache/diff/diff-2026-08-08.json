@@ -1,0 +1,74 @@
+{
+  "date": "2026-08-08",
+  "compared_with": "2026-08-07",
+  "source_count": 5,
+  "new_count": 1,
+  "removed_count": 1,
+  "new_articles": [
+    {
+      "id": "27ffabaebe3d9032",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for AI-Augmented Code Modernization Tools",
+      "url": "https://azure.microsoft.com/en-us/blog/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-ai-augmented-code-modernization-tools/",
+      "published_at": "2026-08-06T15:00:00.000Z",
+      "summary": "GitHub Copilot and Azure are helping organizations modernize legacy applications, reduce technical debt, and prepare for AI innovation.\nThe post Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for AI-Augmented Code Modernization Tools appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-08-07T23:38:18.632Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "27ffabaebe3d9032",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for AI-Augmented Code Modernization Tools",
+          "url": "https://azure.microsoft.com/en-us/blog/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-ai-augmented-code-modernization-tools/",
+          "published_at": "2026-08-06T15:00:00.000Z",
+          "summary": "GitHub Copilot and Azure are helping organizations modernize legacy applications, reduce technical debt, and prepare for AI innovation.\nThe post Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for AI-Augmented Code Modernization Tools appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-08-07T23:38:18.632Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "1ed367a47827cb9d",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Claude in Microsoft Foundry is now generally available",
+          "url": "https://azure.microsoft.com/en-us/blog/claude-in-microsoft-foundry-is-now-generally-available/",
+          "published_at": "2026-06-29T17:00:00.000Z",
+          "summary": "Claude in Microsoft Foundry is now generally available, hosted on Azure, and running on NVIDIA GB300 Blackwell Ultra, giving teams a faster path from agent experimentation to production.\nThe post Claude in Microsoft Foundry is now generally available appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-08-07T01:42:20.146Z"
+        }
+      ]
+    },
+    "github-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "m365-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    }
+  },
+  "diff_result": true
+}
