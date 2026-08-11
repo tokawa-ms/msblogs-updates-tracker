@@ -1,0 +1,416 @@
+{
+  "date": "2026-08-12",
+  "compared_with": "2026-08-11",
+  "source_count": 5,
+  "new_count": 13,
+  "removed_count": 11,
+  "new_articles": [
+    {
+      "id": "be1f8249ad90a2c0",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "From coder to orchestrator: How agents shift the role of a developer",
+      "url": "https://github.blog/developer-skills/career-growth/from-coder-to-orchestrator-how-agents-shift-the-role-of-a-developer/",
+      "published_at": "2026-08-11T18:38:17.000Z",
+      "summary": "Developers are owning more of the delivery system around code, not just code itself. Join us during GitHub Universe to meet other devs, learn something new, and explore what's next.\nThe post From coder to orchestrator: How agents shift the role of a developer appeared first on The GitHub Blog.",
+      "fetched_at": "2026-08-11T23:48:59.582Z"
+    },
+    {
+      "id": "d30d1b0fe3636ede",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "Making agents practical for real-world development",
+      "url": "https://code.visualstudio.com/blogs/2026/03/05/making-agents-practical-for-real-world-development",
+      "published_at": "2026-03-05T00:00:00.000Z",
+      "summary": "Explore agent orchestration, extensibility, and continuity in VS Code 1.110: lifecycle hooks, agent skills, session memory, and integrated browser tools.\nRead the full article",
+      "fetched_at": "2026-08-11T23:48:59.770Z"
+    },
+    {
+      "id": "94971b434ca4c8a9",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "Building Long-Distance Next Edit Suggestions",
+      "url": "https://code.visualstudio.com/blogs/2026/02/26/long-distance-nes",
+      "published_at": "2026-02-26T00:00:00.000Z",
+      "summary": "Learn how we extended next edit suggestions to work across your entire file, reducing friction and improving productivity in GitHub Copilot.\nRead the full article",
+      "fetched_at": "2026-08-11T23:48:59.770Z"
+    },
+    {
+      "id": "7984e37741c8865e",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "Your Home for Multi-Agent Development",
+      "url": "https://code.visualstudio.com/blogs/2026/02/05/multi-agent-development",
+      "published_at": "2026-02-05T00:00:00.000Z",
+      "summary": "VS Code has become the unified interface for all your coding agents. Manage local, background, and cloud agents in one place, use Claude and Codex agents alongside Copilot, and benefit from open standards like MCP and Agent Skills.\nRead the full article",
+      "fetched_at": "2026-08-11T23:48:59.770Z"
+    },
+    {
+      "id": "45ffe1ce89885428",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "Giving Agents a Visual Voice: MCP Apps Support in VS Code",
+      "url": "https://code.visualstudio.com/blogs/2026/01/26/mcp-apps-support",
+      "published_at": "2026-01-26T00:00:00.000Z",
+      "summary": "VS Code now supports MCP Apps, enabling AI agents to display interactive UIs for richer developer workflows.\nRead the full article",
+      "fetched_at": "2026-08-11T23:48:59.770Z"
+    },
+    {
+      "id": "b7ee04c92c6213bb",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "Building docfind: Fast Client-Side Search with Rust and WebAssembly",
+      "url": "https://code.visualstudio.com/blogs/2026/01/15/docfind",
+      "published_at": "2026-01-15T00:00:00.000Z",
+      "summary": "How we built docfind, a high-performance client-side search engine using Rust and WebAssembly, and how GitHub Copilot accelerated development.\nRead the full article",
+      "fetched_at": "2026-08-11T23:48:59.770Z"
+    },
+    {
+      "id": "77eb2a33c46983c3",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "Introducing the VS Code Insiders Podcast",
+      "url": "https://code.visualstudio.com/blogs/2025/12/03/introducing-vs-code-insiders-podcast",
+      "published_at": "2025-12-03T00:00:00.000Z",
+      "summary": "The VS Code Insiders Podcast is your insider's guide to the features, decisions, and people shaping the future of Visual Studio Code.\nRead the full article",
+      "fetched_at": "2026-08-11T23:48:59.770Z"
+    },
+    {
+      "id": "57011fa557caf1c6",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "Introducing the Visual Studio Code Private Marketplace: Your Team's Secure, Curated Extension Hub 🎉",
+      "url": "https://code.visualstudio.com/blogs/2025/11/18/PrivateMarketplace",
+      "published_at": "2025-11-18T00:00:00.000Z",
+      "summary": "Private Marketplace for VS Code extensions now generally available.\nRead the full article",
+      "fetched_at": "2026-08-11T23:48:59.770Z"
+    },
+    {
+      "id": "3493e31daa3ce4ec",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "Open Source AI Editor: Second Milestone",
+      "url": "https://code.visualstudio.com/blogs/2025/11/04/openSourceAIEditorSecondMilestone",
+      "published_at": "2025-11-06T00:00:00.000Z",
+      "summary": "Ghost text suggestions are now open source as part of the Copilot Chat extension - the second milestone in making VS Code an open source AI editor.\nRead the full article",
+      "fetched_at": "2026-08-11T23:48:59.770Z"
+    },
+    {
+      "id": "f57c0e162da4f835",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "A Unified Experience for all Coding Agents",
+      "url": "https://code.visualstudio.com/blogs/2025/11/03/unified-agent-experience",
+      "published_at": "2025-11-05T00:00:00.000Z",
+      "summary": "Agents took over VS Code in 2025. We released agent mode for VS Code, integration for the Copilot coding agent, and the new GitHub Copilot CLI. But Copilot is not the only agent game in town. There are now more coding agents than ever, including options from OpenAI and Anthropic.\nRead the full article",
+      "fetched_at": "2026-08-11T23:48:59.770Z"
+    },
+    {
+      "id": "3a844bddcbd8c4d7",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "Expanding Model Choice in VS Code with Bring Your Own Key",
+      "url": "https://code.visualstudio.com/blogs/2025/10/22/bring-your-own-key",
+      "published_at": "2025-10-22T00:00:00.000Z",
+      "summary": "Learn how the new Language Model Chat Provider API in VS Code is enabling more model choice and extensibility for chat experiences via the Bring Your Own Key experience.\nRead the full article",
+      "fetched_at": "2026-08-11T23:48:59.770Z"
+    },
+    {
+      "id": "8669db0eb8ec029f",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "Introducing auto model selection (preview)",
+      "url": "https://code.visualstudio.com/blogs/2025/09/15/autoModelSelection",
+      "published_at": "2025-09-15T00:00:00.000Z",
+      "summary": "Use auto model selection in VS Code to get faster responses, reduced rate limiting, and a 10% discount on premium requests for paid users.\nRead the full article",
+      "fetched_at": "2026-08-11T23:48:59.770Z"
+    },
+    {
+      "id": "313955e7a1f3b610",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "Command GitHub's Coding Agent from VS Code",
+      "url": "https://code.visualstudio.com/blogs/2025/07/17/copilot-coding-agent",
+      "published_at": "2025-07-17T00:00:00.000Z",
+      "summary": "VS Code's integration with GitHub Copilot Coding Agent allows you to delegate tasks to the agent and let it handle them in the background.\nRead the full article",
+      "fetched_at": "2026-08-11T23:48:59.770Z"
+    }
+  ],
+  "by_source": {
+    "github-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "be1f8249ad90a2c0",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "From coder to orchestrator: How agents shift the role of a developer",
+          "url": "https://github.blog/developer-skills/career-growth/from-coder-to-orchestrator-how-agents-shift-the-role-of-a-developer/",
+          "published_at": "2026-08-11T18:38:17.000Z",
+          "summary": "Developers are owning more of the delivery system around code, not just code itself. Join us during GitHub Universe to meet other devs, learn something new, and explore what's next.\nThe post From coder to orchestrator: How agents shift the role of a developer appeared first on The GitHub Blog.",
+          "fetched_at": "2026-08-11T23:48:59.582Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "fda5bd9ca453ecca",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "The harness is all you need (mostly)",
+          "url": "https://github.blog/ai-and-ml/github-copilot/the-harness-is-all-you-need-mostly/",
+          "published_at": "2026-07-27T18:00:00.000Z",
+          "summary": "A practical GitHub Copilot workflow for prototyping, planning, implementing, and reviewing software without chasing every new AI tool.\nThe post The harness is all you need (mostly) appeared first on The GitHub Blog.",
+          "fetched_at": "2026-08-10T23:39:52.455Z"
+        }
+      ]
+    },
+    "m365-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 12,
+      "removed_count": 0,
+      "new_articles": [
+        {
+          "id": "d30d1b0fe3636ede",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Making agents practical for real-world development",
+          "url": "https://code.visualstudio.com/blogs/2026/03/05/making-agents-practical-for-real-world-development",
+          "published_at": "2026-03-05T00:00:00.000Z",
+          "summary": "Explore agent orchestration, extensibility, and continuity in VS Code 1.110: lifecycle hooks, agent skills, session memory, and integrated browser tools.\nRead the full article",
+          "fetched_at": "2026-08-11T23:48:59.770Z"
+        },
+        {
+          "id": "94971b434ca4c8a9",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Building Long-Distance Next Edit Suggestions",
+          "url": "https://code.visualstudio.com/blogs/2026/02/26/long-distance-nes",
+          "published_at": "2026-02-26T00:00:00.000Z",
+          "summary": "Learn how we extended next edit suggestions to work across your entire file, reducing friction and improving productivity in GitHub Copilot.\nRead the full article",
+          "fetched_at": "2026-08-11T23:48:59.770Z"
+        },
+        {
+          "id": "7984e37741c8865e",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Your Home for Multi-Agent Development",
+          "url": "https://code.visualstudio.com/blogs/2026/02/05/multi-agent-development",
+          "published_at": "2026-02-05T00:00:00.000Z",
+          "summary": "VS Code has become the unified interface for all your coding agents. Manage local, background, and cloud agents in one place, use Claude and Codex agents alongside Copilot, and benefit from open standards like MCP and Agent Skills.\nRead the full article",
+          "fetched_at": "2026-08-11T23:48:59.770Z"
+        },
+        {
+          "id": "45ffe1ce89885428",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Giving Agents a Visual Voice: MCP Apps Support in VS Code",
+          "url": "https://code.visualstudio.com/blogs/2026/01/26/mcp-apps-support",
+          "published_at": "2026-01-26T00:00:00.000Z",
+          "summary": "VS Code now supports MCP Apps, enabling AI agents to display interactive UIs for richer developer workflows.\nRead the full article",
+          "fetched_at": "2026-08-11T23:48:59.770Z"
+        },
+        {
+          "id": "b7ee04c92c6213bb",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Building docfind: Fast Client-Side Search with Rust and WebAssembly",
+          "url": "https://code.visualstudio.com/blogs/2026/01/15/docfind",
+          "published_at": "2026-01-15T00:00:00.000Z",
+          "summary": "How we built docfind, a high-performance client-side search engine using Rust and WebAssembly, and how GitHub Copilot accelerated development.\nRead the full article",
+          "fetched_at": "2026-08-11T23:48:59.770Z"
+        },
+        {
+          "id": "77eb2a33c46983c3",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Introducing the VS Code Insiders Podcast",
+          "url": "https://code.visualstudio.com/blogs/2025/12/03/introducing-vs-code-insiders-podcast",
+          "published_at": "2025-12-03T00:00:00.000Z",
+          "summary": "The VS Code Insiders Podcast is your insider's guide to the features, decisions, and people shaping the future of Visual Studio Code.\nRead the full article",
+          "fetched_at": "2026-08-11T23:48:59.770Z"
+        },
+        {
+          "id": "57011fa557caf1c6",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Introducing the Visual Studio Code Private Marketplace: Your Team's Secure, Curated Extension Hub 🎉",
+          "url": "https://code.visualstudio.com/blogs/2025/11/18/PrivateMarketplace",
+          "published_at": "2025-11-18T00:00:00.000Z",
+          "summary": "Private Marketplace for VS Code extensions now generally available.\nRead the full article",
+          "fetched_at": "2026-08-11T23:48:59.770Z"
+        },
+        {
+          "id": "3493e31daa3ce4ec",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Open Source AI Editor: Second Milestone",
+          "url": "https://code.visualstudio.com/blogs/2025/11/04/openSourceAIEditorSecondMilestone",
+          "published_at": "2025-11-06T00:00:00.000Z",
+          "summary": "Ghost text suggestions are now open source as part of the Copilot Chat extension - the second milestone in making VS Code an open source AI editor.\nRead the full article",
+          "fetched_at": "2026-08-11T23:48:59.770Z"
+        },
+        {
+          "id": "f57c0e162da4f835",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "A Unified Experience for all Coding Agents",
+          "url": "https://code.visualstudio.com/blogs/2025/11/03/unified-agent-experience",
+          "published_at": "2025-11-05T00:00:00.000Z",
+          "summary": "Agents took over VS Code in 2025. We released agent mode for VS Code, integration for the Copilot coding agent, and the new GitHub Copilot CLI. But Copilot is not the only agent game in town. There are now more coding agents than ever, including options from OpenAI and Anthropic.\nRead the full article",
+          "fetched_at": "2026-08-11T23:48:59.770Z"
+        },
+        {
+          "id": "3a844bddcbd8c4d7",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Expanding Model Choice in VS Code with Bring Your Own Key",
+          "url": "https://code.visualstudio.com/blogs/2025/10/22/bring-your-own-key",
+          "published_at": "2025-10-22T00:00:00.000Z",
+          "summary": "Learn how the new Language Model Chat Provider API in VS Code is enabling more model choice and extensibility for chat experiences via the Bring Your Own Key experience.\nRead the full article",
+          "fetched_at": "2026-08-11T23:48:59.770Z"
+        },
+        {
+          "id": "8669db0eb8ec029f",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Introducing auto model selection (preview)",
+          "url": "https://code.visualstudio.com/blogs/2025/09/15/autoModelSelection",
+          "published_at": "2025-09-15T00:00:00.000Z",
+          "summary": "Use auto model selection in VS Code to get faster responses, reduced rate limiting, and a 10% discount on premium requests for paid users.\nRead the full article",
+          "fetched_at": "2026-08-11T23:48:59.770Z"
+        },
+        {
+          "id": "313955e7a1f3b610",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Command GitHub's Coding Agent from VS Code",
+          "url": "https://code.visualstudio.com/blogs/2025/07/17/copilot-coding-agent",
+          "published_at": "2025-07-17T00:00:00.000Z",
+          "summary": "VS Code's integration with GitHub Copilot Coding Agent allows you to delegate tasks to the agent and let it handle them in the background.\nRead the full article",
+          "fetched_at": "2026-08-11T23:48:59.770Z"
+        }
+      ],
+      "removed_articles": []
+    },
+    "azure-blog": {
+      "new_count": 0,
+      "removed_count": 10,
+      "new_articles": [],
+      "removed_articles": [
+        {
+          "id": "27ffabaebe3d9032",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for AI-Augmented Code Modernization Tools",
+          "url": "https://azure.microsoft.com/en-us/blog/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-ai-augmented-code-modernization-tools/",
+          "published_at": "2026-08-06T15:00:00.000Z",
+          "summary": "GitHub Copilot and Azure are helping organizations modernize legacy applications, reduce technical debt, and prepare for AI innovation.\nThe post Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for AI-Augmented Code Modernization Tools appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-08-10T23:39:52.544Z"
+        },
+        {
+          "id": "14f52986775b612e",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "What customers value most in Microsoft Databases—from reliability to AI readiness",
+          "url": "https://azure.microsoft.com/en-us/blog/what-customers-value-most-in-microsoft-databases-from-reliability-to-ai-readiness/",
+          "published_at": "2026-07-27T15:00:00.000Z",
+          "summary": "Every day, customers trust Microsoft Databases to power their most critical applications, business processes, and AI-powered experiences.\nThe post What customers value most in Microsoft Databases—from reliability to AI readiness appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-08-10T23:39:52.544Z"
+        },
+        {
+          "id": "bb2f476bc70fd3e3",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "AT&T and Microsoft scale trillion-token workloads with Microsoft Foundry and AMD",
+          "url": "https://azure.microsoft.com/en-us/blog/att-and-microsoft-scale-trillion-token-workloads-with-microsoft-foundry-and-amd/",
+          "published_at": "2026-07-23T18:30:00.000Z",
+          "summary": "AT&T processed approximately one trillion tokens while developing OTel2.0 using Microsoft Foundry Managed Compute, open AI models, and AMD and NVIDIA GPU infrastructure. Discover how flexible model choice and scalable infrastructure are enabling production-scale telecom AI.\nThe post AT&T and Microsoft scale trillion-token workloads with Microsoft Foundry and AMD appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-08-10T23:39:52.544Z"
+        },
+        {
+          "id": "107156ced48d2303",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Azure Databricks delivers proven business value",
+          "url": "https://azure.microsoft.com/en-us/blog/azure-databricks-delivers-proven-business-value/",
+          "published_at": "2026-07-15T15:00:00.000Z",
+          "summary": "Microsoft Azure Databricks delivers the first-party advantage of Databricks on Microsoft—and for customers, that advantage shows up as real, measurable value. It is the same Databricks platform your teams already know, co-engineered with Microsoft and delivered as a native Azure service, so it fits naturally into the Microsoft tools, identity, and governance your organization already runs.\nThe post Azure Databricks delivers proven business value appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-08-10T23:39:52.544Z"
+        },
+        {
+          "id": "81450a63388f234a",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "GPT-5.6 now available in Microsoft Foundry",
+          "url": "https://azure.microsoft.com/en-us/blog/gpt-5-6-now-available-in-microsoft-foundry/",
+          "published_at": "2026-07-09T17:00:00.000Z",
+          "summary": "Introducing OpenAI's latest frontier model series, the Asia Pacific Data Zone, and product agent capabilities, all generally available in Microsoft Foundry.\nThe post GPT-5.6 now available in Microsoft Foundry  appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-08-10T23:39:52.544Z"
+        },
+        {
+          "id": "f9006e3a544b1e46",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Built to bounce back: How Azure resiliency evolved",
+          "url": "https://azure.microsoft.com/en-us/blog/built-to-bounce-back-how-azure-resiliency-evolved/",
+          "published_at": "2026-07-08T16:00:00.000Z",
+          "summary": "Cloud resiliency is about ensuring systems can adapt, recover, and keep functioning within real-world constraints.\nThe post Built to bounce back: How Azure resiliency evolved appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-08-10T23:39:52.544Z"
+        },
+        {
+          "id": "28ffa6edec04d12a",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "External key management for Azure Managed HSM is now in public preview",
+          "url": "https://azure.microsoft.com/en-us/blog/external-key-management-for-azure-managed-hsm-is-now-in-public-preview/",
+          "published_at": "2026-07-07T16:00:00.000Z",
+          "summary": "Azure Key Vault Managed Hardware Security Module (HSM) provides strong sovereignty over your encryption keys. Keys are generated and stored in a single-tenant, FIPS 140-3 Level 3 HSM that only you control: Microsoft has no access to your key material, and you govern who can use each key.\nThe post External key management for Azure Managed HSM is now in public preview appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-08-10T23:39:52.544Z"
+        },
+        {
+          "id": "2e0442baa84f7c5a",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Meet Brain: The AI system behind Azure reliability",
+          "url": "https://azure.microsoft.com/en-us/blog/meet-brain-the-ai-system-behind-azure-reliability/",
+          "published_at": "2026-07-02T16:00:00.000Z",
+          "summary": "Learn how Microsoft is building a digital twin of Azure Service Health and why it changes how hyperscale operates.\nThe post Meet Brain: The AI system behind Azure reliability appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-08-10T23:39:52.544Z"
+        },
+        {
+          "id": "2300a576029dacf0",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Proving application resilience on Azure with Chaos Studio",
+          "url": "https://azure.microsoft.com/en-us/blog/proving-application-resilience-on-azure-with-chaos-studio/",
+          "published_at": "2026-07-01T16:00:00.000Z",
+          "summary": "Azure Chaos Studio helps organizations validate application resilience by simulating outages, failovers, network disruptions, and infrastructure failures before they impact production.\nThe post Proving application resilience on Azure with Chaos Studio appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-08-10T23:39:52.544Z"
+        },
+        {
+          "id": "4c581c445fbb4273",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Azure IaaS: How to design, build, and optimize cloud infrastructure for long-term cost efficiency",
+          "url": "https://azure.microsoft.com/en-us/blog/azure-iaas-how-to-design-build-and-optimize-cloud-infrastructure-for-long-term-cost-optimization-efficiency/",
+          "published_at": "2026-06-30T16:00:00.000Z",
+          "summary": "As organizations modernize infrastructure, migrate mission-critical workloads, build cloud-native applications, and scale AI—cost efficiency remains a foundational principle of cloud architectures.\nThe post Azure IaaS: How to design, build, and optimize cloud infrastructure for long-term cost efficiency appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-08-10T23:39:52.544Z"
+        }
+      ]
+    }
+  },
+  "diff_result": true
+}
