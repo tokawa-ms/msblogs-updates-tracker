@@ -1,0 +1,104 @@
+{
+  "date": "2026-08-14",
+  "compared_with": "2026-08-13",
+  "source_count": 5,
+  "new_count": 2,
+  "removed_count": 2,
+  "new_articles": [
+    {
+      "id": "e364f92c2df61054",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "Your guide to GitHub Universe 2026 is here: The schedule just launched!",
+      "url": "https://github.blog/news-insights/company-news/your-guide-to-github-universe-2026-is-here-the-schedule-just-launched/",
+      "published_at": "2026-08-13T19:00:00.000Z",
+      "summary": "The GitHub Universe session catalog is live. Explore interactive workshops, community talks, demos, and panels. Plus, register before August 19 to save $300.\nThe post Your guide to GitHub Universe 2026 is here: The schedule just launched! appeared first on The GitHub Blog.",
+      "fetched_at": "2026-08-13T23:48:40.927Z"
+    },
+    {
+      "id": "08365977cd80206b",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "What 50 open source projects taught us about security in the AI era",
+      "url": "https://github.blog/open-source/maintainers/what-50-open-source-projects-taught-us-about-security-in-the-ai-era/",
+      "published_at": "2026-08-13T16:00:00.000Z",
+      "summary": "See how the open source projects in Session 4 of the GitHub Secure Open Source Fund combined AI-assisted workflows, maintainer expertise, GitHub security tools, expert guidance, and funding to improve project security. \nThe post What 50 open source projects taught us about security in the AI era appeared first on The GitHub Blog.",
+      "fetched_at": "2026-08-13T23:48:40.927Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "github-blog": {
+      "new_count": 2,
+      "removed_count": 2,
+      "new_articles": [
+        {
+          "id": "e364f92c2df61054",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "Your guide to GitHub Universe 2026 is here: The schedule just launched!",
+          "url": "https://github.blog/news-insights/company-news/your-guide-to-github-universe-2026-is-here-the-schedule-just-launched/",
+          "published_at": "2026-08-13T19:00:00.000Z",
+          "summary": "The GitHub Universe session catalog is live. Explore interactive workshops, community talks, demos, and panels. Plus, register before August 19 to save $300.\nThe post Your guide to GitHub Universe 2026 is here: The schedule just launched! appeared first on The GitHub Blog.",
+          "fetched_at": "2026-08-13T23:48:40.927Z"
+        },
+        {
+          "id": "08365977cd80206b",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "What 50 open source projects taught us about security in the AI era",
+          "url": "https://github.blog/open-source/maintainers/what-50-open-source-projects-taught-us-about-security-in-the-ai-era/",
+          "published_at": "2026-08-13T16:00:00.000Z",
+          "summary": "See how the open source projects in Session 4 of the GitHub Secure Open Source Fund combined AI-assisted workflows, maintainer expertise, GitHub security tools, expert guidance, and funding to improve project security. \nThe post What 50 open source projects taught us about security in the AI era appeared first on The GitHub Blog.",
+          "fetched_at": "2026-08-13T23:48:40.927Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "565f8aaf7c40eea7",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "Turn one giant AI-generated pull request to a reviewable stack",
+          "url": "https://github.blog/engineering/turn-one-giant-ai-generated-pull-request-to-a-reviewable-stack/",
+          "published_at": "2026-08-04T16:47:18.000Z",
+          "summary": "Instead of one huge, un-reviewable pull request, teach coding agents to decompose work into a clean, ordered stack with GitHub stacked pull requests.\nThe post Turn one giant AI-generated pull request to a reviewable stack appeared first on The GitHub Blog.",
+          "fetched_at": "2026-08-12T23:48:34.693Z"
+        },
+        {
+          "id": "c486e857c8e8b077",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "Don’t stop early: Case-folding source code at memory speed",
+          "url": "https://github.blog/engineering/architecture-optimization/dont-stop-early-case-folding-source-code-at-memory-speed/",
+          "published_at": "2026-07-31T16:00:00.000Z",
+          "summary": "How a branch-free loop and byte-space arithmetic let GitHub case-fold every byte of code search at >45 GiB/s on a single core.\nThe post Don’t stop early: Case-folding source code at memory speed appeared first on The GitHub Blog.",
+          "fetched_at": "2026-08-12T23:48:34.693Z"
+        }
+      ]
+    },
+    "m365-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    }
+  },
+  "diff_result": true
+}
