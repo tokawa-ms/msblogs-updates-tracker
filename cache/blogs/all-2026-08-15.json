@@ -1,0 +1,492 @@
+[
+  {
+    "id": "9c196c1f17dbbac8",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "How to bring your software delivery workflow into GitHub with agent apps",
+    "url": "https://github.blog/ai-and-ml/github-copilot/how-to-bring-your-software-delivery-workflow-into-github-with-agent-apps/",
+    "published_at": "2026-08-14T16:00:00.000Z",
+    "summary": "See how four GitHub agent apps can help you scope, secure, roll out, and ship a feature across the SDLC–all without leaving GitHub. \nThe post How to bring your software delivery workflow into GitHub with agent apps appeared first on The GitHub Blog.",
+    "fetched_at": "2026-08-14T23:26:16.322Z"
+  },
+  {
+    "id": "e364f92c2df61054",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "Your guide to GitHub Universe 2026 is here: The schedule just launched!",
+    "url": "https://github.blog/news-insights/company-news/your-guide-to-github-universe-2026-is-here-the-schedule-just-launched/",
+    "published_at": "2026-08-13T19:00:00.000Z",
+    "summary": "The GitHub Universe session catalog is live. Explore interactive workshops, community talks, demos, and panels. Plus, register before August 19 to save $300.\nThe post Your guide to GitHub Universe 2026 is here: The schedule just launched! appeared first on The GitHub Blog.",
+    "fetched_at": "2026-08-14T23:26:16.322Z"
+  },
+  {
+    "id": "08365977cd80206b",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "What 50 open source projects taught us about security in the AI era",
+    "url": "https://github.blog/open-source/maintainers/what-50-open-source-projects-taught-us-about-security-in-the-ai-era/",
+    "published_at": "2026-08-13T16:00:00.000Z",
+    "summary": "See how the open source projects in Session 4 of the GitHub Secure Open Source Fund combined AI-assisted workflows, maintainer expertise, GitHub security tools, expert guidance, and funding to improve project security. \nThe post What 50 open source projects taught us about security in the AI era appeared first on The GitHub Blog.",
+    "fetched_at": "2026-08-14T23:26:16.322Z"
+  },
+  {
+    "id": "a867b54089923a36",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "GitHub availability report: July 2026",
+    "url": "https://github.blog/news-insights/company-news/github-availability-report-july-2026/",
+    "published_at": "2026-08-12T22:17:32.000Z",
+    "summary": "In July, we experienced eight incidents that resulted in degraded performance across GitHub services.\nThe post GitHub availability report: July 2026 appeared first on The GitHub Blog.",
+    "fetched_at": "2026-08-14T23:26:16.322Z"
+  },
+  {
+    "id": "8e22b0b0124b585b",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "Write your first prompt with the GitHub Copilot app",
+    "url": "https://github.blog/ai-and-ml/github-copilot/write-your-first-prompt-with-the-github-copilot-app/",
+    "published_at": "2026-08-12T19:00:00.000Z",
+    "summary": "Learn how to write your first prompt in the GitHub Copilot app, choose the right context and model, and start your first task with confidence.\nThe post Write your first prompt with the GitHub Copilot app appeared first on The GitHub Blog.",
+    "fetched_at": "2026-08-14T23:26:16.322Z"
+  },
+  {
+    "id": "e7ebe94da85da416",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "Your contributors are AI-first now. Is your project?",
+    "url": "https://github.blog/open-source/maintainers/your-contributors-are-ai-first-now-is-your-project/",
+    "published_at": "2026-08-12T18:00:08.000Z",
+    "summary": "AI contributors are already in your queue. AutoGPT maintainer Nicholas Tindle shares the repo instructions, gates, and boundaries that keep maintainers in control.\nThe post Your contributors are AI-first now. Is your project? appeared first on The GitHub Blog.",
+    "fetched_at": "2026-08-14T23:26:16.322Z"
+  },
+  {
+    "id": "be1f8249ad90a2c0",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "From coder to orchestrator: How agents shift the role of a developer",
+    "url": "https://github.blog/developer-skills/career-growth/from-coder-to-orchestrator-how-agents-shift-the-role-of-a-developer/",
+    "published_at": "2026-08-11T18:38:17.000Z",
+    "summary": "Developers are owning more of the delivery system around code, not just code itself. Join us during GitHub Universe to meet other devs, learn something new, and explore what's next.\nThe post From coder to orchestrator: How agents shift the role of a developer appeared first on The GitHub Blog.",
+    "fetched_at": "2026-08-14T23:26:16.322Z"
+  },
+  {
+    "id": "6ea2c856f0a4cde5",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "Using the GitHub Copilot SDK for Java",
+    "url": "https://github.blog/engineering/using-the-github-copilot-sdk-for-java/",
+    "published_at": "2026-08-10T19:30:00.000Z",
+    "summary": "Enterprise Java developers have a new superpower—drive GitHub Copilot from idiomatic Java code with annotations, virtual threads, and more.\nThe post Using the GitHub Copilot SDK for Java appeared first on The GitHub Blog.",
+    "fetched_at": "2026-08-14T23:26:16.322Z"
+  },
+  {
+    "id": "851b216e37df4ab0",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "A guide to slash commands in the GitHub Copilot app",
+    "url": "https://github.blog/ai-and-ml/github-copilot/a-guide-to-slash-commands-in-the-github-copilot-app/",
+    "published_at": "2026-08-06T19:49:34.000Z",
+    "summary": "Go beyond chat in the GitHub Copilot app with these slash commands. They'll help you plan, collaborate, automate, and customize your dev workflow.\nThe post A guide to slash commands in the GitHub Copilot app appeared first on The GitHub Blog.",
+    "fetched_at": "2026-08-14T23:26:16.322Z"
+  },
+  {
+    "id": "10e8b50a15deeb27",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "How we took malware advisories beyond npm",
+    "url": "https://github.blog/security/supply-chain-security/how-we-took-malware-advisories-beyond-npm/",
+    "published_at": "2026-08-06T16:51:12.000Z",
+    "summary": "GitHub malware advisories no longer stop at npm. Here's how we wired OpenSSF's malicious-packages data into the Advisory Database, and why we built the pipeline paranoid.\nThe post How we took malware advisories beyond npm appeared first on The GitHub Blog.",
+    "fetched_at": "2026-08-14T23:26:16.322Z"
+  },
+  {
+    "id": "41a705ce032dabca",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "MAI-Code-1-Flash: early results from real developer workflows",
+    "url": "https://code.visualstudio.com/blogs/2026/07/29/mai-code-1-flash",
+    "published_at": "2026-07-29T00:00:00.000Z",
+    "summary": "MAI-Code-1-Flash is a lightweight coding model purpose built for the fast, iterative work developers do every day in GitHub. In this post, we share what the data is telling us about how it performs in real developer workflows.\nRead the full article",
+    "fetched_at": "2026-08-14T23:26:16.365Z"
+  },
+  {
+    "id": "c53fec5d48fc8b10",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "How Prompt Tuning Improved GPT-5.5 in VS Code",
+    "url": "https://code.visualstudio.com/blogs/2026/07/06/optimizing-vscode-coding-harness-model-providers",
+    "published_at": "2026-07-06T00:00:00.000Z",
+    "summary": "See how VS Code and OpenAI tested GPT-5.5 system prompt changes in a two-week experiment, cutting tool calls and tail-end token usage while speeding up edits.\nRead the full article",
+    "fetched_at": "2026-08-14T23:26:16.365Z"
+  },
+  {
+    "id": "73a2b6a3cf09b4d5",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "Iterating faster with TypeScript 7",
+    "url": "https://code.visualstudio.com/blogs/2026/06/26/iterating-faster-with-ts-7",
+    "published_at": "2026-06-26T00:00:00.000Z",
+    "summary": "How the VS Code and TypeScript teams collaborated to adopt TypeScript 7 and speed up VS Code development\nRead the full article",
+    "fetched_at": "2026-08-14T23:26:16.365Z"
+  },
+  {
+    "id": "0badf82f3d5386bc",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "What 50,000 Runs of a 5-Line Eval Taught Us",
+    "url": "https://code.visualstudio.com/blogs/2026/06/19/what-50000-runs-taught-us",
+    "published_at": "2026-06-19T00:00:00.000Z",
+    "summary": "How AI coding models calibrate effort, token cost, and tool use on even the simplest task, and what that means for model selection and cost.\nRead the full article",
+    "fetched_at": "2026-08-14T23:26:16.365Z"
+  },
+  {
+    "id": "2dd4ff8e6412d009",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "Use your own language model key in VS Code",
+    "url": "https://code.visualstudio.com/blogs/2026/06/18/byok-vscode",
+    "published_at": "2026-06-18T00:00:00.000Z",
+    "summary": "Learn how to use bring your own key (BYOK) in VS Code to add models from providers like Azure, Anthropic, Gemini, OpenAI, Huggingface, OpenRouter, or use a local model with Ollama, Foundry Local, and more.\nRead the full article",
+    "fetched_at": "2026-08-14T23:26:16.365Z"
+  },
+  {
+    "id": "092029380cc76d99",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "Improving token efficiency for GitHub Copilot in VS Code",
+    "url": "https://code.visualstudio.com/blogs/2026/06/17/improving-token-efficiency-in-github-copilot",
+    "published_at": "2026-06-17T00:00:00.000Z",
+    "summary": "Learn how we're improving token efficiency for GitHub Copilot to reduce costs and latency for VS Code users.\nRead the full article",
+    "fetched_at": "2026-08-14T23:26:16.365Z"
+  },
+  {
+    "id": "e4865dee295d5546",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "The Coding Harness Behind GitHub Copilot in VS Code",
+    "url": "https://code.visualstudio.com/blogs/2026/05/15/agent-harnesses-github-copilot-vscode",
+    "published_at": "2026-05-15T00:00:00.000Z",
+    "summary": "Learn why the coding harness around GitHub Copilot in VS Code matters as models, tools, agents, and providers evolve.\nRead the full article",
+    "fetched_at": "2026-08-14T23:26:16.365Z"
+  },
+  {
+    "id": "0e850ae5c0cccb15",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "How VS Code Builds with AI",
+    "url": "https://code.visualstudio.com/blogs/2026/03/13/how-VS-Code-Builds-with-AI",
+    "published_at": "2026-03-13T00:00:00.000Z",
+    "summary": "Learn how VS Code uses AI across its own development workflow with GitHub Copilot agent mode, automated testing, and AI-powered code review.\nRead the full article",
+    "fetched_at": "2026-08-14T23:26:16.365Z"
+  },
+  {
+    "id": "d30d1b0fe3636ede",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "Making agents practical for real-world development",
+    "url": "https://code.visualstudio.com/blogs/2026/03/05/making-agents-practical-for-real-world-development",
+    "published_at": "2026-03-05T00:00:00.000Z",
+    "summary": "Explore agent orchestration, extensibility, and continuity in VS Code 1.110: lifecycle hooks, agent skills, session memory, and integrated browser tools.\nRead the full article",
+    "fetched_at": "2026-08-14T23:26:16.365Z"
+  },
+  {
+    "id": "94971b434ca4c8a9",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "Building Long-Distance Next Edit Suggestions",
+    "url": "https://code.visualstudio.com/blogs/2026/02/26/long-distance-nes",
+    "published_at": "2026-02-26T00:00:00.000Z",
+    "summary": "Learn how we extended next edit suggestions to work across your entire file, reducing friction and improving productivity in GitHub Copilot.\nRead the full article",
+    "fetched_at": "2026-08-14T23:26:16.365Z"
+  },
+  {
+    "id": "7984e37741c8865e",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "Your Home for Multi-Agent Development",
+    "url": "https://code.visualstudio.com/blogs/2026/02/05/multi-agent-development",
+    "published_at": "2026-02-05T00:00:00.000Z",
+    "summary": "VS Code has become the unified interface for all your coding agents. Manage local, background, and cloud agents in one place, use Claude and Codex agents alongside Copilot, and benefit from open standards like MCP and Agent Skills.\nRead the full article",
+    "fetched_at": "2026-08-14T23:26:16.365Z"
+  },
+  {
+    "id": "45ffe1ce89885428",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "Giving Agents a Visual Voice: MCP Apps Support in VS Code",
+    "url": "https://code.visualstudio.com/blogs/2026/01/26/mcp-apps-support",
+    "published_at": "2026-01-26T00:00:00.000Z",
+    "summary": "VS Code now supports MCP Apps, enabling AI agents to display interactive UIs for richer developer workflows.\nRead the full article",
+    "fetched_at": "2026-08-14T23:26:16.365Z"
+  },
+  {
+    "id": "b7ee04c92c6213bb",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "Building docfind: Fast Client-Side Search with Rust and WebAssembly",
+    "url": "https://code.visualstudio.com/blogs/2026/01/15/docfind",
+    "published_at": "2026-01-15T00:00:00.000Z",
+    "summary": "How we built docfind, a high-performance client-side search engine using Rust and WebAssembly, and how GitHub Copilot accelerated development.\nRead the full article",
+    "fetched_at": "2026-08-14T23:26:16.365Z"
+  },
+  {
+    "id": "77eb2a33c46983c3",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "Introducing the VS Code Insiders Podcast",
+    "url": "https://code.visualstudio.com/blogs/2025/12/03/introducing-vs-code-insiders-podcast",
+    "published_at": "2025-12-03T00:00:00.000Z",
+    "summary": "The VS Code Insiders Podcast is your insider's guide to the features, decisions, and people shaping the future of Visual Studio Code.\nRead the full article",
+    "fetched_at": "2026-08-14T23:26:16.365Z"
+  },
+  {
+    "id": "57011fa557caf1c6",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "Introducing the Visual Studio Code Private Marketplace: Your Team's Secure, Curated Extension Hub 🎉",
+    "url": "https://code.visualstudio.com/blogs/2025/11/18/PrivateMarketplace",
+    "published_at": "2025-11-18T00:00:00.000Z",
+    "summary": "Private Marketplace for VS Code extensions now generally available.\nRead the full article",
+    "fetched_at": "2026-08-14T23:26:16.365Z"
+  },
+  {
+    "id": "3493e31daa3ce4ec",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "Open Source AI Editor: Second Milestone",
+    "url": "https://code.visualstudio.com/blogs/2025/11/04/openSourceAIEditorSecondMilestone",
+    "published_at": "2025-11-06T00:00:00.000Z",
+    "summary": "Ghost text suggestions are now open source as part of the Copilot Chat extension - the second milestone in making VS Code an open source AI editor.\nRead the full article",
+    "fetched_at": "2026-08-14T23:26:16.365Z"
+  },
+  {
+    "id": "f57c0e162da4f835",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "A Unified Experience for all Coding Agents",
+    "url": "https://code.visualstudio.com/blogs/2025/11/03/unified-agent-experience",
+    "published_at": "2025-11-05T00:00:00.000Z",
+    "summary": "Agents took over VS Code in 2025. We released agent mode for VS Code, integration for the Copilot coding agent, and the new GitHub Copilot CLI. But Copilot is not the only agent game in town. There are now more coding agents than ever, including options from OpenAI and Anthropic.\nRead the full article",
+    "fetched_at": "2026-08-14T23:26:16.365Z"
+  },
+  {
+    "id": "3a844bddcbd8c4d7",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "Expanding Model Choice in VS Code with Bring Your Own Key",
+    "url": "https://code.visualstudio.com/blogs/2025/10/22/bring-your-own-key",
+    "published_at": "2025-10-22T00:00:00.000Z",
+    "summary": "Learn how the new Language Model Chat Provider API in VS Code is enabling more model choice and extensibility for chat experiences via the Bring Your Own Key experience.\nRead the full article",
+    "fetched_at": "2026-08-14T23:26:16.365Z"
+  },
+  {
+    "id": "8669db0eb8ec029f",
+    "source_id": "vscode-blog",
+    "source_name": "VSCode Blog",
+    "title": "Introducing auto model selection (preview)",
+    "url": "https://code.visualstudio.com/blogs/2025/09/15/autoModelSelection",
+    "published_at": "2025-09-15T00:00:00.000Z",
+    "summary": "Use auto model selection in VS Code to get faster responses, reduced rate limiting, and a 10% discount on premium requests for paid users.\nRead the full article",
+    "fetched_at": "2026-08-14T23:26:16.365Z"
+  },
+  {
+    "id": "ecfac7264146005f",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "The Economics of Agent Optimization: From pilots to measurable returns",
+    "url": "https://azure.microsoft.com/en-us/blog/the-economics-of-agent-optimization-from-pilots-to-measurable-returns/",
+    "published_at": "2026-08-12T16:00:00.000Z",
+    "summary": "Learn how AI cost management helps organizations move from AI pilots to measurable ROI through greater visibility, governance, and optimization.\nThe post The Economics of Agent Optimization: From pilots to measurable returns appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-08-14T23:26:16.517Z"
+  },
+  {
+    "id": "27ffabaebe3d9032",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for AI-Augmented Code Modernization Tools",
+    "url": "https://azure.microsoft.com/en-us/blog/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-ai-augmented-code-modernization-tools/",
+    "published_at": "2026-08-06T15:00:00.000Z",
+    "summary": "GitHub Copilot and Azure are helping organizations modernize legacy applications, reduce technical debt, and prepare for AI innovation.\nThe post Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for AI-Augmented Code Modernization Tools appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-08-14T23:26:16.517Z"
+  },
+  {
+    "id": "14f52986775b612e",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "What customers value most in Microsoft Databases—from reliability to AI readiness",
+    "url": "https://azure.microsoft.com/en-us/blog/what-customers-value-most-in-microsoft-databases-from-reliability-to-ai-readiness/",
+    "published_at": "2026-07-27T15:00:00.000Z",
+    "summary": "Every day, customers trust Microsoft Databases to power their most critical applications, business processes, and AI-powered experiences.\nThe post What customers value most in Microsoft Databases—from reliability to AI readiness appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-08-14T23:26:16.517Z"
+  },
+  {
+    "id": "bb2f476bc70fd3e3",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "AT&T and Microsoft scale trillion-token workloads with Microsoft Foundry and AMD",
+    "url": "https://azure.microsoft.com/en-us/blog/att-and-microsoft-scale-trillion-token-workloads-with-microsoft-foundry-and-amd/",
+    "published_at": "2026-07-23T18:30:00.000Z",
+    "summary": "AT&T processed approximately one trillion tokens while developing OTel2.0 using Microsoft Foundry Managed Compute, open AI models, and AMD and NVIDIA GPU infrastructure. Discover how flexible model choice and scalable infrastructure are enabling production-scale telecom AI.\nThe post AT&T and Microsoft scale trillion-token workloads with Microsoft Foundry and AMD appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-08-14T23:26:16.517Z"
+  },
+  {
+    "id": "107156ced48d2303",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "Azure Databricks delivers proven business value",
+    "url": "https://azure.microsoft.com/en-us/blog/azure-databricks-delivers-proven-business-value/",
+    "published_at": "2026-07-15T15:00:00.000Z",
+    "summary": "Microsoft Azure Databricks delivers the first-party advantage of Databricks on Microsoft—and for customers, that advantage shows up as real, measurable value. It is the same Databricks platform your teams already know, co-engineered with Microsoft and delivered as a native Azure service, so it fits naturally into the Microsoft tools, identity, and governance your organization already runs.\nThe post Azure Databricks delivers proven business value appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-08-14T23:26:16.517Z"
+  },
+  {
+    "id": "81450a63388f234a",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "GPT-5.6 now available in Microsoft Foundry",
+    "url": "https://azure.microsoft.com/en-us/blog/gpt-5-6-now-available-in-microsoft-foundry/",
+    "published_at": "2026-07-09T17:00:00.000Z",
+    "summary": "Introducing OpenAI's latest frontier model series, the Asia Pacific Data Zone, and product agent capabilities, all generally available in Microsoft Foundry.\nThe post GPT-5.6 now available in Microsoft Foundry  appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-08-14T23:26:16.517Z"
+  },
+  {
+    "id": "f9006e3a544b1e46",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "Built to bounce back: How Azure resiliency evolved",
+    "url": "https://azure.microsoft.com/en-us/blog/built-to-bounce-back-how-azure-resiliency-evolved/",
+    "published_at": "2026-07-08T16:00:00.000Z",
+    "summary": "Cloud resiliency is about ensuring systems can adapt, recover, and keep functioning within real-world constraints.\nThe post Built to bounce back: How Azure resiliency evolved appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-08-14T23:26:16.517Z"
+  },
+  {
+    "id": "28ffa6edec04d12a",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "External key management for Azure Managed HSM is now in public preview",
+    "url": "https://azure.microsoft.com/en-us/blog/external-key-management-for-azure-managed-hsm-is-now-in-public-preview/",
+    "published_at": "2026-07-07T16:00:00.000Z",
+    "summary": "Azure Key Vault Managed Hardware Security Module (HSM) provides strong sovereignty over your encryption keys. Keys are generated and stored in a single-tenant, FIPS 140-3 Level 3 HSM that only you control: Microsoft has no access to your key material, and you govern who can use each key.\nThe post External key management for Azure Managed HSM is now in public preview appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-08-14T23:26:16.517Z"
+  },
+  {
+    "id": "2e0442baa84f7c5a",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "Meet Brain: The AI system behind Azure reliability",
+    "url": "https://azure.microsoft.com/en-us/blog/meet-brain-the-ai-system-behind-azure-reliability/",
+    "published_at": "2026-07-02T16:00:00.000Z",
+    "summary": "Learn how Microsoft is building a digital twin of Azure Service Health and why it changes how hyperscale operates.\nThe post Meet Brain: The AI system behind Azure reliability appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-08-14T23:26:16.517Z"
+  },
+  {
+    "id": "2300a576029dacf0",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "Proving application resilience on Azure with Chaos Studio",
+    "url": "https://azure.microsoft.com/en-us/blog/proving-application-resilience-on-azure-with-chaos-studio/",
+    "published_at": "2026-07-01T16:00:00.000Z",
+    "summary": "Azure Chaos Studio helps organizations validate application resilience by simulating outages, failovers, network disruptions, and infrastructure failures before they impact production.\nThe post Proving application resilience on Azure with Chaos Studio appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-08-14T23:26:16.517Z"
+  },
+  {
+    "id": "91267fa3779eb30d",
+    "source_id": "m365-blog",
+    "source_name": "Microsoft 365 Blog",
+    "title": "The next measure of AI momentum is work transformed",
+    "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/07/30/the-next-measure-of-ai-momentum-is-work-transformed/",
+    "published_at": "2026-07-30T13:00:00.000Z",
+    "summary": "In yesterday’s earnings call, we shared that Microsoft 365 Copilot has surpassed 30 million paid seats, with net seat adds more than doubling quarter over quarter.\nThe post The next measure of AI momentum is work transformed appeared first on Microsoft 365 Blog.",
+    "fetched_at": "2026-08-14T23:26:16.632Z"
+  },
+  {
+    "id": "8f02988b1b46791a",
+    "source_id": "m365-blog",
+    "source_name": "Microsoft 365 Blog",
+    "title": "Copilot in Excel: Built for the era of Frontier Finance",
+    "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/25/copilot-in-excel-built-for-the-era-of-frontier-finance/",
+    "published_at": "2026-06-25T13:00:00.000Z",
+    "summary": "Plenty of AI tools claim to be built for finance; Microsoft 365 Copilot in Excel is proving it in practice.\nThe post Copilot in Excel: Built for the era of Frontier Finance appeared first on Microsoft 365 Blog.",
+    "fetched_at": "2026-08-14T23:26:16.632Z"
+  },
+  {
+    "id": "8149b2cc8cc7d047",
+    "source_id": "m365-blog",
+    "source_name": "Microsoft 365 Blog",
+    "title": "Copilot Cowork is now generally available",
+    "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/16/copilot-cowork-is-now-generally-available/",
+    "published_at": "2026-06-16T15:00:00.000Z",
+    "summary": "Cowork is the fastest growing feature in the history of our Frontier program, and Cowork has among the highest user satisfaction of any Copilot or agent experience we have shipped.\nThe post Copilot Cowork is now generally available appeared first on Microsoft 365 Blog.",
+    "fetched_at": "2026-08-14T23:26:16.632Z"
+  },
+  {
+    "id": "d7e013ca7b7951d6",
+    "source_id": "m365-blog",
+    "source_name": "Microsoft 365 Blog",
+    "title": "Introducing Microsoft Scout: Your always-on personal agent",
+    "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/02/introducing-microsoft-scout-your-always-on-personal-agent/",
+    "published_at": "2026-06-02T18:00:00.000Z",
+    "summary": "Microsoft Scout is integrated across the Microsoft 365 apps you use every day, keeping it grounded in your flow of work.\nThe post Introducing Microsoft Scout: Your always-on personal agent appeared first on Microsoft 365 Blog.",
+    "fetched_at": "2026-08-14T23:26:16.632Z"
+  },
+  {
+    "id": "020093137baaba8b",
+    "source_id": "m365-blog",
+    "source_name": "Microsoft 365 Blog",
+    "title": "Announcing the new Work IQ APIs",
+    "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/02/announcing-the-new-work-iq-apis/",
+    "published_at": "2026-06-02T17:00:15.000Z",
+    "summary": "Work IQ is a new intelligence layer for Microsoft 365, designed to understand how work gets done across your organizations.\nThe post Announcing the new Work IQ APIs appeared first on Microsoft 365 Blog.",
+    "fetched_at": "2026-08-14T23:26:16.632Z"
+  },
+  {
+    "id": "f2fe332742fa6ecf",
+    "source_id": "m365-blog",
+    "source_name": "Microsoft 365 Blog",
+    "title": "Introducing Microsoft 365 Business with Copilot: The new standard for small business",
+    "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/05/28/introducing-microsoft-365-business-with-copilot-the-new-standard-for-small-business/",
+    "published_at": "2026-05-28T19:00:00.000Z",
+    "summary": "On July 1, we're introducing new Microsoft 365 SKUs with Copilot built-in, designed to fit into the way small businesses already work.\nThe post Introducing Microsoft 365 Business with Copilot: The new standard for small business appeared first on Microsoft 365 Blog.",
+    "fetched_at": "2026-08-14T23:26:16.632Z"
+  },
+  {
+    "id": "3ab61e4b3cf2ba71",
+    "source_id": "m365-blog",
+    "source_name": "Microsoft 365 Blog",
+    "title": "Introducing a new design for Microsoft 365 Copilot",
+    "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/05/28/introducing-a-new-design-for-microsoft-365-copilot/",
+    "published_at": "2026-05-28T15:00:00.000Z",
+    "summary": "We’ve redesigned the Copilot app and how Copilot shows up across Microsoft 365 apps to better move with it: cleaner, faster, and in the flow of your work.\nThe post Introducing a new design for Microsoft 365 Copilot appeared first on Microsoft 365 Blog.",
+    "fetched_at": "2026-08-14T23:26:16.632Z"
+  },
+  {
+    "id": "92f9fa8327778c21",
+    "source_id": "m365-blog",
+    "source_name": "Microsoft 365 Blog",
+    "title": "New and improved: Computer-using agents, a new workflows experience, and real-time voice experiences",
+    "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/new-and-improved-computer-using-agents-a-new-workflows-experience-and-real-time-voice-experiences/",
+    "published_at": "2026-05-26T16:00:00.000Z",
+    "summary": "Learn what’s new in Copilot Studio, May 2026: computer-using agents are now generally available, plus redesigned workflows and Work IQ extensibility.\nThe post New and improved: Computer-using agents, a new workflows experience, and real-time voice experiences appeared first on Microsoft 365 Blog.",
+    "fetched_at": "2026-08-14T23:26:16.632Z"
+  },
+  {
+    "id": "6f469e5191a542d3",
+    "source_id": "m365-blog",
+    "source_name": "Microsoft 365 Blog",
+    "title": "New and improved: Agent governance, intelligent workflows, and connected app experiences",
+    "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/new-and-improved-agent-governance-intelligent-workflows-and-connected-app-experiences/",
+    "published_at": "2026-05-11T17:25:12.000Z",
+    "summary": "See what's new in Copilot Studio, April 2026: updates to workflows, increased control over agent operations, and an expanded agent usage estimator.\nThe post New and improved: Agent governance, intelligent workflows, and connected app experiences appeared first on Microsoft 365 Blog.",
+    "fetched_at": "2026-08-14T23:26:16.632Z"
+  },
+  {
+    "id": "53b18e8c0d5271fe",
+    "source_id": "m365-blog",
+    "source_name": "Microsoft 365 Blog",
+    "title": "Copilot Cowork: From conversation to action across skills, integrations, and devices",
+    "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/05/05/copilot-cowork-from-conversation-to-action-across-skills-integrations-and-devices/",
+    "published_at": "2026-05-05T10:00:00.000Z",
+    "summary": "Today, we’re announcing additional capabilities in Cowork to expand on what it can make possible for you.\nThe post Copilot Cowork: From conversation to action across skills, integrations, and devices appeared first on Microsoft 365 Blog.",
+    "fetched_at": "2026-08-14T23:26:16.632Z"
+  }
+]
