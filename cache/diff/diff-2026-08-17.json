@@ -1,0 +1,830 @@
+{
+  "date": "2026-08-17",
+  "compared_with": "2026-08-16",
+  "source_count": 6,
+  "new_count": 39,
+  "removed_count": 0,
+  "new_articles": [
+    {
+      "id": "d9d0c0eda6851b9b",
+      "source_id": "fabric-blog",
+      "source_name": "Microsoft Fabric Blog",
+      "title": "TMDL View on the web: Edit semantic models as code in your browser (Preview)",
+      "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/TMDL-View-on-the-web-Edit-semantic-models-as-code-in-your/ba-p/5332653",
+      "published_at": "2026-08-10T21:00:00.000Z",
+      "summary": "TMDL View on the Web is a feature in Power BI that enables developers to view and edit semantic models as code directly in the browser using TMDL. It expands the Power BI web modelling experience by introducing a rich code editor for working with TMDL scripts—giving pro developers full transparency into the semantic model code and enabling more efficient workflows through code editing.",
+      "fetched_at": "2026-08-16T23:25:04.114Z"
+    },
+    {
+      "id": "94014206d0d467e0",
+      "source_id": "fabric-blog",
+      "source_name": "Microsoft Fabric Blog",
+      "title": "Deep dive into conditional formatting for lines and legends",
+      "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Deep-dive-into-conditional-formatting-for-lines-and-legends/ba-p/5331078",
+      "published_at": "2026-08-04T21:00:00.000Z",
+      "summary": "Bring your Power BI reports to life with dynamic conditional formatting for lines and legends that stays consistent and updates automatically as your data changes.",
+      "fetched_at": "2026-08-16T23:25:04.114Z"
+    },
+    {
+      "id": "33ce38d97f1bc4be",
+      "source_id": "fabric-blog",
+      "source_name": "Microsoft Fabric Blog",
+      "title": "Power BI July 2026 Feature Summary",
+      "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Power-BI-July-2026-Feature-Summary/ba-p/5303533",
+      "published_at": "2026-07-22T15:48:26.000Z",
+      "summary": "Welcome to the July 2026 Power BI update!This month, we're introducing new capabilities across reporting, modeling, mobile, and embedded analytics. Highlights include expanded modern visual defaults, conditional formatting improvements for line charts and legends, new org app capabilities and APIs, Model Options in the Power BI Service, and TMDL View on the web.Let's take a look at what's new this month. \n\nDownload Power BI Desktop Events and AnnouncementsYour Road to the Power BI DataViz World ChampionshipsRound Two of the Power BI DataViz World Championships is now open, with Round Three still ahead. Plus, one wildcard finalist will be selected from standout submissions across all stages of the championship.Is this your moment?The only way to find out is to enter. Every submission is a chance to learn something new, connect with the community, and showcase your creativity. You might surprise yourself along the way and earn a place in the finals. Join now.Data Days Goes Through August 7thLooking for your next Power BI breakthrough? Data Days brings together the best of data, AI, and analytics in free live sessions. Learn new skills, get inspired, and connect with the community. Learn more.Will we see you in Barcelona?The European Microsoft Fabric and SQL Community Conference take place September 28 to October 1 in Barcelona, Spain, bringing together Microsoft experts and community leaders for exclusive content, live demos, and key announcements, along with more than 130 sessions spanning Fabric, Azure AI, Databases, Power BI, and Microsoft Purview. And of course, the live Dataviz World Championships finale!The most recent event in Atlanta sold out. Don’t miss out and register for the Barcelona event with code FABCMTY200 to save €200.GeneralDeprecation of Old File Picker experience in Power BI DesktopIn April we deprecated the old file picker experience in Power BI Desktop. Starting in October, users still utilizing versions of Power BI desktop from March 2026 or earlier will no longer be able to save and share Power BI files to One Drive and SharePoint. Please ensure you update Power BI desktop to keep using this functionality.Note: No action is required from users as part of this deprecation; this is simply an informational announcement.ReportingUpdate your report defaults and use color palettes with the modern visual defaults (Preview)We've expanded the Modern Visual Defaults preview with a new Customize current theme experience directly in the Format pane. You can now adjust report-wide defaults that apply to all visuals on every page—without manually styling each one. Choose from color palettes to change your report's colors while preserving other customizations or use the expanded visual-level options to style or toggle elements like background, border, header icons, tooltips and shadow on or off across your entire report. You can also fine-tune border thickness, corner radius, and default padding. Every new visual you add automatically inherits your styling, so your report stays consistent as you build.Beyond visuals, you can update page size, background color, and wallpaper across all pages at once, and apply filter pane formatting to current and new pages. These customizations create a custom theme layered on top of your base theme. Styling applied to individual pages or visuals takes precedence, and you can reset any setting to re-enforce the theme defaults. When you're finished, export your custom theme to use in other reports or add it to your organizational themes so others can create uniformly styled reports.To get started, enable the Modern visual defaults and customize theme improvements preview in Options, then when nothing is selected on the page, choose the Customize current theme option in the Format pane. Visit our documentation to learn more about visual defaults in Power BI reports.Conditional formatting for line charts and legends (Generally Available)One of the highly requested features from the Power BI community is here: conditional formatting now extends to line charts and visuals with legends. This update applies to bar charts, column charts, pie charts, donut charts, and line charts—when these visuals have a legend, you can conditionally format their colors.For line charts, format line colors using a gradient based on the total value of each line, or by the category it represents. For example, when overlaying multiple years by month, apply a gradient that displays the most recent year in blue while older years fade to lighter shades of grey. Markers and series labels automatically inherit the conditional formatting until you choose to color them differently.For visuals with category legends, you can ensure consistent colors across your entire report. If multiple visuals use Segment as their legend, color each segment using a single DAX measure. Every visual displays the same color for the same category. When you need to change a segment's color, update the measure once and all visuals reflect the new color instantly.Add data-driven colors to your reports today! Learn more about how to use conditional formatting in other places at Conditional formatting in Power BI visuals.Report page tab navigation improvements (Generally Available)Managing reports with many pages is now easier. Previously, when you dragged a page tab to reorder it, you couldn't move it past the visible tabs, making it difficult to move a page from the end of your report to the beginning. Now, when you drag a page tab toward the edge of the tab bar, the tabs continue to scroll until you reach the position where you want to place it. The arrow buttons that page through report tabs are also more precise, ensuring you see each report page tab as you navigate. These improvements make it faster to organize and navigate reports with dozens of pages.Learn more about working with report pages in Report View in Power BI Desktop.Simplified title spacing for visualsWe've streamlined how spacing works in the title area of your visuals. The spacing properties now use a consistent \"space above\" approach—Space above subtitle, Space above divider, and Space above plot area—instead of the previous \"space below\" settings. This makes it easier to understand and control the gaps between title elements, and ensures visuals look consistent even when they have different combinations of subtitle and divider.Your existing reports and themes automatically adjust to the new settings without any change to their appearance. If you've configured title spacing in a custom theme, we recommend updating it to use the new \"space above\" properties for clarity and consistency going forward. Learn more about customizing visualization titles.Visuals calculations LOOKUP function now supports INFERRED mode for associated columnsThe LOOKUP function in visual calculations now accepts an optional AssociatedColumnsBehavior parameter with two values: EXPLICIT (default) and INFERRED. When you use INFERRED, the engine automatically identifies which axis columns are functionally determined by the coordinates you supply and fills them in before evaluating the lookup. This means a lookup that specifies Year, Quarter, and Month can return a value across all rows in the matrix, rather than only on the row where the current context exactly matches.When the parameter is omitted, LOOKUP behaves exactly as it does today—existing expressions continue to work without changes. When you explicitly supply a value for a column that would have been inferred, LOOKUP validates your value against the inferred value and returns BLANK if they conflict, providing consistent error handling across both modes.Org apps with audiences (Generally Available)With support for audiences, app creators can deliver different content experiences to different groups of users within the same app, making it easier to personalize content while managing a single app experience.Learn more in these blog posts, Org apps with audiences for Power BI and Fabric (Generally Available) or learn more about how org apps and audiences work.Bookmarks support for reports in org appsUsers can now access bookmarks when viewing interactive reports in org apps. This includes both report bookmarks created by report authors and personal bookmarks users create for themselves, making it easy to return to saved report views with the filters, selections, and visual state they care about most.To learn more about bookmarks in the Power BI service, refer to the documentation. Storytelling (PowerPoint embed) support for reports and visuals in org appsReports in org apps now support Storytelling in PowerPoint, allowing users to add live report pages and visuals from org app content into PowerPoint presentations. This extends the existing Storytelling experience to reports distributed through org apps, making it easier to present and share curated content across your organization.Learn more about how you can enhance your data storytelling in PowerPoint with live, interactive Power BI data.CRUD APIs (REST) for org apps and audiencesDevelopers and administrators can now programmatically manage org apps and audiences using Microsoft Fabric REST APIs. New APIs support create, read, update, delete, and list operations for both org app items and audience items, enabling automation, deployment, and management scenarios at scale.Learn more about the org app item definition and org app audience item definition.CRUD APIs (REST) for paginated reportsPaginated reports can now be managed through Microsoft Fabric REST APIs. New support for create, read, update, delete, and list operations enables developers and administrators to automate report lifecycle management, deployment workflows, and administrative processes.Learn more about the paginated report APIs and the paginated report definition.ModelingMeasure descriptions in line with triple-slash (///) commentsGood descriptions make a semantic model self-documenting. Until now, adding them was a two-step process: you authored your measures in DAX query view, then switched over to Model Explorer just to type the description in.Yet with the latest Desktop release, you can now add measure descriptions right where you write your measures, using the same triple-slash (///) syntax that TMDL already supports for both measure and function descriptions. Add one or more /// comment lines directly above your MEASURE definition, select “Update model with changes”, and the description is written straight into the model along with the measure definition.DEFINE    /// Year-over-year sales growth, as a percentage.    /// Returns BLANK when there is no prior-year value.    MEASURE Sales[YoY Growth %] = ...Once it’s saved, the description travels with the measure: hover over the measure in DAX query view, in Model Explorer, or in the Data pane, and the description shows up in the tooltip next to the measure name, and it carries through to the quick queries DAX query view generates. Specifically, when you right-click a measure and choose Quick queries, and then select Define and evaluate (or any other Define option), Power BI generates a DEFINE MEASURE statement in DAX Query View that includes the description as /// comments above the measure definition, as in the following screenshot.It’s a small addition with a nice payoff — descriptions become part of the authoring flow, consistent across measures and UDFs. And it’s non-breaking: if you already use /// inside a measure body, nothing changes there. This is specifically about the comment lines above the MEASURE definition.Try it out in the July release of Power BI Desktop. For more details about how to work with measures in DAX query view, refer to Work with DAX query view in Power BI documentation.Model Options now available in Power BI ServiceWe’re continuing to bring more semantic modeling capabilities to the web! With this update, the Model options dialog will now be available directly in web modeling, giving you greater control over key modeling-level settings, without needing to switch back to Power BI Desktop.The new Options dialog enables you to configure important behaviors and metadata that are defined at the model level (current file) in a centralized experience.The new Model Options dialog in web modeling includes the following settings:Type detection: enable/disable automatic detection of column types and headers for unstructured sources.Relationships: configure auto-detection behavior for relationships in the model.Time intelligence: enable/disable automatic creation of hidden date tables.Parallel loading of tables: set the concurrency mode used when loading tables.Locale for import: set the regional settings used to interpret numbers, dates and time in imported text.DirectQuery connections to this semantic model: Toggle whether other semantic models can connect to this semantic model using DirectQuery. When enabled, this model cannot be used as a DirectQuery source.(Direct Query only) Maximum connections per data source: limit how many concurrent DirectQuery connections can be opened to a single data source.For more details, refer to the Model Options in Power BI Service documentation.New: The semantic model settings pane becomes the default (Preview)Starting in August, when you open the settings for a semantic model in the Power BI Service, they open in the new settings pane instead of the full settings page. This change updates the default experience: the settings pane opens beside your content, so you can update refresh schedules, credentials, and other options without leaving your workspace or losing your current work context. Everything you manage on the settings page today is available in the pane, so the settings are fully configurable.If you'd rather keep using the legacy settings page, you can switch back at any time from within the pane. The settings pane first arrived in preview in May. Refer to the original semantic model settings pane announcement to learn what it offers and to review how semantic model settings work, refer to Edit Semantic Models In The Power BI Service.TMDL View on the WebNow, developers can script, modify, and apply changes to model objects directly in a code editor using Tabular Model Definition Language (TMDL), without switching to Desktop or downloading model files.This experience provides immediate, code‑level visibility into all semantic model metadata (tables, measures, relationships, and more), enabling bulk edits, automation of repetitive tasks, and the reuse of definitions to improve consistency and productivity.For more details about TMDL view and the full list of capabilities in this release, refer to the documentation: Use Tabular Model Definition Language (TMDL) view in Power BI Desktop.MobileOrg app audiences are now in mobile appsOrg app audiences in the Power BI mobile app extend a tailored org app experience from Power BI Service to users on iOS and Android. With this update, mobile and tablet users can open an org app and see and navigate content based on their assigned audience, so they can quickly find the reports, dashboards, and Power BI content most relevant to their role while on the go.Audiences in org apps help organizations deliver the right content to the right people from a single governed app experience. Instead of creating and managing multiple apps, app creators can define multiple audiences, control which items each audience sees, and tailor navigation for each group. On mobile, this results in a cleaner, more focused experience on smaller screens.Executives, managers, frontline workers, and department teams can each land in an app experience curated for their needs while still benefiting from centralized management of a single org app.This update helps close a key gap for customers adopting org apps. Org apps are the recommended way to package and distribute Power BI and Fabric content, and mobile access is essential for users who rely on Power BI away from their desks or in frontline scenarios. Organizations that use audiences to personalize org app content can now extend those tailored experiences to Power BI mobile apps.To learn more about org apps and audiences, refer to the org apps blog, Org apps with audiences for Power BI and Fabric.Third-party custom visuals Need more visual options for your report? Power BI reports support custom visuals built to fit your exact needs. Browse hundreds of options in AppSource, also available directly from Power BI Desktop, or develop your own and add it to a single report, share it across your organization, or publish it to AppSource for the community. You can even develop a custom visual tailored to your specific requirements with AI coding tools like GitHub Copilot Free.These are some updates from the community-based custom visuals you can use in your reports today. Drill Down Scatter PRO by ZoomChartsDrill Down Scatter PRO brings a new level of interactivity to scatter chart analysis in Power BI. Users can seamlessly drill down through multiple hierarchy levels, zoom into dense data clusters, and pan across large datasets to investigate trends, outliers, and relationships with precision.The visual helps consumers report from high-level summaries to detailed insights without leaving the report. Advanced features such as dynamic regression lines, area and threshold highlighting, area selection, and lasso selection make it easier to identify patterns, compare segments, and focus on the most relevant data points.With over 200 formatting options, authors can tailor the visual to match business requirements and branding while creating highly engaging analytical experiences.Drill Down Scatter PRO is ideal for customer segmentation, sales performance analysis, operational monitoring, and any scenario where users need to explore large volumes of data interactively. By combining powerful analytics with intuitive navigation, the visual enables faster discovery of actionable insights directly within Power BI. To get started, download it now.Neutral variance color in Zebra BI TablesYou're reviewing a Revenue vs Plan report. Anything within ±5% is considered fine, but Actuals are 3% below plan and everything flashes red. The whole dashboard looks alarming.Sound familiar? This is the fix.With Neutral variance color in Zebra BI Tables and Charts, you can now define a tolerance zone where small swings stay neutral. Variances beyond your set limits still turn red or green, so you instantly see where real action is needed.Where it helps:Revenue vs. Plan: \"Set ±5% tolerance. Q4 revenue at -3%? Stays neutral. Drops to -7%? Turns red.\"Spend vs. Budget: Could we keep the current detail level but add context: \"Department at 95% of budget? Neutral. Hits 115% or drops to 85%? Both turn red - overspend wastes money, underspend may signal delivery issues.\"On-time Delivery or HR KPIs: Could we pick one specific example - may be HR? Something like the below?Employee Turnover: \"Annual target 12% ±2%. At 13.5%? Neutral. At 15%? Red alert.\"Now your dashboards reflect reality: not every variance needs a red alert. Instead, you can:Focus on what matters: Stop investigating variances within acceptable limits.Align with business rules: Your CFO says ±5% is fine, your dashboard should too.Achieve faster executive reviews: Leadership can scan dashboards and immediately spot true outliers.Try it now in Zebra BI Tables and Charts.Heatmap by PowervizThe Powerviz Heatmap visualizes data density and value distribution using color gradients, transforming complex datasets into an intuitive matrix format. It is ideal for identifying patterns, correlations, and outliers, aiding data-driven decision-making.Key Features:Shapes: Choose from Default, Fixed, or Diverging built-in shapes.  Data Colors: Offers 30+ palettes, color-blind mode, and custom color options.  Data Labels: Select from different styles available or add custom labels with formatting.  Grid Lines: Improve data readability with visual grid lines.  Reference Lines: Highlight key points using X-axis and Y-axis lines.  Totals: Display row and column totals with advanced bar customization.Null Values: Customize null values (Blank /NA / Null/ ”0”) and their styling. Small Multiples: Split visuals into smaller ones using selected fields.  Conditional Formatting: Spot outliers with Value/ Percentage/ Ranking based rules.Ranking: Filter Top/Bottom N rows or columns.Other features included Axis Settings, Grid View, Sorting, Show Condition and more.ResourcesTry Heatmap visual for FREE from App SourceCheck out all features of the visualStep-by-step instructionsYouTube VideoLearn more about visualsFollow Powerviz on LinkedInGantt by ProfitbaseReviewing a project plan, stakeholders rely on color to quickly identify at-risk tasks, and owner-specific highlights. Version 3.1 of Gantt by Profitbase lets you apply conditional formatting rules independently to specific levels of your hierarchy.The new version also includes:Expand and collapse rows based on a condition, so the right level of detail opens automatically based on the rules added.A default scroll position at the start of the chart.Include the last day in duration calculationsFor more feature details, refer to the Gantt by Profitbase v3.1 release notes.Additional capabilities for Gantt by Profitbase:Unlimited hierarchyFormat hierarchy levels individuallySupports additional columnsSupports multiple milestones per taskApply expansion stylesZoom in/out using zoom buttonsApply highlighting curtains to important periodsSort, Filter and Search for any information across all columnsUse theming templates to set formattingRagged HierarchyDynamic event markers from dataResourcesVersion 3.1 Youtube videoGantt by Profitbase wikiPower BI Visuals YouTube PlaylistSupport ForumLearn more and download the visual on AppSourceUntil next monthThat’s a wrap for July!This month’s enhancements continue our focus on making Power BI easier to build, manage, and scale across your organization. From report-wide formatting improvements and expanded org app capabilities to new web modeling experiences and developer APIs, these updates help streamline both the authoring and consumption experience. We hope you enjoy trying out these new capabilities and, as always, we welcome your feedback as we continue to improve Power BI.Download Power BI Desktop",
+      "fetched_at": "2026-08-16T23:25:04.114Z"
+    },
+    {
+      "id": "f715c9e23f53ba77",
+      "source_id": "fabric-blog",
+      "source_name": "Microsoft Fabric Blog",
+      "title": "Bringing Power BI Insights to Every Copilot User",
+      "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Bringing-Power-BI-Insights-to-Every-Copilot-User/ba-p/5309360",
+      "published_at": "2026-07-21T19:00:00.000Z",
+      "summary": "The future of Power BI and Copilot starts by meeting users where they already work. We’re bringing trusted Power BI answers into Microsoft 365 Copilot first, so people can ask questions of governed business data in the flow of work — then carrying that richer, more conversational experience back into the Power BI service itself.",
+      "fetched_at": "2026-08-16T23:25:04.114Z"
+    },
+    {
+      "id": "f4818a4b1361007b",
+      "source_id": "fabric-blog",
+      "source_name": "Microsoft Fabric Blog",
+      "title": "Deep dive into modern visual defaults and formatting your entire report (Preview)",
+      "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Deep-dive-into-modern-visual-defaults-and-formatting-your-entire/ba-p/5303513",
+      "published_at": "2026-07-23T16:54:21.000Z",
+      "summary": "Power BI's modern visual defaults and new Customize theme experience enable report authors to centrally manage colors, typography, visual styling, page settings, and filter pane formatting across an entire report, creating consistent, professional reports faster while preserving visual-specific customizations.",
+      "fetched_at": "2026-08-16T23:25:04.114Z"
+    },
+    {
+      "id": "5d5483054da10a89",
+      "source_id": "fabric-blog",
+      "source_name": "Microsoft Fabric Blog",
+      "title": "Deep dive into Power BI reporting with the new date picker slicer option (Preview)",
+      "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Deep-dive-into-Power-BI-reporting-with-the-new-date-picker/ba-p/5295674",
+      "published_at": "2026-07-16T16:00:00.000Z",
+      "summary": "Power BI’s new date picker slicer helps report authors set dynamic default date ranges while giving viewers flexible, easy ways to explore dates, ranges, and rolling periods as data refreshes.",
+      "fetched_at": "2026-08-16T23:25:04.114Z"
+    },
+    {
+      "id": "5e7aa43bc923e188",
+      "source_id": "fabric-blog",
+      "source_name": "Microsoft Fabric Blog",
+      "title": "Deep dive into the Shape Map in Power BI (Generally Available)",
+      "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Deep-dive-into-the-Shape-Map-in-Power-BI-Generally-Available/ba-p/5255561",
+      "published_at": "2026-07-07T16:00:00.000Z",
+      "summary": "Discover how the Shape Map visual (Generally Available) in Power BI helps you bring custom geographic boundaries, flexible map formats, and data-driven color formatting into your reports.",
+      "fetched_at": "2026-08-16T23:25:04.114Z"
+    },
+    {
+      "id": "7694e5eb7bb01e68",
+      "source_id": "fabric-blog",
+      "source_name": "Microsoft Fabric Blog",
+      "title": "Deep dive into tooltip options in Power BI visuals (Generally Available)",
+      "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Deep-dive-into-tooltip-options-in-Power-BI-visuals-Generally/ba-p/5255518",
+      "published_at": "2026-07-06T17:00:00.000Z",
+      "summary": "Discover how Power BI’s tooltip (Generally Available) options help you tailor hover experiences—from curated field lists and sentence-style insights to fully custom report page tooltips.",
+      "fetched_at": "2026-08-16T23:25:04.114Z"
+    },
+    {
+      "id": "d4cdac2cba83e6a0",
+      "source_id": "fabric-blog",
+      "source_name": "Microsoft Fabric Blog",
+      "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Analytics and Business Intelligence Platforms",
+      "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Microsoft-named-a-Leader-in-the-2026-Gartner-Magic-Quadrant-for/ba-p/5262403",
+      "published_at": "2026-07-10T13:08:14.000Z",
+      "summary": "We’re proud to share that Microsoft has once again been named a Leader in the 2026 Gartner® Magic Quadrant™ for Analytics and Business Intelligence Platforms for the nineteenth consecutive year.",
+      "fetched_at": "2026-08-16T23:25:04.114Z"
+    },
+    {
+      "id": "15cf08ac9c539c16",
+      "source_id": "fabric-blog",
+      "source_name": "Microsoft Fabric Blog",
+      "title": "Deep dive into visual calculations: Adding calculations directly to your Power BI visuals (Generally Available)",
+      "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Deep-dive-into-visual-calculations-Adding-calculations-directly/ba-p/5255359",
+      "published_at": "2026-07-02T16:00:00.000Z",
+      "summary": "Visual calculations (Generally Available) in Power BI, making it easier to add DAX calculations directly to the visual where they’re used.",
+      "fetched_at": "2026-08-16T23:25:04.114Z"
+    },
+    {
+      "id": "f0befc22c60c12e8",
+      "source_id": "fabric-blog",
+      "source_name": "Microsoft Fabric Blog",
+      "title": "Power BI reports and Fabric Apps: Expanding how you build on your semantic model data",
+      "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Power-BI-reports-and-Fabric-Apps-Expanding-how-you-build-on-your/ba-p/5234706",
+      "published_at": "2026-07-01T21:00:00.000Z",
+      "summary": "Power BI reports continue to help analysts build secure, governed BI experiences on semantic models, while Fabric Apps expands what developers can create from the same trusted data.",
+      "fetched_at": "2026-08-16T23:25:04.114Z"
+    },
+    {
+      "id": "f48cc79e22f77a6c",
+      "source_id": "fabric-blog",
+      "source_name": "Microsoft Fabric Blog",
+      "title": "Power BI Desktop Bridge (Preview)",
+      "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Power-BI-Desktop-Bridge-Preview/ba-p/5227769",
+      "published_at": "2026-06-30T19:00:00.000Z",
+      "summary": "Power BI Desktop Bridge (Preview)Power BI Desktop Bridge introduces a new way of working, allowing external applications and agents to interact directly with Power BI Desktop!What is Power BI Desktop Bridge?The bridge is a lightweight local server that lets external applications interact directly with Power BI Desktop.Think of it as a direct, secure channel between your tools and Power BI Desktop. Your agents, scripts, and external applications can now:Check the current state of your report.Trigger key actions, like reloading files after edits.Capture screenshots to validate changes.Iterate and improve in real time, without manual handoffs.The following core capabilities are available through the bridge:Discover What's AvailableMethod: bridge.manifestCapabilities: Returns a complete list of all capabilities and their specifications.Think of this as a \"menu\" of what your version of Desktop can do. Always check this first to see what's available.Check Report StateMethod: application.state.get/v1Capabilities: Returns information about the currently open file and whether there are unsaved changes.In plain language: Know which file is open and if there are pending edits. Essential before running automation that might affect your work.Capture Report SnapshotsMethod: report.snapshot.capture/v1Capabilities: Captures a PNG screenshot of a specific report page at any resolution you want.In plain language: See exactly how your report looks right now. Perfect for validating changes visually or sharing proof of work.Reload files from DiskMethod: file.reload/v1Capabilities: Reloads the open PBIP/PBIR file from disk to pick up on-disk edits.In plain language: After making changes to report files, refresh Desktop to see them. You can control whether the semantic model is also reloaded.Why this is a big step for agents?Before the bridge, agents could be incredibly smart about generating code and automating repetitive tasks. But they hit a wall: they couldn't talk directly to Power BI Desktop. They couldn't reload files to see changes in real time. They couldn't capture screenshots to validate what they'd built. They were flying blind.Now, with the bridge, that changes completely, agents can:Read the current report state.Edit report files directly on disk.Reload to see changes instantly in Desktop.Validate with a live screenshot.Iterate immediately—observing, learning, and improving.Ready to see this in action? The Report Authoring Skill is a perfect example. It leverages the bridge to read state, make edits, reload instantly, validate visually with screenshots, and iterate continuously in one seamless loop. Now, reports that would take hours to build, debug, and refine manually can now be authored, validated, and polished by agents in minutes.But this is just the beginning. The bridge opens the door for you to build the custom solutions you need.How to get startedDesktop Bridge is enabled by default. To disable or enable it:Open Power BI Desktop.Go to File > Options and settings > Options.Open Preview features.Enable external tool access to Power BI Desktop through secure local APIs.Start using the Desktop BridgeThe easiest way to start is with the Power BI Desktop Bridge CLI. It lets you leverage the bridge in a simple, practical way, without building custom integrations first. Built on top of the bridge, it includes a set of intuitive commands ready to use.The reload command is a great example. If you are making external changes to your PBIR files, you can simply run:powerbi-desktop reloadThis command reloads your on-disk changes in Power BI Desktop through the bridge, so you can keep iterating without closing and reopening Desktop.The following are other useful commands at your fingertips:# See what the bridge can dopowerbi-desktop manifest# Check which Desktop instances are runningpowerbi-desktop status# Reload after making editspowerbi-desktop reload# Capture screenshots of every report pagepowerbi-desktop screenshot-all Ready to try it?The Desktop Bridge is here, and it's ready to transform how you work with Power BI Desktop. Stop waiting for manual steps. Start automating.Get started now: Power BI Desktop Bridge.",
+      "fetched_at": "2026-08-16T23:25:04.114Z"
+    },
+    {
+      "id": "0992bed899b1395e",
+      "source_id": "fabric-blog",
+      "source_name": "Microsoft Fabric Blog",
+      "title": "Microsoft Entra ID single sign-on for the Denodo connector in Power BI (Preview)",
+      "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Microsoft-Entra-ID-single-sign-on-for-the-Denodo-connector-in/ba-p/5193376",
+      "published_at": "2026-06-23T21:00:00.000Z",
+      "summary": "When you configure a Denodo data connection for Entra ID SSO, users querying a semantic model in DirectQuery mode are authenticated to Denodo with their own Microsoft Entra ID identity.",
+      "fetched_at": "2026-08-16T23:25:04.114Z"
+    },
+    {
+      "id": "000d25b5f79df03b",
+      "source_id": "fabric-blog",
+      "source_name": "Microsoft Fabric Blog",
+      "title": "Protect once, enforce everywhere: Protection policies for Power BI (Generally Available)",
+      "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Protect-once-enforce-everywhere-Protection-policies-for-Power-BI/ba-p/5223932",
+      "published_at": "2026-06-24T11:22:57.000Z",
+      "summary": "How to use sensitivity labels and Protection Policies to secure your Power BI estate — and why it matters more than ever in the age of AI.",
+      "fetched_at": "2026-08-16T23:25:04.114Z"
+    },
+    {
+      "id": "3654fc24a8d2c88b",
+      "source_id": "fabric-blog",
+      "source_name": "Microsoft Fabric Blog",
+      "title": "Microsoft Entra ID single sign-on for the Starburst connector in Power BI (Preview)",
+      "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Microsoft-Entra-ID-single-sign-on-for-the-Starburst-connector-in/ba-p/5193371",
+      "published_at": "2026-06-18T16:00:00.000Z",
+      "summary": "When enabling Microsoft Entra ID single sign-on (SSo) for Starburst (Preview) report viewers querying semantic models in DirectQuery mode authenticate to Starburst with their own Entra ID identity, to Starburst's access policies — including row-level and column-level security rules — are evaluated against the actual end user rather than a fixed connection account.",
+      "fetched_at": "2026-08-16T23:25:04.114Z"
+    },
+    {
+      "id": "0cc859650c5c7b9b",
+      "source_id": "fabric-blog",
+      "source_name": "Microsoft Fabric Blog",
+      "title": "Workspace outbound access protection for Power BI reports (Preview)",
+      "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Workspace-outbound-access-protection-for-Power-BI-reports/ba-p/5193354",
+      "published_at": "2026-06-17T21:00:00.000Z",
+      "summary": "Workspace outbound access protection (OAP) is a workspace-level control in Microsoft Fabric that lets you constrain where the data inside a workspace can flow. With this preview, OAP support now extends to Power BI reports. The good news for report authors and admins: there's nothing new to configure on the report itself. Protection comes from a single, well-defined rule that the workspace enforces automatically as soon as you turn OAP on.",
+      "fetched_at": "2026-08-16T23:25:04.114Z"
+    },
+    {
+      "id": "2b54be786be19003",
+      "source_id": "fabric-blog",
+      "source_name": "Microsoft Fabric Blog",
+      "title": "Org apps with audiences for Power BI and Fabric (Generally Available)",
+      "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Org-apps-with-audiences-for-Power-BI-and-Fabric-Generally/ba-p/5196326",
+      "published_at": "2026-06-16T19:00:00.000Z",
+      "summary": "Announcing general availability of org apps in Power BI and Fabric, including one of the most requested capabilities: audiences.",
+      "fetched_at": "2026-08-16T23:25:04.114Z"
+    },
+    {
+      "id": "983541f3cd29461b",
+      "source_id": "fabric-blog",
+      "source_name": "Microsoft Fabric Blog",
+      "title": "Simplified Oracle connectivity in Power BI (Preview)",
+      "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Simplified-Oracle-connectivity-in-Power-BI-Preview/ba-p/5193366",
+      "published_at": "2026-06-15T17:00:00.000Z",
+      "summary": "Connecting Power BI to Oracle has historically meant extra provider installations and data gateway deployment — even for cloud-hosted databases. Two new Preview capabilities change that. Power BI Desktop now includes a bundled Oracle Managed ODP.NET provider, and the Power BI service supports direct cloud connections without the need for a data gateway to Oracle data sources such as Oracle Autonomous Database.",
+      "fetched_at": "2026-08-16T23:25:04.114Z"
+    },
+    {
+      "id": "1f80bf4839f810a8",
+      "source_id": "fabric-blog",
+      "source_name": "Microsoft Fabric Blog",
+      "title": "Migrating from embedded ODBC drivers to ADBC in Power BI and Fabric",
+      "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Migrating-from-embedded-ODBC-drivers-to-ADBC-in-Power-BI-and/ba-p/5195167",
+      "published_at": "2026-06-18T22:10:45.000Z",
+      "summary": "If you use connectors like Databricks, Snowflake, or BigQuery in Power BI or Fabric, there’s an important change coming. Microsoft is moving from embedded ODBC drivers to ADBC, which affects how connections are established and managed. This post explains what’s changing, who’s impacted, and the steps you can take now to prepare.",
+      "fetched_at": "2026-08-16T23:25:04.114Z"
+    },
+    {
+      "id": "735c132de01e9b41",
+      "source_id": "fabric-blog",
+      "source_name": "Microsoft Fabric Blog",
+      "title": "Power BI June 2026 Feature Summary",
+      "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Power-BI-June-2026-Feature-Summary/ba-p/5193264",
+      "published_at": "2026-07-31T15:26:07.000Z",
+      "summary": "This month, we’re continuing to focus on making every day work a little easier—whether that’s building reports, modeling data, or just getting answers faster. You’ll see progress across Copilot and newer AI-driven experiences, along with a set of practical updates to reporting that help reduce repetitive work.",
+      "fetched_at": "2026-08-16T23:25:04.114Z"
+    },
+    {
+      "id": "41a705ce032dabca",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "MAI-Code-1-Flash: early results from real developer workflows",
+      "url": "https://code.visualstudio.com/blogs/2026/07/29/mai-code-1-flash",
+      "published_at": "2026-07-29T00:00:00.000Z",
+      "summary": "MAI-Code-1-Flash is a lightweight coding model purpose built for the fast, iterative work developers do every day in GitHub. In this post, we share what the data is telling us about how it performs in real developer workflows.\nRead the full article",
+      "fetched_at": "2026-08-16T23:25:03.341Z"
+    },
+    {
+      "id": "c53fec5d48fc8b10",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "How Prompt Tuning Improved GPT-5.5 in VS Code",
+      "url": "https://code.visualstudio.com/blogs/2026/07/06/optimizing-vscode-coding-harness-model-providers",
+      "published_at": "2026-07-06T00:00:00.000Z",
+      "summary": "See how VS Code and OpenAI tested GPT-5.5 system prompt changes in a two-week experiment, cutting tool calls and tail-end token usage while speeding up edits.\nRead the full article",
+      "fetched_at": "2026-08-16T23:25:03.341Z"
+    },
+    {
+      "id": "73a2b6a3cf09b4d5",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "Iterating faster with TypeScript 7",
+      "url": "https://code.visualstudio.com/blogs/2026/06/26/iterating-faster-with-ts-7",
+      "published_at": "2026-06-26T00:00:00.000Z",
+      "summary": "How the VS Code and TypeScript teams collaborated to adopt TypeScript 7 and speed up VS Code development\nRead the full article",
+      "fetched_at": "2026-08-16T23:25:03.341Z"
+    },
+    {
+      "id": "0badf82f3d5386bc",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "What 50,000 Runs of a 5-Line Eval Taught Us",
+      "url": "https://code.visualstudio.com/blogs/2026/06/19/what-50000-runs-taught-us",
+      "published_at": "2026-06-19T00:00:00.000Z",
+      "summary": "How AI coding models calibrate effort, token cost, and tool use on even the simplest task, and what that means for model selection and cost.\nRead the full article",
+      "fetched_at": "2026-08-16T23:25:03.341Z"
+    },
+    {
+      "id": "2dd4ff8e6412d009",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "Use your own language model key in VS Code",
+      "url": "https://code.visualstudio.com/blogs/2026/06/18/byok-vscode",
+      "published_at": "2026-06-18T00:00:00.000Z",
+      "summary": "Learn how to use bring your own key (BYOK) in VS Code to add models from providers like Azure, Anthropic, Gemini, OpenAI, Huggingface, OpenRouter, or use a local model with Ollama, Foundry Local, and more.\nRead the full article",
+      "fetched_at": "2026-08-16T23:25:03.341Z"
+    },
+    {
+      "id": "092029380cc76d99",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "Improving token efficiency for GitHub Copilot in VS Code",
+      "url": "https://code.visualstudio.com/blogs/2026/06/17/improving-token-efficiency-in-github-copilot",
+      "published_at": "2026-06-17T00:00:00.000Z",
+      "summary": "Learn how we're improving token efficiency for GitHub Copilot to reduce costs and latency for VS Code users.\nRead the full article",
+      "fetched_at": "2026-08-16T23:25:03.341Z"
+    },
+    {
+      "id": "e4865dee295d5546",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "The Coding Harness Behind GitHub Copilot in VS Code",
+      "url": "https://code.visualstudio.com/blogs/2026/05/15/agent-harnesses-github-copilot-vscode",
+      "published_at": "2026-05-15T00:00:00.000Z",
+      "summary": "Learn why the coding harness around GitHub Copilot in VS Code matters as models, tools, agents, and providers evolve.\nRead the full article",
+      "fetched_at": "2026-08-16T23:25:03.341Z"
+    },
+    {
+      "id": "0e850ae5c0cccb15",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "How VS Code Builds with AI",
+      "url": "https://code.visualstudio.com/blogs/2026/03/13/how-VS-Code-Builds-with-AI",
+      "published_at": "2026-03-13T00:00:00.000Z",
+      "summary": "Learn how VS Code uses AI across its own development workflow with GitHub Copilot agent mode, automated testing, and AI-powered code review.\nRead the full article",
+      "fetched_at": "2026-08-16T23:25:03.341Z"
+    },
+    {
+      "id": "d30d1b0fe3636ede",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "Making agents practical for real-world development",
+      "url": "https://code.visualstudio.com/blogs/2026/03/05/making-agents-practical-for-real-world-development",
+      "published_at": "2026-03-05T00:00:00.000Z",
+      "summary": "Explore agent orchestration, extensibility, and continuity in VS Code 1.110: lifecycle hooks, agent skills, session memory, and integrated browser tools.\nRead the full article",
+      "fetched_at": "2026-08-16T23:25:03.341Z"
+    },
+    {
+      "id": "94971b434ca4c8a9",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "Building Long-Distance Next Edit Suggestions",
+      "url": "https://code.visualstudio.com/blogs/2026/02/26/long-distance-nes",
+      "published_at": "2026-02-26T00:00:00.000Z",
+      "summary": "Learn how we extended next edit suggestions to work across your entire file, reducing friction and improving productivity in GitHub Copilot.\nRead the full article",
+      "fetched_at": "2026-08-16T23:25:03.341Z"
+    },
+    {
+      "id": "7984e37741c8865e",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "Your Home for Multi-Agent Development",
+      "url": "https://code.visualstudio.com/blogs/2026/02/05/multi-agent-development",
+      "published_at": "2026-02-05T00:00:00.000Z",
+      "summary": "VS Code has become the unified interface for all your coding agents. Manage local, background, and cloud agents in one place, use Claude and Codex agents alongside Copilot, and benefit from open standards like MCP and Agent Skills.\nRead the full article",
+      "fetched_at": "2026-08-16T23:25:03.341Z"
+    },
+    {
+      "id": "45ffe1ce89885428",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "Giving Agents a Visual Voice: MCP Apps Support in VS Code",
+      "url": "https://code.visualstudio.com/blogs/2026/01/26/mcp-apps-support",
+      "published_at": "2026-01-26T00:00:00.000Z",
+      "summary": "VS Code now supports MCP Apps, enabling AI agents to display interactive UIs for richer developer workflows.\nRead the full article",
+      "fetched_at": "2026-08-16T23:25:03.341Z"
+    },
+    {
+      "id": "b7ee04c92c6213bb",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "Building docfind: Fast Client-Side Search with Rust and WebAssembly",
+      "url": "https://code.visualstudio.com/blogs/2026/01/15/docfind",
+      "published_at": "2026-01-15T00:00:00.000Z",
+      "summary": "How we built docfind, a high-performance client-side search engine using Rust and WebAssembly, and how GitHub Copilot accelerated development.\nRead the full article",
+      "fetched_at": "2026-08-16T23:25:03.341Z"
+    },
+    {
+      "id": "77eb2a33c46983c3",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "Introducing the VS Code Insiders Podcast",
+      "url": "https://code.visualstudio.com/blogs/2025/12/03/introducing-vs-code-insiders-podcast",
+      "published_at": "2025-12-03T00:00:00.000Z",
+      "summary": "The VS Code Insiders Podcast is your insider's guide to the features, decisions, and people shaping the future of Visual Studio Code.\nRead the full article",
+      "fetched_at": "2026-08-16T23:25:03.341Z"
+    },
+    {
+      "id": "57011fa557caf1c6",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "Introducing the Visual Studio Code Private Marketplace: Your Team's Secure, Curated Extension Hub 🎉",
+      "url": "https://code.visualstudio.com/blogs/2025/11/18/PrivateMarketplace",
+      "published_at": "2025-11-18T00:00:00.000Z",
+      "summary": "Private Marketplace for VS Code extensions now generally available.\nRead the full article",
+      "fetched_at": "2026-08-16T23:25:03.341Z"
+    },
+    {
+      "id": "3493e31daa3ce4ec",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "Open Source AI Editor: Second Milestone",
+      "url": "https://code.visualstudio.com/blogs/2025/11/04/openSourceAIEditorSecondMilestone",
+      "published_at": "2025-11-06T00:00:00.000Z",
+      "summary": "Ghost text suggestions are now open source as part of the Copilot Chat extension - the second milestone in making VS Code an open source AI editor.\nRead the full article",
+      "fetched_at": "2026-08-16T23:25:03.341Z"
+    },
+    {
+      "id": "f57c0e162da4f835",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "A Unified Experience for all Coding Agents",
+      "url": "https://code.visualstudio.com/blogs/2025/11/03/unified-agent-experience",
+      "published_at": "2025-11-05T00:00:00.000Z",
+      "summary": "Agents took over VS Code in 2025. We released agent mode for VS Code, integration for the Copilot coding agent, and the new GitHub Copilot CLI. But Copilot is not the only agent game in town. There are now more coding agents than ever, including options from OpenAI and Anthropic.\nRead the full article",
+      "fetched_at": "2026-08-16T23:25:03.341Z"
+    },
+    {
+      "id": "3a844bddcbd8c4d7",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "Expanding Model Choice in VS Code with Bring Your Own Key",
+      "url": "https://code.visualstudio.com/blogs/2025/10/22/bring-your-own-key",
+      "published_at": "2025-10-22T00:00:00.000Z",
+      "summary": "Learn how the new Language Model Chat Provider API in VS Code is enabling more model choice and extensibility for chat experiences via the Bring Your Own Key experience.\nRead the full article",
+      "fetched_at": "2026-08-16T23:25:03.341Z"
+    },
+    {
+      "id": "8669db0eb8ec029f",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "Introducing auto model selection (preview)",
+      "url": "https://code.visualstudio.com/blogs/2025/09/15/autoModelSelection",
+      "published_at": "2025-09-15T00:00:00.000Z",
+      "summary": "Use auto model selection in VS Code to get faster responses, reduced rate limiting, and a 10% discount on premium requests for paid users.\nRead the full article",
+      "fetched_at": "2026-08-16T23:25:03.341Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "fabric-blog": {
+      "new_count": 20,
+      "removed_count": 0,
+      "new_articles": [
+        {
+          "id": "d9d0c0eda6851b9b",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "TMDL View on the web: Edit semantic models as code in your browser (Preview)",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/TMDL-View-on-the-web-Edit-semantic-models-as-code-in-your/ba-p/5332653",
+          "published_at": "2026-08-10T21:00:00.000Z",
+          "summary": "TMDL View on the Web is a feature in Power BI that enables developers to view and edit semantic models as code directly in the browser using TMDL. It expands the Power BI web modelling experience by introducing a rich code editor for working with TMDL scripts—giving pro developers full transparency into the semantic model code and enabling more efficient workflows through code editing.",
+          "fetched_at": "2026-08-16T23:25:04.114Z"
+        },
+        {
+          "id": "94014206d0d467e0",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Deep dive into conditional formatting for lines and legends",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Deep-dive-into-conditional-formatting-for-lines-and-legends/ba-p/5331078",
+          "published_at": "2026-08-04T21:00:00.000Z",
+          "summary": "Bring your Power BI reports to life with dynamic conditional formatting for lines and legends that stays consistent and updates automatically as your data changes.",
+          "fetched_at": "2026-08-16T23:25:04.114Z"
+        },
+        {
+          "id": "33ce38d97f1bc4be",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Power BI July 2026 Feature Summary",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Power-BI-July-2026-Feature-Summary/ba-p/5303533",
+          "published_at": "2026-07-22T15:48:26.000Z",
+          "summary": "Welcome to the July 2026 Power BI update!This month, we're introducing new capabilities across reporting, modeling, mobile, and embedded analytics. Highlights include expanded modern visual defaults, conditional formatting improvements for line charts and legends, new org app capabilities and APIs, Model Options in the Power BI Service, and TMDL View on the web.Let's take a look at what's new this month. \n\nDownload Power BI Desktop Events and AnnouncementsYour Road to the Power BI DataViz World ChampionshipsRound Two of the Power BI DataViz World Championships is now open, with Round Three still ahead. Plus, one wildcard finalist will be selected from standout submissions across all stages of the championship.Is this your moment?The only way to find out is to enter. Every submission is a chance to learn something new, connect with the community, and showcase your creativity. You might surprise yourself along the way and earn a place in the finals. Join now.Data Days Goes Through August 7thLooking for your next Power BI breakthrough? Data Days brings together the best of data, AI, and analytics in free live sessions. Learn new skills, get inspired, and connect with the community. Learn more.Will we see you in Barcelona?The European Microsoft Fabric and SQL Community Conference take place September 28 to October 1 in Barcelona, Spain, bringing together Microsoft experts and community leaders for exclusive content, live demos, and key announcements, along with more than 130 sessions spanning Fabric, Azure AI, Databases, Power BI, and Microsoft Purview. And of course, the live Dataviz World Championships finale!The most recent event in Atlanta sold out. Don’t miss out and register for the Barcelona event with code FABCMTY200 to save €200.GeneralDeprecation of Old File Picker experience in Power BI DesktopIn April we deprecated the old file picker experience in Power BI Desktop. Starting in October, users still utilizing versions of Power BI desktop from March 2026 or earlier will no longer be able to save and share Power BI files to One Drive and SharePoint. Please ensure you update Power BI desktop to keep using this functionality.Note: No action is required from users as part of this deprecation; this is simply an informational announcement.ReportingUpdate your report defaults and use color palettes with the modern visual defaults (Preview)We've expanded the Modern Visual Defaults preview with a new Customize current theme experience directly in the Format pane. You can now adjust report-wide defaults that apply to all visuals on every page—without manually styling each one. Choose from color palettes to change your report's colors while preserving other customizations or use the expanded visual-level options to style or toggle elements like background, border, header icons, tooltips and shadow on or off across your entire report. You can also fine-tune border thickness, corner radius, and default padding. Every new visual you add automatically inherits your styling, so your report stays consistent as you build.Beyond visuals, you can update page size, background color, and wallpaper across all pages at once, and apply filter pane formatting to current and new pages. These customizations create a custom theme layered on top of your base theme. Styling applied to individual pages or visuals takes precedence, and you can reset any setting to re-enforce the theme defaults. When you're finished, export your custom theme to use in other reports or add it to your organizational themes so others can create uniformly styled reports.To get started, enable the Modern visual defaults and customize theme improvements preview in Options, then when nothing is selected on the page, choose the Customize current theme option in the Format pane. Visit our documentation to learn more about visual defaults in Power BI reports.Conditional formatting for line charts and legends (Generally Available)One of the highly requested features from the Power BI community is here: conditional formatting now extends to line charts and visuals with legends. This update applies to bar charts, column charts, pie charts, donut charts, and line charts—when these visuals have a legend, you can conditionally format their colors.For line charts, format line colors using a gradient based on the total value of each line, or by the category it represents. For example, when overlaying multiple years by month, apply a gradient that displays the most recent year in blue while older years fade to lighter shades of grey. Markers and series labels automatically inherit the conditional formatting until you choose to color them differently.For visuals with category legends, you can ensure consistent colors across your entire report. If multiple visuals use Segment as their legend, color each segment using a single DAX measure. Every visual displays the same color for the same category. When you need to change a segment's color, update the measure once and all visuals reflect the new color instantly.Add data-driven colors to your reports today! Learn more about how to use conditional formatting in other places at Conditional formatting in Power BI visuals.Report page tab navigation improvements (Generally Available)Managing reports with many pages is now easier. Previously, when you dragged a page tab to reorder it, you couldn't move it past the visible tabs, making it difficult to move a page from the end of your report to the beginning. Now, when you drag a page tab toward the edge of the tab bar, the tabs continue to scroll until you reach the position where you want to place it. The arrow buttons that page through report tabs are also more precise, ensuring you see each report page tab as you navigate. These improvements make it faster to organize and navigate reports with dozens of pages.Learn more about working with report pages in Report View in Power BI Desktop.Simplified title spacing for visualsWe've streamlined how spacing works in the title area of your visuals. The spacing properties now use a consistent \"space above\" approach—Space above subtitle, Space above divider, and Space above plot area—instead of the previous \"space below\" settings. This makes it easier to understand and control the gaps between title elements, and ensures visuals look consistent even when they have different combinations of subtitle and divider.Your existing reports and themes automatically adjust to the new settings without any change to their appearance. If you've configured title spacing in a custom theme, we recommend updating it to use the new \"space above\" properties for clarity and consistency going forward. Learn more about customizing visualization titles.Visuals calculations LOOKUP function now supports INFERRED mode for associated columnsThe LOOKUP function in visual calculations now accepts an optional AssociatedColumnsBehavior parameter with two values: EXPLICIT (default) and INFERRED. When you use INFERRED, the engine automatically identifies which axis columns are functionally determined by the coordinates you supply and fills them in before evaluating the lookup. This means a lookup that specifies Year, Quarter, and Month can return a value across all rows in the matrix, rather than only on the row where the current context exactly matches.When the parameter is omitted, LOOKUP behaves exactly as it does today—existing expressions continue to work without changes. When you explicitly supply a value for a column that would have been inferred, LOOKUP validates your value against the inferred value and returns BLANK if they conflict, providing consistent error handling across both modes.Org apps with audiences (Generally Available)With support for audiences, app creators can deliver different content experiences to different groups of users within the same app, making it easier to personalize content while managing a single app experience.Learn more in these blog posts, Org apps with audiences for Power BI and Fabric (Generally Available) or learn more about how org apps and audiences work.Bookmarks support for reports in org appsUsers can now access bookmarks when viewing interactive reports in org apps. This includes both report bookmarks created by report authors and personal bookmarks users create for themselves, making it easy to return to saved report views with the filters, selections, and visual state they care about most.To learn more about bookmarks in the Power BI service, refer to the documentation. Storytelling (PowerPoint embed) support for reports and visuals in org appsReports in org apps now support Storytelling in PowerPoint, allowing users to add live report pages and visuals from org app content into PowerPoint presentations. This extends the existing Storytelling experience to reports distributed through org apps, making it easier to present and share curated content across your organization.Learn more about how you can enhance your data storytelling in PowerPoint with live, interactive Power BI data.CRUD APIs (REST) for org apps and audiencesDevelopers and administrators can now programmatically manage org apps and audiences using Microsoft Fabric REST APIs. New APIs support create, read, update, delete, and list operations for both org app items and audience items, enabling automation, deployment, and management scenarios at scale.Learn more about the org app item definition and org app audience item definition.CRUD APIs (REST) for paginated reportsPaginated reports can now be managed through Microsoft Fabric REST APIs. New support for create, read, update, delete, and list operations enables developers and administrators to automate report lifecycle management, deployment workflows, and administrative processes.Learn more about the paginated report APIs and the paginated report definition.ModelingMeasure descriptions in line with triple-slash (///) commentsGood descriptions make a semantic model self-documenting. Until now, adding them was a two-step process: you authored your measures in DAX query view, then switched over to Model Explorer just to type the description in.Yet with the latest Desktop release, you can now add measure descriptions right where you write your measures, using the same triple-slash (///) syntax that TMDL already supports for both measure and function descriptions. Add one or more /// comment lines directly above your MEASURE definition, select “Update model with changes”, and the description is written straight into the model along with the measure definition.DEFINE    /// Year-over-year sales growth, as a percentage.    /// Returns BLANK when there is no prior-year value.    MEASURE Sales[YoY Growth %] = ...Once it’s saved, the description travels with the measure: hover over the measure in DAX query view, in Model Explorer, or in the Data pane, and the description shows up in the tooltip next to the measure name, and it carries through to the quick queries DAX query view generates. Specifically, when you right-click a measure and choose Quick queries, and then select Define and evaluate (or any other Define option), Power BI generates a DEFINE MEASURE statement in DAX Query View that includes the description as /// comments above the measure definition, as in the following screenshot.It’s a small addition with a nice payoff — descriptions become part of the authoring flow, consistent across measures and UDFs. And it’s non-breaking: if you already use /// inside a measure body, nothing changes there. This is specifically about the comment lines above the MEASURE definition.Try it out in the July release of Power BI Desktop. For more details about how to work with measures in DAX query view, refer to Work with DAX query view in Power BI documentation.Model Options now available in Power BI ServiceWe’re continuing to bring more semantic modeling capabilities to the web! With this update, the Model options dialog will now be available directly in web modeling, giving you greater control over key modeling-level settings, without needing to switch back to Power BI Desktop.The new Options dialog enables you to configure important behaviors and metadata that are defined at the model level (current file) in a centralized experience.The new Model Options dialog in web modeling includes the following settings:Type detection: enable/disable automatic detection of column types and headers for unstructured sources.Relationships: configure auto-detection behavior for relationships in the model.Time intelligence: enable/disable automatic creation of hidden date tables.Parallel loading of tables: set the concurrency mode used when loading tables.Locale for import: set the regional settings used to interpret numbers, dates and time in imported text.DirectQuery connections to this semantic model: Toggle whether other semantic models can connect to this semantic model using DirectQuery. When enabled, this model cannot be used as a DirectQuery source.(Direct Query only) Maximum connections per data source: limit how many concurrent DirectQuery connections can be opened to a single data source.For more details, refer to the Model Options in Power BI Service documentation.New: The semantic model settings pane becomes the default (Preview)Starting in August, when you open the settings for a semantic model in the Power BI Service, they open in the new settings pane instead of the full settings page. This change updates the default experience: the settings pane opens beside your content, so you can update refresh schedules, credentials, and other options without leaving your workspace or losing your current work context. Everything you manage on the settings page today is available in the pane, so the settings are fully configurable.If you'd rather keep using the legacy settings page, you can switch back at any time from within the pane. The settings pane first arrived in preview in May. Refer to the original semantic model settings pane announcement to learn what it offers and to review how semantic model settings work, refer to Edit Semantic Models In The Power BI Service.TMDL View on the WebNow, developers can script, modify, and apply changes to model objects directly in a code editor using Tabular Model Definition Language (TMDL), without switching to Desktop or downloading model files.This experience provides immediate, code‑level visibility into all semantic model metadata (tables, measures, relationships, and more), enabling bulk edits, automation of repetitive tasks, and the reuse of definitions to improve consistency and productivity.For more details about TMDL view and the full list of capabilities in this release, refer to the documentation: Use Tabular Model Definition Language (TMDL) view in Power BI Desktop.MobileOrg app audiences are now in mobile appsOrg app audiences in the Power BI mobile app extend a tailored org app experience from Power BI Service to users on iOS and Android. With this update, mobile and tablet users can open an org app and see and navigate content based on their assigned audience, so they can quickly find the reports, dashboards, and Power BI content most relevant to their role while on the go.Audiences in org apps help organizations deliver the right content to the right people from a single governed app experience. Instead of creating and managing multiple apps, app creators can define multiple audiences, control which items each audience sees, and tailor navigation for each group. On mobile, this results in a cleaner, more focused experience on smaller screens.Executives, managers, frontline workers, and department teams can each land in an app experience curated for their needs while still benefiting from centralized management of a single org app.This update helps close a key gap for customers adopting org apps. Org apps are the recommended way to package and distribute Power BI and Fabric content, and mobile access is essential for users who rely on Power BI away from their desks or in frontline scenarios. Organizations that use audiences to personalize org app content can now extend those tailored experiences to Power BI mobile apps.To learn more about org apps and audiences, refer to the org apps blog, Org apps with audiences for Power BI and Fabric.Third-party custom visuals Need more visual options for your report? Power BI reports support custom visuals built to fit your exact needs. Browse hundreds of options in AppSource, also available directly from Power BI Desktop, or develop your own and add it to a single report, share it across your organization, or publish it to AppSource for the community. You can even develop a custom visual tailored to your specific requirements with AI coding tools like GitHub Copilot Free.These are some updates from the community-based custom visuals you can use in your reports today. Drill Down Scatter PRO by ZoomChartsDrill Down Scatter PRO brings a new level of interactivity to scatter chart analysis in Power BI. Users can seamlessly drill down through multiple hierarchy levels, zoom into dense data clusters, and pan across large datasets to investigate trends, outliers, and relationships with precision.The visual helps consumers report from high-level summaries to detailed insights without leaving the report. Advanced features such as dynamic regression lines, area and threshold highlighting, area selection, and lasso selection make it easier to identify patterns, compare segments, and focus on the most relevant data points.With over 200 formatting options, authors can tailor the visual to match business requirements and branding while creating highly engaging analytical experiences.Drill Down Scatter PRO is ideal for customer segmentation, sales performance analysis, operational monitoring, and any scenario where users need to explore large volumes of data interactively. By combining powerful analytics with intuitive navigation, the visual enables faster discovery of actionable insights directly within Power BI. To get started, download it now.Neutral variance color in Zebra BI TablesYou're reviewing a Revenue vs Plan report. Anything within ±5% is considered fine, but Actuals are 3% below plan and everything flashes red. The whole dashboard looks alarming.Sound familiar? This is the fix.With Neutral variance color in Zebra BI Tables and Charts, you can now define a tolerance zone where small swings stay neutral. Variances beyond your set limits still turn red or green, so you instantly see where real action is needed.Where it helps:Revenue vs. Plan: \"Set ±5% tolerance. Q4 revenue at -3%? Stays neutral. Drops to -7%? Turns red.\"Spend vs. Budget: Could we keep the current detail level but add context: \"Department at 95% of budget? Neutral. Hits 115% or drops to 85%? Both turn red - overspend wastes money, underspend may signal delivery issues.\"On-time Delivery or HR KPIs: Could we pick one specific example - may be HR? Something like the below?Employee Turnover: \"Annual target 12% ±2%. At 13.5%? Neutral. At 15%? Red alert.\"Now your dashboards reflect reality: not every variance needs a red alert. Instead, you can:Focus on what matters: Stop investigating variances within acceptable limits.Align with business rules: Your CFO says ±5% is fine, your dashboard should too.Achieve faster executive reviews: Leadership can scan dashboards and immediately spot true outliers.Try it now in Zebra BI Tables and Charts.Heatmap by PowervizThe Powerviz Heatmap visualizes data density and value distribution using color gradients, transforming complex datasets into an intuitive matrix format. It is ideal for identifying patterns, correlations, and outliers, aiding data-driven decision-making.Key Features:Shapes: Choose from Default, Fixed, or Diverging built-in shapes.  Data Colors: Offers 30+ palettes, color-blind mode, and custom color options.  Data Labels: Select from different styles available or add custom labels with formatting.  Grid Lines: Improve data readability with visual grid lines.  Reference Lines: Highlight key points using X-axis and Y-axis lines.  Totals: Display row and column totals with advanced bar customization.Null Values: Customize null values (Blank /NA / Null/ ”0”) and their styling. Small Multiples: Split visuals into smaller ones using selected fields.  Conditional Formatting: Spot outliers with Value/ Percentage/ Ranking based rules.Ranking: Filter Top/Bottom N rows or columns.Other features included Axis Settings, Grid View, Sorting, Show Condition and more.ResourcesTry Heatmap visual for FREE from App SourceCheck out all features of the visualStep-by-step instructionsYouTube VideoLearn more about visualsFollow Powerviz on LinkedInGantt by ProfitbaseReviewing a project plan, stakeholders rely on color to quickly identify at-risk tasks, and owner-specific highlights. Version 3.1 of Gantt by Profitbase lets you apply conditional formatting rules independently to specific levels of your hierarchy.The new version also includes:Expand and collapse rows based on a condition, so the right level of detail opens automatically based on the rules added.A default scroll position at the start of the chart.Include the last day in duration calculationsFor more feature details, refer to the Gantt by Profitbase v3.1 release notes.Additional capabilities for Gantt by Profitbase:Unlimited hierarchyFormat hierarchy levels individuallySupports additional columnsSupports multiple milestones per taskApply expansion stylesZoom in/out using zoom buttonsApply highlighting curtains to important periodsSort, Filter and Search for any information across all columnsUse theming templates to set formattingRagged HierarchyDynamic event markers from dataResourcesVersion 3.1 Youtube videoGantt by Profitbase wikiPower BI Visuals YouTube PlaylistSupport ForumLearn more and download the visual on AppSourceUntil next monthThat’s a wrap for July!This month’s enhancements continue our focus on making Power BI easier to build, manage, and scale across your organization. From report-wide formatting improvements and expanded org app capabilities to new web modeling experiences and developer APIs, these updates help streamline both the authoring and consumption experience. We hope you enjoy trying out these new capabilities and, as always, we welcome your feedback as we continue to improve Power BI.Download Power BI Desktop",
+          "fetched_at": "2026-08-16T23:25:04.114Z"
+        },
+        {
+          "id": "f715c9e23f53ba77",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Bringing Power BI Insights to Every Copilot User",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Bringing-Power-BI-Insights-to-Every-Copilot-User/ba-p/5309360",
+          "published_at": "2026-07-21T19:00:00.000Z",
+          "summary": "The future of Power BI and Copilot starts by meeting users where they already work. We’re bringing trusted Power BI answers into Microsoft 365 Copilot first, so people can ask questions of governed business data in the flow of work — then carrying that richer, more conversational experience back into the Power BI service itself.",
+          "fetched_at": "2026-08-16T23:25:04.114Z"
+        },
+        {
+          "id": "f4818a4b1361007b",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Deep dive into modern visual defaults and formatting your entire report (Preview)",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Deep-dive-into-modern-visual-defaults-and-formatting-your-entire/ba-p/5303513",
+          "published_at": "2026-07-23T16:54:21.000Z",
+          "summary": "Power BI's modern visual defaults and new Customize theme experience enable report authors to centrally manage colors, typography, visual styling, page settings, and filter pane formatting across an entire report, creating consistent, professional reports faster while preserving visual-specific customizations.",
+          "fetched_at": "2026-08-16T23:25:04.114Z"
+        },
+        {
+          "id": "5d5483054da10a89",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Deep dive into Power BI reporting with the new date picker slicer option (Preview)",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Deep-dive-into-Power-BI-reporting-with-the-new-date-picker/ba-p/5295674",
+          "published_at": "2026-07-16T16:00:00.000Z",
+          "summary": "Power BI’s new date picker slicer helps report authors set dynamic default date ranges while giving viewers flexible, easy ways to explore dates, ranges, and rolling periods as data refreshes.",
+          "fetched_at": "2026-08-16T23:25:04.114Z"
+        },
+        {
+          "id": "5e7aa43bc923e188",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Deep dive into the Shape Map in Power BI (Generally Available)",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Deep-dive-into-the-Shape-Map-in-Power-BI-Generally-Available/ba-p/5255561",
+          "published_at": "2026-07-07T16:00:00.000Z",
+          "summary": "Discover how the Shape Map visual (Generally Available) in Power BI helps you bring custom geographic boundaries, flexible map formats, and data-driven color formatting into your reports.",
+          "fetched_at": "2026-08-16T23:25:04.114Z"
+        },
+        {
+          "id": "7694e5eb7bb01e68",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Deep dive into tooltip options in Power BI visuals (Generally Available)",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Deep-dive-into-tooltip-options-in-Power-BI-visuals-Generally/ba-p/5255518",
+          "published_at": "2026-07-06T17:00:00.000Z",
+          "summary": "Discover how Power BI’s tooltip (Generally Available) options help you tailor hover experiences—from curated field lists and sentence-style insights to fully custom report page tooltips.",
+          "fetched_at": "2026-08-16T23:25:04.114Z"
+        },
+        {
+          "id": "d4cdac2cba83e6a0",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Analytics and Business Intelligence Platforms",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Microsoft-named-a-Leader-in-the-2026-Gartner-Magic-Quadrant-for/ba-p/5262403",
+          "published_at": "2026-07-10T13:08:14.000Z",
+          "summary": "We’re proud to share that Microsoft has once again been named a Leader in the 2026 Gartner® Magic Quadrant™ for Analytics and Business Intelligence Platforms for the nineteenth consecutive year.",
+          "fetched_at": "2026-08-16T23:25:04.114Z"
+        },
+        {
+          "id": "15cf08ac9c539c16",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Deep dive into visual calculations: Adding calculations directly to your Power BI visuals (Generally Available)",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Deep-dive-into-visual-calculations-Adding-calculations-directly/ba-p/5255359",
+          "published_at": "2026-07-02T16:00:00.000Z",
+          "summary": "Visual calculations (Generally Available) in Power BI, making it easier to add DAX calculations directly to the visual where they’re used.",
+          "fetched_at": "2026-08-16T23:25:04.114Z"
+        },
+        {
+          "id": "f0befc22c60c12e8",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Power BI reports and Fabric Apps: Expanding how you build on your semantic model data",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Power-BI-reports-and-Fabric-Apps-Expanding-how-you-build-on-your/ba-p/5234706",
+          "published_at": "2026-07-01T21:00:00.000Z",
+          "summary": "Power BI reports continue to help analysts build secure, governed BI experiences on semantic models, while Fabric Apps expands what developers can create from the same trusted data.",
+          "fetched_at": "2026-08-16T23:25:04.114Z"
+        },
+        {
+          "id": "f48cc79e22f77a6c",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Power BI Desktop Bridge (Preview)",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Power-BI-Desktop-Bridge-Preview/ba-p/5227769",
+          "published_at": "2026-06-30T19:00:00.000Z",
+          "summary": "Power BI Desktop Bridge (Preview)Power BI Desktop Bridge introduces a new way of working, allowing external applications and agents to interact directly with Power BI Desktop!What is Power BI Desktop Bridge?The bridge is a lightweight local server that lets external applications interact directly with Power BI Desktop.Think of it as a direct, secure channel between your tools and Power BI Desktop. Your agents, scripts, and external applications can now:Check the current state of your report.Trigger key actions, like reloading files after edits.Capture screenshots to validate changes.Iterate and improve in real time, without manual handoffs.The following core capabilities are available through the bridge:Discover What's AvailableMethod: bridge.manifestCapabilities: Returns a complete list of all capabilities and their specifications.Think of this as a \"menu\" of what your version of Desktop can do. Always check this first to see what's available.Check Report StateMethod: application.state.get/v1Capabilities: Returns information about the currently open file and whether there are unsaved changes.In plain language: Know which file is open and if there are pending edits. Essential before running automation that might affect your work.Capture Report SnapshotsMethod: report.snapshot.capture/v1Capabilities: Captures a PNG screenshot of a specific report page at any resolution you want.In plain language: See exactly how your report looks right now. Perfect for validating changes visually or sharing proof of work.Reload files from DiskMethod: file.reload/v1Capabilities: Reloads the open PBIP/PBIR file from disk to pick up on-disk edits.In plain language: After making changes to report files, refresh Desktop to see them. You can control whether the semantic model is also reloaded.Why this is a big step for agents?Before the bridge, agents could be incredibly smart about generating code and automating repetitive tasks. But they hit a wall: they couldn't talk directly to Power BI Desktop. They couldn't reload files to see changes in real time. They couldn't capture screenshots to validate what they'd built. They were flying blind.Now, with the bridge, that changes completely, agents can:Read the current report state.Edit report files directly on disk.Reload to see changes instantly in Desktop.Validate with a live screenshot.Iterate immediately—observing, learning, and improving.Ready to see this in action? The Report Authoring Skill is a perfect example. It leverages the bridge to read state, make edits, reload instantly, validate visually with screenshots, and iterate continuously in one seamless loop. Now, reports that would take hours to build, debug, and refine manually can now be authored, validated, and polished by agents in minutes.But this is just the beginning. The bridge opens the door for you to build the custom solutions you need.How to get startedDesktop Bridge is enabled by default. To disable or enable it:Open Power BI Desktop.Go to File > Options and settings > Options.Open Preview features.Enable external tool access to Power BI Desktop through secure local APIs.Start using the Desktop BridgeThe easiest way to start is with the Power BI Desktop Bridge CLI. It lets you leverage the bridge in a simple, practical way, without building custom integrations first. Built on top of the bridge, it includes a set of intuitive commands ready to use.The reload command is a great example. If you are making external changes to your PBIR files, you can simply run:powerbi-desktop reloadThis command reloads your on-disk changes in Power BI Desktop through the bridge, so you can keep iterating without closing and reopening Desktop.The following are other useful commands at your fingertips:# See what the bridge can dopowerbi-desktop manifest# Check which Desktop instances are runningpowerbi-desktop status# Reload after making editspowerbi-desktop reload# Capture screenshots of every report pagepowerbi-desktop screenshot-all Ready to try it?The Desktop Bridge is here, and it's ready to transform how you work with Power BI Desktop. Stop waiting for manual steps. Start automating.Get started now: Power BI Desktop Bridge.",
+          "fetched_at": "2026-08-16T23:25:04.114Z"
+        },
+        {
+          "id": "0992bed899b1395e",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Microsoft Entra ID single sign-on for the Denodo connector in Power BI (Preview)",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Microsoft-Entra-ID-single-sign-on-for-the-Denodo-connector-in/ba-p/5193376",
+          "published_at": "2026-06-23T21:00:00.000Z",
+          "summary": "When you configure a Denodo data connection for Entra ID SSO, users querying a semantic model in DirectQuery mode are authenticated to Denodo with their own Microsoft Entra ID identity.",
+          "fetched_at": "2026-08-16T23:25:04.114Z"
+        },
+        {
+          "id": "000d25b5f79df03b",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Protect once, enforce everywhere: Protection policies for Power BI (Generally Available)",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Protect-once-enforce-everywhere-Protection-policies-for-Power-BI/ba-p/5223932",
+          "published_at": "2026-06-24T11:22:57.000Z",
+          "summary": "How to use sensitivity labels and Protection Policies to secure your Power BI estate — and why it matters more than ever in the age of AI.",
+          "fetched_at": "2026-08-16T23:25:04.114Z"
+        },
+        {
+          "id": "3654fc24a8d2c88b",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Microsoft Entra ID single sign-on for the Starburst connector in Power BI (Preview)",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Microsoft-Entra-ID-single-sign-on-for-the-Starburst-connector-in/ba-p/5193371",
+          "published_at": "2026-06-18T16:00:00.000Z",
+          "summary": "When enabling Microsoft Entra ID single sign-on (SSo) for Starburst (Preview) report viewers querying semantic models in DirectQuery mode authenticate to Starburst with their own Entra ID identity, to Starburst's access policies — including row-level and column-level security rules — are evaluated against the actual end user rather than a fixed connection account.",
+          "fetched_at": "2026-08-16T23:25:04.114Z"
+        },
+        {
+          "id": "0cc859650c5c7b9b",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Workspace outbound access protection for Power BI reports (Preview)",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Workspace-outbound-access-protection-for-Power-BI-reports/ba-p/5193354",
+          "published_at": "2026-06-17T21:00:00.000Z",
+          "summary": "Workspace outbound access protection (OAP) is a workspace-level control in Microsoft Fabric that lets you constrain where the data inside a workspace can flow. With this preview, OAP support now extends to Power BI reports. The good news for report authors and admins: there's nothing new to configure on the report itself. Protection comes from a single, well-defined rule that the workspace enforces automatically as soon as you turn OAP on.",
+          "fetched_at": "2026-08-16T23:25:04.114Z"
+        },
+        {
+          "id": "2b54be786be19003",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Org apps with audiences for Power BI and Fabric (Generally Available)",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Org-apps-with-audiences-for-Power-BI-and-Fabric-Generally/ba-p/5196326",
+          "published_at": "2026-06-16T19:00:00.000Z",
+          "summary": "Announcing general availability of org apps in Power BI and Fabric, including one of the most requested capabilities: audiences.",
+          "fetched_at": "2026-08-16T23:25:04.114Z"
+        },
+        {
+          "id": "983541f3cd29461b",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Simplified Oracle connectivity in Power BI (Preview)",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Simplified-Oracle-connectivity-in-Power-BI-Preview/ba-p/5193366",
+          "published_at": "2026-06-15T17:00:00.000Z",
+          "summary": "Connecting Power BI to Oracle has historically meant extra provider installations and data gateway deployment — even for cloud-hosted databases. Two new Preview capabilities change that. Power BI Desktop now includes a bundled Oracle Managed ODP.NET provider, and the Power BI service supports direct cloud connections without the need for a data gateway to Oracle data sources such as Oracle Autonomous Database.",
+          "fetched_at": "2026-08-16T23:25:04.114Z"
+        },
+        {
+          "id": "1f80bf4839f810a8",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Migrating from embedded ODBC drivers to ADBC in Power BI and Fabric",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Migrating-from-embedded-ODBC-drivers-to-ADBC-in-Power-BI-and/ba-p/5195167",
+          "published_at": "2026-06-18T22:10:45.000Z",
+          "summary": "If you use connectors like Databricks, Snowflake, or BigQuery in Power BI or Fabric, there’s an important change coming. Microsoft is moving from embedded ODBC drivers to ADBC, which affects how connections are established and managed. This post explains what’s changing, who’s impacted, and the steps you can take now to prepare.",
+          "fetched_at": "2026-08-16T23:25:04.114Z"
+        },
+        {
+          "id": "735c132de01e9b41",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Power BI June 2026 Feature Summary",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Power-BI-June-2026-Feature-Summary/ba-p/5193264",
+          "published_at": "2026-07-31T15:26:07.000Z",
+          "summary": "This month, we’re continuing to focus on making every day work a little easier—whether that’s building reports, modeling data, or just getting answers faster. You’ll see progress across Copilot and newer AI-driven experiences, along with a set of practical updates to reporting that help reduce repetitive work.",
+          "fetched_at": "2026-08-16T23:25:04.114Z"
+        }
+      ],
+      "removed_articles": []
+    },
+    "github-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "m365-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 19,
+      "removed_count": 0,
+      "new_articles": [
+        {
+          "id": "41a705ce032dabca",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "MAI-Code-1-Flash: early results from real developer workflows",
+          "url": "https://code.visualstudio.com/blogs/2026/07/29/mai-code-1-flash",
+          "published_at": "2026-07-29T00:00:00.000Z",
+          "summary": "MAI-Code-1-Flash is a lightweight coding model purpose built for the fast, iterative work developers do every day in GitHub. In this post, we share what the data is telling us about how it performs in real developer workflows.\nRead the full article",
+          "fetched_at": "2026-08-16T23:25:03.341Z"
+        },
+        {
+          "id": "c53fec5d48fc8b10",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "How Prompt Tuning Improved GPT-5.5 in VS Code",
+          "url": "https://code.visualstudio.com/blogs/2026/07/06/optimizing-vscode-coding-harness-model-providers",
+          "published_at": "2026-07-06T00:00:00.000Z",
+          "summary": "See how VS Code and OpenAI tested GPT-5.5 system prompt changes in a two-week experiment, cutting tool calls and tail-end token usage while speeding up edits.\nRead the full article",
+          "fetched_at": "2026-08-16T23:25:03.341Z"
+        },
+        {
+          "id": "73a2b6a3cf09b4d5",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Iterating faster with TypeScript 7",
+          "url": "https://code.visualstudio.com/blogs/2026/06/26/iterating-faster-with-ts-7",
+          "published_at": "2026-06-26T00:00:00.000Z",
+          "summary": "How the VS Code and TypeScript teams collaborated to adopt TypeScript 7 and speed up VS Code development\nRead the full article",
+          "fetched_at": "2026-08-16T23:25:03.341Z"
+        },
+        {
+          "id": "0badf82f3d5386bc",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "What 50,000 Runs of a 5-Line Eval Taught Us",
+          "url": "https://code.visualstudio.com/blogs/2026/06/19/what-50000-runs-taught-us",
+          "published_at": "2026-06-19T00:00:00.000Z",
+          "summary": "How AI coding models calibrate effort, token cost, and tool use on even the simplest task, and what that means for model selection and cost.\nRead the full article",
+          "fetched_at": "2026-08-16T23:25:03.341Z"
+        },
+        {
+          "id": "2dd4ff8e6412d009",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Use your own language model key in VS Code",
+          "url": "https://code.visualstudio.com/blogs/2026/06/18/byok-vscode",
+          "published_at": "2026-06-18T00:00:00.000Z",
+          "summary": "Learn how to use bring your own key (BYOK) in VS Code to add models from providers like Azure, Anthropic, Gemini, OpenAI, Huggingface, OpenRouter, or use a local model with Ollama, Foundry Local, and more.\nRead the full article",
+          "fetched_at": "2026-08-16T23:25:03.341Z"
+        },
+        {
+          "id": "092029380cc76d99",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Improving token efficiency for GitHub Copilot in VS Code",
+          "url": "https://code.visualstudio.com/blogs/2026/06/17/improving-token-efficiency-in-github-copilot",
+          "published_at": "2026-06-17T00:00:00.000Z",
+          "summary": "Learn how we're improving token efficiency for GitHub Copilot to reduce costs and latency for VS Code users.\nRead the full article",
+          "fetched_at": "2026-08-16T23:25:03.341Z"
+        },
+        {
+          "id": "e4865dee295d5546",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "The Coding Harness Behind GitHub Copilot in VS Code",
+          "url": "https://code.visualstudio.com/blogs/2026/05/15/agent-harnesses-github-copilot-vscode",
+          "published_at": "2026-05-15T00:00:00.000Z",
+          "summary": "Learn why the coding harness around GitHub Copilot in VS Code matters as models, tools, agents, and providers evolve.\nRead the full article",
+          "fetched_at": "2026-08-16T23:25:03.341Z"
+        },
+        {
+          "id": "0e850ae5c0cccb15",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "How VS Code Builds with AI",
+          "url": "https://code.visualstudio.com/blogs/2026/03/13/how-VS-Code-Builds-with-AI",
+          "published_at": "2026-03-13T00:00:00.000Z",
+          "summary": "Learn how VS Code uses AI across its own development workflow with GitHub Copilot agent mode, automated testing, and AI-powered code review.\nRead the full article",
+          "fetched_at": "2026-08-16T23:25:03.341Z"
+        },
+        {
+          "id": "d30d1b0fe3636ede",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Making agents practical for real-world development",
+          "url": "https://code.visualstudio.com/blogs/2026/03/05/making-agents-practical-for-real-world-development",
+          "published_at": "2026-03-05T00:00:00.000Z",
+          "summary": "Explore agent orchestration, extensibility, and continuity in VS Code 1.110: lifecycle hooks, agent skills, session memory, and integrated browser tools.\nRead the full article",
+          "fetched_at": "2026-08-16T23:25:03.341Z"
+        },
+        {
+          "id": "94971b434ca4c8a9",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Building Long-Distance Next Edit Suggestions",
+          "url": "https://code.visualstudio.com/blogs/2026/02/26/long-distance-nes",
+          "published_at": "2026-02-26T00:00:00.000Z",
+          "summary": "Learn how we extended next edit suggestions to work across your entire file, reducing friction and improving productivity in GitHub Copilot.\nRead the full article",
+          "fetched_at": "2026-08-16T23:25:03.341Z"
+        },
+        {
+          "id": "7984e37741c8865e",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Your Home for Multi-Agent Development",
+          "url": "https://code.visualstudio.com/blogs/2026/02/05/multi-agent-development",
+          "published_at": "2026-02-05T00:00:00.000Z",
+          "summary": "VS Code has become the unified interface for all your coding agents. Manage local, background, and cloud agents in one place, use Claude and Codex agents alongside Copilot, and benefit from open standards like MCP and Agent Skills.\nRead the full article",
+          "fetched_at": "2026-08-16T23:25:03.341Z"
+        },
+        {
+          "id": "45ffe1ce89885428",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Giving Agents a Visual Voice: MCP Apps Support in VS Code",
+          "url": "https://code.visualstudio.com/blogs/2026/01/26/mcp-apps-support",
+          "published_at": "2026-01-26T00:00:00.000Z",
+          "summary": "VS Code now supports MCP Apps, enabling AI agents to display interactive UIs for richer developer workflows.\nRead the full article",
+          "fetched_at": "2026-08-16T23:25:03.341Z"
+        },
+        {
+          "id": "b7ee04c92c6213bb",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Building docfind: Fast Client-Side Search with Rust and WebAssembly",
+          "url": "https://code.visualstudio.com/blogs/2026/01/15/docfind",
+          "published_at": "2026-01-15T00:00:00.000Z",
+          "summary": "How we built docfind, a high-performance client-side search engine using Rust and WebAssembly, and how GitHub Copilot accelerated development.\nRead the full article",
+          "fetched_at": "2026-08-16T23:25:03.341Z"
+        },
+        {
+          "id": "77eb2a33c46983c3",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Introducing the VS Code Insiders Podcast",
+          "url": "https://code.visualstudio.com/blogs/2025/12/03/introducing-vs-code-insiders-podcast",
+          "published_at": "2025-12-03T00:00:00.000Z",
+          "summary": "The VS Code Insiders Podcast is your insider's guide to the features, decisions, and people shaping the future of Visual Studio Code.\nRead the full article",
+          "fetched_at": "2026-08-16T23:25:03.341Z"
+        },
+        {
+          "id": "57011fa557caf1c6",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Introducing the Visual Studio Code Private Marketplace: Your Team's Secure, Curated Extension Hub 🎉",
+          "url": "https://code.visualstudio.com/blogs/2025/11/18/PrivateMarketplace",
+          "published_at": "2025-11-18T00:00:00.000Z",
+          "summary": "Private Marketplace for VS Code extensions now generally available.\nRead the full article",
+          "fetched_at": "2026-08-16T23:25:03.341Z"
+        },
+        {
+          "id": "3493e31daa3ce4ec",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Open Source AI Editor: Second Milestone",
+          "url": "https://code.visualstudio.com/blogs/2025/11/04/openSourceAIEditorSecondMilestone",
+          "published_at": "2025-11-06T00:00:00.000Z",
+          "summary": "Ghost text suggestions are now open source as part of the Copilot Chat extension - the second milestone in making VS Code an open source AI editor.\nRead the full article",
+          "fetched_at": "2026-08-16T23:25:03.341Z"
+        },
+        {
+          "id": "f57c0e162da4f835",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "A Unified Experience for all Coding Agents",
+          "url": "https://code.visualstudio.com/blogs/2025/11/03/unified-agent-experience",
+          "published_at": "2025-11-05T00:00:00.000Z",
+          "summary": "Agents took over VS Code in 2025. We released agent mode for VS Code, integration for the Copilot coding agent, and the new GitHub Copilot CLI. But Copilot is not the only agent game in town. There are now more coding agents than ever, including options from OpenAI and Anthropic.\nRead the full article",
+          "fetched_at": "2026-08-16T23:25:03.341Z"
+        },
+        {
+          "id": "3a844bddcbd8c4d7",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Expanding Model Choice in VS Code with Bring Your Own Key",
+          "url": "https://code.visualstudio.com/blogs/2025/10/22/bring-your-own-key",
+          "published_at": "2025-10-22T00:00:00.000Z",
+          "summary": "Learn how the new Language Model Chat Provider API in VS Code is enabling more model choice and extensibility for chat experiences via the Bring Your Own Key experience.\nRead the full article",
+          "fetched_at": "2026-08-16T23:25:03.341Z"
+        },
+        {
+          "id": "8669db0eb8ec029f",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Introducing auto model selection (preview)",
+          "url": "https://code.visualstudio.com/blogs/2025/09/15/autoModelSelection",
+          "published_at": "2025-09-15T00:00:00.000Z",
+          "summary": "Use auto model selection in VS Code to get faster responses, reduced rate limiting, and a 10% discount on premium requests for paid users.\nRead the full article",
+          "fetched_at": "2026-08-16T23:25:03.341Z"
+        }
+      ],
+      "removed_articles": []
+    }
+  },
+  "diff_result": true
+}
