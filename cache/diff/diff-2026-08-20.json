@@ -1,0 +1,91 @@
+{
+  "date": "2026-08-20",
+  "compared_with": "2026-08-19",
+  "source_count": 6,
+  "new_count": 1,
+  "removed_count": 2,
+  "new_articles": [
+    {
+      "id": "36e7375455b74f9e",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "GitHub Copilot app for Beginners: Managing your work",
+      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-managing-your-work/",
+      "published_at": "2026-08-19T17:50:23.000Z",
+      "summary": "If you’re juggling multiple Copilot sessions, use the My work pane to track what's in flight, what's done, and what's next.\nThe post GitHub Copilot app for Beginners: Managing your work appeared first on The GitHub Blog.",
+      "fetched_at": "2026-08-19T23:27:16.701Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "fabric-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "github-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "36e7375455b74f9e",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "GitHub Copilot app for Beginners: Managing your work",
+          "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-managing-your-work/",
+          "published_at": "2026-08-19T17:50:23.000Z",
+          "summary": "If you’re juggling multiple Copilot sessions, use the My work pane to track what's in flight, what's done, and what's next.\nThe post GitHub Copilot app for Beginners: Managing your work appeared first on The GitHub Blog.",
+          "fetched_at": "2026-08-19T23:27:16.701Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "851b216e37df4ab0",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "A guide to slash commands in the GitHub Copilot app",
+          "url": "https://github.blog/ai-and-ml/github-copilot/a-guide-to-slash-commands-in-the-github-copilot-app/",
+          "published_at": "2026-08-06T19:49:34.000Z",
+          "summary": "Go beyond chat in the GitHub Copilot app with these slash commands. They'll help you plan, collaborate, automate, and customize your dev workflow.\nThe post A guide to slash commands in the GitHub Copilot app appeared first on The GitHub Blog.",
+          "fetched_at": "2026-08-18T23:26:59.926Z"
+        }
+      ]
+    },
+    "m365-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 1,
+      "new_articles": [],
+      "removed_articles": [
+        {
+          "id": "8669db0eb8ec029f",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Introducing auto model selection (preview)",
+          "url": "https://code.visualstudio.com/blogs/2025/09/15/autoModelSelection",
+          "published_at": "2025-09-15T00:00:00.000Z",
+          "summary": "Use auto model selection in VS Code to get faster responses, reduced rate limiting, and a 10% discount on premium requests for paid users.\nRead the full article",
+          "fetched_at": "2026-08-18T23:26:59.958Z"
+        }
+      ]
+    }
+  },
+  "diff_result": true
+}
