@@ -1,0 +1,142 @@
+{
+  "date": "2026-08-25",
+  "compared_with": "2026-08-24",
+  "source_count": 6,
+  "new_count": 3,
+  "removed_count": 3,
+  "new_articles": [
+    {
+      "id": "9a1fda24be1c4c12",
+      "source_id": "fabric-blog",
+      "source_name": "Microsoft Fabric Blog",
+      "title": "Upgrade Power BI Dataflows Gen1 to Fabric Dataflows Gen2 with the Upgrade Wizard (Preview)",
+      "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Upgrade-Power-BI-Dataflows-Gen1-to-Fabric-Dataflows-Gen2-with/ba-p/5360422",
+      "published_at": "2026-08-24T15:00:00.000Z",
+      "summary": "Upgrading Power BI Dataflows Gen1 is now easier with the Dataflows Upgrade Wizard. Now in preview for eligible workspaces assigned to Fabric capacity, the wizard provides a guided experience to upgrade Power BI Dataflows Gen1 items to Fabric Dataflows Gen2 (CI/CD). The wizard preserves key properties of the existing dataflow and assesses each item before you begin, helping you understand the upgrade scope and expected follow-up actions. \r\nModernize at your own pace \r\nPower BI Dataflows Gen1 remains supported in a legacy state, while new feature investment focuses on Fabric Dataflows Gen2 (CI/CD), as shared in a previous post about the future of Dataflows. The Upgrade Wizard gives dataflow owners a guided self-service path to start that modernization without rebuilding their Power Query logic. \r\nYou don't need to upgrade your full estate at once. Start with a representative set of dataflows, validate the results, and expand at a pace that works for your organization. For detailed migration planning and inventory guidance, review Migrate from Dataflow Gen1 to Dataflow Gen2. \r\nBuild on the benefits of Dataflows Gen2 \r\nFabric Dataflows Gen2 (CI/CD) builds on the Power Query authoring experience already used in Power BI Dataflows Gen1, while adding capabilities designed for development, operations, and integration across Fabric. \r\nDataflows Gen2 supports a broad set of data destinations: Azure SQL Database, Azure Data Explorer (Kusto), Azure Data Lake Storage Gen2, Fabric Lakehouse tables, Fabric Lakehouse files, Fabric Warehouse, Fabric KQL database, Fabric SQL database, SharePoint Files, Snowflake database, and PostgreSQL database. You can begin with the upgraded dataflow and add destinations when you are ready. \r\nAs a native Fabric item, Dataflows Gen2 (CI/CD) supports Git integration and Fabric deployment workflows. Teams can bring dataflow definitions into source control, collaborate through established development practices, and move changes across development, test, and production environments. Refresh history and Fabric monitoring experiences provide operational details that help teams review runs and investigate failures. \r\nCapabilities such as Fast Copy, Modern Evaluator, and Partitioned Compute improve performance and scale for different workload patterns. Microsoft's published Dataflow Gen2 cost and performance benchmarks show refresh times improving by 1.6 to 21 times with Dataflows Gen2. Results vary by data, capacity, connector, gateway usage, and query design, so validate your representative workloads. \r\nDataflows Gen2 (CI/CD) also benefits from tiered Standard Compute pricing, with a lower rate after the first 10 minutes of each mashup-engine query. Separate meters apply to high-scale compute and Fast Copy data movement. \r\nCopilot in Data Factory enhances Dataflow Gen2 authoring with natural language. It can generate transformation steps, create queries, and summarize a query and its applied steps. These capabilities help authors understand and review complex query logic, improving productivity during transformation design. \r\nThe bottom line is simple: upgrade now, then modernize when it adds value. \r\nUpgrade one or more dataflows from the same workspace \r\nReady to begin? Open the menu next to a Power BI Dataflows Gen1 item and select Upgrade to Dataflow Gen2 (Preview). The Dataflows Upgrade Wizard opens with the selected item and lets you add other Dataflows Gen1 items from the same workspace. \r\n\r\nFigure: Start the Dataflows Upgrade Wizard from a Dataflows Gen1 item.\r\n\r\n \r\nThe upgraded item preserves its ID, schedule, queries, and connections. Keeping the same item ID helps downstream semantic models and reports continue using the upgraded dataflow without source remapping. The dataflow name also stays the same unless the assessment identifies a required naming change.\r\nAfter the upgrade is completed, the Fabric Dataflows Gen2 (CI/CD) item replaces the original Power BI Dataflows Gen1 item, and the upgrade can't be reversed. If you need to keep the original Power BI Dataflows Gen1 item, use Save As to create a separate Fabric Dataflows Gen2 (CI/CD) item instead.\r\nKnow what needs attention before the upgrade\r\nBefore making any changes, the Upgrade Wizard assesses the Power BI Dataflows Gen1 items in your workspace, giving you a clear view of which dataflows are ready and where you may need to act before or after upgrading:\r\n• Ready to migrate: The wizard didn't identify a manual step needed before or after the upgrade. Review the known limitations because the assessment doesn't detect every limitation.\r\n• Needs Attention: You can proceed, but review the reasons and complete the recommended actions.\r\n• Upgrade unavailable: You don't own the dataflow. Ask the owner to upgrade it or use Take over first.\r\n\r\nFigure: The assessment shows which dataflows are ready and which need attention.\r\n\r\nA Needs Attention status can currently identify incremental refresh, Bring Your Own Lake storage, linked dataflows, possible DirectQuery consumers, or naming changes. Hover over the status to see the reason, then review the Upgrade Wizard documentation for follow-up actions and more information. The scenarios represented by each assessment status may expand as we further enhance the assessment capabilities.\r\nAfter the upgrade\r\nOnce the wizard finishes, complete these follow-up steps to validate your upgraded dataflows and reconnect any dependencies.\r\n• Refresh each upgraded dataflow to load its data.\r\n• Open and save each downstream dataflow to rebind it.\r\n• Complete any remaining recommended Needs Attention actions.\r\n• Update consumers (for example, semantic models or linked dataflows) using the legacy Power BI Dataflows connector to the modern Power Platform Dataflows connector. The assessment doesn't detect legacy connector use.\r\nLearn more\r\nReady to explore the Upgrade Wizard? Review the prerequisites, assessment guidance, and complete workflow in Upgrade Dataflow Gen1 to Dataflow Gen2 (CI/CD) using the Upgrade Wizard. We look forward to hearing about your experience during preview.",
+      "fetched_at": "2026-08-24T23:26:30.951Z"
+    },
+    {
+      "id": "02a6cd0df64c9ae3",
+      "source_id": "fabric-blog",
+      "source_name": "Microsoft Fabric Blog",
+      "title": "Direct Lake Calculated Columns (Preview)",
+      "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Direct-Lake-Calculated-Columns-Preview/ba-p/5357159",
+      "published_at": "2026-08-24T16:14:20.000Z",
+      "summary": "Calculated columns are now available in preview for Direct Lake on OneLake semantic models. This has been one of the most requested capabilities since Direct Lake launched and closes a long-standing gap with Import and DirectQuery storage modes.You can define calculated columns directly in your semantic model using DAX in web modeling and Power BI Desktop, without changing the table storage mode or modifying data upstream.The problem this solvesDirect Lake combines Import-like performance with near real-time data freshness by querying Delta tables in OneLake and loading data into memory as needed.But until now, if your model needed a derived column, you had only two options: push the logic upstream into the data source or move the table to a different storage mode. Calculated columns close that gap – you can now define columns directly in the semantic model using DAX without leaving Direct Lake.What you can buildCommon use cases include:Derived values, such as an age calculated from a birth date.Concatenating fields, such as city and region into a single field for slicers.Formatted dates like Month-Year for grouping in visuals.Multilingual reports using data translations with USERCULTURE().Personalized content based on functions like USERPRINCIPALNAME().Examples1. Age = DATEDIFF( DimCustomer[BirthDate], TODAY(), YEAR ) 2. Customer Location = DimCustomer[CityName] & \", \" & DimCustomer[ContinentName] 3. Month Name = FORMAT( DimDate[FirstOfMonth], \"mmmm\", USERCULTURE() ) The first two return the same value for every user unless security context differs. The third adapts to the language of the person viewing the report – see Month Name.How User Context worksCalculated columns now have a new Expression Context property. Direct Lake calculated columns support User Context expression context only.With User Context:The expression is evaluated when a user queries the model.Evaluation respects row-level security (RLS) and object-level security (OLS).Expressions that do not reference user-aware DAX expressions or secured columns typically return the same value for every user. Considerations:Cannot be used in relationships. Direct Lake calculated columns are evaluated at query time and do not materialize. Because of this, they cannot be used as relationship keys. Build relationship keys in the Delta table when needed.Do not observe filter context. Calculated columns return a fixed value for each row and do not respond to report filters or slicers. Use a measure when the result must change based on report interactions.Unlike standard calculated columns, Direct Lake calculated columns are evaluated in the current user's security context. This means calculations automatically respect RLS and OLS.Security behavior across expression contextsThe security difference is easiest to see with a column that references a protected value. Consider a model where OLS hides DimCustomer[Education] from a \"NoEducationOLS\" role, and a calculated column derived from it:Is Graduate = IF( DimCustomer[Education] = \"Graduate Degree\", \"Yes\", \"No\" )The result depends on the expression context:\n\n Import - StandardImport - User ContextDirect Lake - User Context\nObserves OLSNoYesYes\nResult for a restricted user\"Yes\" or \"No\", derived from the hidden valueColumn not availableColumn not available\n\nWith Standard, a restricted user still sees the derived answer and the protection is effectively bypassed. With User Context in both Import and Direct Lake, the reference to the secured column is evaluated within the user's security context, so the restricted user does not see the derived column. The sensitive value is never exposed. Direct Lake – User Context Expression Context (only option available)  Import – Standard Expression Context  Import – User Context Expression Context  Getting StartedCalculated columns for Direct Lake are available in preview. Open a Direct Lake on OneLake semantic model in the web or Desktop, create a calculated column, and begin modeling directly in DAX. To learn more, see the Create calculated columns in Power BI Desktop documentation.",
+      "fetched_at": "2026-08-24T23:26:30.951Z"
+    },
+    {
+      "id": "d813f28c163e5f55",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "Your alt text passes automated checks. That doesn’t mean it’s any good.",
+      "url": "https://github.blog/engineering/user-experience/your-alt-text-passes-automated-checks-that-doesnt-mean-its-any-good/",
+      "published_at": "2026-08-24T20:56:32.000Z",
+      "summary": "We built a plugin for the GitHub Accessibility Scanner to make sure your alt text is actually accessible. Here's how it works.\nThe post Your alt text passes automated checks. That doesn’t mean it’s any good. appeared first on The GitHub Blog.",
+      "fetched_at": "2026-08-24T23:26:30.175Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "fabric-blog": {
+      "new_count": 2,
+      "removed_count": 2,
+      "new_articles": [
+        {
+          "id": "9a1fda24be1c4c12",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Upgrade Power BI Dataflows Gen1 to Fabric Dataflows Gen2 with the Upgrade Wizard (Preview)",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Upgrade-Power-BI-Dataflows-Gen1-to-Fabric-Dataflows-Gen2-with/ba-p/5360422",
+          "published_at": "2026-08-24T15:00:00.000Z",
+          "summary": "Upgrading Power BI Dataflows Gen1 is now easier with the Dataflows Upgrade Wizard. Now in preview for eligible workspaces assigned to Fabric capacity, the wizard provides a guided experience to upgrade Power BI Dataflows Gen1 items to Fabric Dataflows Gen2 (CI/CD). The wizard preserves key properties of the existing dataflow and assesses each item before you begin, helping you understand the upgrade scope and expected follow-up actions. \r\nModernize at your own pace \r\nPower BI Dataflows Gen1 remains supported in a legacy state, while new feature investment focuses on Fabric Dataflows Gen2 (CI/CD), as shared in a previous post about the future of Dataflows. The Upgrade Wizard gives dataflow owners a guided self-service path to start that modernization without rebuilding their Power Query logic. \r\nYou don't need to upgrade your full estate at once. Start with a representative set of dataflows, validate the results, and expand at a pace that works for your organization. For detailed migration planning and inventory guidance, review Migrate from Dataflow Gen1 to Dataflow Gen2. \r\nBuild on the benefits of Dataflows Gen2 \r\nFabric Dataflows Gen2 (CI/CD) builds on the Power Query authoring experience already used in Power BI Dataflows Gen1, while adding capabilities designed for development, operations, and integration across Fabric. \r\nDataflows Gen2 supports a broad set of data destinations: Azure SQL Database, Azure Data Explorer (Kusto), Azure Data Lake Storage Gen2, Fabric Lakehouse tables, Fabric Lakehouse files, Fabric Warehouse, Fabric KQL database, Fabric SQL database, SharePoint Files, Snowflake database, and PostgreSQL database. You can begin with the upgraded dataflow and add destinations when you are ready. \r\nAs a native Fabric item, Dataflows Gen2 (CI/CD) supports Git integration and Fabric deployment workflows. Teams can bring dataflow definitions into source control, collaborate through established development practices, and move changes across development, test, and production environments. Refresh history and Fabric monitoring experiences provide operational details that help teams review runs and investigate failures. \r\nCapabilities such as Fast Copy, Modern Evaluator, and Partitioned Compute improve performance and scale for different workload patterns. Microsoft's published Dataflow Gen2 cost and performance benchmarks show refresh times improving by 1.6 to 21 times with Dataflows Gen2. Results vary by data, capacity, connector, gateway usage, and query design, so validate your representative workloads. \r\nDataflows Gen2 (CI/CD) also benefits from tiered Standard Compute pricing, with a lower rate after the first 10 minutes of each mashup-engine query. Separate meters apply to high-scale compute and Fast Copy data movement. \r\nCopilot in Data Factory enhances Dataflow Gen2 authoring with natural language. It can generate transformation steps, create queries, and summarize a query and its applied steps. These capabilities help authors understand and review complex query logic, improving productivity during transformation design. \r\nThe bottom line is simple: upgrade now, then modernize when it adds value. \r\nUpgrade one or more dataflows from the same workspace \r\nReady to begin? Open the menu next to a Power BI Dataflows Gen1 item and select Upgrade to Dataflow Gen2 (Preview). The Dataflows Upgrade Wizard opens with the selected item and lets you add other Dataflows Gen1 items from the same workspace. \r\n\r\nFigure: Start the Dataflows Upgrade Wizard from a Dataflows Gen1 item.\r\n\r\n \r\nThe upgraded item preserves its ID, schedule, queries, and connections. Keeping the same item ID helps downstream semantic models and reports continue using the upgraded dataflow without source remapping. The dataflow name also stays the same unless the assessment identifies a required naming change.\r\nAfter the upgrade is completed, the Fabric Dataflows Gen2 (CI/CD) item replaces the original Power BI Dataflows Gen1 item, and the upgrade can't be reversed. If you need to keep the original Power BI Dataflows Gen1 item, use Save As to create a separate Fabric Dataflows Gen2 (CI/CD) item instead.\r\nKnow what needs attention before the upgrade\r\nBefore making any changes, the Upgrade Wizard assesses the Power BI Dataflows Gen1 items in your workspace, giving you a clear view of which dataflows are ready and where you may need to act before or after upgrading:\r\n• Ready to migrate: The wizard didn't identify a manual step needed before or after the upgrade. Review the known limitations because the assessment doesn't detect every limitation.\r\n• Needs Attention: You can proceed, but review the reasons and complete the recommended actions.\r\n• Upgrade unavailable: You don't own the dataflow. Ask the owner to upgrade it or use Take over first.\r\n\r\nFigure: The assessment shows which dataflows are ready and which need attention.\r\n\r\nA Needs Attention status can currently identify incremental refresh, Bring Your Own Lake storage, linked dataflows, possible DirectQuery consumers, or naming changes. Hover over the status to see the reason, then review the Upgrade Wizard documentation for follow-up actions and more information. The scenarios represented by each assessment status may expand as we further enhance the assessment capabilities.\r\nAfter the upgrade\r\nOnce the wizard finishes, complete these follow-up steps to validate your upgraded dataflows and reconnect any dependencies.\r\n• Refresh each upgraded dataflow to load its data.\r\n• Open and save each downstream dataflow to rebind it.\r\n• Complete any remaining recommended Needs Attention actions.\r\n• Update consumers (for example, semantic models or linked dataflows) using the legacy Power BI Dataflows connector to the modern Power Platform Dataflows connector. The assessment doesn't detect legacy connector use.\r\nLearn more\r\nReady to explore the Upgrade Wizard? Review the prerequisites, assessment guidance, and complete workflow in Upgrade Dataflow Gen1 to Dataflow Gen2 (CI/CD) using the Upgrade Wizard. We look forward to hearing about your experience during preview.",
+          "fetched_at": "2026-08-24T23:26:30.951Z"
+        },
+        {
+          "id": "02a6cd0df64c9ae3",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Direct Lake Calculated Columns (Preview)",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Direct-Lake-Calculated-Columns-Preview/ba-p/5357159",
+          "published_at": "2026-08-24T16:14:20.000Z",
+          "summary": "Calculated columns are now available in preview for Direct Lake on OneLake semantic models. This has been one of the most requested capabilities since Direct Lake launched and closes a long-standing gap with Import and DirectQuery storage modes.You can define calculated columns directly in your semantic model using DAX in web modeling and Power BI Desktop, without changing the table storage mode or modifying data upstream.The problem this solvesDirect Lake combines Import-like performance with near real-time data freshness by querying Delta tables in OneLake and loading data into memory as needed.But until now, if your model needed a derived column, you had only two options: push the logic upstream into the data source or move the table to a different storage mode. Calculated columns close that gap – you can now define columns directly in the semantic model using DAX without leaving Direct Lake.What you can buildCommon use cases include:Derived values, such as an age calculated from a birth date.Concatenating fields, such as city and region into a single field for slicers.Formatted dates like Month-Year for grouping in visuals.Multilingual reports using data translations with USERCULTURE().Personalized content based on functions like USERPRINCIPALNAME().Examples1. Age = DATEDIFF( DimCustomer[BirthDate], TODAY(), YEAR ) 2. Customer Location = DimCustomer[CityName] & \", \" & DimCustomer[ContinentName] 3. Month Name = FORMAT( DimDate[FirstOfMonth], \"mmmm\", USERCULTURE() ) The first two return the same value for every user unless security context differs. The third adapts to the language of the person viewing the report – see Month Name.How User Context worksCalculated columns now have a new Expression Context property. Direct Lake calculated columns support User Context expression context only.With User Context:The expression is evaluated when a user queries the model.Evaluation respects row-level security (RLS) and object-level security (OLS).Expressions that do not reference user-aware DAX expressions or secured columns typically return the same value for every user. Considerations:Cannot be used in relationships. Direct Lake calculated columns are evaluated at query time and do not materialize. Because of this, they cannot be used as relationship keys. Build relationship keys in the Delta table when needed.Do not observe filter context. Calculated columns return a fixed value for each row and do not respond to report filters or slicers. Use a measure when the result must change based on report interactions.Unlike standard calculated columns, Direct Lake calculated columns are evaluated in the current user's security context. This means calculations automatically respect RLS and OLS.Security behavior across expression contextsThe security difference is easiest to see with a column that references a protected value. Consider a model where OLS hides DimCustomer[Education] from a \"NoEducationOLS\" role, and a calculated column derived from it:Is Graduate = IF( DimCustomer[Education] = \"Graduate Degree\", \"Yes\", \"No\" )The result depends on the expression context:\n\n Import - StandardImport - User ContextDirect Lake - User Context\nObserves OLSNoYesYes\nResult for a restricted user\"Yes\" or \"No\", derived from the hidden valueColumn not availableColumn not available\n\nWith Standard, a restricted user still sees the derived answer and the protection is effectively bypassed. With User Context in both Import and Direct Lake, the reference to the secured column is evaluated within the user's security context, so the restricted user does not see the derived column. The sensitive value is never exposed. Direct Lake – User Context Expression Context (only option available)  Import – Standard Expression Context  Import – User Context Expression Context  Getting StartedCalculated columns for Direct Lake are available in preview. Open a Direct Lake on OneLake semantic model in the web or Desktop, create a calculated column, and begin modeling directly in DAX. To learn more, see the Create calculated columns in Power BI Desktop documentation.",
+          "fetched_at": "2026-08-24T23:26:30.951Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "0cc859650c5c7b9b",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Workspace outbound access protection for Power BI reports (Preview)",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Workspace-outbound-access-protection-for-Power-BI-reports/ba-p/5193354",
+          "published_at": "2026-06-17T21:00:00.000Z",
+          "summary": "Workspace outbound access protection (OAP) is a workspace-level control in Microsoft Fabric that lets you constrain where the data inside a workspace can flow. With this preview, OAP support now extends to Power BI reports. The good news for report authors and admins: there's nothing new to configure on the report itself. Protection comes from a single, well-defined rule that the workspace enforces automatically as soon as you turn OAP on.",
+          "fetched_at": "2026-08-23T23:26:04.114Z"
+        },
+        {
+          "id": "2b54be786be19003",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Org apps with audiences for Power BI and Fabric (Generally Available)",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Org-apps-with-audiences-for-Power-BI-and-Fabric-Generally/ba-p/5196326",
+          "published_at": "2026-06-16T19:00:00.000Z",
+          "summary": "Announcing general availability of org apps in Power BI and Fabric, including one of the most requested capabilities: audiences.",
+          "fetched_at": "2026-08-23T23:26:04.114Z"
+        }
+      ]
+    },
+    "github-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "d813f28c163e5f55",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "Your alt text passes automated checks. That doesn’t mean it’s any good.",
+          "url": "https://github.blog/engineering/user-experience/your-alt-text-passes-automated-checks-that-doesnt-mean-its-any-good/",
+          "published_at": "2026-08-24T20:56:32.000Z",
+          "summary": "We built a plugin for the GitHub Accessibility Scanner to make sure your alt text is actually accessible. Here's how it works.\nThe post Your alt text passes automated checks. That doesn’t mean it’s any good. appeared first on The GitHub Blog.",
+          "fetched_at": "2026-08-24T23:26:30.175Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "be1f8249ad90a2c0",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "From coder to orchestrator: How agents shift the role of a developer",
+          "url": "https://github.blog/developer-skills/career-growth/from-coder-to-orchestrator-how-agents-shift-the-role-of-a-developer/",
+          "published_at": "2026-08-11T18:38:17.000Z",
+          "summary": "Developers are owning more of the delivery system around code, not just code itself. Join us during GitHub Universe to meet other devs, learn something new, and explore what's next.\nThe post From coder to orchestrator: How agents shift the role of a developer appeared first on The GitHub Blog.",
+          "fetched_at": "2026-08-23T23:26:03.026Z"
+        }
+      ]
+    },
+    "m365-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    }
+  },
+  "diff_result": true
+}
