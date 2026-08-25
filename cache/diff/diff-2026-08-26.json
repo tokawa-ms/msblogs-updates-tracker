@@ -1,0 +1,80 @@
+{
+  "date": "2026-08-26",
+  "compared_with": "2026-08-25",
+  "source_count": 6,
+  "new_count": 1,
+  "removed_count": 1,
+  "new_articles": [
+    {
+      "id": "e5fe0cb509cb740f",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "How to evaluate LLMs before production",
+      "url": "https://github.blog/ai-and-ml/llms/how-to-evaluate-llms-before-production/",
+      "published_at": "2026-08-25T21:35:11.000Z",
+      "summary": "These are the lessons we learned evaluating LLMs for real-world secret scanning.\nThe post How to evaluate LLMs before production appeared first on The GitHub Blog.",
+      "fetched_at": "2026-08-25T23:29:08.960Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "fabric-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "github-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "e5fe0cb509cb740f",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "How to evaluate LLMs before production",
+          "url": "https://github.blog/ai-and-ml/llms/how-to-evaluate-llms-before-production/",
+          "published_at": "2026-08-25T21:35:11.000Z",
+          "summary": "These are the lessons we learned evaluating LLMs for real-world secret scanning.\nThe post How to evaluate LLMs before production appeared first on The GitHub Blog.",
+          "fetched_at": "2026-08-25T23:29:08.960Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "e7ebe94da85da416",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "Your contributors are AI-first now. Is your project?",
+          "url": "https://github.blog/open-source/maintainers/your-contributors-are-ai-first-now-is-your-project/",
+          "published_at": "2026-08-12T18:00:08.000Z",
+          "summary": "AI contributors are already in your queue. AutoGPT maintainer Nicholas Tindle shares the repo instructions, gates, and boundaries that keep maintainers in control.\nThe post Your contributors are AI-first now. Is your project? appeared first on The GitHub Blog.",
+          "fetched_at": "2026-08-24T23:26:30.175Z"
+        }
+      ]
+    },
+    "m365-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    }
+  },
+  "diff_result": true
+}
