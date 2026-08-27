@@ -1,0 +1,122 @@
+{
+  "date": "2026-08-27",
+  "compared_with": "2026-08-26",
+  "source_count": 6,
+  "new_count": 2,
+  "removed_count": 3,
+  "new_articles": [
+    {
+      "id": "8ba46bf8dae5cc6e",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "GitHub Copilot app for Beginners: Automate Dependabot pull request triage",
+      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-automate-dependabot-pull-request-triage/",
+      "published_at": "2026-08-26T20:12:53.000Z",
+      "summary": "Managing library updates can be tedious at times. Learn how the GitHub Copilot app can handle this type of repetitive task.\nThe post GitHub Copilot app for Beginners: Automate Dependabot pull request triage appeared first on The GitHub Blog.",
+      "fetched_at": "2026-08-27T04:26:35.860Z"
+    },
+    {
+      "id": "78b75c2a955b733b",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "Introducing the Agent Host for persistent, portable agent sessions",
+      "url": "https://code.visualstudio.com/blogs/2026/08/26/agent-host-architecture",
+      "published_at": "2026-08-26T00:00:00.000Z",
+      "summary": "Explore how the VS Code Agent Host and AHP support multiple agent harnesses with durable, synchronized local and remote sessions.\nRead the full article",
+      "fetched_at": "2026-08-27T04:26:36.387Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "fabric-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "github-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "8ba46bf8dae5cc6e",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "GitHub Copilot app for Beginners: Automate Dependabot pull request triage",
+          "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-automate-dependabot-pull-request-triage/",
+          "published_at": "2026-08-26T20:12:53.000Z",
+          "summary": "Managing library updates can be tedious at times. Learn how the GitHub Copilot app can handle this type of repetitive task.\nThe post GitHub Copilot app for Beginners: Automate Dependabot pull request triage appeared first on The GitHub Blog.",
+          "fetched_at": "2026-08-27T04:26:35.860Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "8e22b0b0124b585b",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "GitHub Copilot app for Beginners: Write your first prompt",
+          "url": "https://github.blog/ai-and-ml/github-copilot/write-your-first-prompt-with-the-github-copilot-app/",
+          "published_at": "2026-08-12T19:00:00.000Z",
+          "summary": "Learn how to write your first prompt in the GitHub Copilot app, choose the right context and model, and start your first task with confidence.\nThe post GitHub Copilot app for Beginners: Write your first prompt appeared first on The GitHub Blog.",
+          "fetched_at": "2026-08-25T23:29:08.961Z"
+        }
+      ]
+    },
+    "m365-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 1,
+      "removed_count": 2,
+      "new_articles": [
+        {
+          "id": "78b75c2a955b733b",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Introducing the Agent Host for persistent, portable agent sessions",
+          "url": "https://code.visualstudio.com/blogs/2026/08/26/agent-host-architecture",
+          "published_at": "2026-08-26T00:00:00.000Z",
+          "summary": "Explore how the VS Code Agent Host and AHP support multiple agent harnesses with durable, synchronized local and remote sessions.\nRead the full article",
+          "fetched_at": "2026-08-27T04:26:36.387Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "f57c0e162da4f835",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "A Unified Experience for all Coding Agents",
+          "url": "https://code.visualstudio.com/blogs/2025/11/03/unified-agent-experience",
+          "published_at": "2025-11-05T00:00:00.000Z",
+          "summary": "Agents took over VS Code in 2025. We released agent mode for VS Code, integration for the Copilot coding agent, and the new GitHub Copilot CLI. But Copilot is not the only agent game in town. There are now more coding agents than ever, including options from OpenAI and Anthropic.\nRead the full article",
+          "fetched_at": "2026-08-25T23:29:08.993Z"
+        },
+        {
+          "id": "3a844bddcbd8c4d7",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Expanding Model Choice in VS Code with Bring Your Own Key",
+          "url": "https://code.visualstudio.com/blogs/2025/10/22/bring-your-own-key",
+          "published_at": "2025-10-22T00:00:00.000Z",
+          "summary": "Learn how the new Language Model Chat Provider API in VS Code is enabling more model choice and extensibility for chat experiences via the Bring Your Own Key experience.\nRead the full article",
+          "fetched_at": "2026-08-25T23:29:08.993Z"
+        }
+      ]
+    }
+  },
+  "diff_result": true
+}
