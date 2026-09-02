@@ -1,0 +1,110 @@
+{
+  "date": "2026-09-02",
+  "compared_with": "2026-09-01",
+  "source_count": 6,
+  "new_count": 2,
+  "removed_count": 2,
+  "new_articles": [
+    {
+      "id": "f15d0bc28ec65cc2",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "Introducing Azure Multicloud Interconnect for AWS",
+      "url": "https://azure.microsoft.com/en-us/blog/introducing-azure-multicloud-interconnect-for-aws/",
+      "published_at": "2026-08-31T18:00:00.000Z",
+      "summary": "Azure Multicloud Interconnect helps simplify private connectivity between Microsoft Azure and AWS, enabling organizations to support multicloud and AI workloads with a more streamlined, cloud-native networking experience. Built on open interoperability standards, it helps reduce operational complexity while providing high-performance connectivity across cloud environments.\nThe post Introducing Azure Multicloud Interconnect for AWS appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-09-02T00:55:20.625Z"
+    },
+    {
+      "id": "fec227fb075a491e",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "Inside Microsoft’s marketing team: Scaling expertise with AI",
+      "url": "https://azure.microsoft.com/en-us/blog/inside-microsofts-marketing-team-scaling-expertise-with-ai/",
+      "published_at": "2026-08-31T16:00:00.000Z",
+      "summary": "AI is helping organizations meet high expectations as markets change quickly and technology advances at a rapid pace.\nThe post Inside Microsoft’s marketing team: Scaling expertise with AI appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-09-02T00:55:20.626Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 2,
+      "removed_count": 2,
+      "new_articles": [
+        {
+          "id": "f15d0bc28ec65cc2",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Introducing Azure Multicloud Interconnect for AWS",
+          "url": "https://azure.microsoft.com/en-us/blog/introducing-azure-multicloud-interconnect-for-aws/",
+          "published_at": "2026-08-31T18:00:00.000Z",
+          "summary": "Azure Multicloud Interconnect helps simplify private connectivity between Microsoft Azure and AWS, enabling organizations to support multicloud and AI workloads with a more streamlined, cloud-native networking experience. Built on open interoperability standards, it helps reduce operational complexity while providing high-performance connectivity across cloud environments.\nThe post Introducing Azure Multicloud Interconnect for AWS appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-09-02T00:55:20.625Z"
+        },
+        {
+          "id": "fec227fb075a491e",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Inside Microsoft’s marketing team: Scaling expertise with AI",
+          "url": "https://azure.microsoft.com/en-us/blog/inside-microsofts-marketing-team-scaling-expertise-with-ai/",
+          "published_at": "2026-08-31T16:00:00.000Z",
+          "summary": "AI is helping organizations meet high expectations as markets change quickly and technology advances at a rapid pace.\nThe post Inside Microsoft’s marketing team: Scaling expertise with AI appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-09-02T00:55:20.626Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "107156ced48d2303",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Azure Databricks delivers proven business value",
+          "url": "https://azure.microsoft.com/en-us/blog/azure-databricks-delivers-proven-business-value/",
+          "published_at": "2026-07-15T15:00:00.000Z",
+          "summary": "Microsoft Azure Databricks delivers the first-party advantage of Databricks on Microsoft—and for customers, that advantage shows up as real, measurable value. It is the same Databricks platform your teams already know, co-engineered with Microsoft and delivered as a native Azure service, so it fits naturally into the Microsoft tools, identity, and governance your organization already runs.\nThe post Azure Databricks delivers proven business value appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-09-01T01:44:21.036Z"
+        },
+        {
+          "id": "81450a63388f234a",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "GPT-5.6 now available in Microsoft Foundry",
+          "url": "https://azure.microsoft.com/en-us/blog/gpt-5-6-now-available-in-microsoft-foundry/",
+          "published_at": "2026-07-09T17:00:00.000Z",
+          "summary": "Introducing OpenAI's latest frontier model series, the Asia Pacific Data Zone, and product agent capabilities, all generally available in Microsoft Foundry.\nThe post GPT-5.6 now available in Microsoft Foundry  appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-09-01T01:44:21.036Z"
+        }
+      ]
+    },
+    "fabric-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "github-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "m365-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    }
+  },
+  "diff_result": true
+}
