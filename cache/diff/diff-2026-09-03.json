@@ -1,0 +1,153 @@
+{
+  "date": "2026-09-03",
+  "compared_with": "2026-09-02",
+  "source_count": 6,
+  "new_count": 3,
+  "removed_count": 4,
+  "new_articles": [
+    {
+      "id": "cc785740bd496e8d",
+      "source_id": "fabric-blog",
+      "source_name": "Microsoft Fabric Blog",
+      "title": "Power BI sample reports, refreshed with modern visual defaults",
+      "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Power-BI-sample-reports-refreshed-with-modern-visual-defaults/ba-p/5363807",
+      "published_at": "2026-09-02T16:00:00.000Z",
+      "summary": "Microsoft has refreshed its Power BI sample reports with modern visual defaults, stronger semantic models, mobile-optimized layouts, and newer authoring features to help creators build clearer, more effective reports.",
+      "fetched_at": "2026-09-03T01:01:34.060Z"
+    },
+    {
+      "id": "407299432d9998ec",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "Decoding the new AI lingo: Loops, harnesses, squads, hill climbing… oh my!",
+      "url": "https://github.blog/ai-and-ml/decoding-the-new-ai-lingo-loops-harnesses-squads-hill-climbing-oh-my/",
+      "published_at": "2026-09-02T21:00:00.000Z",
+      "summary": "From loop engineering to harnesses, squads, and open weights, the GitHub Podcast breaks down the AI terms showing up in developer conversations.\nThe post Decoding the new AI lingo: Loops, harnesses, squads, hill climbing… oh my! appeared first on The GitHub Blog.",
+      "fetched_at": "2026-09-03T01:01:33.277Z"
+    },
+    {
+      "id": "1738353f28d07e4a",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "How we make AI coding more cost efficient without sacrificing task quality",
+      "url": "https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality/",
+      "published_at": "2026-09-02T18:00:00.000Z",
+      "summary": "Why shorter outputs can cost more, and how GitHub Copilot reduces wasted work across the complete coding task.\nThe post How we make AI coding more cost efficient without sacrificing task quality appeared first on The GitHub Blog.",
+      "fetched_at": "2026-09-03T01:01:33.277Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "fabric-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "cc785740bd496e8d",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Power BI sample reports, refreshed with modern visual defaults",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Power-BI-sample-reports-refreshed-with-modern-visual-defaults/ba-p/5363807",
+          "published_at": "2026-09-02T16:00:00.000Z",
+          "summary": "Microsoft has refreshed its Power BI sample reports with modern visual defaults, stronger semantic models, mobile-optimized layouts, and newer authoring features to help creators build clearer, more effective reports.",
+          "fetched_at": "2026-09-03T01:01:34.060Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "3654fc24a8d2c88b",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Microsoft Entra ID single sign-on for the Starburst connector in Power BI (Preview)",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Microsoft-Entra-ID-single-sign-on-for-the-Starburst-connector-in/ba-p/5193371",
+          "published_at": "2026-06-18T16:00:00.000Z",
+          "summary": "When enabling Microsoft Entra ID single sign-on (SSo) for Starburst (Preview) report viewers querying semantic models in DirectQuery mode authenticate to Starburst with their own Entra ID identity, to Starburst's access policies — including row-level and column-level security rules — are evaluated against the actual end user rather than a fixed connection account.",
+          "fetched_at": "2026-09-02T00:55:21.274Z"
+        }
+      ]
+    },
+    "github-blog": {
+      "new_count": 2,
+      "removed_count": 2,
+      "new_articles": [
+        {
+          "id": "407299432d9998ec",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "Decoding the new AI lingo: Loops, harnesses, squads, hill climbing… oh my!",
+          "url": "https://github.blog/ai-and-ml/decoding-the-new-ai-lingo-loops-harnesses-squads-hill-climbing-oh-my/",
+          "published_at": "2026-09-02T21:00:00.000Z",
+          "summary": "From loop engineering to harnesses, squads, and open weights, the GitHub Podcast breaks down the AI terms showing up in developer conversations.\nThe post Decoding the new AI lingo: Loops, harnesses, squads, hill climbing… oh my! appeared first on The GitHub Blog.",
+          "fetched_at": "2026-09-03T01:01:33.277Z"
+        },
+        {
+          "id": "1738353f28d07e4a",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "How we make AI coding more cost efficient without sacrificing task quality",
+          "url": "https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality/",
+          "published_at": "2026-09-02T18:00:00.000Z",
+          "summary": "Why shorter outputs can cost more, and how GitHub Copilot reduces wasted work across the complete coding task.\nThe post How we make AI coding more cost efficient without sacrificing task quality appeared first on The GitHub Blog.",
+          "fetched_at": "2026-09-03T01:01:33.277Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "e364f92c2df61054",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "Your guide to GitHub Universe 2026 is here: The schedule just launched!",
+          "url": "https://github.blog/news-insights/company-news/your-guide-to-github-universe-2026-is-here-the-schedule-just-launched/",
+          "published_at": "2026-08-13T19:00:00.000Z",
+          "summary": "The GitHub Universe session catalog is live. Explore interactive workshops, community talks, demos, and panels. Plus, register before August 19 to save $300.\nThe post Your guide to GitHub Universe 2026 is here: The schedule just launched! appeared first on The GitHub Blog.",
+          "fetched_at": "2026-09-02T00:55:20.383Z"
+        },
+        {
+          "id": "08365977cd80206b",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "What 50 open source projects taught us about security in the AI era",
+          "url": "https://github.blog/open-source/maintainers/what-50-open-source-projects-taught-us-about-security-in-the-ai-era/",
+          "published_at": "2026-08-13T16:00:00.000Z",
+          "summary": "See how the open source projects in Session 4 of the GitHub Secure Open Source Fund combined AI-assisted workflows, maintainer expertise, GitHub security tools, expert guidance, and funding to improve project security. \nThe post What 50 open source projects taught us about security in the AI era appeared first on The GitHub Blog.",
+          "fetched_at": "2026-09-02T00:55:20.383Z"
+        }
+      ]
+    },
+    "m365-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 1,
+      "new_articles": [],
+      "removed_articles": [
+        {
+          "id": "3493e31daa3ce4ec",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Open Source AI Editor: Second Milestone",
+          "url": "https://code.visualstudio.com/blogs/2025/11/04/openSourceAIEditorSecondMilestone",
+          "published_at": "2025-11-06T00:00:00.000Z",
+          "summary": "Ghost text suggestions are now open source as part of the Copilot Chat extension - the second milestone in making VS Code an open source AI editor.\nRead the full article",
+          "fetched_at": "2026-09-02T00:55:20.434Z"
+        }
+      ]
+    }
+  },
+  "diff_result": true
+}
