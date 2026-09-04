@@ -1,0 +1,176 @@
+{
+  "date": "2026-09-04",
+  "compared_with": "2026-09-03",
+  "source_count": 6,
+  "new_count": 4,
+  "removed_count": 4,
+  "new_articles": [
+    {
+      "id": "567188de284c26a2",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "The Economics of Agent Optimization: Context engineering for enterprise AI agents",
+      "url": "https://azure.microsoft.com/en-us/blog/the-economics-of-agent-optimization-context-engineering-for-enterprise-ai-agents/",
+      "published_at": "2026-09-02T16:00:00.000Z",
+      "summary": "AI cost optimization goes beyond model selection. Discover how context engineering in Microsoft Foundry helps lower AI costs by improving knowledge retrieval, tool selection, memory, and agent performance at scale.\nThe post The Economics of Agent Optimization: Context engineering for enterprise AI agents appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-09-04T00:52:54.181Z"
+    },
+    {
+      "id": "885c7f3d9559b2be",
+      "source_id": "fabric-blog",
+      "source_name": "Microsoft Fabric Blog",
+      "title": "Modern Power BI architecture choices for reporting on Azure Databricks: A performance benchmark for Power BI storage modes",
+      "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Modern-Power-BI-architecture-choices-for-reporting-on-Azure/ba-p/5364286",
+      "published_at": "2026-09-03T11:30:43.000Z",
+      "summary": "Many enterprise Power BI semantic models use Azure Databricks as a data source. When building these models, developers and architects face an early and consequential decision: which storage mode to use. Cost, security, and ease of development and tuning all factor in — but report performance is probably the most important of them, because reports that are slow to load are one of the most common causes of end-user dissatisfaction.\r\nIn practice, that decision is often made on intuition rather than evidence. To help change that, we've published a new white paper, Modern Power BI Architecture Choices for Reporting on Azure Databricks, benchmarking four ways of serving the same Delta tables to a Power BI report:\r\n\r\n\r\nDirect Lake on OneLake — over Delta tables in a Fabric lakehouse or warehouse\r\n\r\n\r\nDirect Lake on mirrored Unity Catalog tables — shortcuts, no copy\r\n\r\n\r\nDirectQuery — on a Databricks SQL warehouse\r\n\r\n\r\nComposite Model on Databricks — DirectQuery combined with Import-mode aggregations\r\n\r\n\r\n\r\nFigure: The four Power BI storage modes benchmarked to evaluate their impact on report performance and scalability.\r\n\r\nWhat the results suggest: there's no universal winner — but there are clear patterns.\r\nDirect Lake on OneLake performed well across the widest range of situations in this benchmark. It's highly competitive at smaller and mid-size volumes, and for the typical Power BI workload — where reports are used repeatedly throughout the day — it delivers interactive performance without extra modeling effort.\r\nAt the top end of the volume curve, the picture shifts. With billions of rows, a Composite Model with aggregations was the fastest and most consistent pattern, staying sub-100ms on queries the aggregation tables can resolve. The caveat is equally clear: that advantage doesn't extend to queries that fall through to the underlying DirectQuery source, so the payoff depends on how well your aggregations match real user behavior.\r\nThese are just the headline findings — the detailed results vary considerably by data volume, cache state, filter scenario, and query type. We'd encourage you to read the white paper for the full picture before deciding on a pattern.\r\nOne thing worth noting up front: this is a point-in-time comparison as of June/July 2026, and both platforms are moving quickly. It also measures the end-user query experience within Power BI, rather than raw database execution speed. Treat it as a guide for running your own testing, on your own data.\r\nExplore the white paper for a full walkthrough of through each pattern in detail — the test setup, what was measured, and how results break down by data volume, cache state, and query type.\r\nVisit the Power BI download center to access the paper and other related resources.",
+      "fetched_at": "2026-09-04T00:52:54.744Z"
+    },
+    {
+      "id": "3096b36f6056d24c",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "GitHub Copilot app for Beginners: Run several agents at once",
+      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-run-several-agents-at-once/",
+      "published_at": "2026-09-03T16:00:00.000Z",
+      "summary": "Learn how to run parallel agents in the GitHub Copilot app, and experience the moment it stops feeling scary and starts feeling powerful.\nThe post GitHub Copilot app for Beginners: Run several agents at once appeared first on The GitHub Blog.",
+      "fetched_at": "2026-09-04T00:52:54.097Z"
+    },
+    {
+      "id": "489f588ba71aea8b",
+      "source_id": "m365-blog",
+      "source_name": "Microsoft 365 Blog",
+      "title": "PPCC 2026: Bringing AI and your business processes together",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/09/03/ppcc-2026-bringing-ai-and-your-business-processes-together/",
+      "published_at": "2026-09-03T15:00:00.000Z",
+      "summary": "Every enterprise runs on business processes, but it's the people that provide judgment, manage exceptions, and often connect systems that were never designed to work together.\nThe post PPCC 2026: Bringing AI and your business processes together appeared first on Microsoft 365 Blog.",
+      "fetched_at": "2026-09-04T00:52:54.328Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "567188de284c26a2",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "The Economics of Agent Optimization: Context engineering for enterprise AI agents",
+          "url": "https://azure.microsoft.com/en-us/blog/the-economics-of-agent-optimization-context-engineering-for-enterprise-ai-agents/",
+          "published_at": "2026-09-02T16:00:00.000Z",
+          "summary": "AI cost optimization goes beyond model selection. Discover how context engineering in Microsoft Foundry helps lower AI costs by improving knowledge retrieval, tool selection, memory, and agent performance at scale.\nThe post The Economics of Agent Optimization: Context engineering for enterprise AI agents appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-09-04T00:52:54.181Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "bb2f476bc70fd3e3",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "AT&T and Microsoft scale trillion-token workloads with Microsoft Foundry and AMD",
+          "url": "https://azure.microsoft.com/en-us/blog/att-and-microsoft-scale-trillion-token-workloads-with-microsoft-foundry-and-amd/",
+          "published_at": "2026-07-23T18:30:00.000Z",
+          "summary": "AT&T processed approximately one trillion tokens while developing OTel2.0 using Microsoft Foundry Managed Compute, open AI models, and AMD and NVIDIA GPU infrastructure. Discover how flexible model choice and scalable infrastructure are enabling production-scale telecom AI.\nThe post AT&T and Microsoft scale trillion-token workloads with Microsoft Foundry and AMD appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-09-03T01:01:33.391Z"
+        }
+      ]
+    },
+    "fabric-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "885c7f3d9559b2be",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Modern Power BI architecture choices for reporting on Azure Databricks: A performance benchmark for Power BI storage modes",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Modern-Power-BI-architecture-choices-for-reporting-on-Azure/ba-p/5364286",
+          "published_at": "2026-09-03T11:30:43.000Z",
+          "summary": "Many enterprise Power BI semantic models use Azure Databricks as a data source. When building these models, developers and architects face an early and consequential decision: which storage mode to use. Cost, security, and ease of development and tuning all factor in — but report performance is probably the most important of them, because reports that are slow to load are one of the most common causes of end-user dissatisfaction.\r\nIn practice, that decision is often made on intuition rather than evidence. To help change that, we've published a new white paper, Modern Power BI Architecture Choices for Reporting on Azure Databricks, benchmarking four ways of serving the same Delta tables to a Power BI report:\r\n\r\n\r\nDirect Lake on OneLake — over Delta tables in a Fabric lakehouse or warehouse\r\n\r\n\r\nDirect Lake on mirrored Unity Catalog tables — shortcuts, no copy\r\n\r\n\r\nDirectQuery — on a Databricks SQL warehouse\r\n\r\n\r\nComposite Model on Databricks — DirectQuery combined with Import-mode aggregations\r\n\r\n\r\n\r\nFigure: The four Power BI storage modes benchmarked to evaluate their impact on report performance and scalability.\r\n\r\nWhat the results suggest: there's no universal winner — but there are clear patterns.\r\nDirect Lake on OneLake performed well across the widest range of situations in this benchmark. It's highly competitive at smaller and mid-size volumes, and for the typical Power BI workload — where reports are used repeatedly throughout the day — it delivers interactive performance without extra modeling effort.\r\nAt the top end of the volume curve, the picture shifts. With billions of rows, a Composite Model with aggregations was the fastest and most consistent pattern, staying sub-100ms on queries the aggregation tables can resolve. The caveat is equally clear: that advantage doesn't extend to queries that fall through to the underlying DirectQuery source, so the payoff depends on how well your aggregations match real user behavior.\r\nThese are just the headline findings — the detailed results vary considerably by data volume, cache state, filter scenario, and query type. We'd encourage you to read the white paper for the full picture before deciding on a pattern.\r\nOne thing worth noting up front: this is a point-in-time comparison as of June/July 2026, and both platforms are moving quickly. It also measures the end-user query experience within Power BI, rather than raw database execution speed. Treat it as a guide for running your own testing, on your own data.\r\nExplore the white paper for a full walkthrough of through each pattern in detail — the test setup, what was measured, and how results break down by data volume, cache state, and query type.\r\nVisit the Power BI download center to access the paper and other related resources.",
+          "fetched_at": "2026-09-04T00:52:54.744Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "000d25b5f79df03b",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Protect once, enforce everywhere: Protection policies for Power BI (Generally Available)",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Protect-once-enforce-everywhere-Protection-policies-for-Power-BI/ba-p/5223932",
+          "published_at": "2026-06-24T11:22:57.000Z",
+          "summary": "How to use sensitivity labels and Protection Policies to secure your Power BI estate — and why it matters more than ever in the age of AI.",
+          "fetched_at": "2026-09-03T01:01:34.060Z"
+        }
+      ]
+    },
+    "github-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "3096b36f6056d24c",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "GitHub Copilot app for Beginners: Run several agents at once",
+          "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-run-several-agents-at-once/",
+          "published_at": "2026-09-03T16:00:00.000Z",
+          "summary": "Learn how to run parallel agents in the GitHub Copilot app, and experience the moment it stops feeling scary and starts feeling powerful.\nThe post GitHub Copilot app for Beginners: Run several agents at once appeared first on The GitHub Blog.",
+          "fetched_at": "2026-09-04T00:52:54.097Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "9c196c1f17dbbac8",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "How to bring your software delivery workflow into GitHub with agent apps",
+          "url": "https://github.blog/ai-and-ml/github-copilot/how-to-bring-your-software-delivery-workflow-into-github-with-agent-apps/",
+          "published_at": "2026-08-14T16:00:00.000Z",
+          "summary": "See how four GitHub agent apps can help you scope, secure, roll out, and ship a feature across the SDLC–all without leaving GitHub. \nThe post How to bring your software delivery workflow into GitHub with agent apps appeared first on The GitHub Blog.",
+          "fetched_at": "2026-09-03T01:01:33.277Z"
+        }
+      ]
+    },
+    "m365-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "489f588ba71aea8b",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "PPCC 2026: Bringing AI and your business processes together",
+          "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/09/03/ppcc-2026-bringing-ai-and-your-business-processes-together/",
+          "published_at": "2026-09-03T15:00:00.000Z",
+          "summary": "Every enterprise runs on business processes, but it's the people that provide judgment, manage exceptions, and often connect systems that were never designed to work together.\nThe post PPCC 2026: Bringing AI and your business processes together appeared first on Microsoft 365 Blog.",
+          "fetched_at": "2026-09-04T00:52:54.328Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "53b18e8c0d5271fe",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Copilot Cowork: From conversation to action across skills, integrations, and devices",
+          "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/05/05/copilot-cowork-from-conversation-to-action-across-skills-integrations-and-devices/",
+          "published_at": "2026-05-05T10:00:00.000Z",
+          "summary": "Today, we’re announcing additional capabilities in Cowork to expand on what it can make possible for you.\nThe post Copilot Cowork: From conversation to action across skills, integrations, and devices appeared first on Microsoft 365 Blog.",
+          "fetched_at": "2026-09-03T01:01:33.491Z"
+        }
+      ]
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    }
+  },
+  "diff_result": true
+}
