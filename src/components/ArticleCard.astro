@@ -19,6 +19,17 @@ const { article } = Astro.props;
     </h3>
   </div>
   <LocalizedText as="p" ja={article.summary} en={article.summaryEn} />
+  {article.significance && (
+    <p><strong>なぜ重要か: </strong>{article.significance}</p>
+  )}
+  {article.keyPoints.length > 0 && (
+    <div>
+      <strong>重要ポイント</strong>
+      <ul>
+        {article.keyPoints.map((point) => <li>{point}</li>)}
+      </ul>
+    </div>
+  )}
   <div class="pill-row">
     {article.categories.map((category) => (
       <CategoryPill name={category} href={withBase(`categories/${slugify(category)}/`)} />
