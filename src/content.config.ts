@@ -27,6 +27,8 @@ const updates = defineCollection({
           publishedAt: z.string(),
           summary: z.string(),
           summaryEn: z.string().optional(),
+          keyPoints: z.array(z.string()).default([]),
+          significance: z.string().optional(),
         }),
       )
       .default([]),

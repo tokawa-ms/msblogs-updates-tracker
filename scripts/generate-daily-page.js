@@ -4,6 +4,7 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 const { toDateString } = require('./utils/date-utils');
 const { diffFile, fileExists, readJson } = require('./utils/cache-manager');
+const { summarizeArticle } = require('./utils/article-summarizer');
 
 const ROOT = path.resolve(__dirname, '..');
 const UPDATES_DIR = path.join(ROOT, 'content', 'updates');
@@ -55,6 +56,8 @@ function pushYamlArticles(lines, articles) {
     lines.push(`    sourceName: ${yamlScalar(cleanText(article.source_name))}`);
     lines.push(`    publishedAt: ${yamlScalar(cleanText(article.published_at))}`);
     lines.push(`    summary: ${yamlScalar(cleanText(article.summary))}`);
+    lines.push(`    keyPoints: ${JSON.stringify(article.key_points || [])}`);
+    lines.push(`    significance: ${yamlScalar(cleanText(article.significance))}`);
     if (cleanText(article.summary_en)) {
       lines.push(`    summaryEn: ${yamlScalar(cleanText(article.summary_en))}`);
     }
@@ -87,17 +90,6 @@ function pushYamlSourceBreakdown(lines, diff) {
   }
 }
 
-function splitSentences(text) {
-  const normalized = cleanText(text);
-  if (!normalized) {
-    return [];
-  }
-  return normalized
-    .split(/(?<=[.!?。！？])\s+/)
-    .map((sentence) => cleanText(sentence))
-    .filter((sentence) => sentence.length > 20);
-}
-
 function uniqueParagraphs(texts) {
   const seen = new Set();
   const unique = [];
@@ -112,165 +104,61 @@ function uniqueParagraphs(texts) {
   return unique;
 }
 
-async function fetchArticleText(url) {
-  if (!url) {
-    return '';
+function extractArticleText(html) {
+  const $ = cheerio.load(html);
+  $('script, style, noscript, nav, footer, aside, form, svg, iframe, [hidden], [aria-hidden="true"], .related-posts, .sharedaddy, #comments').remove();
+  const selectors = ['[itemprop="articleBody"]', '.entry-content', '.post-content', '.article-content', '.blog-post-content', 'article', 'main', '[role="main"]'];
+  for (const selector of selectors) {
+    const root = $(selector).first();
+    const blocks = uniqueParagraphs(root.find('h1, h2, h3, h4, p, li, tr, figcaption, pre')
+      .toArray()
+      .filter((node) => $(node).parentsUntil(root).filter('li, tr, pre').length === 0)
+      .map((node) => $(node).is('tr')
+        ? $(node).find('th, td').toArray().map((cell) => cleanText($(cell).text())).join(' | ')
+        : $(node).text()));
+    const text = blocks.join('\n\n');
+    if (text.length >= 100) return text;
   }
+  throw new Error('Article body could not be extracted from an article/main container.');
+}
+
+async function fetchArticleText(url) {
   const response = await axios.get(url, {
     timeout: 20000,
+    maxContentLength: 5 * 1024 * 1024,
     headers: { 'User-Agent': 'msblogs-updates-tracker/1.0' },
   });
-  const $ = cheerio.load(response.data);
-
-  $('script, style, noscript, header, footer, nav, form, svg, iframe').remove();
-  const paragraphCandidates = uniqueParagraphs(
-    $('article p, main p, [role="main"] p, .post-content p, .entry-content p, .article-content p, p')
-      .toArray()
-      .map((node) => $(node).text())
-      .filter((text) => cleanText(text).length > 40),
-  );
-
-  if (paragraphCandidates.length === 0) {
-    return '';
-  }
-
-  return paragraphCandidates.join(' ');
+  return extractArticleText(response.data);
 }
 
-function buildGroundedSummary(article, articleText) {
-  const baseSummary = cleanText(article.summary);
-  const sourceSentences = splitSentences(articleText);
-  if (sourceSentences.length === 0) {
-    return baseSummary || 'Primary article body could not be extracted. Please refer to the original URL.';
-  }
-
-  const targetMin = Math.max(baseSummary.length * 2, 180);
-  const targetMax = Math.max(baseSummary.length * 3, 420);
-  let summary = '';
-
-  for (const sentence of sourceSentences) {
-    const next = summary ? `${summary} ${sentence}` : sentence;
-    if (next.length > targetMax) {
-      break;
-    }
-    summary = next;
-    if (summary.length >= targetMin) {
-      break;
-    }
-  }
-
-  if (!summary) {
-    summary = sourceSentences[0];
-  }
-
-  if (summary.length > targetMax) {
-    summary = `${summary.slice(0, targetMax - 3).trim()}...`;
-  }
-
-  return summary;
-}
-
-const JAPANESE_TOPIC_RULES = [
-  {
-    keywords: ['copilot', 'agent', 'model', 'ai', 'llm', 'machine learning'],
-    text: 'Copilot や AI、エージェントに関する変更点や評価ポイントを確認できます。',
-  },
-  {
-    keywords: ['security', 'identity', 'compliance', 'vulnerability', 'cve', 'defender'],
-    text: 'セキュリティ、ID、コンプライアンスに関する重要な更新を確認できます。',
-  },
-  {
-    keywords: ['azure', 'cloud', 'kubernetes', 'container', 'serverless'],
-    text: 'Azure やクラウド基盤に関する新機能・運用上のポイントを確認できます。',
-  },
-  {
-    keywords: ['teams', 'outlook', 'microsoft 365', 'office', 'productivity'],
-    text: 'Microsoft 365 と業務生産性に関する機能更新を確認できます。',
-  },
-  {
-    keywords: ['fabric', 'power bi', 'analytics', 'data', 'warehouse', 'lakehouse'],
-    text: 'データ分析基盤や Fabric / Power BI に関する更新を確認できます。',
-  },
-  {
-    keywords: ['github', 'vscode', 'visual studio', 'developer', 'extension', 'actions'],
-    text: '開発者向けツールやワークフローに関する更新を確認できます。',
-  },
-];
-
-const JAPANESE_ACTION_RULES = [
-  {
-    keywords: ['general availability', 'ga', 'available', 'launch', 'released', 'introducing'],
-    text: '新機能またはサービス提供開始の内容です。',
-  },
-  {
-    keywords: ['preview', 'beta'],
-    text: 'プレビュー機能や今後利用可能になる機能の案内です。',
-  },
-  {
-    keywords: ['deprecated', 'deprecation', 'retire', 'retirement', 'breaking change'],
-    text: '廃止予定や互換性に影響する変更に注意が必要です。',
-  },
-  {
-    keywords: ['performance', 'efficiency', 'improve', 'improvement', 'best practices'],
-    text: '性能改善やベストプラクティスに関する解説です。',
-  },
-];
-
-function escapeRegExp(value) {
-  return value.replace(/[.*+?^${}()|[\]\\]/gu, '\\$&');
-}
-
-function includesKeyword(haystack, keyword) {
-  return new RegExp(`(^|[^a-z0-9])${escapeRegExp(keyword)}([^a-z0-9]|$)`, 'u').test(haystack);
-}
-
-function findJapaneseRuleText(text, rules, fallback) {
-  const haystack = cleanText(text).toLowerCase();
-  // Rules are evaluated in array order so higher-priority matches can be placed first.
-  return rules.find((rule) => rule.keywords.some((keyword) => includesKeyword(haystack, keyword)))?.text || fallback;
-}
-
-function generateJapaneseSummaryFromRules(article, englishSummary) {
-  const title = cleanText(article.title) || '無題の記事';
-  const sourceName = cleanText(article.source_name) || cleanText(article.source_id) || 'Microsoft 関連ブログ';
-  const haystack = `${title} ${englishSummary} ${article.summary}`;
-  const action = findJapaneseRuleText(haystack, JAPANESE_ACTION_RULES, '発表内容や変更点の概要を確認できます。');
-  const topic = findJapaneseRuleText(
-    haystack,
-    JAPANESE_TOPIC_RULES,
-    'Microsoft と GitHub の技術情報に関する更新を確認できます。',
-  );
-
-  return `${sourceName} で「${title}」が公開されました。${action}${topic}`;
-}
-
-async function buildLocalizedArticlesBySource(diff) {
+async function buildLocalizedArticlesBySource(diff, { fetchText = fetchArticleText, summarize = summarizeArticle } = {}) {
   const articlesBySource = new Map();
   const frontmatterArticles = [];
   const sortedArticles = [...(diff.new_articles || [])].sort((left, right) =>
     cleanText(left.source_name).localeCompare(cleanText(right.source_name)),
   );
 
-  const textCache = new Map();
+  const summaryCache = new Map();
   for (const article of sortedArticles) {
     const articleUrl = cleanText(article.url);
-    let articleText = textCache.get(articleUrl) || '';
-    if (!articleText && articleUrl) {
+    let analysis = summaryCache.get(articleUrl);
+    if (!analysis) {
       try {
-        articleText = await fetchArticleText(articleUrl);
-        textCache.set(articleUrl, articleText);
-      } catch {
-        articleText = '';
+        analysis = await summarize(article, await fetchText(articleUrl));
+        summaryCache.set(articleUrl, analysis);
+      } catch (error) {
+        throw new Error(`Cannot generate grounded summary for ${articleUrl}: ${error.message}`);
       }
     }
 
     const sourceName = cleanText(article.source_name) || cleanText(article.source_id) || 'unknown';
-    const summaryEn = buildGroundedSummary(article, articleText);
-    const summary = generateJapaneseSummaryFromRules(article, summaryEn);
+    const { summary, summaryEn, keyPoints, significance } = analysis;
     const localizedArticle = {
       ...article,
       summary,
       summary_en: summaryEn,
+      key_points: keyPoints,
+      significance,
     };
 
     frontmatterArticles.push(localizedArticle);
@@ -285,6 +173,8 @@ async function buildLocalizedArticlesBySource(diff) {
       publishedAt: cleanText(article.published_at) || 'unknown',
       summary,
       summaryEn,
+      keyPoints,
+      significance,
     });
   }
 
@@ -323,8 +213,13 @@ function buildFrontmatter(date, diff) {
   return lines.join('\n');
 }
 
-async function toMarkdown(date, diff) {
-  const { articlesBySource, frontmatterArticles } = await buildLocalizedArticlesBySource(diff);
+function markdownText(value) {
+  return cleanText(value).replace(/&/gu, '&amp;').replace(/</gu, '&lt;').replace(/>/gu, '&gt;')
+    .replace(/([\\`*_[\]{}])/gu, '\\$1');
+}
+
+async function toMarkdown(date, diff, options) {
+  const { articlesBySource, frontmatterArticles } = await buildLocalizedArticlesBySource(diff, options);
   const localizedDiff = { ...diff, new_articles: frontmatterArticles };
   const lines = [
     buildFrontmatter(date, localizedDiff),
@@ -351,8 +246,15 @@ async function toMarkdown(date, diff) {
       for (const article of articles) {
         lines.push(`#### [${article.title}](${article.url})`);
         lines.push(`- 公開日時: ${article.publishedAt}`);
-        lines.push(`- 要約: ${article.summary}`);
-        lines.push(`- English summary: ${article.summaryEn}`);
+        lines.push(`- 要約: ${markdownText(article.summary)}`);
+        lines.push(`- なぜ重要か: ${markdownText(article.significance)}`);
+        lines.push('');
+        lines.push('**重要ポイント**');
+        for (const point of article.keyPoints) lines.push(`- ${markdownText(point)}`);
+        lines.push('');
+        lines.push('<details><summary>English summary</summary>', '');
+        lines.push(markdownText(article.summaryEn));
+        lines.push('', '</details>');
         lines.push('');
       }
     }
@@ -402,7 +304,11 @@ async function main() {
   console.log(JSON.stringify({ date, output_file: output }, null, 2));
 }
 
-main().catch((error) => {
-  console.error(error.message);
-  process.exitCode = 1;
-});
+if (require.main === module) {
+  main().catch((error) => {
+    console.error(error.message);
+    process.exitCode = 1;
+  });
+}
+
+module.exports = { cleanText, extractArticleText, fetchArticleText, toMarkdown };

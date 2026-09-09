@@ -77,6 +77,9 @@ jobs:
         run: node scripts/diff-analyzer.js "${{ steps.dates.outputs.target_date }}" "${{ steps.dates.outputs.yesterday_date }}"
 
       - name: Generate daily markdown page
+        env:
+          COPILOT_GITHUB_TOKEN: ${{ secrets.COPILOT_GITHUB_TOKEN }}
+          SUMMARY_MODEL: ${{ vars.SUMMARY_MODEL || 'gpt-5.4' }}
         run: node scripts/generate-daily-page.js "${{ steps.dates.outputs.target_date }}"
 
       - name: Write force-run marker
