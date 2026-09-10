@@ -34,7 +34,7 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  TRACKED_UPDATE_PATHS: 'cache/blogs cache/diff content/updates src/content/updates cache/forced-run.json'
+  TRACKED_UPDATE_PATHS: 'cache/blogs cache/diff cache/summaries content/updates src/content/updates cache/forced-run.json'
 
 jobs:
   scan_commit_and_build:
@@ -44,6 +44,7 @@ jobs:
       contents: write
     outputs:
       changes_detected: ${{ steps.changes.outputs.changes_detected }}
+      publish_ready: ${{ steps.changes.outputs.publish_ready }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -126,6 +127,8 @@ jobs:
         run: node scripts/diff-analyzer.js "${{ steps.dates.outputs.target_date }}" "${{ steps.dates.outputs.yesterday_date }}"
 
       - name: Generate daily markdown page
+        id: generate
+        continue-on-error: true
         env:
           COPILOT_GITHUB_TOKEN: ${{ secrets.COPILOT_GITHUB_TOKEN }}
           SUMMARY_MODEL: ${{ vars.SUMMARY_MODEL || 'gpt-5.4' }}
@@ -157,12 +160,18 @@ jobs:
           IFS=' ' read -r -a tracked_paths <<< "$TRACKED_UPDATE_PATHS"
           if [ -z "$(git status --porcelain -- "${tracked_paths[@]}")" ]; then
             echo "changes_detected=false" >> "$GITHUB_OUTPUT"
+            echo "publish_ready=false" >> "$GITHUB_OUTPUT"
           else
             echo "changes_detected=true" >> "$GITHUB_OUTPUT"
+            if [ "${{ steps.generate.outcome }}" = "success" ]; then
+              echo "publish_ready=true" >> "$GITHUB_OUTPUT"
+            else
+              echo "publish_ready=false" >> "$GITHUB_OUTPUT"
+            fi
           fi
 
       - name: Report no changes
-        if: ${{ steps.changes.outputs.changes_detected == 'false' }}
+        if: ${{ steps.changes.outputs.changes_detected == 'false' && steps.generate.outcome == 'success' }}
         shell: bash
         run: |
           echo "### ℹ️ No changes detected — main was not updated" >> "$GITHUB_STEP_SUMMARY"
@@ -173,15 +182,15 @@ jobs:
           echo "No changes detected for ${{ steps.dates.outputs.display_date }} — main update and Pages deployment skipped."
 
       - name: Generate static site
-        if: ${{ steps.changes.outputs.changes_detected == 'true' }}
+        if: ${{ steps.changes.outputs.publish_ready == 'true' }}
         run: npm run build
 
       - name: Setup Pages
-        if: ${{ steps.changes.outputs.changes_detected == 'true' }}
+        if: ${{ steps.changes.outputs.publish_ready == 'true' }}
         uses: actions/configure-pages@v5
 
       - name: Upload Pages artifact
-        if: ${{ steps.changes.outputs.changes_detected == 'true' }}
+        if: ${{ steps.changes.outputs.publish_ready == 'true' }}
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
@@ -203,7 +212,7 @@ jobs:
           fi
 
       - name: Report update result
-        if: ${{ steps.changes.outputs.changes_detected == 'true' }}
+        if: ${{ steps.changes.outputs.publish_ready == 'true' }}
         shell: bash
         run: |
           echo "### ✅ Daily updates committed and Pages artifact prepared" >> "$GITHUB_STEP_SUMMARY"
@@ -215,10 +224,18 @@ jobs:
           echo "- **Deployment mode:** \`GitHub Actions\`" >> "$GITHUB_STEP_SUMMARY"
           echo "- **Artifact:** \`dist/\`" >> "$GITHUB_STEP_SUMMARY"
 
+      - name: Report resumable generation failure
+        if: ${{ steps.generate.outcome == 'failure' }}
+        shell: bash
+        run: |
+          echo "### Generation stopped after saving validated summary checkpoints" >> "$GITHUB_STEP_SUMMARY"
+          echo "Re-run the same date or range to resume from the committed cache." >> "$GITHUB_STEP_SUMMARY"
+          exit 1
+
   deploy:
     name: Deploy to GitHub Pages
     needs: scan_commit_and_build
-    if: ${{ needs.scan_commit_and_build.outputs.changes_detected == 'true' }}
+    if: ${{ needs.scan_commit_and_build.outputs.publish_ready == 'true' }}
     runs-on: ubuntu-latest
     concurrency:
       group: pages

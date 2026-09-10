@@ -1,15 +1,18 @@
 const fs = require('fs/promises');
 const path = require('path');
+const crypto = require('crypto');
 const axios = require('axios');
 const cheerio = require('cheerio');
 const { isDateString, toDateString } = require('./utils/date-utils');
-const { diffFile, fileExists, readJson } = require('./utils/cache-manager');
+const { diffFile, fileExists, readJson, writeJson } = require('./utils/cache-manager');
 const { MAX_ARTICLE_LENGTH, summarizeArticle } = require('./utils/article-summarizer');
 
 const ROOT = path.resolve(__dirname, '..');
 const UPDATES_DIR = path.join(ROOT, 'content', 'updates');
 const ASTRO_UPDATES_DIR = path.join(ROOT, 'src', 'content', 'updates');
 const INDEX_FILE = path.join(UPDATES_DIR, 'index.md');
+const SUMMARY_CACHE_DIR = path.join(ROOT, 'cache', 'summaries');
+const SUMMARY_CACHE_SCHEMA = 1;
 
 function cleanText(value) {
   return String(value || '')
@@ -209,6 +212,36 @@ async function fetchArticleText(url, get = axios.get, wait = (milliseconds) =>
   throw readerError;
 }
 
+function isCompleteSummary(value) {
+  return typeof value?.summary === 'string' && typeof value?.summaryEn === 'string' &&
+    Array.isArray(value?.keyPoints) && value.keyPoints.length >= 2 &&
+    value.keyPoints.every((point) => typeof point === 'string') && typeof value?.significance === 'string';
+}
+
+async function summarizeArticleCached(article, body, summarize = summarizeArticle, cacheDir = SUMMARY_CACHE_DIR) {
+  const fingerprint = crypto.createHash('sha256').update(JSON.stringify({
+    schema: SUMMARY_CACHE_SCHEMA,
+    model: process.env.SUMMARY_MODEL || 'gpt-5.4',
+    url: cleanText(article.url),
+    body,
+  })).digest('hex');
+  const cacheFile = path.join(cacheDir, `${fingerprint}.json`);
+
+  if (await fileExists(cacheFile)) {
+    try {
+      const cached = await readJson(cacheFile);
+      if (isCompleteSummary(cached)) return cached;
+    } catch {
+      // Replace incomplete or corrupt cache entries with a newly validated summary.
+    }
+  }
+
+  const analysis = await summarize(article, body);
+  if (!isCompleteSummary(analysis)) throw new Error('Summarizer returned an incomplete validated summary.');
+  await writeJson(cacheFile, analysis);
+  return analysis;
+}
+
 async function buildLocalizedArticlesBySource(diff, { fetchText = fetchArticleText, summarize = summarizeArticle } = {}) {
   const articlesBySource = new Map();
   const frontmatterArticles = [];
@@ -222,7 +255,10 @@ async function buildLocalizedArticlesBySource(diff, { fetchText = fetchArticleTe
     let analysis = summaryCache.get(articleUrl);
     if (!analysis) {
       try {
-        analysis = await summarize(article, await fetchText(articleUrl));
+        const body = await fetchText(articleUrl);
+        analysis = summarize === summarizeArticle
+          ? await summarizeArticleCached(article, body)
+          : await summarize(article, body);
         summaryCache.set(articleUrl, analysis);
       } catch (error) {
         throw new Error(`Cannot generate grounded summary for ${articleUrl}: ${error.message}`);
@@ -451,5 +487,6 @@ module.exports = {
   fetchArticleText,
   generateDate,
   resolveTargetDates,
+  summarizeArticleCached,
   toMarkdown,
 };
