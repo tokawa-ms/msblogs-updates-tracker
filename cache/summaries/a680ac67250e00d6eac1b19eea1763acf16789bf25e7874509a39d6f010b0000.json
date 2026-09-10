@@ -1,0 +1,11 @@
+{
+  "summary": "Claude Opus 4.8がMicrosoft Foundryで利用可能になり、複雑なコーディング作業、エージェント型ワークフロー、長文書をまたぐ業務推論に向くモデルとして提供された。コードベース理解や編集前の計画、長いセッションでの依存関係追跡に加え、複数ステップでのツール利用やエラー回復を重視している。Foundry上では、AIアプリの構築・評価・デプロイ・運用を行う基盤の中でこのモデルを利用できる。",
+  "keyPoints": [
+    "Microsoft FoundryでClaude Opus 4.8を利用でき、AIアプリの構築・評価・デプロイ・運用を行うFoundryの枠組みの中で扱える。",
+    "ソフトウェア開発向けには、機能開発、デバッグ、リファクタリング、移行のような実務を想定し、コードベース理解、編集前の計画、長時間セッションでの依存関係追跡を支える設計だと説明している。",
+    "エージェント用途では、複数ステップのワークフローでのツール利用、エラー回復、問題解決力の強化をうたい、顧客向けエージェントや社内自動化、複雑なワークフローオーケストレーションを対象にしている。",
+    "企業向けには、長い文書や複雑な入力、複数ソースをまたぐ推論を想定し、研究要約、金融分析、契約レビュー、規制対応、サイバーセキュリティ分析などの文書中心業務の例が挙げられている。"
+  ],
+  "significance": "Microsoft FoundryでAIアプリを構築・評価・運用する開発者や、社内自動化や文書集約型業務を持つ企業チームに関係する。Foundryの統合環境の中で、シナリオごとのモデル適合性比較や自社データでの評価を行いながら、コーディング、エージェント、長文書分析にまたがるClaudeの選択肢を増やせるためだ。",
+  "summaryEn": "Claude Opus 4.8 is now available in Microsoft Foundry as a model aimed at complex coding work, agentic workflows, and reasoning over long, document-heavy enterprise tasks. It emphasizes codebase understanding, planning before edits, dependency tracking across long sessions, and more reliable multi-step tool use and error recovery within Foundry's AI application platform."
+}

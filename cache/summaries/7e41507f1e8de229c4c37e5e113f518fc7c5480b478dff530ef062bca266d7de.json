@@ -1,0 +1,12 @@
+{
+  "summary": "Claude Fable 5がMicrosoft Foundryで本日利用可能になり、Foundry Models、Foundry Agent Service、GitHub Copilotでも使えるようになった。長時間・多段階・非同期の作業向けモデルで、複雑なコード改修や調査、文書中心の業務を進められるとされる。料金は入力100万トークン10ドル、出力50ドルで、一般提供版には敏感分野向けの利用制限がある。",
+  "keyPoints": [
+    "Microsoft Foundryで本日利用可能となり、Foundry Models、Foundry Agent Service、GitHub Copilotから利用できる。",
+    "長時間・多段階・非同期のタスク向けに設計され、複雑なコーディング、調査、文書中心ワークフローで複数ステップをまたぐ処理を担うモデルとして位置付けられている。",
+    "視覚機能が強化され、文書、PDF、図、グラフ、密な表を含むマルチモーダル案件に適するとされ、財務、法務、分析、アーキテクチャ分野の手作業が多い資料レビュー用途も想定されている。",
+    "料金は入力100万トークンあたり10ドル、出力100万トークンあたり50ドル。",
+    "一般提供版はサイバーセキュリティ、生物学、化学などの敏感分野で制限付きで、制限を外したClaude Mythos 5はProject Glasswing参加者を含む一部の選定ユーザー向けに内部・防御用途で提供される。"
+  ],
+  "significance": "高度な自律エージェントを本番環境で使いたい企業の開発者や、ソフトウェア開発、金融、法務、分析などの部門に関係が大きい。記事は、モデル単体の性能だけでなく、Microsoft IQによる組織データ接続やFoundryのガードレール、Control Planeの監視・安全管理と組み合わせて運用する前提を示しており、高リスク分野では一般提供版に制限が残る点も重要だ。",
+  "summaryEn": "Claude Fable 5 is now available in Microsoft Foundry and can also be used through Foundry Models, Foundry Agent Service, and GitHub Copilot. It is positioned for long-running, multi-stage, asynchronous work such as complex code refactoring, research, and document-heavy tasks. Pricing is $10 per 1M input tokens and $50 per 1M output tokens, and the broadly available version includes restrictions for sensitive domains."
+}

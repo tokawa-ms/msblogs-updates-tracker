@@ -1,0 +1,12 @@
+{
+  "summary": "Foundry IQは、Developer tierのServerlessをパブリックプレビューで提供開始し、Foundry IQ knowledge basesをGAに引き上げた。あわせて、Web IQ連携は限定提供で利用可能になり、企業コンテンツと構造化データを単一の知識ベースにまとめるマルチソース取得も拡張した。これにより、エージェント向けの知識接続を本番運用と外部情報活用の両面で広げている。",
+  "keyPoints": [
+    "ServerlessのDeveloper tierはパブリックプレビューで、課金は使用した計算資源と保存容量に対して行われ、アイドル時はスケールゼロになる。利用量はCompute Unitsで1分ごとに0.25 CU刻みで計算され、課金開始日は2026年9月13日。",
+    "新しい知識ソースはプレビューで、Work IQやFabric IQなどを追加した。企業コンテンツや構造化データを単一の知識ベースにまとめ、マルチソースのagentic retrievalを行いやすくする。",
+    "Microsoft Web IQはFoundry IQのMCP knowledge source経由で限定提供され、Web、ニュース、画像、動画、ショッピングの外部情報を取得できる。記事では、publisher preferencesを尊重し、sub-165 ms latencyとzero data retentionをうたっている。",
+    "GAになったのはナレッジベース本体に加え、Foundry IQ MCP server、agentic retrieval references、出力・活動ログ、minimal retrieval reasoning effortなどで、SLA、stable APIs、compliance certificationsが付く。GA対象の知識ソースにはAzure Blob Storage、search indexes、Web、OneLakeが含まれる。",
+    "検索品質では、最新のagentic retrieval強化により、評価データセット全体で回答品質ベンチマークが最大20%改善し、single-shot RAG比でrecallが最大54%向上したとする。加えて、サーバー側トークンキャッシュでマルチターン時の冗長な消費も減らす。"
+  ],
+  "significance": "エージェント群を構築する開発者と、既存の権限や機密ラベルを守りながら社内外データを使いたい企業に関係する。Serverlessはバースト型ワークロードのインフラ管理負担を下げ、単一知識ベース化と権限同期・ラベル統制によって、知識接続を増やしてもガバナンスを保ちやすくする。",
+  "summaryEn": "Foundry IQ launched its Serverless Developer tier in public preview and moved Foundry IQ knowledge bases to general availability. It also made Web IQ integration available in limited access and expanded multi-source retrieval that unifies enterprise content and structured data in a single knowledge base, broadening production use and external context for agents."
+}

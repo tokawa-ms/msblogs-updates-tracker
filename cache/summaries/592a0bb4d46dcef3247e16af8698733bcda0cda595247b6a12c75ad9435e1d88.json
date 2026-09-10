@@ -1,0 +1,11 @@
+{
+  "summary": "Azure Copilot Migration AgentはAzure Storage向け統合を追加し、Azure Migrateの評価データを使って適切なストレージ移行先や実行ツールを案内するプレビューを提供し始めた。あわせてMicrosoftは、無料のオンライン移行・同期向けAzure Storage Moverと、大規模または低帯域環境向けのオフライン転送Azure Data Boxを組み合わせる段階的な移行戦略を提示している。さらにAzure Data Box 120と525は、サービス料金とMicrosoft管理の送料なしで利用可能になった。",
+  "keyPoints": [
+    "Azure Copilot Migration AgentのAzure Storage統合はプレビュー提供で、Azure Migrateのプロジェクトデータを基に、保存先候補の評価、適切なAzure Storageサービスへの対応付け、実行ツールの選定を支援する。",
+    "Azure Storage Moverはファイル/オブジェクトデータ向けの無料の管理型オンライン移行・同期ツールで、オンプレミスからの増分同期、AWS S3からAzure Blobへのクラウド間移行、Azure内のコンテナー間コピーに対応する。機能自体は無償だが、標準のストレージ、トランザクション、ネットワーク料金は発生する。",
+    "Azure Data Boxは大規模データや帯域制約がある環境向けのオフライン転送手段として位置付けられ、初回の大量移送を担った後にオンラインツールで同期や切り替えを行う段階移行にも使える。Data Box 120と525はサービス料金とMicrosoft管理の送料が不要になった。",
+    "顧客事例として、Copelandは300TB超をAzureへ移行し、WNETは約3.6PB・80万時間超のメディアを移し、資産取り出し時間を最大24時間から4時間未満へ短縮したと紹介されている。"
+  ],
+  "significance": "影響を受けるのは、テラバイト級からペタバイト級のデータを抱え、帯域制約、停止許容度、依存関係、規制要件を同時に考慮しなければならない企業や運用チームだ。Azure Migrateで計画を立て、Storage MoverとData Boxをオンライン/オフライン/段階移行に応じて使い分けられるため、データセンター退出、ハイブリッドクラウド拡張、AI向けデータ準備、規制業界の移行をより一貫した手順で進めやすくなる。",
+  "summaryEn": "Azure Copilot Migration Agent has added Azure Storage integration in preview, using Azure Migrate assessment data to guide storage target and migration-tool choices. Microsoft also presents a phased migration approach that combines the free online migration and sync tool Azure Storage Mover with Azure Data Box for large-scale or bandwidth-constrained offline transfers. Azure Data Box 120 and 525 are now available without service fees or Microsoft-managed shipping fees."
+}
