@@ -1,0 +1,12 @@
+{
+  "summary": "VS CodeではGPT-5.5の既定システムプロンプトが、実験で勝ったTreatment B「LargePromptSections」に切り替わった。OpenAIと共同の2週間実験では、探索を抑えて編集後すぐ検証する構成を比較し、Treatment Bは遅延や上位尾部のトークン、ツール呼び出しで改善しつつ品質ガードレールはおおむね安定だった。",
+  "keyPoints": [
+    "実験はVS Code上で2週間行われ、GPT-5.5エージェントのトラフィックをコントロール1群と処置2群に25/25/25で割り当て、残りは既定プロンプトのまま比較対象外で流した。",
+    "Treatment Aは探索を減らすための単一で簡潔な注意喚起にとどめ、Treatment BはBefore_the_first_editとAfter_the_first_editの節を加え、局所仮説から最初の編集、直後の検証までの流れを明示した。",
+    "結果ではTreatment Bが最も強く、初回編集までの時間をp50で5.68%、p95で9.30%短縮し、p95総トークンを7.64%、平均ツール呼び出しを8.54%減らした。",
+    "品質面ではTreatment Bのcommit survival rateは+0.68%で有意差なしだった一方、10-minute survival rateは-0.44%で、統計的有意性は閾値をわずかに超えた程度だった。",
+    "VS Code teamは総合評価でTreatment Bを採用し、LargePromptSectionsをGPT-5.5の既定システムプロンプトとして出荷した。"
+  ],
+  "significance": "利用量課金でこのGPT-5.5エージェントを使う利用者に関係する。記事では、無駄な探索に使うトークンはそのまま待ち時間と支払いにつながり、根拠ある編集に早く到達できるエージェントは体験と請求額の両面で有利になると説明している。",
+  "summaryEn": "VS Code switched GPT-5.5's default system prompt to the winning Treatment B, LargePromptSections. In a two-week experiment with OpenAI, it compared a structure that limits exploration and validates immediately after edits, and Treatment B improved latency, upper-tail token use, and tool calls while keeping quality guardrails mostly stable."
+}

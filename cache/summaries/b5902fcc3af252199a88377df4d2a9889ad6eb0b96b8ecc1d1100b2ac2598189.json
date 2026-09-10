@@ -1,0 +1,11 @@
+{
+  "summary": "GitHub Innovation GraphのQ1 2026更新では、各経済圏から他国の公開リポジトリへ向かうアウトバウンド協業がQ4 2025比で16%増え、2020年以来で2番目に高い四半期成長率になった。記事は、機能アクセス拡大と重なるシリアの伸びや、直近6カ月で8,000人超の認証済みシリア人学生へのStudent Developer Pack提供も紹介している。あわせて、急増するコントリビューションで負荷が増すメンテナー向けに、PR上限制御、投稿制御、コメント固定、最大67%高速化したPR差分表示などの既存提供機能を挙げた。",
+  "keyPoints": [
+    "GitHub Innovation Graphのeconomy collaborators指標では、Q1 2026のアウトバウンド協業が前四半期比16%増となり、2020年以降で2番目に高い伸び率だった。",
+    "シリアではQ4 2025以降の顕著な成長が示され、対シリア制裁・輸出規制の緩和後にGitHub機能へのアクセスを広げた変更と時期が重なる。さらに直近6カ月で、8,000人超の認証済みシリア人学生にGitHub Student Developer Packを提供した。",
+    "メンテナー向けには、書き込み権限のないユーザーが同時に開けるPR数の上限設定と、リポジトリ単位でのPR・Issue作成制限または全面無効化が提供済み機能として挙げられた。",
+    "操作性と性能面では、Issue上部へのコメント固定やノイズ削減バナーに加え、新しいfiles changed体験で大きなPRの応答性が最大67%向上し、Issue閲覧・移動速度も大きく改善した。"
+  ],
+  "significance": "国境をまたぐOSS協業の増加で恩恵を受けるのは世界の開発者コミュニティだが、同時にメンテナー側は流入増による運用負荷の影響を受けている。この記事は、GitHubが成長データの公開だけでなく、アクセス拡大の対象となったシリアの開発者・学生への支援と、レビューや通知負荷を抑える管理機能や性能改善を並行して進めている点を示している。",
+  "summaryEn": "The GitHub Innovation Graph Q1 2026 update shows outbound cross-economy open source collaboration rose 16% from Q4 2025, the second-highest quarterly growth since 2020. It also highlights Syria’s growth alongside broader GitHub access and 8,000+ Student Developer Pack recipients, while listing shipped maintainer features such as PR limits, repo-level controls, pinned comments, and pull request diffs that are up to 67% faster."
+}
