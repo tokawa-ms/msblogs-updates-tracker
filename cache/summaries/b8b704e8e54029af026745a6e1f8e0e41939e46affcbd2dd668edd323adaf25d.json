@@ -1,0 +1,11 @@
+{
+  "summary": "Power BIのAgent SkillsとFabric Apps for Semantic ModelsがMicrosoft Build 2026で発表され、AIエージェントがセマンティックモデルやレポート、セマンティックモデル上のFabricネイティブWebアプリを自然言語で構築・展開できるようになる。Agent Skills for Power BIはPBIPを使った新規・既存レポートのエンドツーエンド開発に対応し、来週から順次ロールアウト予定。Fabric AppsはRayfin SDKとFabricの共有データ基盤を使い、分析と業務アプリを同じガバナンスの上で作りやすくする。",
+  "keyPoints": [
+    "2025年11月に公開されたPower BI Modeling MCPはAIエージェントによるPower BIのセマンティック層操作を可能にしており、今回のAgent SkillsはPBIP経由でレポート開発まで対象を広げる。",
+    "Agent Skillsでは、平易な指示やスクリーンショットを基に、Fabricデータからのセマンティックモデル構築、レポートページ生成、ビジュアル改善までAIエージェントに任せられる。",
+    "Agent Skillsは新規レポート専用ではなく既存ソリューションにも使え、発表時点では来週からの展開予定とされている。",
+    "Fabric AppsはMicrosoft FabricをバックエンドにしたAIファーストのWebアプリ構築手法で、Rayfin SDKやFabric data apps templateを使い、セマンティックモデル上の分析・運用向けアプリを素早く作れる。"
+  ],
+  "significance": "Power BIやFabricの開発者に加え、ガバナンス済み分析データの上で業務アプリを作りたい企業に影響が大きい。セマンティックモデルの信頼できる指標とFabricの共有データ基盤、セキュリティ、ガバナンスをそのまま使えるため、別スタックでビジネスロジックや統制を作り直さずに、レポートや運用アプリの構築・展開を短縮できる。",
+  "summaryEn": "Power BI Agent Skills and Fabric Apps for Semantic Models were announced at Microsoft Build 2026, enabling AI agents to build semantic models, reports, and Fabric-native web apps on semantic models through natural language. Agent Skills for Power BI extends end-to-end development to new and existing PBIP reports and is set to roll out next week, while Fabric Apps uses Rayfin SDK and Fabric’s shared data foundation to make analytics and operational apps easier to build under the same governance."
+}
