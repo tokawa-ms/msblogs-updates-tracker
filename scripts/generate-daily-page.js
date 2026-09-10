@@ -4,7 +4,7 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 const { isDateString, toDateString } = require('./utils/date-utils');
 const { diffFile, fileExists, readJson } = require('./utils/cache-manager');
-const { summarizeArticle } = require('./utils/article-summarizer');
+const { MAX_ARTICLE_LENGTH, summarizeArticle } = require('./utils/article-summarizer');
 
 const ROOT = path.resolve(__dirname, '..');
 const UPDATES_DIR = path.join(ROOT, 'content', 'updates');
@@ -183,7 +183,8 @@ async function fetchArticleText(url, get = axios.get, wait = (milliseconds) =>
       maxContentLength: 5 * 1024 * 1024,
       headers: { 'User-Agent': 'msblogs-updates-tracker/1.0' },
     });
-    return extractArticleText(response.data);
+    const articleText = extractArticleText(response.data);
+    if (articleText.length <= MAX_ARTICLE_LENGTH) return articleText;
   } catch (error) {
     if (error.response?.status !== 403) throw error;
   }
