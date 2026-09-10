@@ -1,0 +1,11 @@
+{
+  "summary": "VS CodeではGitHub Copilot Chat拡張機能が2025年6月30日の更新時点でオープンソース化され、5月時点の方針としてMITライセンスでコードを公開し、関連するAI機能を段階的にVS Code本体へ移す計画が示された。あわせて、コミュニティがAI機能やプロンプト変更に参加しやすいよう、プロンプトテスト基盤も公開する方針を明らかにしている。",
+  "keyPoints": [
+    "2025年6月30日の更新で、GitHub Copilot Chat拡張機能はすでにオープンソース化されたと告知された。",
+    "5月19日時点では、Copilot Chat拡張機能のコードをMITライセンスで公開し、関連コンポーネントを慎重にVS Codeコアへ再編する計画だった。",
+    "公開の理由として、LLMの性能向上で秘密のプロンプト戦略への依存が下がったこと、AI UIの定石化、OSS拡張の開発しにくさ、データ収集の透明性、AI開発ツールへの攻撃増加が挙げられている。",
+    "今後数週間でAI機能を拡張機能からVS Codeコアへ取り込みつつ、コミュニティのPRでもテスト可能にするためプロンプトテスト基盤もオープンソース化する予定とされた。"
+  ],
+  "significance": "VS Codeの利用者、拡張機能開発者、コミュニティ貢献者に関わる変更だ。Copilot Chatの実装や収集データを確認しやすくなって透明性が増し、拡張のビルド・デバッグ・テストやAI機能への貢献を、より共有された基盤の上で進めやすくする狙いが示されている。",
+  "summaryEn": "VS Code says the GitHub Copilot Chat extension had become open source as of the June 30, 2025 update, following a May plan to release its code under the MIT license and gradually move related AI features into VS Code core. It also said it would open source its prompt testing infrastructure so the community can more easily contribute to and validate AI features and prompt changes."
+}

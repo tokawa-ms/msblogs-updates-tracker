@@ -1,0 +1,11 @@
+{
+  "summary": "Visual Studio CodeではGitHub Copilotのcustom instructionsが一般提供となり、.github/copilot-instructions.mdやworkspace settingsでプロジェクト文脈や出力方針を与えられるようになった。これにより短いプロンプトでも、コーディング規約や既存テンプレート、SQLや仕様書を踏まえた応答やコード生成をしやすくなる。あわせて再利用可能なprompt filesがプレビューとして紹介され、.github/prompts配下の*.prompt.mdを組み合わせてチャットから呼び出せる。",
+  "keyPoints": [
+    "custom instructionsはプロジェクト内の.github/copilot-instructions.mdにMarkdownで記述でき、Copilotが自動的に読み取る。プロジェクト説明や命名規約、インデント幅などを与えることで、短い入力でも期待する形式の応答を得やすくなる。",
+    "workspace settingsでは、コミットメッセージ生成の指示をgithub.copilot.chat.commitMessageGeneration.instructionsで上書きできる。記事の例では、変更理由まで詳しく書き、絵文字を多用するコミットメッセージを生成させている。",
+    "コード生成向けの指示は.github/copilot-instructions.md一枚に限られず、workspace settingsのgithub.copilot.chat.codeGeneration.instructionsで複数ファイルを順番付きで参照できる。Markdown以外にもSQLやコードテンプレートをcustom instructionsとして使える。",
+    "prompt filesはプレビュー機能で、.github/prompts配下の*.prompt.mdとして再利用可能なプロンプトを保存できる。prompt file同士をMarkdownリンクで参照でき、チャットではPromptsメニューから選んで使う。"
+  ],
+  "significance": "チーム固有の開発フローやスタイル、ライブラリ知識、DB設計、スプリント仕様をCopilotに継続的に反映したい開発者やチームに重要な更新だ。長い説明を毎回書かなくても一貫した応答やコード生成、コミットメッセージ生成を狙え、プレビューのprompt filesは個人やチームで共有できる再利用資産として使える。",
+  "summaryEn": "Visual Studio Code has made GitHub Copilot custom instructions generally available, letting developers supply project context and output preferences through .github/copilot-instructions.md and workspace settings. That enables shorter prompts while still grounding responses and code generation in coding standards, templates, SQL, and specifications. The post also introduces prompt files as a preview, allowing reusable *.prompt.md files under .github/prompts to be combined and invoked from chat."
+}

@@ -1,0 +1,11 @@
+{
+  "summary": "VS CodeのGitHub Copilot Chatに、自動で最適なモデルを選ぶ「auto model selection」がプレビューとして順次導入され、まず個人向けプランから展開される。有料ユーザーでは現在主にClaude Sonnet 4を使う計画で、選ばれたモデルに応じて課金倍率が変わり、プレミアムリクエストは10%割引される。プレミアムリクエストを使い切った後も、0xモデルを自動選択して利用を継続できる。",
+  "keyPoints": [
+    "autoは現在の容量と性能に基づいて各リクエストに最適なモデルを自動選択し、Claude Sonnet 4、GPT-5、GPT-5 miniなどを候補にするが、組織で無効化されたモデルは選ばれない。",
+    "有料ユーザー向けの課金倍率は自動選択されたモデルごとに変わり、auto利用時はプレミアムリクエストが10%割引される。例としてSonnet 4は0.9x、GPT-5-miniは0xとして数えられる。",
+    "有料ユーザーがプレミアムリクエストを使い切っても、autoはGPT-5 miniのような0xモデルを必ず選ぶため、利用を中断せず継続できる。",
+    "今後の計画として、タスクに応じた小規模・大規模モデルの動的切り替え、対応モデルの追加、無料プランでの最新モデル活用、モデルと割引の表示改善が挙げられている。"
+  ],
+  "significance": "VS CodeでGitHub Copilot Chatを使う利用者、とくに有料プラン利用者にとっては、容量と性能に応じた自動選択で応答速度向上やレート制限の可能性低下を狙いつつ、プレミアムリクエストの割引と使い切った後の継続利用という運用上の利点がある。一方で、利用可能なモデルは組織のアクセス設定の影響を受ける。",
+  "summaryEn": "VS Code's GitHub Copilot Chat is rolling out auto model selection in preview, starting with individual plans, to automatically choose the best model for each request. For paid users, it currently plans to rely mainly on Claude Sonnet 4, applies a 10% discount with model-dependent request multipliers, and switches to 0x models after premium requests are exhausted so usage can continue."
+}

@@ -1,0 +1,11 @@
+{
+  "summary": "VS Code Dev Daysは終了し、現在はバーチャルイベントのオンデマンド視聴と無料のトレーニング／ワークショップ教材を利用できる。本文では、VS CodeのAI支援開発を学ぶ場として、世界60超の対面イベントと9月23日から25日にかけての地域別オンライン回が企画されていたことが説明されている。各イベントは通常、2本の講義と1時間の実践ラボで構成され、初心者から上級者までを対象としていた。",
+  "keyPoints": [
+    "イベント自体は終了済みで、今はバーチャル開催分のオンデマンド視聴と無料のトレーニング／ワークショップ教材が案内されている。",
+    "対面開催は世界で60超あり、今秋にパリ、ベンガルール、ソウル、ケープタウン、コルドバ、ニューヨークなど各地で行われる計画だった。",
+    "標準的な構成は、30〜45分の導入セッション、30〜45分の地域コミュニティ講演、1時間のハンズオンワークショップで、詳細は地域コミュニティ向けに調整できる。",
+    "オンライン特別版はBrasil、APAC、LATAM、Worldwideの4回で、9月23日から25日にかけてポルトガル語・英語・スペイン語で予定されていた。時刻はそれぞれUTCで15:00、12:30、18:00、16:00。"
+  ],
+  "significance": "VS CodeでAI支援開発を学びたい開発者全般に関係する内容で、初心者には導入とベストプラクティス、経験者には最新のコツを提供する設計になっていた点が重要だ。加えて、対面参加できない人にもオンライン回やオンデマンド視聴、無料教材という学習手段が用意されている。",
+  "summaryEn": "VS Code Dev Days has ended, and the virtual event is now available on demand along with free training and workshop materials. The article says the program was planned to teach AI-assisted development in VS Code through more than 60 in-person events worldwide and regional virtual sessions on September 23-25. Events typically combined two talks with a one-hour hands-on lab for both beginners and advanced developers."
+}

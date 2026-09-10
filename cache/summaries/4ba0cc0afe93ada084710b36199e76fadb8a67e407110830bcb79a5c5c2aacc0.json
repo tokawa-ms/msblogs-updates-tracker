@@ -1,0 +1,12 @@
+{
+  "summary": "GitHub Copilot Free for VS Codeが提供開始され、GitHubアカウントがあれば試用版やサブスクリプション、クレジットカードなしで当日から使えるようになった。無料枠には月2000件のコード補完、月50件のチャット要求、GPT-4oとClaude 3.5 Sonnetへのアクセスが含まれる。あわせて記事では、複数ファイルをまたいで変更提案できるCopilot Editsや、近く統合予定のVision Copilot Previewも紹介している。",
+  "keyPoints": [
+    "無料版はVS Codeで本日から利用可能で、GitHubアカウントだけで始められる。月2000件のコード補完、月50件のチャット要求、GPT-4oとClaude 3.5 Sonnet利用が含まれる。",
+    "Copilot Editsはチャットサイドバー上部から開く複数ファイル編集機能で、プロンプトに応じて既存ファイルをまたぐ変更提案や新規ファイル作成を行える。",
+    "カスタム指示はエディタ単位またはプロジェクト単位で設定でき、.github/copilot-instructions.mdがあれば自動で取り込まれる。@workspace はコードベース全体の文脈を扱い、必要な質問では自動的に含まれる。",
+    "Vision Copilot Previewは現時点ではプレビューで、スクリーンショットやマークアップからUI生成を試せる。画像のalt text生成にも使えるが、利用には自前のOpenAI、Anthropic、GeminiのAPIキーが必要で、Copilot本体に統合された段階では不要になる予定とされている。",
+    "無料枠はVS Code内だけでなくGitHub.comでも使える見込みで、CopilotはVS Code専用ではない。Visual Studioユーザー向けにも無料提供を用意する方針が示され、現時点で使える機能と近日公開分は別ブログで案内されている。"
+  ],
+  "significance": "Copilot未契約のVS Code利用者は、GitHubアカウントだけで補完とチャットを一定量試せるため、導入の前提条件が大きく下がる。加えて、プロジェクト単位のカスタム指示を共有でき、無料枠がGitHub.comにも広がるため、個人開発者だけでなくチームでもCopilotの使い方を揃えやすい。",
+  "summaryEn": "GitHub Copilot Free is now available in VS Code, letting anyone with a GitHub account use it without a trial, subscription, or credit card. The free tier includes 2,000 code completions and 50 chat requests per month, plus access to GPT-4o and Claude 3.5 Sonnet. The article also highlights Copilot Edits for multi-file changes and the upcoming Vision Copilot Preview integration."
+}

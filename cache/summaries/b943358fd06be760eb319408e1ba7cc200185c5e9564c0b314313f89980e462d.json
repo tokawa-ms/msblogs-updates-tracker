@@ -1,0 +1,11 @@
+{
+  "summary": "Copilot Editsは、VS CodeでGitHub Copilotを使って複数ファイルにまたがる編集を自然言語で進められる新しいプレビュー機能として追加された。Working Setで編集対象を指定し、提案された変更をコード上で確認しながら個別に受け入れ・破棄でき、Undo/Redoで反復しやすい。現時点で全GitHub Copilotユーザーが利用でき、基盤モデルにGPT-4o、o1-preview、o1-mini、Claude 3.5 Sonnetを選べる。編集適用には高速化のためのspeculative decoding endpointも使われる。",
+  "keyPoints": [
+    "Working Setという新しいUIで編集対象ファイルを明示的に管理でき、ドラッグ&ドロップや#入力、アクティブなエディタの自動追加で対象をそろえられる。新規ファイルの提案を除き、Working Set外の変更は行わない。",
+    "提案された編集はコード内にインライン表示され、AIが生成した各変更を個別に受け入れたり破棄したりできる。Undo/Redoもあり、テストビューなどを併用して各反復で変更結果を確かめながら進められる。",
+    "内部ではデュアルモデル構成を採用し、編集セッション全体の文脈を使う基盤モデルが初期提案を生成し、その提案をspeculative decoding endpointが高速にエディタへ反映する。基盤モデルはGPT-4o、o1-preview、o1-mini、Claude 3.5 Sonnetから選択できる。",
+    "今後は変更適用用speculative decoding endpointの性能改善、Copilot Chatから文脈を保ったままCopilot Editsへ移る機能、Working Setへのファイル提案、提案チャンクのUndo対応が計画されている。これらを早く試したい場合は、VS Code InsidersとGitHub Copilot Chat拡張のpre-release版利用が案内されている。"
+  ],
+  "significance": "複数ファイルの変更を対話的に進めたいGitHub Copilotユーザーに関係があり、特に複雑なリファクタリングを行う開発者や、深いコーディング経験がない利用者に影響が大きい。記事では、製品マネージャーでも少ないコーディングで初期アイデアを反復でき、VS Codeの開発者にはvscodeリポジトリで複雑な複数ファイルのリファクタリングを進めやすいと説明している。",
+  "summaryEn": "Copilot Edits adds a new preview way to use GitHub Copilot in VS Code for natural-language editing across multiple files. It uses a Working Set to scope edits, shows inline changes that can be accepted or discarded with Undo/Redo, and is available now to all GitHub Copilot users. Users can choose GPT-4o, o1-preview, o1-mini, or Claude 3.5 Sonnet as the foundation model, with a speculative decoding endpoint used to apply changes faster."
+}
