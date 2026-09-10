@@ -1,0 +1,11 @@
+{
+  "summary": "GitHub Copilot appの入門向けガイドでは、作業をプロジェクト起点のセッションとして始め、リポジトリ文脈付きで変更や検証を進める使い方が示された。加えて、Quick Chatで別スレッドを並行して進め、/create-canvasによるブラウザキャンバスでUIを確認しながら調整できる。変更後はAgent MergeでプルリクエストのレビューやCI対応を補助し、マージまでの流れを継続できる。",
+  "keyPoints": [
+    "作業はプロジェクトにひも付くエージェントセッションから始まり、GitHubまたはローカルマシンのプロジェクトを追加して、コードベースや必要なツールを含む状態で着手できる。セッションは関連ファイルの特定、変更、テスト実行まで支援する。",
+    "Quick Chatを使うと、既存の作業を中断せずに別の質問や調査用セッションをホーム画面から追加でき、コードベース理解や方針検討を別スレッドで進められる。",
+    "UI変更では/c​​reate-canvasスラッシュコマンドでブラウザキャンバスを開き、Enable Canvas Dev ModeとPick & Polishを使って画面上の要素を直接選び、次の依頼の文脈として反映できる。",
+    "Agent Mergeはプルリクエストに対して有効化でき、レビュー指摘への対応、CI失敗の支援、マージ競合への対処を行い、必要なチェック通過後にマージ判断へ進める。"
+  ],
+  "significance": "複数の開発タスクを行き来する開発者や、GitHub Copilot appを使い始める人にとって重要なのは、会話単位ではなくプロジェクト、並行セッション、UI確認、PR追跡までを一つの作業空間で扱える点だ。記事は、実装中の文脈維持、別件調査の並行実行、視覚的な調整、レビュー後対応までを分断せずに進める利用像を具体化している。",
+  "summaryEn": "The beginner guide to the GitHub Copilot app shows how to start work from project-linked sessions with repository context, use Quick Chat for parallel threads, refine UI changes in a browser canvas via /create-canvas, and keep pull requests moving through review and CI with Agent Merge."
+}

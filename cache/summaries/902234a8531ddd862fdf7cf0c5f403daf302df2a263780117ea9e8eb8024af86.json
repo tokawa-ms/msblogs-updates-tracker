@@ -1,0 +1,11 @@
+{
+  "summary": "GitHub Copilotの使い方として、CLIや新しいGitHub Copilot appなどで共通のharnessを軸に、プロトタイプ作成、/planでの設計、Autopilotでの実装、Rubber Duckレビューまでを一続きで進める実践的ワークフローが示された。奇抜なプロンプトや新しいAIツールを追い回すのではなく、既存機能だけで反復しながら品質を高めるのが主眼だ。",
+  "keyPoints": [
+    "GitHub Copilot CLI、新しいGitHub Copilot app、VS Codeなどの体験は同じharnessに集約されつつあり、学習を始めるならUIが少なく直接的なCLIから入ることを勧めている。",
+    "YOLO mode（Allow All）を有効にすると、エージェントは都度承認なしでコマンドを実行できる。一方で、安全のためローカルマシンではなく、GitHub Codespacesやdevelopment containersのようなサンドボックスで動かすことを勧めている。",
+    "実装前には低コストなプロトタイプで要件のニュアンスを可視化し、その後は同じセッションのまま/planでエッジケースを掘り下げる流れを推奨している。モデルはGPT 5.6 TerraやClaude Sonnetのような中規模モデルをmedium reasoningで使い、同じモデルと推論レベルを維持するとprompt cachingにより将来のリクエストが割引されると説明している。",
+    "Autopilotは計画項目の完了確認まで含むbuilt-in loopとして実装を進め、必要に応じてExploreやGeneral Purposeのsubagentを自動で使い分ける。仕上げではRubber Duck reviewを別AIファミリーのモデルに依頼し、単一モデルでは見落としうる問題の発見を狙う。"
+  ],
+  "significance": "AI関連の新ツールや手法の多さに圧倒されがちな開発者にとって、複雑な設定や“魔法のプロンプト”に頼らず、GitHub Copilotの既存機能だけで再現しやすい進め方を示している点が重要だ。シンプルさは並行作業や限られたコンテキスト管理にも向いており、多くの利用者が安定して高品質な結果を目指しやすくなる。",
+  "summaryEn": "For GitHub Copilot, the article presents a practical workflow built around the shared harness across the CLI, the new Copilot app, and other surfaces: prototype first, plan with /plan, implement with Autopilot, and finish with a Rubber Duck review. The emphasis is on using existing Copilot features to iterate toward quality instead of chasing new AI tools or fancy prompts."
+}

@@ -1,0 +1,11 @@
+{
+  "summary": "GitHub Sponsorsでは、オープンソースのメンテナーやプロジェクトへの累計支援額が1億ドルを超えた。GitHubによれば、2019年の開始後に2023年には組織によるスポンサー提供を一般提供し、対象地域を103地域まで広げ、請求書払いと一括スポンサー機能も追加した。現在は7万人超のメンテナー・組織と28万人超のスポンサーを支える規模に拡大し、直近の1000万ドルは5カ月で積み上がるなど資金流入の加速も示された。",
+  "keyPoints": [
+    "GitHub Sponsors経由の累計支援額が1億ドル超に達し、支援ネットワークは7万人超のメンテナー・組織と28万人超のスポンサーに広がった。",
+    "機能面では、2023年に組織によるスポンサー提供が一般提供となり、103地域への拡大、Patreonとの連携、一括スポンサーや請求書払いの導入で参加しやすさを高めた。",
+    "資金流入のペースは加速しており、最初の1000万ドルには約2年かかった一方、直近の1000万ドルは5カ月で積み上がった。",
+    "GitHubの分析では、2022年にはスポンサー資金の約40%を組織が占め、1件あたりの組織スポンサーは個人平均の約15倍の規模だった。"
+  ],
+  "significance": "この節目は、オープンソースに依存する企業や個人開発者だけでなく、資金不足や燃え尽きの影響を受けやすいメンテナーに関わる。記事では、企業スポンサーが資金規模を押し上げ、摩擦を減らす機能追加が資金増加につながったとされており、重要プロジェクトの資金不足やメンテナーの燃え尽きがソフトウェアサプライチェーンのリスクであり続ける中、持続的支援の仕組みが広がっていることを示している。",
+  "summaryEn": "GitHub Sponsors has passed $100 million in cumulative funding for open source maintainers and projects. GitHub says it expanded the program after launching in 2019 by making organization-funded sponsorships generally available in 2023, reaching 103 regions, and adding invoice payments and bulk sponsorships. The network now supports more than 70,000 maintainers and organizations with over 280,000 sponsors, and funding velocity is increasing, with the most recent $10 million raised in five months."
+}

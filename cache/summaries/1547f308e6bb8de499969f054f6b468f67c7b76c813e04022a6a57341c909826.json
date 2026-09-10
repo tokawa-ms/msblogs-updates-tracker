@@ -1,0 +1,12 @@
+{
+  "summary": "GitHubのバグ報奨金プログラムは、恒久的な招待制VIPプログラムを正式化し、公開プログラムの報奨金体系も再編した。VIP枠は高品質・高影響の報告者に高い報奨額と速い応答を提供し、公開枠は重大度ごとの固定額に切り替わる。あわせて公開プログラムにはHackerOneのシグナル要件が導入され、新制度は2026年7月27日以降に提出された報告から適用され、既存の未処理分は旧制度で扱われる。",
+  "keyPoints": [
+    "恒久的な招待制VIPプログラムを設け、報奨額はLow 1,000ドル、Medium 7,500ドル、High 20,000ドル、Critical 30,000ドル超とした。",
+    "VIP参加条件は、重大1件、高2件、中4件、低7件のいずれかの実績で、提出数より成果の質を重視する。",
+    "公開プログラムの報奨額はレンジ制ではなく固定額に変更され、Low 250ドル、Medium 2,000ドル、High 5,000ドル、Critical 10,000ドルになる。",
+    "公開プログラムではHackerOneのシグナル要件を導入し、閾値未達の研究者は実績を作るまで提出数が制限されるが、初期提出は最大4件まで認める。",
+    "変更前に提出された報告は旧制度の報奨対象のままで、新制度での査定は2026年7月27日以降の提出分から適用される。"
+  ],
+  "significance": "継続的に質の高い脆弱性報告を行う研究者にとっては、VIP化によって報奨額、応答速度、GitHubのセキュリティエンジニアとの連携が強化される。一方、新規参加者やシグナル閾値未達の研究者も最大4件の提出機会は残されるが、低労力やAI生成レポートの流入を抑える前提で参加条件は引き締まる。GitHubにとっては増大するキューへの対処と、より有望な報告への集中を進めるための制度変更と位置付けられている。",
+  "summaryEn": "GitHub is overhauling its bug bounty program by formalizing a permanent invite-only VIP tier and restructuring public payouts. The VIP track gives higher rewards and faster responses to consistently high-impact researchers, while the public program moves to fixed payouts by severity. GitHub is also adding a HackerOne signal requirement, with the new rules applying to reports submitted on or after July 27, 2026, while earlier submissions remain under the old structure."
+}

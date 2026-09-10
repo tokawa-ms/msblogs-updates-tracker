@@ -1,0 +1,12 @@
+{
+  "summary": "Microsoft Databasesは、実運用ユーザーのフィードバックに基づく2026年のPeerSpot Customer Choice / Tech Leaderで複数の評価を獲得し、SQL Server、Azure SQL Database、Azure Database for PostgreSQL、Azure Cosmos DB全体で信頼性やAI対応力が支持された。あわせてMicrosoftは、SQL Server 2025のベクター／RAG機能や、Azure Database for PostgreSQL向けAzure HorizonDBのパブリックプレビューなど、AI時代を見据えた投資方針を示した。",
+  "keyPoints": [
+    "2026年のPeerSpotでは、SQL ServerがDBMSとRelational Database Toolsで1位、Azure SQL DatabaseがDBaaSで2位、Azure Database for PostgreSQLがOpen Source Databasesで1位、Azure Cosmos DBがManaged NoSQL／NoSQL／Vector Databasesで各1位とされた。",
+    "SQL Server 2025では、ネイティブなベクター対応、データベース内の埋め込み生成、セマンティック検索、RAG機能により、既存のプラットフォームやスキルを変えずにAIアプリを構築しやすくする方針が示された。",
+    "Azure SQL Databaseでは、Hyperscale、automatic tuning、elastic resource managementに加え、AI retrievalとsecure agent connectivityを打ち出し、SQLの運用負荷を減らしつつAIアプリ構築に使えると説明している。",
+    "Azure Database for PostgreSQLでは、Azure HorizonDBのパブリックプレビューに加え、AI支援のOracle-to-PostgreSQL移行、Premium SSD v2、cascading read replicas、高性能インフラの追加が挙げられ、移行と性能強化の両面を進めるとしている。",
+    "Azure Cosmos DBでは、顧客事例として予測困難なコンシューマーポータルにserverless、バックオフィスアプリにautoscale付きprovisioned throughputを使う構成が紹介され、最近の投資としてvector/hybrid search、semantic reranking、Global Secondary Indexesなどが列挙された。"
+  ],
+  "significance": "既存のSQL Server運用者、OracleからPostgreSQLへの移行を進める組織、グローバルなAIネイティブアプリを作る開発者に関係する内容である。記事は、顧客が重視する信頼性、拡張性、運用の簡素さ、開発生産性、AI対応力に沿って、今のデータ基盤やスキルを大きく変えずにAI機能や移行支援を取り込める方向性をMicrosoftが示した点に意味がある。",
+  "summaryEn": "Microsoft Databases received multiple 2026 PeerSpot recognitions based on production-user feedback, with SQL Server, Azure SQL Database, Azure Database for PostgreSQL, and Azure Cosmos DB praised for reliability and AI readiness. Microsoft also outlined AI-focused investments such as vector and RAG features in SQL Server 2025 and the public preview of Azure HorizonDB for Azure Database for PostgreSQL."
+}

@@ -1,0 +1,12 @@
+{
+  "summary": "Azure Databricksでは、Microsoft委託のForrester TEI調査と別のベンチマークにより、Azure上での事業価値と性能に関する数値が示された。調査では、顧客インタビューに基づく合成組織が3年間でROI 331%、正味現在価値5810万ドル、投資回収6カ月未満を達成したとされるが、典型例ではなく実際の結果は変動する。性能面では、10TBデータセットでDatabricks on AWS比で単一クエリが最大21.1%短時間、4並列クエリでも9分超高速だった。",
+  "keyPoints": [
+    "Microsoft委託の2026年6月のForrester TEI調査では、顧客インタビューに基づく合成組織について、3年間でROI 331%、正味現在価値5810万ドル、投資回収6カ月未満という結果が示されたが、典型例ではなく実際の結果は異なる可能性がある。",
+    "合成組織の3年間の試算では、便益7560万ドルに対しコスト1750万ドルで、正味現在価値は5810万ドルだった。",
+    "定量化された便益の内訳は、データ/分析チームの生産性3900万ドル、インフラ費削減1990万ドル、データ基盤の回復性向上1140万ドル、レガシーソフト廃止とDBA再配置540万ドルだった。",
+    "統合面では、GenieがMicrosoft Teams、Microsoft 365 Copilot、Copilot Cowork内でlakehouseへの自然言語照会を可能にし、回答範囲はUnity Catalogで制御される。加えて、OneLake catalog federationにより、OneLakeデータをパイプラインやコピーなしで直接照会できる。",
+    "性能比較では、Principled Technologiesが10TBデータセットでTPC-DS系の意思決定支援ベンチマークを実施し、Azure DatabricksはDatabricks on AWSより単一クエリで最大21.1%短時間、4並列クエリで9分超高速だった。"
+  ],
+  "significance": "既にMicrosoftのツール、ID、ガバナンス基盤を使うデータ/AIチームにとって重要な内容だ。記事は、Azure Databricksがその環境に自然に収まり、余分なデータ複製や連携作業を減らしつつ、Unity Catalogで権限を保ったままTeamsやCopilotの業務フローにデータ活用を広げられると説明している。そのため、既存のMicrosoft基盤を前提にデータ/AI基盤を選ぶ組織ほど、統合性と統制を維持したまま利用範囲を広げられる点が意味を持つ。",
+  "summaryEn": "Azure Databricks is presented with quantified business-value and performance evidence through a Microsoft-commissioned Forrester TEI study and a separate benchmark. The study says a composite organization based on customer interviews achieved 331% ROI, $58.1 million NPV, and payback in under six months over three years, though results may not be typical. On a 10TB benchmark, it ran a single query stream up to 21.1% faster than Databricks on AWS and was more than nine minutes faster on four concurrent streams."
+}
