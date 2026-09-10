@@ -323,9 +323,9 @@ describe('grounded summary', () => {
   });
 
   for (const [label, output, expected] of [
-    ['テキスト表示', 'Rendered summary, not JSONL', /valid JSONL/],
-    ['空の出力', '', /valid JSONL/],
-    ['途中で切れた出力', copilotOutput().trim().slice(0, -1), /valid JSONL/],
+    ['テキスト表示', 'Rendered summary, not JSONL', /no JSON events in 1 line/],
+    ['空の出力', '', /no JSON events/],
+    ['途中で切れた出力', copilotOutput().trim().slice(0, -1), /valid JSONL after/],
     ['完了イベントなし', JSON.stringify({ type: 'assistant.message', data: { content: JSON.stringify(response()) } }), /complete successfully/],
     ['失敗終了', copilotOutput().replace('"exitCode":0', '"exitCode":1'), /complete successfully/],
     ['セッションエラー', `${JSON.stringify({ type: 'session.error', data: { message: 'private diagnostic' } })}\n${copilotOutput()}`, /complete successfully/],
