@@ -1,0 +1,123 @@
+{
+  "date": "2026-09-10",
+  "compared_with": "2026-09-09",
+  "source_count": 6,
+  "new_count": 2,
+  "removed_count": 3,
+  "new_articles": [
+    {
+      "id": "da38a0a8e3455f5f",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "GPT-6 Astra: Frontier intelligence for work, now generally available in Microsoft Foundry",
+      "url": "https://azure.microsoft.com/en-us/blog/gpt-6-astra-frontier-intelligence-for-work-now-generally-available-in-microsoft-foundry/",
+      "published_at": "2026-09-03T18:15:00.000Z",
+      "summary": "GPT-6 Astra, OpenAI's newest frontier model, begins rolling out today through the Microsoft Foundry Limited Access Program, with availability expanding to participating customers over the coming days.\nThe post GPT-6 Astra: Frontier intelligence for work, now generally available in Microsoft Foundry appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-09-10T09:24:49.082Z"
+    },
+    {
+      "id": "13745abf28fa2ee3",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "GitHub availability report: August 2026",
+      "url": "https://github.blog/news-insights/company-news/github-availability-report-august-2026/",
+      "published_at": "2026-09-10T02:05:17.000Z",
+      "summary": "In August, we experienced five incidents that resulted in degraded performance across GitHub services.\nThe post GitHub availability report: August 2026 appeared first on The GitHub Blog.",
+      "fetched_at": "2026-09-10T09:24:48.756Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "da38a0a8e3455f5f",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "GPT-6 Astra: Frontier intelligence for work, now generally available in Microsoft Foundry",
+          "url": "https://azure.microsoft.com/en-us/blog/gpt-6-astra-frontier-intelligence-for-work-now-generally-available-in-microsoft-foundry/",
+          "published_at": "2026-09-03T18:15:00.000Z",
+          "summary": "GPT-6 Astra, OpenAI's newest frontier model, begins rolling out today through the Microsoft Foundry Limited Access Program, with availability expanding to participating customers over the coming days.\nThe post GPT-6 Astra: Frontier intelligence for work, now generally available in Microsoft Foundry appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-09-10T09:24:49.082Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "5787c67c97cdd800",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "GPT-6 Astra: Frontier intelligence for work, now available in Microsoft Foundry",
+          "url": "https://azure.microsoft.com/en-us/blog/gpt-6-astra-frontier-intelligence-for-work-now-available-in-microsoft-foundry/",
+          "published_at": "2026-09-03T18:15:00.000Z",
+          "summary": "GPT-6 Astra, OpenAI's newest frontier model, begins rolling out today through the Microsoft Foundry Limited Access Program, with availability expanding to participating customers over the coming days.\nThe post GPT-6 Astra: Frontier intelligence for work, now available in Microsoft Foundry appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-09-09T01:07:29.842Z"
+        }
+      ]
+    },
+    "fabric-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "github-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "13745abf28fa2ee3",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "GitHub availability report: August 2026",
+          "url": "https://github.blog/news-insights/company-news/github-availability-report-august-2026/",
+          "published_at": "2026-09-10T02:05:17.000Z",
+          "summary": "In August, we experienced five incidents that resulted in degraded performance across GitHub services.\nThe post GitHub availability report: August 2026 appeared first on The GitHub Blog.",
+          "fetched_at": "2026-09-10T09:24:48.756Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "36e7375455b74f9e",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "GitHub Copilot app for Beginners: Managing your work",
+          "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-managing-your-work/",
+          "published_at": "2026-08-19T17:50:23.000Z",
+          "summary": "If you’re juggling multiple Copilot sessions, use the My work pane to track what's in flight, what's done, and what's next.\nThe post GitHub Copilot app for Beginners: Managing your work appeared first on The GitHub Blog.",
+          "fetched_at": "2026-09-09T01:07:29.593Z"
+        }
+      ]
+    },
+    "m365-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 1,
+      "new_articles": [],
+      "removed_articles": [
+        {
+          "id": "57011fa557caf1c6",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Introducing the Visual Studio Code Private Marketplace: Your Team's Secure, Curated Extension Hub 🎉",
+          "url": "https://code.visualstudio.com/blogs/2025/11/18/PrivateMarketplace",
+          "published_at": "2025-11-18T00:00:00.000Z",
+          "summary": "Private Marketplace for VS Code extensions now generally available.\nRead the full article",
+          "fetched_at": "2026-09-09T01:07:29.627Z"
+        }
+      ]
+    }
+  },
+  "diff_result": true
+}
