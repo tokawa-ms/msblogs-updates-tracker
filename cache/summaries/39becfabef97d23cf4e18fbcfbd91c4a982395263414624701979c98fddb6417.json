@@ -1,0 +1,12 @@
+{
+  "summary": "Microsoftのエンタープライズ向けエージェントプラットフォームは、GitHubでの構築、Microsoft IQでの業務データによる文脈付与、Foundryでの実行、Agent 365での統治を単一システムとして打ち出した。記事では、複数モデル対応と企業向けのID・ポリシー・監視を前提に、エージェントを本番運用しながら継続改善する仕組みをMicrosoftが説明している。さらにTeamsやMicrosoft 365、自社アプリ、Windows、Azureまで含めて業務の場に展開する構成を示した。",
+  "keyPoints": [
+    "GitHubをエージェント開発の起点に据え、コードだけでなく、スキル、ツール、作業項目、評価、可観測性資産までを本番ソフトウェア同様にバージョン管理する前提を示した。",
+    "Microsoft IQはMicrosoft 365や基幹業務システム、ナレッジベース、Webサイトなどの業務データを取り込み、最新追加のWeb IQで必要に応じてWeb情報も利用できるとした。",
+    "モデル面では、画像、音声、文字起こし、コーディング、推論をまたぐ7つの新しいMAIモデルを挙げ、Frontier Tuningと強化学習環境で企業固有の業務に合わせて挙動を改善できると説明した。",
+    "Foundryは複数モデルの実行基盤として、モデルルーター、Fireworks AIによるオープンモデル推論、LangGraphやGitHub Copilot SDKなど外部フレームワーク製エージェントの持ち込み、トレースと継続最適化を支えるとした。",
+    "運用統治ではAgent 365が単一カタログを提供し、誰が配備したか、どのデータやツールにアクセスできるか、挙動やコストまでITが把握してポリシー適用や対処を行えるとしている。"
+  ],
+  "significance": "恩恵を受けるのは、開発部門だけでなく、サポート、財務、人事、運用まで含む大企業の各部門と、それを統制するIT・セキュリティ部門だ。記事は、チャットボット単体ではなく、長時間の実業務を担うエージェント群を本番で信頼して使うには、構築から文脈付与、実行、監視、改善までを単一の統治された基盤で回す必要がある、というMicrosoftの立場を示している。",
+  "summaryEn": "Microsoft outlined an enterprise agent platform as a single system spanning agent building in GitHub, business grounding with Microsoft IQ, runtime execution in Foundry, and governance through Agent 365. It says agents should run in production with multi-model support, identity, policy, observability, and continuous improvement, then surface in Teams, Microsoft 365, custom apps, Windows, and Azure."
+}
