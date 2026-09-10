@@ -108,7 +108,7 @@ function parseCopilotOutput(output) {
     try {
       events.push(JSON.parse(line.replace(/^\uFEFF/u, '')));
     } catch {
-      if (events.length === 0) continue;
+      if (!line.trimStart().startsWith('{')) continue;
       throw new Error(`Copilot output is not valid JSONL after ${events.length} event(s). Check the installed CLI version.`);
     }
   }
