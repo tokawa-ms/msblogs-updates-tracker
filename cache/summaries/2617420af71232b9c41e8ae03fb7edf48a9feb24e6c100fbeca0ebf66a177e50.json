@@ -1,0 +1,12 @@
+{
+  "summary": "GitHubは社内リポジトリの所有者管理をGitHub custom propertiesに移し、すべてのアクティブなリポジトリに検証済みの所有者を持たせる運用へ切り替えた。Service Catalogとの同期で約1,500件を初日から自動反映し、未設定の既存リポジトリは30日猶予後にアーカイブ、その後は所有権喪失の検知を1時間以内に短縮した。45日未満で約3,000件をアクティブ、11,000件をアーカイブ済みに整理している。",
+  "keyPoints": [
+    "所有権はownership-typeとownership-nameの2つのカスタムプロパティで管理し、ownership-typeはService Catalog、Hubber Handle、Teamの3分類にした。ownership-nameはGitHub Appが組織メンバー、2人以上のチーム、Service Catalog項目を検証する。",
+    "初期段階でService Catalogからリポジトリのカスタムプロパティへ定期同期を構築し、既知のサービスに紐づく約1,500件の所有情報を自動投入した。",
+    "既存の未所有リポジトリには30日の猶予期間を設け、未設定のままなら読み取り専用で可逆なアーカイブにした。初期整理後は作成時要件をすり抜けた新規リポジトリもほぼ即時に検知できるよう、強制ループを1時間へ短縮した。",
+    "結果として約3,000件をアクティブ、11,000件をアーカイブ済みに再編し、この取り組み全体は最初の実行から45日未満で定常運用に到達した。",
+    "所有権プロパティはリポジトリ作成ページ、内部ツール、自動化を含む全作成フローで必須化され、新規リポジトリでも100%カバレッジを維持する前提になった。"
+  ],
+  "significance": "この変更は、秘密スキャン是正、インシデント対応、オンコール振り分け、脆弱性管理のように所有者特定が前提になるセキュリティ/運用チームと、社内で新規リポジトリを作成する開発者に直接関わる。GitHubによれば、所有者不明のままではシークレットのローテーションや修復依頼のルーティングが危険で非効率になりやすかったが、検証済み所有者の必須化と未使用リポジトリの整理により、アクティブなリポジトリ在庫を実態に近づけた。",
+  "summaryEn": "GitHub moved internal repository ownership to custom properties and made every active repository carry a validated owner. It prefilled about 1,500 service-backed repositories from Service Catalog, archived unowned repositories after a 30-day grace period, and later shortened enforcement to one hour. In under 45 days, it reduced the estate to about 3,000 active and 11,000 archived repositories."
+}
