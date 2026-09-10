@@ -110,6 +110,7 @@ function parseCopilotOutput(output) {
     } catch (error) {
       if (!line.trimStart().startsWith('{')) continue;
       const eventType = line.match(/^\s*\{"type":"([^"]+)/u)?.[1] || 'unknown';
+      if (eventType === 'user.message') continue;
       throw new Error(`Copilot output is not valid JSONL after ${events.length} event(s): ${error.message}; line length ${line.length}; event type ${eventType}.`);
     }
   }

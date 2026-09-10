@@ -321,6 +321,7 @@ describe('grounded summary', () => {
     assert.equal(parseCopilotOutput(copilotOutput(content).replace(/\n/gu, '\r\n')), content);
     assert.equal(parseCopilotOutput(`CLI diagnostic before events\n${copilotOutput(content)}`), content);
     assert.equal(parseCopilotOutput(copilotOutput(content).replace('\n{"type":"assistant.message_delta"', '\nCLI diagnostic between events\n{"type":"assistant.message_delta"')), content);
+    assert.equal(parseCopilotOutput(copilotOutput(content).replace(/^\{"type":"user.message"[^\n]+/u, '{"type":"user.message","data":{broken}}')), content);
   });
 
   for (const [label, output, expected] of [
