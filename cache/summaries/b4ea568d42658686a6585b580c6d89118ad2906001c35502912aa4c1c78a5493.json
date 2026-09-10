@@ -1,0 +1,11 @@
+{
+  "summary": "Power BIで、複数のビジュアルに対して線と凡例の条件付き書式が使えるようになり、グラデーション、ルール、フィールド値による色指定を適用できるようになった。折れ線系では線全体、セグメント、塗り、マーカー、系列ラベルまで動的に強調でき、凡例付きの棒・円・ファネル系でも系列ごとの色分けを共通ロジックで再利用できる。これにより、データ更新時の手動メンテナンスを減らしつつ、最新期間や増減、重要点を見やすく示せる。",
+  "keyPoints": [
+    "条件付き書式は、数値範囲・パーセンタイル・特定値やテキストに基づくルール、最小値と最大値に任意の中間点を加えられるグラデーション、色や値を返すメジャー/列を使うフィールド値に対応する。フィールド値は柔軟性、再利用性、保守性が最も高いとされている。",
+    "対応ビジュアルは、線・面・積み上げ面・100%積み上げ面では線全体や塗り、複数の凡例系列、個別の線分、マーカーまで含み、棒・列・コンボ・リボン・円・ドーナツ・ファネルでは凡例がある場合に各凡例カテゴリへグラデーション、ルール、フィールド値を適用できる。",
+    "折れ線の線分は、線の値を基準に最小を濃い赤、ゼロを灰色、最大を濃い青にするグラデーションで強調できる。適用後は線分タイプを左・中央・右に調整でき、gradient blendingやShade areaも有効化できるため、新しいスパイクや落ち込みも自動で同じロジックで表示される。",
+    "マーカーには独立した条件付き書式コントロールが追加され、DAXメジャーで最大値だけ正のテーマ色、最小値だけ負のテーマ色、それ以外を透明にして最小・最大だけを表示できる。さらに、凡例付きでも値ベースのグラデーションが使えるようになり、フィールドパラメーターの色列を使えば、選択した指標の色を複数ビジュアルで一貫して切り替えられる。"
+  ],
+  "significance": "この変更は、Power BIのレポート作成者にとって、色のロジックをメジャーや列で一度定義してレポート全体に再利用しやすくし、新しいカテゴリや期間が増えても個別更新の手間を減らす点で重要だ。閲覧者にとっても、最新年、増減、現在選択中の指標などがテーマやページ全体で一貫して強調されるため、比較対象や注目点を把握しやすくなる。",
+  "summaryEn": "Power BI now supports conditional formatting for lines and legends across many visuals, including gradients, rules, and field-value-driven colors. Line-based charts can dynamically highlight whole lines, segments, shading, markers, and series labels, while charts with legends can reuse shared color logic across series. This reduces manual maintenance as data changes and makes periods, increases or decreases, and key points easier to spot."
+}
