@@ -1,0 +1,11 @@
+{
+  "summary": "GitHub Universe 2026のセッションカタログが公開され、AI活用開発を軸にしたワークショップ、デモ、パネルの全体像が確認できるようになった。イベントは10月28日から29日にサンフランシスコのFort Mason Centerで開かれ、AMD、Figma、NVIDIA、Coinbase、Anthropic、OpenAIなどの登壇者が参加する。8月19日までの早期登録では300ドル割引があり、グループ割引と併用できる。",
+  "keyPoints": [
+    "開催は10月28日〜29日の2日間で、会場は米サンフランシスコのFort Mason Center。AIを活用した開発の可能性を扱うセッション、デモ、パネルが並ぶ。",
+    "8月19日までに登録するとEarly Birdで300ドル安くなり、その後は価格が上がる。グループ割引との併用も可能。",
+    "プログラムには、Copilotを複雑な作業に任せる設定、複数モデル対応のCopilot評価基盤、GitHub CLIを使ったstacked pull requests運用など、実務寄りの内容が含まれる。",
+    "8月21日までに投票すると、3つの候補セッションのうち1本がメインステージに進む。勝ったセッションはオンデマンドでも視聴可能で、登録時には50ドルのDay of Learning追加パスや30ドルの認定試験バウチャーも選べる。"
+  ],
+  "significance": "GitHub CopilotやAI支援開発を実務に取り入れたい開発者やチームにとって、今回の公開は参加判断や学習計画を具体化しやすくする。手元のマシンで設定するハンズオンから、企業規模での測定、MCPサーバーの細粒度認可、GitHubチームとの個別対話まで含まれており、導入初期から大規模運用まで幅広い層に関係する。",
+  "summaryEn": "The GitHub Universe 2026 session catalog is now live, outlining workshops, demos, and panels centered on AI-powered development. The event runs October 28-29 at Fort Mason Center in San Francisco, with speakers from GitHub and companies including AMD, Figma, NVIDIA, Coinbase, Anthropic, and OpenAI. Early Bird registration before August 19 saves $300 and can be combined with group discounts."
+}

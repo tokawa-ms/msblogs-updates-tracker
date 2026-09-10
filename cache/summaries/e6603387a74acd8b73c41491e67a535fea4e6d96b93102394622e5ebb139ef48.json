@@ -1,0 +1,12 @@
+{
+  "summary": "GitHub Copilot appの初心者向けガイドでは、最初のプロンプト作成は特別な書式ではなく、対象プロジェクトをリポジトリやローカルフォルダとして接続したうえで、やりたい変更を平易な英語で書き始めればよいと説明している。最初から完璧な指示は不要で、結果を見ながら詳細を足し、必要に応じてモデル選択や音声入力、エージェント切り替え、リモートセッションを使い分ける進め方が示された。",
+  "keyPoints": [
+    "作業開始前に、GitHubリポジトリまたはローカルのフォルダをセッションへ接続して、Copilotが必要なコードやファイルを参照できるようにする。",
+    "最初のプロンプトは特別な構文不要で、たとえば「Add a most-funded sort option to the games list.」のように変更内容をそのまま書けば始められ、足りない点は後から反復的に詰められる。",
+    "モデル選択は必須の事前設定ではなく、初めはデフォルトモデルでよく、より複雑な推論が必要なときや最初の結果が不十分なときに切り替えればよい。",
+    "入力はテキストに限られず、内蔵の音声入力で話した内容をプロンプト欄のテキストに変換し、送信前に確認・編集できる。",
+    "セッション設定では別のエージェント選択やリモート制御を有効化でき、リモートセッションならWebから同じ作業を引き継げるため、別デバイスでも中断せず続けられる。"
+  ],
+  "significance": "これは、GitHub Copilot appを初めて使う開発者や、何をどう頼めばよいか迷う利用者に関係する内容だ。記事は、最初から完璧なプロンプトや全モデルの理解を求めず、既存プロジェクトを接続して小さく始め、必要に応じて入力方法や実行形態を調整できることを示しており、導入時の心理的・操作的ハードルを下げる。",
+  "summaryEn": "The beginner guide for the GitHub Copilot app says your first prompt does not need special syntax: connect a repository or local folder for context and describe the change you want in plain English. You can refine the request iteratively and, when needed, switch models, use voice input, change agents, or continue work through remote sessions."
+}
