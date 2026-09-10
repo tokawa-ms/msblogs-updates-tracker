@@ -235,7 +235,7 @@ jobs:
   deploy:
     name: Deploy to GitHub Pages
     needs: scan_commit_and_build
-    if: ${{ needs.scan_commit_and_build.outputs.publish_ready == 'true' }}
+    if: ${{ needs.scan_commit_and_build.outputs.publish_ready == 'true' && (inputs.update_branch == '' || inputs.update_branch == 'main') }}
     runs-on: ubuntu-latest
     concurrency:
       group: pages
