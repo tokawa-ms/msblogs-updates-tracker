@@ -102,16 +102,20 @@ function validateSummary(value, body) {
 
 function parseCopilotOutput(output) {
   const events = [];
-  for (const line of output.trim().split(/\r?\n/u)) {
+  const lines = output.trim().split(/\r?\n/u).filter((line) => line.trim());
+  for (const line of lines) {
     if (!line.trim()) continue;
     try {
       events.push(JSON.parse(line.replace(/^\uFEFF/u, '')));
     } catch {
       if (events.length === 0) continue;
-      throw new Error('Copilot output is not valid JSONL. Check the installed CLI version.');
+      throw new Error(`Copilot output is not valid JSONL after ${events.length} event(s). Check the installed CLI version.`);
     }
   }
-  if (events.length === 0) throw new Error('Copilot output is not valid JSONL. Check the installed CLI version.');
+  if (events.length === 0) {
+    const firstLine = lines[0] || '';
+    throw new Error(`Copilot output is not valid JSONL: no JSON events in ${lines.length} line(s); first line length ${firstLine.length}, first character code ${firstLine.codePointAt(0) || 0}.`);
+  }
   const result = events.at(-1);
   if (result?.type !== 'result' || result.exitCode !== 0 ||
       events.some((event) => event?.type === 'session.error')) {
