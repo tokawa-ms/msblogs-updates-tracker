@@ -1,0 +1,12 @@
+{
+  "summary": "GitHub Copilot Coding AgentのVS Code統合は現在プレビューで、GitHub Pull Requests拡張機能を入れて設定「githubPullRequests.codingAgent.uiIntegration\": true」を追加すれば今すぐ使える。VS Code内でIssueをCopilotに割り当て、進捗確認、PRレビュー、コメントによる修正依頼まで完結できるようになった。さらにCopilot Chatから現在の会話コンテキストごとエージェントへ委譲でき、Issueを介さずPR作成まで進められる。",
+  "keyPoints": [
+    "利用にはGitHub Pull Requests拡張機能のインストールと、VS Code設定「githubPullRequests.codingAgent.uiIntegration\": true」の追加が必要だ。",
+    "VS CodeのPull Requestsビューには「Copilot on My Behalf」クエリが追加され、担当中の作業一覧、View Sessionによる実行内容の可視化、必要に応じたエージェント停止までエディター内で行える。",
+    "作業完了後はエージェントがPRを作成してレビュー担当にユーザーを割り当て、必要に応じてスクリーンショットも添付する。VS Code内でコメントして差し戻すと、エージェントがPRを更新して再通知する。",
+    "データベース変更のような権限が必要な作業は一度で完了しない場合があり、その場合はPRにマイグレーションスクリプトを含めて手動チェックアウトが必要になる。一方で、リポジトリにMCPサーバーを設定すれば、データベースへのアクセス権を持たせる構成も可能だ。",
+    "Copilot Chatからの委譲ではIssue作成を省略して直接PR作成に進める。現在のチャット文脈は引き継がれ、PR説明は要約され、進行状況はto-do listsで確認できる。"
+  ],
+  "significance": "VS Codeを主な作業場所にしている開発者にとって、ブラウザーへ切り替えずに複数のCopilotエージェントへ作業を委譲し、進捗確認やPRでの反復レビューまで完結できる点が大きい。一方で、権限のない変更は自律実行の範囲外で、どこまで自動化するかはリポジトリ側のMCP設定や手動確認の有無に左右される。",
+  "summaryEn": "The Visual Studio Code integration for GitHub Copilot Coding Agent is now in preview and can already be used by installing the GitHub Pull Requests extension and enabling the githubPullRequests.codingAgent.uiIntegration setting. Inside VS Code, developers can assign issues to Copilot, track progress, review PRs, and request changes. They can also delegate directly from Copilot Chat with the current conversation context, letting the agent open a PR without going through an issue first."
+}

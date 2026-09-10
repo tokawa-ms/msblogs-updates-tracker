@@ -1,0 +1,12 @@
+{
+  "summary": "VS Codeは、エージェントモードから外部サービスへ安全に接続できるModel Context Protocol（MCP）対応を強化し、サーバー追加と高度なMCP機能の利用を簡単にした。MCP: Add ServerコマンドでNPM、PyPI、Docker由来のサーバーを導入でき、入力変数で秘密情報を暗号化保存しつつ既存の.envも参照できる。さらにroots、動的ツール探索、tool annotations、streamable HTTPをサポートし、今後はAuthorizationやPromptsなどの追加対応も進めるとしている。",
+  "keyPoints": [
+    "MCPサーバーの導入を簡略化し、MCP: Add ServerコマンドでNPM、PyPI、Dockerからセットアップできるほか、Webサイト側の「Install in VS Code」ボタンやClaude Desktopなど他クライアントの設定自動検出にも対応した。",
+    "秘密情報の扱いでは、入力変数で一度だけ入力させて暗号化保存でき、既存の.envファイル参照も可能になったため、設定をソース管理に平文で入れずに共有・レビューしやすくした。",
+    "運用面では、tool pickerでセッションごとの利用ツールを選択でき、サーバー開発・デバッグ向けにログ表示や起動・停止・再起動も用意した。",
+    "MCPの高度機能として、ワークスペース構造を渡すroots、状況に応じて利用ツールを変える動的ツール探索、tool annotations、最新トランスポートのstreamable HTTPをすでにサポートしている。",
+    "今後の対応予定として、仕様に含まれるAuthorization、Prompts、Resources、SamplingをVS Codeへ追加実装する作業を進めている。"
+  ],
+  "significance": "既製のMCPサーバーを使いたいVS Code利用者にとっては、PlaywrightやGitHubなど外部サービス連携を導入しやすくしつつ、ツール選択や秘密情報管理をIDE内で制御しやすくなる点が重要だ。あわせて、MCPサーバーを作る開発者やツール提供者にとっても、VS Codeが仕様準拠と機能拡張を進めることで、AIエージェント向け連携をVS Code以外も含むMCPエコシステムへ載せやすくなる。",
+  "summaryEn": "VS Code expanded Model Context Protocol support so agent mode can connect to external services more easily and safely. It now simplifies adding MCP servers, secures secret handling with encrypted input variables and .env references, supports richer MCP features such as roots, dynamic tool discovery, tool annotations, and streamable HTTP, and is working toward Authorization, Prompts, Resources, and Sampling."
+}

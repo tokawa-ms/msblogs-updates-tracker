@@ -1,0 +1,11 @@
+{
+  "summary": "VS CodeのAgent modeは、全VS Codeユーザー向けに順次提供され、外部のMCPサーバーやVS Code拡張のツールを使える拡張性がプレビューとして追加された。エージェントはコードベース解析、ファイル編集、ターミナル実行、コンパイルやlintエラーの監視まで含む複数段階の作業を自律的に進め、問題があれば完了まで自動修正を繰り返す。現時点では設定で有効化してAgentを選ぶ必要があるが、今後数週間で既定で使えるようにする予定だ。",
+  "keyPoints": [
+    "現在はChatビューでGitHubにサインインし、chat.agent.enabledを有効化してChat modeでAgentを選択して使う。設定が見えない場合は最新版へ更新後にVS Codeの再読み込みが必要で、今後数週間で設定不要の既定有効化に移る予定だ。",
+    "Agent modeは、コードベース解析、編集提案、ターミナルコマンド実行に加え、コンパイルやlintのエラーとターミナル出力を監視しながら、完了まで自動修正ループを回す自律型ペアプログラマとして動作する。",
+    "拡張性はプレビューとして全ユーザーに提供され、MCPサーバーとVS Code拡張が提供するツールをAgent modeから利用できる。MCPサーバーの接続方式はlocal stdioとserver-sent events (sse)に対応する。",
+    "直近の改善点として、最後のedit file tool callまで戻せるUndo、同一ワークスペースでの複数Agentセッション、ノートブックの作成・編集、ツール呼び出しの自動承認が追加された。terminal auto-approveは4月対応予定とされている。"
+  ],
+  "significance": "複数段階の変更や外部アプリ・データとの連携が必要な開発者は、VS Code内のAgentで調査・編集・コマンド実行をまとめて進めやすくなる。あわせて、MCPサーバー開発者やVS Code拡張作者は独自ツールを接続でき、利用者側は各ツール呼び出しへの承認を通じて制御しながら使える。",
+  "summaryEn": "VS Code's Agent mode is rolling out to all users, and a preview of extensibility lets it use tools from MCP servers and VS Code extensions. The agent autonomously handles multi-step coding work such as codebase analysis, file edits, terminal commands, and error-driven correction loops. For now it must be enabled in settings and selected explicitly, but Microsoft plans to make it on by default in the coming weeks."
+}
