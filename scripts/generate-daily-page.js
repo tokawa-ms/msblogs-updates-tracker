@@ -104,8 +104,40 @@ function uniqueParagraphs(texts) {
   return unique;
 }
 
+function findArticleBody(value) {
+  if (!value || typeof value !== 'object') return '';
+  if (typeof value.articleBody === 'string') return value.articleBody;
+  const types = Array.isArray(value['@type']) ? value['@type'] : [value['@type']];
+  if (types.includes('BlogPosting') && typeof value.description === 'string' && value.description.length >= 500) {
+    return value.description;
+  }
+  for (const child of Array.isArray(value) ? value : Object.values(value)) {
+    const articleBody = findArticleBody(child);
+    if (articleBody) return articleBody;
+  }
+  return '';
+}
+
+function extractStructuredArticleText($) {
+  for (const element of $('script[type="application/ld+json"]').toArray()) {
+    try {
+      const articleBody = findArticleBody(JSON.parse($(element).html() || ''));
+      if (!articleBody) continue;
+      const decoded = cheerio.load(articleBody).text();
+      const text = uniqueParagraphs(decoded.split(/\r?\n/gu)).join('\n\n');
+      if (text.length >= 100) return text;
+    } catch {
+      // Ignore invalid metadata and continue with the visible article containers.
+    }
+  }
+  return '';
+}
+
 function extractArticleText(html) {
   const $ = cheerio.load(html);
+  const structuredText = extractStructuredArticleText($);
+  if (structuredText) return structuredText;
+
   $('script, style, noscript, nav, footer, aside, form, svg, iframe, [hidden], [aria-hidden="true"], .related-posts, .sharedaddy, #comments').remove();
   const selectors = ['[itemprop="articleBody"]', '.entry-content', '.post-content', '.article-content', '.blog-post-content', 'article', 'main', '[role="main"]'];
   for (const selector of selectors) {
@@ -122,13 +154,58 @@ function extractArticleText(html) {
   throw new Error('Article body could not be extracted from an article/main container.');
 }
 
-async function fetchArticleText(url) {
-  const response = await axios.get(url, {
-    timeout: 20000,
-    maxContentLength: 5 * 1024 * 1024,
-    headers: { 'User-Agent': 'msblogs-updates-tracker/1.0' },
-  });
-  return extractArticleText(response.data);
+function extractReaderArticleText(value) {
+  const text = String(value || '');
+  const marker = 'Markdown Content:';
+  const articleText = (text.includes(marker) ? text.slice(text.indexOf(marker) + marker.length) : text).trim();
+  if (articleText.length < 100) throw new Error('Article body returned by the reader is missing or too short.');
+  return articleText;
+}
+
+function readerUrls(url) {
+  const urls = [`https://r.jina.ai/${url}`];
+  const match = url.match(/^https:\/\/community\.fabric\.microsoft\.com\/t5\/[^/]+\/.*\/ba-p\/(\d+)$/u);
+  if (match) urls.push(`https://r.jina.ai/https://community.fabric.microsoft.com/blog/fbc_pbiupdatesblog/article/${match[1]}`);
+  return urls;
+}
+
+function readerRetryDelay(error, attempt) {
+  const retryAfter = Number(error.response?.headers?.['retry-after']);
+  if (Number.isFinite(retryAfter) && retryAfter >= 0) return Math.min(retryAfter * 1000, 30000);
+  return 1000 * (2 ** (attempt - 1));
+}
+
+async function fetchArticleText(url, get = axios.get, wait = (milliseconds) =>
+  new Promise((resolve) => setTimeout(resolve, milliseconds))) {
+  try {
+    const response = await get(url, {
+      timeout: 20000,
+      maxContentLength: 5 * 1024 * 1024,
+      headers: { 'User-Agent': 'msblogs-updates-tracker/1.0' },
+    });
+    return extractArticleText(response.data);
+  } catch (error) {
+    if (error.response?.status !== 403) throw error;
+  }
+
+  let readerError;
+  for (const readerUrl of readerUrls(url)) {
+    for (let attempt = 1; attempt <= 3; attempt += 1) {
+      try {
+        const response = await get(readerUrl, {
+          timeout: 60000,
+          maxContentLength: 5 * 1024 * 1024,
+          headers: { Accept: 'text/plain', 'User-Agent': 'msblogs-updates-tracker/1.0' },
+        });
+        return extractReaderArticleText(response.data);
+      } catch (error) {
+        readerError = error;
+        if (error.response?.status !== 429 || attempt === 3) break;
+        await wait(readerRetryDelay(error, attempt));
+      }
+    }
+  }
+  throw readerError;
 }
 
 async function buildLocalizedArticlesBySource(diff, { fetchText = fetchArticleText, summarize = summarizeArticle } = {}) {
@@ -369,6 +446,7 @@ module.exports = {
   cleanText,
   enumerateDates,
   extractArticleText,
+  extractReaderArticleText,
   fetchArticleText,
   generateDate,
   resolveTargetDates,
