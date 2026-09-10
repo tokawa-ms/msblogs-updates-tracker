@@ -101,12 +101,17 @@ function validateSummary(value, body) {
 }
 
 function parseCopilotOutput(output) {
-  let events;
-  try {
-    events = output.trim().split(/\r?\n/u).map((line) => JSON.parse(line));
-  } catch {
-    throw new Error('Copilot output is not valid JSONL. Check the installed CLI version.');
+  const events = [];
+  for (const line of output.trim().split(/\r?\n/u)) {
+    if (!line.trim()) continue;
+    try {
+      events.push(JSON.parse(line.replace(/^\uFEFF/u, '')));
+    } catch {
+      if (events.length === 0) continue;
+      throw new Error('Copilot output is not valid JSONL. Check the installed CLI version.');
+    }
   }
+  if (events.length === 0) throw new Error('Copilot output is not valid JSONL. Check the installed CLI version.');
   const result = events.at(-1);
   if (result?.type !== 'result' || result.exitCode !== 0 ||
       events.some((event) => event?.type === 'session.error')) {

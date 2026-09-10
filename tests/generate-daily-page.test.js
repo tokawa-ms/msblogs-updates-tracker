@@ -319,6 +319,7 @@ describe('grounded summary', () => {
     const content = JSON.stringify(response(), null, 2);
     assert.equal(parseCopilotOutput(copilotOutput(content)), content);
     assert.equal(parseCopilotOutput(copilotOutput(content).replace(/\n/gu, '\r\n')), content);
+    assert.equal(parseCopilotOutput(`CLI diagnostic before events\n${copilotOutput(content)}`), content);
   });
 
   for (const [label, output, expected] of [
