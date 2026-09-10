@@ -1,0 +1,12 @@
+{
+  "summary": "GitHubの「Protect Your Project」は、メンテナーが30分未満で見直せる6つの無料セキュリティ設定を一度に進められる導線として紹介されている。記事は、これらを組み合わせることで、公開リポジトリの“簡単な入口”を塞げると説明する。プロジェクトを無敵にはしないが、攻撃されにくくし、その依存先にも効果が及ぶという位置づけだ。",
+  "keyPoints": [
+    "まずSECURITY.mdを追加し、続けてprivate vulnerability reportingを有効化することが推奨されている。前者で報告先と対象範囲を明示し、後者で研究者が公開前に機密のadvisoryを送れるようになる。PVRの設定はSettings → Securityのチェックボックス1つとされる。",
+    "secret scanning with push protectionは、公開GitHubでの秘密情報漏えい増加を踏まえた対策として挙げられている。本文は2025年に2,865万件の新規シークレット漏えい、前年比34%増、AI支援コミットは基準の約2倍の漏えい率とし、ローカルでプッシュ前に鍵やトークンを止められると説明する。",
+    "Dependabotとdependency reviewは、依存パッケージ由来の脆弱性確認を自動化する組み合わせとして紹介されている。Dependabotは既知の脆弱性を警告し、dependency reviewはPR内で追加・更新される依存関係と未解決advisoryの有無を見せ、package.json差分の確認を短時間化するとされる。",
+    "code scanningはCodeQLを使う静的解析として案内され、unsafe GitHub Actions workflowsの検出も可能とされる。オープンソースでは2019年から無料で、Security and Qualityタブからワンクリックのdefault setupが用意され、言語に合うquery packを選んで各PRで実行すると説明されている。",
+    "default branchのbranch protectionでは、mainへの直接マージ前にPRと最低1件の承認を必須にする設定が勧められている。これにより、侵害された認証情報や誤操作への防波堤になるだけでなく、Dependabotやcode scanningの結果を実際にマージブロックへ結びつけられる。"
+  ],
+  "significance": "主に対象となるのは、セキュリティ専任ではないGitHubメンテナーだ。設定画面やドキュメントの複雑さで後回しにされがちな基本防御を、短時間でまとめて有効化できる点に意味がある。結果として、公開リポジトリを自動的に狙う攻撃者に対する露出を減らし、そのプロジェクトの利用者や依存先にも保護効果が及ぶ。",
+  "summaryEn": "GitHub’s Protect Your Project packages six free security settings into a single flow that maintainers can review in under half an hour. The article says using them together helps close the easy entry points in public repositories. It does not make a project unhackable, but it should make the project and its downstream dependents harder to attack."
+}

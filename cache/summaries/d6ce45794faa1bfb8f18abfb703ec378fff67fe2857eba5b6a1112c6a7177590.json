@@ -1,0 +1,12 @@
+{
+  "summary": "Visual Studio Code向けのPostgreSQL拡張機能に、Azure上のPostgreSQL運用をそのままエディター内で可視化・診断・最適化しやすくする性能強化が加わった。新たにサーバーメトリクスのダッシュボード、Azure Advisorの推奨事項表示、改良されたクエリプラン可視化とAI支援分析が統合され、クエリ作成時のIntelliSenseや大規模DB向けのオブジェクトエクスプローラー信頼性も改善された。あわせてAzure HorizonDBはパブリックプレビューとして紹介されているが、現時点で多くの本番用途にはAzure Database for PostgreSQLが推奨される。",
+  "keyPoints": [
+    "VS Code内のサーバーメトリクスダッシュボードで、CPU、メモリ、ストレージ、接続数などの主要指標を確認でき、Azure固有のテレメトリと履歴インサイトも参照できる。",
+    "Azure Advisorの推奨事項がエディターに直接表示され、Azureテレメトリに基づく構成、インデックス、リソース最適化の提案を実ワークロードに即して受けられる。",
+    "クエリプラン可視化が改善され、AI支援のクエリ分析と最適化もワークフローに統合されたため、VS Codeを離れずにボトルネック把握と改善案検討を進めやすい。",
+    "開発体験ではschema-aware IntelliSense、search_path-aware query authoring、複雑で大規模なDB向けの安定したobject explorerが強化され、Microsoft Entra ID認証とAzureリソース検出も統合されている。",
+    "Azure HorizonDBはAI対応のPostgreSQL互換ワークロード向けとしてパブリックプレビューで紹介される一方、現時点では大半の本番ワークロードにAzure Database for PostgreSQLが推奨されている。"
+  ],
+  "significance": "Azure上でPostgreSQLを運用するエンタープライズの開発者、DBA、プラットフォーム担当者にとって、診断・監視・チューニングをVS Codeに集約できる点が重要だ。記事では、複数ツール間の切り替えで失われていた文脈を減らし、問題検知から調査までの時間を短縮できること、さらにPostgreSQL専門家でない開発者でも高い性能要件に対応しやすくなることが示されている。AIネイティブ構成を検討するチームにはHorizonDBという選択肢も示されたが、本番の主軸は引き続きAzure Database for PostgreSQLだ。",
+  "summaryEn": "The PostgreSQL extension for Visual Studio Code has been enhanced to make performance monitoring, diagnosis, and tuning for PostgreSQL on Azure easier directly inside the editor. It now brings in a server metrics dashboard, Azure Advisor recommendations, improved query plan visualization, and AI-assisted analysis, while also improving authoring features and large-database usability. Azure HorizonDB is also mentioned as a public preview option, but Azure Database for PostgreSQL remains the recommended choice for most production workloads today."
+}

@@ -1,0 +1,11 @@
+{
+  "summary": "Microsoft 365 Copilot in Excelは、金融業務向けに反復ワークフローを定義できるskills、外部の金融データコネクター、変更の追跡性を強化する機能を追加した。SKILL.mdによるカスタムskillsやPlan with Copilot、Show ChangesでのCopilot属性表示により、DCF作成や月次報告更新、予実分析などを、信頼できるデータと手順の可視化を保ちながら進めやすくする。多くの機能はMicrosoft 365 Copilot顧客向けにWeb/Windows/Macで一般提供され、カスタムskillsは現在Insiders経由、パートナー製skillsは2026年第3四半期予定とされる。",
+  "keyPoints": [
+    "サンプルの金融向けskillsライブラリが利用可能になり、ユーザーはOneDriveにSKILL.mdを保存して独自のカスタムskillsを定義できる。カスタムskillsは現時点でWindows/MacのInsidersチャネル提供で、パートナー製skillsは2026年第3四半期に予定されている。",
+    "金融データ連携は5月に公開したLSEGとMoody’sに加え、CB Insights、Daloopa、FactSet、Morningstar、PitchBook、S&P Global - Deterministic Retrievalへ拡大した。外部コネクターやデータ提供元では別途ライセンスやサブスクリプションが必要な場合があり、FactSetは現時点でプレビュー、7月に一般提供予定と明記されている。",
+    "追跡性の面では、実行前にPlan with Copilotで更新対象の範囲、ワークシート、数式、前提条件を確認できる。変更後は影響セルへのリンク付きで各編集を追跡でき、Show Changesペインでは共同編集者と並んでCopilotによる変更として属性表示される。",
+    "Personalization、workbook rules、pre-built skills、federated Copilot connectors、Plan with Copilot、Show ChangesでのCopilot attributionは、Microsoft 365 Copilot顧客向けにExcel for Web/Windows/Macで一般提供された。一方で、本記事の機能は段階的ロールアウトで、具体的な提供状況、対応リージョン、ライセンス要件は異なる場合がある。"
+  ],
+  "significance": "この更新は、FP&A、会計、税務、コンプライアンス、トレジャリーなどの金融担当者や、投資分析を行うチームに影響する。反復的なモデリングや予実分析をskillsで標準化しつつ、最新の市場データやファンダメンタルズをExcelに直接取り込み、さらに変更履歴を追跡できるため、情報探索や手戻りを減らしながら、根拠を確認しやすい形で業務を進められる。",
+  "summaryEn": "Microsoft 365 Copilot in Excel added finance-focused skills for repeatable workflows, more external financial data connectors, and stronger traceability features. Custom skills via SKILL.md, Plan with Copilot, and Copilot attribution in Show Changes are designed to support tasks like DCF modeling, monthly reporting updates, and variance analysis while keeping data sources and steps more reviewable. Many features are generally available for Microsoft 365 Copilot customers on Excel for Web, Windows, and Mac, while custom skills are currently in Insiders and partner-built skills are planned for Q3 2026."
+}

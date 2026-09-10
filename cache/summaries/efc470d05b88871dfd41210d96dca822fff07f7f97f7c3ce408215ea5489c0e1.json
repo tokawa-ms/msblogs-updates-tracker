@@ -1,0 +1,11 @@
+{
+  "summary": "GitHub License Complianceは、GitHubのOSPOが内部専用ツールから移行し、数千件のオープンソース依存関係をプルリクエスト上で審査するために使っている新機能だ。GitHubはまず組織全体のrulesetで「Evaluate」モードを約1か月運用し、マージを止めずに開発者を慣らしたうえで、異常・欠落・明示的に禁止されたライセンスの検出を絞り込んだ。機能は現在public previewで、activeなGHAS Code Securityライセンスを持つGitHub Enterprise Cloudのリポジトリで利用できる。",
+  "keyPoints": [
+    "OSPOは2か月前に内部ツールから新機能へ移行し、組織全体のrulesetでEvaluateモードを使って約1か月、注釈のみでマージを止めず旧新ツールを並行運用した。",
+    "対象リポジトリでは、依存関係を変更するPRで直接・推移依存のライセンスをスキャンし、問題があればPRにアラートを投稿する。開発者は依存関係を外すか、例外申請を出してポリシー改定を依頼できる。",
+    "許可はエンタープライズ単位かリポジトリ単位で設定でき、社内ソフト向けのパッケージ例外ではワイルドカードも使える。GitHubは「@github-ui/*」名前空間を一括許可して個別承認を省いている。",
+    "緊急時はcustom propertyの値を切り替えてルール適用を一時停止できる「break glass」運用を用意しており、これまで1回だけ使った。現在はpublic previewで、利用対象はactiveなGHAS Code Securityライセンスを持つGitHub Enterprise Cloudのリポジトリだ。"
+  ],
+  "significance": "大規模にオープンソース依存関係を扱う企業の開発者やライセンスポリシー担当者にとって、依存関係追加時点のPRレビューでライセンス適合性を確認し、例外申請も一元管理できる点が重要だ。記事では、後から不適切なライセンスを除去するには追加のエンジニアリング作業が必要になり得て、法務・運用上のリスクも大きいため、複雑な要件を持つ企業ほど早期検知の恩恵を受けると説明している。",
+  "summaryEn": "GitHub License Compliance is a new feature that GitHub’s OSPO adopted in place of internal-only tools to review thousands of open source dependencies in pull requests. GitHub first rolled it out for about a month in organization-wide Evaluate mode so developers could adapt without blocking merges, which narrowed alerts to unusual, missing, or explicitly disallowed licenses. The feature is now in public preview and can be used on GitHub Enterprise Cloud repositories with an active GHAS Code Security license."
+}
