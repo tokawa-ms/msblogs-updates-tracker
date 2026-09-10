@@ -107,9 +107,10 @@ function parseCopilotOutput(output) {
     if (!line.trim()) continue;
     try {
       events.push(JSON.parse(line.replace(/^\uFEFF/u, '')));
-    } catch {
+    } catch (error) {
       if (!line.trimStart().startsWith('{')) continue;
-      throw new Error(`Copilot output is not valid JSONL after ${events.length} event(s). Check the installed CLI version.`);
+      const eventType = line.match(/^\s*\{"type":"([^"]+)/u)?.[1] || 'unknown';
+      throw new Error(`Copilot output is not valid JSONL after ${events.length} event(s): ${error.message}; line length ${line.length}; event type ${eventType}.`);
     }
   }
   if (events.length === 0) {
