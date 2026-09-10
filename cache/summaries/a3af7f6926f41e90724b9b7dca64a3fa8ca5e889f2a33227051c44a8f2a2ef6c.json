@@ -1,0 +1,11 @@
+{
+  "summary": "GitHub stacked pull requestsでは、AI生成の巨大な単一PRを、依存関係に沿った小さくレビュー可能なPRスタックへ分解する進め方が示された。例では商品検索機能をL1〜L4の4層に分け、gh stackとgh-stack skillでエージェントに各層の作成と提出を担当させる。下位層の修正後もgh stack rebaseやgh stack syncで上位層へ変更を反映し、レビューしやすさと更新の追随性を保つ。",
+  "keyPoints": [
+    "スタックの起点となるstack baseを先に決める必要があり、CIチェックとマージルールはその基準ブランチに対して各層で評価される。",
+    "記事の例では商品検索を4層に分割し、L1で型付きカタログとシードデータ、L2で/api/products/search、L3でチャットのAPI接続、L4で商品引用カード付きUIを積み上げる。",
+    "導入時はgh extension install github/gh-stackでCLI拡張を入れ、エージェント向けにはgh skill install github/gh-stack、またはnpx skills add github/gh-stackを使ってスタック操作を学習させる。",
+    "下位ブランチをレビュー後に更新するとスタック全体がdivergeしうるため、Web UIのRebase stackはコミッター再設定や未署名コミットに注意が必要で、端末からgh stack rebaseとgh stack syncで追随させる方法が示されている。"
+  ],
+  "significance": "コーディングエージェントで大きな機能を一気に実装しがちな開発者と、その差分を読むレビュアーに特に関係する。記事の手法では、巨大PRで起きるレビュー停滞や文脈喪失を避けつつ、データ担当やUI担当など層ごとに適したレビューを割り当て、下位層の修正も上位へ手作業なしで波及できる。",
+  "summaryEn": "GitHub stacked pull requests are presented as a way to split one large AI-generated PR into a dependency-ordered stack of smaller, reviewable PRs. In the shopping-assistant example, product search is broken into four layers and managed with gh stack plus the gh-stack skill. After fixes to a lower layer, gh stack rebase and gh stack sync propagate changes upward while keeping the stack reviewable."
+}

@@ -1,0 +1,11 @@
+{
+  "summary": "GitHub Copilot CLIによって、GitHubの法務チームは契約ドラフト作成やDMCA対応向けの内部ツールを、平文ベースの指示で自作できるようになった。契約ドラフト支援ツール「terms-ai」は、指示や資料、ワークフローをリポジトリで管理し、レビューと起案の時間を約半分に削減したと述べられている。別の事例では、平文ファイルで始まった法務ワークフローが、定義済みワークフローを実行するデスクトップアプリへ発展した。",
+  "keyPoints": [
+    "契約ドラフト支援ツールterms-aiは、主要文書をリポジトリに集約し、AI向けの指示・資料・ワークフローを一元管理する構成で、内部ドラフティング用スタイルガイドも備える。過去の契約ライブラリも参照でき、機密情報は承認済みのアクセス制御環境に置かれる。",
+    "terms-aiの利用者は、レビューとドラフト作成の時間をおおむね半減できたと述べており、条項の一貫性と平易な文体も改善したとしている。",
+    "DMCA通知の評価から始まった別の取り組みでは、エンジニア支援なしでも、平文のワークフロー指示・ポリシー資料・報告テンプレートを中核に法務判断を組み込めた。その後、クライアント向けと弁護士向けの分析モードや外部データ連携が追加され、現在は定義済み法務ワークフローを実行するデスクトップアプリへ発展している。",
+    "この法務向けCopilotは法的判断の置き換えではなく、読みやすいMarkdownで振る舞いを制御しながら、人間のレビューを中心に据える意思決定支援システムとして位置付けられている。"
+  ],
+  "significance": "この内容は、法務担当者やプログラムマネージャーのような非エンジニア職で、反復的な業務を抱えるチームに関係する。記事では、従来のソフトウェア開発が中心でない仕事でも、平文やMarkdownで知識や基準をワークフロー化でき、人間のレビューを保ったまま業務の一貫性を高められる可能性があると示している。",
+  "summaryEn": "GitHub Copilot CLI enabled GitHub’s legal team to build internal tools for contract drafting and DMCA-related workflows using plain-language instructions. One example, the terms-ai drafting tool, organized instructions, resources, and workflows in a repository and reportedly cut review and drafting time roughly in half. Another example started with plain-language workflow files and later evolved into a desktop app for predefined legal workflows."
+}
