@@ -10,6 +10,14 @@ function normalize(value) {
   return String(value || '').replace(/\s+/gu, ' ').trim();
 }
 
+function normalizeEvidence(value) {
+  return normalize(value)
+    .replace(/!\[([^\]]*)\]\([^)]*\)/gu, '$1')
+    .replace(/\[([^\]]+)\]\([^)]*\)/gu, '$1')
+    .replace(/(^|\s)[#>*+-]+\s*/gu, '$1')
+    .replace(/[`*_~]/gu, '');
+}
+
 function buildSummaryPrompt(article, body) {
   if (normalize(body).length < 100) {
     throw new Error('Article body is missing or too short; refusing to summarize feed metadata.');
@@ -45,6 +53,7 @@ ${JSON.stringify({ title: article.title, url: article.url, body })}`;
 
 function validateSummary(value, body) {
   const source = normalize(body);
+  const normalizedEvidenceSource = normalizeEvidence(body);
   function groundedField(field, label) {
     let rawText = field?.text;
     if (rawText === undefined && field && typeof field === 'object' && typeof field.ja === 'string') rawText = field.ja;
@@ -68,7 +77,9 @@ function validateSummary(value, body) {
       throw new Error(`Missing evidence for ${label}.`);
     }
     for (const quote of field.evidence) {
-      if (typeof quote !== 'string' || normalize(quote).length < 15 || quote.length > 500 || !source.includes(normalize(quote))) {
+      const normalizedQuote = normalize(quote);
+      if (typeof quote !== 'string' || normalizedQuote.length < 15 || quote.length > 500 ||
+          (!source.includes(normalizedQuote) && !normalizedEvidenceSource.includes(normalizeEvidence(quote)))) {
         throw new Error(`Evidence not found in article body for ${label}.`);
       }
     }
