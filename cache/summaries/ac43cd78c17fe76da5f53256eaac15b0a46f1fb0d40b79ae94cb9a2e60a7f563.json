@@ -1,0 +1,11 @@
+{
+  "summary": "GitHub Copilot appでは、Dependabotのオープンなプルリクエストを毎日自動でレビューし、リスク別の整理、CI通過確認、次の対応の要約まで行う自動化を設定できる。対象リポジトリを選び、自然言語で依頼内容を記述すると、個別PRの一覧ではなく安全なパッチ更新、minor/majorの分類、追加調査が必要な依存関係をまとめた結果を返し、必要ならその文脈のままCopilotセッションに引き継げる。",
+  "keyPoints": [
+    "自動化のトリガーはManual、Hourly、Daily、Weekly、issue作成時から選べ、Dependabotレビューのような定期保守にはdaily scheduleが向く例として示されている。実行場所はcloudかlocal machineを選択できる。",
+    "タスク内容は自然言語で指定し、例ではオープンなDependabot PRのリスク分類、安全なpatch/minor更新の識別、各PRのCI確認、推奨される次の対応の要約まで依頼している。対象のrepository選択後は、scheduled runを待たずにCreate and Runで即時実行もできる。",
+    "完了後の出力は個別PRの羅列ではなく要約で、安全なpatch updateの一括化、minorとmajor version upgradeの分離、passing CIの識別、追加調査が必要な依存関係の強調が行われる。",
+    "追加対応が必要な更新はautomation resultsから新しいCopilot sessionに直接進められ、その文脈を引き継げる。さらに各automation runは保存され、実行時刻、実施したactions、生成したresultsを後から確認できる。"
+  ],
+  "significance": "DependabotのPRが頻繁に発生し、破壊的変更に当たる可能性もあるプロジェクトの保守担当者にとって、反復的な一次切り分けをCopilotに任せ、朝の時点でどの更新がマージ可能でどれが精査対象かを把握しやすくする点が重要だ。記事では、日常的なルーチン作業を自動化し、人が専門的な判断が必要な作業に時間を使えるようにする用途として位置付けている。",
+  "summaryEn": "GitHub Copilot app can be set up to automatically triage open Dependabot pull requests on a daily schedule, grouping updates by risk, checking CI status, and returning a concise action summary. After selecting a repository and describing the task in natural language, it summarizes safe patch updates, separates minor and major upgrades, flags dependencies needing deeper investigation, and can carry that context into a follow-up Copilot session."
+}

@@ -1,0 +1,12 @@
+{
+  "summary": "GitHub Copilotは、AIコーディングの効率化に向けて、役立つ文脈を残しながら反復的な出力を減らし、価値のない書式と冗長な指示を削り、完了したバックグラウンド作業を追加取得なしで渡す4つの改善を進めた。変更の焦点は、必要な情報は保ったまま、情報価値の低い出力や書式、結果取得のためだけの余計なやり取りを減らす点にある。",
+  "keyPoints": [
+    "個々のツール出力を短くしても、欠落情報の回収でコマンド再実行や再読込が発生すると、タスク全体ではトークン消費と所要時間が増えることがある。効率は1回の応答ではなく、依頼から最終結果までの全体で評価すべきだ。",
+    "出力圧縮は保守的な方針に改められ、cat、git diff、git showなどのソース風や任意出力はそのまま返し、grep系の検索結果は内容を落とさず再構成し、install/build/test/progressの反復ノイズだけを十分な節約が見込める場合に選択的に圧縮する。",
+    "viewツールでは、現在の編集フローで使われていない各行の行番号プレフィックスを削除した。これによりオフラインのエージェント型コーディングベンチマークで推論コストが約5%下がり、Copilot CLIのオンライン実験でもユーザー1人あたりの平均日次推論コストが約3%低下した。",
+    "task toolのプロンプトはメタプロンプティングでおよそ半分まで短縮されたが、最初のオンライン実験では独立エージェントを直列化する退行が見つかった。修正後の出荷版では1ターンあたり約1,300トークンを削減し、セッション全体のプロンプトトークンを約1.8%、アクティブ時間当たりの正規化コストを2.9%下げた。",
+    "バックグラウンドで終わったシェル実行やサブエージェントの結果は、対象となる完了通知をまとめて既存のtool-result形式で直接渡すようになり、完了後の取得専用ターンを減らした。まだ実行中の作業に対する明示的な読み出し動作は従来どおりで、AI Credits基準の平均トークン関連使用量は約2.3%下がった。"
+  ],
+  "significance": "恩恵を受けるのはCopilot CLIだけでなく、同じハーネスを使うGitHub Copilot appやCopilot code reviewの利用者だ。不要な書式や取得専用ターンを減らすことで、開発者にとってはコンテキストウィンドウを実作業に回しやすくなり、記事でもこれらはモデルを賢くしたのではなく不要作業を除いた改善だと位置づけている。",
+  "summaryEn": "GitHub Copilot is rolling out four AI-coding efficiency improvements: reduce repetitive output while preserving useful context, remove valueless formatting and bloated instructions, and deliver completed background work without an extra retrieval step. The aim is to cut low-value output, formatting, and retrieval-only interactions without dropping the information the agent needs."
+}

@@ -1,0 +1,11 @@
+{
+  "summary": "GitHubは8月17日に7時間47分続いた大規模障害について、トラフィック急増時にCentral USデータセンターの重要インフラがスケールできなかった容量障害だったと説明し、信頼性改善を加速するとした。障害はgithub.com、認証、Actions、API、PR、Issues、Copilotに及び、復旧後の対策として容量増強、Azure移行の加速、サービス間リトライ制御の見直しを進めている。",
+  "keyPoints": [
+    "障害の直接要因は、新たなトラフィックピーク時にCentral USの重要インフラが追随できず、容量逼迫が認証失敗や複数サービス停止に波及したことだった。Copilotの一部は復旧が遅れ、クライアント側のリトライループが回復時の負荷を増やした。",
+    "GitHubは今回と8月6日の障害はいずれもコードや設定変更ではなく容量問題が中核だったとし、需要増に対して重要コンポーネントのスケールが間に合わなかったと認めた。背景として、月間コミット数は4月以降14億件から29億件へ増えていた。",
+    "対策として、既存データセンターで電力の許す限りハードウェアを増設し、300万超のCPUコア、120ペタバイトの高速ストレージ、ネットワーク容量を追加した。またAzure移行を加速し、現在はプラットフォーム負荷の約58%、Git操作の半分をAzureが処理している。",
+    "今後は、読み取り容量を読者数に対して線形に拡張できるアーキテクチャを大規模モノレポから段階導入する。加えて、共有依存の削減や重要系の分離、サービス間のリトライ上限・予算・可変タイムアウトの統一、低優先度のCPU・メモリアラート見直しを進める。"
+  ],
+  "significance": "GitHubに開発・出荷・運用を依存する開発者や組織にとって、今回の説明は、広範な停止を招いた原因が容量不足にあったことと、その是正策がどこに向かうのかを具体的に示す内容だ。特にCopilot利用者や大規模モノレポを抱えるチームは、復旧遅延の再発防止策やAzure移行、読み取り容量拡張の進展に直接関係する。",
+  "summaryEn": "GitHub said the August 17 outage, which lasted 7 hours and 47 minutes, was a capacity failure caused when a critical Central US infrastructure component could not scale during a traffic peak. The incident affected github.com, authentication, Actions, APIs, pull requests, issues, and Copilot, and GitHub says it is accelerating reliability work through added capacity, faster Azure migration, and stricter retry controls."
+}

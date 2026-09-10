@@ -1,0 +1,12 @@
+{
+  "summary": "OpenClawは、2025年11月の週末プロジェクトから、2026年8月26日時点で約38.8万スター、8.1万フォーク、8万超のコミットを持つGitHub史上最速成長のプロジェクトへと変化した。公開6カ月時点の保守担当者たちは、AIエージェント由来の大量のPRに対応するため、貢献者の評価軸を件数から作業過程や理解度へ移し、AIでAI生成コードを査読する運用を強めている。あわせて、重複PRによる信用づくりや依存関係のサプライチェーン攻撃を踏まえ、信頼モデルや安全な既定値を見直している。",
+  "keyPoints": [
+    "保守チームは、同時に数百件単位のPRを出す参加者まで現れるほどの流入に直面し、従来の人手中心のレビュー体制では価値ある提案の選別が難しくなった。",
+    "新しい信頼シグナルとして、PR件数ではなく、エージェントとのトランスクリプト、スクリーンショット、テスト結果、機能への理解を示す説明が重視されている。",
+    "査読側もAI活用を進めており、GitHub CopilotでAI生成PRをレビューしつつ、保守担当者自身が提出コードを直接直して完成させる運用が常態化している。",
+    "セキュリティ面では、マージ実績バッジを悪用した重複PRで信用を稼ぐ動きが攻撃面になり、依存関係についても精査してコア依存を減らし、依存先メンテナーとの関係構築を進めている。",
+    "GitHub Secure Open Source Fundは、参加者にセキュリティ実務の学びと他の保守担当者とのつながりを提供しており、現在はオープンソースプロジェクトの保守担当者向けに応募を受け付けている。"
+  ],
+  "significance": "AI支援の貢献が急増するオープンソース保守担当者やそのコミュニティにとって重要な内容だ。この記事は、参加を閉ざさずに受け入れつつも、PR件数のような従来の信用指標だけでは不十分になり、レビュー方法、既定の安全設定、依存関係管理を見直す必要があることを示している。また、同様の課題を抱える保守担当者に対し、GitHub Secure Open Source Fundを通じた学習機会と仲間との接点があることも示している。",
+  "summaryEn": "OpenClaw has evolved from a weekend project started in November 2025 into the fastest-growing project in GitHub history, reaching about 388,000 stars, 81,000 forks, and more than 80,000 commits by August 26, 2026. Six months in, its maintainers say they have shifted from counting contributions to judging contributor process and understanding, while using AI to review AI-generated code. They are also reworking trust and security practices in response to duplicate PRs, supply-chain risks, and debates over safe defaults."
+}

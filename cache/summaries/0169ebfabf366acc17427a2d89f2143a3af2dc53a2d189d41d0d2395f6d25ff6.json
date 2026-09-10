@@ -1,0 +1,11 @@
+{
+  "summary": "Azure Database for PostgreSQLとAzure HorizonDBを含むマネージドPostgreSQLの位置づけが、自己管理型PostgreSQLとの責任分担や運用負荷の違いとして整理された。記事は、自己管理ではOSやHA、バックアップ、認証まで含むスタック全体を運用側が担う一方、マネージドサービスでは基盤、OS保守、パッチ適用、物理セキュリティの一部をクラウド側へ移せると説明する。あわせて、制御の自由度を重視する場合は自己管理が適し、標準化された運用や可用性、セキュリティ統合、迅速な展開を優先する場合はAzureのマネージドモデルが候補になると位置付けている。",
+  "keyPoints": [
+    "自己管理型PostgreSQLでは、ハードウェア調達、OS導入、PostgreSQL設定、ファイアウォールや暗号化、HA構成、バックアップとポイントインタイムリカバリ、ユーザー／パスワード管理まで、運用チームがスタック全体を担う。",
+    "マネージドサービスでは、通常はOS保守とサービス更新、PostgreSQLのマイナーバージョン更新をプロバイダー側が扱い、メンテナンス時間帯を設定できる場合がある。一方でメジャーバージョンアップグレードは、互換性確認や時期管理のため顧客主導に残ることがある。",
+    "高可用性はマネージドではサービス設定として提供されることが多く、待機系の維持やフェイルオーバー制御をプロバイダーが担う。読み取りレプリカはHAとは別機能で、バックアップやポイントインタイムリストア、ストレージ拡張も一般に組み込まれるが、保持期間や上限、冗長化、スケーリング挙動はプロバイダーやリージョン、サービス階層、構成で異なる。",
+    "Azure上のマネージド移行を検討する前に、必要な拡張機能、OSアクセス要件、可用性と復旧目標、セキュリティ統制、リージョン提供状況、性能要件、社内サポート体制を確認する必要がある。加えて、Azure HorizonDBはミッションクリティカル向けに、コンピュートとストレージの独立スケール、迅速な読み取りスケールアウト、ゾーン耐障害性を訴求している。"
+  ],
+  "significance": "本稿は、本番PostgreSQLの運用方式を選ぶ技術意思決定者やプラットフォーム担当に直接関わる。比較の焦点は単なる機能差ではなく、どの責務を自社に残し、どこをクラウド提供者へ移すかにあり、マネージド化してもデータ、ID、設定、アクセス管理、コンプライアンス、アプリ挙動の責任は残るため、運用負荷の削減と統制要件の両面を見極める材料になる。",
+  "summaryEn": "Azure Database for PostgreSQL and Azure HorizonDB are positioned against self-hosted PostgreSQL by clarifying how responsibilities and operational burden differ. The article says self-hosting leaves teams responsible for the full stack, including OS, HA, backups, and identity, while managed services shift infrastructure, OS maintenance, patching, and parts of physical security to the cloud provider. It frames self-management as suitable when low-level control is essential, and Azure’s managed model as a fit when standardized operations, resilience, security integration, and faster delivery matter more."
+}

@@ -1,0 +1,11 @@
+{
+  "summary": "MicrosoftのAzureクラウドネイティブアプリケーション基盤は、2026年のGartnerのCloud-Native Application Platforms Magic Quadrantで3年連続のLeaderに位置付けられたと同社が発表した。記事では、Azure App Service、Container Apps、Functions、API ManagementをMicrosoft FoundryやGitHub Copilotと組み合わせ、AIアプリやエージェントの本番運用、既存アプリのモダナイズ、運用とガバナンスを単一基盤で支える構成を打ち出している。",
+  "keyPoints": [
+    "Microsoftは2026年版Gartner Magic Quadrant for Cloud-Native Application PlatformsでLeaderとされ、同社によればこれで3年連続となる。",
+    "AIアプリとエージェント向けには、Azure Container Apps Expressでコンテナを直接本番エンドポイントへ配備でき、Azure Functionsで既存ロジックをModel Context Protocol経由で公開できる。さらに1,400超のコネクタで企業システム連携を支援する。",
+    "運用とセキュリティでは、Azure API ManagementのAI gateway機能が認証、トークン制限、クオータ、モデル間のトラフィック分散、semantic caching、利用監視を担い、Azure Container Apps Sandboxesがエージェント生成コードや非信頼コードの隔離実行を支える。",
+    "顧客事例として、Planet DDSはAzure App Serviceへのモダナイズでプロビジョニング時間を6週間から1日に短縮した。CommerzbankのAvaはAzure Container Apps上で月3万件超の顧客会話を処理し、その75%を自律的に解決している。"
+  ],
+  "significance": "既存アプリ資産を残したままAI活用を進めたい企業や、セキュリティとガバナンスを維持しつつAIアプリを本番展開したい運用チームに関係する内容だ。記事は、Windows/.NETを含む既存アプリのモダナイズと新しいAIワークロードの運用を同じAzure基盤で扱えると位置付けており、別々の基盤や運用モデルを増やさず進めたい組織に影響する。",
+  "summaryEn": "Microsoft says its Azure cloud-native application platform was named a Leader in Gartner’s 2026 Magic Quadrant for Cloud-Native Application Platforms for the third consecutive year. The article presents Azure App Service, Container Apps, Functions, and API Management, together with Microsoft Foundry and GitHub Copilot, as a single platform for running AI apps and agents in production, modernizing existing applications, and providing governance and operations."
+}

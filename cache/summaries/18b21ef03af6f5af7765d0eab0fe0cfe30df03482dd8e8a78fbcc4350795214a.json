@@ -1,0 +1,11 @@
+{
+  "summary": "VS CodeのAgent Hostは、エージェントセッションを専用プロセスで保持する方式に変わり、開始したフォルダーやエディターウィンドウを閉じても処理を継続できるようになった。あわせてopenなAHPが導入され、エディター、Agents window、別マシン、ブラウザー間で同じライブセッションを同期して扱える。最新版のVS Code StableとInsidersで有効化されており、CopilotやClaudeなど異なるハーネスでも共通のセッション体験を提供する。",
+  "keyPoints": [
+    "最新版のVS Code StableとInsidersでAgent Hostが有効化され、エディターウィンドウで始めたセッションをAgents windowでも同じライブセッションとしてそのまま扱える。",
+    "ローカルでは、作業中にフォルダーを閉じてもアクティブなターンは継続するが、ローカルセッションを維持するにはVS Code自体は起動したままである必要がある。",
+    "リモートセッションにも対応し、別マシン上のワークスペースでAgent Hostを動かしたまま、デスクトップ版やWebから進捗確認、変更レビュー、セッション管理を行える。SSH、dev tunnels、Web向けのセットアップ案内もある。",
+    "AHPは公開プロトコルで、standaloneのAgent Hostをcode agent hostまたはcode-insiders agent hostで起動できる。接続用クライアントライブラリはRust、TypeScript、Kotlin、Go、Swift向けが案内されている。"
+  ],
+  "significance": "長時間動くエージェント作業をVS Codeで使う開発者は、セッションが特定のフォルダーやウィンドウに依存しなくなることで、画面や接続先を切り替えても同じ作業を追跡・操作しやすくなる。また、AHPが公開されたことで、独自クライアントやツールを実装する開発者も同じセッション状態に接続し、承認やツール提供を組み込める。",
+  "summaryEn": "VS Code's Agent Host moves agent sessions into a dedicated process so work can continue even after the original folder or editor window is closed. With the open AHP protocol, the same live session can stay synchronized across the editor, the Agents window, other machines, and the browser. It is enabled in the latest VS Code Stable and Insiders and provides a common session experience across different harnesses such as Copilot and Claude."
+}
