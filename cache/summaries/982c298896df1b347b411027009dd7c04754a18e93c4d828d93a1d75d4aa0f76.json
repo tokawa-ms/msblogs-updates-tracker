@@ -1,0 +1,12 @@
+{
+  "summary": "Power BI Desktopでは、新しいPower QueryのGet Data体験がプレビューとして導入され、データソース探索と接続の流れが全面的に再設計された。左側ナビゲーションからデータソース検索やRecent data、OneLake Catalog、Blank Queryなどへ移動でき、接続設定と認証も一か所で行える。さらにフルキーボード操作に対応し、データ取得から整形までの操作をより一貫して進めやすくした。",
+  "keyPoints": [
+    "Power BI Desktop向けの新しいPower Query Get Data体験は、プレビューとして提供が始まった全面刷新版で、データの発見と接続を速めることを狙っている。",
+    "新しい画面では左側ナビゲーションを整理し、HomeやRecent data、OneLake Catalog、Blank Queryなどから、コネクタ探索や再接続、Fabric内データ探索、M記述の開始に素早く入れる。",
+    "接続フローは設定と認証を一か所で済ませられるようにまとめられ、OneLake Catalogでは好みの接続モードも選びやすくなった。",
+    "ユーザビリティとアクセシビリティ面では、フルキーボード操作に対応し、ダークモードも備える。",
+    "利用するにはPower BI DesktopのPreview featuresで「New Power Query experience」を有効化し、再起動後にGet dataから開始する必要がある。"
+  ],
+  "significance": "Power BI Desktopで日常的にデータ取り込みを行う新規ユーザーと経験豊富なデータ担当者の双方に関わる更新で、データソース探索から分析・モデリングへの移行を速め、操作の負担を下げる点が重要だ。現時点ではプレビューのため、利用者のフィードバックが最終的な体験の形成に影響する。",
+  "summaryEn": "Power BI Desktop is introducing a preview of a redesigned Power Query Get Data experience that overhauls how users discover and connect to data. A streamlined left navigation brings source search, Recent data, OneLake Catalog, and Blank Query together, while connection settings and authentication are handled in one place. It also adds full keyboard navigation to make the path from data acquisition to shaping more consistent."
+}
