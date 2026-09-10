@@ -1,0 +1,12 @@
+{
+  "summary": "GitHub Pagesのカスタムドメイン設定を、GitHub Copilot CLIとNamecheap用コミュニティースキルで手動DNS編集なしに進める手順が紹介された。空のリポジトリーからGitHub Pages公開、Namecheap API有効化、スキル導入、DNS変更承認、到達確認までを通し、HTTPS付きの独自ドメイン公開まで約14分で完了したという内容だ。対象は機能発表ではなく、DNSの専門知識がなくても実施しやすい実践的ワークフローの説明である。",
+  "keyPoints": [
+    "前提条件として、GitHubアカウント、GitHub Copilotで認証済みのCopilot CLI、そしてドメイン購入とAPI利用のためのNamecheapアカウントが必要とされている。",
+    "記事の例では、.clickドメインのghpagesblog.clickを取得し、費用は合計2.00米ドル（約2.46カナダドル）だった。",
+    "DNS自動化の前に、Namecheap APIを有効化し、APIを呼ぶマシンの公開IPを許可リストへ追加し、APIキーを取得する必要がある。",
+    "Copilot CLIにはNamecheapスキルをインストールして資格情報を設定し、その後に確認付きで既存のパーキング用DNSをGitHub Pages向けAレコードとWWW用CNAMEへ置き換える。",
+    "公開後はCopilot CLIがドメイン解決とHTTP 200応答を検証し、11:21:27 a.m. ETの購入から11:35 a.m. ETごろのHTTPS公開まで、およそ14分だったとしている。"
+  ],
+  "significance": "GitHub Pagesで独自ドメインを使いたいが、AレコードやCNAME、反映待ちといったDNS作業を負担に感じる開発者に関係する内容だ。Copilot CLIとNamecheapスキルが反復的な設定や検証を担い、利用者は変更承認などの判断を保持できるため、DNSの知識がなくても導入しやすい。一方で、Namecheap APIの有効化、公開IPの許可、スキル設定は必要になる。",
+  "summaryEn": "The article explains a workflow for setting up a GitHub Pages custom domain without manually editing DNS records by using GitHub Copilot CLI with a community Namecheap skill. It walks through publishing a site, enabling the Namecheap API, installing the skill, approving DNS changes, and verifying the result, claiming the site went live on a custom HTTPS domain in about 14 minutes. This is a practical tutorial rather than a product launch, aimed at making DNS setup easier for developers without prior DNS expertise."
+}

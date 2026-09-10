@@ -1,0 +1,11 @@
+{
+  "summary": "GitHubは2026年6月、サービス劣化を伴う6件の障害を報告するとともに、Azure移行とモノリス分離の進捗を明らかにした。モノリスのAzureトラフィックはCentral USで45%に達したが、5月の安定性問題を受けてランプを約1カ月止め、6月17日に安定性ゲート付きで再開した。Git in Azureは43%まで伸びた一方で6月目標の50%は未達で、pullsdの匿名PR読み取り100%移行やusersサービスによるピーク毎秒約50万クエリのDBオフロードなどの改善も進んだ。",
+  "keyPoints": [
+    "6月4日のCopilot code review障害では、github.comのレビュー要求が平均81.6%、最大93.9%失敗し、約3万6800件が失敗した。GitHub Enterprise Cloud with data residencyは影響を受けなかった。",
+    "6月8日はサインアウト利用者向けのpull requests、issues、releasesなどでHTTP 504が継続し、影響は未認証リクエストの約17%、ピーク約34%に達した。関連エンドポイントに依存する一部GitHub Actionsワークフローも影響を受けた。",
+    "6月10日のAPI障害では、RESTとGraphQLの約9%で認証失敗が断続的に発生し、誤った401応答でログアウトされたような挙動と約800msの追加遅延を招いた。原因はmemcached proxy serviceのロールアウトで誤ったホスト設定を拾ったことだった。",
+    "インフラ面では、pullsdが本番の匿名PR読み取りを100%処理し、reposdはAzureで本番REST読み取りトラフィックの50%まで到達した後、Redis容量制約のため計画的に抑制された。usersサービスはピーク時に毎秒約50万クエリを主DBからオフロードしている。"
+  ],
+  "significance": "この報告は、未認証でGitHubページを見る利用者や、APIに依存する自社・サードパーティー連携の利用者に、障害の波及先を具体的に示している点で重要だ。あわせてGitHubが「availability, then capacity, then features」の方針で、Azure移行にも安定性ゲートを入れるなど、速度より可用性を優先していることが分かる。",
+  "summaryEn": "GitHub reported six service-degrading incidents in June 2026 while also outlining progress on its Azure migration and monolith decomposition. Monolith traffic in Azure reached 45% in Central US, but the ramp was paused for about a month after a May stability issue and resumed on June 17 with a new stability gate. Git in Azure rose to 43% but missed the June target of 50%, while improvements included pullsd taking 100% of anonymous pull request reads and the users service offloading about 500,000 peak queries per second from the primary database."
+}

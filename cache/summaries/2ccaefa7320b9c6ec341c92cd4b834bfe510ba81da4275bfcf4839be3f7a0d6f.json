@@ -1,0 +1,11 @@
+{
+  "summary": "GitHub Agentic Workflowsを使い、Aspireチームはmicrosoft/aspireでマージされた変更からmicrosoft/aspire.dev向けのドキュメント下書きPRを自動作成する運用に切り替えた。エージェントは直接GitHubへ書き込まず、safe-outputsとワークフロー単位のGitHub AppでPR作成を実行するため、クロスリポジトリでも権限を絞って運用できる。Aspire 13.3と13.4では82件のfeature-docs PRが製品PRの中央値44.8時間後にマージされ、すべて機能を出荷したエンジニアのレビューを受けた。",
+  "keyPoints": [
+    "pr-docs-checkはmainまたはrelease/*へのマージ済みPRを起点に動き、docs側のベースブランチはPRマイルストーン、リンクされたissueのマイルストーン、PRのbase ref、最後にmainの順で決定する。",
+    "エージェントはPRやissueを直接作成せず、JSONの意図をsafe-outputs handlerがGitHub App経由で実体化する。アプリ権限はaspireとaspire.devの2リポジトリに限定され、ベースブランチはmainまたはrelease/*に制限され、AGENTS.mdや依存マニフェスト類は変更不可で、PR作成失敗時はissue作成にフォールバックする。",
+    "May 3–June 2, 2026の30日ローリング集計では、製品PRマージ396件に対してワークフローも396回動き、そのうち82件だけがdocs PRになった。作成されたdocs PRは82件すべてマージ済みで、宛先はrelease/13.3が52件、release/13.4が27件、mainが3件、マージまでの中央値は44.8時間、24時間以内38%、7日以内96%だった。",
+    "初期版ではdocs要否の判定が甘く、内部変更にもPRを起こして69件中9件がクローズされたため、ユーザー向け変更の定義と除外例を強化した。加えて、クロスリポジトリPR作成にはdocsリポジトリの二重checkoutが必要で、大きな差分に備えてPRメタデータを事前抽出してプロンプト負荷も抑えている。"
+  ],
+  "significance": "製品コードとドキュメントが別リポジトリにあり、レビュー系統や権限境界も分かれているチームにとって、強い権限制約を保ったままドキュメント作成を自動化できる実例になっている。Aspireでは文書担当者が機能差分の後追い調査に使っていた時間を減らし、機能担当エンジニアがマージ直後の下書きをレビューする流れに変えることで、ドキュメント遅延の縮小につながっている。",
+  "summaryEn": "Using GitHub Agentic Workflows, the Aspire team switched to automatically creating draft documentation PRs in microsoft/aspire.dev from merged changes in microsoft/aspire. The agent does not write directly to GitHub; safe-outputs and a per-workflow GitHub App handle the cross-repo PR creation with tightly scoped permissions. For Aspire 13.3 and 13.4, 82 feature-docs PRs were merged a median of 44.8 hours after the product PR, all reviewed by the engineer who shipped the feature."
+}
