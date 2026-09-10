@@ -62,6 +62,13 @@ npm run generate -- 2026-09-09
 npm run build
 ```
 
+連続した期間をまとめて再生成する場合も、同じ保存済み差分を使って次のように実行できます。
+
+```bash
+npm run generate -- 2026-06-21 2026-09-08
+npm run build
+```
+
 `content/updates/` と `src/content/updates/` の同日ファイルが同時に更新されます。生成した日本語を確認してから通常の公開手順で反映してください。最新の原文を取得するため、過去の公開時点と本文が異なる場合があります。
 
 参考: [CLI のプログラム実行と認証](https://docs.github.com/en/copilot/how-tos/copilot-cli/automate-copilot-cli/run-cli-programmatically)

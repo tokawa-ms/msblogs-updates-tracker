@@ -2,7 +2,7 @@ const fs = require('fs/promises');
 const path = require('path');
 const axios = require('axios');
 const cheerio = require('cheerio');
-const { toDateString } = require('./utils/date-utils');
+const { isDateString, toDateString } = require('./utils/date-utils');
 const { diffFile, fileExists, readJson } = require('./utils/cache-manager');
 const { summarizeArticle } = require('./utils/article-summarizer');
 
@@ -290,18 +290,72 @@ async function writeUpdateFiles(date, markdown) {
   return rootOutput;
 }
 
-async function main() {
-  const date = process.argv[2] || toDateString();
+function enumerateDates(startDate, endDate) {
+  const dates = [];
+  const cursor = new Date(`${startDate}T00:00:00.000Z`);
+  const end = new Date(`${endDate}T00:00:00.000Z`);
+
+  while (cursor <= end) {
+    dates.push(toDateString(cursor));
+    cursor.setUTCDate(cursor.getUTCDate() + 1);
+  }
+
+  return dates;
+}
+
+function resolveTargetDates(args, fallbackDate = toDateString()) {
+  const [startArg, endArg] = args;
+
+  if (!startArg) {
+    return [fallbackDate];
+  }
+
+  if (!isDateString(startArg)) {
+    throw new Error(`Invalid date: ${startArg}`);
+  }
+
+  if (!endArg) {
+    return [startArg];
+  }
+
+  if (!isDateString(endArg)) {
+    throw new Error(`Invalid date: ${endArg}`);
+  }
+
+  if (startArg > endArg) {
+    throw new Error(`Start date must be on or before end date: ${startArg} > ${endArg}`);
+  }
+
+  return enumerateDates(startArg, endArg);
+}
+
+async function generateDate(date, options) {
   const diffPath = diffFile(date);
   if (!(await fileExists(diffPath))) {
     throw new Error(`Diff file not found: ${diffPath}`);
   }
 
   const diff = await readJson(diffPath);
-  const markdown = await toMarkdown(date, diff);
+  const markdown = await toMarkdown(date, diff, options);
   const output = await writeUpdateFiles(date, markdown);
   await updateIndex(date, diff.new_count || 0);
-  console.log(JSON.stringify({ date, output_file: output }, null, 2));
+
+  return { date, output_file: output, new_count: diff.new_count || 0 };
+}
+
+async function main() {
+  const dates = resolveTargetDates(process.argv.slice(2));
+  const results = [];
+
+  for (const date of dates) {
+    results.push(await generateDate(date));
+  }
+
+  console.log(JSON.stringify({
+    generated: results.length,
+    dates: results.map((result) => result.date),
+    outputs: results,
+  }, null, 2));
 }
 
 if (require.main === module) {
@@ -311,4 +365,12 @@ if (require.main === module) {
   });
 }
 
-module.exports = { cleanText, extractArticleText, fetchArticleText, toMarkdown };
+module.exports = {
+  cleanText,
+  enumerateDates,
+  extractArticleText,
+  fetchArticleText,
+  generateDate,
+  resolveTargetDates,
+  toMarkdown,
+};
