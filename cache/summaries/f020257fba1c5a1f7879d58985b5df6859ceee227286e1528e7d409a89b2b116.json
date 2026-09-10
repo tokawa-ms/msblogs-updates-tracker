@@ -1,0 +1,11 @@
+{
+  "summary": "Power BI/FabricのOutbound Access Protection（OAP）は、プレビューでsemantic modelsにも適用できるようになり、ワークスペースからの送信先を既定で遮断して明示的に許可した宛先だけに接続できるようになった。適用はモデルにバインドされたデータ接続単位で行われ、Import更新とDirectQueryの両方が対象になる。なお今回のプレビューにPower BIレポートは含まれず、既存ワークスペースでは未対応アーティファクトがあると有効化できない。",
+  "keyPoints": [
+    "OAPはワークスペース設定の単一トグルで有効化し、有効化後はそのワークスペース内アイテムからの送信接続が既定で拒否され、例外ルールを作成した先だけ許可される。",
+    "semantic modelsではPower Query変換、M式、データセットパラメーターでは回避できず、モデルにバインドされた接続自体がワークスペースの送信ルールで評価される。",
+    "既定構成ではクロスワークスペースと見なされる接続がすべて遮断されるため、同じワークスペース内のソースであっても、semantic model用にSQL接続種別とADLS Gen2接続種別のローカルワークスペース例外を追加する必要がある。",
+    "有効化にはワークスペースがF SKU上にあり、テナント設定のConfigure workspace-level outbound network rulesがオンであることが必要で、Power BI reportsやdashboardsなど未対応アーティファクトを含むワークスペースでは有効化できない。設定変更の反映には約15分かかる。"
+  ],
+  "significance": "複数ワークスペースやクラウド/オンプレミスのデータソースをまたぐsemantic modelを運用する管理者や組織にとって重要な更新だ。記事では、意図しないリレーションやDirectQueryのフィルター押し込みによって一方のソース値が別ソース側に露出しうること、ゲートウェイやネットワーク層の制御だけではPower BIサービス上で未承認エンドポイントへの接続を防ぎきれないことを示しており、サービス側で送信先を制御できる点に意味がある。",
+  "summaryEn": "Power BI/Fabric's Outbound Access Protection can now be applied to semantic models in preview, blocking outbound destinations by default and allowing only explicitly trusted endpoints. Enforcement happens on the model’s bound data connection and covers both Import refreshes and DirectQuery. Power BI reports are not included in this preview, and OAP cannot be enabled in workspaces that still contain unsupported artifacts."
+}
