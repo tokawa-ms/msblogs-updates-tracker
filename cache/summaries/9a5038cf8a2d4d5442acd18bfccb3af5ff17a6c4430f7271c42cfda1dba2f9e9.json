@@ -1,0 +1,12 @@
+{
+  "summary": "GitHub Secure Open Source FundのSession 4では、50件のオープンソースプロジェクトに総額50万ドル超を投じ、GitHub Security Labの専門家、GitHubのセキュリティツール、AI支援ワークフローを組み合わせる支援へ拡充した。参加メンテナーはこの支援を具体的なセキュリティ改善に結び付け、AIは調査・優先順位付け・対応の高速化に有効だが、最終判断と責任はメンテナーが担うという教訓が示された。",
+  "keyPoints": [
+    "Session 4は50プロジェクトに50万ドル超を投資し、GitHub Security Labの専門家、GitHubセキュリティツール、AI支援ワークフロー、ピアコミュニティを組み合わせて支援した。",
+    "各セッションは3週間のスプリントと計12カ月の関与で構成され、資金提供と参加は成果主導の目標および検証済みのセキュリティ改善に直接結び付けられている。",
+    "各プロジェクトにはGitHub Sponsors経由で1万ドルが支給され、内訳はスプリント中6000ドル、6カ月後と12カ月後のセキュリティ確認時に各2000ドルで、即時導入向けのセキュリティ資源とAzureクレジットも提供される。",
+    "OpenClawはSession 4の終了時までに、インシデント対応計画の策定、GitHubセキュリティツール利用の拡大、GitHub Actionsワークフローの監査、セキュリティ問題の特定と対応プロセスの強化を実施した。",
+    "次回のSession 5は8月24日まで応募を受け付けており、Funding PartnerまたはEcosystem Partnerとしての参加募集も案内している。"
+  ],
+  "significance": "影響を受けるのは、AIやクラウド、開発基盤を支えるオープンソースのメンテナーと、それらに依存する開発者や組織だ。記事は、メンテナーが脆弱性管理やリリース保護を続けながらAI由来の新しいリスクにも対処する必要があり、その改善が下流の多数のアプリケーションと依存先全体の強靱性向上につながると位置付けている。",
+  "summaryEn": "In Session 4, the GitHub Secure Open Source Fund expanded support for 50 open source projects with more than $500,000, combining GitHub Security Lab expertise, GitHub security tools, and AI-assisted workflows. Maintainers turned that support into concrete security improvements, while the program’s main lesson was that AI can speed investigation, prioritization, and response, but maintainers still make the final decisions and remain accountable."
+}

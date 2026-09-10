@@ -1,0 +1,11 @@
+{
+  "summary": "Microsoft Foundryは、AIを単発の実証から継続的に費用対効果を管理する「managed investment system」として運用する枠組みを前面に打ち出した。記事は、コストはモデル選定だけでなくトークン量やエージェントのワークフロー設計でも増減すると整理し、実行時の最適化、継続的な改善、支出ガバナンスを組み合わせる考え方を示している。現時点で一部機能は提供中だが、Foundryネイティブの予算と強制適用は「available soon」、より細かな帰属表示はロードマップ上だとしている。",
+  "keyPoints": [
+    "AIコストはモデル単価だけでは決まらず、システムプロンプト、会話履歴、ツール定義、取得コンテンツなどの入力トークンに加え、エージェントの再試行や複数ツール呼び出しでも膨らむ。単純な追加入力でも、ステートレスなモデルに毎回フルコンテキストを送るため、費用が時間とともに増えることがある。",
+    "実行時の最適化策として、FoundryはModel routerで各プロンプトをcost、quality、balancedの各モードに振り分け、キャッシュやファインチューニング、Foundry IQによる必要最小限の文脈選択を組み合わせて、過剰な高性能モデル利用や不要な入力トークンを抑える考え方を示している。",
+    "エージェントの運用最適化では、Agent optimizerが自前の評価器でプロンプト、モデル、ツール、スキルを比較して最適構成を昇格させ、場合によってはより小さく安価なモデルでも品質を維持できるとする。さらにToolboxesで必要なツールだけを送り、procedural、user、session memoryで履歴全体の再送を減らす。",
+    "支出統制については、現在はAzure API ManagementのAI GatewayをFoundryの前段に置いてトークンのレート制限やクォータ、キャッシュを適用できる。一方、Foundry内蔵の予算と強制適用は今後提供予定で、エージェント単位・セッション単位までの詳細なコスト帰属表示もまだロードマップ段階としている。"
+  ],
+  "significance": "この内容は、AI導入を実証から本番運用へ進め、予算審査や費用説明を求められる企業チームに直接関わる。特にMicrosoft Foundry上で構築する組織にとって、エンジニアリング、財務、プロダクトが同じ支出指標でAI利用を把握し、どこで最適化や制御をかけるべきかを整理するための指針として位置付けられている。",
+  "summaryEn": "Microsoft Foundry is being positioned as a framework for running AI as a managed investment system rather than a series of one-off pilots. The post argues that AI costs are driven not just by model choice but also by token usage and agent workflow design, and it maps Foundry’s approach across runtime optimization, ongoing workflow improvement, and spend governance. Some capabilities are available now, while native Foundry budgets and enforcement are marked as coming soon and finer-grained attribution remains on the roadmap."
+}
