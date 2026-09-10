@@ -1,0 +1,12 @@
+{
+  "summary": "GitHub Copilot appでは、同じプロジェクトで複数のエージェントセッションを並列実行でき、各セッションは独立したGit worktreeと個別のコンテキストで干渉せず進められる。記事は、セッションビューで進捗を見ながら、機能追加・アクセシビリティレビュー・テストを別々のセッションで同時に走らせる初心者向けの使い方を説明している。これにより、開発者は待ち時間や文脈の切り替え負担を減らし、レビューや判断に時間を使いやすくなる。",
+  "keyPoints": [
+    "各エージェントセッションは互いに独立しており、既存の作業を止めずに新しいセッションを開始できる。",
+    "並列実行の前提として、各セッションはそれぞれ専用のGit worktree上で動作する。",
+    "セッションビューでは複数セッションのタイトルと進捗を確認でき、作業の追跡に使える。",
+    "各セッションは個別のコンテキストを保持するため、切り替えても作業内容を説明し直す必要がない。",
+    "記事の例では、tailspin-toysリポジトリで funded sort の追加、アクセシビリティレビュー、テスト実行を3つのセッションに分けて同時進行している。"
+  ],
+  "significance": "複数の開発タスクを同時に進めたい開発者に関係する内容で、GitHubは、セッションを分離して並列実行することでエージェントの進行を見張る時間や文脈切り替えの負担を減らせると説明している。特に、レビューや意思決定に時間を使いたい人ほど恩恵を受けやすい。",
+  "summaryEn": "In the GitHub Copilot app, multiple agent sessions can run in parallel on the same project, with each session isolated in its own Git worktree and keeping its own context. The article explains a beginner-friendly workflow that starts feature work, an accessibility review, and tests in separate sessions and tracks them in the sessions view. This is intended to reduce waiting and context-switching so developers can spend more time reviewing and making decisions."
+}

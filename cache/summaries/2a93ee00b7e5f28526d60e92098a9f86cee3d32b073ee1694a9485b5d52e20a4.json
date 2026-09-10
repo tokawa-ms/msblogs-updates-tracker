@@ -1,0 +1,12 @@
+{
+  "summary": "Power Platform Community Conference 2026は、10月27〜29日にラスベガスのMGM Grandで開催され、Microsoft CopilotやWork IQ、エージェント、アプリ、ワークフロー、データを組み合わせて企業の業務プロセスをどう改善するかを主題に据える。200超のセッションと24のハンズオンを通じて、実務への適用だけでなく、ガバナンス、セキュリティ、AIコスト管理まで扱う。",
+  "keyPoints": [
+    "10月27日のオープニング基調講演では、Charles LamannaらがCopilot、エージェント、Power Platformの今後を紹介する予定だ。",
+    "会期中は200超のセッションと24件のハンズオンに加え、製品トーク、ラウンドテーブル、認定、コミュニティ企画が用意される。",
+    "内容は役割別に設計されており、Business/ITリーダーは実験から本番移行まで、開発者はアーキテクチャやエージェント設計、業務部門はプロセス知識を実際のシステム化に結び付ける学びを得られる。",
+    "注目テーマには、DataverseとWork IQの関係、Copilot Studioでのワークフローとエージェント連携、本番投入に向けた権限やDLPなどの備え、さらにアプリ・自動化・エージェントを統合する終日ワークショップが含まれる。",
+    "10月28日には、フルカンファレンス参加者限定でPitbullのライブを含む夜のイベントも予定されている。"
+  ],
+  "significance": "AIで業務改善を進める業務部門、開発者、ソリューション構築者、管理者、リーダーに関わる内容で、記事はPPCCを、制御を失わずにAIを業務プロセスへ組み込む方法を学ぶ場として位置付けている。特に、どこまで自動化し、どこでエージェントの推論や人の判断を残すべきかを整理したい組織にとって関係が深い。",
+  "summaryEn": "Power Platform Community Conference 2026 will be held October 27-29 at the MGM Grand in Las Vegas, focused on how Microsoft Copilot, Work IQ, agents, apps, workflows, and data can be combined to improve business processes. Through more than 200 sessions and 24 hands-on workshops, it will cover practical adoption topics including governance, security, and AI cost management."
+}

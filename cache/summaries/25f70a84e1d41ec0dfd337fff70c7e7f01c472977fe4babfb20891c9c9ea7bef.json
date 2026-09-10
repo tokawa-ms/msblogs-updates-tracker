@@ -1,0 +1,12 @@
+{
+  "summary": "Microsoft Foundryは、企業向けAIエージェントのコンテキスト設計を、Foundry IQの知識、Toolboxes、Skills、Memory、Agent optimizerを組み合わせて継続的に最適化する仕組みとして説明した。不要な文書・ツール・指示・会話履歴を毎ターン送らず、そのリクエストに必要な内容だけをコンテキストに入れることで、コストを抑えつつ品質改善を狙う。Microsoftの社内評価では、Foundry IQ knowledge basesで証拠再現率が最大54%向上し、retrieval token costsが34%減ったとする。",
+  "keyPoints": [
+    "Foundry IQの知識ベースは、Work IQ、Fabric IQ、Web IQ、Azure Blob Storage、SharePoint、OneLake、Azure SQLなどを横断して使え、クエリを分解して並列検索・再ランキングし、引用付きの根拠を返す。対応ソースでは呼び出し元のMicrosoft Entra ID、ACL同期、Microsoft Purview感度ラベルも尊重する。",
+    "Microsoftの社内評価では、Foundry IQ knowledge basesはBrowseComp-Plusで証拠再現率を最大54%高め、retrieval token costsを34%下げた。記事では、その要因をagentic retrieval、semantic reranking、improved answer synthesis、より効率的なトークン利用だとしている。",
+    "Toolboxesは、web search、code interpreter、file search、カスタムMCP servers、OpenAPI 3.0/3.1 APIs、A2A agentsを1つの管理されたMCPエンドポイントにまとめる。認証やアクセス方針、ツールのバージョンを一元管理し、tool searchによって大規模ツールライブラリの平均入力トークン消費を約97%削減したという。",
+    "Skillsは、社内手順を中央管理された再利用可能な手続きとして提供し、新版を既定にすると、そのskillを使う全エージェントがコード変更や再デプロイなしで更新手順に従える。初期コンテキストには名称と短い説明だけを載せ、必要時だけ完全な指示を読み込む。",
+    "Foundry Agent Serviceのprocedural memoryを有効にすると、Microsoftの評価でSTATE-BenchとTau-Benchが約5%改善した。あわせて、memoryはuser-level isolation、retention settings、time-to-live policiesで保存内容や期限を制御できる。"
+  ],
+  "significance": "企業データや既存権限を使って複数のAIエージェントを運用する組織にとって重要なのは、知識・ツール・手順・記憶を共有基盤でまとめ、データ取得時に既存のアクセス制御を継承しながら改善を続けられる点だ。ソース更新や方針変更のたびにエージェントを作り直さずに済み、既存フレームワークとも併用しやすい。",
+  "summaryEn": "Microsoft Foundry presents context engineering for enterprise AI agents as a continuous optimization system that combines Foundry IQ knowledge, Toolboxes, Skills, Memory, and Agent optimizer. Instead of sending unnecessary documents, tools, instructions, and conversation history on every turn, it focuses on supplying only what each request needs to reduce cost while improving quality. Microsoft says internal evaluations showed up to 54% better evidence recall and 34% lower retrieval token costs with Foundry IQ knowledge bases."
+}
