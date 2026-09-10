@@ -1,0 +1,11 @@
+{
+  "summary": "GitHubのsecret scanning運用では、15,000超のリポジトリにまたがる2万件超のアラートを精査し、9カ月で未解決ゼロに到達した。実際には約1万8,000件がテスト用などの無効なシークレットで、リポジトリ単位・種類・経過年数で切り分けて一括クローズした。残りはpush protectionの全社強制、有効性確認、所有者特定、運用基盤への連携で段階的に処理し、その過程で使った一部の手法は現在secret scanningのネイティブ機能になっている。",
+  "keyPoints": [
+    "2万件超のアラートのうち、5つのリポジトリだけで約1万8,000件を占め、いずれもテストフィクスチャや無効化済み認証情報などの非アクティブなシークレットだったため、数日で一括クローズできた。",
+    "既存分を片付ける前に、GitHubは全enterprise/organizationでsecret scanningとpush protectionを有効化し、組織レベル設定で個別リポジトリやチームがオプトアウトできないよう強制した。",
+    "当時はsecret scanningにネイティブな有効性確認がなかったため、低影響のエンドポイントに単発リクエストを送る独自手法で、認証情報がまだ使えるかと通知先だけを見極めた。曖昧な応答は結論保留とし、このvalidity checkingは現在secret scanningに組み込まれている。",
+    "残る長尾の対応では所有者特定と運用の仕組み化が課題となり、GitHub発行トークンでは作成者やスコープなどのメタデータをアラートに表示した。さらにCustom Propertiesを使うリポジトリ所有権整備、脆弱性管理基盤への集約、通知自動化、Engineering Fundamentalsへの紐付けで継続的な責任分担を作った。"
+  ],
+  "significance": "この事例は、既に大量のsecret scanningアラートを抱える組織や導入直後のチームにとって、件数の多さに引きずられず、ノイズ除去・有効性確認・所有者割り当て・追跡の順で運用を組み立てる実践例になる。GitHubによれば、当時の手作業の多くは現在ネイティブ機能化されており、新規利用者は同じ仕組みを一から作り直さずに始めやすい。",
+  "summaryEn": "GitHub used secret scanning to work through more than 20,000 alerts across 15,000+ repositories and reached zero open alerts in nine months. It bulk-closed about 18,000 inactive test-related findings, then handled the rest with enforced push protection, validity checks, ownership mapping, and centralized workflows; several of those workarounds are now native secret scanning features."
+}
