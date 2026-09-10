@@ -1,0 +1,11 @@
+{
+  "summary": "Power BI Desktop Bridgeでは、外部アプリやエージェントがPower BI Desktopと直接やり取りできるようになり、レポート状態の取得、ファイル再読み込み、スクリーンショット取得をローカル経由で行えるようになった。これにより、ディスク上のレポート編集後にDesktopへ即時反映し、見た目の確認まで含めた反復作業を手作業なしで進めやすくなる。加えてBridge CLIが用意され、manifest、status、reload、screenshot-allなどのコマンドから機能を利用できる。",
+  "keyPoints": [
+    "Bridgeはローカルの軽量サーバーとして動作し、外部アプリやエージェントがPower BI Desktopの機能一覧取得、現在のファイル状態確認、レポートのPNGスクリーンショット取得、PBIP/PBIRファイルの再読み込みを直接実行できる。",
+    "ファイル再読み込みでは、ディスク上で編集したPBIP/PBIRの変更をDesktopに取り込み直せ、セマンティック モデルも再読み込みするかどうかを制御できるとされている。",
+    "Desktop Bridgeは既定で有効化されており、Power BI Desktopの File > Options and settings > Options > Preview features から secure local APIs 経由の外部ツールアクセス設定を有効・無効にできる。",
+    "Power BI Desktop Bridge CLIでは、manifest、status、reload、screenshot-allの各コマンドが提供され、特にreloadはDesktopを閉じたり開き直したりせずにPBIRのディスク変更を反映できる。"
+  ],
+  "significance": "Power BI Desktopを外部ツールやエージェントと組み合わせたい利用者、特にPBIR/PBIPをディスク上で編集しながら確認するワークフローに関わる人に影響がある。Bridgeにより、現在状態の把握、変更の再読み込み、スクリーンショットでの検証までを同じ流れで実行でき、従来はDesktopと直接対話できずに生じていた手戻りや手動引き継ぎを減らせる。",
+  "summaryEn": "Power BI Desktop Bridge adds a lightweight local server that lets external apps and agents interact directly with Power BI Desktop, including reading report state, reloading edited files, and capturing screenshots. This makes it easier to iterate on report changes without manual handoffs, and the included Bridge CLI exposes commands such as manifest, status, reload, and screenshot-all."
+}

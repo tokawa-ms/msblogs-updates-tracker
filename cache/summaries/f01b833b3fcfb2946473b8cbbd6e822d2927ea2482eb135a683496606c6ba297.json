@@ -1,0 +1,11 @@
+{
+  "summary": "Microsoft FoundryのClaudeが一般提供となり、Azure上で既存のAzureアカウントを使って本番導入できるようになった。開発者はMessages API経由でprompt caching、extended thinking、tool streamingを利用でき、Foundry Agent ServiceではClaudeを中核に複数ステップの計画やツール実行を行うエージェントを構成できる。推論はAzureで処理され、GlobalとUSのデータゾーン、ゼロデータ保持、Azureの認証・課金・ガバナンス統合も提供される。",
+  "keyPoints": [
+    "既存のAzureアカウント経由でClaudeを利用でき、Microsoft Entra IDやAzureのロールベースアクセス制御、既存のガバナンスポリシーなどAzureネイティブな管理をそのまま使える。",
+    "開発者はMessages APIからClaudeを呼び出し、prompt caching、extended thinking、tool streamingを利用できる。Foundry Agent ServiceではClaudeを推論の中核として、複数ステップの計画、ツール利用、企業システムをまたぐタスク実行をオーケストレーションできる。",
+    "推論はAzureで処理され、データ所在地要件に応じてGlobalとUSのデータゾーンを選べる。高機密ワークロード向けにはゼロデータ保持も提供され、Anthropicが推論運用とデータ処理者、SLA提供者を担う。",
+    "課金はClaude Consumption Units（CCU）としてAzure請求書の単一明細に集約され、MACC drawdownに対応しつつFoundry側のモデル別詳細は維持される。加えて、model routerは最適なClaudeモデルへ自動振り分けし、最大50%の節約とうたっている。"
+  ],
+  "significance": "Azureを標準基盤として使う企業や、データ所在地・統制・高機密要件を持つチームにとって影響が大きい。記事では、本番移行の障害はモデル品質よりも調達、ガバナンス、ネットワーク、データ管理にあるとし、既存のAzure認証・課金・統制を使ったままClaudeを導入できることで、エージェント実験から本番運用への移行を進めやすくすると位置づけている。",
+  "summaryEn": "Claude in Microsoft Foundry is now generally available on Azure, allowing enterprises to deploy it in production through existing Azure accounts. Developers can use Claude through the Messages API with features such as prompt caching, extended thinking, and tool streaming, while Foundry Agent Service uses Claude for multi-step agent planning and task execution. Inference runs in Azure with Global or US data zones, zero data retention for sensitive workloads, and integrated Azure identity, billing, and governance."
+}
