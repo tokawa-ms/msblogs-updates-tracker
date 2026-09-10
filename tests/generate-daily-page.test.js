@@ -109,6 +109,13 @@ describe('article extraction', () => {
     assert.match(extractArticleText(html), /production use is not supported/);
   });
 
+  it('短い著者カードの article より十分な長さの main 本文を優先する', () => {
+    const html = `<main><h1>Article title</h1><p>${body}</p><article><p>${'Author biography. '.repeat(8)}</p></article></main>`;
+    const text = extractArticleText(html);
+    assert.match(text, /Article title/);
+    assert.match(text, /production use is not supported/);
+  });
+
   it('本文の見出し・短い箇条書き・表・後半の制限を残し、ナビを除く', () => {
     const html = `<nav><p>Navigation noise</p></nav><main><p>Outside article noise</p><article>
       <h1>Example Search</h1><p>${announcement}</p><h2>Availability</h2>
