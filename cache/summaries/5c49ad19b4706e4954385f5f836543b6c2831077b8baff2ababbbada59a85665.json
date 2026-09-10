@@ -1,0 +1,11 @@
+{
+  "summary": "GitHub Copilot in VS Codeでは、複数のモデルを同じエージェント体験で使えるようにする中核として、コーディングハーネスがモデルごとにプロンプト、ツール、会話管理を調整している。ハーネスはコンテキスト組み立て、ツール公開、実行ループを担い、モデルの出力を実際の編集や端末操作に変換する。VS Codeチームは公開ベンチに加えて独自のVSC-BenchやPR向け自動評価フローで、新モデルやハーネス変更を継続的に検証している。",
+  "keyPoints": [
+    "VS Codeのコーディングハーネスは、コンテキスト組み立て、ツール公開、ツール実行の3つを担い、各ターンで複数ラウンドのエージェントループを回してモデル出力を実作業に変える。",
+    "モデル統合は単純な追加ではなく、Claudeではreplace_string_in_file、GPTではapply_patch、Geminiではツール呼び出しの促しなど、モデル別のツールやプロンプト調整が必要だと説明している。",
+    "独自のVSC-Benchは、カスタムエージェントモード、拡張機能ワークフロー、MCP、端末やブラウザー操作、多言語タスクなど、公開ベンチでは拾いにくいVS Code固有の作業を対象にしている。記事では40回の実行と8種類のモデル×推論設定を比較し、xhighはhighよりトークン消費が多い一方で解決数がやや少ない例を示した。",
+    "ハーネス変更のPRは、~requires-eval-assessmentラベルで自動評価に回せる。PRをビルド後、0.0.0-dev.<sha>の評価用エージェントとして公開し、ベンチ結果へのリンクを元のPRへ返す流れになっている。"
+  ],
+  "significance": "影響を受けるのは、VS CodeでCopilotを使う開発者と、複数モデルや拡張を統合する側だ。記事によれば、ハーネスによって利用者はモデルや提供元を切り替えてもチャットやツール、デバッグなどの中核体験を学び直さずに済み、VS Codeチームは新モデルやハーネス変更を出荷前後に継続評価して品質を見極められる。",
+  "summaryEn": "In GitHub Copilot for VS Code, the coding harness is the core that lets multiple models fit into a consistent agent experience by tuning prompts, tools, and conversation management per model. It assembles context, exposes tools, and runs the loop that turns model output into real edits and terminal actions. The VS Code team validates new models and harness changes continuously with public benchmarks, its own VSC-Bench, and an automated PR evaluation flow."
+}

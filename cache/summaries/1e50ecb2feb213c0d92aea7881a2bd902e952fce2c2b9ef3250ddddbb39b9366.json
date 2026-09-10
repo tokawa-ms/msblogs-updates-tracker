@@ -1,0 +1,12 @@
+{
+  "summary": "VS Codeの2026年1月リリース（1.109）で、GitHub Copilotに加えてClaudeとCodexのエージェントをローカルやクラウドで扱えるようになり、Agent Sessionsビューも強化された。これにより、ローカル、バックグラウンド、クラウドの各セッションを1か所で管理しながら、用途に応じてエージェントを使い分けられる。あわせて、並列サブエージェント実行、MCP Apps対応、Agent Skillsの一般提供も打ち出され、VS Code内でマルチエージェント開発を完結させる方向が明確になった。",
+  "keyPoints": [
+    "1.109ではClaudeとCodexのエージェントをVS Codeで利用でき、ローカル実行とクラウド実行の両方を同じGitHub Copilotサブスクリプションの下で扱える。",
+    "ClaudeのクラウドエージェントはCopilot Pro+とEnterprise契約者が当日利用でき、Claudeセッションの有効化はgithub.copilot.chat.claudeAgent.enabled設定で切り替える。",
+    "CodexのローカルエージェントにはCopilot Pro+契約とOpenAI Codex拡張機能が前提条件として必要だ。",
+    "サブエージェントはメインセッションから独立したコンテキストで動作し、このリリースでは複数サブエージェントの並列実行と、実行中タスクやプロンプト・結果の可視化が追加された。",
+    "オープン標準では、MCP Appsがチャット内で対話型UIを返せる公式MCP拡張として導入され、Agent Skillsは一般提供となって拡張作者がchatSkillsで配布できる。"
+  ],
+  "significance": "複数のエージェントを併用する開発者にとって、VS Code内でローカル、バックグラウンド、クラウドのセッションをまとめて扱い、作業内容に応じて適切な実行形態を選べる点が重要だ。また、拡張機能の作者にとっては、MCP AppsやAgent Skillsを通じて、専用UIや専門化した能力をVS Codeのエージェント体験に組み込める余地が広がる。",
+  "summaryEn": "In VS Code 1.109, Claude and Codex agents can now run alongside GitHub Copilot across local and cloud workflows, with the Agent Sessions view improved to manage those sessions in one place. The release also adds parallel subagents, MCP Apps support, and general availability of Agent Skills, reinforcing VS Code as a unified environment for multi-agent development."
+}

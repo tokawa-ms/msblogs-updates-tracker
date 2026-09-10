@@ -1,0 +1,12 @@
+{
+  "summary": "GitHub Copilot in VS Codeでは、OpenAI系とAnthropic系モデル向けにトークン効率を改善し、プロンプトキャッシュ延長、ツール定義の遅延読み込み、WebSocket化を進めた。記事では、GPT-5.4/5.5のツール検索で中央値ユーザーのセッション総トークン使用量が8.97%/10.92%減り、Anthropicでもセッション全体で約18%下がったとしている。さらにOpenAI向けWebSocketは、GPT-5.2以降でCopilot製品の既定転送方式になった。",
+  "keyPoints": [
+    "OpenAIモデルでは、対応モデル向けにprompt_cache_retentionを使った拡張プロンプトキャッシュを有効化し、既定では数分で失効しやすいキャッシュを最長24時間保持できるようにした。40〜60分のリクエスト間隔では、キャッシュヒット率がGPT-5.4で最大919%の相対増加となった。",
+    "OpenAIのネイティブなツール検索はGPT-5.4以降で利用でき、defer_loadingでツール定義を必要時だけ読み込む。4日間のVS Code実験では、ターン当たり総トークン中央値がGPT-5.4で9.81%、GPT-5.5で8.61%減り、セッション全体でも中央値ユーザーの総トークン使用量が8.97%/10.92%減少した。",
+    "OpenAI向けではResponses APIのWebSocketモードを導入し、連続するエージェント要求の継続処理を低遅延化した。VS Code Stableへの初期ロールアウト時にはTTFTやTTCが改善し、その結果GPT-5.2以降ではVS CodeやCopilot CLIなどCopilot製品全体の既定転送方式になった。",
+    "Anthropicモデルでは、Messages APIのキャッシュを最大4つのブレークポイントで安定境界に配置する方式へ見直し、エージェント系ワークロードでキャッシュヒット率がおよそ94%に達した。これにより、長いプレフィックスを毎回再計算する割合を小さくしている。",
+    "Anthropic向けツール検索は、検証後にサーバー側検索からクライアント側検索へ移行し、内部Embeddingモデルで意図ベースに最適なツールを選ぶ方式にした。これによりローカル応答性や動的MCPツール反映が改善し、Claude Sonnet 4.6ではユーザーエラー率が4.01%下がった。"
+  ],
+  "significance": "影響が大きいのは、使用量ベース課金に移行したGitHub CopilotをVS Codeで長めのエージェント作業に使う利用者だ。記事によれば、トークン数はクレジット消費、待ち時間、残りコンテキスト量に直結するため、キャッシュ維持やツール遅延読み込み、接続方式の改善は、作業再開時やMCPツールが増減する環境でも効率を保ちやすくする。",
+  "summaryEn": "GitHub Copilot in VS Code improved token efficiency for both OpenAI and Anthropic models through extended prompt caching, deferred tool loading, and WebSockets. The article says tool search reduced median full-session token usage by 8.97% for GPT-5.4 and 10.92% for GPT-5.5, while Anthropic users saw roughly an 18% reduction across a session. WebSockets also became the default transport for OpenAI models GPT-5.2 and newer across Copilot products."
+}

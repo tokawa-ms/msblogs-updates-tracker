@@ -1,0 +1,11 @@
+{
+  "summary": "docfindは、VS Codeドキュメントサイトの検索を支えるブラウザー完結型の検索エンジンとして公開され、静的サイト向けに自分でも使える形でオープンソース化された。Rust製CLIが文書JSONからRAKEでキーワードを抽出し、FSTとFSSTで索引を作って単一のWebAssemblyモジュールに埋め込む。記事では、その実装上の要点に加え、VS Codeサイトで約2.7MBのBrotli圧縮インデックスと約0.4ms/クエリという結果も示している。",
+  "keyPoints": [
+    "docfindはビルド時にdocuments.jsonを入力として処理するRust製CLIで、各文書からRAKEでキーワードを抽出し、FSTでキーワード検索用インデックスを作成し、文書文字列はFSSTで圧縮する構成になっている。",
+    "配布形態は索引を別ファイルにせず検索ライブラリのWebAssemblyモジュールへ直接埋め込む方式で、利用者は検索する意思を示したときに単一のWASMモジュールを取得する。",
+    "VS Codeサイトの例では、約3MBのMarkdownと見出し単位に分割した約3,700文書を対象に、インデックスは非圧縮で約5.9MB、Brotli圧縮で約2.7MB、検索速度は著者のM2 MacBook Airで約0.4ms/クエリとしている。",
+    "公開済みで自分の静的サイトに使え、インストール後にdocfind documents.json outputを実行するとdocfind.jsとdocfind_bg.wasmが生成される一方、検索結果を見せるクライアント側UIは自前で用意する必要がある。"
+  ],
+  "significance": "静的サイト運営者にとっては、検索用サーバーや外部検索サービスを前提にせず、ビルド時に作成した単一のWebAssemblyモジュールだけで検索を提供できる点が重要だ。利用者側もブラウザー内で即時に近い検索体験を得られ、運用面ではサーバー保守やAPIキー管理が不要になる。ただし、導入時には検索結果表示用のUIを別途用意する必要がある。",
+  "summaryEn": "docfind has been open-sourced as the browser-only search engine now powering the VS Code documentation site, making it available for static sites. Its Rust CLI extracts keywords with RAKE, builds an FST-based index, compresses document strings with FSST, and embeds the result into a single WebAssembly module. The post also reports about a 2.7 MB Brotli-compressed index and roughly 0.4 ms queries on the VS Code site."
+}

@@ -1,0 +1,11 @@
+{
+  "summary": "Visual Studio Code向けのPrivate Marketplaceが発表され、組織は社内製拡張機能や信頼済みの公開拡張機能を自前でキュレーションして配布できるようになる。独自拡張機能の非公開ホスティングや、審査済み公開拡張機能の再ホストに対応し、セキュア環境やエアギャップ環境での利用も想定されている。提供対象はGitHub Enterprise顧客で、利用者はGitHub EnterpriseまたはCopilot Business/Enterpriseアカウントでサインインする必要がある。",
+  "keyPoints": [
+    "組織ごとに表示する拡張機能を制御でき、社内ツールと信頼済み公開プラグインの両方を対象にカタログを curated できる。",
+    "機密IPを守るために独自拡張機能を非公開でホストできるほか、独自審査後の公開拡張機能を再ホストして安全な環境やエアギャップ環境に配布できる。",
+    "拡張機能は中央配布でき、新規ユーザーにも初日から一貫した最新カタログを提供できる。VS Code内での検索、インストール、更新の体験は従来どおりとされる。",
+    "利用条件として、Private MarketplaceはGitHub Enterprise顧客向けで、VS Code利用者はGitHub EnterpriseまたはCopilot Business/Enterpriseアカウントでのサインインが必要。導入は配備ガイドから始める想定になっている。"
+  ],
+  "significance": "企業内で拡張機能の配布元や利用可能な一覧を統制したい開発組織、IT部門、セキュリティ担当に影響が大きい。開発者は管理されたエコシステム内で通常どおり拡張機能を検索・導入・更新でき、組織側は非公開拡張機能の保護や審査済み拡張機能の再配布を通じて、チケット対応やZIP配布に頼らない運用を進めやすくなる。",
+  "summaryEn": "VS Code Private Marketplace has been announced, letting organizations curate and distribute internal and trusted public extensions through a controlled hub. It supports privately hosting in-house extensions and rehosting vetted public ones for secure or air-gapped environments. It is available to GitHub Enterprise customers, and users must sign in with a GitHub Enterprise or Copilot Business/Enterprise account."
+}

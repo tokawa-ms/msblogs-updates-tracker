@@ -1,0 +1,12 @@
+{
+  "summary": "Power BIのExecute DAX Queries REST APIがプレビューとして公開され、Power BIのsemantic modelに対するDAXクエリ結果をApache Arrow IPC形式で受け取れるようになった。既存のExecute Queries APIのJSON返却と異なり、列指向バイナリでネイティブなデータ型忠実性を保ち、固定行数制限なしで複数のDAX EVALUATE文を1回の要求に含められる。利用できるのはPower BI PremiumまたはMicrosoft Fabric capacityのみで、呼び出し側にはArrowストリームを処理する実装が必要だ。",
+  "keyPoints": [
+    "既存のExecute Queries APIはJSONを返すのに対し、新APIはApache Arrow IPCを使う列指向バイナリ形式で、ネイティブなデータ型の忠実性を保つ。",
+    "固定の行数上限は設けられておらず、1回のリクエストで複数のDAX EVALUATE文を送信できる。",
+    "利用対象はPower BI PremiumとMicrosoft Fabric capacityに限られ、クライアント側はバイナリのArrowストリームを処理できる必要がある。",
+    "始めやすい手段としてFabric notebooksが推されており、認証ではMicrosoft Entra IDの明示的なアプリ登録が不要とされる。サンプルではノートブックでトークン取得後、Arrow IPCをpandas DataFrameに変換している。",
+    "記事は結果をDeltaテーブルへ保存する例も示し、列名をDeltaの制約に合わせて整形し、Direct Lakeで後続利用するならv-order圧縮を適用するよう案内している。"
+  ],
+  "significance": "Power BIのカスタムソリューション開発者やFabric notebooks利用者に関係する変更だ。記事によれば、Power BI DesktopやPower BIサービスで既に使われているDAX実行手段を公開REST APIとして組み込めるようになり、Python、C#、Java、JavaScriptなどのArrowライブラリも利用できる。特にFabric notebooksでは明示的なEntra IDアプリ登録なしで始められるため、既存の分析や抽出ワークフローへ取り込みやすい。",
+  "summaryEn": "Power BI’s preview Execute DAX Queries REST API lets developers run DAX against semantic models and receive results in Apache Arrow IPC through a public REST endpoint. Unlike the existing JSON-based Execute Queries API, it provides columnar binary output with native type fidelity, no fixed row limits, and support for multiple EVALUATE statements in one request. It is available only on Power BI Premium and Microsoft Fabric capacities, and callers must be able to process Arrow streams."
+}

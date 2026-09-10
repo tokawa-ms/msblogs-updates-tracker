@@ -1,0 +1,11 @@
+{
+  "summary": "VS Codeは、10年間続けた月次リリースから週次リリースへ移行し、その実現手段としてAIエージェントを開発の常用基盤にした。実装だけでなく、課題トリアージ、コミット要約、リリースノート、検証、コードレビューまでを自動化し、複数セッションを並列に回して速度を上げている。同時に、テストやゴールデンシナリオ、自動検証、人間のレビューで品質を維持し、結果への責任はエンジニアが負うとしている。",
+  "keyPoints": [
+    "リリース頻度は、10年続いた月次から週次へ切り替わった。記事では、以前は次の安定版まで3週間待っていたバグ修正が数日で届き、月曜にマージした機能が同じ週にエディタへ入ると説明している。",
+    "日々の進め方は、会議前に3-4本のエージェントセッションを起動して並列処理し、会議メモや仕様書を経由せず、会議からそのままエージェント、コード、PRへ進める形に変わっている。",
+    "増えた作業量への対応として、過去24時間の複数リポジトリのコミット要約や、重複検出・担当者判定・ラベル提案を行う課題トリアージをGitHub Actions上で自動化している。公開データでは、1〜3月の前年同期比でコミット量は2倍超、クローズした課題は約3倍になったという。",
+    "品質維持では、Playwright MCPでUIを起動してスクリーンショット評価と修正ループを回す自動検証、ゴールデンシナリオの自動実行、そして人間レビュー前にCopilotのコードレビューを解消する運用を組み合わせている。"
+  ],
+  "significance": "この話は、VS Code利用者には修正や新機能が安定版へ届くまでの待ち時間短縮として効き、VS Codeチーム内ではPMやマネージャーでも会議中に実装系の作業を並列で進められる点が重要だ。さらに、他領域のエンジニアやコミュニティ貢献者、エージェントまで参加範囲が広がる一方で、結果への責任はエンジニアに残るため、AI活用は自動化だけでなく所有権とレビュー運用の見直しも伴う。",
+  "summaryEn": "VS Code has moved from a monthly release cycle to weekly releases, enabled by making AI agents part of everyday development work. The team now uses agents not just for coding but also for triage, commit summaries, release notes, validation, and code review while running work in parallel. To keep quality high, it combines tests, golden scenarios, automated validation, and human review, with engineers remaining accountable for the outcome."
+}

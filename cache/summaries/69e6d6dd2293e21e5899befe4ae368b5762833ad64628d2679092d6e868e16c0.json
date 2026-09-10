@@ -1,0 +1,11 @@
+{
+  "summary": "VS Codeの5行評価「say_hello」は、空のワークスペースでHELLO.txtにHELLOを書くだけのスモークテストとして、6カ月で30モデルに50,974回実行され、単純作業でもモデルごとに計画・探索・出力トークン量が大きく異なることを示した。最短経路はcreate_file 1回と約50出力トークンだが、同じ結果に数千トークンを使うモデルもあった。記事は、この差が時間とコストに直結し、小さく安定した評価がハーネス最適化や自動モデル選択の有効な材料になると述べている。",
+  "keyPoints": [
+    "評価対象のsay_helloは、毎回同じ空のワークスペースと固定プロンプトで「HELLO.txtにHELLOを追加する」だけを指示し、ファイルの存在と内容の2条件で判定する単純なスモークテストとして設計されている。",
+    "直接経路の使い方には大きな差があり、Model-Aは成功実行の100%でcreate_file 1回の最短経路を取り、Model-BとModel-Cは73%と71%だった一方、Model-YからModel-ACまでの5モデルは数千回の成功実行でも直接経路を一度も取らなかった。",
+    "余分な手順の典型は、事前計画、空のワークスペース探索、過剰な推論文の出力、不適切な編集ツールの選択、端末コマンド実行で、たとえば計画は測定できた16モデルすべてで少なくとも半数の実行に現れ、Model-ACでは99%、Model-Zでは96%に達した。",
+    "出力トークン効率はモデルサイズだけでは説明できず、同一家系で大きいModel-Fは平均160トークン・2.1ツール呼び出しだったのに対し、小さいModel-Hは平均485トークン・3.7ツール呼び出しで、さらに「mini」のModel-ABが平均3,676トークンで最も高オーバーヘッドだった。"
+  ],
+  "significance": "VS CodeやGitHub Copilotのチーム、そして独自の評価基盤を運用する開発チームにとって、この結果は同じ正解でもモデルの過剰な計画や説明が出力トークン、時間、課金に直結することを示している。あわせて、短く安定したタスクでもモデルやシステムの変化を検知でき、開発者が毎回モデル選択のトレードオフを抱え込まずに済むよう、自動モデルルーティングに活用できるという位置づけが示された。",
+  "summaryEn": "VS Code’s five-line say_hello eval, a smoke test that only writes HELLO to HELLO.txt, was run 50,974 times across 30 models over six months and showed large differences in planning, exploration, and output-token usage even on a trivial task. The shortest path was one create_file call and about 50 output tokens, but some models used thousands of tokens for the same result. The article argues that these differences affect time and cost, and that small, stable evals are useful signals for harness optimization and automatic model selection."
+}
