@@ -47,8 +47,12 @@ function validateSummary(value, body) {
   const source = normalize(body);
   function groundedField(field, label) {
     const text = typeof field?.text === 'string' ? normalize(field.text) : '';
-    if (text.length < 20 || text.length > 1200 || !/[\u3041-\u3096\u30a1-\u30fa]/u.test(text)) {
-      throw new Error(`Invalid Japanese ${label}.`);
+    if (typeof field?.text !== 'string') throw new Error(`Invalid Japanese ${label}: text must be a string.`);
+    if (text.length < 20 || text.length > 1200) {
+      throw new Error(`Invalid Japanese ${label}: text length ${text.length} must be between 20 and 1200 characters.`);
+    }
+    if (!/[\u3041-\u3096\u30a1-\u30fa]/u.test(text)) {
+      throw new Error(`Invalid Japanese ${label}: text must include natural Japanese kana.`);
     }
     if (/確認できます|新機能またはサービス提供開始|が公開されました。/u.test(text)) {
       throw new Error(`Generic placeholder in ${label}.`);
