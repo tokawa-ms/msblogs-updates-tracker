@@ -3,7 +3,9 @@
 const { describe, it } = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs/promises');
-const { cleanText, enumerateDates, extractArticleText, extractReaderArticleText, fetchArticleText, resolveTargetDates, toMarkdown } = require('../scripts/generate-daily-page');
+const os = require('node:os');
+const path = require('node:path');
+const { cleanText, enumerateDates, extractArticleText, extractReaderArticleText, fetchArticleText, resolveTargetDates, summarizeArticleCached, toMarkdown } = require('../scripts/generate-daily-page');
 const { buildSummaryPrompt, validateSummary, summarizeArticle, parseCopilotOutput, runCopilot } = require('../scripts/utils/article-summarizer');
 
 const article = { title: 'Example Search preview', url: 'https://example.com/search', source_id: 'example', source_name: 'Example', summary: 'Feed teaser only.' };
@@ -197,6 +199,35 @@ describe('article extraction', () => {
 });
 
 describe('grounded summary', () => {
+  it('検証済み要約を本文とモデル別に保存して再利用する', async () => {
+    const cacheDir = await fs.mkdtemp(path.join(os.tmpdir(), 'summary-cache-test-'));
+    const originalModel = process.env.SUMMARY_MODEL;
+    process.env.SUMMARY_MODEL = 'test-model';
+    let calls = 0;
+    const summarize = async () => {
+      calls += 1;
+      const value = response();
+      return {
+        summary: value.summary.text,
+        keyPoints: value.keyPoints.map((point) => point.text),
+        significance: value.significance.text,
+        summaryEn: value.summaryEn,
+      };
+    };
+    try {
+      const first = await summarizeArticleCached(article, body, summarize, cacheDir);
+      const second = await summarizeArticleCached(article, body, summarize, cacheDir);
+      assert.deepEqual(second, first);
+      assert.equal(calls, 1);
+      await summarizeArticleCached(article, `${body}\nChanged body.`, summarize, cacheDir);
+      assert.equal(calls, 2);
+    } finally {
+      await fs.rm(cacheDir, { recursive: true, force: true });
+      if (originalModel === undefined) delete process.env.SUMMARY_MODEL;
+      else process.env.SUMMARY_MODEL = originalModel;
+    }
+  });
+
   it('全文をモデルへ渡し、本文後半の根拠を検証する', async () => {
     const result = await summarizeArticle(article, body, async (prompt) => {
       assert.ok(prompt.includes(limitation));
