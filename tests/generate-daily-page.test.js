@@ -269,6 +269,18 @@ describe('grounded summary', () => {
     });
   }
 
+  it('日本語フィールドの型・文字数・かな不足を再試行向けに区別する', () => {
+    const wrongType = response();
+    wrongType.summary.text = null;
+    assert.throws(() => validateSummary(wrongType, body), /text must be a string/);
+    const tooShort = response();
+    tooShort.summary.text = '短い';
+    assert.throws(() => validateSummary(tooShort, body), /text length 2/);
+    const noKana = response();
+    noKana.summary.text = '日本語要約文章日本語要約文章日本語要約文章日本語要約文章';
+    assert.throws(() => validateSummary(noKana, body), /Japanese kana/);
+  });
+
   it('JSONL から最終回答だけを取り出し、日本語・引用・改行を保持する', () => {
     const content = JSON.stringify(response(), null, 2);
     assert.equal(parseCopilotOutput(copilotOutput(content)), content);
