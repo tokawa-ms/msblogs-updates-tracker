@@ -158,4 +158,4 @@ Generate a corrected JSON object from the same article body. Follow the required
   }
 }
 
-module.exports = { buildSummaryPrompt, validateSummary, summarizeArticle, parseCopilotOutput, runCopilot };
+module.exports = { MAX_ARTICLE_LENGTH, buildSummaryPrompt, validateSummary, summarizeArticle, parseCopilotOutput, runCopilot };

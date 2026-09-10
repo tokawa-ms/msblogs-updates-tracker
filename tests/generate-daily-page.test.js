@@ -142,6 +142,17 @@ describe('article extraction', () => {
     assert.deepEqual(calls, [article.url, `https://r.jina.ai/${article.url}`]);
   });
 
+  it('直接抽出した本文が上限を超える場合も切り捨てず Reader へ切り替える', async () => {
+    const calls = [];
+    const get = async (url) => {
+      calls.push(url);
+      if (calls.length === 1) return { data: `<article><p>${'Long article text. '.repeat(7000)}</p></article>` };
+      return { data: `Markdown Content:\n${body}` };
+    };
+    assert.equal(await fetchArticleText(article.url, get), body);
+    assert.deepEqual(calls, [article.url, `https://r.jina.ai/${article.url}`]);
+  });
+
   it('Reader の短い応答を本文として扱わない', () => {
     assert.throws(() => extractReaderArticleText('Markdown Content:\nUnavailable'), /too short/);
   });
