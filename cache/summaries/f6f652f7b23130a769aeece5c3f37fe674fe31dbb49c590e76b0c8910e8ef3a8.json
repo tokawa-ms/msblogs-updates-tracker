@@ -1,0 +1,11 @@
+{
+  "summary": "Translytical task flowsは、Power BIレポート内でレコード更新、注釈追加、外部システムへのアクション実行まで完結できる仕組みとして紹介されている。レポートで選択した内容や入力値をPower BIがFabric User Data Functionsに渡し、要求された処理を実行する。更新結果を同じレポート上で確認できるため、分析後に別アプリへ移ることなく業務フローを進めやすくなる。",
+  "keyPoints": [
+    "レポートから新規追加、既存データ更新、削除、外部API呼び出しまで実行できる。",
+    "Power BIレポートはFabric User Data Functionsと連携し、選択レコード、入力値、ボタンクリックの文脈を関数に渡して処理する。",
+    "データ書き戻し用途では、User Data Functionsのネイティブ接続管理が現時点でFabric SQL databases、Fabric warehouses、Fabric lakehouses (for files) をサポートする。",
+    "最初の構築では、Fabricデータソースへの保存、User Data Functionの開発、Power BI semantic modelの作成、入力と関数呼び出しを行う対話的レポートの構築が主要作業になる。"
+  ],
+  "significance": "Power BIレポートを業務の実行画面として使う利用者に関係する。記事では、レポート利用者が単なる閲覧者ではなくなり、Power BI内でワークフロー全体を完了できるうえ、データ不備の修正も発見時点で行えるため、分析結果から実際の対応までを同じ文脈で進めやすくなるとしている。",
+  "summaryEn": "Translytical task flows let users complete record updates, annotations, and external actions directly inside Power BI reports. Power BI passes selected context and user input to Fabric User Data Functions to execute the action, and the updated results can appear in the same report, reducing the need to switch to other apps."
+}

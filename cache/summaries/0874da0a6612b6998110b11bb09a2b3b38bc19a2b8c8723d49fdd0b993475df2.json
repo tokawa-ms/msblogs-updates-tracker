@@ -1,0 +1,11 @@
+{
+  "summary": "Power BIのsemantic model settings paneプレビューは、Fabricのモダンな見た目に合わせて再設計され、設定をワークスペースの文脈を保ったまま横ペインで開けるようになった。ページ遷移なしで即座に開き、30超の設定セクションを折りたたみ表示と検索で探しやすくしている。初期プレビューでは既定で無効のオプトイン提供で、数か月後に既定化される予定だが、当面は従来の設定ページに戻せる。",
+  "keyPoints": [
+    "新しい設定ペインは、semantic modelから離れずにその場で開け、ワークスペースやアイテム、スクロール位置を維持したまま作業できる。",
+    "長い設定一覧向けに関連項目を折りたたみ可能な領域へ整理し、検索で特定の設定やrefresh historyへ素早く到達できる。",
+    "提供形態は段階的ロールアウト中のプレビューで、現時点では既定でオフかつオプトインであり、settings pageからのみ表示できる。数か月後には既定化される予定だが、その時点でも設定ページへ切り替え可能とされている。",
+    "利用手順としては、semantic modelのsettings page上部の「Open settings pane >>」から開く。設定変更にはモデル所有者またはWrite権限が必要で、scheduled refreshやdata source credentialsの一部設定は所有者限定である。"
+  ],
+  "significance": "多数の設定を扱うsemantic model所有者やWrite権限保持者にとって、作業中のワークスペースやスクロール位置を保ったまま設定へ素早く移れるため、日常の管理がしやすくなる。一方で、scheduled refreshやdata source credentialsは引き続き所有者しか変更できず、この段階では既定ではないオプトインのプレビューなので、影響は段階的に広がる。",
+  "summaryEn": "The preview semantic model settings pane in Power BI has been redesigned to match the modern Fabric UI and now opens as an in-context side pane. It launches instantly without page navigation and makes more than 30 settings sections easier to navigate through collapsible groups and search. In the initial preview it is off by default and opt-in, though Microsoft says it will become the default in a few months while still allowing a switch back to the classic settings page for now."
+}
