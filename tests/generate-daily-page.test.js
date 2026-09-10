@@ -281,6 +281,17 @@ describe('grounded summary', () => {
     assert.throws(() => validateSummary(noKana, body), /Japanese kana/);
   });
 
+  it('日本語 text の文字列配列と ja オブジェクトを正規化して検証する', () => {
+    const value = response();
+    const expectedSummary = value.summary.text;
+    value.summary.text = ['Example Search に日本語と英語の横断検索が追加された。', '利用条件と制限も明記されている。'];
+    value.significance.text = { ja: value.significance.text };
+    const result = validateSummary(value, body);
+    assert.equal(result.summary, 'Example Search に日本語と英語の横断検索が追加された。 利用条件と制限も明記されている。');
+    assert.equal(result.significance, response().significance.text);
+    assert.notEqual(result.summary, expectedSummary);
+  });
+
   it('JSONL から最終回答だけを取り出し、日本語・引用・改行を保持する', () => {
     const content = JSON.stringify(response(), null, 2);
     assert.equal(parseCopilotOutput(copilotOutput(content)), content);

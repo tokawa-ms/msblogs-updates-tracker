@@ -46,8 +46,11 @@ ${JSON.stringify({ title: article.title, url: article.url, body })}`;
 function validateSummary(value, body) {
   const source = normalize(body);
   function groundedField(field, label) {
-    const text = typeof field?.text === 'string' ? normalize(field.text) : '';
-    if (typeof field?.text !== 'string') throw new Error(`Invalid Japanese ${label}: text must be a string.`);
+    let rawText = field?.text;
+    if (Array.isArray(rawText) && rawText.every((item) => typeof item === 'string')) rawText = rawText.join(' ');
+    if (rawText && typeof rawText === 'object' && typeof rawText.ja === 'string') rawText = rawText.ja;
+    const text = typeof rawText === 'string' ? normalize(rawText) : '';
+    if (typeof rawText !== 'string') throw new Error(`Invalid Japanese ${label}: text must be a string.`);
     if (text.length < 20 || text.length > 1200) {
       throw new Error(`Invalid Japanese ${label}: text length ${text.length} must be between 20 and 1200 characters.`);
     }
