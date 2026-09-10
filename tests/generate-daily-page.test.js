@@ -4,7 +4,7 @@ const { describe, it } = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs/promises');
 const { cleanText, extractArticleText, toMarkdown } = require('../scripts/generate-daily-page');
-const { buildSummaryPrompt, validateSummary, summarizeArticle, runCopilot } = require('../scripts/utils/article-summarizer');
+const { buildSummaryPrompt, validateSummary, summarizeArticle, parseCopilotOutput, runCopilot } = require('../scripts/utils/article-summarizer');
 
 const article = { title: 'Example Search preview', url: 'https://example.com/search', source_id: 'example', source_name: 'Example', summary: 'Feed teaser only.' };
 const announcement = 'Example Search adds multilingual retrieval in public preview.';
@@ -22,6 +22,19 @@ function response() {
     significance: { text: '日英の文書を扱うチームが、言語ごとに別の索引を維持する必要をなくせる。', evidence: [benefit] },
     summaryEn: 'Example Search adds multilingual retrieval in public preview, limited to existing paid workspaces in Japan. Production use is not supported.',
   };
+}
+
+function copilotOutput(content = JSON.stringify(response())) {
+  return [
+    { type: 'user.message', data: { content: body } },
+    { type: 'assistant.reasoning', data: { content: 'Not summary JSON' } },
+    { type: 'assistant.message_delta', data: { deltaContent: '{"summary":' } },
+    { type: 'assistant.message', data: { content: 'I will summarize the article.' } },
+    { type: 'assistant.message', data: { content } },
+    { type: 'assistant.message', agentId: 'child', data: { content: 'Ignore delegated output' } },
+    { type: 'assistant.turn_end', data: {} },
+    { type: 'result', exitCode: 0, usage: {} },
+  ].map((event) => JSON.stringify(event)).join('\n') + '\n';
 }
 
 describe('cleanText', () => {
@@ -107,8 +120,70 @@ describe('grounded summary', () => {
     });
   }
 
-  it('不正な JSON を拒否する', async () => {
-    await assert.rejects(summarizeArticle(article, body, async () => 'Not JSON'), /valid JSON/);
+  it('JSONL から最終回答だけを取り出し、日本語・引用・改行を保持する', () => {
+    const content = JSON.stringify(response(), null, 2);
+    assert.equal(parseCopilotOutput(copilotOutput(content)), content);
+    assert.equal(parseCopilotOutput(copilotOutput(content).replace(/\n/gu, '\r\n')), content);
+  });
+
+  for (const [label, output, expected] of [
+    ['テキスト表示', 'Rendered summary, not JSONL', /valid JSONL/],
+    ['空の出力', '', /valid JSONL/],
+    ['途中で切れた出力', copilotOutput().trim().slice(0, -1), /valid JSONL/],
+    ['完了イベントなし', JSON.stringify({ type: 'assistant.message', data: { content: JSON.stringify(response()) } }), /complete successfully/],
+    ['失敗終了', copilotOutput().replace('"exitCode":0', '"exitCode":1'), /complete successfully/],
+    ['セッションエラー', `${JSON.stringify({ type: 'session.error', data: { message: 'private diagnostic' } })}\n${copilotOutput()}`, /complete successfully/],
+    ['回答なし', '{"type":"result","exitCode":0}', /without a final/],
+    ['空の回答', copilotOutput(''), /without a final/],
+  ]) {
+    it(`${label}を要約として扱わない`, () => {
+      assert.throws(() => parseCopilotOutput(output), expected);
+    });
+  }
+
+  it('コードフェンスの有無にかかわらず JSON を検証する', async () => {
+    for (const fence of ['```json', '```', '```JSON']) {
+      const value = await summarizeArticle(article, body, async () => `${fence}\r\n${JSON.stringify(response(), null, 2)}\r\n\`\`\``);
+      assert.equal(value.summary, response().summary.text);
+    }
+  });
+
+  it('不正な JSON は修正を依頼し、回数上限で失敗する', async () => {
+    let calls = 0;
+    await assert.rejects(summarizeArticle(article, body, async (prompt) => {
+      calls += 1;
+      assert.ok(prompt.includes(limitation));
+      if (calls > 1) assert.match(prompt, /previous response was rejected: Summary response is not valid JSON/);
+      return 'Not JSON';
+    }), /after 3 attempts: Summary response is not valid JSON/);
+    assert.equal(calls, 3);
+  });
+
+  it('不正な JSON や根拠のない回答を再生成し、検証を通った要約だけを返す', async () => {
+    let calls = 0;
+    const value = await summarizeArticle(article, body, async (prompt) => {
+      calls += 1;
+      if (calls === 1) return 'Here is your summary:';
+      if (calls === 2) {
+        const ungrounded = response();
+        ungrounded.summary.evidence = ['This invented claim is not in the article.'];
+        return JSON.stringify(ungrounded);
+      }
+      assert.match(prompt, /Evidence not found in article body/);
+      assert.doesNotMatch(prompt, /This invented claim/);
+      return JSON.stringify(response());
+    });
+    assert.equal(calls, 3);
+    assert.equal(value.summary, response().summary.text);
+  });
+
+  it('呼び出し自体の失敗を JSON エラーに置き換えたり繰り返したりしない', async () => {
+    let calls = 0;
+    await assert.rejects(summarizeArticle(article, body, async () => {
+      calls += 1;
+      throw new Error('Copilot summary failed (timeout).');
+    }), /timeout/);
+    assert.equal(calls, 1);
   });
 
   it('トークン未設定なら非対話で失敗する', async () => {
@@ -126,11 +201,13 @@ describe('grounded summary', () => {
     process.env.COPILOT_GITHUB_TOKEN = 'test-only';
     const prompt = buildSummaryPrompt(article, body);
     try {
-      for (const fail of [false, true]) {
+      for (const failure of [null, 'timeout', 'invalid output']) {
         let directory;
         const execute = (command, args, options, callback) => {
           assert.equal(command, process.execPath);
           assert.ok(args.includes('--available-tools='));
+          assert.ok(args.includes('--output-format=json'));
+          assert.ok(args.includes('--stream=off'));
           assert.ok(args.includes('--disable-builtin-mcps'));
           assert.ok(args.includes('--no-custom-instructions'));
           assert.ok(args.includes('--no-remote-export'));
@@ -147,12 +224,13 @@ describe('grounded summary', () => {
             on: () => {},
             end: (input) => {
               assert.equal(input, prompt);
-              callback(fail ? { killed: true } : null, JSON.stringify(response()));
+              callback(failure === 'timeout' ? { killed: true } : null,
+                failure === 'invalid output' ? 'not JSONL' : copilotOutput());
             },
           } };
         };
-        if (fail) {
-          await assert.rejects(runCopilot(prompt, execute), /timeout/);
+        if (failure) {
+          await assert.rejects(runCopilot(prompt, execute), failure === 'timeout' ? /timeout/ : /valid JSONL/);
         } else {
           assert.equal(await runCopilot(prompt, execute), JSON.stringify(response()));
         }
@@ -168,7 +246,7 @@ describe('grounded summary', () => {
 describe('daily rendering', () => {
   const options = {
     fetchText: async () => body,
-    summarize: (item, text) => summarizeArticle(item, text, async () => JSON.stringify(response())),
+    summarize: (item, text) => summarizeArticle(item, text, async () => parseCopilotOutput(copilotOutput())),
   };
 
   it('日本語要約・重要性・重要点を表示し、英語は折りたたむ', async () => {
