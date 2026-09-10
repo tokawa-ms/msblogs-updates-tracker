@@ -305,6 +305,16 @@ describe('grounded summary', () => {
     assert.equal(validateSummary(value, body).summary, response().summary.text);
   });
 
+  it('Markdownリンクの表示テキストを根拠引用として検証する', () => {
+    const markdownBody = `${body}\nUse [Power BI Desktop](https://example.com/power-bi) to **publish the report securely**.`;
+    const value = response();
+    value.keyPoints[0] = {
+      text: 'Power BI Desktop からレポートを安全に公開できる。',
+      evidence: ['Use Power BI Desktop to publish the report securely.'],
+    };
+    assert.equal(validateSummary(value, markdownBody).keyPoints[0], value.keyPoints[0].text);
+  });
+
   it('JSONL から最終回答だけを取り出し、日本語・引用・改行を保持する', () => {
     const content = JSON.stringify(response(), null, 2);
     assert.equal(parseCopilotOutput(copilotOutput(content)), content);
