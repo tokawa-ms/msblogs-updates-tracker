@@ -151,6 +151,21 @@ describe('article extraction', () => {
     assert.deepEqual(calls, [article.url, `https://r.jina.ai/${article.url}`]);
   });
 
+  it('直接取得のタイムアウト時も Reader の本文へフォールバックする', async () => {
+    let calls = 0;
+    const get = async () => {
+      calls += 1;
+      if (calls === 1) {
+        const error = new Error('timeout');
+        error.code = 'ECONNABORTED';
+        throw error;
+      }
+      return { data: `Markdown Content:\n${body}` };
+    };
+    assert.equal(await fetchArticleText(article.url, get), body);
+    assert.equal(calls, 2);
+  });
+
   it('直接抽出した本文が上限を超える場合も切り捨てず Reader へ切り替える', async () => {
     const calls = [];
     const get = async (url) => {

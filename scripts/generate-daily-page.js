@@ -192,7 +192,7 @@ async function fetchArticleText(url, get = axios.get, wait = (milliseconds) =>
     const articleText = extractArticleText(response.data);
     if (articleText.length <= MAX_ARTICLE_LENGTH) return articleText;
   } catch (error) {
-    if (error.response?.status !== 403) throw error;
+    if (error.response?.status !== 403 && error.code !== 'ECONNABORTED') throw error;
   }
 
   let readerError;
