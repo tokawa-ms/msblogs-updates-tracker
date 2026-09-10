@@ -1,0 +1,12 @@
+{
+  "summary": "Power BIの2026年7月更新では、プレビュー中のModern Visual DefaultsにFormat paneから使える「Customize current theme」が加わり、レポート全体の既定スタイルや配色を一括調整できるようになった。条件付き書式は折れ線グラフや凡例付きビジュアルまでGAで拡張され、org appsの機能と関連APIも強化された。さらにPower BI ServiceでModel Optionsが利用可能になり、Web版TMDL Viewも加わって、Desktopに戻らずWebでセマンティック モデルを設定・編集できる範囲が広がった。",
+  "keyPoints": [
+    "旧File Picker廃止の影響で、2026年10月以降は2026年3月以前のPower BI Desktop利用者はOne DriveとSharePointへのPower BIファイルの保存・共有ができなくなるため、継続利用にはDesktopの更新が必要。",
+    "Modern Visual Defaultsのプレビューでは、ビジュアル未選択時のFormat paneからテーマの一括カスタマイズが可能になり、利用開始にはOptionsで「Modern visual defaults and customize theme improvements」プレビューを有効化する必要がある。",
+    "条件付き書式はGAとして、bar、column、pie、donut、line chartのうち凡例付きビジュアルに適用でき、凡例カテゴリや線の値に応じた色分けを統一できる。",
+    "org appsではaudiences対応がGAになり、iOS/Androidのモバイルアプリでも割り当てられたaudienceに応じたナビゲーションとコンテンツを表示できるようになった。",
+    "モデリングではPower BI ServiceのWebモデリングでModel Optionsが使えるようになり、型検出、リレーション、自動日付テーブル、並列ロード、Locale、DirectQuery関連などを設定できる。加えてWeb版TMDL Viewにより、Desktopへ戻らずコードエディタでモデル オブジェクトを変更できる。"
+  ],
+  "significance": "レポート作成者は全ページの既定スタイルや凡例色をまとめて管理しやすくなり、多ページや部門別配布を伴うレポートでも一貫性を保ちやすい。管理者と開発者はorg apps運用のAPI化で自動化しやすくなる一方、2026年3月以前のDesktop利用者は10月以降にOne Drive/SharePoint連携を維持するため更新が必要になる。",
+  "summaryEn": "The July 2026 Power BI update adds report-wide theme customization to the Modern Visual Defaults preview, expands conditional formatting for line charts and legend-based visuals to GA, and strengthens org app features and related APIs. It also brings Model Options and TMDL View to the web, widening what semantic model authors can configure and edit without returning to Desktop."
+}

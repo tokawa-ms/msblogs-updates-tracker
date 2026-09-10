@@ -1,0 +1,11 @@
+{
+  "summary": "Power BI Desktopの「modern visual defaults」と「Customize theme」ペインのプレビューで、レポート全体の既定スタイルや配色、文字、ページ、フィルターペインを一括で設定できるようになった。新規ビジュアルは設定したテーマを自動継承し、既存レポートは更新が自動適用されないため、必要に応じて「Update theme」で最新既定値を反映する。利用にはPower BI Desktopのプレビュー機能で「Modern visual defaults and customizing theme improvements」を有効化する必要がある。",
+  "keyPoints": [
+    "テーマ設定では、カスタムテーマのインポート、エクスポート、削除に加え、ベーステーマの指定が可能で、別レポートへ再利用するためのテーマJSONも扱える。",
+    "色設定では従来テーマの一部だったカラーパレットを独立して適用でき、データ色、構造色、感情色、発散色を個別に調整して、レポート全体へ即時反映できる。",
+    "文字やビジュアル共通プロパティ、ページ設定、フィルターペイン設定をレポート横断で管理でき、後から追加したビジュアルにも継承される一方、個別に書式設定済みのビジュアルには影響しない。",
+    "ページ既定サイズや背景、壁紙、透明度を全ページ向けに設定でき、フィルターペインもページ単位ではなくレポート全体でまとめて整えられる。"
+  ],
+  "significance": "Power BIで多数のビジュアルやページを持つレポートを作る担当者にとって、個別の書式調整を減らしつつ、一貫した見た目やブランド色を保ちやすくなる点が重要だ。特に新規ビジュアルへの自動継承やテーマのエクスポート再利用により、同じデザインを複数レポートへ展開しやすい一方、既存レポートは自動更新されないため、保守時に明示的な更新確認が必要になる。",
+  "summaryEn": "In Power BI Desktop preview, modern visual defaults and the Customize theme pane let authors set report-wide defaults for styling, colors, text, pages, and filter panes. New visuals automatically inherit the chosen theme, but existing reports do not get updated defaults automatically and require using Update theme to apply them. The feature must be enabled through the Power BI Desktop preview setting for modern visual defaults and theme improvements."
+}
