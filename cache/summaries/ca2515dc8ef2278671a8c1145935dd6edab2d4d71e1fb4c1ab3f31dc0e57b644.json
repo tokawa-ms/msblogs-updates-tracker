@@ -1,0 +1,12 @@
+{
+  "summary": "Power BIでAzure Databricks上のDeltaテーブルを扱う際の4つのストレージ方式を比較したベンチマークでは、Direct Lake on OneLakeが小～中規模や日中に繰り返し使う一般的な負荷で広く良好な性能を示した。一方、数十億行規模ではComposite Model with aggregationsが、集計テーブルで処理できるクエリで最速かつ安定したが、DirectQueryへフォールスルーする問い合わせでは優位が続かない。結果は2026年6～7月時点のPower BI内のエンドユーザー向けクエリ体験を測った比較で、万能な勝者を示すものではない。",
+  "keyPoints": [
+    "比較対象は、同じDeltaテーブルをPower BIレポートに提供する4つの方式だった。",
+    "一律の最適解はなく、結果はデータ量、キャッシュ状態、フィルター条件、クエリ種別によって大きく変わる。",
+    "Direct Lake on OneLakeは、小～中規模データや日中に繰り返し使う典型的なPower BIワークロードで競争力が高く、追加のモデリング作業なしで対話的な性能を示した。",
+    "数十億行ではComposite Model with aggregationsが最速かつ最も安定しており、集計テーブルで解決できるクエリでは100ms未満を維持した。ただし基盤のDirectQueryに落ちるクエリにはその優位が及ばない。",
+    "この比較は2026年6～7月時点のスナップショットで、データベースそのものの生の実行速度ではなく、Power BI内でのエンドユーザーのクエリ体験を測っているため、自分のデータでの検証ガイドとして扱うべきだとされている。"
+  ],
+  "significance": "Azure Databricksをデータソースに使うPower BIの開発者や設計者、そしてレポート利用者に関係する内容である。記事では、ストレージモードの選択が初期段階の重要判断であり、表示が遅いレポートは利用者不満の主要因になりやすいとしたうえで、直感ではなく実測結果を基に自社データで検証する判断材料を提供している。",
+  "summaryEn": "A benchmark comparing four Power BI storage approaches for Azure Databricks found that Direct Lake on OneLake performed well across common small- to mid-size workloads, while composite models with aggregations were fastest and most consistent at billion-row scale when queries could be answered by aggregation tables. The article says the results are a June/July 2026 point-in-time comparison of end-user query experience inside Power BI, not proof of a universal winner."
+}
