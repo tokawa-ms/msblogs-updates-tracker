@@ -1,0 +1,12 @@
+{
+  "summary": "AIエージェントを使った小規模なコード変更の判断方法が変わり、著者は最初の生成パッチを完成品ではなく見積もりのための「価格確認」として扱うべきだと述べている。コードを書くコストは下がった一方、レビューして理解し、将来まで責任を持って運用するコストは下がっていないためだ。小さな要求はまず制約付きで試作し、実際の差分を見てスコープや保守負担を判断するのがAI時代の現実的な進め方だとしている。",
+  "keyPoints": [
+    "小さな機能要求では、実装前の議論そのものが差分作成より高くつく場合があり、まず実際のパッチを見た方が早く確度の高い判断につながると説明している。",
+    "生成された最初のパッチは納品物ではなく調査用のプローブであり、想定外に変更範囲が広がるか、テストしやすいか、既存抽象を保てるかなどを確認する材料として使うべきだとしている。",
+    "コード生成が容易でも、認可変更やデータ保持方針、プライバシー、課金、コンプライアンスに関わる変更は依然として安価ではなく、人が責任を持てるかどうかが境界線だと強調している。",
+    "小変更を試す際の具体的な制約として、最小パッチにとどめること、既存の機能フラグの背後に置くこと、公開契約を変えないこと、テスト追加・更新、変更ファイルとリスクの明示を挙げている。",
+    "AI支援下で重要になる新しい技能は、不確実性をすばやく値付けすることだと位置づけ、何でも受け入れることでも反射的に断ることでもなく、境界を定めた試行で判断材料を得る姿勢を評価している。"
+  ],
+  "significance": "この考え方は、小さな変更要求を日常的に受けるソフトウェアエンジニアやレビュアー、チームの意思決定に関わる人に影響する。AIで候補コードを素早く作れても、レビュー難度や将来の保守責任は人間側に残るため、議論中心の見積もりから、制約付きの差分を見て所有コストを評価する運用へ判断基準を移しやすくなる。",
+  "summaryEn": "For small, bounded code changes, the article argues that AI-generated first patches should be treated as a price check rather than the finished product. Writing code is cheaper now, but reviewing, understanding, and owning it is not. Instead of debating scope abstractly, teams should use constrained trial patches to judge the real maintenance and ownership cost from an actual diff."
+}

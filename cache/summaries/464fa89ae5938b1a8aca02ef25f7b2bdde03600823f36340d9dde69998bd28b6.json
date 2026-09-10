@@ -1,0 +1,12 @@
+{
+  "summary": "Dependabotは、GCToolkitの設定例で依存関係更新を日次の単発PRから、エコシステムごとの月次バッチPRへ切り替える方法を示した。groupsで\"*\"をまとめ、schedule.intervalをmonthlyにし、github-actionsだけでなくmavenも追加することで、レビューやCIの負荷を減らしつつ監視対象の漏れを防ぐ。さらに、脆弱性修正のセキュリティアップデートは通常の版更新スケジュールと独立して即時発行され、version updatesには既定で3日間のクールダウンが入る。",
+  "keyPoints": [
+    "groupsのmonthly-batchにpatterns: [\"*\"]を設定すると、複数の依存関係更新を1本のPRに束ねられる。",
+    "schedule.intervalをdailyからmonthlyに変えると、更新の流れを随時発生から月1回の計画可能なバッチへ切り替えられる。weeklyも選べ、schedule.dayとschedule.timeで曜日や時刻も固定できる。",
+    "GCToolkitの元設定はgithub-actionsだけを対象にしていたが、更新後はmavenも追加され、各エコシステムを別スケジュール・別グループで扱える。",
+    "セキュリティアップデートは通常のversion updatesとは分離され、修正付き脆弱性が開示されるとすぐPRが作られる。ただし、この仕組みを頼るにはsecurity updatesに加えてdependency graphとDependabot alertsを有効化しておく必要がある。",
+    "version updatesには既定で3日間のpackage cooldownがあり、新規リリース直後の更新を少し遅らせる。これはセキュリティアップデートには適用されず、cooldownオプションで日数調整や無効化もできる。"
+  ],
+  "significance": "活発なリポジトリの保守者、特に安定したライブラリや同一依存関係を複数ディレクトリで使うモノレポの運用者にとって重要だ。日常的なversion updatesを静かで予測可能な単位にまとめつつ、修正済み脆弱性は即時に通知されるため、レビュー待ちの更新群の中で本当に重要な修正が埋もれにくくなる。",
+  "summaryEn": "Dependabot’s GCToolkit example shows how to replace daily one-dependency PRs with monthly grouped batches per ecosystem. Using a wildcard group, switching the schedule to monthly, and adding Maven alongside GitHub Actions reduces review and CI noise without missing important ecosystems. Security updates still open immediately and stay separate from routine version updates, while version bumps now have a default three-day cooldown."
+}

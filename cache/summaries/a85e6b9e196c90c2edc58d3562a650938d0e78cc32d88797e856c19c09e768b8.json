@@ -1,0 +1,12 @@
+{
+  "summary": "GitHub Copilotは利用量を掲載済みのAPI料金で課金する方式になり、生のAPIアクセスとの差を、モデルそのものではなく開発ワークフローやポリシー統合を含むツール層で説明した。有料プランではコード補完とNext Edit Suggestionsは引き続き含まれ、より負荷の高いチャットやエージェント作業にAI Creditsが適用される。加えてBYOKはパブリックプレビューとして、Copilotのハーネスや統合を維持したまま、トークン請求先を選んだプロバイダー側に移せる。",
+  "keyPoints": [
+    "Copilotの価値はモデル呼び出し単体ではなく、エディタ、リポジトリ、プルリクエスト、Issue、ターミナル、組織統制をまたぐ開発ツールとしての接続にある。タスク単価もトークン単価だけでなく、コンテキスト選択、ツール利用、リトライ、Issueからレビュー済みPRまでの経路に左右される。",
+    "課金の切り分けとして、コード補完とNext Edit Suggestionsは有料プランに含まれたままで、より計算資源を使うチャットやエージェント作業にAI Creditsが適用される。",
+    "組織向けプランではAI Creditsを組織内でプールでき、管理者は予算設定と利用状況の追跡をbilling dashboardで行えるため、個別APIキーや未追跡スクリプトに利用が分散しにくい。",
+    "生のAPIアクセスは、製品機能、社内エージェント基盤、評価ハーネス、自動化パイプラインのように、プロンプト、検索、ルーティング、リトライ、ログ、セキュリティモデル、課金まで自前で設計・運用したい場合の土台として位置付けられている。",
+    "BYOKは現時点でパブリックプレビューで、Anthropic、AWS Bedrock、Google AI Studio、Microsoft Foundry、OpenAI、OpenAI互換、xAIなどの対応モデルをCopilot Chat、Copilot CLI、VS Codeで使える。トークン課金はプロバイダー側に移るが、購買やアーキテクチャ判断の前に最新ドキュメント確認が必要だと明記されている。"
+  ],
+  "significance": "影響を受けるのは、GitHub上のIssueからPRまでを既存ツール群で進める開発チーム、利用統制を担う組織管理者、そして独自エージェントや自動化基盤を作る開発者だ。記事は、前者にはCopilotが日常の開発面を統合して提供されること、後者にはAPIがカスタム挙動や統制を自前実装するための選択肢であること、さらに既存のプロバイダー契約を持つチームにはBYOKでワークフローを変えずに請求関係を維持できることを整理している。",
+  "summaryEn": "GitHub says Copilot now meters usage at listed API rates, clarifying that the difference from raw API access is not the model itself but the workflow, policy, and tooling layer around software development. Code completions and Next Edit Suggestions remain included in paid plans, heavier chat and agentic work uses AI Credits, and BYOK in public preview keeps Copilot’s harness and integrations while moving token billing to the chosen provider."
+}

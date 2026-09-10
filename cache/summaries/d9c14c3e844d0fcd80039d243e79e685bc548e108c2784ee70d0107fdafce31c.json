@@ -1,0 +1,12 @@
+{
+  "summary": "Microsoft 365 Copilotは有料シート数が3,000万を超え、純増数も前四半期比で2倍超になったとMicrosoftが明らかにした。6月に一般提供となったCopilot Coworkや新しい自律型エージェントMicrosoft Scoutを軸に、AIが補助から複数工程の業務を完了する存在へ進んでいると位置付ける。テレメトリーと顧客事例では、利用の定着拡大と職種別エージェント活用が進んでいるという。",
+  "keyPoints": [
+    "Copilot Coworkは6月に一般提供され、複数工程の作業を計画から実行、修正まで完了できる。Microsoftの社内検証では、単一モデル案より30〜40%低コストだったとしている。",
+    "Microsoft Scoutは、独自のIDと権限を持ってバックグラウンドで動き続ける初の自律型エージェントとして紹介された。ユーザーが別作業中でも業務を進める前提の設計になっている。",
+    "利用面では、過去1年でユーザー当たり会話数がほぼ2倍になり、複数機能を使うユーザーも3桁成長した。平均週間利用はOutlookやTeams並みになり、複数工程を含めると分析関連業務は全タスクの49%を占めた。",
+    "大規模展開も加速しており、5万席超の顧客数は前年比7倍超、情報労働者の過半に展開する企業顧客数は前四半期比約75%増となった。月間アクティブ率80%超に達するまでの時間も、数カ月から数日へ短縮した。",
+    "役割別の最適化事例として、Premera Blue Crossは900超のエージェントを構築し、契約関連の手作業を30〜45分から約3分に短縮した。Microsoft営業部門のパイロットでも、顧客対応時間が25%から50%に倍増し、1人当たり売上は9.4%増、成約は20%高速化した。"
+  ],
+  "significance": "影響が大きいのは、Copilotを全社展開する企業の情報労働者と、業務部門・IT部門で役割別エージェントを設計する担当者だ。記事は、同じAIを一律配るより、業務フローを見直して職種別に最適化した組織で、利用定着の高速化や処理時間短縮が進んでいると示しており、評価軸が導入数から業務変革へ移っていることを示している。",
+  "summaryEn": "Microsoft says Microsoft 365 Copilot has surpassed 30 million paid seats, with net adds more than doubling quarter over quarter. It frames the June general availability of Copilot Cowork and the introduction of the autonomous Microsoft Scout as signs that AI is moving from an assistant to an end-to-end worker for multi-step tasks. Telemetry and customer examples suggest adoption is deepening and becoming more role-specific."
+}
