@@ -18,6 +18,11 @@ on:
         description: 'Regenerate from saved diffs through this date (YYYY-MM-DD).'
         required: false
         type: string
+      update_branch:
+        description: 'Branch to update. Defaults to main.'
+        required: false
+        type: string
+        default: 'main'
       force:
         description: 'Force deployment even if no content changes are detected.'
         required: false
@@ -43,8 +48,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          # Manual dispatch can be started from another branch, but daily publishing always updates the `main` branch.
-          ref: main
+          ref: ${{ inputs.update_branch || 'main' }}
           fetch-depth: 0
 
       - name: Setup Node.js
@@ -185,14 +189,16 @@ jobs:
       - name: Commit and push changes
         if: ${{ steps.changes.outputs.changes_detected == 'true' }}
         shell: bash
+        env:
+          UPDATE_BRANCH: ${{ inputs.update_branch || 'main' }}
         run: |
           IFS=' ' read -r -a tracked_paths <<< "$TRACKED_UPDATE_PATHS"
           git add "${tracked_paths[@]}"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "chore: generate daily blog updates (${{ steps.dates.outputs.display_date }})"
-          if ! git push origin HEAD:main; then
-            echo "::error::Failed to push generated updates to main. Ensure Actions workflow has Read and write permissions enabled in Settings > Actions > General > Workflow permissions, and verify that github-actions[bot] can push to the main branch in branch protection rules." >&2
+          if ! git push origin "HEAD:${UPDATE_BRANCH}"; then
+            echo "::error::Failed to push generated updates to ${UPDATE_BRANCH}. Ensure Actions workflow has Read and write permissions enabled and verify branch protection rules." >&2
             exit 1
           fi
 
@@ -204,7 +210,7 @@ jobs:
           echo "" >> "$GITHUB_STEP_SUMMARY"
           echo "- **Date or range:** \`${{ steps.dates.outputs.display_date }}\`" >> "$GITHUB_STEP_SUMMARY"
           echo "- **Mode:** \`${{ steps.dates.outputs.mode }}\`" >> "$GITHUB_STEP_SUMMARY"
-          echo "- **Branch:** \`main\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "- **Branch:** \`${{ inputs.update_branch || 'main' }}\`" >> "$GITHUB_STEP_SUMMARY"
           echo "- **Forced:** \`${{ inputs.force }}\`" >> "$GITHUB_STEP_SUMMARY"
           echo "- **Deployment mode:** \`GitHub Actions\`" >> "$GITHUB_STEP_SUMMARY"
           echo "- **Artifact:** \`dist/\`" >> "$GITHUB_STEP_SUMMARY"
