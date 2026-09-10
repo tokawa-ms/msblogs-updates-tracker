@@ -3,7 +3,7 @@
 const { describe, it } = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs/promises');
-const { cleanText, extractArticleText, toMarkdown } = require('../scripts/generate-daily-page');
+const { cleanText, enumerateDates, extractArticleText, resolveTargetDates, toMarkdown } = require('../scripts/generate-daily-page');
 const { buildSummaryPrompt, validateSummary, summarizeArticle, parseCopilotOutput, runCopilot } = require('../scripts/utils/article-summarizer');
 
 const article = { title: 'Example Search preview', url: 'https://example.com/search', source_id: 'example', source_name: 'Example', summary: 'Feed teaser only.' };
@@ -53,6 +53,34 @@ describe('cleanText', () => {
 
   it('数値を文字列に変換する', () => {
     assert.equal(cleanText(123), '123');
+  });
+});
+
+describe('target date resolution', () => {
+  it('引数なしなら当日 1 日分を対象にする', () => {
+    assert.deepEqual(resolveTargetDates([], '2026-09-10'), ['2026-09-10']);
+  });
+
+  it('単日指定を受け付ける', () => {
+    assert.deepEqual(resolveTargetDates(['2026-09-08']), ['2026-09-08']);
+  });
+
+  it('開始日と終了日から連続日付を列挙する', () => {
+    assert.deepEqual(resolveTargetDates(['2026-09-06', '2026-09-08']), [
+      '2026-09-06',
+      '2026-09-07',
+      '2026-09-08',
+    ]);
+    assert.deepEqual(enumerateDates('2026-06-21', '2026-06-23'), [
+      '2026-06-21',
+      '2026-06-22',
+      '2026-06-23',
+    ]);
+  });
+
+  it('不正な日付や逆順の範囲を拒否する', () => {
+    assert.throws(() => resolveTargetDates(['2026-09-31']), /Invalid date/);
+    assert.throws(() => resolveTargetDates(['2026-09-08', '2026-09-06']), /Start date must be on or before end date/);
   });
 });
 
