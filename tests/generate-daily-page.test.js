@@ -292,6 +292,12 @@ describe('grounded summary', () => {
     assert.notEqual(result.summary, expectedSummary);
   });
 
+  it('日本語値が grounded field 直下の ja にある構造を正規化する', () => {
+    const value = response();
+    value.summary = { ja: value.summary.text, evidence: value.summary.evidence };
+    assert.equal(validateSummary(value, body).summary, response().summary.text);
+  });
+
   it('JSONL から最終回答だけを取り出し、日本語・引用・改行を保持する', () => {
     const content = JSON.stringify(response(), null, 2);
     assert.equal(parseCopilotOutput(copilotOutput(content)), content);
