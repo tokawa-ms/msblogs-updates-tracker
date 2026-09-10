@@ -1,0 +1,11 @@
+{
+  "summary": "Power BIのvisual calculationsが一般提供となり、ビジュアル上でDAXを直接記述して、その表示専用の計算をモデルやレポートのメジャー追加なしに定義できるようになった。あわせて、visual calculationsを基盤にしたテーブル／マトリックス向けのcustom totalsもGAとなり、合計行をSum、Average、Count、Noneなどで列ごとに調整できる。これらはPower BI DesktopとPower BI serviceに加え、embedded analyticsでも利用できる。",
+  "keyPoints": [
+    "visual calculationsは、集計済みのビジュアルデータに対して直接DAXを実行するため、同等のメジャーより式が簡単になりやすく、モデル全体のフィルター コンテキスト管理も減らせる。",
+    "作成はビジュアルを選んでNew visual calculationから行い、編集画面ではプレビュー、数式バー、基になるvisual matrixを見ながら、結果を即時に確認できる。既存計算はEdit calculationで再編集できる。",
+    "通常のメジャーで使う多くのDAX関数に加え、RUNNINGSUM、MOVINGAVERAGE、COLLAPSE、PREVIOUS、NEXT、LOOKUPなどのビジュアル専用関数や、Running sum、Percent of grand total、Versus previousなどのテンプレートが用意される。",
+    "custom totalsでは、テーブルやマトリックスの数値列ごとに合計行の計算方法を変更でき、Sum、Average、Min、Max、Count、Count (distinct)、Noneから選べる。"
+  ],
+  "significance": "恩恵を受けるのは、特定のビジュアルだけに必要な計算や表示ルールをレポート上で完結させたいPower BI作成者や、その内容を埋め込みアプリでも一貫して使いたい利用者だ。モデル側にメジャーを増やさずに計算や条件付き書式、合計行の扱いをビジュアル単位で管理できるため、対象の表示ロジックをその場で定義・更新しやすくなる。",
+  "summaryEn": "Power BI visual calculations are now generally available, letting authors write DAX directly on a visual for display-specific logic without adding model or report measures. Custom totals for tables and matrices are also GA, allowing per-column total behavior such as Sum, Average, Count, or None. The feature is supported in Power BI Desktop, the Power BI service, and embedded analytics."
+}
