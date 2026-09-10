@@ -47,10 +47,14 @@ function validateSummary(value, body) {
   const source = normalize(body);
   function groundedField(field, label) {
     let rawText = field?.text;
+    if (rawText === undefined && field && typeof field === 'object' && typeof field.ja === 'string') rawText = field.ja;
     if (Array.isArray(rawText) && rawText.every((item) => typeof item === 'string')) rawText = rawText.join(' ');
     if (rawText && typeof rawText === 'object' && typeof rawText.ja === 'string') rawText = rawText.ja;
     const text = typeof rawText === 'string' ? normalize(rawText) : '';
-    if (typeof rawText !== 'string') throw new Error(`Invalid Japanese ${label}: text must be a string.`);
+    if (typeof rawText !== 'string') {
+      const shape = field && typeof field === 'object' ? `object with keys ${Object.keys(field).join(', ')}` : typeof field;
+      throw new Error(`Invalid Japanese ${label}: text must be a string; received ${shape}.`);
+    }
     if (text.length < 20 || text.length > 1200) {
       throw new Error(`Invalid Japanese ${label}: text length ${text.length} must be between 20 and 1200 characters.`);
     }
