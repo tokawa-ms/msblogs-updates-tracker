@@ -143,7 +143,7 @@ function extractArticleText(html) {
 
   $('script, style, noscript, nav, footer, aside, form, svg, iframe, [hidden], [aria-hidden="true"], .related-posts, .sharedaddy, #comments').remove();
   const selectors = ['[itemprop="articleBody"]', '.entry-content', '.post-content', '.article-content', '.blog-post-content', 'article', 'main', '[role="main"]'];
-  let longestShortText = '';
+  let selectedText = '';
   for (const selector of selectors) {
     const root = $(selector).first();
     const blocks = uniqueParagraphs(root.find('h1, h2, h3, h4, p, li, tr, figcaption, pre')
@@ -153,10 +153,10 @@ function extractArticleText(html) {
         ? $(node).find('th, td').toArray().map((cell) => cleanText($(cell).text())).join(' | ')
         : $(node).text()));
     const text = blocks.join('\n\n');
-    if (text.length >= 500 && (!longestShortText || text.length >= longestShortText.length * 3)) return text;
-    if (!longestShortText && text.length >= 100) longestShortText = text;
+    if (text.length < 100) continue;
+    if (!selectedText || text.length >= selectedText.length * 3) selectedText = text;
   }
-  if (longestShortText.length >= 100) return longestShortText;
+  if (selectedText) return selectedText;
   throw new Error('Article body could not be extracted from an article/main container.');
 }
 
