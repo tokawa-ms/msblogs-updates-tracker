@@ -1,0 +1,11 @@
+{
+  "summary": "Power BI authoring pluginのAI powered Power BI reporting skillsが、AIエージェントによるPower BIレポート作成を自然言語ベースで行える機能としてSkills for Fabricで利用可能になった。PBIP向けPBIR定義の生成だけでなく、Power BI Desktopの再読み込みやスクリーンショット確認を使った反復修正、Modeling MCP serverやsemantic model authoring skillと組み合わせたエンドツーエンドの作成フローも想定している。",
+  "keyPoints": [
+    "導入には、AIクライアントでSkills for Fabricのマーケットプレースを登録し、その後powerbi-authoring@fabric-collectionをインストールする手順が必要とされている。",
+    "記事で示された主な用途は、レポートの新規作成、プロンプトに応じた既存ページの変更、そして最新の設計原則を使ったレポートのモダナイズである。",
+    "powerbi-report-authoring skillはPBIPプロジェクトで使うPBIR形式のレポート定義を自然言語で作成でき、参照画像やロゴを指定して既存レポートの見た目を変更する使い方も示されている。",
+    "Desktop bridgeを使うことで、エージェントは実際の描画結果をスクリーンショットで確認しながら修正を繰り返せ、開いたままのPower BI Desktopへ変更を自動で再読み込みできる。"
+  ],
+  "significance": "GitHub Copilot CLIなどのAIクライアント経由でPower BIレポートを作る担当者や、データモデル作成からレポート作成までをつなげたい利用者に関係する。自然言語でPBIR定義を作成し、Power BI Desktop上の実画面を見ながら修正を反復できるうえ、Modeling MCP serverやsemantic model authoring skillと組み合わせて一連のPower BI作業をエンドツーエンドで扱えるためだ。",
+  "summaryEn": "The AI-powered Power BI reporting skills in the Power BI authoring plugin are now available through Skills for Fabric, allowing AI agents to create and edit Power BI reports from natural language. Beyond generating PBIR definitions for PBIP projects, they support iterative refinement through Power BI Desktop reloads and screenshots, and can be combined with Modeling MCP server and the semantic model authoring skill for an end-to-end workflow."
+}

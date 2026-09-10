@@ -1,0 +1,11 @@
+{
+  "summary": "Power BIの2026年6月更新では、AI支援、モデリング、レポート作成まわりの機能がまとめて拡張された。今回の更新は一般提供とプレビューが混在しており、Copilot in web modelingは今月Power BI serviceでロールアウトされ、DAX user-defined functionsは一般提供となった。あわせて、いったん停止していたPBIR既定化の方針は維持され、6月にservice、7〜8月にDesktopへ再開する計画も示された。",
+  "keyPoints": [
+    "Copilot in web modelingはプレビューで今月Power BI serviceに展開され、自然言語でセマンティックモデルの分析・改善に加え、テーブル名や列名の変更、リレーション作成、DAXメジャー生成まで行える。",
+    "スライサー向けDate pickerはプレビューとして追加され、相対日付の既定値を公開後もデータ更新に合わせて自動で進められる。利用には Options > Preview features で有効化する必要がある。",
+    "DAX user-defined functionsは一般提供となり、計算をメジャー、計算列、ビジュアル計算で再利用できる。さらにSSMSは22.5以降でUDFの作成・更新をサポートする。",
+    "PBIRの既定オン展開は問題対応のため一時停止していたが、既定フォーマット化の方針自体は変わっていない。6月にPower BI serviceで再開し、順調なら7〜8月にDesktop、PBIR/PBIPのGAはその後となる見込みだ。"
+  ],
+  "significance": "恩恵を受けるのは、レポート作成者とPower BIデータを日常業務で使う業務ユーザーだ。作成者は手動編集や定期的な日付スライサー更新の負担を減らせ、データ回答機能は既存の権限とセマンティックモデルに基づいて答えを返すため、利用者はM365 Copilot内でレポートと整合した情報にアクセスしやすくなる。",
+  "summaryEn": "Power BI’s June 2026 update expands AI assistance, modeling, and report authoring features. It mixes preview and GA releases: Copilot in web modeling is rolling out this month in the Power BI service, DAX user-defined functions are now generally available, and the paused PBIR default rollout is set to resume in the service in June and in Desktop in July/August."
+}

@@ -1,0 +1,12 @@
+{
+  "summary": "Power BIとFabricは、Databricks、Snowflake、Google BigQueryなどの対象コネクタで、組み込みのODBCドライバーから主にADBCベースの置き換えドライバーへ移行します。接続ごとのImplementation指定、テナント設定、ワークスペース上書きで移行方法を選べ、明示指定がない接続ではワークスペース設定に応じてADBCかODBCが既定になります。テナント設定は段階展開中で、2026年7月に広範展開予定、同年8月から既定有効化を段階的に始める計画です。さらにサービスでは2026年9月からODBCが削除され、Power BI DesktopとGatewayでも2027年3月以降ODBC同梱が終了します。",
+  "keyPoints": [
+    "対象はDatabricks、Dremio、Google BigQuery、Impala、Snowflake、Sparkなどで、HiveはADBC置き換えではなく非推奨扱いです。",
+    "影響を受けるのは、対象コネクタを使い、接続で実装を明示していない利用者や、ADBC/ODBCの既定を組織で一元管理したい組織です。",
+    "移行は接続単位のImplementation=\"2.0\"指定、テナント設定、ワークスペース上書きの3方式で制御でき、明示指定があればテナントやワークスペース既定より優先されます。",
+    "展開は一斉切替ではなく、テナント設定は一部テナントで提供中、2026年7月に広範展開予定、既定有効化はロールアウト準備状況を前提に2026年8月開始を見込んでいます。",
+    "ODBC継続には期限があり、サービスでは2026年9月以降Gateway経由が必要で、Power BI DesktopとGatewayでは2027年3月リリースからODBCが同梱されず、維持したい場合は2027年2月版以前に留まる必要があります。"
+  ],
+  "significance": "対象コネクタをPower BIやFabricで使う利用者、特に接続実装を明示していないチームや既定値を統制したいテナント管理者に影響する変更です。接続作成全般とテスト接続の挙動に既定設定が効くため、ワークスペース単位の比較検証や接続単位の明示指定を使って移行確認を進めないと、ODBC継続条件や将来の提供形態変更に直面します。",
+  "summaryEn": "Power BI and Fabric are moving supported connectors from embedded ODBC drivers to mostly ADBC-based replacements. The transition can be controlled per connection, by tenant setting, or by workspace override, with phased rollout through July 2026, default enablement targeted for August 2026, ODBC removal from the service starting in September 2026, and ODBC no longer shipping with Power BI Desktop and Gateway from March 2027."
+}
