@@ -1,0 +1,11 @@
+{
+  "summary": "GitHub Secret Scanningは、検証ステップに文脈を踏まえたLLM推論を取り入れ、シークレットらしい値の周辺利用状況を見て誤検知を減らすよう改善された。既存の検出パイプラインの上に載せる形で、上流の検出ロジックやカバレッジを変えずに精度向上を狙う。顧客が誤検知と確認した数百件のアラートで評価した結果、削減目標65%に対し75.76%の偽陽性削減を示した。",
+  "keyPoints": [
+    "GitHubのsecret scanningは、既知フォーマット向けのパターン検出と、既知のプロバイダーパターンに当てはまらないパスワードなども拾うAIベース検出を組み合わせている。",
+    "今回の改善は検出後の検証段階に入るもので、コード全体を大量に渡すのではなく、値が変数代入されAPIリクエストや認証ヘッダー、データベースクライアント、クラウドSDK呼び出しに渡されるかといった高シグナルな文脈を抽出して判断する。",
+    "精度向上は、ファイルやリポジトリ全体を広く解析する方向ではなく、単一ファイル内の使われ方など焦点を絞った文脈で偽陽性の多くを解消する考え方に基づいている。",
+    "評価では、顧客が偽陽性と確認した数百件のアラートを対象にし、65%削減を目標として75.76%の偽陽性削減を達成した。"
+  ],
+  "significance": "影響を受けるのは、GitHubのsecret scanningを使ってシークレット露出を確認する開発者と組織だ。誤検知が多いとアラートへの信頼が下がり、調査に時間を取られて本当に危険な問題の修正が遅れるが、この改善はそのノイズを減らして優先順位付けをしやすくする。GitHubは大規模運用での継続課題として位置付けており、より大きなデータセットとライブトラフィックで引き続き評価するとしている。",
+  "summaryEn": "GitHub Secret Scanning has improved its verification step with context-aware LLM reasoning that examines how suspicious values are used in code to reduce false positives. The change sits on top of the existing detection pipeline and aims to raise precision without changing upstream detection logic or reducing coverage. In an evaluation on hundreds of customer-confirmed false positive alerts, it cut false positives by 75.76% against a 65% target."
+}

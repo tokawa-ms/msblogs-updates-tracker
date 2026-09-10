@@ -1,0 +1,11 @@
+{
+  "summary": "Copilot Coworkは、Microsoft 365 Copilot顧客向けに世界中で一般提供が始まった。複雑で長時間・複数ツールのタスクをクラウド上で完了結果まで実行する機能で、GA時点ではAnthropicのOpus 4.8とSonnet 4.6に対応する。利用にはMicrosoft 365 Copilot USLが必要で、料金はCopilot Credits建ての従量課金になる。",
+  "keyPoints": [
+    "Copilot Coworkの利用にはMicrosoft 365 Copilot USLが必要で、課金はCopilot Credits建ての従量制。支払いはPayGoかP3を選べ、PayGoは1クレジット0.01ドル。課金は本日開始だが、2026年3月30日から6月16日のFrontier利用テナントには2026年7月1日まで請求猶予がある。",
+    "初期状態ではCoworkは無効で、管理者がテナントでの有効化とアクセス権を決める。さらにテナント・グループ・ユーザーレベルで予算上限や請求ポリシーを設定でき、しきい値ベースの利用アラートや、ユーザーによる追加クレジット申請にも対応する。",
+    "GA時点の実行モデルはAnthropicのOpus 4.8とSonnet 4.6で、FrontierではGPT 5.5も利用できる。加えて、新モデルCowork 1は数週間以内の投入予定とされ、より低コストな日常的Copilotタスク向けの選択肢として案内されている。",
+    "新機能として、Microsoft 365 CopilotアプリからCowork全体験へ移るトグルが追加された。パートナープラグインは9件が現在利用可能で8件が近日提供予定、さらに監査ログ、DSPM、eDiscovery、Insider Risk Managementなどの保護機能がGAに含まれ、DLPは今後追加予定となっている。"
+  ],
+  "significance": "影響が大きいのは、すでにMicrosoft 365 Copilotを導入している企業の管理者と利用者だ。利用者はチャットから複雑な長時間タスクの実行に移れ、各タスクのコストをクレジット単位で確認できる。一方で管理者は、既存のMicrosoft 365統制の中で有効化、アクセス制御、監査や保持、予算管理を行いながら展開できる。",
+  "summaryEn": "Copilot Cowork is now generally available worldwide for Microsoft 365 Copilot customers. It runs complex, long-running, multi-tool tasks in the cloud and at GA supports Anthropic Opus 4.8 and Sonnet 4.6. It requires a Microsoft 365 Copilot USL and uses Copilot Credits-based usage billing."
+}

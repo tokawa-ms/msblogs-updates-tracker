@@ -1,0 +1,11 @@
+{
+  "summary": "Copilot Coworkに、iOS/Android対応、再利用可能なSkills、業務ツールとつなぐpluginsなどの機能追加が発表された。Coworkはクラウドで動作し、外出先から思いついた時点で仕事を委任できるようになる。加えて、Microsoft 365の組み込みスキルや独自スキル、Microsoft製品や外部サービスとの連携を通じて、会話から実作業へ進める範囲を広げる。Copilot Cowork自体はFrontier programで提供され、新機能は継続的にロールアウトされる。",
+  "keyPoints": [
+    "iOSとAndroid向けのCoworkが導入され、通勤中や会議の合間、デスクを離れている時でもタスクを委任し、バックグラウンドで進められる。",
+    "Cowork Skillsでは、作業手順や文体、プロセスを再利用可能な指示として保存でき、Microsoft 365の組み込みスキルに加えて独自のカスタムスキルも作成できる。",
+    "プラグインと統合では、Fabric IQ with Power BIやDynamics 365の営業・カスタマーサービス・ERPアプリとのネイティブ連携を追加し、パイプラインレビューやケース解決、受注承認などを支援する。",
+    "記事ではLSEG、Miro、monday.com、S&P Global Energy向けコネクタを挙げ、組織は自社向けのカスタムプラグインも構築・管理できるとしている。"
+  ],
+  "significance": "この更新は、移動中でも業務を委任したい個人、定型業務を標準化したいチーム、複数の業務システムを横断して作業する組織に関係する。記事の位置づけでは、Coworkは単に回答するAIではなく、組織のデータやツールを理解した上で計画し、実行し、成果物を返す役割へ広がっているためだ。",
+  "summaryEn": "Copilot Cowork is adding iOS and Android support, reusable Skills, and plugins that connect it to business tools. Because it runs in the cloud, users can delegate work from mobile and let it continue in the background. Built-in Microsoft 365 skills, custom skills, and integrations with Microsoft and third-party systems expand Cowork from conversation into task execution. Cowork remains available through the Frontier program, with new capabilities rolling out continuously."
+}

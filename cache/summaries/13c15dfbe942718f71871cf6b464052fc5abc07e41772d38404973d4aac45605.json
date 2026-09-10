@@ -1,0 +1,11 @@
+{
+  "summary": "Microsoft 365 Business Standard with CopilotとMicrosoft 365 Business Premium with Copilotが7月1日に導入され、Microsoftは中小企業向けにCopilotを標準搭載した新SKUとして提供すると述べた。WordやExcel、Outlookなど既存アプリにCopilotを直接組み込み、Work IQや多数の外部コネクタ経由で業務文脈を踏まえた支援を行う。加えて、機密ラベルや既存のアクセス境界に従う設計により、AI利用時もデータ保護を維持できるとしている。",
+  "keyPoints": [
+    "7月1日に、Copilotを組み込んだMicrosoft 365 Business StandardとBusiness Premiumの新SKUを導入すると案内している。",
+    "CopilotはWord、Excel、PowerPoint、Outlookに直接組み込まれ、Microsoft 365全体の作業状況をWork IQで取り込んで、ファイル単体ではなく案件や期限、意思決定まで踏まえて応答する。",
+    "Shopify、PayPal、Xero、Docusign、Asanaなどを含む1,000超のコネクタに対応し、業務タスクやワークフローをCopilot内で自動化できるとしている。さらにOpenAIとAnthropicのモデルに直接アクセスでき、用途に応じて選べるとしている。",
+    "機密ファイルへのラベル付けにより、社外転送や個人アカウントへのコピー、印刷を制御でき、誤共有後でもアクセスを取り消せるとしている。AI側も既存のセキュリティ境界に従うが、一部機能では追加製品の購入が必要な場合がある。"
+  ],
+  "significance": "既存のMicrosoft 365を使う中小企業やその従業員にとって、追加の単独AIツールを増やさずに、普段の業務アプリと業務システムをまたいでAIを使える点が影響する。特に、社内外のデータ保護や権限管理を維持したままAIを使いたい組織では、既存のガードレールを保ったまま導入できるというMicrosoftの説明が重要になる。",
+  "summaryEn": "Microsoft said it will introduce Microsoft 365 Business Standard with Copilot and Microsoft 365 Business Premium with Copilot on July 1 as new SKUs for small businesses with Copilot built in. Copilot is embedded directly into apps like Word, Excel, and Outlook, and uses Work IQ plus a large set of external connectors to support work with business context. The company also says it preserves data protection during AI use by honoring confidential labels and existing access boundaries."
+}

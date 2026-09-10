@@ -1,0 +1,11 @@
+{
+  "summary": "Microsoft FabricのWorkspace outbound access protection（OAP）はプレビューでPower BIレポートにも対応し、保護されたワークスペース内のレポートは同一ワークスペース内のセマンティック モデルにしかバインドできなくなった。レポート自体に追加設定は不要で、OAPを有効化するとワークスペースの単一ルールが自動適用される。一方で多くのレポート機能はブラウザー側で動くためOAPの対象外で、完全な外部接続遮断には別の設定が必要になる。",
+  "keyPoints": [
+    "OAPがPower BIレポートに適用するルールは1つだけで、保護されたワークスペース内のレポートは同一ワークスペース内のセマンティック モデルにのみ接続できる。レポート向けの許可リストや例外機構は用意されていない。",
+    "利用には、ワークスペースがFabric capacityのF SKUに割り当てられ、テナント設定のConfigure workspace-level outbound network rulesが有効であることが必要だ。OAP有効化後の構成変更反映には約15分かかる場合がある。",
+    "OAP有効ワークスペースへの対話型Power BIレポートの公開は追加設定なしで行え、Power BI Desktop publish、Desktop live editing、Git integration、Fabric Deployment Pipelinesも、同一ワークスペース内のモデルにバインドしている限り通常どおり動作する。別ワークスペースのモデル参照では公開自体は成功してもデータは表示できない。",
+    "多くのレポート機能はクライアント側実行のためOAPの適用外で、カスタム ビジュアル、マップ、R/Pythonビジュアル、RDL visual、URLアクション、User Data Functions、エクスポートなどは別の制御が必要だ。外部エンドポイントへの接続を徹底的に止めたい場合は、テナント設定でPDF/PPTエクスポートやメール購読を無効化する必要があり、メール購読はワークスペース単位では無効化できない。"
+  ],
+  "significance": "規制産業、マルチテナント環境、またはワークスペース境界とデータ境界を厳密に一致させたい管理者やレポート作成者にとって、この変更はレポートが別ワークスペースのセマンティック モデルへ越境接続する経路を塞げる点で重要だ。ただしクライアント側で動く機能まではOAPだけで制御できないため、必要に応じてPower BIのテナント設定やローカル ネットワーク側の制御を併用する運用が影響を受ける。",
+  "summaryEn": "Microsoft Fabric's Workspace outbound access protection now extends to Power BI reports in preview, limiting reports in a protected workspace to semantic models in the same workspace only. No report-level configuration is required because the workspace rule is enforced automatically once OAP is enabled. However, many report features run in the browser and remain outside OAP scope, so separate controls are needed to fully block outbound connections."
+}

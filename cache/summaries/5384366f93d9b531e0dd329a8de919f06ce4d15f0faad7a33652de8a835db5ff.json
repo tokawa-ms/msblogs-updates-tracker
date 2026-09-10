@@ -1,0 +1,11 @@
+{
+  "summary": "Work IQ APIsは、Microsoft 365のデータやアプリをエージェントから扱うための新しいAPI群として、2026年6月16日に一般提供開始予定だ。Chat、Context、Tools、Workspacesの4領域で構成され、GitHubのパブリックプレビューから先行して利用を始められる。Microsoftは、Copilotと同じインテリジェンス層を自社エージェントに取り込めるようにし、業務文脈に基づく操作や実行を可能にすると説明している。",
+  "keyPoints": [
+    "一般提供は2026年6月16日の予定で、それに先立ちGitHubのパブリックプレビューで開発を開始できる。現時点で一般提供済みではない。",
+    "APIはChat、Context、Tools、Workspacesの4領域で構成される。ChatはCopilot応答と引用を返し、Contextはエージェント向けの文脈データを返し、Toolsはメール送信や会議設定などの操作を扱い、Workspacesは実行中の中間状態やファイルをテナント内に保持する。",
+    "料金は従量課金制で、Toolsは固定要素、ChatとContextは変動要素を持つ。課金単位はCopilot Credits。",
+    "Microsoft 365管理センターには新しいコスト管理ダッシュボードも導入される。IT管理者はAIクレジット使用量の確認、前払いまたは従量課金の設定、テナント・グループ・ユーザー単位の支出上限設定、ユーザーからのクレジット要求の監視を行える。"
+  ],
+  "significance": "Microsoft 365内で業務エージェントを構築する開発者とIT管理者への影響が大きい。開発者はCopilotが使う業務文脈や操作面をAPI経由で取り込め、IT管理者はデータがMicrosoft 365テナント境界内にとどまり、操作が監査可能な形で、利用量や支出も管理できるため、企業向けの統制要件を満たしやすい。",
+  "summaryEn": "Work IQ APIs are a new API set for agent access to Microsoft 365 data and apps, with general availability scheduled for June 16, 2026. The four domains—Chat, Context, Tools, and Workspaces—are already available in public preview on GitHub. Microsoft says they let developers bring the same intelligence layer behind Copilot into their own agents so they can act on business context inside Microsoft 365."
+}

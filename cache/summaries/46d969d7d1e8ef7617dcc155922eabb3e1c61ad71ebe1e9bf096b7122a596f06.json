@@ -1,0 +1,12 @@
+{
+  "summary": "Microsoft 365 Copilotは、Word、Excel、PowerPoint、Outlookでのエージェント型機能を基盤に、Copilot CoworkのiOS/Android対応と、主要パートナーによるfederated Copilot connectorsの一般提供を進めた。あわせてMicrosoft Agent 365が一般提供となり、OpenClawやClaude Codeのようなローカルエージェントを含むシャドーAIエージェントの検出・管理機能はプレビューとして追加された。記事では、これらを人とエージェントの協働を業務フローへ組み込むための基盤として位置付けている。",
+  "keyPoints": [
+    "Microsoftの分析では、Microsoft 365 Copilotの会話の49%が分析・問題解決などの認知作業を支え、AI利用者の58%は1年前にはできなかった成果物を作れていると答えた。先進的利用者では80%に達する。",
+    "導入効果は個人要因より組織要因の影響が大きく、文化、管理職支援、人材施策などの組織要因が、自己申告ベースのAI効果で67%対32%と2倍超を占めた。",
+    "Microsoft Agent 365は一般提供が開始され、OpenClawやClaude Codeのようなローカルエージェントを含むシャドーAIエージェントの検出・管理は新しいプレビュー機能として提供される。",
+    "Copilot CoworkはiOSとAndroidで利用可能になり、HubSpot、LSEG、Moody’s、Notionなどのfederated Copilot connectorsはMicrosoft 365とResearcherで一般提供となった。これらのコネクタはExcelでも今夏提供予定とされた。",
+    "Microsoft 365 E7は、今回のCopilotとAgentの基盤の上に構築された提供形態として一般提供が開始された。"
+  ],
+  "significance": "主に影響を受けるのは、AIを使う従業員だけでなく、導入方針や業務設計を担う管理職・経営層である。記事は、個人の使い方以上に組織文化や管理職支援が成果を左右し、人とエージェントの間で仕事の流れを設計しながら、ガバナンスと可視性を保つ必要があると示している。",
+  "summaryEn": "Microsoft 365 Copilot expanded its agentic work features with Copilot Cowork now available on iOS and Android and the first federated Copilot connectors generally available from major partners. Microsoft Agent 365 also became generally available, while shadow AI agent discovery and management, including local agents such as OpenClaw and Claude Code, remains in preview. The article positions these as infrastructure for embedding collaboration between people and agents into everyday workflows."
+}
