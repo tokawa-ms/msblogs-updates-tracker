@@ -4,6 +4,7 @@ const os = require('node:os');
 const path = require('node:path');
 
 const MAX_ARTICLE_LENGTH = 100000;
+const MAX_SUMMARY_ATTEMPTS = 3;
 
 function normalize(value) {
   return String(value || '').replace(/\s+/gu, ' ').trim();
@@ -77,6 +78,27 @@ function validateSummary(value, body) {
   return { summary, keyPoints, significance, summaryEn: normalize(value.summaryEn) };
 }
 
+function parseCopilotOutput(output) {
+  let events;
+  try {
+    events = output.trim().split(/\r?\n/u).map((line) => JSON.parse(line));
+  } catch {
+    throw new Error('Copilot output is not valid JSONL. Check the installed CLI version.');
+  }
+  const result = events.at(-1);
+  if (result?.type !== 'result' || result.exitCode !== 0 ||
+      events.some((event) => event?.type === 'session.error')) {
+    throw new Error('Copilot did not complete successfully. Check model access and quota.');
+  }
+  const message = events.findLast((event) =>
+    event?.type === 'assistant.message' && !event.agentId && !event.data?.parentToolCallId);
+  if (typeof message?.data?.content !== 'string' || !message.data.content.trim() ||
+      message.data.toolRequests?.length) {
+    throw new Error('Copilot completed without a final summary response.');
+  }
+  return message.data.content;
+}
+
 async function runCopilot(prompt, execute = execFile) {
   if (!process.env.COPILOT_GITHUB_TOKEN) {
     throw new Error('Set COPILOT_GITHUB_TOKEN to a token with Copilot Requests permission before generating summaries.');
@@ -84,7 +106,8 @@ async function runCopilot(prompt, execute = execFile) {
   const workingDirectory = await fs.mkdtemp(path.join(os.tmpdir(), 'blog-summary-'));
   try {
     const loader = path.resolve(__dirname, '../../node_modules/@github/copilot/npm-loader.js');
-    const args = [loader, '--silent', '--stream=off', '--available-tools=', '--no-ask-user',
+    // Text mode renders Markdown even with --silent; JSONL preserves the model's raw response.
+    const args = [loader, '--silent', '--stream=off', '--output-format=json', '--available-tools=', '--no-ask-user',
       '--disable-builtin-mcps', '--no-custom-instructions', '--no-auto-update', '--no-color',
       '--no-remote', '--no-remote-export', '--model', process.env.SUMMARY_MODEL || 'gpt-5.4'];
     const env = {};
@@ -93,7 +116,7 @@ async function runCopilot(prompt, execute = execFile) {
     }
     Object.assign(env, { HOME: workingDirectory, USERPROFILE: workingDirectory,
       COPILOT_HOME: workingDirectory, COPILOT_AUTO_UPDATE: 'false', CI: 'true' });
-    return await new Promise((resolve, reject) => {
+    const output = await new Promise((resolve, reject) => {
       const child = execute(process.execPath, args, {
         cwd: workingDirectory, env, timeout: 180000, maxBuffer: 1024 * 1024, windowsHide: true,
       }, (error, stdout) => {
@@ -106,6 +129,7 @@ async function runCopilot(prompt, execute = execFile) {
       child.stdin.on('error', () => {});
       child.stdin.end(prompt);
     });
+    return parseCopilotOutput(output);
   } finally {
     await fs.rm(workingDirectory, { recursive: true, force: true });
   }
@@ -113,14 +137,25 @@ async function runCopilot(prompt, execute = execFile) {
 
 async function summarizeArticle(article, body, complete = runCopilot) {
   const prompt = buildSummaryPrompt(article, body);
-  const output = await complete(prompt);
-  let parsed;
-  try {
-    parsed = JSON.parse(output.trim().replace(/^```json\s*\n([\s\S]*?)\n```$/u, '$1'));
-  } catch {
-    throw new Error('Summary response is not valid JSON.');
+  let feedback = '';
+  for (let attempt = 1; attempt <= MAX_SUMMARY_ATTEMPTS; attempt += 1) {
+    const output = await complete(`${prompt}${feedback}`);
+    try {
+      let parsed;
+      try {
+        parsed = JSON.parse(output.trim().replace(/^```(?:json)?\s*\r?\n([\s\S]*?)\r?\n```$/iu, '$1'));
+      } catch {
+        throw new Error('Summary response is not valid JSON.');
+      }
+      return validateSummary(parsed, body);
+    } catch (error) {
+      if (attempt === MAX_SUMMARY_ATTEMPTS) {
+        throw new Error(`Summary validation failed after ${attempt} attempts: ${error.message}`);
+      }
+      feedback = `\n\nYour previous response was rejected: ${error.message}
+Generate a corrected JSON object from the same article body. Follow the required structure and use exact evidence quotes. Return only JSON, without commentary or Markdown fences.`;
+    }
   }
-  return validateSummary(parsed, body);
 }
 
-module.exports = { buildSummaryPrompt, validateSummary, summarizeArticle, runCopilot };
+module.exports = { buildSummaryPrompt, validateSummary, summarizeArticle, parseCopilotOutput, runCopilot };
