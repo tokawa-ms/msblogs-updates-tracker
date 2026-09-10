@@ -1,0 +1,11 @@
+{
+  "summary": "Git worktreesは、急なバグ修正などで作業を切り替える際に、stashや同じ作業ディレクトリでのブランチ切り替えをせず、別フォルダーに新しい作業ツリーを作って並行作業できる仕組みとして説明されている。元の編集状態を保ったままstash競合やエディターの再読み込みを避けられるのが利点だ。記事では、AI時代の並列作業との相性から注目が高まり、GitHub Copilot appでも新規セッションの既定が新しいworktreeだとしている。",
+  "keyPoints": [
+    "git worktree add ../hotfix-workspace -b hotfix-bug main で、mainを基点に兄弟フォルダーのworktreeと新しいhotfixブランチを同時に作れ、元の作業ブランチを離れずに緊急修正へ移れる。",
+    "利点として、stash conflictの危険がなく、元のエディター状態を崩さずに並列作業できる。VS Codeにもworktreeの組み込み対応がある。",
+    "再注目の背景として、以前はGit GUIの対応不足などであまり知られていなかったが、AIの普及で開発者の並列セッション運用が増えたことが挙げられている。",
+    "注意点は、各worktreeごとに依存関係のコピーが必要で容量を圧迫しうること、フォルダー削除や.gitignore管理が要ること、同一ブランチを複数worktreeで同時checkoutできないこと。"
+  ],
+  "significance": "複数のタスクやセッションを同時に進める開発者、特にGitHub Copilot appの利用者に影響が大きい。元の作業状態を保ったまま別の修正やレビュー作業を始めやすくなる一方で、依存関係の重複配置やworktreeフォルダーの管理負担も理解して使う必要がある。",
+  "summaryEn": "Git worktrees let developers switch contexts, such as for urgent bug fixes, by creating a separate working directory instead of stashing or switching branches in place. That preserves the original editing state, avoids stash conflicts and editor disruption, and enables parallel work. The article says this has gained relevance in the AI era and that the GitHub Copilot app defaults new sessions to a new worktree."
+}

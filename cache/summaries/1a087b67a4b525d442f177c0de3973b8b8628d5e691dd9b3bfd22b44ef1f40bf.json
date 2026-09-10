@@ -1,0 +1,12 @@
+{
+  "summary": "Microsoft Copilot Studioでは、UIを直接操作するcomputer-using agentsが一般提供になり、APIのないWebサイトやデスクトップ アプリも自動化しやすくなった。あわせて、コンピューター操作を含むマルチステップ自動化を組める新しいworkflows体験が早期リリース環境で提供され、Work IQのREST APIやCLI、MCP対応、エージェント間通信の一般提供も加わった。さらに、Dynamics 365 Contact Center経由のリアルタイム音声エージェントは北米で一般提供となり、音声応対の文脈維持や引き継ぎ改善も打ち出している。",
+  "keyPoints": [
+    "computer-using agentsはCopilot Studioで一般提供となり、Webサイトやデスクトップ アプリのUIを直接操作できる。APIがない基幹系やレガシー環境でも、壊れやすいスクリプトや手作業の代替として自動化しやすくなる。",
+    "computer-using agentsを複数ステップのworkflowへ埋め込む機能はプレビューへ移行中で、新しいworkflows体験自体は早期リリース環境で利用できる。統合キャンバス上でagent nodesやAI-powered actionsを組み込み、ノード単位テストやインライン設定で構築しやすくする。",
+    "Work IQではREST API、CLI、remote model context protocol (MCP) servers対応が加わり、Copilot Studioではagent-to-agent (A2A) communicationが一般提供になった。分断されたツール群の間で、エージェントやワークフローをより標準的に接続しやすくする狙いだ。",
+    "リアルタイム音声エージェントはDynamics 365 Contact Centerを通じて北米で一般提供となり、発信者特定、問い合わせ応答、会話中のアクション実行、ライブ担当者への文脈付き引き継ぎを支援する。speech-to-speech (S2S)対応と、運用・監視・セキュリティなどを扱うガバナンスガイドも示された。",
+    "Copilot Studioの新しいorchestration layerは早期リリース環境で自動適用され、Microsoftの使用データでは評価性能を約20%改善し、net token usageを50%削減したとしている。複雑な複数段階の業務プロセスで、より一貫した実行品質を目指す。"
+  ],
+  "significance": "恩恵を受けるのは、APIのない旧来システムや分断されたツール群を抱え、電話窓口も含めて業務自動化を拡張したい企業チームだ。今回の更新は、UI操作、ワークフロー、外部ツール連携、音声応対をつなげることで、壊れやすい自動化や文脈切れを減らし、運用しやすい形でエージェント活用を広げやすくする。",
+  "summaryEn": "Microsoft Copilot Studio has made computer-using agents generally available, enabling UI-based automation for websites and desktop apps that lack APIs. It also adds a redesigned workflows experience in early release, new Work IQ interoperability features including REST API, CLI, MCP support and GA agent-to-agent communication, while real-time voice agents are now generally available in North America through Dynamics 365 Contact Center."
+}

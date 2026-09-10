@@ -1,0 +1,11 @@
+{
+  "summary": "GitHub Multilingual Repositories DatasetがGitHubでCC0-1.0の下で公開され、非英語の自然言語コンテンツを含む可能性がある公開リポジトリを研究者や開発者が見つけやすくなった。これはリポジトリ本文のダンプではなく、README・最もコメントの多いissue・pull requestの言語分類と各種メタデータを収めたリポジトリ単位のメタデータセットで、4,000万超のリポジトリにまたがる8,000万超の分類行を含む。",
+  "keyPoints": [
+    "データセットはリポジトリ内容そのものではなく、README、最もコメントの多いissue、最もコメントの多いpull requestについて、先頭150文字を入力サンプルにした言語分類を提供する。20文字未満のテキストは除外される。",
+    "分類器はfastText、gcld3、lingua-pyの3種類で、各結果に信頼度が付き、0.5超の分類だけが含まれる。3つの分類結果は1つのラベルに統合されていないため、利用者が厳しさを選べる。",
+    "収録メタデータには作成時刻、ディスク使用量、stars、forks、主要プログラミング言語、SPDXライセンス、issue数、pull request数、スナップショット日が含まれる。",
+    "GitHubはこのデータを言語識別の正解ベンチマークとして使うべきではないとしており、リポジトリ所有者や貢献者、コミュニティの機微な属性推定にも使うべきではないと注意している。"
+  ],
+  "significance": "多言語AIを研究・開発する研究者、オープンソース開発者、モデル構築者にとって、一般的なWebテキストでは捉えにくい開発者向けの多言語シグナルを探しやすくする点が重要だ。記事では、欧州を含む多くの言語がAIの学習・評価用テキストで過小代表だと述べており、このデータセットが言語表現の欠落把握、評価改善、より包摂的な開発者向けAIツールの検討に役立つとしている。",
+  "summaryEn": "The GitHub Multilingual Repositories Dataset is now available on GitHub under CC0-1.0, making it easier for researchers and developers to find public repositories that likely contain non-English natural-language content. Rather than a dump of repository contents, it is repository-level metadata covering language classifications for READMEs, the most-commented issues and pull requests, plus other metadata across more than 40 million repositories and over 80 million classification rows."
+}

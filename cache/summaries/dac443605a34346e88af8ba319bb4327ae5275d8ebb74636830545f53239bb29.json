@@ -1,0 +1,12 @@
+{
+  "summary": "GitHubは2026年5月の可用性報告で、同月にGitHubサービス全体で性能劣化を伴う障害が9件発生したと明らかにした。並行して、モノリストラフィックの40%をAzureで処理し、Gitトラフィック30%、リポジトリ複製99%まで移行を進め、4カ月で実効容量を2倍超に拡大している。障害の主因は大規模データベース移行、GitHub Actions関連の構成不備やサービスアカウント停止、上流API不具合などで、pull requests、Actions、Copilot、Pagesなど複数サービスに波及した。",
+  "keyPoints": [
+    "信頼性強化では、モノリスのAzure移行が2月の8%から40%へ進み、Gitトラフィック30%、リポジトリ複製99%に到達した。加えて、主要DBクラスタをユーザー、認証、認可の独立ドメインへ分離し、ステートレス認証トークンも展開している。",
+    "5月4日の約1時間の広域障害は、大規模で高トラフィックなDBテーブルへのオンラインスキーマ移行が通常トラフィックと重なって接続容量を飽和させ、ピーク時5xxが約1.3%に達した。特にpull requestsが大きく影響を受け、issues、actions、webhooks、Git operationsや依存サービスにも遅延と断続的エラーが広がった。",
+    "5月5日と6日のGitHub Actionsホストランナー障害では、East USの標準ランナー要求の約13.5%が失敗し、翌6日にはStandard Ubuntu hosted runnersでも約17.1%が失敗した。Copilot code reviewも影響を受け、約8,500件のレビュー要求がタイムアウトした。",
+    "5月26日のActions障害は、自動アカウント審査システムがワークフロー実行とactionsダウンロードに使うサービスアカウントを誤って停止したことが原因だった。10:40から12:16 UTCまでは新規キュー実行がすべて開始できず、PagesやCopilot関連にも波及し、一部のissuesやpull requestsなどが一時的にhiddenになったがデータ消失はなかった。",
+    "5月28日のGitHub Copilot障害は、上流プロバイダーのResponses API問題でGPT-5.2、GPT-5.3-Codex、GPT-5.4、GPT-5.5に高いエラー率が出たことによるものだった。Copilot coding agentとCopilot code reviewも影響を受けた一方、他モデルは影響を受けなかった。"
+  ],
+  "significance": "この報告は、pull requests、GitHub Actions、Copilot、Pages、CodespacesなどGitHubの中核機能を日常的に使う開発者や運用チームに直接関係する。5月の障害では共有データ依存やActions依存を通じて複数サービスへ連鎖する実態が示されており、GitHubはAzure移行、DB分離、ステートレス認証によって恒久的に障害モードを減らす方針を示しているため、今後の安定性改善の進み具合を判断する材料になる。",
+  "summaryEn": "GitHub’s May 2026 availability report says the company saw nine incidents that degraded services across the platform. At the same time, it has moved 40% of monolith traffic to Azure, reached 30% for Git traffic and 99% for repository replication, and more than doubled effective capacity in four months. Major causes included large database migrations, GitHub Actions configuration and service-account failures, and an upstream API issue, with impact spreading across pull requests, Actions, Copilot, Pages, and other services."
+}
