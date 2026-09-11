@@ -1,0 +1,18 @@
+{
+  "summary": "Microsoft Discovery Engine with CLIOは、科学分野向けの長時間・ツール利用タスク評価「Agent’s Last Exam」で、健康・医療61.6%、物理科学75.2%、生命科学64.6%を記録し、記事によれば評価対象の他のエージェント型ハーネスを上回った。Microsoftはこの結果を、複数の推論経路で仮説探索と学習を進めるCLIOの適応的推論の成果として位置づけている。こうした中核技術はMicrosoft Discoveryを通じて、業種横断のR&D組織や科学コミュニティで実務向けに利用できると述べている。",
+  "keyPoints": [
+    "記事によれば、Microsoft Discovery Engine with CLIOは「Agent’s Last Exam」で、健康・医療61.6%、物理科学75.2%、生命科学64.6%を記録し、評価対象の他手法より高いスコアを示した。",
+    "CLIOは、独立した推論経路で問題を探索し、学習内容を比較・共有したうえで、証拠に裏づけられた最良の経路に収束させる。さらに、探索継続、戦略変更、別モデルの利用、専門家の介在を判断できる適応的推論を特徴とする。",
+    "この技術はMicrosoft Discoveryの一部として、あらゆる業界のR&D組織と科学コミュニティで実務利用できる基盤だと説明されている。製品設計、実験、改善を重ねる科学的発想と、問題分解や再現性を重視する工学的実行を組み合わせる企業向けプラットフォームとして位置づけられている。",
+    "実運用面では、Discovery Engine with CLIOが新しい有機レドックスフロー電池の発見を支援した実績がある一方、シリコンチップ向け設計シミュレーション、製造や消費財での配合・工程最適化、材料・分子探索、ラボ自動化にも応用可能性があるとされる。"
+  ],
+  "significance": "恩恵を受けるのは、R&D組織の研究者、科学者、エンジニアである。記事は、科学・工学の難題では不完全な証拠、競合する目的、専門ツールや変化する制約をまたぐため、単発のモデル応答では足りないと説明する。そのため、証拠を保持し、前提を検証し、既存のツールやデータ、ガバナンス、レビュー工程の中で動きつつ、人間が判断を入れる箇所を明確にできる適応型システムとしての意義を示している。",
+  "summaryEn": "Microsoft Discovery Engine with CLIO posted 61.6% in health and medicine, 75.2% in physical sciences, and 64.6% in life sciences on Agent’s Last Exam, and the article says it outperformed the other agentic harnesses evaluated. Microsoft presents this as a result of CLIO’s adaptive reasoning, which explores hypotheses through multiple reasoning paths and learns as it goes. The company says this core capability is available through Microsoft Discovery for real R&D work across industries and the scientific community.",
+  "keyPointsEn": [
+    "According to the article, Microsoft Discovery Engine with CLIO scored 61.6% in health and medicine, 75.2% in physical sciences, and 64.6% in life sciences on Agent’s Last Exam, outperforming the other evaluated agentic harnesses.",
+    "CLIO uses independent reasoning paths to explore a problem, compare and share learning, and converge on the strongest evidence-backed trajectory. It can also decide when to keep exploring, change strategy, use a different model, or bring in a domain expert.",
+    "The article says this technology is available as part of Microsoft Discovery for R&D organizations across industries and the scientific community. It is positioned as an enterprise platform that combines scientific hypothesis-and-experiment workflows with engineering-style decomposition, structured execution, and reproducibility.",
+    "In real-world use, Discovery Engine with CLIO has already supported work that discovered a novel organic redox flow battery, while the article says the same approach has potential in chip design simulation, formulation and process optimization, materials and molecular discovery, and lab automation."
+  ],
+  "significanceEn": "The main beneficiaries are researchers, scientists, and engineers in R&D organizations. The article argues that hard scientific and engineering problems involve incomplete evidence, competing objectives, specialized tools, and changing constraints, so a one-shot model response is not enough. Its significance is in presenting an adaptive system that can preserve evidence, test assumptions, fit into existing tools, data, governance, and review processes, and make clear where human judgment should enter the process."
+}

@@ -1,0 +1,18 @@
+{
+  "summary": "Azure Infrastructure Resiliency Managerが新たに案内され、Azureはアプリケーション単位でレジリエンシー目標や重要度、ギャップを継続評価する運用を前面に出した。あわせてAzure Copilotのresiliency agentで推奨やテンプレート生成を支援し、Azure Managed Disks向けのper-disk resiliencyは一部リージョンでパブリックプレビューとなった。これにより、影響を受けたデータディスクだけを一時的に切り離し、VMや他ディスクの稼働継続を狙う。",
+  "keyPoints": [
+    "Azure Infrastructure Resiliency Managerは、手動レビューや静的評価ではなく、アプリケーションレベルで目標設定、重要度把握、ギャップ特定、ポスチャ評価を継続実施する位置付け。",
+    "同マネージャーはAzure Copilotのresiliency agentを通じてAI支援を提供し、ワークロード記述、耐障害性のあるデプロイテンプレート生成、既存環境評価、目標に沿った推奨提示を行う。",
+    "Azure Managed Disksのper-disk resiliencyは一部リージョンのパブリックプレビューで、長時間の接続断でも影響を受けたデータディスクだけをオフライン化し、復旧後に自動再接続する。",
+    "復旧面ではAzure Infrastructure Resiliency ManagerとAzure Chaos Studioで計画やフェイルオーバー手順を検証し、Azure Backupはimmutable vaultsやsoft delete、multi-user authorizationなどで信頼できる復旧ポイント維持を支援する。"
+  ],
+  "significance": "分散アプリ、AIサービス、ハイブリッド/マルチクラウドを抱える組織ほど影響が大きい。記事は、停止や性能低下、データ損失が事業影響を持つ前提で、設計時の可用性対策だけでなく、変更に伴う継続評価と障害・サイバー攻撃を想定した復旧検証をAzure上で統合して進める必要性を示している。",
+  "summaryEn": "Azure Infrastructure Resiliency Manager has been newly introduced, and Azure is emphasizing continuous application-level assessment of resiliency goals, workload criticality, and gaps. It also adds recommendations and template generation through the resiliency agent in Azure Copilot, while per-disk resiliency for Azure Managed Disks has entered public preview in selected regions. That approach aims to keep VMs and unaffected disks running by temporarily taking only the impacted data disk offline.",
+  "keyPointsEn": [
+    "Azure Infrastructure Resiliency Manager is positioned to continuously handle application-level goal setting, workload criticality, gap identification, and posture assessment instead of relying on manual reviews and static assessments.",
+    "The manager offers AI-assisted support through the Azure Copilot resiliency agent, including workload description, resilient deployment template generation, existing environment assessment, and recommendations aligned to resiliency goals.",
+    "Per-disk resiliency for Azure Managed Disks is in public preview in selected regions; during extended connectivity loss, it can take only the affected data disk offline and automatically reattach it after connectivity is restored.",
+    "For recovery, Azure Infrastructure Resiliency Manager and Azure Chaos Studio are used to validate plans and failover procedures, while Azure Backup supports trusted recovery points with features such as immutable vaults, soft delete, and multi-user authorization."
+  ],
+  "significanceEn": "This matters most for organizations running distributed applications, AI services, and hybrid or multicloud environments. The article argues that because downtime, performance degradation, and data loss can have business consequences, Azure resiliency must cover not only design-time availability measures but also continuous reassessment as systems change and recovery validation for outages and cyberattacks."
+}

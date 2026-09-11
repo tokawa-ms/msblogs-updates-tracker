@@ -1,0 +1,18 @@
+{
+  "summary": "Microsoft Azureの可用性ゾーン設計では、ワークロード全体に一律で3ゾーンを当てるのではなく、コンポーネントごとに2ゾーン、3ゾーン、またはAzure管理のゾーン冗長を選ぶ判断枠組みが示された。単一ゾーン障害への耐性は多くの部品で2ゾーンでも満たせる一方、クォーラムやリーダー選出、最高水準の耐久性目標では第3の障害ドメインや3ゾーン配置が必要になる。さらに、コスト最適化は要件確定の後に行い、実際に使うSKU、階層、リージョン、構成で検証すべきだとしている。",
+  "keyPoints": [
+    "Azureでは、Azure自身が複製とフェイルオーバーを担うzone-redundant resourcesと、利用者が複数ゾーン展開やルーティング、複製、障害検知、復旧を設計するzonal resourcesを分けて考える。",
+    "ステートレスな計算・アプリ・ネットワーク系コンポーネントは、単一ゾーン障害の目標を満たす限り2ゾーンでも十分で、3ゾーンは必須ではない。記事は2ゾーンを妥協ではなく、より単純に配備・試験・運用できる選択肢として位置付けている。",
+    "クォーラム、コンセンサス、リーダー選出を使う状態保持系や、最高水準の耐久性を狙う3レプリカ前提のデータストアでは、3ゾーンや第3の障害ドメインが必要になりやすい。特にレプリカ数が3でも、2ゾーンに偏って配置するとクォーラム喪失を防げない。",
+    "判断はワークロード単位ではなくコンポーネント単位で行い、可用性、整合性・耐久性、コスト・容量を評価した上で、SKU、階層、リージョン、構成ごとのゾーンサポートと、ルーティングや監視、フェイルバックまで検証する必要がある。"
+  ],
+  "significance": "この指針は、Azure上で本番ワークロードを設計するアーキテクトや運用チームにとって、可用性ゾーン数を慣習で決めず、部品ごとの障害許容度と責任分界に基づいて設計する判断材料になる。Microsoft管理のゾーン冗長を使える箇所と、自前で容量、クォーラム、復旧手順まで実証すべき箇所を分けることで、過剰設計や想定より弱い保護を避けやすくなる。",
+  "summaryEn": "For Microsoft Azure availability zone design, the article presents a framework that avoids applying three zones uniformly across an entire workload and instead chooses two zones, three zones, or Azure-managed zone redundancy per component. While many components can meet a single-zone failure objective with two zones, quorum-based systems, leader election, and the highest durability targets may require a third failure domain or three-zone placement. It also says cost optimization should come after requirements are defined and that designs should be validated against the actual SKU, tier, region, and configuration in use.",
+  "keyPointsEn": [
+    "Azure distinguishes between zone-redundant resources, where Azure handles replication and failover, and zonal resources, where the customer must design multi-zone deployment, routing, replication, failure detection, and recovery.",
+    "Stateless compute, application, and network components can often use two zones if they still meet the single-zone failure objective, so three zones are not inherently required. The article frames two zones not as a compromise but as a simpler option to deploy, test, and operate.",
+    "Stateful systems that use quorum, consensus, or leader election, as well as data stores targeting the highest durability with three replicas, are more likely to need three zones or a third failure domain. It also warns that having three replicas does not help if they are placed across only two zones.",
+    "The decision should be made per component rather than per workload, evaluating availability, consistency and durability, and cost and capacity, while validating zone support by SKU, tier, region, and configuration as well as routing, monitoring, and failback behavior."
+  ],
+  "significanceEn": "This guidance matters for architects and operations teams designing production workloads on Azure because it gives them a way to choose availability zone patterns based on each component’s failure tolerance and ownership boundaries rather than habit. By separating the components that can rely on Microsoft-managed zone redundancy from those that must prove their own capacity, quorum handling, and recovery procedures, teams can better avoid both overdesign and weaker protection than assumed."
+}

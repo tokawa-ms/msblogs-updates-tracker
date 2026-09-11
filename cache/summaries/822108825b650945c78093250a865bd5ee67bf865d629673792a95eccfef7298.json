@@ -1,0 +1,18 @@
+{
+  "summary": "Power BI Q&Aは廃止予定日が2026年12月から2027年2月へ延長され、2027年2月以降はPower BI内で動作せず、Q&Aビジュアルも削除されます。移行先としてCopilot系機能が案内され、CopilotはF2以上のFabric容量で利用可能になり、Fabric Copilot CapacityもF2以上で作成可能になりました。一方で、埋め込みQ&AのPaaSシナリオ向けに直接のCopilot代替はなく、ソブリンクラウドも未対応です。",
+  "keyPoints": [
+    "廃止対象はレポート、ダッシュボード、モバイル、埋め込み分析、Q&A設定ツールまで含み、2027年2月以降は既存レポート内のQ&Aビジュアルもエラー表示になります。",
+    "CopilotはFabric容量のF2以上で利用可能になり、従来はP1/F64以上に限られていたFabric Copilot CapacityもF2以上で作成可能になりました。FCCはProおよびPPUワークスペースを含む割り当てユーザーのCopilot利用を1つの容量に集約する任意の方式です。",
+    "埋め込みQ&AのPaaSシナリオには直接のCopilot代替提供予定がなく、利用組織は2027年2月の廃止前に、SaaS移行やNarrative visual、smart narrative summaries、Fabric IQ MCP Serverなどの代替を評価する必要があります。",
+    "ソブリンクラウドではGPU可用性の理由でCopilotがまだサポートされておらず、Q&Aを使っている組織は依存関係を確認したうえで、Microsoft担当者またはサポートと移行策を協議する必要があります。"
+  ],
+  "significance": "Power BI Pro中心でQ&Aを使ってきた組織には、より小さいF2容量でもCopilot移行を評価できる余地が広がる一方、埋め込みPaaSやソブリンクラウドの利用者は代替手段や提供状況が限定されます。そのため、影響を受けるのは単なるQ&A利用者だけでなく、既存のレポート、埋め込み統合、運用環境の制約を持つチーム全体であり、2027年2月までに依存関係の棚卸しと移行計画が必要です。",
+  "summaryEn": "Power BI Q&A’s retirement has been extended from December 2026 to February 2027, and after that point it will stop working in Power BI and the Q&A visual will be removed. Microsoft points customers to Copilot-based alternatives, with Copilot now available on Fabric capacities starting at F2 and Fabric Copilot Capacity creatable on F2 and above. However, there is no direct Copilot replacement for embedded Q&A PaaS scenarios, and sovereign clouds are still unsupported.",
+  "keyPointsEn": [
+    "The retirement covers reports, dashboards, mobile, embedded analytics, and Q&A configuration tools, and after February 2027 existing reports with Q&A visuals will show errors.",
+    "Copilot is now available on Fabric capacities starting at F2, and Fabric Copilot Capacity, previously limited to P1/F64 and above, can now be created on F2 and higher. FCC is an optional way to centralize Copilot usage for assigned users, including Pro and PPU workspaces, on one capacity.",
+    "There are no current plans for a direct Copilot replacement for embedded Q&A PaaS scenarios, so organizations using it need to evaluate alternatives such as SaaS transitions, Narrative visual, smart narrative summaries, and Fabric IQ MCP Server before the February 2027 retirement.",
+    "Copilot is not yet supported in sovereign clouds because of GPU availability, so organizations using Q&A there need to review dependencies and discuss migration options with Microsoft representatives or support."
+  ],
+  "significanceEn": "For organizations that mainly used Q&A with Power BI Pro, the update creates a path to evaluate Copilot on smaller F2 capacities, while users in embedded PaaS and sovereign cloud environments still face limited replacement and availability options. That means the impact extends beyond ordinary Q&A users to teams responsible for existing reports, embedded integrations, and constrained operating environments, all of which need dependency reviews and migration planning before February 2027."
+}
