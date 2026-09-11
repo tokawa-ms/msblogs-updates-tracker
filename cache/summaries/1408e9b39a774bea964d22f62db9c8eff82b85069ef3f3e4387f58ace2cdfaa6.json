@@ -1,0 +1,12 @@
+{
+  "summary": "Copilot in web modeling（プレビュー）は、Power BIサービスで今月から順次展開される、セマンティックモデルを自然言語で分析・改善するAI支援機能だ。モデル作成画面で会話しながら命名の整理や主要メトリック整備を進められ、テーブル名や列名の変更、リレーション作成、DAXメジャー生成も行える。既存のPower BI権限を尊重し、各セッション開始時の許可取得と自動の復元チェックポイントで変更を管理する。",
+  "keyPoints": [
+    "プレビュー版としてPower BIサービスで今月から順次展開される。",
+    "モデルの命名不整合や不明瞭な構造を見つける分析支援があり、会話形式でモデルを精査・改善できる。",
+    "テーブル名・列名の変更、リレーション作成、DAXメジャー生成を含むスキーマ更新を実行できる。",
+    "既存のPower BI権限を前提に、Admins、Members、Contributorsがアクティブなモデルを変更でき、各セッション開始時に許可が求められる。",
+    "利用手順は、Power BIサービスのModel viewでセマンティックモデルを開き、Editing modeに切り替え、リボンからCopilotを選ぶ。"
+  ],
+  "significance": "Power BIサービスでセマンティックモデルを編集するAdmins、Members、Contributorsにとって、命名整理や指標作成、関係設定を自然言語の対話で進められるため、手動編集の負担を減らしやすい点が重要だ。既存権限を尊重し、分析や更新の前に許可を取り、自動の復元チェックポイントも作られるので、変更管理を保ちながら利用できる。",
+  "summaryEn": "Copilot in web modeling (Preview) is rolling out this month in the Power BI service as an AI assistant for analyzing and improving semantic models with natural language. In the model authoring experience, it can help clean up naming and build key metrics, while also making schema changes such as renaming tables and columns, creating relationships, and generating DAX measures. It respects existing Power BI permissions, requires approval at the start of each session, and automatically creates a restore checkpoint for reverting changes."
+}

@@ -1,0 +1,11 @@
+{
+  "summary": "Power BIではOracle接続のプレビュー機能が追加され、Power BI DesktopにOracle Managed ODP.NETプロバイダーが同梱され、Power BIサービスからはOracle Autonomous DatabaseなどのOracleクラウドへデータゲートウェイなしで直接接続できるようになった。これによりImportとDirectQueryで追加クライアント導入が不要になる一方、オンプレミス接続やシングルサインオンでは引き続きサポート対象のゲートウェイ構成が必要になる。",
+  "keyPoints": [
+    "Power BI DesktopではOracle Managed ODP.NETプロバイダーが標準同梱され、Preview featuresでImport用とDirectQuery用の2つのスイッチを有効にすると、既存のOracle database connectorから追加クライアントなしで使える。",
+    "Power BIサービスでは、Oracle Autonomous Databaseや他のOracleクラウドエンドポイント向けにゲートウェイ不要のクラウド接続を作成できる。Autonomous Databaseでは .oraclecloud.com で終わるエンドポイントURLを使い、その接続をImportまたはDirectQueryのセマンティックモデルへバインドする。",
+    "両プレビューはOracle Database 12c（12.1.0.2）以降とOracle Autonomous Databaseの全バージョンをサポートする。加えて、Microsoft Entra IDトークンはOracle Database 19c Release 20以降、Oracle 23ai、Oracle Autonomous Databaseで利用でき、Power BI Desktop June 2024以降が必要とされる。",
+    "更新後のOracleコネクタは個人用ゲートウェイをサポートせず、既存のセマンティックモデルはデータ接続バインドを更新するまで使い続けられるが、更新後は個人用ゲートウェイへ戻せない。オンプレミスや既存の個人用ゲートウェイ利用環境では、エンタープライズ オンプレミス データゲートウェイまたはVNETゲートウェイへの移行が案内されている。"
+  ],
+  "significance": "OracleデータベースをPower BIに接続する利用者、とくにクラウド上のOracle環境を扱うチームにとっては、これまで必要だった追加プロバイダー導入やゲートウェイ展開を減らし、接続準備を簡素化できる点が重要だ。一方で、オンプレミス接続やシングルサインオン、個人用ゲートウェイ運用を続ける管理者には、サポート対象の接続方式へ切り替える計画が必要になる。",
+  "summaryEn": "Power BI has introduced preview Oracle connectivity improvements: Desktop now bundles the Oracle Managed ODP.NET provider, and the Power BI service can connect directly to Oracle cloud databases such as Oracle Autonomous Database without a data gateway. This removes extra client installation for Import and DirectQuery, but on-premises and single sign-on scenarios still require supported gateway configurations."
+}

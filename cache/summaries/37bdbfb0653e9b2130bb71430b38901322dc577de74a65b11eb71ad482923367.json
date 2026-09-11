@@ -1,0 +1,12 @@
+{
+  "summary": "GitHub Advisory Databaseでは脆弱性流入が急増し、2026年5月に1,560件のレビュー済みアドバイザリを公開したものの処理が追いつかず、新規公開までの時間が1週間前後から複数週へ延びている。一方でレビュー済みデータは引き続き人手で検証され、既存アラートやデータ整合性は維持されている。GitHubはキュレーション基盤の増強、AI支援調査、上流データ連携の改善を進め、報告者には完全な脆弱性データと公開意図のあるCVE申請を求めている。",
+  "keyPoints": [
+    "2026年3〜5月は毎月6,000件超の判断を継続し、プライベート脆弱性報告は週約550件から5月の大半で週3,000件超、リポジトリアドバイザリは週約650件から週5,000件超、GitHub CNAのCVE申請は5月だけで約4,000件に達した。",
+    "ボトルネックは品質低下ではなくスループットで、レビュー済みアドバイザリの精度やデータ基盤は維持され、CVE採番率も急増期間を通じて91〜94%だった。",
+    "処理遅延の背景には、曖昧なパッケージ名の特定、実際のリリース履歴に合う影響バージョン範囲の再構成、複数エコシステム横断の検証、上流データの矛盾解消といった調査負荷の高い案件増加がある。",
+    "Dependabotの既存アラートは影響を受けず、APIやフィード利用者もレビュー済みデータの正確性は維持されるが、新規アドバイザリの反映は遅れる可能性がある。",
+    "GitHubはキュレーション基盤の増強、AI支援調査、上流CVE情報処理の自動化を進める一方、コミュニティには完全な脆弱性データ提出と、公開意図のある場合に限ったCVE申請を求めている。"
+  ],
+  "significance": "影響を受けるのはDependabot利用者やAPI/フィード利用者、メンテナー、研究者で、レビュー遅延は新規アラートや公開反映のタイミングを遅らせうる一方、レビュー済みデータ自体の正確性は維持される。そのため下流の利用者は信頼性を保ったまま利用を続けられるが、速度改善は報告者が完全なデータを出し、メンテナーや研究者が緊密に調整するかに左右される。",
+  "summaryEn": "The GitHub Advisory Database is dealing with a sharp surge in vulnerability intake; although it published 1,560 reviewed advisories in May 2026, review times for new entries have stretched from about a week to multiple weeks. Reviewed data quality, data integrity, and existing alerts remain intact. GitHub is expanding curation capacity, AI-assisted research, and upstream data improvements while asking reporters to submit complete data and request CVEs only when they intend to publish."
+}

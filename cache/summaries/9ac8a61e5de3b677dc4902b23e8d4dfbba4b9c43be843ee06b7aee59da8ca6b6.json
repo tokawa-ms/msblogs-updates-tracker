@@ -1,0 +1,11 @@
+{
+  "summary": "Azure ArcとAzure Virtual Desktopの組み合わせにより、Microsoftの物理セキュリティ運用基盤は、世界中のデータセンターに分散したサーバーと運用アプリを共通モデルで管理できるようになった。ワークロードをAzureへ移さずに可視化、ガバナンス、自動化を集約し、パッチ適用や構成管理の負荷を下げた。さらにアプリ環境を対象インフラの近くへ移してAzure Virtual Desktop経由で提供し、アプリ起動時間は約12倍、リリースサイクルは約6倍改善した。",
+  "keyPoints": [
+    "Azure Arcは、現地近接性や自律運用を維持する必要がある物理セキュリティ向けワークロードをAzureへ移さず、Azureのコントロールプレーンから管理するために採用された。",
+    "Azure Update Managerで分散環境のパッチ作業を集中管理し、チームによれば自動化で年間数千時間を削減した。あわせてAzure Policy、Guest Configuration、Azure Monitor、Log Analyticsで構成逸脱やシステム健全性を継続監視した。",
+    "Azure Virtual Desktopではアプリ実行環境を対象インフラの近くへ移し、セッション経由で提供したことで、オペレーターが使う重要ツールの起動時間が約12倍改善した。",
+    "集中イメージ管理と自動ホスト刷新により、承認済みイメージからホストを再構築して一貫展開できるようになり、リリースサイクルは約6倍高速化した。以前は数週間から数か月かかった更新も数時間で完了できるようになった。"
+  ],
+  "significance": "この事例は、システムを現地に残したまま世界規模で統制したい運用チーム、特にデータセンターや物理セキュリティのようなハイブリッド環境の担当者に関係する。Azure Arcで分散サーバーの共通管理とガバナンスを行い、Azure Virtual Desktopで操作者向けの一貫した利用体験と詳細なセッション監視を得ることで、少人数でも拡大する運用基盤を支えやすくなることを示している。",
+  "summaryEn": "By combining Azure Arc and Azure Virtual Desktop, Microsoft’s physical security operations created a common model for managing servers and operational apps spread across its global datacenter footprint. Without moving workloads into Azure, the team centralized visibility, governance, and automation across hybrid infrastructure and reduced patching and configuration effort. Moving the app environment closer to the supporting infrastructure and delivering it through Azure Virtual Desktop improved app launch times by about 12x and release cycles by about 6x."
+}

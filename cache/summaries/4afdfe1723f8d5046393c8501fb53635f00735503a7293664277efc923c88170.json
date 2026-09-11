@@ -1,0 +1,11 @@
+{
+  "summary": "VS CodeのRemote Developmentでは、既存のリモート環境でGitHub Copilotを使いやすくし、ローカルで利用中ならリモート側へ自動導入されるよう案内している。あわせて、リモート環境向けのカスタム指示、Remote - SSHのチャット参加者、エージェントモードのツール自動承認を組み合わせる運用が紹介された。特にDev Containersでは、イメージやFeaturesに含めた指示を取り込み、環境に即した応答や隔離された作業を進めやすくする構成が示されている。",
+  "keyPoints": [
+    "GitHub Copilotをローカルで使っていれば、リモート接続時にリモート側へ自動インストールされ、GitHub Codespacesでも設定済みだと説明している。",
+    "Dev Containers向けには、公開しているイメージやFeaturesにカスタム指示を含めるようになり、プロジェクトのdevcontainer.json側の指示ともマージできる。設定には\"github.copilot.chat.codeGeneration.instructions\"を使う。",
+    "Remote - SSH拡張機能にはCopilotのチャット参加者があり、@remote-sshでリモート環境の設定やトラブルシュートを支援できる。接続失敗時にはDiagnose with Copilotで問題の把握を速める流れが示されている。",
+    "実験的なchat.tools.autoApprove設定を使うと、dev containerやremote machineに限って全ツールを自動承認できる。ただし有効化すると、モデルが望む破壊的操作を取り消す機会がなくなり、ローカルマシンの一部や資格情報に触れる環境ではリスクが異なる。"
+  ],
+  "significance": "SSHやコンテナ、Codespacesなどのリモート環境で開発する人にとって、ワークスペースの文脈を保ったままAI支援でセットアップ、接続デバッグ、自律的な作業を進めやすくなる点が重要だ。一方で、ツール自動承認はファイル削除やローカル設定変更のような操作にも及び得るため、環境の隔離度や資格情報へのアクセス条件によって影響が変わる。",
+  "summaryEn": "VS Code Remote Development is being positioned to work more smoothly with GitHub Copilot across existing remote setups, including automatically installing Copilot on the remote side when it is already used locally. The post highlights using custom instructions for remote environments, the Remote - SSH chat participant, and experimental tool auto-approval for agent mode. In particular, Dev Containers can pull in instructions from images and Features so AI responses and autonomous work better match the environment while staying more isolated."
+}

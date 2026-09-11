@@ -1,0 +1,12 @@
+{
+  "summary": "Azure Filesは、Linux向けのフルマネージドファイルストレージとして、NFSベースのモダンLinuxワークロード向け機能を拡充した。AI推論では新しいZonal placementとprovisioned v2 billing modelにより、GPU VMと同一ゾーン配置やIOPS・スループットの個別調整を可能にする。AKS向けにはCSI driver連携に加え、新しいfile share experienceで1サブスクリプション・1リージョン当たり最大10,000共有と約2.5倍高速なプロビジョニングをうたい、既存NFSアプリ向けにAzure Storage MoverとAzure Migrate support for NFSも打ち出した。",
+  "keyPoints": [
+    "AI推論では、モデル重みを各レプリカが個別に持つのではなく共有ファイル共有から同時に読み込めるため、コンテナイメージの肥大化や重複コピーを避けつつ、小規模から中規模モデルでは新規レプリカを数秒で立ち上げられるとしている。Linux NFSのnconnectマウントオプションにも対応する。",
+    "AIやデータ集約型ワークロード向けには、新しいZonal placementでGPU仮想マシンと同じ可用性ゾーンにファイル共有を配置でき、provisioned v2 billing modelでIOPSとスループットを独立して設定できる。",
+    "クラウドネイティブ領域では、Azure Files CSI driverを通じてAKSと統合し、StorageClassesによる動的プロビジョニング、拡張可能な永続ボリューム、ReadWriteManyの共有アクセスを提供する。さらに新しいfile share experienceは、1サブスクリプション・1リージョン当たり最大10,000共有と約2.5倍高速なプロビジョニングをうたう。",
+    "既存のLinux/NFS業務アプリ移行向けには、Azure Storage MoverとAzure Migrate support for NFSで評価・計画・移行を支援し、運用開始後はsnapshots、soft delete、NFSのencryption in transitで復旧性と保護を強化できるとしている。",
+    "パートナーやISV向けには、独自APIではなくSMB 3.xとNFS 4.1の標準プロトコルを前面に出し、NFS Snapshot、Soft Delete、NFS shares向けREST APIを通じてBCDR、データ移動、管理、アプリ連携を組み込みやすくした。"
+  ],
+  "significance": "恩恵を受けるのは、GPUを使うAI推論基盤、AKSでRWX共有ストレージを必要とするクラウドネイティブ運用、既存のLinux/NFS業務アプリをAzureへ移す企業、そしてSMB 3.xやNFS 4.1前提で統合するISVやパートナーだ。Azure Filesが標準プロトコルと移行・保護機能をまとめて提供することで、既存アプリを大きく変えずに共有ストレージをAzureへ集約しやすくなる。",
+  "summaryEn": "Azure Files expanded its support for modern Linux workloads with new NFS-focused capabilities. For AI inference, new zonal placement and the provisioned v2 billing model enable same-zone placement with GPU VMs and independent tuning of IOPS and throughput. For AKS and migrations, Microsoft also highlights CSI integration, a new file share experience with up to 10,000 shares per subscription per region and about 2.5x faster provisioning, plus Azure Storage Mover and Azure Migrate support for NFS."
+}

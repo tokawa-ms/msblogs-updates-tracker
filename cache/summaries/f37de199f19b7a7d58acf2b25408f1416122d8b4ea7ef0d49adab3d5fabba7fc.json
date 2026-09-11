@@ -1,0 +1,11 @@
+{
+  "summary": "Power BIの「Starburst secured by Entra ID」コネクタで、Microsoft Entra IDシングルサインオンのプレビューが追加され、DirectQueryレポート閲覧者は固定アカウントではなく自分のEntra IDでStarburstに認証されるようになった。これにより、Starburst側の行レベル・列レベルのアクセス制御が実ユーザー単位で適用される。既存の「Starburst」コネクタは継続利用でき、Entra ID SSOが必要な場合のみ新コネクタへ切り替える。",
+  "keyPoints": [
+    "SSO対応は新しい「Starburst secured by Entra ID」コネクタで提供され、既存レポート向けの元の「Starburst」コネクタも引き続き利用できる。",
+    "このコネクタはオンプレミス データ ゲートウェイ経由でImportとDirectQueryの両方をサポートするが、Entra ID SSOが関係するのはDirectQueryのみで、閲覧時にはユーザーのEntra IDトークンがゲートウェイ経由でStarburstに渡される。",
+    "有効化にはPower BI管理ポータル上のテナント設定2つとデータコネクタ設定1つが必要で、テナント管理者権限が要る。具体的には「Enable Starburst SSO」と「Microsoft Entra single sign-on for data gateway」をオンにし、接続側で「Use SSO via Azure AD for DirectQuery queries」を選択する。",
+    "既存の元のStarburstコネクタ利用者は必ずしも移行不要で、監査やコンプライアンスの理由で全ユーザーに単一接続資格情報を使えない場合などに、新コネクタへ切り替える位置づけになっている。"
+  ],
+  "significance": "StarburstをPower BIのDirectQueryで使う組織、特に利用者ごとのデータ権限適用や監査・コンプライアンス要件がある環境にとって重要な変更だ。レポート閲覧者のEntra IDをそのままStarburstまで渡せるため、固定接続アカウントではなく実ユーザー単位でStarburstの認可ポリシーを適用しやすくなる。一方でこれはプレビュー機能であり、既存のStarburstコネクタ利用者に一律の移行は求められていない。",
+  "summaryEn": "Power BI is previewing Microsoft Entra ID SSO in the new Starburst secured by Entra ID connector, allowing DirectQuery report viewers to authenticate to Starburst with their own identities so Starburst policies apply per user. The original Starburst connector remains available, and migration is only needed if Entra ID SSO is required."
+}

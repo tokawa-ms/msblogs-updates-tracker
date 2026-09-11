@@ -1,0 +1,11 @@
+{
+  "summary": "Azure Key Vault Managed HSM向けのExternal key managementがパブリックプレビューとなり、鍵素材をAzure外の自社運用HSMや信頼できる第三者のHSMに保持できるようになった。アプリケーションはManaged HSMとAzure Key Vault APIを従来どおり使いながら、必要な暗号処理だけを外部HSMに委譲できる。プレビュー開始時点では全Azureパブリックリージョンが対象だが、利用はゲート制でMicrosoftアカウントチームへの申請が必要だ。",
+  "keyPoints": [
+    "外部鍵はMicrosoftインフラ内に保存も通過もしない設計で、利用者が管理するハードウェア側だけで使われる。必要ならそのハードウェアを切り離して、関連する暗号処理を停止できる。",
+    "対象はManaged HSMを使ったカスタマー管理キー対応Azureサービスの保存データ保護で、Managed HSMの全ての鍵操作を外部化する機能ではない。制御を広げる代わりに、使える操作範囲は意図的に限定されている。",
+    "運用責任の一部は利用者側に移り、外部HSMプロキシやHSM自体の可用性、プロビジョニング、保護、拡張、監視、復旧を自社またはパートナーで担う必要がある。障害はManaged HSMのログに現れるが、切り分けと解決は利用者責任となる。",
+    "プレビュー開始時の提供範囲は全Azureパブリックリージョンで、利用開始にはMicrosoftアカウントチームによる有効化が必要。料金はManaged HSMの標準価格のままでMicrosoftの追加課金はなく、ハードウェア費用やパートナーライセンス費用は利用者負担となる。"
+  ],
+  "significance": "政府、金融、重要インフラなど、規制や契約上の理由で暗号鍵をクラウド事業者環境の外に置かなければならない組織にとって、既存のManaged HSMとAzure Key Vault APIの使い方を大きく変えずに要件を満たす選択肢になる。一方で、外部HSMの可用性や運用は利用者側の責任になるため、広く一般向けの強化策というより、こうした厳格な主権・規制要件を持つ組織ほど影響が大きい。",
+  "summaryEn": "External key management for Azure Key Vault Managed HSM has entered public preview, allowing key material to stay on customer-owned or trusted third-party HSMs outside Azure. Applications can keep using Managed HSM and the Azure Key Vault API as before while delegating relevant cryptographic operations to the external HSM. At preview launch it is available in all Azure public regions, but access is gated and must be enabled through a Microsoft account team."
+}

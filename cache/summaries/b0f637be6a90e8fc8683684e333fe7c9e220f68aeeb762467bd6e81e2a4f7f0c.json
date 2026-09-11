@@ -1,0 +1,12 @@
+{
+  "summary": "GitHub CopilotのNext Edit Suggestions（NES）がVisual Studio Code向けにプレビュー公開され、既存コードに対する次の関連編集を提案できるようになった。利用には github.copilot.nextEditSuggestions.enabled を有効化し、設定反映のためVS Codeの再読み込みが必要で、提案はガターの矢印表示やTab操作で受け入れられる。Copilot Business/Enterpriseでは組織管理者によるEditor Preview Featuresのオプトインも必要で、記事では誤記修正、ロジック修正、意図変更、関連ファイル更新、リファクタリングでの活用例が示されている。",
+  "keyPoints": [
+    "NESは既存コード向けの編集提案機能としてプレビュー提供され、単一シンボルから複数行までの変更候補を提示する。",
+    "利用開始には github.copilot.nextEditSuggestions.enabled を有効化し、VS Codeを再読み込みする必要がある。提案はガターの矢印で示され、Tabキーで移動・確定する。",
+    "Copilot BusinessまたはEnterpriseの利用者は、個人設定に加えて組織管理者が Copilot の Editor Preview Features を有効化しなければ使えない。",
+    "記事では、typoや論理式の誤り検出、クラス変更に伴う追随修正、新規コマンド追加後の extension.ts と package.json の更新、命名変更に合わせたリファクタリングなどをNESの例として挙げている。",
+    "同じ投稿では、Copilot Editsのagent modeが先週のVS Code Insidersリリースから選択可能になったことと、VisionがInsidersで本日から全員利用可能だが現時点ではGPT 4oのみ対応で、JPEG/JPG、PNG、GIF、WEBPをサポートすると案内している。"
+  ],
+  "significance": "既存コードの修正や関連箇所の追随更新が多い開発者にとって、NESは従来の補完を越えて次に必要な編集候補を示す点が重要だ。特に誤り修正、意図変更、リファクタリング時の補助が想定されており、Business/Enterprise利用者は管理者のポリシー設定も関わるため、個人利用者だけでなく組織管理者にも影響する。",
+  "summaryEn": "GitHub Copilot's Next Edit Suggestions (NES) is now in preview for Visual Studio Code, adding AI suggestions for the next relevant edits to existing code. Users must enable github.copilot.nextEditSuggestions.enabled and reload VS Code, then use gutter arrows and Tab to navigate and accept suggestions. Copilot Business and Enterprise users also need an admin opt-in for Editor Preview Features, and the article shows examples such as fixing mistakes, updating related files, handling intent changes, and refactoring."
+}

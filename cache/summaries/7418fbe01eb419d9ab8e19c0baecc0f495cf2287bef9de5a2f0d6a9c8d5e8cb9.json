@@ -1,0 +1,11 @@
+{
+  "summary": "GitHub Copilot agent modeは、コードベース解析から関連ファイルの読取り、編集提案、ターミナル実行、テストまでを自律的に繰り返すコーディング支援機能だ。本文ではプレビューとして全VS Code Insidersユーザー向け提供が説明され、ページ冒頭の追記ではVS Code Stable対応とMCPサーバー対応も案内されている。ターミナル操作は承認制で、問題があればUndo Last Editで巻き戻せる。",
+  "keyPoints": [
+    "agent modeは、関連コンテキストの自動特定、コード変更とターミナルコマンドの提示、コンパイルやテスト結果の監視、エラー修正の反復までを一連のツール呼び出しで進める。",
+    "使い方はVS Code InsidersのCopilot EditsビューでAgentを選んでプロンプトを入力する形で、必要に応じて#file、Add Files、specifications.md、custom instructionsで文脈や指示を明示できる。",
+    "運用面では、1回のプロンプトで複数リクエストを送るためedits modeより遅く、無料のCopilot利用枠を早く消費し得る。記事は、明確でスコープの狭い作業はedits mode、複数編集やよりオープンエンドな作業はagent modeを使い分けるよう案内している。",
+    "提供状況は本文ではプレビューのInsiders向けだが、ページ冒頭ではStableとMCPサーバー対応が追記されている。今後はfine-grained undo、working set UI簡素化、Notebook support、特定ターミナルコマンドの自動承認などを計画し、Stable全体展開を目指す。"
+  ],
+  "significance": "複数ファイルにまたがる実装、テスト、リファクタリングをVS Code内で進めたい開発者にとって、自律的にワークスペース探索やコマンド実行まで行う支援が加わる点が重要だ。一方で、VS Codeチーム自身は小規模リポジトリでの有効性を認めつつ、大規模コードベースの複数ファイル横断リファクタリングはなお難しいとしており、現時点で恩恵を受けやすい場面と限界の両方が示されている。",
+  "summaryEn": "GitHub Copilot agent mode is an autonomous coding assistant that can analyze a codebase, read files, propose edits, run terminal commands, and execute tests in a loop. The article describes it as a preview for all VS Code Insiders users, while the page note now says it is available in VS Code Stable with MCP server support. Terminal actions still require approval, and users can roll back changes with Undo Last Edit."
+}

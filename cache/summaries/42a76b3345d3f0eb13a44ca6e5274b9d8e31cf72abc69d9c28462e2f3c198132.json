@@ -1,0 +1,12 @@
+{
+  "summary": "Microsoft FoundryでOpenAIのGPT-5.6シリーズが一般提供され、Asia-Pacific Data ZoneもGAになった。併せてFoundry Agent Serviceではホスト型エージェント、Toolboxes、Voice LiveがGAとなり、TeamsとMicrosoft 365 Copilotへの公開は来週GA、一部の継続実行や記憶・ROI関連機能はまだプレビュー段階にある。",
+  "keyPoints": [
+    "GPT-5.6 Sol、Terra、Lunaを用途別に提供し、Solは高度な推論、Terraは日常業務向けのバランス、Lunaは高速・低コスト向けと位置付けられている。最新のGPT-5.6は既存28グローバルリージョン向けGlobal Standard/Global Priority、Data Zones Standard、Global Provisionedで初日から利用可能。",
+    "Standard Globalの価格は100万トークン当たり、Solが入力5.00ドル・出力30.00ドル、Terraが入力2.00ドル・出力12.00ドル、Lunaが入力0.20ドル・出力1.20ドル。Solは2026年9月1日から少なくとも11月30日まで、入力4.00ドル・出力20.00ドルのプロモ価格が適用される。",
+    "APAC Data ZoneはGAとなり、APACの顧客はデータ処理をアジア太平洋地域内に保ちながらフロンティアOpenAIモデルを実行できる。別環境を継ぎはぎで用意する必要がない点も明記された。",
+    "Foundry Agent Serviceでは、任意のフレームワークで作ったエージェント向けのホスト型実行基盤がGAとなり、VNet統合によるネットワーク分離、Voice Live、ToolboxesもGAになった。",
+    "公開時点で機能の提供段階は分かれており、TeamsとMicrosoft 365 Copilotへの公開は来週GA、レジリエントタスクはprivate preview、Memory and routinesはpublic preview、ROI for agentsはprivate preview。"
+  ],
+  "significance": "既にFoundryでAIエージェントを開発している企業、特にAPACでデータ処理の地域内保持が必要な組織や、TeamsやMicrosoft 365 Copilotに配布したい開発チームへの影響が大きい。モデル選択、リージョン内実行、本番ランタイム、配布先、可観測性を単一プラットフォームにまとめ、分断したツールを組み合わせずに実験から本番へ移しやすくする位置付けだからだ。",
+  "summaryEn": "Microsoft Foundry has generally released the GPT-5.6 series and the Asia-Pacific Data Zone. It also made hosted agents, Toolboxes, and Voice Live generally available in Foundry Agent Service, while publishing to Teams and Microsoft 365 Copilot becomes GA next week and some persistence, memory, and ROI features remain in preview."
+}

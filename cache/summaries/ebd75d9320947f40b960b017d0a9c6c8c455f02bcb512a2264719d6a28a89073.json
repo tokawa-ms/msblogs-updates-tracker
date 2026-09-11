@@ -1,0 +1,12 @@
+{
+  "summary": "Visual Studio Codeの2026年2月リリース（1.110）では、エージェントを実運用の開発で使いやすくするため、挙動の制御、ツール連携、セッションをまたぐ文脈保持が強化された。大きな出力の扱い、共有メモリー、/compactによる文脈整理に対応し、長時間の作業でも重要情報を保ちやすくなった。さらに、hooksやスキル、統合ブラウザーなどが加わり、編集から確認までをVS Code内で進めやすくした。",
+  "keyPoints": [
+    "大きな差分やログは一時ファイルへストリーミングし、関連情報を優先して扱うようになった。エージェントのメモリーはcoding agents、CLI、code reviewで共有され、/compactで保持・破棄する情報を手動指定できる。",
+    "応答生成中でも途中介入して方針を修正でき、現在の作業後に続けて実行する依頼をキュー化して順序も変更できる。加えて、/forkやチェックポイントから会話を分岐し、元の文脈を引き継いだ別案検討が可能になった。",
+    "hooksは主要なライフサイクルイベントで決定的に実行され、編集前のlint、保護設定ファイルの変更ブロック、ロジック変更時のテスト実行などのガードレールを自動化できる。記事ではセッション終了時に未コミット変更を検出して自動コミット・pushするstop hookも示した。",
+    "スキルは/tests、/explain、/fixなどのスラッシュコマンドとして呼び出せ、統合ブラウザーではエージェントがアプリを直接開いてUI変更を確認できる。Copilot CLIもVS Codeに統合され、diff tabs、trusted folder sync、コード片送信、/ideでの接続管理に対応した。",
+    "VS CodeチームはフィードバックをVS Codeリポジトリのdiscussionやissue、SNSで受け付けるとしており、今回のリリース内容を扱うlivestreamを2026年3月19日午前8時PSTに予定している。"
+  ],
+  "significance": "大規模コードベースを扱う開発者や、規約・検証を自動化したいチームに影響が大きい。エージェントがセッションをまたいでコードベースの知識や過去タスクの学びを引き継ぎ、CLIとエディターでも文脈を共有するため、前提説明を繰り返さずに作業を継続しやすい。さらに、UI確認やポリシー適用をVS Code内で進めやすくなる。",
+  "summaryEn": "Visual Studio Code 1.110, the February 2026 release, strengthens agent controls, tool integration, and cross-session context retention to make agents more practical for real development. It improves large-output handling, shared memory, and manual /compact control for long sessions, while adding hooks, skills, and integrated browser workflows so editing and validation can stay inside VS Code."
+}

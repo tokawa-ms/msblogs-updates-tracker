@@ -1,0 +1,11 @@
+{
+  "summary": "Microsoft 365 Copilot Chat で、Power BI データを直接照会して最新の回答や文脈付きインサイトを返す機能が前面に打ち出された。回答は Power BI のセマンティック モデルの業務ロジックに基づき、利用には Microsoft 365 Copilot ライセンスが必要だ。加えて Copilot Cowork でも Power BI を使った複数段階の分析や後続作業の委任が可能で、こちらは定額ではなく従量課金とされる。",
+  "keyPoints": [
+    "Microsoft 365 Copilot Chat は Power BI データを直接照会し、セマンティック モデルの業務ロジックに基づく最新の回答を返す。利用には Microsoft 365 Copilot ライセンスが必要。",
+    "Copilot Cowork では Power BI データを基に、複数段階の分析やメール送信、議題更新、レビュー設定などの後続作業まで一連で実行できる。独自スキルやプラグインで拡張でき、料金は従量課金。",
+    "Power BI Standalone Copilot は Preview で、近く Microsoft 365 Copilot のよりリッチな体験へアップグレードされる予定。会話履歴、回答に使う LLM の切り替え、管理者向けの感度ラベル対応や集中管理が追加される。",
+    "Power BI 内の Report Copilot は GA のまま継続サポートされ、Microsoft 365 側の新しい体験を支えるのと同じデータ回答ツールに更新される。一方で、今後の主な投資先は Microsoft 365 Copilot と Copilot Cowork と明示された。"
+  ],
+  "significance": "既に Power BI のセマンティック モデルを整備している組織の利用者と管理者に影響が大きい。利用者は文書やメールと同じ Microsoft 365 Copilot の導線で、Power BI に基づく根拠ある回答や複数段階の分析を受けられるため、レポート探索や手動解釈の手間を減らせる。管理者には感度ラベル対応や集中管理が加わる方向が示され、ガバナンスを保ったまま運用しやすくなる。",
+  "summaryEn": "Microsoft 365 Copilot Chat now directly queries Power BI data to return up-to-date, contextual answers grounded in semantic model business logic, and it requires a Microsoft 365 Copilot license. Power BI data is also available in Copilot Cowork for multi-step analysis and delegated follow-up work, and that offering is pay-per-use rather than flat-rate."
+}

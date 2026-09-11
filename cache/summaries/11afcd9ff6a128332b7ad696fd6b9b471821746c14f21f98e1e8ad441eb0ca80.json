@@ -1,0 +1,12 @@
+{
+  "summary": "GitHub Podcastの最新エピソードでは、開発現場で増えているAI用語の意味と使い分けを整理し、loop engineeringやRalph loops、squads、harness engineering、hill climbing、モデルの公開形態の違いをまとめている。記事は、単発プロンプトから反復可能なエージェント運用へ進む考え方や、複数エージェントの分業、モデルを取り巻く仕組みや改善方法までを、開発ワークフローの観点で解説している。",
+  "keyPoints": [
+    "Loop engineeringは、エージェントを単発で都度促すのではなく、定期実行や検証・エスカレーションを含む反復可能な仕組みとして設計する考え方だ。",
+    "Ralph loopは詳細なタスクを与えて完了まで回し続けるループの実装例で、大きな仕事の分解には使える一方、反復のたびにトークンや計算資源を消費しやすい。",
+    "Squadsは役割の異なる複数エージェントのチーム、fleetは同時並行で動くエージェント群を指し、要点は並列化と専門化にある。",
+    "Harnessはモデルを実運用で役立てるための周辺システムで、ツールや権限、メモリ、文脈、オーケストレーションを含む。harness engineeringはその設計と改善を指す。",
+    "Closed models、open weight models、open source modelsは公開範囲が異なり、open weightは重みを使えるが学習データや学習方法は必ずしも公開されず、open source modelsはモデル・コード・データ・学習プロセスまで検査や再利用、改変が可能だ。"
+  ],
+  "significance": "この内容は、AIを使った開発運用を理解したい開発者や、顧客環境への導入を支援する技術者に関係する。記事は用語の流行自体より、反復可能なワークフロー、検証方法、人の介在、モデルの信頼性や監査可能性をどう考えるかが重要だと示しており、複数エージェント運用やモデル選択を見極める助けになる。",
+  "summaryEn": "The latest GitHub Podcast episode organizes the meaning and usage of AI terms increasingly heard in software development, covering loop engineering, Ralph loops, squads, harness engineering, hill climbing, and differences in model openness. It explains the shift from one-shot prompting to repeatable agent workflows, multi-agent specialization, the systems around models, and how those systems are improved in development practice."
+}

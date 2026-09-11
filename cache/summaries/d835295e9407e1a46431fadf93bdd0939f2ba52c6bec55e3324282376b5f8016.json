@@ -1,0 +1,11 @@
+{
+  "summary": "GitHub CopilotのProject HydraFusionが、複数モデルを実行時に組み合わせる研究プレビューとして利用可能になった。タスクごとにSingle、Cascade、Critiqueの3パターンから最適な実行方法を選び、下書き・レビュー・改稿や上位モデルへのエスカレーションを自動で行う。オフライン評価ではTerminalBench 2.1でClaude Opus 5比67%低い推定コストで検証済み品質を4.9ポイント上回った一方、結果や提供内容はプレビュー中の学習で変わりうる。",
+  "keyPoints": [
+    "HydraFusionはGitHub Copilotで研究プレビューとして提供され、通常のモデルと同様に選ぶだけで、裏側で性能・コスト・レイテンシのバランスを取るワークフローを選択する。",
+    "実行パターンはSingle、Cascade、Critiqueの3種類で、効率的なモデルの下書きを品質ゲートで昇格判定したり、別モデル系統の読み取り専用レビューを挟んで一度改稿したりする。",
+    "固定ポリシーのベンチマーク評価では、Opus 5比でTerminalBench 2.1はコスト67%減・品質4.9ポイント増、DeepSWEは36%減・1.5ポイント減、CheckpointBenchは65%減・0.1ポイント減だった。",
+    "現時点のプレビューは初回ターンの単一プロンプトのコーディング作業に最も向いており、長い反復型セッションでの強いマルチターン性能は今後の重点課題とされる。利用者にはCopilot CLIの/feedbackまたはGitHub Community discussionでの共有が求められている。"
+  ],
+  "significance": "Copilotでモデルを手動で選び分けたりレビュー役を切り替えたりしていた開発者にとって、HydraFusionはその調整を実行時オーケストレーションに置き換え、単一の選択で品質・コスト・遅延のバランスを取りやすくする点が重要だ。特に単発のまとまったコーディング依頼を出す利用者が影響を受けるが、現時点は研究プレビューであり、実運用での有効性や提供内容は今後の検証で変わる。",
+  "summaryEn": "GitHub Copilot has added Project HydraFusion as a research preview that orchestrates multiple models at runtime. It automatically chooses one of three workflows—Single, Cascade, or Critique—to draft, review, revise, or escalate coding tasks. In offline testing, it beat Claude Opus 5 on TerminalBench 2.1 by 4.9 quality points at 67% lower estimated cost, though results and product behavior may change during the preview."
+}

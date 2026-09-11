@@ -1,0 +1,12 @@
+{
+  "summary": "Fabric IQは、既存のPower BIセマンティックモデルをそのままMicrosoft 365 CopilotやAIエージェントの業務語彙の基盤として使えると説明している。記事は、レポートで長年定義してきた指標や顧客・売上の意味をAIに再利用でき、推測ではなく既存定義に基づく回答を返せる点を強調する。さらにImportやDirectQueryの現行モデルでも対応でき、AI導入のためにモデルを作り直したりDirect Lakeへ移行したりする必要はないとしている。",
+  "keyPoints": [
+    "Power BIの全レポートはセマンティックモデルの上に成り立っており、売上や顧客などの定義、テーブル間の関係、階層構造といった業務上の意味がそこで管理されている。",
+    "Fabric IQは、その既存モデルをAIの土台として使い、自然言語の質問に対して統計的な推測ではなく企業内で合意済みの定義に基づく回答を返す位置付けだ。",
+    "導入にあたって既存モデルの作り直しは不要で、現在使っているImportモデルやDirectQueryモデルでも利用できる。Direct Lakeは別の利点はあるが、AI連携のための必須アップグレードではない。",
+    "AI向けの文脈は指標定義だけに限られず、同義語、説明、承認済み回答付きのサンプル質問、さらに公開済みレポートで実際に使われている表示名まで活用できる。",
+    "実務上の焦点は大規模な新規データ基盤構築ではなく、信頼できるセマンティックモデルを見極め、認定・整理してFabric IQに昇格させるキュレーション作業だと記事は述べている。"
+  ],
+  "significance": "恩恵を受けるのは、既にPower BIを使っている企業のデータ部門、業務部門、経営層だ。記事によれば、AIとダッシュボードが同じセマンティックモデルを参照することで、四半期売上のような重要指標で答えが食い違う事態を避けやすくなり、BIで積み上げた信頼を保ったままAI活用を広げられる。新たな大規模構築よりも既存資産の整理が中心になるため、既存ユーザーほど影響が大きい。",
+  "summaryEn": "Fabric IQ is described as letting organizations reuse existing Power BI semantic models as the business vocabulary for Microsoft 365 Copilot and AI agents. The article argues that this grounds AI answers in established metric definitions instead of guesses, and that current Import and DirectQuery models can be used without rebuilding models or moving to Direct Lake."
+}

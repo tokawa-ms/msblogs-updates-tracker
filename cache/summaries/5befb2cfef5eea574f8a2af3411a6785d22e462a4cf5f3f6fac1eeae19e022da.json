@@ -1,0 +1,11 @@
+{
+  "summary": "GitHub Copilot appのcanvasesは、開発者とエージェントが同じ画面でリアルタイムに共同作業し、会話だけでは扱いにくい情報の可視化や操作を行える共有ワークスペースとして使える。作成はエージェントセッションで /create-canvas を使い、必要な機能をプロンプトで指示する。記事では、Issueトリアージ、コードベース図、worktree整理、プロンプト改善、社内知見探索といった用途例を示している。",
+  "keyPoints": [
+    "CanvasはGitHub Copilot appの拡張UIで、エージェントが更新しながら開発者もクリックや編集で同じ画面を操作でき、その操作はエージェントに返送するかローカル処理できる。",
+    "作成方法は、GitHub Copilot appのエージェントセッションで /create-canvas を実行し、何を作り、どんな機能を持たせるかを説明する形だ。",
+    "Issue triage helperの例では、Issueをカード形式で1件ずつ表示し、右スワイプでship、左でrejectするUIとして動作し、判断結果をリアルタイムに集計して振り分ける。",
+    "ほかに、hover・drag・filterできるコードベース図、アクティブ/孤立したworktreeの可視化と掃除、Slack・Teams・Email・docs横断の知見探索といった例が挙げられている。"
+  ],
+  "significance": "会話だけでは長いやり取りになりがちなバックログ整理、複雑な情報の把握、複数ソースをまたぐ探索を行う開発者にとって、直接操作できるUIでパターンやつながりを見つけやすくなる点が重要だ。エージェントが更新した内容をそのまま人が操作し、その結果をエージェント側へ返せるため、探索と実作業を同じ作業面で進めやすい。",
+  "summaryEn": "GitHub Copilot app canvases are shared workspaces where developers and agents can collaborate in real time to visualize and act on tasks that do not fit a chat-only flow. They are created with /create-canvas in an agent session by describing the desired capabilities. The article highlights use cases including issue triage, codebase diagrams, worktree cleanup, prompt coaching, and knowledge discovery."
+}

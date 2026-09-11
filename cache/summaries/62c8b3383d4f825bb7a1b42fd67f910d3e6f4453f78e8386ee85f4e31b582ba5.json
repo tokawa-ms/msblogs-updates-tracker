@@ -1,0 +1,11 @@
+{
+  "summary": "Power BIはBuild 2026で、AIエージェント前提の分析基盤としてAgent Skills for Power BIのプレビュー、Fabric Apps、org apps、DAX user-defined functionsを打ち出した。Agent Skillsは生データからセマンティックモデルや対話型レポート作成までを一連のエージェント開発で担う。org appsは数週間以内にGA告知予定で、複数アプリ配布やaudience controlにも対応する。",
+  "keyPoints": [
+    "Agent Skills for Power BIはプレビューとして発表され、生データからセマンティックモデル、対話型レポートまでをエージェントが一気通貫で作成できる。スクリーンショットを含む指示からモデル作成、レポート生成、ビジュアルの反復修正まで行える。",
+    "Fabric AppsはBuildで発表された、Microsoft FabricをバックエンドにしたAIファーストのカスタムWebアプリ構築機能。開発者やAIコーディングエージェントが、既存のセマンティックモデル上にエンタープライズ向けデータアプリを作りやすくする。",
+    "org appsは数週間以内にGAが告知される予定で、ワークスペースごとに複数の組織向けアプリを作成し、大規模な社内配布に使える。今回の節目では、プレビュー期間中に要望の多かったaudience controlも導入され、ユーザーグループ別の表示制御が可能になる。",
+    "DAX user-defined functionsにより、パラメータ付きの再利用ロジックをメジャー、計算列、ビジュアル計算、他の関数まで共通適用できる。これにより重複コードを減らし、業務ルール変更時の保守性と、AIや人間にとってのモデルの分かりやすさを高める。"
+  ],
+  "significance": "主に恩恵を受けるのは分析担当者、開発者、業務ユーザー、そしてそれを支援するAIエージェントだ。Power BIのセマンティック層を共通の業務ロジックとガバナンスの基盤に据えることで、AIに任せる分析生成やアプリ化、組織内配布の場面でも同じ定義を使いやすくなり、信頼性と展開性を両立しやすくなる。",
+  "summaryEn": "Power BI used Build 2026 to expand its AI-agent-focused analytics platform with Agent Skills for Power BI in preview, Fabric Apps, org apps, and DAX user-defined functions. Agent Skills covers workflows from raw data to semantic models and interactive reports, while org apps are slated for a GA announcement in the coming weeks with support for multiple apps per workspace and audience control."
+}

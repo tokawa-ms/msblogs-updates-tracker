@@ -1,0 +1,11 @@
+{
+  "summary": "Power BIのテナント移行について、Microsoftは移行案件が増える一方で、まず利益より複雑さとリスクの見極めが必要だと整理した。記事はクロステナント移行、テナント分割、テナント再マップの3類型を分け、再マップでは既存のPower BIテナントを削除して新リージョンに再作成し、停止が3〜24時間に及ぶ可能性があると説明する。さらにmulti-geoなどの代替策で済む場合も多く、移行は規制要件やホームテナントリージョンに固定されたコンテンツなど、他の手段で満たせない条件がある場合に妥当だとしている。",
+  "keyPoints": [
+    "テナント移行は3つの類型で前提が異なる。買収時に多いクロステナント移行は比較的低リスクだが二重のライセンスや容量維持が必要で、事業分離時のテナント分割は依存関係や共有データセット、ゲートウェイの切り分けが難しい。",
+    "テナント再マップは最も複雑で、Microsoft Supportは削除と再マップのみを扱い、移行自体は利用者側の責任になる。ワンクリック移行ツールはなく、アプリやダッシュボード、RLSロール所属、更新スケジュールなどは移行先で手動再構築が必要だ。",
+    "移行で運べるのは定義であってデータではない。移行後はセマンティックモデルの再更新が必要で、LakehouseなどのFabricデータストアもパイプラインやDataflowなどで再投入しなければならず、この処理は自動化されない。",
+    "移行が妥当なのは、保存データだけでなくメタデータや設定、ポリシー、ID情報まで特定リージョンに残す必要がある場合や、Pro/PPU/My Workspaceのようにホームテナントリージョン固定のコンテンツが重要な場合だ。小規模テナントは扱いやすく、目安として50未満のワークスペースなら比較的管理しやすいとされる。"
+  ],
+  "significance": "買収・事業分離・データ主権対応でPower BIやFabricの構成見直しを迫られる運用担当者にとって、この記事は移行を前提にせず、代替策で足りるのか、手作業で戻す範囲はどこまでか、停止や再投入をどう見込むべきかを判断する材料になる。特にホームリージョン固定のワークスペースや厳しい規制要件を持つ組織は、容量や設定変更だけでは解決しない条件を早い段階で把握できる。",
+  "summaryEn": "Microsoft says Power BI tenant migration is becoming more common, but it should be judged first as a trade-off between benefits and added complexity and risk. The article separates three scenarios—cross-tenant migration, tenant split, and tenant remap—and notes that remap recreates the Power BI tenant in a new region and can involve 3 to 24 hours of downtime. It also stresses that alternatives such as multi-geo may often be enough, and that migration makes sense mainly when regulations or home-region-pinned content cannot be addressed by other options."
+}

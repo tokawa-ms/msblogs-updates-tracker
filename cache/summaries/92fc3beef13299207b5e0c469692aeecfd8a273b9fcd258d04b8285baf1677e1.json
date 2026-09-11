@@ -1,0 +1,12 @@
+{
+  "summary": "Git 2.55は、git repackでincremental multi-pack indexチェーンを直接書けるようにし、継続的に新規オブジェクトが増えるリポジトリでもパックメタデータを段階的に保守しやすくした。あわせて実験的なgit history fixupが追加され、ステージ済み変更を過去のコミットへ取り込んで後続コミットを積み直せる。さらにLinux向けの組み込みfsmonitor対応も加わり、大規模開発や日常運用の使い勝手を広げている。",
+  "keyPoints": [
+    "git repackは--write-midx=incrementalでincremental MIDXチェーンを書けるようになり、--geometric=2 -dとの併用時はrepack.midxNewLayerThresholdとrepack.midxSplitFactorに基づいて新しいtipレイヤー作成後に隣接レイヤーを圧縮する。",
+    "実験的なgit history fixupが追加され、indexにステージした変更を過去コミットへ適用できる。既定では対象コミットのメッセージと作者情報を保ち、衝突が起きる場合は途中状態を残さず中止し、bare repositoryでは使えない。",
+    "設定ベースのhooksは並列実行に対応し、hook.<name>.parallel = trueを付けた独立hookを同時に走らせられる。並列数はhook.jobs、hook.<event>.jobs、またはgit hook run -jで制御し、indexやworking treeを共有状態として扱うhookは引き続き直列実行になる。",
+    "組み込みfsmonitorはLinux対応となり、実装にはinotifyを使う。特権昇格は不要だがディレクトリごとにwatchが必要なため、非常に大きいリポジトリではfs.inotify.max_user_watchesの引き上げが必要な場合があり、ネットワークマウントされたリポジトリは引き続きopt-inだ。",
+    "到達可能性ビットマップ生成は不要なtree再帰回避、既存bitmaps再利用、object位置キャッシュなどで高速化され、大規模リポジトリのベンチマークでは約612秒から294秒へ短縮された。pseudo-mergesでもgit rev-list --objects --use-bitmap-indexの走査が約20倍高速化したベンチマークが示されている。"
+  ],
+  "significance": "新規オブジェクトが継続的に増える大規模リポジトリの保守担当者には、MIDX更新を毎回全体書き換えせず進められる点が効く。レビュー前にコミット列を整えたい開発者や、Linuxでgit statusの待ち時間を減らしたい利用者にも恩恵があり、ただし巨大リポジトリではfsmonitorのwatch数上限を調整する必要がある場合がある。",
+  "summaryEn": "Git 2.55 lets git repack write incremental MIDX chains directly, making pack metadata maintenance more incremental for repositories that keep receiving new objects. It also adds the experimental git history fixup command to fold staged changes into earlier commits and replay later commits. Built-in fsmonitor support for Linux further expands day-to-day usability."
+}

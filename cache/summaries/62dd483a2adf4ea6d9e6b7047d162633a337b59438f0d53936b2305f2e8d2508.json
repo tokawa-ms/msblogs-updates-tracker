@@ -1,0 +1,11 @@
+{
+  "summary": "GitHub Copilot appでは、古い個人用アプリのフロントエンド刷新を、stacked sessionsとstacked pull requestsで段階的に進めるやり方が示された。筆者はReact 15、Less、古いreact-bootstrapを抱えたコードベースで最初の一括刷新に失敗したが、dev branchへ切り替えた後、既存のスタイル更新とreact-bootstrap置き換えを別セッション・別PRとして積み上げた。結果として、前の変更を土台にしながら安全にスコープを分けて進める実例になっている。",
+  "keyPoints": [
+    "対象は2014年ごろに作った個人用アプリで、依存関係はReact 15、Less、当時のreact-bootstrapとかなり古く、手作業での整理は難しい状態だった。",
+    "最初にPlan modeでフロントエンド刷新を一括で進めようとしたが失敗し、原因はmainではなく部分更新済みのdev branchを普段のデプロイに使っていた点だった。Copilotは新しいセッションを作成し、失敗したPRを閉じて、方針をdev branch向けの変更へ引き継いだ。",
+    "テスト中にfindDOMNodeやcomponentWillReceivePropsの警告がreact-bootstrap由来で残っていると分かり、Plan modeで検討した結果、単純アップグレードよりライブラリ自体の置き換えが推奨された。",
+    "stacked pull requestsは、同一リポジトリ内で各PRが一つ下のPRのブランチを対象にする連鎖で、筆者のケースでは既存変更用のPRを切ったうえで、その上にreact-bootstrap除去用のセッションとPRを重ねた。"
+  ],
+  "significance": "長年保守してきたリポジトリを更新する開発者にとって、この事例はAI支援の大規模改修を一度に抱え込まず、依存する変更を順序付きのセッションとPRに分けて進められる点が重要だ。記事では、前の作業の文脈を引き継いだまま別の変更を積み上げられ、スコープクリープを抑えつつ変更の出荷を進めやすくしたと説明している。",
+  "summaryEn": "In the GitHub Copilot app, the author modernized an old personal app step by step with stacked sessions and stacked pull requests instead of one huge change. After a failed one-shot attempt and a switch to the dev branch, the existing style modernization and the later react-bootstrap replacement were split into linked sessions and pull requests that built on each other."
+}

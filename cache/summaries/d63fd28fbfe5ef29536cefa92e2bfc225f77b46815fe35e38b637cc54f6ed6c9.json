@@ -1,0 +1,11 @@
+{
+  "summary": "GitHub Copilot CLIは、サブエージェント委譲をより選択的にする「smarter subagent delegation」を本番トラフィック100%へ展開し、単純な探索・編集はメインエージェントが直接処理しやすくなった。独立した文脈や広い探索、並列実行が必要な場合にだけ専門サブエージェントへ委譲し、起動後もメインエージェントが別作業を進める方針に改めた。GitHubによる本番A/Bテストでは、セッション当たりのツール失敗23%減とP95待ち時間5%減が示され、品質指標の悪化はなかった。",
+  "keyPoints": [
+    "焦点の絞られた作業はメインエージェントが直接扱い、独立した文脈、広範囲な探索、並列実行が必要なときだけ委譲する運用に見直した。",
+    "サブエージェントは待機の理由ではなく並列化のための手段とされ、起動後もメインエージェントが独立した作業を続けることを重視している。",
+    "改善はすでにCopilot CLIの本番トラフィック100%に展開済みで、利用開始にはターミナルで /update を実行してバージョン1.0.42以降へ更新する必要がある。",
+    "GitHubの本番A/Bテストでは、セッション当たりのツール失敗が23%減、検索ツール失敗が27%減、編集ツール失敗が18%減となり、総待ち時間はP95で5%、P75で3%改善し、品質指標の劣化はなかった。"
+  ],
+  "significance": "Copilot CLIを使う開発者にとって重要なのは、操作やワークフローを変えずに、単純な修正は直接処理され、複雑な作業だけが適切に専門サブエージェントへ回ることで、不要な引き継ぎや再検索、待機が減る点だ。表に見える新機能追加ではなく、裏側のオーケストレーション改善だけで信頼性と応答性を高める狙いで、長時間または多段の作業でも進行が滞りにくくなる。",
+  "summaryEn": "GitHub Copilot CLI has rolled out smarter subagent delegation to all production traffic, making the main agent more selective so simple discovery-and-edit work is handled directly. Delegation is now reserved for broader or parallelizable tasks, and the main agent keeps working after a handoff. GitHub says production A/B tests showed 23% fewer tool failures per session and 5% lower P95 wait time with no quality regression."
+}

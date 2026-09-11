@@ -1,0 +1,12 @@
+{
+  "summary": "Power BIの新しいDate picker slicerオプション（プレビュー）は、データ更新に合わせて自動で前進する相対日付範囲を既定値として設定でき、閲覧者は相対範囲・手動範囲・単一日付を切り替えられる。2種類のサマリー表示やスライダーに加え、ダッシュボードへピン留めしても相対範囲を維持できる点が特徴だ。利用にはPower BI Desktopでプレビュー機能の有効化が必要で、プレビュー中の作成はDesktopのみだが、公開後はPower BIサービスで閲覧・編集できる。",
+  "keyPoints": [
+    "相対日付範囲は最終日・開始日・今日を基点にオフセット付きで設定でき、公開後の既定範囲としてデータ更新に合わせて自動で進む。",
+    "閲覧者は公開時の既定値を超えて、自分で相対範囲や手動範囲を選べるほか、単一カレンダーで開始日・終了日や単一日付を指定でき、スライダーでも範囲を素早く調整できる。",
+    "表示面では、実際にデータ列へ適用された日付範囲と、ユーザーが選択した相対または手動の範囲を別々のサマリーで確認できる。",
+    "プレビュー利用にはDesktop側で Date picker slicer を有効化する必要があり、現時点では作成はPower BI Desktop限定だが、公開後はPower BIサービスで閲覧・編集できる。",
+    "将来日付を含む日付テーブルでは、対象メジャーに is not blank の高度なフィルターを追加すると、相対範囲の最終日を実データのある日付に合わせて不完全な月の比較を避けられる。"
+  ],
+  "significance": "恩恵を受けるのは、更新のたびに日付既定値を直したくないレポート作成者と、公開後も自分の見たい期間で分析したい閲覧者だ。作成者は相対範囲を保守なしで最新データに追随させられ、閲覧者は既定値を起点に相対・手動・単一日付を切り替えられる。さらに閲覧者のフィルターは既定で保持されるため、前回の選択を引き継ぐ運用にも向く。",
+  "summaryEn": "Power BI’s new Date picker slicer option in preview lets authors set dynamic relative date ranges that automatically move forward with data refreshes, while viewers can switch among relative, manual, and single-date selections. It also adds dual summaries, slider support, and keeps relative ranges when visuals are pinned to dashboards. It must be enabled as a preview feature in Power BI Desktop; during preview creation is Desktop-only, but published slicers can be viewed and edited in the Power BI service."
+}

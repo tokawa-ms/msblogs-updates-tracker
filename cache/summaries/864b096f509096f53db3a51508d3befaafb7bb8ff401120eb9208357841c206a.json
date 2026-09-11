@@ -1,0 +1,11 @@
+{
+  "summary": "MAI-Code-1-Flashは、GitHub Copilot向けの軽量コーディングモデルとしてVS Codeのcoding harnessと組み合わせた実運用結果が示され、低いトークン消費で強い品質を出す位置付けが明らかになった。集計データではClaude Haiku 4.5やGPT-5.4 Miniを品質で上回り、AutoのA/B flightでも軽量モデルより再利用率が高く総トークンは少なかった。現在GitHub Copilotで利用でき、より複雑な作業向けの大型MAIモデルは年内投入予定とされる。",
+  "keyPoints": [
+    "VS Code Copilot Chatの6/2/26〜7/24/26集計では、MAI-Code-1-FlashはClaude Haiku 4.5とGPT-5.4 Miniより品質指標で優位だった一方、GPT-5.6 LunaとKimi K2.7 Codeは品質面で上回るが、1ターン当たりトークンは67〜94%多く、コミット到達までのターン数も増えた。",
+    "AutoモデルでのA/B flightでは、GPT-5.4 Mini比で2日以内再利用が6%高く総トークンは13%低下し、Claude Haiku 4.5比では再利用が11%高く総トークンは11%低かった。",
+    "想定用途はコード探索、段階的な変更、テスト生成・改善、バグ修正などの軽量で反復的な作業で、簡単な依頼には短く、必要時だけ深掘りする応答長制御を備える。",
+    "モデルはサードパーティー蒸留なしでゼロから学習され、コンシューマープランの集計利用シグナルで継続改善する一方、Copilot BusinessとEnterpriseの顧客データは学習に使わない。現在GitHub Copilotで利用可能で、より複雑なタスク向け大型MAIモデルは年内に追加予定とされる。"
+  ],
+  "significance": "VS CodeでGitHub Copilotを使う開発者、とくに日常的な小規模修正やテスト追加、バグ修正を素早く回す利用者に関係する。記事のデータでは、品質を保ちながらトークン使用量を抑えられるため、使用量制限の中で多くのやり取りをしたい利用者に影響があり、同時にBusiness/Enterprise利用者には学習データの扱いが明示された。",
+  "summaryEn": "MAI-Code-1-Flash is positioned as a lightweight coding model for GitHub Copilot whose early production results with VS Code's coding harness show strong quality at lower token cost. Aggregated usage data shows it outperforming Claude Haiku 4.5 and GPT-5.4 Mini on quality, and Auto A/B flights indicate higher repeat usage with lower total token use than other lightweight models. It is available now in GitHub Copilot, with larger MAI models planned for later this year."
+}

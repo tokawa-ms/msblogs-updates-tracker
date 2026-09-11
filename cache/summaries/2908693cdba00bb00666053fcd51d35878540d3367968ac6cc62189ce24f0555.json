@@ -1,0 +1,11 @@
+{
+  "summary": "VS CodeはModel Context Protocol（MCP）の完全仕様をサポートし、5月に導入したツールとワークスペース認識に加えて、authorization、prompts、resources、samplingを使えるようになった。新しい認証仕様ではMCPサーバーと認可サーバーを分離し、既存のIDプロバイダーに認証を委任できる。GitHub MCP ServerはVS CodeのGitHub認証と統合したリモートサーバーとして利用可能で、完全なMCP体験は現在VS Codeで提供されている。",
+  "keyPoints": [
+    "認証仕様が大きな更新点で、MCPサーバーをResource Providers、認可側をAuthorization Serversとして分離し、開発者がOAuthを自前実装せず既存のIDプロバイダーに認証を委任できる設計になった。",
+    "前バージョンで導入済みのstreamable HTTP transportと組み合わせることで、エンタープライズ級のセキュリティを保ちながら独立スケール可能なリモートMCPサーバーを実現する。GitHub MCP Serverはその例として、VS Codeの既存GitHub認証とアカウント管理を使うリモートサーバーとして提供されている。",
+    "Promptsは静的テンプレートではなく、ワークスペースやプロジェクト状態に応じてサーバー側が調整する動的なワークフロー起点として扱われ、VS Codeのスラッシュコマンドから /mcp.servername.promptname 形式で呼び出せる。",
+    "Resourcesではスクリーンショットやログなどの意味的な情報を直接扱え、SamplingではMCPサーバー自身が既存のモデル契約を使って推論要求を出せるため、AI SDKやAPIキーの個別管理なしに複雑な推論やマルチエージェント連携を進められる。"
+  ],
+  "significance": "MCPサーバーを作る開発者、既存の認証基盤を使いたい組織、そしてVS Code上で高度なAI連携を使う利用者に影響が大きい。完全仕様の対応により、単発のツール呼び出しだけでなく、認証付きのリモート接続、文脈依存のプロンプト、共有可能なリソース、サーバー側からのモデル利用までをVS Codeクライアント内で一貫して扱える基盤が整った。",
+  "summaryEn": "VS Code now supports the full Model Context Protocol specification, adding authorization, prompts, resources, and sampling on top of the tools and workspace awareness introduced in May. The new authorization model separates MCP servers from authorization servers so developers can rely on existing identity providers. The GitHub MCP Server is now available as a remote server integrated with VS Code's GitHub authentication, and the complete MCP experience is available now in VS Code."
+}

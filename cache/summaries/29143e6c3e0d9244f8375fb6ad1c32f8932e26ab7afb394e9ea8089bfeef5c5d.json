@@ -1,0 +1,12 @@
+{
+  "summary": "Power BIの2026年5月更新では、Copilotの要約ショートカット追加とCopilot narrative visualのapp-owns-data対応により、レポート閲覧時のAI支援が拡張された。レポート作成ではvisual calculationsとcustom totalsが強化され、Power BI DesktopではOneDrive/SharePoint保存ファイル向けのVersion Historyが利用可能になった。",
+  "keyPoints": [
+    "Power BI ServiceのCopilotには、レポート全体を要約するSummarizeショートカットと、個別ビジュアルを要約するvisual headerショートカットが追加された。",
+    "Copilot narrative visualはプレビューとしてapp-owns-dataシナリオに対応し、顧客向けアプリでレポート閲覧者がサインインせずに埋め込み利用できるようになった。",
+    "ReportingではVisual calculations and custom totalsがGAとなり、DAX measureをsemantic modelへ追加せずに実行中合計や移動平均などをビジュアル内で定義できる。custom totalsにはNoneとAverageも加わった。",
+    "Power BI DesktopのVersion HistoryはOneDrive/SharePointに保存したPower BIファイルで利用可能になり、過去版の閲覧や更新者・更新日時などの確認ができるが、有効化にはSave and Share to OneDrive and SharePointが必要。",
+    "Power Query Get Dataの新体験はプレビューとして導入され、データソース探索の改善、接続フローの簡素化、キーボード操作やダークモードなどのアクセシビリティ強化が含まれる。"
+  ],
+  "significance": "今回の更新は、レポート閲覧者、semantic modelの作成者、顧客向けアプリにPower BIを埋め込む開発者へ直接関係する。閲覧者はCopilot要約でレポート全体や個別ビジュアルの要点を素早く把握でき、作成者はsemantic modelからWeb Modelingに直接入れるほか、埋め込みアプリではサインイン不要のnarrative visual利用範囲が広がる。",
+  "summaryEn": "In Power BI's May 2026 update, AI assistance for report consumption was expanded with Copilot summary shortcuts and app-owns-data support for the Copilot narrative visual. Reporting was strengthened with visual calculations and custom totals, and Power BI Desktop added Version History for files saved to OneDrive and SharePoint."
+}

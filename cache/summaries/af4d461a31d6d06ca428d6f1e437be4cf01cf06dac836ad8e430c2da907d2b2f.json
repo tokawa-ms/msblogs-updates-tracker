@@ -1,0 +1,11 @@
+{
+  "summary": "Power BIでは、Microsoft Purviewのprotection policiesを使って、Fabricアイテムへのアクセスを感度ラベルに基づいて制御する考え方が示された。指定ラベルに保護ポリシーを関連付けると、許可されたユーザーやグループだけが実行時にアクセスを維持し、それ以外は自動的にブロックされる。現時点で直接の保護対象はPower BIのsemantic modelsで、そこを保護すると、そのモデルを参照する下流のレポートにも効果が及ぶ。",
+  "keyPoints": [
+    "保護ポリシーは、ワークスペース権限ではなく感度ラベルを基準にアクセスを制御し、指定されたユーザーやグループ以外を実行時に自動遮断する。",
+    "現時点の対応対象はPower BIのsemantic modelsで、reportsやdashboardsを直接はサポートしない。ただしsemantic modelへのアクセスを止めると、接続先レポートはデータを返せず実質的に保護される。",
+    "Power BIレポートを保護する実務上の要点は、保護ポリシー付きの感度ラベルをsemantic model、またはそれを支えるLakehouseやWarehouseなどのupstream Fabric itemsに適用することだ。",
+    "ラベル付与は手動のほか、Default labels、Mandatory labeling、Downstream inheritanceで行え、semantic modelにラベルが付きポリシーが有効になると適用は自動化される。"
+  ],
+  "significance": "部門や外部関係者をまたいでPower BIのデータ活用を広げる組織や、ラベル設計を担うコンプライアンス担当に影響が大きい。記事では、1つのsemantic modelが多数のレポートに使われる前提で、分類に応じた制御をモデル層で一元適用し、下流継承によって分類の一貫性も保てる点が重要だと説明している。",
+  "summaryEn": "Power BI can use Microsoft Purview protection policies to control access to Fabric items based on sensitivity labels. When a policy is tied to a label, only approved users or groups keep access at runtime and others are automatically blocked. In the current architecture, enforcement applies to semantic models rather than reports or dashboards directly, and protecting the model secures downstream reports as well."
+}

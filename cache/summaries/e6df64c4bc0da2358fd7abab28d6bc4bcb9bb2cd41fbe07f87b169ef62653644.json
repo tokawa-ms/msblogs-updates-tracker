@@ -1,0 +1,12 @@
+{
+  "summary": "Microsoft IQの共有インテリジェンス基盤がgeneral availabilityとなり、Work IQ、Fabric IQ、Foundry IQを通じて企業データや業務知識をAI全体で共有できるようになった。Web IQもlimited previewで加わり、Frontier Tuningでは自社データと業務フローでモデルを調整して、コストを最大10分の1に抑えつつ応答速度を高められるという。さらにAzure上のMicrosoft Agent Platformを打ち出し、MicrosoftはAIを実験段階ではなく本番運用向けの基盤として訴求した。",
+  "keyPoints": [
+    "Microsoft IQは一般提供になり、Work IQは働き方と業務運営、Fabric IQは業務データ、Foundry IQはAzure上のアプリや非構造化データまでを含めて、エージェントの共通業務文脈を支える構成として示された。Web IQは限定プレビューで追加された。",
+    "Frontier Tuningでは、企業が自社データと業務フローを使ってモデルを微調整できるとされ、Microsoftはコストを最大10分の1に抑えながら応答速度も改善できると主張している。",
+    "Azure上のMicrosoft Agent Platformは、エージェントの構築・運用・ガバナンス・スケールを統合する基盤として位置付けられ、Rayfinで試作からエンタープライズ展開への移行を支援し、Foundry、Agent 365、Azure Container Apps、Microsoft Securityも組み合わせて本番運用時の統制を組み込む。",
+    "FoundryはOpenAIのGPT-5系、Anthropic、Fireworks AIのモデル群をそろえ、新しいMAIモデル群も投入した。加えてMicrosoft Discoveryは一般提供となり、研究調査、仮説生成、シミュレーション、結果の反復改善を継続ループで進める科学研究向けのエージェント基盤として紹介された。",
+    "インフラ面では、GPU対応のFabric Data Warehouseが64-user条件の報告・アプリケーション負荷で比較対象3社比最大7倍のクエリ性能をうたう。Azure Cobalt 200 VMsとAzure Infrastructure Resiliency Managerも、AIネイティブ負荷と実運用時の耐障害性計画向けとして挙げられた。"
+  ],
+  "significance": "恩恵を受けるのは、AIを個別ツールや実証実験ではなく全社システムとして運用したい経営層、IT部門、研究・エンジニアリング部門だ。記事では、AIがすでに測定可能な成果を求められる段階に入り、Azure上で共有コンテキストやガバナンスを備えた基盤を整えることで、本番業務や長期の研究・分析サイクルに組み込めるようになる点が重要だと説明している。",
+  "summaryEn": "Microsoft IQ’s shared intelligence layer reached general availability, with Work IQ, Fabric IQ, and Foundry IQ sharing enterprise data and operating context across AI systems. Web IQ was added in limited preview, and Microsoft says Frontier Tuning can adapt models to a company’s own data and workflows while cutting costs by up to 10x and improving response speed. Alongside the Azure-based Microsoft Agent Platform, the announcements position AI as production infrastructure rather than isolated experimentation."
+}

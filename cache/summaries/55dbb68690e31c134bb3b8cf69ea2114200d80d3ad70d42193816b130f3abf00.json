@@ -1,0 +1,12 @@
+{
+  "summary": "Microsoft Foundryでは、Fireworks AI on Microsoft Foundryが一般提供となり、単一のAzureエンドポイント経由で企業向けSLA付きのオープンモデル推論を使えるようになった。あわせて、Microsoft製、提携先、オープンソース、カスタム、事後学習済みの各モデルを、同じ選定・評価・展開フローで扱える範囲を広げている。記事は、モデル選定を一度きりの判断ではなく、自社データでの評価、コスト最適化、運用統制、継続改善まで含む運用規律として進める考え方を示している。",
+  "keyPoints": [
+    "Fireworks AI on Microsoft Foundryは一般提供となり、単一のAzureエンドポイントで高性能なオープンモデル群を利用でき、企業向けSLAに加えて別個のインフラや契約なしで導入できる。",
+    "Foundry ModelsのModel Routerは、手動でモデルを選ばなくても、ワークロード特性、コスト目標、レイテンシ要件に基づいて各リクエストを適切なモデルへ自動ルーティングする。",
+    "評価ではCSVやJSONLの独自データセットを持ち込み、モデルやプロンプトの横並び比較、エージェントやマルチステップワークフローの評価ができる。加えて、relevance、groundedness、coherence、fluency、安全性、ポリシー準拠などの組み込み評価器と、業務固有ルール向けのカスタム評価器を使える。",
+    "コストと性能の最適化では、タスクごとのインテリジェントルーティング、非同期バッチ処理、キャッシュ、専有スループット、クォータ管理、モデル圧縮や蒸留などを組み合わせる前提が示されている。",
+    "運用面では、Fireworks AIのGAがPTU Data Zone対応やSOC2 readinessを備え、Foundryのアクセス制御や監査ログの枠組みで扱える。プレビュー期間には17社のS&P 500企業で合計1760億超トークンを処理した。"
+  ],
+  "significance": "本番向けAIシステムを作る開発者やエンジニアリングチームにとって重要なのは、モデルへのアクセス自体ではなく、品質、安全性、レイテンシ、コストを自社ワークロードで継続的に検証しながら運用できることだと位置付けている点にある。特に、単一ベンダーへのロックインを避けつつ、モデル更新時の比較、段階展開、ロールバック、監査まで同じ運用面で進めたいチームに影響する。",
+  "summaryEn": "Microsoft Foundry has made Fireworks AI on Foundry generally available, enabling enterprise-grade open-model inference through a single Azure endpoint. It is also expanding a unified workflow across Microsoft, partner, open-source, custom, and post-trained models, while framing model choice as an ongoing operating discipline that includes evaluation on real data, cost optimization, governance, and continuous improvement."
+}

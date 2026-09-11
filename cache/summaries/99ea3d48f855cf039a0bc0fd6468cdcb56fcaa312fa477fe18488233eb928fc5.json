@@ -1,0 +1,11 @@
+{
+  "summary": "TypeScript 7はTypeScriptコンパイラと言語ツールをGoへ全面移植した版で、VS Codeでは段階的な導入を経て2026年2月に通常開発とエディタの既定版になった。VS Codeチームは2025年夏から検証を始め、TypeScript 6を橋渡しとして併用しながら移行した。主ソースの型チェックは36秒から5秒、npm run watchは約80秒から20秒強へ短縮され、日々の編集と反復作業が大きく高速化した。",
+  "keyPoints": [
+    "TypeScript 7はTypeScriptコンパイラと言語ツール群をGoへ全面移植した版で、多くのケースで10倍超の高速化をうたっている。",
+    "VS Codeチームは2025年夏から@typescript/native-previewを使って小規模拡張を--noEmitで試し、2025年秋にはTypeScript 6を橋渡しとしてCIで6系と7系の両方を通す体制にした。",
+    "2026年1〜2月には組み込み拡張を小さなグループごとに移行し、バンドルはwebpackからesbuildへ簡素化、型チェックと開発ビルドはtsgoへ切り替えた。",
+    "性能面では、主ソースの型チェックが36秒から5秒、npm run watchが約80秒から20秒強、主要プロジェクトのエディタ言語機能の読み込みは約1分から約10秒になった。"
+  ],
+  "significance": "恩恵が大きいのは、VS CodeでTypeScriptやJavaScriptを編集する開発者と、エージェントを使って反復する利用者で、ビルド再開やエディタ機能の読み込み待ちが目に見えて短くなる点だ。加えて、VS Codeの大規模コードベースで早期から不具合や不足機能を洗い出したことで、TypeScript 7はより検証された仕上がりになり、他のコードベースでも移行しやすい版として影響する。",
+  "summaryEn": "TypeScript 7, a Go-based rewrite of the compiler and tooling, became the default for VS Code development and editor support in February 2026 after a gradual migration. VS Code began testing it in summer 2025, used TypeScript 6 as a bridge, and cut main-source type checking from 36 seconds to 5 seconds while reducing npm run watch from about 80 seconds to just over 20."
+}

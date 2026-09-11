@@ -1,0 +1,11 @@
+{
+  "summary": "Microsoftは、脆弱性公表から悪用までの時間が数時間単位に縮み、従来の評価・検証・パッチ展開を前提にした防御モデルが通用しにくくなったと論じている。ハイブリッドおよびマルチクラウドの大規模環境では修正に日単位から週単位を要する一方、AI支援で攻撃側の解析と悪用準備が加速するため、パッチ適用完了前にネットワーク制御で露出を下げる適応型防御が重要だとしている。",
+  "keyPoints": [
+    "脆弱性対応の前提だった「公開後に評価し、修正を検証して本番に出す」余裕が崩れ、朝に公表された脆弱性が午後にはスキャンや悪用の対象になり得る一方、防御側のプロセスはなお数日から数週間かかる。",
+    "可視化、脅威インテリジェンス、優先順位付けだけでは露出は減らず、業務停止できない基幹アプリや製造・規制環境では、どの資産が脆弱か分かっていても即時パッチできない問題が残る。",
+    "記事はネットワークを最速の制御プレーン候補と位置付け、アクセス制限、横移動の抑制、セグメント分離、動的な制御変更で、アプリ自体を変えずに悪用可能性を下げられるとする。HTTP/2のDoS脆弱性では、HTTP/2全面停止ではなく、同時ストリーム数や接続パターンの制約でサービスを維持しつつ中間対策できる例を挙げている。",
+    "適応型セキュリティには、脆弱性そのものの理解、実環境の構成・接続性との相関、そして大規模かつ迅速な制御適用への変換という3段階が必要で、AIは分析補助にとどまらず意思決定高速化の基盤になると見ている。"
+  ],
+  "significance": "即時停止や即時パッチが難しい大規模な企業IT環境を守るセキュリティ運用担当者に関わる内容で、修復までの空白時間をどう埋めるかが焦点になっている。記事は、ワークロード内部の対策だけでは間に合わない局面で、ネットワークを使った補償的コントロールがゼロデイ時の「安全にパッチを当てる時間」を稼ぎ、可用性を保ちながらリスク低減を図る考え方を示している。",
+  "summaryEn": "Microsoft argues that the time from vulnerability disclosure to exploitation has shrunk to hours, making the traditional assess-test-patch model too slow. In large hybrid and multicloud environments, patching still takes days or weeks while AI is accelerating attacker analysis and weaponization, so adaptive network-based controls are needed to reduce exposure before patches are fully deployed."
+}

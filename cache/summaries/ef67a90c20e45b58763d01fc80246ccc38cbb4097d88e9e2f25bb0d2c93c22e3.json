@@ -1,0 +1,11 @@
+{
+  "summary": "VS Code Insiders Podcastが始まり、Visual Studio Codeチームが機能開発の舞台裏や将来の方向性を伝える公式番組として案内された。各回では開発者やプロダクトマネージャー、コミュニティ貢献者が次世代機能を語り、実験的ツールや新しい拡張、AI時代のコーディングまで扱う。記事では過去回を確認できるホームページと購読方法も示している。",
+  "keyPoints": [
+    "Visual Studio Codeチームの公式ポッドキャストで、各回は開発者、プロダクトマネージャー、コミュニティ貢献者との会話を通じてVS Codeの次世代機能を掘り下げる。",
+    "番組は実験的ツール、新しい拡張機能、AIでコーディングがどこへ向かうかといったテーマまで、リリースノート以上の背景情報を扱う。",
+    "最近の回では、アクセシビリティ、Planning Agent、オープンソースコミュニティの拡大、GitHub Universe 2025でのAI-nativeなVS Codeが取り上げられている。",
+    "利用案内として、ホームページで過去回を閲覧でき、好きなポッドキャストアプリで購読できると案内している。"
+  ],
+  "significance": "VS Codeを使う開発者やコミュニティ参加者にとって、単なる更新一覧では見えにくい機能設計の意図や開発判断を、当事者の説明として把握できる点が重要だ。特にアクセシビリティやAI関連機能など、実際の開発トピックを継続的に追いたい人に関係する内容になっている。",
+  "summaryEn": "The VS Code Insiders Podcast has launched as an official show from the Visual Studio Code team, offering behind-the-scenes context on features, decisions, and the people shaping VS Code. Episodes feature developers, product managers, and community contributors discussing next-generation features, experimental tools, new extensions, and AI-related development topics. The article also points readers to the podcast home page to browse past episodes and subscribe."
+}

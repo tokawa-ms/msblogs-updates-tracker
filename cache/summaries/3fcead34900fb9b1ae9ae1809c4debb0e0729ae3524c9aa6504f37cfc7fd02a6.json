@@ -1,0 +1,11 @@
+{
+  "summary": "GitHubは2026年7月の可用性報告で、GitHub全体で性能低下を招いた8件の障害と、その後の信頼性改善の進捗を示した。基盤面ではAzure Central USへの移行が進み、7月28日にはモノリスの読み取りトラフィックが52.75%に達し、Gitトラフィックも47%まで拡大した。あわせて認証やリポジトリ、プルリクエスト関連の共有依存を減らしつつ、今四半期はCentral USで読み取り70%、書き込み30%を目標にし、2026年末までにdotcom本番トラフィックを自社データセンターから移す見通しを示している。",
+  "keyPoints": [
+    "7月は8件の障害が発生し、特に7月8日にはデータ居住型Enterprise Cloud環境でWeb UI、REST API、GraphQL API、Actions、Packages、Copilot、Git操作まで広く影響し、最悪の環境では5xxエラー率が約96%に達した。",
+    "Azure移行は可用性強化の中核として進み、7月28日にモノリス読み取りトラフィックの52.75%をAzure Central USで処理したほか、Gitトラフィックは47%となり、全リポジトリの29%がCentral USに第2レプリカを持つようになった。",
+    "共有基盤への依存削減も進み、専用ユーザーサービスがピーク時に毎秒100万件超のクエリをオフロードし、主要な認可ルックアップの80%が分離済みサービス経路へ移行した。さらに専用プルリクエストサービスは認証付き読み取りでモノリス比99.87%の同等性に到達した。",
+    "次の段階ではCentral USで今四半期に読み取り70%、書き込み30%を目指し、全本番サービスの稼働、書き込み移行のためのデータベースプライマリ移設、そして第2Azureリージョンによるリージョン耐性の基盤整備を進めるとしている。"
+  ],
+  "significance": "GitHub Actions、プルリクエスト、API、SSH、Copilot、Git操作を日常的に使う開発者や、データ居住型Enterprise Cloud環境の顧客にとって重要な報告だ。障害の影響範囲と失敗率を具体的に示したうえで、共有依存の削減、Central USへの移行、運用監視や自動化の強化によって、単一リージョンや共有基盤の不調が広範な顧客影響に波及しにくくする方針が示されている。",
+  "summaryEn": "GitHub’s July 2026 availability report details eight incidents that degraded service across GitHub and outlines the reliability work that followed. Azure Central US now handled 52.75% of monolith read traffic on July 28, Git traffic in Azure rose to 47%, and shared dependencies in authentication, repository, and pull request paths were reduced. GitHub says it is targeting 70% of read traffic and 30% of write traffic in Central US this quarter, with a path to moving dotcom production traffic out of its datacenters by the end of 2026."
+}

@@ -1,0 +1,12 @@
+{
+  "summary": "GitHubは、書き込み権限のないユーザーが1つのリポジトリで同時に開けるプルリクエスト数を制限するpull request limitsを導入した。上限に達すると既存のPRをクローズまたはマージするまで新しいPRは開けず、Copilotや他のAIエージェントが作成したPRも件数に含まれる。下書きPRは対象外で、信頼済みコントリビューターは書き込み権限を与えずにバイパスでき、メンテナー向けの恒久的かつ設定可能な流量制御として位置付けられている。",
+  "keyPoints": [
+    "制限対象は書き込み権限のないユーザーの同時オープンPR数で、上限到達後は既存PRを閉じるかマージするまで新規PRを出せない。",
+    "Copilotや他のAIエージェントが開いたPRも上限に算入される一方、下書きPRは算入されず、信頼済みコントリビューターはフル権限なしでバイパス対象にできる。",
+    "既存のinteraction limitsが一時的なクールダウンなのに対し、新しいPR制限は恒久的で設定可能な管理手段として提供される。",
+    "背景にはGitHub全体のPR急増があり、月間マージ数は2023年1月の約2500万件から現在は9000万件超へ増え、記事では約3.6倍としている。",
+    "今後の計画として、PRアーカイブは近日提供、issue limitsは開発中、より賢いバイパス判定は次段階、複数リポジトリ横断の制御は検討中とされている。"
+  ],
+  "significance": "主にオープンソースのメンテナーが、増え続ける投稿量と低品質なノイズの中でレビュー対象を見極めにくくなっている状況に対処しやすくなる点が重要だ。記事では、良質な変更と粗い投稿が同じキューに並ぶと価値あるPRを見つけにくいとし、この制限によってメンテナーの注意力やバックログ管理を取り戻しつつ、新規コントリビューターを完全に締め出さないとしている。",
+  "summaryEn": "GitHub has introduced pull request limits that cap how many pull requests a user without write access can keep open at once in a repository. Once the cap is reached, they must close or merge an existing PR before opening another, and PRs opened by Copilot or other AI agents also count toward the limit. Draft PRs are excluded, trusted contributors can be bypassed without being given full write access, and the feature is positioned as a persistent, configurable flow-control tool for maintainers."
+}

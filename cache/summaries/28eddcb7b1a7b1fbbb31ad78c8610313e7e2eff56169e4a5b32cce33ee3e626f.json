@@ -1,0 +1,11 @@
+{
+  "summary": "Microsoft Foundryでは、エージェントのコストをトークン単価ではなく「成功した結果1件あたりのコスト」で捉え、品質・安全性・遅延を保ちながら下げるための4つの実行時レバーを示した。記事は、モデル選択や配備方式、キャッシュ、プロンプトとエージェントの最適化、可観測性と評価を組み合わせて、無駄なターンや再試行を減らす考え方を整理している。さらに、即時応答が不要な大規模非同期処理ではBatch配備が最大50%低コストになりうると説明する。",
+  "keyPoints": [
+    "Foundry ModelsのModel routerは単一エンドポイントと単一デプロイの背後で各リクエストを適切なモデルへ振り分け、コスト優先・品質優先・両者のバランスを選べる。配備方式も重要で、即時応答が不要な大規模非同期処理はBatchが向き、最大50%低コストになりうる。",
+    "キャッシュでは、毎ターン再送される安定した接頭辞を再処理せず再利用でき、標準デプロイでは通常の入力課金より安く、プロビジョンドデプロイでは最大100%まで割引される。効果を出すには、変わらない指示やツール定義を先頭に置き、変動する入力や履歴を後ろに置く必要がある。",
+    "Prompt optimizerはシステム指示を書き換えて変更理由も示し、Agent optimizerは実タスクのデータセットで候補構成を生成して採点・順位付けする。Agent optimizerは指示、スキル、ツール説明、モデル選択まで変更でき、データセットには自分のエージェントトレースを使える。",
+    "可観測性と評価では、入出力トークン、キャッシュヒット率、遅延、実際に処理したモデル、評価スコアを確認し、最適化で品質が維持されたかを測る。特にcost per requestとcost per completed outcomeを分けて見ることで、ターン増加や再試行を含む実コストを把握できる。"
+  ],
+  "significance": "Microsoft Foundryで試作から本番運用へ進む組織や、対話型チャット、開発者向けツール、文書処理のように性質の異なるAIワークロードを1つのアプリで扱うチームに関係する。記事は、試作時に選んだ強いモデルと肥大化したプロンプトをそのまま本番へ持ち込むと、多様な処理を一律に高コスト化しやすいことを示し、成功した結果あたりの実コストで測る必要性を明確にしている。",
+  "summaryEn": "Microsoft Foundry argues that agent economics should be measured by cost per successful outcome rather than token price, and outlines four runtime levers to reduce that cost while maintaining quality, safety, and latency. The post explains how model and deployment choices, caching, prompt and agent optimization, and observability with evaluation can reduce wasted turns and retries, and notes that Batch can cut costs by up to 50% for large asynchronous workloads."
+}

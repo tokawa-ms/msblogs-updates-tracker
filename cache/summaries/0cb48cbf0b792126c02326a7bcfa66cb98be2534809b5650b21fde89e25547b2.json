@@ -1,0 +1,12 @@
+{
+  "summary": "Power BI reportsとFabric Appsで、同じPower BIセマンティックモデル上の構築手段が拡張された。Power BI reportsはモデル専用のレポート体験としてクエリ生成の複雑さを吸収し、新しいPower BI Desktop bridgeは安全なローカル外部編集をDesktopへ直接反映する。さらにRayfinにより、セマンティックモデルのデータを基にAIファーストの管理対象Webアプリを短時間で作れるようになった。",
+  "keyPoints": [
+    "Power BI reportsはPower BIセマンティックモデル専用のレポート作成体験で、クエリ生成の複雑さをサービス側が担い、OfficeやWeb、自社ポータルへの統合を含む共有に対応する。",
+    "AI関連では、modeling MCPやagentic skills report authoringによってレポートやモデル作成を容易にし、新しいPower BI Desktop bridgeで安全なローカル外部編集をDesktop上に直接表示して、レビューや共同作業をしやすくする。",
+    "Power BI reports以外にも、ExcelやFabric notebooks、他のレポートツールからセマンティックモデルのデータに接続でき、Rayfinを通じてFabric AppsでAIファーストの管理対象Webアプリを数分で構築する選択肢が加わった。",
+    "Power BI reportsとFabric Appsは同じセマンティックモデルを再利用でき、OneLake上の共通基盤として、Direct Lakeやimportで取り込んだデータと業務ロジックを横断的に使える。",
+    "本文末尾の案内ではFabric Appsの関連ドキュメント名が「What is Fabric Apps (Preview)?」となっており、Fabric Appsはプレビューとして示されている。"
+  ],
+  "significance": "同じセマンティックモデルを土台に、アナリストはPower BIレポート、開発者はFabric Apps、データサイエンティストはnotebooksを役割に応じて使い分けられる点が重要だ。これにより、共通のビジネスロジックとガバナンスを保ちながら、可視化中心の利用者からWebアプリ開発者まで、AIとCopilotを前提にしたデータ活用の選択肢が広がる。",
+  "summaryEn": "Power BI reports and Fabric Apps expand how teams can build on the same Power BI semantic model. Power BI reports remains the dedicated reporting experience that hides query complexity, while the new Power BI Desktop bridge surfaces secure local external edits directly in Desktop. With Rayfin, teams also get an AI-first way to build managed web apps on top of semantic model data in minutes."
+}

@@ -1,0 +1,11 @@
+{
+  "summary": "VS CodeのGitHub Copilot Chat拡張で、入力中に表示されるinline suggestionsがオープンソース化された。これに伴い、従来はGitHub Copilot拡張とCopilot Chat拡張に分かれていた機能をCopilot Chatへ集約する単一拡張構成の段階的ロールアウトが進められている。GitHub Copilot拡張は2026年初頭までに非推奨となってMarketplaceから削除予定だが、問題があれば設定を外して従来の2拡張動作へ一時的に戻せる。",
+  "keyPoints": [
+    "Copilot機能はCopilot Chat拡張へ統合する方向でテスト中で、inline suggestionsも同拡張から配信する。利用体験は変えない方針で、既存のチャットやagent mode機能も引き続き使えるとしている。",
+    "公開された実装には、前回提案に追従しているかの判定、キャッシュ再利用、前キー入力時の未完了LLMリクエスト再利用、ワークスペース文脈を集めたプロンプト構築など、候補生成の主要な流れが含まれる。",
+    "性能面では、ネットワーク問題の修正でghost text配信の高速化を図り、遅延と提案品質の両方で回帰がないよう広範な実験を行ったと説明している。",
+    "GitHub Copilot拡張は2026年初頭までに非推奨となりMarketplaceから削除予定で、統合版に問題があればunification settingを外して従来の2拡張動作へ一時的に戻せる。"
+  ],
+  "significance": "VS CodeでCopilotを使う開発者は、コード補完を含むCopilot機能が単一拡張へまとまる移行の影響を受ける一方、体験は変えずに遅延改善を受けられる可能性がある。加えて、inline suggestionsの実装がvscode-copilot-chatリポジトリで公開されたことで、仕組みを確認したい利用者やコントリビューターが挙動を調べたり改善に参加しやすくなる。",
+  "summaryEn": "VS Code has open-sourced inline suggestions in the GitHub Copilot Chat extension and is progressively consolidating Copilot features into that single extension. The legacy GitHub Copilot extension is slated for deprecation by early 2026 and removal from the Marketplace, but users can temporarily switch back to the old two-extension setup if needed."
+}

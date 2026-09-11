@@ -1,0 +1,11 @@
+{
+  "summary": "GitHub Copilot Chat拡張機能がMITライセンスでGitHub上にオープンソース化され、VS CodeをオープンソースのAIエディターにする計画の最初の節目に達した。これにより、エージェントモードの実装やLLMへ送るコンテキスト、システムプロンプト、テレメトリまで確認しながら学習や貢献ができる。今後は関連部分をVS Code本体へ慎重に移し、現在は非公開のインライン補完機能も数カ月内にこの公開済み拡張側が担う計画だ。",
+  "keyPoints": [
+    "2025年6月30日時点での最初のマイルストーンとして、GitHub Copilot Chat拡張機能がMITライセンスでオープンソース化された。",
+    "公開されたコードベースでは、エージェントモードの実装、LLMに送るコンテキスト、プロンプト設計、収集テレメトリまで確認できると説明している。",
+    "コミュニティからのPRやIssue提出を受け付けるが、Issueはvscode-copilot-chat側ではなくvscodeリポジトリで追跡する。",
+    "次の段階では拡張機能の関連コンポーネントをVS Code本体へリファクタリングし、現時点ではクローズドソースのインライン補完機能も今後数カ月で公開済みのGitHub Copilot Chat拡張が提供する計画だ。"
+  ],
+  "significance": "VS Code利用者や拡張機能開発者、オープンソースAIコミュニティにとって、AI機能の内部実装やLLM送信コンテキスト、テレメトリを直接確認しながら改善提案や貢献ができる点が重要だ。さらに、将来的なVS Code本体への統合方針が示されたことで、AI編集体験を本体に近い形でオープンに育てる方向性が明確になった。",
+  "summaryEn": "The GitHub Copilot Chat extension has been open-sourced on GitHub under the MIT license, marking the first milestone in turning VS Code into an open-source AI editor. Developers can now inspect agent mode, LLM context, prompts, and telemetry, and contribute directly. The team next plans to move relevant parts into VS Code core, while inline completions remain closed source for now and are intended to be handled by the open-sourced extension in the coming months."
+}

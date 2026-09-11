@@ -3,8 +3,10 @@
 const { describe, it } = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs/promises');
+const os = require('node:os');
+const path = require('node:path');
 const axios = require('axios');
-const { cleanText, enumerateDates, extractArticleText, resolveTargetDates, toMarkdown } = require('../scripts/generate-daily-page');
+const { cleanText, enumerateDates, extractArticleText, extractReaderArticleText, fetchArticleText, resolveTargetDates, summarizeArticleCached, toMarkdown } = require('../scripts/generate-daily-page');
 const { buildSummaryPrompt, validateSummary, summarizeArticle, parseCopilotOutput, runCopilot } = require('../scripts/utils/article-summarizer');
 
 const article = { title: 'Example Search preview', url: 'https://example.com/search', source_id: 'example', source_name: 'Example', summary: 'Feed teaser only.' };
@@ -86,6 +88,35 @@ describe('target date resolution', () => {
 });
 
 describe('article extraction', () => {
+  it('JSON-LD の完全な articleBody を本文コンテナより優先する', () => {
+    const structuredBody = `${announcement}\n${benefit}\n${limitation}`;
+    const html = `<script type="application/ld+json">${JSON.stringify({ '@type': 'BlogPosting', articleBody: structuredBody })}</script><main><article><p>${'Visible teaser only. '.repeat(10)}</p></article></main>`;
+    const text = extractArticleText(html);
+    assert.match(text, /multilingual retrieval/);
+    assert.ok(text.endsWith(limitation));
+    assert.doesNotMatch(text, /Visible teaser/);
+  });
+
+  it('BlogPosting の長い description を本文として扱い、短い抜粋は扱わない', () => {
+    const completeDescription = `${announcement}\n${'Detailed analysis. '.repeat(30)}\n${limitation}`;
+    const completeHtml = `<script type="application/ld+json">${JSON.stringify({ '@type': 'BlogPosting', description: completeDescription })}</script>`;
+    assert.ok(extractArticleText(completeHtml).endsWith(limitation));
+    const excerptHtml = `<script type="application/ld+json">${JSON.stringify({ '@type': 'BlogPosting', description: announcement })}</script>`;
+    assert.throws(() => extractArticleText(excerptHtml), /could not be extracted/);
+  });
+
+  it('壊れた JSON-LD は無視して表示中の本文を抽出する', () => {
+    const html = `<script type="application/ld+json">{invalid</script><article><p>${body}</p></article>`;
+    assert.match(extractArticleText(html), /production use is not supported/);
+  });
+
+  it('短い著者カードの article より十分な長さの main 本文を優先する', () => {
+    const html = `<main><h1>Article title</h1><p>${body}</p><article><p>${'Author biography. '.repeat(8)}</p></article></main>`;
+    const text = extractArticleText(html);
+    assert.match(text, /Article title/);
+    assert.match(text, /production use is not supported/);
+  });
+
   it('本文の見出し・短い箇条書き・表・後半の制限を残し、ナビを除く', () => {
     const html = `<nav><p>Navigation noise</p></nav><main><p>Outside article noise</p><article>
       <h1>Example Search</h1><p>${announcement}</p><h2>Availability</h2>
@@ -131,9 +162,121 @@ describe('article extraction', () => {
   it('本文を取れないページは RSS や全ページのテキストにフォールバックしない', () => {
     assert.throws(() => extractArticleText(`<nav><p>${body}</p></nav>`), /could not be extracted/);
   });
+
+  it('403 の記事だけ Reader の Markdown 本文へフォールバックする', async () => {
+    const calls = [];
+    const get = async (url) => {
+      calls.push(url);
+      if (calls.length === 1) {
+        const error = new Error('Forbidden');
+        error.response = { status: 403 };
+        throw error;
+      }
+      return { data: `Title: Example\nMarkdown Content:\n${body}` };
+    };
+    assert.equal(await fetchArticleText(article.url, get), body);
+    assert.deepEqual(calls, [article.url, `https://r.jina.ai/${article.url}`]);
+  });
+
+  it('直接取得のタイムアウト時も Reader の本文へフォールバックする', async () => {
+    let calls = 0;
+    const get = async () => {
+      calls += 1;
+      if (calls === 1) {
+        const error = new Error('timeout');
+        error.code = 'ECONNABORTED';
+        throw error;
+      }
+      return { data: `Markdown Content:\n${body}` };
+    };
+    assert.equal(await fetchArticleText(article.url, get), body);
+    assert.equal(calls, 2);
+  });
+
+  it('直接抽出した本文が上限を超える場合も切り捨てず Reader へ切り替える', async () => {
+    const calls = [];
+    const get = async (url) => {
+      calls.push(url);
+      if (calls.length === 1) return { data: `<article><p>${'Long article text. '.repeat(7000)}</p></article>` };
+      return { data: `Markdown Content:\n${body}` };
+    };
+    assert.equal(await fetchArticleText(article.url, get), body);
+    assert.deepEqual(calls, [article.url, `https://r.jina.ai/${article.url}`]);
+  });
+
+  it('Reader の短い応答を本文として扱わない', () => {
+    assert.throws(() => extractReaderArticleText('Markdown Content:\nUnavailable'), /too short/);
+  });
+
+  it('旧 Power BI URL の短い Reader 応答は記事 ID の新 URL で再試行する', async () => {
+    const url = 'https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Example/ba-p/5190703';
+    const calls = [];
+    const get = async (requestUrl) => {
+      calls.push(requestUrl);
+      if (calls.length === 1) {
+        const error = new Error('Forbidden');
+        error.response = { status: 403 };
+        throw error;
+      }
+      return { data: calls.length === 2 ? 'Markdown Content:\nUnavailable' : `Markdown Content:\n${body}` };
+    };
+    assert.equal(await fetchArticleText(url, get), body);
+    assert.equal(calls[2], 'https://r.jina.ai/https://community.fabric.microsoft.com/blog/fbc_pbiupdatesblog/article/5190703');
+  });
+
+  it('Reader の 429 は待機して最大3回まで再試行する', async () => {
+    const waits = [];
+    let calls = 0;
+    const get = async () => {
+      calls += 1;
+      if (calls === 1) {
+        const error = new Error('Forbidden');
+        error.response = { status: 403 };
+        throw error;
+      }
+      if (calls < 4) {
+        const error = new Error('Rate limited');
+        error.response = { status: 429, headers: { 'retry-after': '2' } };
+        throw error;
+      }
+      return { data: `Markdown Content:\n${body}` };
+    };
+    assert.equal(await fetchArticleText(article.url, get, async (milliseconds) => waits.push(milliseconds)), body);
+    assert.equal(calls, 4);
+    assert.deepEqual(waits, [2000, 2000]);
+  });
 });
 
 describe('grounded summary', () => {
+  it('検証済み要約を本文とモデル別に保存して再利用する', async () => {
+    const cacheDir = await fs.mkdtemp(path.join(os.tmpdir(), 'summary-cache-test-'));
+    const originalModel = process.env.SUMMARY_MODEL;
+    process.env.SUMMARY_MODEL = 'test-model';
+    let calls = 0;
+    const summarize = async () => {
+      calls += 1;
+      const value = response();
+      return {
+        summary: value.summary.text,
+        keyPoints: value.keyPoints.map((point) => point.text),
+        significance: value.significance.text,
+        summaryEn: value.summaryEn,
+      };
+    };
+    try {
+      const first = await summarizeArticleCached(article, body, summarize, cacheDir);
+      const second = await summarizeArticleCached(article, body, summarize, cacheDir);
+      assert.deepEqual(second, first);
+      assert.equal(calls, 1);
+      await summarizeArticleCached(article, `${body}\nChanged body.`, summarize, cacheDir);
+      assert.equal(calls, 2);
+    } finally {
+      await fs.rm(cacheDir, { recursive: true, force: true });
+      if (originalModel === undefined) delete process.env.SUMMARY_MODEL;
+      else process.env.SUMMARY_MODEL = originalModel;
+    }
+  });
+
   it('全文をモデルへ渡し、本文後半の根拠を検証する', async () => {
     const result = await summarizeArticle(article, body, async (prompt) => {
       assert.ok(prompt.includes(limitation));
@@ -175,16 +318,58 @@ describe('grounded summary', () => {
     });
   }
 
+  it('日本語フィールドの型・文字数・かな不足を再試行向けに区別する', () => {
+    const wrongType = response();
+    wrongType.summary.text = null;
+    assert.throws(() => validateSummary(wrongType, body), /text must be a string/);
+    const tooShort = response();
+    tooShort.summary.text = '短い';
+    assert.throws(() => validateSummary(tooShort, body), /text length 2/);
+    const noKana = response();
+    noKana.summary.text = '日本語要約文章日本語要約文章日本語要約文章日本語要約文章';
+    assert.throws(() => validateSummary(noKana, body), /Japanese kana/);
+  });
+
+  it('日本語 text の文字列配列と ja オブジェクトを正規化して検証する', () => {
+    const value = response();
+    const expectedSummary = value.summary.text;
+    value.summary.text = ['Example Search に日本語と英語の横断検索が追加された。', '利用条件と制限も明記されている。'];
+    value.significance.text = { ja: value.significance.text };
+    const result = validateSummary(value, body);
+    assert.equal(result.summary, 'Example Search に日本語と英語の横断検索が追加された。 利用条件と制限も明記されている。');
+    assert.equal(result.significance, response().significance.text);
+    assert.notEqual(result.summary, expectedSummary);
+  });
+
+  it('日本語値が grounded field 直下の ja にある構造を正規化する', () => {
+    const value = response();
+    value.summary = { ja: value.summary.text, evidence: value.summary.evidence };
+    assert.equal(validateSummary(value, body).summary, response().summary.text);
+  });
+
+  it('Markdownリンクの表示テキストを根拠引用として検証する', () => {
+    const markdownBody = `${body}\nUse [Power BI Desktop](https://example.com/power-bi) to **publish the report securely**.`;
+    const value = response();
+    value.keyPoints[0] = {
+      text: 'Power BI Desktop からレポートを安全に公開できる。',
+      evidence: ['Use Power BI Desktop to publish the report securely.'],
+    };
+    assert.equal(validateSummary(value, markdownBody).keyPoints[0], value.keyPoints[0].text);
+  });
+
   it('JSONL から最終回答だけを取り出し、日本語・引用・改行を保持する', () => {
     const content = JSON.stringify(response(), null, 2);
     assert.equal(parseCopilotOutput(copilotOutput(content)), content);
     assert.equal(parseCopilotOutput(copilotOutput(content).replace(/\n/gu, '\r\n')), content);
+    assert.equal(parseCopilotOutput(`CLI diagnostic before events\n${copilotOutput(content)}`), content);
+    assert.equal(parseCopilotOutput(copilotOutput(content).replace('\n{"type":"assistant.message_delta"', '\nCLI diagnostic between events\n{"type":"assistant.message_delta"')), content);
+    assert.equal(parseCopilotOutput(copilotOutput(content).replace(/^\{"type":"user.message"[^\n]+/u, '{"type":"user.message","data":{broken}}')), content);
   });
 
   for (const [label, output, expected] of [
-    ['テキスト表示', 'Rendered summary, not JSONL', /valid JSONL/],
-    ['空の出力', '', /valid JSONL/],
-    ['途中で切れた出力', copilotOutput().trim().slice(0, -1), /valid JSONL/],
+    ['テキスト表示', 'Rendered summary, not JSONL', /no JSON events in 1 line/],
+    ['空の出力', '', /no JSON events/],
+    ['途中で切れた出力', copilotOutput().trim().slice(0, -1), /valid JSONL after/],
     ['完了イベントなし', JSON.stringify({ type: 'assistant.message', data: { content: JSON.stringify(response()) } }), /complete successfully/],
     ['失敗終了', copilotOutput().replace('"exitCode":0', '"exitCode":1'), /complete successfully/],
     ['セッションエラー', `${JSON.stringify({ type: 'session.error', data: { message: 'private diagnostic' } })}\n${copilotOutput()}`, /complete successfully/],

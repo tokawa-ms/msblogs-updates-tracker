@@ -1,0 +1,12 @@
+{
+  "summary": "GitHub Copilot for Azureがプレビューとして公開され、VS CodeのGitHub Copilot Chatに統合されたことで、@azure を使ってAzureの学習、デプロイ、トラブルシューティング、運用をエディター内から進められるようになった。Visual Studio Marketplaceから今すぐ導入でき、AzureポータルやCLI引数を別途調べずに、リソース管理や診断、コスト確認まで支援する。",
+  "keyPoints": [
+    "提供形態は現時点でプレビューで、Visual Studio Marketplaceからインストールしてすぐ利用を始められる。",
+    "学習用途では、エディターを離れずに関連ドキュメントを参照でき、Azure OpenAI models、Azure AI Search、Azure SQLの価格詳細まで質問できる。",
+    "デプロイ用途では、PythonのRAGアプリ、CI/CDパイプライン、Azure Developer CLI（azd）による展開に対して、アプリテンプレート、適切なコマンド、構成を提案する。",
+    "障害対応では診断、ログ検索、問題候補の提示に加え、設定最適化、リソースのスケーリング、500エラー原因コードの修正提案まで行う。",
+    "自然言語に加えて、/help、/learn、/resources、/diagnose、/changeTenant のスラッシュコマンドで、機能確認、学習、リソース参照、診断、利用テナント切り替えを明示的に指示できる。"
+  ],
+  "significance": "Azureに不慣れな開発者は複雑な概念を素早く把握しやすくなり、経験者も最新サービスや機能の確認にかかる時間を減らせる点が重要だ。さらに、IDEとAzureポータルを行き来せずに、学習から運用まで同じ開発環境で進められるため、Azure上でアプリを構築・運用する開発者の作業を一貫して支援する。",
+  "summaryEn": "GitHub Copilot for Azure is now in preview and integrates with GitHub Copilot Chat in VS Code, letting developers use @azure for Azure learning, deployment, troubleshooting, and operations directly from the editor. It is available now from the Visual Studio Marketplace and helps with resource management, diagnostics, and cost questions without switching to the Azure portal or looking up CLI arguments separately."
+}

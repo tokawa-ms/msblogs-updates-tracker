@@ -1,0 +1,11 @@
+{
+  "summary": "DAXユーザー定義関数（UDF）が一般提供となり、Power BIのセマンティックモデルで本番利用できるようになった。計算を一度定義してメジャー、列、ビジュアルで再利用でき、型ヒントによる実行時の型安全性やドキュメントコメントを使ったIntelliSense表示にも対応する。今回のリリースではWebモデリングやオプション引数なども強化され、Power BI Desktopの2026年6月版では既定で有効になる予定だ。",
+  "keyPoints": [
+    "DAX UDFでは同じ計算式を複数箇所へコピーせずに再利用でき、/// のドキュメントコメントにより関数の説明やシグネチャをIntelliSenseで表示できる。",
+    "今回の一般提供でオプション引数が追加され、既定値付きのパラメーター定義が可能になった。型ヒントはAnyVal、Scalar、Table、AnyRef、CalendarRef、ColumnRef、MeasureRef、TableRefをサポートする。",
+    "ブラウザーでのWebモデリングやPower BI DesktopのModel ViewでUDFを作成・編集できるようになり、SSMSでも22.5以降でUDFのスクリプト作成、作成、更新を行える。",
+    "INFO.USERDEFINEDFUNCTIONS() はモデルに保存された関数だけを返し、DAXクエリ内でDEFINE FUNCTIONしただけのUDFはCodeLensでモデルに追加しない限り表示されない。なお、Power BI Desktopでは2026年6月版で既定有効化される予定だ。"
+  ],
+  "significance": "Power BIでセマンティックモデルを作る開発者やチームにとって、UDFをGit管理された共通ライブラリとして扱えるため、承認済みの業務ロジックを組織内で一貫して再利用しやすくなる。加えて、型付きシグネチャと説明を持つ関数をAIツールが発見して呼び出せるため、Copilotのようなツール経由でも既存ロジックをより明確に扱える。",
+  "summaryEn": "DAX user-defined functions are now generally available and ready for production use in Power BI semantic models. They let authors define calculations once and reuse them across measures, columns, and visuals, with type hints for runtime type safety and documentation comments surfaced through IntelliSense. This release also adds improvements such as web modeling and optional parameters, and DAX UDFs are scheduled to be enabled by default in the June 2026 release of Power BI Desktop."
+}

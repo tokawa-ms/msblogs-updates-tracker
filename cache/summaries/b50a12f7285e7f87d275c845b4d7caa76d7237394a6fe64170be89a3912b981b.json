@@ -1,0 +1,11 @@
+{
+  "summary": "Power BIのサンプルレポートが、新しいPower BI既定設定の一般提供に合わせて刷新され、2026年版の更新サンプルとして公開された。今回の更新は見た目の調整にとどまらず、セマンティックモデルの整理やレポート体験の改善まで含み、データ準備から利用までの現在のベストプラクティスを反映している。さらに各サンプルにはPower BIモバイル向けの最適化ビューも用意され、Desktopとモバイルの両方で学習・再利用しやすくなった。",
+  "keyPoints": [
+    "刷新は新しいPower BI既定設定の一般提供に合わせたもので、更新済みの2026年版サンプルはダウンロードしてPower BI Desktopで確認できる。",
+    "セマンティックモデルでは、テーブル・列・メジャー名の明確化、説明の追加、共通分析用メジャーの作成、関係性の見直しなどが行われた。",
+    "レポートページは最新ベーステーマと大きな既定キャンバスを採用し、推奨されなくなったBing MapsやQ&A visualを置き換えつつ、新しいカード、date picker、button slicerなどの新しいビジュアルを取り入れている。",
+    "各サンプルにはスマートフォンとタブレット向けのモバイル最適化ビューがあり、デスクトップ表示とは独立した書式調整で画面サイズに合わせた体験を作れる。"
+  ],
+  "significance": "Power BIのレポート作成者と閲覧者にとって、この更新は現在のベストプラクティスを反映した具体例をそのまま学習や再利用に使える点が重要だ。整理されたモデル説明は作成者がデータを見つけやすくし、ツールチップやモバイル最適化は閲覧者がページを離れずに詳細を追え、異なる画面サイズでも使いやすい体験につながる。",
+  "summaryEn": "Power BI sample reports have been refreshed alongside the general availability of the new Power BI defaults and released as updated 2026 samples. The update goes beyond visual polish to improve semantic models and the report experience, reflecting current best practices from data preparation through consumption. Each sample also includes a mobile-optimized view, making the examples easier to learn from and reuse across Desktop and mobile."
+}

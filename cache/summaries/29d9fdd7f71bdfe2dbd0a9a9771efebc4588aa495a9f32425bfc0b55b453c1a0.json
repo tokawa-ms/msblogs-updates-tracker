@@ -1,0 +1,11 @@
+{
+  "summary": "GitHub Copilot CLIは、LSP Setupスキルを入れることで、grepやJAR展開に頼る推測的な解析から、言語サーバーによる構造化されたコード理解へ切り替えられる。スキルは14言語向けにLSPサーバーのインストールと設定を自動化し、ユーザー単位またはリポジトリ単位のJSON設定へ既存項目を保持したまま追記する。導入後は依存関係をまたぐ型解決、定義ジャンプ、参照検索、ホバー情報の取得がCLIエージェントで使える。",
+  "keyPoints": [
+    "LSPなしのCopilot CLIは、Javaでは依存JARを展開して.classをgrepするなど、テキスト検索やバイナリ抽出でAPI情報を推測しており、genericsやoverloads、transitive types、コンパイル済みバイトコードの正確な把握に弱い。",
+    "スキルは7段階で動作し、言語選択、OS判定、14言語分の参照データに基づくサーバー選定、設定スコープ選択、インストール、設定反映、実行可能ファイルとJSONの検証までを自動化する。",
+    "設定先はユーザー単位の~/.copilot/lsp-config.jsonか、リポジトリ単位のlsp.jsonまたは.github/lsp.jsonから選べ、両方ある場合はリポジトリ単位設定が優先される。",
+    "導入手順として、ZIPを~/.copilot/skills/へ展開し、Copilot CLIを再起動してから「set up LSP for Java」のように依頼する。設定後は再度再起動し、/lspで状態確認して依存関係上のシンボルでgo-to-definitionを試す。"
+  ],
+  "significance": "依存ライブラリやコンパイル済み成果物をまたいでコードを読むCopilot CLI利用者にとって有効で、特にJavaやTypeScriptのように従来はJARやnode_modulesを手作業的に探索していた場面で恩恵がある。記事では、LSP導入によりツール呼び出しや待ち時間が減り、初回からより正確なコード生成や大きく複雑なタスクへの対応がしやすくなると説明している。",
+  "summaryEn": "GitHub Copilot CLI can switch from grep- and JAR-extraction-based heuristic analysis to structured code understanding by installing the LSP Setup skill. The skill automates LSP server installation and configuration for 14 languages, merges entries into user- or repository-level JSON config, and enables dependency-aware type resolution, go-to-definition, reference search, and hover documentation in the CLI agent."
+}

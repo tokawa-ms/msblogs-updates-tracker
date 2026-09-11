@@ -1,0 +1,12 @@
+{
+  "summary": "GitHubは、オープンソースのアクセシビリティ向上に向けた自社の誓約を、この1年でハッカソン開催、サミット運営、文書整備、オープンツール提供へと具体化した。2026年5月には支援技術ハッカソンを開き、2025年10月には初のアクセシビリティサミットをAll Things Openと共催した。あわせて、支援技術利用者向けのGitHubアクセシビリティ文書や、GitHub ActionsとGitHub Copilotを使うAccessibility Scannerなど、日常開発に組み込みやすい実務リソースも拡充している。",
+  "keyPoints": [
+    "2026年5月、GitHub本社のサンフランシスコでOpen Source Assistive Technology Hackathonを2日間開催し、実際のアクセス障壁に取り組むオープンソース支援技術プロジェクトを共同開発した。参加支援として、NVDAスクリーンリーダーやキーボード操作に関するGitHub Learning Room、NV Accessのオフィスアワーも用意された。",
+    "支援対象のプロジェクト領域は、視覚障害者向けカメラ支援、PDFのアクセシブル形式変換、車いすソフト・ハードウェア、経路計画、スクリーンリーダーの発音改善、アクセシブルゲーム、点字ディスプレイ向け触覚体験など幅広い。",
+    "主流のオープンソース開発フロー改善では、2025年10月にノースカロライナ州ローリーで初回のOpen Source Accessibility SummitをAll Things Openと共催し、障害・アクセシビリティ・オープンソースの各コミュニティが、ソフトウェアのアクセシビリティ改善ロードマップを議論した。",
+    "実務向けリソースとして、ACCESSIBILITY.md作成やCI統合を含むベストプラクティス、GitHubアクセシビリティ文書、GitHub ActionsとGitHub Copilotを使うAccessibility Scanner、Figma向けAccessibility Annotation Toolkitを提供しており、課題起票や協業、開発工程への組み込みを支援する。",
+    "今後参加できる場として、2026年7月9日にバーチャル開催のOpen Source Accessibility Community Day、2026年10月19日にローリーでのOpen Source Accessibility Summitを案内している。前者ではハッカソン参加プロジェクトの成果や学び、今後必要な貢献先が共有される。"
+  ],
+  "significance": "この取り組みは、障害のあるコントリビューター、メンテナー、教育者、アクセシビリティ実務者に直接関係する。記事によれば、実体験を持つ人々が文書作成やレビューに関わることで、GitHubやオープンソース参加の障壁を下げ、日々の開発フローにもアクセシビリティを組み込みやすくする。さらに2026年のイベントは、経験レベルを問わず実践的な貢献スキルを学ぶ場として位置付けられている。",
+  "summaryEn": "GitHub has turned its open source accessibility pledge into concrete work over the past year through hackathons, summits, documentation, and open tools. It held an assistive technology hackathon in May 2026 and the first accessibility summit in October 2025, while expanding practical resources such as accessibility documentation and the Accessibility Scanner built on GitHub Actions and GitHub Copilot."
+}

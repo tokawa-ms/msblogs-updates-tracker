@@ -1,0 +1,11 @@
+{
+  "summary": "VS CodeはMCP Appsをフルサポートする最初の主要AIコードエディターとなり、ツール呼び出しの結果を会話内でダッシュボード、フォーム、可視化などの対話型UIとして直接表示できるようになった。MCP AppsはMCP初の公式拡張機能で、現時点ではVS Code Insidersで利用でき、試すにはInsidersの導入が必要だという。記事では、並べ替え、CPUプロファイル確認、機能フラグ選択をテキスト往復ではなく、開発者が画面上で操作しながら進められる点を示している。",
+  "keyPoints": [
+    "MCP AppsはMCPの初の公式拡張機能として発表され、エージェントのツール呼び出し結果を会話内の対話型UIとして返せる。対象UIにはダッシュボード、フォーム、可視化、複数ステップのワークフローが含まれる。",
+    "VS CodeはMCP Appsをフルサポートする最初の主要AIコードエディターとされ、現時点ではVS Code Insidersで利用可能。Stable版への展開は来週のリリース予定とされており、今すぐ試すにはInsidersのインストールが必要だ。",
+    "記事のデモでは、リストのドラッグ＆ドロップ並べ替え、CPUプロファイルのインタラクティブなフレームグラフ確認、環境状態付きの検索可能な機能フラグ選択とSDKコード生成を、会話の中で完結できる例が示されている。",
+    "Storybookは自社のオープンソースMCPサーバーでMCP Apps対応を追加しており、設計システムを使ったログインフォーム作成を依頼すると、VS Code内でインタラクティブなコンポーネントプレビューを直接表示できる事例として紹介されている。"
+  ],
+  "significance": "AIコーディングエージェントを使う開発者にとっては、エージェントの提案を文章だけで受け取るのではなく、可視化やフォームを見ながら確認、修正、判断できるため、作業の主導権を保ったまま協業しやすくなる。あわせてMCPサーバーを作る開発者は、自分たちのサーバーにMCP Appsを追加することで、VS Code上でより対話的な体験を提供できる。",
+  "summaryEn": "VS Code has become the first major AI code editor with full support for MCP Apps, letting tool calls return interactive UI such as dashboards, forms, and visualizations directly inside the chat. MCP Apps is the first official MCP extension and is available now in VS Code Insiders, with Stable rollout expected next week. The article shows how tasks like reordering lists, inspecting CPU profiles, and selecting feature flags can move from text-only exchanges to direct on-screen interaction."
+}

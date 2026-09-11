@@ -1,0 +1,11 @@
+{
+  "summary": "Power BIのDenodoコネクタで、PreviewとしてMicrosoft Entra IDシングルサインオンがDirectQuery向けに利用できるようになった。これにより、セマンティックモデルを照会するユーザーは自身のEntra IDでDenodoに認証され、従来のKerberos Constrained Delegationや同期されたActive Directory前提を避けられる。オンプレミスのデータ ゲートウェイ経由でトークンをDenodoへそのまま渡し、Denodo側の行レベル・列レベルの認可を実ユーザーに対して適用できる。",
+  "keyPoints": [
+    "対象はDirectQuery時のSSOで、ImportモードではユーザーIDはデータソースまで渡らない。Denodoコネクタ自体はImportとDirectQueryの両方をサポートするが、Entra ID SSOの効果はDirectQueryに限定される。",
+    "有効化にはPower BIテナント管理者がDenodo SSOとデータ ゲートウェイのEntra ID SSOを有効にし、Denodo接続設定で「Use SSO via Azure AD for DirectQueries queries」を選ぶ必要がある。",
+    "従来方式ではKCD設定、ゲートウェイのサービスアカウント設定、Active DirectoryとEntra IDの同期が必要だったが、新方式ではその複雑な委任チェーンを減らせる。",
+    "Previewを試すには、DenodoサーバーがEntra IDトークン検証をサポートするバージョンであることと、オンプレミスのデータ ゲートウェイが最近のリリースであることを確認する必要がある。"
+  ],
+  "significance": "この変更は、Active Directoryを維持していないクラウドファースト企業や、複雑なハイブリッド構成を運用している組織に特に影響する。実ユーザーのIDをPower BIからDenodoまで一貫して渡せるため、Denodo側の行レベル・列レベルのアクセス制御や監査要件を、固定サービスアカウントではなく利用者本人に対して適用しやすくなる。",
+  "summaryEn": "The Denodo connector in Power BI now supports Microsoft Entra ID single sign-on for DirectQuery in preview. Users querying a semantic model can be authenticated to Denodo with their own Entra ID identity, avoiding the previous reliance on Kerberos constrained delegation and synchronized Active Directory environments. The gateway passes the user's token through to Denodo so Denodo can apply its own row-level and column-level authorization to the actual user."
+}

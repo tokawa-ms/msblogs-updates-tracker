@@ -1,0 +1,12 @@
+{
+  "summary": "Power BIとFabricのorg appsは、1つのアプリ内で複数のaudienceを定義し、各audienceに見せるコンテンツを切り替えられるようになった。共有時にユーザーへaudienceを直接割り当てられ、公開や更新のたびにaudienceごとの個別管理をしなくてよい。さらにorg appsはFabricの第一級アイテムとなり、ワークスペースごとに複数作成でき、OneLake Catalogやdeployment pipelines、Gitで扱える。",
+  "keyPoints": [
+    "配信モデルは、ワークスペースごとに複数のorg appを作る方法、1つのorg appでaudience別に出し分ける方法、その併用の3通りから選べる。",
+    "ナビゲーション設定ではAllタブとaudienceタブの併用、Allタブの非表示、audience自体の非表示を選べ、1つのaudienceにしか属さない利用者にはaudienceタブが表示されない。",
+    "Fabric統合では、org appsがOneLake Catalogやworkspace task flowsに現れる第一級アイテムとなり、deployment pipelinesやGit管理、org app itemとaudience child items向けのCRUD APIによる自動化にも対応する。",
+    "org apps自体はPower BI service、iOS/AndroidのPower BI mobile apps、Proライセンスのworkspace、Microsoft TeamsのPower BI personal appで利用できる。一方で、Power BI mobile appsでのaudience対応はcoming soonとされている。",
+    "既存のPower BI workspace apps利用者向けには、廃止時期は未公表で、workspace appsからorg appsへの移行ツールもまだない。workspace appsはorg appsのGA移行期間中も引き続きサポートされる。"
+  ],
+  "significance": "同じ基盤データを役職や部門ごとに異なる形で届けたい組織と、その配布を管理・自動化する管理者や開発者に影響が大きい。execsやfrontline teamsのように利用者ごとに必要な見せ方を変えつつ、単一のアプリ面で統治でき、ユーザー削除やコンテンツ削除時のアクセス剥奪も一貫するためだ。さらにdeployment pipelines、Git、CRUD APIに入ることで、配布アプリをFabricネイティブな開発・運用フローへ組み込みやすくなる。",
+  "summaryEn": "Power BI and Fabric org apps can now define multiple audiences within a single app and tailor which content each audience sees. Users can be assigned to audiences directly during sharing, avoiding separate audience-by-audience update management. Org apps are also first-class Fabric items, allowing multiple apps per workspace and management through OneLake Catalog, deployment pipelines, and Git."
+}

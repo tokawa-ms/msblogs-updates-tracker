@@ -1,0 +1,12 @@
+{
+  "summary": "Microsoft Copilot Studioの2026年4月更新では、作成画面でのエージェント状態表示など管理者向けの可視性と統制が強化された。ワークフロー機能も拡張され、MCPサーバー対応ツール接続がプレビューで加わるなど、より統制された自動化を構築しやすくなった。さらに、Copilot Chat内でアプリを直接操作できるapps in agentsが一般提供となり、会話から業務実行までを同じ文脈で進めやすくした。",
+  "keyPoints": [
+    "作成画面で各エージェントの状態や保護状況を直接確認できるようになり、Analytics Viewerロールは一般提供となって分析ページを読み取り専用で共有できる。",
+    "エージェント利用量見積もりはDynamics 365のSales Qualification AgentとCustomer Service Agentを含むようになり、Copilot StudioとDynamics 365をまたぐCopilotクレジット消費を1か所で予測できる。",
+    "ワークフローではagent nodesで推論や判断をエージェントに委ねられ、フロー内にAIアクションを追加でき、サンプル入力で個別ステップを試せるようになった。",
+    "ワークフローの外部連携はMCP server-enabled toolsがプレビューで追加され、Workflows Agent向けの管理者統制環境によりDLPポリシーを一貫適用できる。",
+    "そのほか、Work IQ APIはパブリックプレビュー、Work IQでのエージェント間通信は対応済み、GPT-5.5 ReasoningはCopilot Studioの早期リリース環境で利用可能になった。"
+  ],
+  "significance": "影響を受けるのは、権限分離を保ちながら運用状況を監視したいIT管理者や業務部門、そしてCopilot Chat上でそのまま承認や更新を進めたい現場ユーザーだ。記事は、読み取り専用の分析共有、DLPの一貫適用、会話内での実作業によって、ガバナンスを崩さずに自動化と業務実行を組織全体へ広げやすくなる点を重視している。",
+  "summaryEn": "Microsoft Copilot Studio’s April 2026 update strengthens admin visibility and control with in-authoring agent status, expands workflows with preview support for MCP server-enabled tools, and makes apps in agents generally available so users can take action directly inside Copilot Chat."
+}

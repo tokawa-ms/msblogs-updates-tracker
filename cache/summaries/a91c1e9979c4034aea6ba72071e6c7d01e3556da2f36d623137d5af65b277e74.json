@@ -1,0 +1,12 @@
+{
+  "summary": "GPT-6 AstraがMicrosoft Foundryで全顧客向けに一般提供となり、複雑な業務判断から計画立案、成果物作成、アプリ横断の実行までを担うモデルとして位置づけられた。専用APIがない既存アプリを含むコンピュータ利用機能を備える一方、性能はタスクや設定で変動し、Foundry側でアクセス制御、承認、監視、人手チェックを組み合わせた運用が前提とされている。",
+  "keyPoints": [
+    "GPT-6 AstraはMicrosoft Foundryで全顧客向けにGAとなり、企業の複雑な業務判断と、業務アプリやシステムをまたぐ実行を支援する用途が明示された。",
+    "コンピュータ利用機能は専用APIのないワークフローも含む既存アプリをまたいで使えるが、OpenAIの評価は一部ベンチマークでの結果であり、実際の性能はタスク、ツール、設定、安全策で変わる。",
+    "FoundryはEntraによるID・アクセス管理、転送時/保存時暗号化、プライベートネットワーク、RBAC、コンテンツフィルタリング、監視、ガバナンスを組み合わせて提供する。なお、プロンプトと出力はモデル学習に使われないが、リスクをなくすものではなく、各組織に制御選定と設定の責任が残る。",
+    "提供形態はFoundry modelsのStandardとProvisioned Throughputで、提供地域はGlobalとUS Data Zone。Standardは従量課金、Provisioned Throughputは一貫したレイテンシと保証スループット向けの専有処理容量として説明されている。",
+    "標準課金の公表価格は100万トークン当たり、Globalの短コンテキストが入力10ドル・キャッシュ入力1ドル・キャッシュ書き込み12.5ドル・出力50ドル、長コンテキストが入力20ドル・出力75ドル。US Data Zoneは短コンテキストが11ドル/55ドル、長コンテキストが22ドル/82.5ドルで、Provisioned Throughputの米国Data ZoneはGlobal比10%増しとされた。"
+  ],
+  "significance": "複雑な業務をAIで実運用したい企業の開発者、アナリスト、事務・専門職部門、統制担当に影響する発表だ。記事では、ソフトウェア不具合の再現と原因調査、Power BIダッシュボード改善、文書や表計算・プレゼン作成、顧客記録更新など複数の業務シナリオが示されており、単なる対話支援ではなく部門横断の作業単位を担わせる方向性が強い。一方で、重要な操作には人手チェックを挟み、各組織が自らの規制要件に応じて制御を選定・設定する前提が明確にされている。",
+  "summaryEn": "GPT-6 Astra is now generally available to all Microsoft Foundry customers and is positioned for complex enterprise work spanning decision support, planning, polished outputs, and action across applications. It can use computers across familiar apps, including workflows without dedicated APIs, but Microsoft says it should be deployed with access controls, approvals, monitoring, and human checkpoints because performance varies by task and configuration."
+}

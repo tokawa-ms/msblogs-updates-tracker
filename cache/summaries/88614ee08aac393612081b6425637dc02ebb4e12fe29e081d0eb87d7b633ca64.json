@@ -1,0 +1,11 @@
+{
+  "summary": "AT&Tの通信特化AIモデルOTel2.0は現在利用可能とされ、Microsoft Foundry Managed Compute上でPhi-4、OSS 120B、Gemma 4を使い分ける開発体制へ拡張された。本文では、430基のAMD Instinct MI300Xを含む約530基のGPUで約1兆トークンを処理したと説明する。AT&Tは、オープンモデル活用によりフロンティアモデル利用時より数千万ドル規模のコスト削減ができたと主張している。",
+  "keyPoints": [
+    "OTel2.0開発では、Phi-4、OSS 120B、Gemma 4を用途別に使い分ける複数オープンモデル戦略を採用し、Phi-4は月7000億超トークンのデータ準備と合成データ生成に使われた。",
+    "基盤面では、Microsoft Foundry Managed Compute上で430基のAMD Instinct MI300Xを含む約530基のGPUを使い、モデルの配備と拡張を数日単位で進めた。",
+    "AT&Tによれば、OTel2.0向けに約1兆トークンを処理し、約4000億トークンを学習したうえ、Phi-4などのオープンモデル活用でフロンティアモデル利用時より数千万ドル規模の節約になった。",
+    "本文末尾ではOTel2.0モデルが利用可能になったと案内されており、OTel 1.0のダウンロードは2500万超とされる。"
+  ],
+  "significance": "通信事業者や、業界固有データでAIを作る大規模開発チームに関係する内容である。本文は、汎用モデルだけでは通信ネットワークや標準、運用の知識が不足し得る一方、Foundry Managed ComputeならモデルとGPUを選びつつ、大量トークン処理をインフラ運用負荷を抑えて進められるというAT&Tの事例を示している。",
+  "summaryEn": "AT&T says its telecom-focused OTel2.0 models are now available and were developed on Microsoft Foundry Managed Compute using Phi-4, OSS 120B, and Gemma 4. The setup used about 530 GPUs, including 430 AMD Instinct MI300X units, to process roughly 1 trillion tokens. AT&T also claims the open-model approach saved tens of millions of dollars versus frontier models."
+}

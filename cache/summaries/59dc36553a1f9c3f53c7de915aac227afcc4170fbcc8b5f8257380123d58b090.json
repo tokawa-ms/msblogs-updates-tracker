@@ -1,0 +1,11 @@
+{
+  "summary": "Azure Cobalt 200 ArmベースVMが早期アクセスプレビューとなり、Cobalt 100比で最大50%高い世代性能をうたう第2世代のAzure独自Arm基盤が投入された。最大128 vCPUまで拡張でき、NVMe利用時のリモートストレージIOPSは最大20%、スループットは最大10%、ネットワーク帯域は最大15%向上するとされる。提供はWest US3やEast US2など8リージョンのプレビューから始まり、Linuxベースのagentic AI、クラウドネイティブ、データ集約型ワークロードを主対象とする。",
+  "keyPoints": [
+    "前世代比でCPU最大50%、NVMe利用のリモートストレージIOPS最大20%、同スループット最大10%、ネットワーク帯域最大15%の向上を掲げ、最大128 vCPUまで拡張できる。",
+    "Cobalt 200 SoCはTSMCの3nmプロセスで製造され、3MBのL2キャッシュ/コアと192MBのシステムレベルL3キャッシュを備える。メモリ暗号化はカスタム設計のメモリコントローラーにより既定で有効化される。",
+    "VMファミリーは既存の汎用D系・メモリ最適化E系に加え、高メモリ最適化Mpsv4/Mpdsv4とストレージ最適化Lpsv5を追加した。リモートディスクはStandard SSD/HDD、Premium SSD、Ultra Diskに対応し、Azure portalやSDK、API、PowerShell、CLIでデプロイできる。",
+    "現時点の提供形態はプレビューで、West US3、East US2、Central US、Sweden Centralなど8リージョンから開始する。Cobalt 100上のワークロードとの互換性をうたい、GitHub ActionsやAKSのArm対応も既存運用への組み込みを後押しする。"
+  ],
+  "significance": "Azure上でLinuxベースのagentic AI、クラウドネイティブ、データ集約型サービスを運用する開発者やプラットフォーム担当者に関係する発表だ。既存のCobalt 100利用者には互換性維持が示され、GitHub ActionsやAKSのArm対応があるため、開発からデプロイまでの既存パイプラインへ載せ替えやすい。一方で利用開始時点はプレビューかつ8リージョン提供に限られるため、適用範囲は当面その条件に左右される。",
+  "summaryEn": "Azure Cobalt 200 Arm-based VMs are now in early access preview, introducing Microsoft’s second-generation Arm platform for Azure with claimed performance up to 50% better than Cobalt 100. They scale to 128 vCPUs and are said to improve NVMe remote storage IOPS by up to 20%, throughput by up to 10%, and network bandwidth by up to 15%. Preview availability starts in eight regions including West US3 and East US2, targeting Linux-based agentic AI, cloud-native, and data-intensive workloads."
+}

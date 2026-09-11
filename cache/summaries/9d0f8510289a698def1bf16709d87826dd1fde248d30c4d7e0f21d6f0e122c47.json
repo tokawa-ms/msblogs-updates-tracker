@@ -1,0 +1,12 @@
+{
+  "summary": "Dataflows Upgrade Wizard (Preview)は、Fabric容量に割り当てられた対象ワークスペースでPower BI Dataflows Gen1をFabric Dataflows Gen2 (CI/CD)へ移行しやすくした。ウィザードは既存データフローの主要プロパティを保持しつつ事前評価を行い、必要な対応や制約を把握できる。移行後はGen2項目が元のGen1を置き換え、各データフローのリフレッシュや下流依存関係の再接続などの確認作業が必要になる。",
+  "keyPoints": [
+    "プレビュー提供の対象はFabric容量に割り当てられたワークスペースで、Power BI Dataflows Gen1項目のメニューから「Upgrade to Dataflow Gen2 (Preview)」を起動し、同じワークスペース内の他のGen1項目も追加できる。",
+    "アップグレードではID、スケジュール、クエリ、接続を維持し、名前も必要な変更が検出されない限り保持される。完了後はGen2が元のGen1を置き換えて元に戻せないため、元のGen1を残したい場合はSave Asで別のGen2項目を作る必要がある。",
+    "事前評価ではReady to migrate、Needs Attention、Upgrade unavailableを表示し、Needs Attentionでは増分更新、Bring Your Own Lake storage、linked dataflows、DirectQuery利用の可能性、命名変更などを検出できる。所有者でないデータフローはそのままではアップグレードできない。",
+    "完了後は、各アップグレード済みデータフローのリフレッシュ、下流データフローの再保存による再バインド、残るNeeds Attention対応、旧Power BI Dataflowsコネクタ利用先のPower Platform Dataflowsコネクタへの更新が必要になる。評価では旧コネクタ利用は検出されない。",
+    "移行先のDataflows Gen2 (CI/CD) はGit integrationとFabric deployment workflowsを備える。Microsoft公表のベンチマークではリフレッシュ時間が1.6倍から21倍に改善したとされるが、結果はデータ、容量、コネクタ、ゲートウェイ利用、クエリ設計で変わるとしている。"
+  ],
+  "significance": "既存のPower BI Dataflows Gen1所有者や、それに依存するsemantic models、reports、linked dataflowsを運用するチームに関係する。Power Queryロジックを作り直さずに近代化へ進められ、同じ項目IDの維持で下流側の再マッピングを減らせる一方、下流データフローの再バインドや旧コネクタ利用先の更新は利用者側で対応する必要がある。",
+  "summaryEn": "The preview Dataflows Upgrade Wizard makes it easier for eligible Fabric-capacity workspaces to move Power BI Dataflows Gen1 to Fabric Dataflows Gen2 (CI/CD) in stages. It preserves key properties and assesses each item in advance, but after migration the Gen2 item replaces the original Gen1 and teams still need to refresh dataflows and reconnect downstream dependencies."
+}

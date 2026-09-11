@@ -1,0 +1,12 @@
+{
+  "summary": "VS Codeで、GitHub Copilot Pro+契約からOpenAI Codexを追加契約なしで使える統合が発表され、Codex利用時のモデル呼び出しはCopilot側で処理され標準レート制限が適用される。さらに、ローカル/クラウドの複数エージェントを一元管理する「Agent Sessions」と、新しい組み込みのPlanエージェントが導入された。",
+  "keyPoints": [
+    "OpenAI CodexはGitHub Copilot Pro+で使えるようになると発表され、利用にはOpenAI Codex拡張機能の導入とGitHub Copilotでのサインインが必要。モデル呼び出しはCopilotが処理し、標準のレート制限が適用される。",
+    "Agent SessionsはVS Codeサイドバーの新ビューで、ローカル/クラウドを問わずプロジェクト内の全エージェントセッションを一覧し、稼働状況や状態確認、セッション間移動を一か所で行える。",
+    "全エージェントにタブ型のchat editorsが追加され、進行中のCopilot coding agentを見ながら途中で指示を足して計画修正できる。さらにChatビューから任意のエージェントへタスクを委譲できる。",
+    "従来のchat modesはagentsへ改称され、組み込みのPlanエージェントが追加された。Planは不足情報を質問して詳細計画を作り、情報がそろうとHandoffで実行を続けるか、完全な計画をエディタで開くかを選べる。",
+    "最新のVS CodeにはrunSubagentツールが追加され、サブエージェントは主チャットと独立したコンテキストで動作する。完了後は最終結果だけが主チャットに戻るため、深掘り調査をしても主文脈を肥大化させにくい。"
+  ],
+  "significance": "複数のコーディングエージェントを併用するVS Code利用者に関係が大きい。記事は、選択肢の増加で「Subscription hopping, tool juggling」が常態化し、さらに「Context Confusion」が実運用上の課題だと述べており、Agent Sessionsによる一元管理とsubagentsによる文脈分離で、その混乱をエディタ内で扱いやすくする位置づけになっている。",
+  "summaryEn": "VS Code announced OpenAI Codex support through GitHub Copilot Pro+ with no extra subscription, with Copilot handling model calls under standard rate limits. It also introduced Agent Sessions to manage local and cloud agents in one place and added a built-in Plan agent."
+}
