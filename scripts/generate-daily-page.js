@@ -13,6 +13,13 @@ const ASTRO_UPDATES_DIR = path.join(ROOT, 'src', 'content', 'updates');
 const INDEX_FILE = path.join(UPDATES_DIR, 'index.md');
 const SUMMARY_CACHE_DIR = path.join(ROOT, 'cache', 'summaries');
 const SUMMARY_CACHE_SCHEMA = 1;
+const ARTICLE_FETCH_HEADERS = {
+  'User-Agent': 'Mozilla/5.0 (compatible; msblogs-updates-tracker/1.0; +https://github.com/tokawa-ms/msblogs-updates-tracker)',
+  Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'Accept-Language': 'en-US,en;q=0.9',
+  'Cache-Control': 'no-cache',
+  Pragma: 'no-cache',
+};
 
 function cleanText(value) {
   return String(value || '')
@@ -187,7 +194,7 @@ async function fetchArticleText(url, get = axios.get, wait = (milliseconds) =>
     const response = await get(url, {
       timeout: 20000,
       maxContentLength: 5 * 1024 * 1024,
-      headers: { 'User-Agent': 'msblogs-updates-tracker/1.0' },
+      headers: ARTICLE_FETCH_HEADERS,
     });
     const articleText = extractArticleText(response.data);
     if (articleText.length <= MAX_ARTICLE_LENGTH) return articleText;
@@ -202,7 +209,7 @@ async function fetchArticleText(url, get = axios.get, wait = (milliseconds) =>
         const response = await get(readerUrl, {
           timeout: 60000,
           maxContentLength: 5 * 1024 * 1024,
-          headers: { Accept: 'text/plain', 'User-Agent': 'msblogs-updates-tracker/1.0' },
+          headers: { Accept: 'text/plain', 'User-Agent': ARTICLE_FETCH_HEADERS['User-Agent'] },
         });
         return extractReaderArticleText(response.data);
       } catch (error) {
