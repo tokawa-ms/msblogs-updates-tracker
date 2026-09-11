@@ -3,6 +3,7 @@
 const { describe, it } = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs/promises');
+const axios = require('axios');
 const { cleanText, enumerateDates, extractArticleText, resolveTargetDates, toMarkdown } = require('../scripts/generate-daily-page');
 const { buildSummaryPrompt, validateSummary, summarizeArticle, parseCopilotOutput, runCopilot } = require('../scripts/utils/article-summarizer');
 
@@ -99,6 +100,32 @@ describe('article extraction', () => {
     assert.ok(text.endsWith(limitation));
     assert.doesNotMatch(text, /noise/);
     assert.equal(text.match(/Japan only/gu).length, 1);
+  });
+
+  describe('fetchArticleText', () => {
+    it('記事取得時に汎用ブラウザ互換ヘッダーを付与する', async () => {
+      const modulePath = require.resolve('../scripts/generate-daily-page');
+      const originalGet = axios.get;
+      let options;
+      try {
+        axios.get = async (url, requestOptions) => {
+          assert.equal(url, article.url);
+          options = requestOptions;
+          return { data: `<article><p>${body}</p></article>` };
+        };
+        delete require.cache[modulePath];
+        const { fetchArticleText } = require(modulePath);
+        const text = await fetchArticleText(article.url);
+        assert.match(text, /Background information/);
+      } finally {
+        axios.get = originalGet;
+        delete require.cache[modulePath];
+        require(modulePath);
+      }
+      assert.match(options.headers['User-Agent'], /Mozilla\/5\.0/);
+      assert.match(options.headers.Accept, /text\/html/);
+      assert.match(options.headers['Accept-Language'], /en-US/);
+    });
   });
 
   it('本文を取れないページは RSS や全ページのテキストにフォールバックしない', () => {
