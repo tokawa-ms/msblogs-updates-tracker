@@ -18,15 +18,26 @@ const { article } = Astro.props;
       <a href={article.url} target="_blank" rel="noreferrer">{article.title}</a>
     </h3>
   </div>
-  <LocalizedText as="p" ja={article.summary} en={article.summaryEn} />
+  <LocalizedText as="p" ja={article.summary} en={article.summaryEn?.trim() || 'English summary is not available for this article yet.'} />
   {article.significance && (
-    <p><strong>なぜ重要か: </strong>{article.significance}</p>
+    <p data-lang="ja"><strong>なぜ重要か: </strong>{article.significance}</p>
+  )}
+  {article.significanceEn?.trim() && (
+    <p data-lang="en"><strong>Why it matters: </strong>{article.significanceEn}</p>
   )}
   {article.keyPoints.length > 0 && (
-    <div>
+    <div data-lang="ja">
       <strong>重要ポイント</strong>
       <ul>
         {article.keyPoints.map((point) => <li>{point}</li>)}
+      </ul>
+    </div>
+  )}
+  {article.keyPointsEn?.some((point) => point.trim()) && (
+    <div data-lang="en">
+      <strong>Key points</strong>
+      <ul>
+        {article.keyPointsEn.filter((point) => point.trim()).map((point) => <li>{point}</li>)}
       </ul>
     </div>
   )}

@@ -12,7 +12,7 @@ const UPDATES_DIR = path.join(ROOT, 'content', 'updates');
 const ASTRO_UPDATES_DIR = path.join(ROOT, 'src', 'content', 'updates');
 const INDEX_FILE = path.join(UPDATES_DIR, 'index.md');
 const SUMMARY_CACHE_DIR = path.join(ROOT, 'cache', 'summaries');
-const SUMMARY_CACHE_SCHEMA = 1;
+const SUMMARY_CACHE_SCHEMA = 2;
 const ARTICLE_FETCH_HEADERS = {
   'User-Agent': 'Mozilla/5.0 (compatible; msblogs-updates-tracker/1.0; +https://github.com/tokawa-ms/msblogs-updates-tracker)',
   Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
@@ -68,6 +68,8 @@ function pushYamlArticles(lines, articles) {
     lines.push(`    summary: ${yamlScalar(cleanText(article.summary))}`);
     lines.push(`    keyPoints: ${JSON.stringify(article.key_points || [])}`);
     lines.push(`    significance: ${yamlScalar(cleanText(article.significance))}`);
+    lines.push(`    keyPointsEn: ${JSON.stringify(article.key_points_en || [])}`);
+    lines.push(`    significanceEn: ${yamlScalar(cleanText(article.significance_en))}`);
     if (cleanText(article.summary_en)) {
       lines.push(`    summaryEn: ${yamlScalar(cleanText(article.summary_en))}`);
     }
@@ -225,7 +227,10 @@ async function fetchArticleText(url, get = axios.get, wait = (milliseconds) =>
 function isCompleteSummary(value) {
   return typeof value?.summary === 'string' && typeof value?.summaryEn === 'string' &&
     Array.isArray(value?.keyPoints) && value.keyPoints.length >= 2 &&
-    value.keyPoints.every((point) => typeof point === 'string') && typeof value?.significance === 'string';
+    value.keyPoints.every((point) => typeof point === 'string') && typeof value?.significance === 'string' &&
+    Array.isArray(value.keyPointsEn) && value.keyPointsEn.length === value.keyPoints.length &&
+    value.keyPointsEn.every((point) => typeof point === 'string' && point.trim().length > 0) &&
+    typeof value.significanceEn === 'string' && value.significanceEn.trim().length > 0;
 }
 
 async function summarizeArticleCached(article, body, summarize = summarizeArticle, cacheDir = SUMMARY_CACHE_DIR) {
@@ -276,13 +281,15 @@ async function buildLocalizedArticlesBySource(diff, { fetchText = fetchArticleTe
     }
 
     const sourceName = cleanText(article.source_name) || cleanText(article.source_id) || 'unknown';
-    const { summary, summaryEn, keyPoints, significance } = analysis;
+    const { summary, summaryEn, keyPoints, significance, keyPointsEn, significanceEn } = analysis;
     const localizedArticle = {
       ...article,
       summary,
       summary_en: summaryEn,
       key_points: keyPoints,
       significance,
+      key_points_en: keyPointsEn,
+      significance_en: significanceEn,
     };
 
     frontmatterArticles.push(localizedArticle);
@@ -299,6 +306,8 @@ async function buildLocalizedArticlesBySource(diff, { fetchText = fetchArticleTe
       summaryEn,
       keyPoints,
       significance,
+      keyPointsEn,
+      significanceEn,
     });
   }
 
@@ -378,6 +387,9 @@ async function toMarkdown(date, diff, options) {
         lines.push('');
         lines.push('<details><summary>English summary</summary>', '');
         lines.push(markdownText(article.summaryEn));
+        lines.push('', `**Why it matters:** ${markdownText(article.significanceEn)}`);
+        lines.push('', '**Key points**');
+        for (const point of article.keyPointsEn) lines.push(`- ${markdownText(point)}`);
         lines.push('', '</details>');
         lines.push('');
       }
