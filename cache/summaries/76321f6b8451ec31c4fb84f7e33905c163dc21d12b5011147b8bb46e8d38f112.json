@@ -1,0 +1,16 @@
+{
+  "summary": "GitHub Copilot appでは、エージェントが加えたコード変更の確認、コマンド実行、Webアプリのプレビューを、アプリ内のdiff・terminal・browser各パネルで横並びに進められるようになった。diffで差分を見てコメントや修正依頼を行い、terminalでプロジェクトのコマンドやスクリプトを実行し、browserではUI確認やPick & Polishによる調整ができる。これにより、変更内容の確認から動作確認、反復修正、受け入れやPR作成までを1カ所で完結できる。",
+  "keyPoints": [
+    "diffパネルでは、追加・削除・変更された行をそのまま確認でき、変更の受け入れ、コメント追加、Copilotへの修正依頼を行える。最終判断は利用者が持つと説明している。",
+    "terminalパネルでは、セッション内でコマンドを直接実行でき、Runボタン経由のスクリプト実行にも対応する。記事の例ではclientフォルダを開いてnpm run devを実行する開発サーバースクリプトを追加し、複数のターミナルを同時に開けるとしている。",
+    "browserパネルはUIのあるアプリの確認に使え、Pick & Polishで要素を選んでエージェントに調整を依頼できる。記事では、diff確認、起動、ブラウザ確認、反復修正を経て、アプリ内から変更受け入れとプルリクエスト作成まで進められる流れを示している。"
+  ],
+  "significance": "GitHub Copilot appでエージェント生成コードをレビューする開発者にとって、差分確認・実行・プレビューを同じ場所で回せるため、エディタやブラウザを行き来せずに変更点と実動作を確かめながら判断できる点が重要だ。記事は、受け入れ前に何が変わったか、動くか、実際に機能するかを確認することで、開発者が主導権を保ったままマージ可否を判断しやすくなると説明している。",
+  "summaryEn": "In the GitHub Copilot app, reviewing agent-made code changes, running commands, and previewing a web app can now be done side by side in the built-in diff, terminal, and browser panels. You can inspect diffs and request edits, run project commands or scripts in the terminal, and verify UI changes in the browser with Pick & Polish. This lets users complete the loop from review and validation through iteration, acceptance, and pull request creation in one place.",
+  "keyPointsEn": [
+    "The diff panel shows added, removed, and changed lines directly, and lets users accept changes, leave comments, or ask Copilot for revisions. The article says the final decision remains with the user.",
+    "The terminal panel lets users run commands inside the session and also supports script-based execution through the Run button. In the example, a dev server script opens the client folder and runs npm run dev, and multiple terminal windows can be open at once.",
+    "The browser panel is for checking apps with a user interface, and Pick & Polish lets users select an element and ask the agent to adjust it. The article shows a flow from reviewing the diff to starting the app, checking it in the browser, iterating, and then accepting the change and creating a pull request from the app."
+  ],
+  "significanceEn": "For developers reviewing agent-generated code in the GitHub Copilot app, the significance is that diff review, execution, and preview happen in one place, so they can verify both the change and its behavior without switching between tools. The article says that checking what changed, whether it runs, and whether it actually works before accepting the result helps developers stay in control when deciding whether to merge."
+}
