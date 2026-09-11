@@ -2,10 +2,11 @@
 
 const { before, after, describe, it } = require('node:test');
 const assert = require('node:assert/strict');
+const fs = require('node:fs/promises');
 const path = require('node:path');
 const cheerio = require('cheerio');
 
-describe('article card language rendering', () => {
+describe('article card rendering', () => {
   let server;
   let html;
 
@@ -42,6 +43,32 @@ describe('article card language rendering', () => {
     card.find('.card-header, .pill-row, .stats-inline').remove();
     return card;
   }
+
+  for (const route of ['/', '/updates/2026-09-11/', '/categories/cloud/']) {
+    it(`${route}: 記事一覧だけに1列レイアウトを使用する`, async () => {
+      const response = await fetch(`http://127.0.0.1:${server.address.port}${route}`);
+      assert.equal(response.status, 200);
+      const $ = cheerio.load(await response.text());
+      const cards = $('.article-card');
+      assert.ok(cards.length > 1);
+      cards.each((_, card) => {
+        const list = $(card).parent();
+        assert.ok(list.hasClass('grid'));
+        assert.ok(list.hasClass('article-list'));
+        assert.ok(!list.hasClass('two-column'));
+        assert.ok(!list.hasClass('three-column'));
+      });
+      assert.equal($('.article-list > :not(.article-card)').length, 0);
+      if (route !== '/categories/cloud/') {
+        assert.ok($('.hero-grid, .grid.three-column').length > 0);
+      }
+    });
+  }
+
+  it('記事一覧は画面幅にかかわらず全幅の1列にする', async () => {
+    const css = await fs.readFile(path.join(__dirname, '../src/styles/global.css'), 'utf8');
+    assert.match(css, /\.article-list\s*\{\s*grid-template-columns:\s*minmax\(0,\s*1fr\);\s*\}/u);
+  });
 
   it('英語 UI の要約・重要ポイント・重要性を英語で描画する', () => {
     const card = summaryContent('translated', 'en');

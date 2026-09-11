@@ -65,7 +65,7 @@ const groupedArticles = getGroupedArticles(entry);
             <LocalizedText ja={`${group.articles.length} 件の記事`} en={`${group.articles.length} articles`} />
           </span>
         </div>
-        <div class="grid two-column">
+        <div class="grid article-list">
           {group.articles.map((article) => (
             <ArticleCard article={article} />
           ))}

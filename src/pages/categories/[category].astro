@@ -41,7 +41,7 @@ const { category, articles } = Astro.props as {
     <p>{category.description}</p>
   </section>
 
-  <div class="grid three-column">
+  <div class="grid article-list">
     {articles.map((article) => (
       <ArticleCard article={article} />
     ))}

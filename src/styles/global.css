@@ -159,6 +159,10 @@ html[data-language='en'] [data-lang='en'] {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
+.article-list {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .section {
   margin-top: 2.5rem;
 }

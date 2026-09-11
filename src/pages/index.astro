@@ -97,7 +97,7 @@ const totalArticles = updates.reduce((count, entry) => count + entry.data.newCou
     </div>
     {
       recentArticles.length > 0 ? (
-        <div class="grid three-column">
+        <div class="grid article-list">
           {recentArticles.map((article) => (
             <ArticleCard article={article} />
           ))}
