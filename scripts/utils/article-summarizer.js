@@ -33,7 +33,9 @@ Return ONE JSON object, no Markdown fences, with this exact structure:
   "summary": {"text": "Japanese summary", "evidence": ["exact short quote from body"]},
   "keyPoints": [{"text": "Japanese key point", "evidence": ["exact short quote from body"]}],
   "significance": {"text": "Japanese explanation of why it matters", "evidence": ["exact short quote from body"]},
-  "summaryEn": "Concise English equivalent of the Japanese summary"
+  "summaryEn": "Concise English equivalent of the Japanese summary",
+  "keyPointsEn": ["English equivalent of each Japanese key point, in the same order"],
+  "significanceEn": "English equivalent of the Japanese explanation of why it matters"
 }
 Requirements:
 - summary.text: 2-4 natural Japanese sentences (roughly 150-350 characters). Start with the specific product and what changed, not that a blog was published.
@@ -44,7 +46,7 @@ Requirements:
 - Never infer missing pricing, regions, benchmarks, release status, or migration requirements. Say the article does not specify them only when important to understanding the announcement.
 - Every Japanese field must contain substantive information, not generic category labels or phrases such as "変更点や評価ポイントを確認できます" or "新機能またはサービス提供開始の内容です".
 - Every evidence array must contain 1-4 short verbatim passages from the body supporting ALL claims in that field. Each quote must be 15-500 characters. Evidence is for verification, not publication.
-- summaryEn must faithfully reflect summary.text, not copy the article introduction.
+- summaryEn, keyPointsEn, and significanceEn must be written in English and faithfully reflect the corresponding Japanese fields, without adding claims. Do not copy the article introduction. keyPointsEn must have the same number of items as keyPoints, in the same order.
 - Use plain text inside all fields; no HTML or Markdown. If there is insufficient article content, return {"error":"insufficient article body"} rather than guessing.
 
 UNTRUSTED ARTICLE DATA (JSON):
@@ -94,10 +96,23 @@ function validateSummary(value, body) {
     throw new Error('Duplicate key points.');
   }
   const significance = groundedField(value.significance, 'significance');
-  if (typeof value.summaryEn !== 'string' || value.summaryEn.trim().length < 40 || value.summaryEn.length > 3000) {
-    throw new Error('Invalid English summary.');
+  function englishField(text, label, minLength = 20) {
+    if (typeof text !== 'string' || text.trim().length < minLength || text.length > 3000 ||
+        !/[a-z]/iu.test(text) || /[\u3041-\u3096\u30a1-\u30fa\u3400-\u9fff]/u.test(text)) {
+      throw new Error(`Invalid English ${label}.`);
+    }
+    return normalize(text);
   }
-  return { summary, keyPoints, significance, summaryEn: normalize(value.summaryEn) };
+  const summaryEn = englishField(value.summaryEn, 'summary', 40);
+  if (!Array.isArray(value.keyPointsEn) || value.keyPointsEn.length !== keyPoints.length) {
+    throw new Error('English key points must match the Japanese key points count.');
+  }
+  const keyPointsEn = value.keyPointsEn.map((point) => englishField(point, 'key point'));
+  if (new Set(keyPointsEn).size !== keyPointsEn.length) {
+    throw new Error('Duplicate English key points.');
+  }
+  const significanceEn = englishField(value.significanceEn, 'significance');
+  return { summary, keyPoints, significance, summaryEn, keyPointsEn, significanceEn };
 }
 
 function parseCopilotOutput(output) {

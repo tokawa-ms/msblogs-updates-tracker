@@ -24,6 +24,8 @@ function response() {
     ],
     significance: { text: '日英の文書を扱うチームが、言語ごとに別の索引を維持する必要をなくせる。', evidence: [benefit] },
     summaryEn: 'Example Search adds multilingual retrieval in public preview, limited to existing paid workspaces in Japan. Production use is not supported.',
+    keyPointsEn: [benefit, limitation],
+    significanceEn: 'Teams working with Japanese and English documents no longer need to maintain separate indexes for each language.',
   };
 }
 
@@ -261,6 +263,8 @@ describe('grounded summary', () => {
         keyPoints: value.keyPoints.map((point) => point.text),
         significance: value.significance.text,
         summaryEn: value.summaryEn,
+        keyPointsEn: value.keyPointsEn,
+        significanceEn: value.significanceEn,
       };
     };
     try {
@@ -268,8 +272,15 @@ describe('grounded summary', () => {
       const second = await summarizeArticleCached(article, body, summarize, cacheDir);
       assert.deepEqual(second, first);
       assert.equal(calls, 1);
-      await summarizeArticleCached(article, `${body}\nChanged body.`, summarize, cacheDir);
+      const [cacheFile] = await fs.readdir(cacheDir);
+      const legacy = { ...first };
+      delete legacy.keyPointsEn;
+      delete legacy.significanceEn;
+      await fs.writeFile(path.join(cacheDir, cacheFile), JSON.stringify(legacy));
+      assert.deepEqual(await summarizeArticleCached(article, body, summarize, cacheDir), first);
       assert.equal(calls, 2);
+      await summarizeArticleCached(article, `${body}\nChanged body.`, summarize, cacheDir);
+      assert.equal(calls, 3);
     } finally {
       await fs.rm(cacheDir, { recursive: true, force: true });
       if (originalModel === undefined) delete process.env.SUMMARY_MODEL;
@@ -281,12 +292,17 @@ describe('grounded summary', () => {
     const result = await summarizeArticle(article, body, async (prompt) => {
       assert.ok(prompt.includes(limitation));
       assert.ok(prompt.includes(benefit));
+      assert.match(prompt, /"keyPointsEn"/);
+      assert.match(prompt, /"significanceEn"/);
       assert.doesNotMatch(prompt, /Feed teaser only/);
       return JSON.stringify(response());
     });
     assert.equal(result.summary, response().summary.text);
     assert.equal(result.keyPoints[1], response().keyPoints[1].text);
     assert.equal(result.significance, response().significance.text);
+    assert.equal(result.summaryEn, response().summaryEn);
+    assert.deepEqual(result.keyPointsEn, response().keyPointsEn);
+    assert.equal(result.significanceEn, response().significanceEn);
   });
 
   it('取得不足・長すぎる本文はモデル呼び出し前に拒否する', async () => {
@@ -310,6 +326,16 @@ describe('grounded summary', () => {
     ['重要点不足', (value) => { value.keyPoints = []; }, /2-5/],
     ['重要点の重複', (value) => { value.keyPoints[1] = value.keyPoints[0]; }, /Duplicate/],
     ['英語要約なし', (value) => { value.summaryEn = ''; }, /English/],
+    ['英語要約が日本語', (value) => { value.summaryEn = value.summary.text; }, /English summary/],
+    ['英語重要点なし', (value) => { delete value.keyPointsEn; }, /English key points/],
+    ['日英の重要点数が不一致', (value) => { value.keyPointsEn.pop(); }, /English key points/],
+    ['英語重要点が日本語', (value) => { value.keyPointsEn[0] = value.keyPoints[0].text; }, /English key point/],
+    ['英語重要点が空白', (value) => { value.keyPointsEn[0] = ' '; }, /English key point/],
+    ['英語重要点が文字列でない', (value) => { value.keyPointsEn[0] = { text: benefit }; }, /English key point/],
+    ['英語重要点が重複', (value) => { value.keyPointsEn[1] = value.keyPointsEn[0]; }, /Duplicate English/],
+    ['英語重要性なし', (value) => { delete value.significanceEn; }, /English significance/],
+    ['英語重要性が空白', (value) => { value.significanceEn = ' '; }, /English significance/],
+    ['英語重要性が日本語', (value) => { value.significanceEn = value.significance.text; }, /English significance/],
   ]) {
     it(`${label}を拒否する`, () => {
       const value = response();
@@ -494,10 +520,17 @@ describe('daily rendering', () => {
     assert.ok(markdown.includes(`summary: ${JSON.stringify(response().summary.text)}`));
     assert.ok(markdown.includes(`keyPoints: ${JSON.stringify(response().keyPoints.map((point) => point.text))}`));
     assert.ok(markdown.includes(`significance: ${JSON.stringify(response().significance.text)}`));
+    assert.ok(markdown.includes(`summaryEn: ${JSON.stringify(response().summaryEn)}`));
+    assert.ok(markdown.includes(`keyPointsEn: ${JSON.stringify(response().keyPointsEn)}`));
+    assert.ok(markdown.includes(`significanceEn: ${JSON.stringify(response().significanceEn)}`));
     assert.ok(markdown.includes(`- 要約: ${response().summary.text}`));
     assert.ok(markdown.includes(`- なぜ重要か: ${response().significance.text}`));
     assert.ok(markdown.includes(`- ${response().keyPoints[1].text}`));
     assert.match(markdown, /<details><summary>English summary<\/summary>/);
+    const englishSection = markdown.split('<details><summary>English summary</summary>')[1];
+    assert.ok(englishSection.includes(`**Why it matters:** ${response().significanceEn}`));
+    assert.ok(englishSection.includes(`- ${response().keyPointsEn[1]}`));
+    assert.doesNotMatch(englishSection, /[\u3041-\u3096\u30a1-\u30fa]/u);
     assert.doesNotMatch(markdown, /evidence:|Feed teaser only/);
   });
 

@@ -28,7 +28,9 @@ const updates = defineCollection({
           summary: z.string(),
           summaryEn: z.string().optional(),
           keyPoints: z.array(z.string()).default([]),
+          keyPointsEn: z.array(z.string()).default([]),
           significance: z.string().optional(),
+          significanceEn: z.string().optional(),
         }),
       )
       .default([]),

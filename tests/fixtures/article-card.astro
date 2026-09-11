@@ -1,0 +1,32 @@
+---
+import ArticleCard from '../../src/components/ArticleCard.astro';
+import BaseLayout from '../../src/layouts/BaseLayout.astro';
+
+const article = {
+  title: 'Example Search preview',
+  url: 'https://example.com/search',
+  sourceId: 'example',
+  sourceName: 'Example',
+  publishedAt: '2026-09-10',
+  updateSlug: '2026-09-10',
+  updateDate: new Date('2026-09-10'),
+  categories: [],
+  importance: { label: 'Low' as const, badge: 'Low' },
+  summary: '日本語と英語の文書を横断検索できる。',
+  summaryEn: 'Search across Japanese and English documents.',
+  keyPoints: ['日本の既存有料ワークスペースが対象。', '本番利用には対応しない。'],
+  keyPointsEn: ['Available to existing paid workspaces in Japan.', 'Production use is not supported.'],
+  significance: '言語ごとに別の索引を維持する必要がなくなる。',
+  significanceEn: 'Teams no longer need separate indexes for each language.',
+};
+---
+
+<BaseLayout title="Article card test" description="Language regression fixture">
+  <section id="translated"><ArticleCard article={article} /></section>
+  <section id="legacy">
+    <ArticleCard article={{ ...article, summaryEn: undefined, keyPointsEn: [], significanceEn: undefined }} />
+  </section>
+  <section id="blank">
+    <ArticleCard article={{ ...article, summaryEn: ' ', keyPointsEn: [' '], significanceEn: ' ' }} />
+  </section>
+</BaseLayout>
