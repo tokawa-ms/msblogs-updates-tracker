@@ -10,6 +10,13 @@ const ROOT = path.resolve(__dirname, '..');
 const UPDATES_DIR = path.join(ROOT, 'content', 'updates');
 const ASTRO_UPDATES_DIR = path.join(ROOT, 'src', 'content', 'updates');
 const INDEX_FILE = path.join(UPDATES_DIR, 'index.md');
+const ARTICLE_FETCH_HEADERS = {
+  'User-Agent': 'Mozilla/5.0 (compatible; msblogs-updates-tracker/1.0; +https://github.com/tokawa-ms/msblogs-updates-tracker)',
+  Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'Accept-Language': 'en-US,en;q=0.9',
+  'Cache-Control': 'no-cache',
+  Pragma: 'no-cache',
+};
 
 function cleanText(value) {
   return String(value || '')
@@ -126,7 +133,7 @@ async function fetchArticleText(url) {
   const response = await axios.get(url, {
     timeout: 20000,
     maxContentLength: 5 * 1024 * 1024,
-    headers: { 'User-Agent': 'msblogs-updates-tracker/1.0' },
+    headers: ARTICLE_FETCH_HEADERS,
   });
   return extractArticleText(response.data);
 }
