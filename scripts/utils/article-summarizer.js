@@ -10,6 +10,14 @@ function normalize(value) {
   return String(value || '').replace(/\s+/gu, ' ').trim();
 }
 
+function normalizeEvidence(value) {
+  return normalize(value)
+    .replace(/!\[([^\]]*)\]\([^)]*\)/gu, '$1')
+    .replace(/\[([^\]]+)\]\([^)]*\)/gu, '$1')
+    .replace(/(^|\s)[#>*+-]+\s*/gu, '$1')
+    .replace(/[`*_~]/gu, '');
+}
+
 function buildSummaryPrompt(article, body) {
   if (normalize(body).length < 100) {
     throw new Error('Article body is missing or too short; refusing to summarize feed metadata.');
@@ -45,10 +53,22 @@ ${JSON.stringify({ title: article.title, url: article.url, body })}`;
 
 function validateSummary(value, body) {
   const source = normalize(body);
+  const normalizedEvidenceSource = normalizeEvidence(body);
   function groundedField(field, label) {
-    const text = typeof field?.text === 'string' ? normalize(field.text) : '';
-    if (text.length < 20 || text.length > 1200 || !/[\u3041-\u3096\u30a1-\u30fa]/u.test(text)) {
-      throw new Error(`Invalid Japanese ${label}.`);
+    let rawText = field?.text;
+    if (rawText === undefined && field && typeof field === 'object' && typeof field.ja === 'string') rawText = field.ja;
+    if (Array.isArray(rawText) && rawText.every((item) => typeof item === 'string')) rawText = rawText.join(' ');
+    if (rawText && typeof rawText === 'object' && typeof rawText.ja === 'string') rawText = rawText.ja;
+    const text = typeof rawText === 'string' ? normalize(rawText) : '';
+    if (typeof rawText !== 'string') {
+      const shape = field && typeof field === 'object' ? `object with keys ${Object.keys(field).join(', ')}` : typeof field;
+      throw new Error(`Invalid Japanese ${label}: text must be a string; received ${shape}.`);
+    }
+    if (text.length < 20 || text.length > 1200) {
+      throw new Error(`Invalid Japanese ${label}: text length ${text.length} must be between 20 and 1200 characters.`);
+    }
+    if (!/[\u3041-\u3096\u30a1-\u30fa]/u.test(text)) {
+      throw new Error(`Invalid Japanese ${label}: text must include natural Japanese kana.`);
     }
     if (/確認できます|新機能またはサービス提供開始|が公開されました。/u.test(text)) {
       throw new Error(`Generic placeholder in ${label}.`);
@@ -57,7 +77,9 @@ function validateSummary(value, body) {
       throw new Error(`Missing evidence for ${label}.`);
     }
     for (const quote of field.evidence) {
-      if (typeof quote !== 'string' || normalize(quote).length < 15 || quote.length > 500 || !source.includes(normalize(quote))) {
+      const normalizedQuote = normalize(quote);
+      if (typeof quote !== 'string' || normalizedQuote.length < 15 || quote.length > 500 ||
+          (!source.includes(normalizedQuote) && !normalizedEvidenceSource.includes(normalizeEvidence(quote)))) {
         throw new Error(`Evidence not found in article body for ${label}.`);
       }
     }
@@ -79,11 +101,22 @@ function validateSummary(value, body) {
 }
 
 function parseCopilotOutput(output) {
-  let events;
-  try {
-    events = output.trim().split(/\r?\n/u).map((line) => JSON.parse(line));
-  } catch {
-    throw new Error('Copilot output is not valid JSONL. Check the installed CLI version.');
+  const events = [];
+  const lines = output.trim().split(/\r?\n/u).filter((line) => line.trim());
+  for (const line of lines) {
+    if (!line.trim()) continue;
+    try {
+      events.push(JSON.parse(line.replace(/^\uFEFF/u, '')));
+    } catch (error) {
+      if (!line.trimStart().startsWith('{')) continue;
+      const eventType = line.match(/^\s*\{"type":"([^"]+)/u)?.[1] || 'unknown';
+      if (eventType === 'user.message') continue;
+      throw new Error(`Copilot output is not valid JSONL after ${events.length} event(s): ${error.message}; line length ${line.length}; event type ${eventType}.`);
+    }
+  }
+  if (events.length === 0) {
+    const firstLine = lines[0] || '';
+    throw new Error(`Copilot output is not valid JSONL: no JSON events in ${lines.length} line(s); first line length ${firstLine.length}, first character code ${firstLine.codePointAt(0) || 0}.`);
   }
   const result = events.at(-1);
   if (result?.type !== 'result' || result.exitCode !== 0 ||
@@ -158,4 +191,4 @@ Generate a corrected JSON object from the same article body. Follow the required
   }
 }
 
-module.exports = { buildSummaryPrompt, validateSummary, summarizeArticle, parseCopilotOutput, runCopilot };
+module.exports = { MAX_ARTICLE_LENGTH, buildSummaryPrompt, validateSummary, summarizeArticle, parseCopilotOutput, runCopilot };

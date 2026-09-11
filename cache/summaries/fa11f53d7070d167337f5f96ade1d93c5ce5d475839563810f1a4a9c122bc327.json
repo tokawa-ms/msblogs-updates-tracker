@@ -1,0 +1,12 @@
+{
+  "summary": "Power BI visualsでは、ツールチップの新オプションであるTooltip fields onlyとSentence format onlyが一般提供になり、ホバー時に出す項目や文章をレポート作成者が細かく制御できるようになった。既定のツールチップに項目を足す方法から、表示項目の厳選、文テンプレート、レポートページによる完全置き換えまで段階的にカスタマイズできる。さらに、Help tooltipはデータ点ではなくビジュアル自体の説明用として通常のデータツールチップと併用できる。",
+  "keyPoints": [
+    "Tooltip fields onlyを有効にすると、ビジュアルで使っている符号化フィールドは非表示になり、Tooltipフィールドウェルに入れた項目だけを表示できる。設定場所は Format visual > General > Tooltips > Options で、ホバー表示の内容を厳密に選別したい場合に使う。",
+    "Sentence formatでは、{Sales}のようなフィールド参照を含むテンプレート文を書いてデータ点の説明文を表示でき、Bold valuesで差し込まれた値を強調できる。Sentence format onlyをオンにすると、既存の項目一覧を消して文章だけを表示する構成にもできる。",
+    "Sentence formatはフィールド パラメーターにも対応し、選択中のフィールド名と値の両方を文中で参照できる。階層のドリルアップ/ドリルダウン時は、in-scopeレベルを判定するmeasureをTooltipフィールドウェルに追加してテンプレートから参照すれば、階層ごとに自然な文面を出せる。",
+    "Report page tooltipを使うと、ホバー カードを設計済みのレポートページに置き換えられ、選択したデータ点のフィルターも自動で引き継がれる。一方でレポートページ型ツールチップは対話不可で、スライサー操作やビジュアルのクリックはできないため、操作が必要な場合はdrillthroughページを使う。",
+    "Chart-specific tooltipsはファネルチャートなどでグラフ種別に応じた補足情報を出す機能で、既定ではオンになっている。加えて、modern visual defaultsをプレビューで有効にすると、レポートページ型ツールチップ向けの小さめのキャンバスサイズを選べる。"
+  ],
+  "significance": "この変更は、Power BIのレポート作成者と閲覧者の双方に影響する。作成者は既定表示に縛られず、ホバー内容を必要な項目や自然文に絞り込める一方、閲覧者はデータ点から離れずに文脈や補足説明を得られる。さらに、レポートページ型ツールチップは表現力が高いが操作できないため、用途に応じて通常ツールチップ、ヘルプ、drillthroughを使い分ける判断材料になる。",
+  "summaryEn": "Power BI visuals has generally made available the new Tooltip fields only and Sentence format only options, giving report authors precise control over which fields or sentence-based content appears on hover. Tooltip customization now ranges from adding fields to the default tooltip to curating fields, using sentence templates, or fully replacing the tooltip with a report page. A separate Help tooltip can also be used alongside data tooltips to explain the visual itself."
+}

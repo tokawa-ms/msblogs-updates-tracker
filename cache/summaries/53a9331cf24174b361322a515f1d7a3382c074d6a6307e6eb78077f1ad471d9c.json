@@ -1,0 +1,11 @@
+{
+  "summary": "Brainは、Azure Resource Graph上で動作するAzureのAI駆動クラウド信頼性インテリジェンス基盤で、プラットフォームのテレメトリやAI/MLモデル、依存関係、顧客影響を統合して、サービスやリージョン、顧客リソースの健全性を継続的に判断する。すでに顧客向けのリソース正常性通知、危険な展開の停止、障害宣言などに使われており、Azure運用の自動化とエージェント型AIの土台として位置付けられている。記事では、その役割を従来のダッシュボード中心運用と対比しながら説明している。",
+  "keyPoints": [
+    "Brainは、標準化されたSLI、各サービスの独自モニターやデプロイ情報、第三者指標という3系統の信号を取り込み、各対象について健全性、重大度、影響、判断理由の4つを返す。",
+    "判断結果は、影響範囲に基づく障害宣言、影響を受けたサブスクリプションやリージョンへの通知、適切なサービスチームへのインシデント振り分け、問題のあるロールアウト停止などの自動処理に使われる。",
+    "Azureは80超のリージョン、500超のデータセンター、80万km超のファイバーと海底ケーブルにまたがる規模で運用されており、記事はこの膨大な信号量が人手のダッシュボード監視だけでは把握しきれないことを、Brainが必要になった背景として挙げている。",
+    "Microsoftによれば、Brainのリソース正常性評価を本番利用しているサービスでは、顧客影響のある障害の検知精度が大きく改善し、過去1年はBrain連携障害の大半で顧客通知が自動化され、通知時間も手動発行より短縮した。"
+  ],
+  "significance": "主にAzure上でアプリケーションを運用する顧客と、Azureの運用担当エンジニアに影響する。Brainがロールアウト、依存関係、顧客側で観測されるエラーを同じモデルで結び付けることで、影響範囲をリソース単位でより正確に特定し、通知や担当振り分けを早め、障害が広がる前に展開停止などの対処につなげやすくなるためだ。",
+  "summaryEn": "Brain is Azure’s AI-powered reliability intelligence layer on top of Azure Resource Graph that continuously combines telemetry, AI/ML, dependencies, and customer impact to assess the health of services, regions, and customer resources. It already drives resource health notifications, rollout safeguards, and outage declarations, and Microsoft positions it as the foundation for more automated, agentic Azure operations."
+}

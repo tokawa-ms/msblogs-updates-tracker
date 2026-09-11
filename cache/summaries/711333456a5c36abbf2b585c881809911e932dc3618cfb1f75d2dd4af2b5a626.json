@@ -1,0 +1,12 @@
+{
+  "summary": "Microsoft FabricとMicrosoft DatabasesはBuildで、Rayfinを新しいSDK/CLIとして投入し、Azure HorizonDBをAIアプリ向けPostgreSQLとしてパブリックプレビューにした。Fabric IQとoperations agentsは一般提供に進み、Azure Cosmos DB Linux EmulatorもGAとなって、Fabric中心にAIアプリとマルチエージェントを試作から本番へ移しやすくする構成を打ち出した。",
+  "keyPoints": [
+    "RayfinはオープンソースのSDK/CLIとして追加され、データベースや認証を含むバックエンドをコードから生成してMicrosoft Fabricへ直接デプロイできる。GitHubベースのワークフローでデータモデル、バックエンドロジック、アクセス方針を管理する設計である。",
+    "Azure HorizonDBはPostgreSQL互換のフルマネージドデータベースとしてパブリックプレビューになった。既定でゾーン耐障害性を備え、128 TBまでのストレージ、最大3,072 vCoresのスケールアウト計算資源、サブミリ秒のマルチゾーンコミット遅延をうたっている。",
+    "Azure Database for PostgreSQLでは、Microsoft Defender for Cloud連携がプレビューとなり、継続的なセキュリティおよびコンプライアンス評価を提供する。加えて、OracleとPostgreSQL環境を評価し、移行の準備状況、サイジング指針、コスト見積もりを示す新しい発見・評価ツールが公開された。",
+    "Azure Cosmos DBではLinux Emulatorが一般提供となり、Linux、macOS、Windowsでクラウド依存なしにローカル構築・テスト・検証が可能になった。あわせて、検索関連のsemantic rerankingと、永続メモリを標準化するagent memory toolkitはプレビューとして追加された。",
+    "OneLakeまわりでは、SharePointとOneDriveへのshortcutsが一般提供になり、Fabric Data Warehousesから直接shortcutsを作る機能はプレビューに入った。さらに、OneLake catalog in Microsoft Foundryも一般提供となり、信頼済みデータをAIソリューションに接続しやすくした。"
+  ],
+  "significance": "恩恵を受けるのは、企業データを使うAIアプリやマルチエージェントを本番運用したい開発者、データ基盤担当、既存のPostgreSQL運用チームである。記事は、課題をモデル性能ではなく共有データ文脈の不足と位置づけており、Fabric/OneLake上で同じ業務文脈を共有しつつ、HorizonDBやCosmos DB、セキュリティ・移行機能を組み合わせることで、各エージェントがゼロから業務知識を学び直す負担を減らし、試作から運用へ進めやすくする点に意味がある。",
+  "summaryEn": "At Build, Microsoft Fabric and Microsoft Databases introduced Rayfin as a new SDK/CLI and put Azure HorizonDB, a PostgreSQL database for AI apps, into public preview. Fabric IQ and operations agents moved to general availability, and the Azure Cosmos DB Linux Emulator also became GA, strengthening a Fabric-centered path from AI prototypes to production and multi-agent deployment."
+}

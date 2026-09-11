@@ -1,0 +1,11 @@
+{
+  "summary": "VS CodeのBring Your Own Key（BYOK）は、v1.104でLanguage Model Chat Provider APIを導入し、モデル提供者が拡張機能から直接モデルを追加できる仕組みに広がった。これにより、既存の対応プロバイダーへAPIキーを持ち込む方式に加えて、拡張機能経由でより多くのモデルを選べるようになった。現時点でこのAPI経由のモデルは個人向けGitHub Copilotプランが対象で、OpenAI互換API向けのカスタムプロバイダーはVS Code Insiders限定だ。",
+  "keyPoints": [
+    "BYOKは3月に公開され、OpenRouter、Ollama、Google、OpenAIなど対応プロバイダーの数百モデルを、各自のAPIキーでVS Codeのチャットに利用できる。設定はChat: Manage Language Modelsコマンドから行う。",
+    "v1.104のLanguage Model Chat Provider APIによって、BYOKは中央管理の仕組みから、拡張機能を入れるだけで各プロバイダーが直接モデルを提供できるオープンで拡張可能な方式へ移行した。組み込みプロバイダーの一部サポートは継続する。",
+    "このAPI経由で提供されるモデルは、現時点では個人向けGitHub CopilotのFree、Pro、Pro+プラン利用者が利用できる。",
+    "OpenAI互換モデル向けには、任意のOpenAI互換APIエンドポイントを使うcustom OpenAI Compatible providerがあり、github.copilot.chat.customOAIModels設定でedit toolsの一覧を明示的に構成できる。ただし利用できるのは現時点でVS Code Insidersのみだ。"
+  ],
+  "significance": "コード生成用と一般チャット用で別モデルを使い分けたい開発者や、OllamaのようなローカルモデルもVS Code内で試したい利用者にとって、モデル選択肢を広げる変更だ。また、拡張開発者やモデル提供者はVS Code本体の組み込み対応を待たずに参加しやすくなる一方、BYOKは現状completionsでは使えない制約が残る。",
+  "summaryEn": "VS Code's BYOK expanded in v1.104 with the Language Model Chat Provider API, allowing providers to add models directly through extensions. That broadens model choice beyond the existing API-key-based providers. Models delivered through this API currently work for individual GitHub Copilot plans, while the custom provider for OpenAI-compatible APIs is limited to VS Code Insiders."
+}

@@ -1,0 +1,11 @@
+{
+  "summary": "GitHub Copilot appでは、チャット入力欄で使うスラッシュコマンドを中心に、計画立案から実装、批判的レビュー、可視化、複数タスクの調整までを進める使い方が整理された。記事は /plan、/autopilot、/rubber-duck、/create-canvas、/orchestrate などの役割を具体例付きで示し、CLI向けコマンドとは異なり、アプリのマルチセッション前提のワークフローに合わせた操作だと説明している。",
+  "keyPoints": [
+    "スラッシュコマンドは GitHub Copilot app のチャット入力欄に / を打って使うテキストショートカットで、オートコンプリートから現在の文脈で使えるコマンドを選べる。",
+    "CLIと違い、アプリ版はプロジェクト文脈を自動管理するため /add-dir や /cwd は不要で、/clear や /model など一部共通コマンドを除き、セッション管理やエージェント制御に寄った設計になっている。",
+    "/plan は実装前の分解や課題洗い出しに使い、セッションを Plan mode に切り替える。/autopilot は実装作業を進めるためのコマンドで、セッションを Autopilot mode に切り替える。",
+    "/rubber-duck は別モデルで独立レビューを行い、見落としや前提の甘さを探す。/create-canvas は会話から対話型UIを作れ、/orchestrate は複数リポジトリや並行タスクの調整に使える。"
+  ],
+  "significance": "GitHub Copilot app を日常的に使う開発者にとって重要なのは、単なるチャット応答ではなく、計画、実装、批評、可視化、並列調整といった作業を会話入力から直接呼び出せる点だ。記事は、オプションを探して集中を切らさずに必要なワークフローへ移れること、そしてアプリ特有のマルチセッション運用に合わせて使い分けられることを示している。",
+  "summaryEn": "In the GitHub Copilot app, slash commands are presented as a workflow layer that helps developers move from planning to implementation, critique, visualization, and multi-task coordination from the chat composer. The article explains commands such as /plan, /autopilot, /rubber-duck, /create-canvas, and /orchestrate with examples, and contrasts them with CLI commands by emphasizing the app’s multi-session workflow."
+}

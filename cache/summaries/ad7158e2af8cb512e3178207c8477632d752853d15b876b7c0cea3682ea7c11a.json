@@ -1,0 +1,11 @@
+{
+  "summary": "Custom SQL Poolsは、ワークロードごとのリソース割り当てを細かく制御できる機能で、現在はプレビュー段階にあり、近く一般提供になる予定です。割り当て課金モデルでは、ワークロードの拡張を抑えて完了時間と引き換えに課金対象のvNode使用量を下げられる場合があります。一方で、これは支出上限や月額上限を設定する機能ではなく、各ワークロードが使える倉庫リソースの上限比率を決めるためのガバナンス機能です。",
+  "keyPoints": [
+    "Custom SQL Poolsは、ワークロード分離とガバナンスを主目的としつつ、割り当て課金モデルでは消費量にも間接的な影響を与える機能として位置付けられている。",
+    "記事の例では、制限なしだと10 vNodes・10秒・約600 billed vNode-secondsだったバースト型クエリが、倉庫リソースの50%に制限したCustom SQL Poolでは5 vNodes・20秒・約300 billed vNode-secondsとなり、完了は遅くなる一方で課金対象リソースは減った。",
+    "消費量の最小化を狙う場合はOptimize for Readsを無効化する案が示されており、キャッシュ有効時はアクティビティ後も最低5分間リソースが割り当てられ続けるため、計算消費が増える可能性がある。",
+    "この機能は支出制限や月額予算上限の仕組みではなく、各ワークロードがアクセスできる倉庫リソースの最大シェアを定義するガードレールとして使う。"
+  ],
+  "significance": "長時間実行を許容できるETL、夜間ロード、保守処理、非対話型ジョブ、あるいは業務時間中のレポート処理が他ワークロードと競合する組織にとって影響が大きい内容です。レイテンシ重視でない処理では、Custom SQL Poolsで割り当てを抑えることで、より予測可能なリソース消費に寄せやすくなりますが、遅延に敏感なワークロードには同じトレードオフが適さないことも明示されています。",
+  "summaryEn": "Custom SQL Pools let customers control resource allocation by workload and are currently in preview, with general availability coming soon. In an allocation-based billing model, they can reduce billed vNode usage by limiting workload scaling and accepting longer runtimes. They are not a spending cap, but a governance mechanism that sets the maximum share of warehouse resources each workload can use."
+}

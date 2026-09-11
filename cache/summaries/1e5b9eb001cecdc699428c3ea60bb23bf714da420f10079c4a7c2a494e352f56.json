@@ -1,0 +1,11 @@
+{
+  "summary": "GitHubの社内分析エージェントQubotは、Slack、VS Code、Copilot CLIから自然言語でデータウェアハウスに質問できる仕組みへ発展し、文脈レイヤーとKusto/Trinoを切り替えるクエリエンジンを組み合わせて回答する。文脈レイヤーやエージェント設定の変更は出荷前にオフライン評価で検証され、GitHubは構造化された文脈によって正確性が高まり、正しい答えを返す速度も3倍になったとしている。社内では数百人が数千回利用し、分析チームへの定型的な問い合わせを大きく減らしつつ、非専門チームの自律的な探索を後押ししている。",
+  "keyPoints": [
+    "QubotはSlack、VS Code、Copilot CLIで利用でき、Slackでは質問ごとにCopilot Cloud Agentとして起動する。結果はSlackに返るだけでなく、参照や再利用向けにプルリクエスト上のMarkdownレポートとしても保存される。",
+    "文脈レイヤーはbronze、silver、goldの各段階に応じて連合的に構築され、bronzeにはテレメトリのスキーマやメタデータ、silverにはクエリ例や必須フィルター、goldには業務ルールや指標定義を載せる。さらにcontext agentが複数リポジトリのMarkdown中心の知識を取り込み、整理・正規化する。",
+    "変更は出荷前に評価フレームワークで検証される。既知の正解やground-truth SQLを持つテストケース、並列試行を自動実行するスクリプト、完了率・正確性・所要時間を集計するレポート処理を組み合わせ、設定差分を比較できる。",
+    "クエリエンジンはKustoとTrinoの両方に接続し、既定では最近のイベント探索に強いKustoを使い、複雑な結合や長期の履歴分析が必要な場合は自動でTrinoへ切り替える。"
+  ],
+  "significance": "恩恵を受けるのは、専任アナリストの支援を常時得にくいプロダクト/エンジニアリングチームや、これまでデータウェアハウスに踏み込みにくかったGitHub社員だ。Slackのゼロ設定入口と複数インターフェースで利用障壁を下げ、各チームが自分たちのテレメトリや業務定義を持ち寄る形にしたことで、難しい問い合わせだけを分析チームに集約しながら、全社で知識を再利用しやすくしている。",
+  "summaryEn": "GitHub’s internal analytics agent Qubot has evolved into a natural-language interface to its data warehouse across Slack, VS Code, and Copilot CLI, combining a federated context layer with a query engine that defaults to Kusto and switches to Trino when needed. GitHub says offline evaluations gate context and configuration changes, and that structured context improved accuracy while making correct answers three times faster. Inside GitHub, hundreds of users have run thousands of queries, reducing routine analytics questions and making self-serve exploration easier for non-specialists."
+}

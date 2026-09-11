@@ -1,0 +1,11 @@
+{
+  "summary": "GitHub Copilot CLIでは、スラッシュコマンドを使って端末上のAIエージェントを直接操作でき、/modelで利用可能なモデルやコスト倍率を見ながら切り替え、/contextや/compactでコンテキスト消費を管理できる。さらに、/resumeでローカルとリモートの過去セッションを再開し、/diff、/cwd、/reset-allowed-toolsで変更確認、作業ディレクトリの切り替え、権限のリセットも行える。",
+  "keyPoints": [
+    "/modelでは利用可能なモデル一覧を表示し、用途ごとの特性に加えて、契約プランや組織設定で変わる利用可否、右側に表示されるコスト倍率を確認しながら選べる。",
+    "コンテキスト管理では、/contextで残りトークン、システム使用量、利用可能バッファを確認でき、/compactで会話を要約して空きを作れる。完全にやり直したい場合は/clearでセッション全体を消去する。",
+    "過去の作業再開には/resumeを使い、ローカルとリモートの両方のセッション一覧から選んで履歴を表示し、そのまま続きから作業できる。",
+    "作業中の変更確認と作業対象の切り替え、権限整理にも専用コマンドがあり、/diffで最近の更新を確認し、/cwdで別ディレクトリやリポジトリに移動し、/reset-allowed-toolsで許可済みツール権限をリセットできる。"
+  ],
+  "significance": "Copilot CLIを端末中心で使う開発者にとって、スラッシュコマンドはモデル選択、文脈の節約、セッション再開、差分確認、権限管理を一つの操作体系で扱える点が重要だ。複数のプロジェクトや長い対話をまたぐ作業でもCopilotを終了せずに進めやすく、変更や履歴を見失いにくくなる。",
+  "summaryEn": "GitHub Copilot CLI lets users control the terminal agent with slash commands: /model switches among available models while showing details such as cost multipliers, and /context plus /compact help manage context usage. It also supports resuming local or remote sessions with /resume, reviewing recent changes with /diff, switching working directories with /cwd, and resetting tool permissions with /reset-allowed-tools."
+}

@@ -1,0 +1,12 @@
+{
+  "summary": "Power BI Dataflows Gen1はアクティブな機能開発を終えてLegacy扱いとなり、既存のデータフローは当面継続利用できる一方、退役時期は未確定となった。Premium容量でGen1を使う顧客には、退役前に少なくとも12カ月の事前通知がある。後継としてDataflows Gen2が示され、Power Query体験を維持しつつ、性能、詳細診断、組み込みAI、出力先の拡大、より柔軟なコストモデルが強調されている。",
+  "keyPoints": [
+    "Gen1はLegacyへ移行し、新機能追加は止まるが、既存データフローは当面継続利用できる。退役日は未確定で、Premium容量利用者には少なくとも12カ月前に通知される。",
+    "Gen2はSharePoint/OneDrive、Azure SQL Database/SQL MI、Fabric Lakehouse/Warehouse/SQL analytics endpointsなど、Gen1より広い出力先をサポートする。",
+    "Gen2はFabric runtimeと最新実行エンジンを基盤に、Fast Copyで毎分ギガバイト級の取り込み、並列実行、大規模データ処理強化をうたう。",
+    "課金はPremium容量常時依存から切り離され、CUベースで必要な計算資源分のみ支払うモデルになり、変動や季節性のある更新ではコスト低減の可能性が示されている。",
+    "移行手段として、個別データフロー向けのSave as Dataflow Gen2、CI/CD対応のSave As API、プログラム的な大規模移行向けガイダンスが案内されている。"
+  ],
+  "significance": "影響が大きいのは、Gen1を分析基盤の中核として使ってきた既存ユーザーと、新規データ準備基盤を選ぶチームだ。新しい投資先がGen2に集約される一方、Gen1は当面動き続けるため、既存運用を止めずに段階的な移行を考えられる。特にコスト効率を重視する組織にとっては、MicrosoftがGen2の利点として必要な計算資源分だけ支払うモデルを打ち出している点が関係する。",
+  "summaryEn": "Power BI Dataflows Gen1 has moved into a legacy state and is no longer under active innovation, although existing dataflows will keep running for the foreseeable future and retirement timing is still not finalized. Customers using Gen1 on Premium capacity will get at least 12 months’ notice before retirement. Microsoft positions Dataflows Gen2 as the successor, emphasizing the same Power Query experience with better performance, richer diagnostics, built-in AI, broader destinations, and a more flexible cost model."
+}

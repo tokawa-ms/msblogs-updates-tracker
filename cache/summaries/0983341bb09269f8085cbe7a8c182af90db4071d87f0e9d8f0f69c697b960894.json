@@ -1,0 +1,11 @@
+{
+  "summary": "GitHub Copilotは、VS Codeでプロンプトキャッシュと必要時のみのツール定義読み込みを強化し、長いセッションで不要なコンテキスト送信を減らした。あわせてAutoのモデル選択を、タスク意図とリアルタイムのモデル健全性に基づいて最適なモデルを選ぶ仕組みとして拡張している。Auto with task intentはすでにVisual Studio Code、github.com、mobileで稼働しており、Copilot CLIやGitHub Appなどへの展開も予定されている。",
+  "keyPoints": [
+    "VS Code向けのハーネス改善では、同じプロンプト接頭辞の再計算を避けるprompt cachingと、必要になった時だけツール定義を読み込むtool searchが中心で、毎ターンの固定コスト削減を狙っている。",
+    "Autoは初回プロンプト後、タスク意図と現在のモデル健全性を見てモデルを選ぶ。さらに会話中の頻繁な切り替えでキャッシュを壊さないよう、初回ターンとcompaction後といった自然なキャッシュ境界でルーティングする。",
+    "GitHubによると、ルーティングモデルはCJKを含む16言語ファミリーの会話で学習され、評価では各言語群で英語ベースラインから4ポイント以内に収まり、統計的に有意な品質差は出なかった。",
+    "提供面では、Auto with task intentはすでにVS Code、github.com、mobileで利用可能で、今後Copilot CLI、GitHub App、追加IDEへ拡大する。あわせてFree/StudentはAutoのみの選択に簡素化され、組織向けにはAutoを既定または唯一の選択肢にする管理機能も予定されている。"
+  ],
+  "significance": "長時間のコーディング、デバッグ、レビュー、ツール呼び出しまでCopilotに任せる開発者ほど影響が大きい。不要なコンテキストやツール定義の送信を減らし、作業内容とモデルの混雑状況に応じてモデルを選ぶことで、同じセッションの中で実作業に回る割合を高め、AIクレジットを使う効率を上げる狙いがある。さらに、Free/Student利用者や組織管理者には、Auto前提の利用や既定化・強制という運用上の変化が及ぶ。",
+  "summaryEn": "GitHub Copilot has improved VS Code context handling with prompt caching and on-demand tool loading to reduce unnecessary context in long sessions, while expanding Auto model selection based on task intent and real-time model health. Auto with task intent is already live in Visual Studio Code, github.com, and mobile, and is planned for Copilot CLI, GitHub App, and more IDEs."
+}

@@ -1,0 +1,11 @@
+{
+  "summary": "GitHub Copilot appの自動化機能を使い、筆者は会議準備や日次トリアージ、未対応タスク追跡など約40本の定期プロンプトを運用するようになった。自動化はカレンダー、メール、メッセージ、GitHubリポジトリの実作業コンテキストに接続して実行され、朝の準備や進捗把握の負担を減らした。筆者は特にAuDHDに伴う実行機能とワーキングメモリのばらつきを補うアクセシビリティ手段として位置付けている。",
+  "keyPoints": [
+    "GitHub Copilot appはmacOS、Windows、Linux向けの独立したデスクトップアプリで、リポジトリごとにブランチとworktreeを分けた並列セッションを走らせ、canvas上でエージェントの進捗をリアルタイムに見ながら操作できる。",
+    "朝の運用では、Meeting Prepが会議ごとの文脈を組み立て、Pre-Meeting Access Checkが招待に含まれる資料やリンクへのアクセス可否を確認し、Daily Triage DigestがGitHub、メール、メッセージから要対応事項を拾い上げる。",
+    "情報把握用の自動化として、Ship Decoderは過去24時間のGitHubの出荷内容を平易な言葉で整理し、Launch Radarは週次でチーム領域に関わる今後のローンチを抽出する。筆者はこの2本だけで、チャンネルを追って状況をつなぎ合わせる時間を毎日約1時間節約できると述べている。",
+    "Stale Work Finderの例では、7日以上レビュー待ちの自分のPR、3日超の未レビュー割り当て、14日以上動きのない担当Issue、2週間超のDraft PRを検出し、停滞度別に並べて可視化する。"
+  ],
+  "significance": "この内容は、仕事の文脈が多方面に散らばりがちなリーダー層や、実行機能やワーキングメモリのばらつきがある神経多様性のある専門職にとって意味がある。筆者の説明では、自動化は人とのつながりを置き換えるのではなく、約束の追跡や準備の足場を担って注意の質を安定させ、対人対応により集中できるようにする。",
+  "summaryEn": "Using GitHub Copilot app automations, the author now runs about 40 scheduled prompts for meeting prep, daily triage, and stale-work tracking. These automations work across calendar, email, messages, and GitHub repositories to reduce the burden of preparation and context management. The author especially frames them as an accessibility aid for managing AuDHD-related inconsistency in executive function and working memory."
+}

@@ -1,0 +1,12 @@
+{
+  "summary": "GitHub Copilot appのcanvasesを使ったJava Modernization StudioとSite Studioがawesome-copilotで利用可能になり、エージェント作業をチャットの長い履歴ではなく、永続的な共有面で可視化・承認しやすくしたという実践報告だ。記事では、ワークフロー状態の明確化、重要判断の可視化、進捗やドラフトの即時保存、人間の明示的な承認ポイントが共通設計として挙げられている。作成にはSite Studioで約2,000、Java modernization canvasで約3,000 AI creditsを要したが、反復的な作業では再プロンプトや手戻りを減らせると著者は説明している。",
+  "keyPoints": [
+    "チャットは意図出しには向く一方、実作業が始まると計画や検証、承認の履歴が埋もれやすく、canvasesは状態を明示的かつ永続的に保つ場として位置付けられている。",
+    "Java Modernization Studioでは、評価、計画、移行タスク、検証ゲート、出荷準備といった段階を明示し、複数関係者が進行状況や判断内容を監査しやすくする設計が示された。",
+    "Site Studioでは、個人サイト向けコンテンツ制作の進捗管理にcanvasesを使い、セクション状態の可視化、ドラフト値の永続化、明示的なレビュー地点により、反復編集での文脈散逸を抑えるとしている。",
+    "著者は共通パターンとして、状態定義、重要な意思決定の可視化、進捗とドラフトの即時保存、人間の承認ポイントの明示を挙げている。",
+    "導入コストとしてSite Studioは約2,000 AI credits、modernization canvasは約3,000 AI creditsがかかり、作成した2つのcanvasはawesome-copilotで公開されている。"
+  ],
+  "significance": "GitHub Copilotのエージェントを使う開発者やチーム、特に段階が多く繰り返し発生する作業を扱う人に関係する内容だ。canvasesによって、何が実行され、何が変わり、どこで人間の判断が必要かを共有面で追跡しやすくなり、再説明や文脈の再構築にかかる負担を減らせるという点が重要である。これは製品発表というより、エージェント運用を見える化して統制しやすくする実践知の共有といえる。",
+  "summaryEn": "Java Modernization Studio and Site Studio built with GitHub Copilot app canvases are now available in awesome-copilot, presenting a practical way to make agent work visible and approvable on a durable shared surface instead of in chat scrollback. The article highlights clear workflow states, surfaced decisions, persistent progress and drafts, and explicit human approval points as the core pattern. The author says the canvases cost about 2,000 and 3,000 AI credits to build, but can reduce repeated prompting and rework in recurring workflows."
+}

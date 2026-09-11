@@ -1,0 +1,11 @@
+{
+  "summary": "TMDL View on the Webがプレビューとして提供され、Power BIのワークスペース内にある公開済みセマンティック モデルをブラウザー上でTMDLコードとして閲覧・編集できるようになった。Power BI Desktopへの切り替えやモデル ファイルのダウンロードなしで変更を適用でき、コード中心のモデリング作業をWeb上で完結しやすくする。なおTMDL View自体はPower BI Desktopで2025年1月に導入され、2025年9月に一般提供となっている。",
+  "keyPoints": [
+    "本機能はプレビュー段階で、Power BI Service上のワークスペースにある公開済みセマンティック モデルを対象に、ブラウザーからTMDL Viewへ切り替えて利用する。",
+    "Web版にはIntelliSense、複数行編集、検索と置換を備えたコード エディターがあり、たとえば複数のSales関連DAXメジャーに表示フォルダーを一括設定するような更新を効率化できる。",
+    "標準モデリングUIでは露出しないpartition definitionsやisAvailableInMdxのような高度な設定もブラウザー上で直接編集でき、別モデルやTMDL Galleryのスクリプトを貼り付けてオブジェクトを再利用できる。",
+    "Webで編集したセマンティック モデルにはversion historyが自動設定され、Fileメニューから保存・履歴確認・以前の版への復元ができる。履歴にはモデルのメタデータとデータの両方が保持される。"
+  ],
+  "significance": "恩恵を受けるのは、公開済みセマンティック モデルのメタデータ確認、一括更新、部品再利用、誤編集からの復旧を行うPower BI開発者だ。高度なプロパティの確認や編集まで含む作業を、Desktopや外部ツールへ移らずブラウザー内で進められるため、公開後モデルの保守と変更作業の流れが一元化される。",
+  "summaryEn": "TMDL View on the Web is now in preview, letting users view and edit published semantic models in a Power BI workspace as TMDL code directly in the browser. Changes can be scripted and applied without switching to Power BI Desktop or downloading model files, making code-first modeling easier to keep on the web. TMDL View itself first appeared in Power BI Desktop in January 2025 and became generally available in September 2025."
+}

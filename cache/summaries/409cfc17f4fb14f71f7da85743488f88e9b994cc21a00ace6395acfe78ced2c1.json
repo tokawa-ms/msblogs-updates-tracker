@@ -1,0 +1,12 @@
+{
+  "summary": "GitHub Advisory DatabaseはOpenSSFのmalicious-packagesリポジトリからマルウェア報告を取り込み、Dependabotのマルウェアアラート対象を、従来のnpm中心の経路から8つの主要パッケージエコシステムへ広げた。新しいOpenSSF importerはOSVレコードを検証し、GitHub由来のghsa-malwareを除外して重複取り込みを防ぐ。アラートはリポジトリ、組織、またはエンタープライズ設定でのオプトイン制で、有効化した時点から既存アドバイザリもバックフィルされる。",
+  "keyPoints": [
+    "OpenSSFのmalicious-packagesリポジトリは2023年に立ち上がり、OSV形式で1万5000件超の報告を持つ。データ源にはコミュニティ投稿だけでなく、typosquatやdependency confusion、アカウント乗っ取り、悪意あるプリビルドバイナリなどの自動検出も含まれる。",
+    "新しいOpenSSF importerは全OSVレコードをスキーマ検証し、必要な項目や型、形式を満たさない記録は拒否してログ化する。さらに、誤報として撤回されたアドバイザリを収める osv/withdrawn フォルダの存在を前提に、後から取り下げられるケースにも対応する。",
+    "重複取り込み対策として、OSVのorigin metadataでGitHub起点のghsa-malwareをfeed entry作成前に除外する。実データ検証では、毎月流入する新しいnpm報告の半数超が自社アドバイザリ由来で、往復データとしてスキップされた。",
+    "上流データの異常に備え、1回の取り込みで作成できるアドバイザリ数の上限、上流コミットまで追跡できるprovenance、バッチ単位で一括ロールバックできる仕組みの3層防御を実装した。",
+    "利用面では、悪意ある依存関係の検知が大半のパッケージエコシステムに広がる一方、マルウェアアラートはオプトイン制だ。リポジトリ、組織、またはエンタープライズのセキュリティ設定で有効化すると、その時点から既存アドバイザリに対するバックフィルも実行される。"
+  ],
+  "significance": "影響を受けるのは、npm以外も含めてDependabotやGitHubで依存関係を管理する開発者や保守者だ。悪意あるパッケージが資格情報を即座に盗み得る前提で、レビュー待ちより迅速な自動公開とアラートを優先する設計になっており、広いエコシステムで早期通知を受けられる。一方で、この通知を使うには利用者側で明示的に有効化する必要がある。",
+  "summaryEn": "GitHub has expanded the GitHub Advisory Database and Dependabot malware alerts from an npm-only path to eight major package ecosystems by ingesting OpenSSF malicious-packages data. The new OpenSSF importer validates OSV records and skips GitHub-originated ghsa-malware entries to avoid duplicate loops. Alerts are opt-in at the repository, organization, or enterprise level, and enabling them backfills existing advisories."
+}

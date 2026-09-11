@@ -1,0 +1,12 @@
+{
+  "summary": "VS CodeはBYOKとローカルモデル対応により、AzureやOpenAI系、Ollamaなどのモデルを自分のAPIキーやローカル実行経由でChatのモデルピッカーから直接使えるようにした。対象はチャットと、必要な機能を満たす場合のエージェントワークフローで、標準のコード補完は含まれない。GitHubアカウントやCopilotプランなしでも利用でき、ローカルモデルでは完全オフライン運用も可能だ。",
+  "keyPoints": [
+    "BYOKではAzure、Anthropic、Huggingface、Gemini、OpenAI、OpenRouterなどの外部プロバイダーに加え、OllamaやFoundry Local経由のローカルモデルもVS CodeのChatモデルピッカーから利用できる。",
+    "BYOKモデルはGitHubアカウントへのサインインやCopilotプランなしで使え、自前のAPIキーだけで構成できる。ローカルモデルなら完全オフラインの利用も可能とされる。",
+    "適用範囲はVS Code Chatと一部のユーティリティ用途で、標準のコード補完は対象外。さらに、セマンティック検索やインライン提案、埋め込み依存機能は引き続きGitHubアカウントまたはCopilotサポートを必要とする。",
+    "導入の起点はLanguage Modelsエディターで、Chatモデルピッカーの管理アイコンまたはCommand PaletteのChat: Manage Language Modelsから開ける。ここではモデルの機能、コンテキストサイズ、課金情報、ピッカー表示有無も確認できる。",
+    "プロバイダー接続型のBYOK利用料金は各プロバイダーに直接課金され、GitHub Copilotのリクエスト枠には算入されない。Copilot BusinessとEnterpriseでは、組織管理者がポリシー設定でBYOKの可用性を制御できる。"
+  ],
+  "significance": "既存の課金やガバナンスがあるプロバイダーを使いたい組織や、OllamaやFoundry Localでオフライン実験したい開発者にとって、VS Code内でモデル選択肢を広げられる点が重要だ。一方で恩恵の中心はChatと対応するエージェント用途であり、Copilot依存の検索や提案機能まで置き換えるものではないため、影響を受けるのは主に開発中の対話・補助ワークフローを柔軟化したい利用者だ。",
+  "summaryEn": "VS Code now supports bring-your-own model keys and local models, letting users access providers such as Azure, OpenAI, and Ollama directly from the Chat model picker. This applies to chat and eligible agent workflows, not standard code completions, and it can be used without a GitHub sign-in or Copilot plan, including fully offline local setups."
+}

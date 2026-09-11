@@ -1,0 +1,12 @@
+{
+  "summary": "GitHub Copilotのnext edit suggestions（NES）は、long-distance next edit suggestionsによって、カーソル近傍だけでなく現在のファイル内の離れた場所にも編集候補を出せるようになった。次に編集すべき位置を専用のlocation modelで予測し、その地点の編集案は既存のNES modelが生成する構成だ。検証ではNES経由で書かれたコード量が23%増えた一方、遠距離候補は標準NESより却下されやすい傾向も確認された。機能はGitHub Copilot加入者向けにVS Codeで利用でき、next edit suggestionsとextended NES rangeの有効化が必要だ。",
+  "keyPoints": [
+    "long-distance NESは既存の編集生成モデルをそのまま伸ばすのではなく、編集位置だけを予測する専用モデルと、局所的な編集内容を出す元のNESモデルを組み合わせる方式で実装された。",
+    "評価は実際の複数編集ワークフローを前提に設計され、ジャンプ先の正解率だけでなく、その場に留まるべきno-jumpの精度も測定対象にした。",
+    "内部dogfoodingではモデルが過剰にジャンプを提案する傾向が見つかり、no jump例を増やして再学習した後、RLVRで実際のカーソル移動に近い予測を報酬化し、不要なジャンプには罰則を与えた。",
+    "A/BテストではNES経由で書かれたコード量が23%増加したが、離れた提案は標準NESより拒否されやすく、モデルの選択性とUIの改善余地も示された。",
+    "この機能は現時点でVS CodeのGitHub Copilot加入者向けに提供されており、next edit suggestionsとgithub.copilot.nextEditSuggestions.extendedRangeを有効にする必要がある。"
+  ],
+  "significance": "影響を受けるのは、関数名変更やシグネチャ変更のように、1つの修正が同一ファイル内の離れた箇所へ波及する作業をするVS CodeのGitHub Copilot利用者だ。従来は有効範囲外だった変更候補を見つけやすくなるため、離れた関連修正への移動や確認の負担を減らせる一方、不要なジャンプは作業の流れと提案への信頼を損ねるため、精度とUIの両方が重要だと記事は示している。",
+  "summaryEn": "GitHub Copilot's Next Edit Suggestions now support long-distance suggestions, expanding from edits near the cursor to relevant edits anywhere in the current file. A dedicated location model predicts where the next edit should happen, while the existing NES model generates the edit itself. In testing, code written via NES increased by 23%, although distant suggestions were rejected more often than standard NES. The feature is available now in VS Code for GitHub Copilot subscribers who enable NES and the extended-range setting."
+}

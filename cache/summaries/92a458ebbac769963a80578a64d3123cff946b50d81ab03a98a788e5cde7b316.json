@@ -1,0 +1,12 @@
+{
+  "summary": "Power BIのShape MapはGenerally Availableとなり、国や地域など任意に定義した境界上でデータを色分け表示できるようになった。US州やカナダ州などの既成マップに加え、TopoJSON/GeoJSONで独自境界も扱える。標準の行政区分ではなく実際の事業境界に合わせて地図を作れる点が特徴だ。",
+  "keyPoints": [
+    "組み込みでは米国州、カナダ州、オーストラリア州・準州、ドイツ州、フランス地域などの地図を選べ、足りない境界はTopoJSONまたはGeoJSONで追加できる。",
+    "地図ファイルはオンラインでホストしたURLも参照でき、FxボタンでURLを保持するメジャーを使って動的に地図を切り替えられる。",
+    "アップロード済みのカスタムマップはビジュアルから直接ダウンロードでき、編集後の更新版を再アップロードできる。",
+    "投影法としてAlbers USA、Equirectangular、Mercator、Orthographicの4種類を備える。",
+    "色設定はLocation only、Location and Legend、Color saturationで挙動が変わり、未マッピング領域の色も設定できる。"
+  ],
+  "significance": "営業テリトリーやフランチャイズ拠点、司法区など、標準行政区分ではなく実際の業務境界で分析したいPower BI利用者に関係する。組織固有の境界に合わせた地図上で地域別の実績や店舗配置を表現できるため、既成の行政区分では合わない分析を1つのビジュアルで扱いやすくなる。",
+  "summaryEn": "Power BI's Shape Map is now generally available, letting users color data over arbitrary geographic boundaries. It includes built-in maps such as US states and Canadian provinces, supports custom TopoJSON and GeoJSON boundaries, and is designed for maps that match real business boundaries rather than only standard administrative regions."
+}

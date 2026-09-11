@@ -1,0 +1,11 @@
+{
+  "summary": "GitHub agent appsでは、Amplitude、Endor Labs、LaunchDarkly、PagerDutyなどのサービスをGitHub内で使い、機能追加の検証から依存関係確認、段階的ロールアウト、デプロイ前のリスク評価まで進められることを、記事が4つの例で示した。記事の例では、オンボーディングの「invite your teammates」手順を見直す際に、Amplitudeでセグメント別の相関を確認し、LaunchDarklyでソロ登録者向けのフラグを設定し、PagerDutyで出荷可否を判断している。これらのagent appsはGitHub Marketplaceから利用でき、組織で有効化したうえでissue割り当て、PRコメントでの@mention、Agentsタブから使える。",
+  "keyPoints": [
+    "Amplitudeのagentを使う例では、「invite your teammates」完了と後続リテンションの相関をGitHubから確認し、チーム利用者では相関がある一方、ソロ利用者では相関がないため、ソロ登録者だけ手順を後ろ倒しにする方向へ要件を絞り込んでいる。",
+    "Endor LabsのagentはPRで変更された依存関係を調べ、既知の脆弱性やパッケージリスクを確認できる。記事の例では問題は見つからず、CI失敗を待たずに依存関係レビューを前倒しで実施している。",
+    "LaunchDarklyのagentには、boolean型のfeature flag「defer-team-invite」をdefault: falseで作成し、対象を「solo-intent signups」、ロールアウトを「internal > 5% > 25% > 100%」としてコードへ配線するよう依頼できる。対象環境で承認が必要な場合は、直接変更せず承認リクエストを作成する。",
+    "PagerDutyのagentは、対象サービスに対するデプロイリスクを、アクティブなインシデント、直近90日間の履歴、PRで触れたファイルと過去障害箇所の関連から評価する。記事の例ではアクティブインシデントがなく、現行変更との有意な相関もないため、進めてよいと推奨している。"
+  ],
+  "significance": "影響を受けるのは、PRやissueを中心にGitHub上で開発を進めるチームだ。記事の主張では、既存のAmplitude、LaunchDarkly、Endor Labs、PagerDutyをそのまま使いながら、各ツールに同じ文脈を持ち回る必要を減らし、開発者とagentがGitHubワークフロー内で次のアクションを調整できるようになる。",
+  "summaryEn": "GitHub agent apps let teams use services like Amplitude, Endor Labs, LaunchDarkly, and PagerDuty directly inside GitHub to handle scoping, dependency review, rollout, and deployment risk checks. In the walkthrough, Amplitude guides a rescope for solo versus team signups, LaunchDarkly creates and wires a feature flag, and PagerDuty evaluates release risk. The apps are available through GitHub Marketplace and can be used via issues, PR comments, and the Agents tab."
+}

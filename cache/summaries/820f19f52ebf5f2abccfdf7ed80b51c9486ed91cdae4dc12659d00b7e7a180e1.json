@@ -1,0 +1,11 @@
+{
+  "summary": "Direct Lake on OneLake のセマンティック モデルで、計算列がプレビュー提供になった。Web モデリングと Power BI Desktop から DAX で計算列を定義でき、テーブルのストレージ モード変更や上流データの修正は不要だ。Direct Lake の計算列は User Context のみをサポートし、クエリ時に評価されて RLS/OLS を尊重する一方、リレーションシップには使えず、フィルター コンテキストも反映しない。",
+  "keyPoints": [
+    "プレビューでは Web モデリングと Power BI Desktop で DAX による計算列を作成でき、Direct Lake のままモデル内で派生列を追加できる。",
+    "式コンテキストは User Context のみで、評価はユーザーがモデルをクエリするときに行われ、RLS と OLS を尊重する。ユーザー依存の式や保護列を参照しない式は通常、利用者ごとに同じ値になる。",
+    "制約として、計算列はクエリ時評価で実体化されないためリレーションシップや関係キーには使えず、レポートのフィルターやスライサーにも反応しない。",
+    "用途例として、年齢のような派生値、都市と地域の連結、多言語レポート、USERPRINCIPALNAME() を使う個別化コンテンツが挙げられている。"
+  ],
+  "significance": "Direct Lake を使う Power BI モデル作成者にとって、上流データやストレージ モードを変えずに DAX の計算列を追加できるため、Import や DirectQuery との差を埋めつつ Direct Lake のままモデリングしやすくなる点が重要だ。RLS や OLS を使う組織では、保護列に基づく派生列もユーザーのセキュリティ コンテキストで評価されるため、制限ユーザーに派生結果を見せない動作が明確に示された。",
+  "summaryEn": "Calculated columns are now in preview for Direct Lake on OneLake semantic models. Authors can create DAX-based columns in web modeling or Power BI Desktop without changing the storage mode or upstream data. The feature supports only User Context, is evaluated at query time with RLS/OLS enforcement, and cannot be used in relationships or filter-responsive logic."
+}

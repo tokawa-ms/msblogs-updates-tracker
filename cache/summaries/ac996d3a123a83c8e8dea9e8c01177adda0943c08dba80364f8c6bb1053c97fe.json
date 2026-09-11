@@ -1,0 +1,11 @@
+{
+  "summary": "Power BI Desktopは、PBIP（Power BI Projects）ファイルに外部ツールやエディター、自動処理から加えた変更を自動検知し、再起動なしで読み込めるようになった。変更がディスク上で発生すると最新プロジェクトの再読み込みを促し、Apply external changesで即時反映できる。あわせてPBIPプロジェクト向けのOpen in VS Codeも追加され、Visual Studio Codeでプロジェクトフォルダーを開いて編集しやすくなった。",
+  "keyPoints": [
+    "PBIPファイルへの外部変更は、Power BI Desktopの再起動を待たずに自動検知される。",
+    "PBIPファイルがディスク上で更新されると、Power BI Desktopは最新バージョンの再読み込みを促し、Apply external changesで更新内容を取り込める。",
+    "Power BI DesktopにはPBIPプロジェクト向けのOpen in VS Codeが追加され、Visual Studio Codeをプロジェクトフォルダー込みのワークスペースとして直接起動できる。",
+    "想定利用例として、Visual Studio Codeでの編集、スクリプトや自動化による更新、PBIP成果物を変更するAI支援開発ツールとの併用が挙げられている。"
+  ],
+  "significance": "PBIPを使ってソース管理や自動化を含む開発ワークフローを回しているPower BI利用者にとって、外部編集結果をPower BI Desktopへすぐ反映できる点が重要だ。コードエディター、外部ツール、自動プロセスとの往復時にアプリ再起動が不要になり、Desktopを開いたままレポートやセマンティックモデルのファイルを継続編集しやすくなる。",
+  "summaryEn": "Power BI Desktop now automatically detects external changes to PBIP files and lets users reload them without restarting the app. When project files change on disk, Desktop prompts for a reload via Apply external changes. It also adds an Open in VS Code option for PBIP projects, making it easier to edit project folders directly in Visual Studio Code."
+}

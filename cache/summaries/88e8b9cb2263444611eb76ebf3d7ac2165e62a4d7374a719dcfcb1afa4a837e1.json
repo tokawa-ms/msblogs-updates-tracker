@@ -1,0 +1,11 @@
+{
+  "summary": "GitHubは、California’s AI Transparency Act（SB 942、SB 1000で修正提案）について、オープンソースを守るための限定的な修正を求める連合に参加した。現行草案のライセンス取消し条項は、恒久的かつ取消不能なオープンソースライセンスの実務と衝突し、特に共同開発型プロジェクトのサプライチェーンに不確実性を持ち込むと訴えている。連合は、法の透明性目標を保ちながら、EUのAI Act Transparency Code of Practiceに沿って、文書で下流利用者へベストプラクティスを通知する扱いへの整合を提案している。",
+  "keyPoints": [
+    "GitHubはBlack Forest Labs、Hugging Face、Mozilla Corporationと連携し、California’s AI Transparency Actの修正を求める公開書簡に加わった。対象法案はSB 942で、SB 1000による修正案が前提になっている。",
+    "争点は、法案草案が下流利用者の義務違反時に開発者へライセンス取消しを求めている点で、オープンソースライセンスの恒久性・取消不能性と整合しないことだ。",
+    "連合は、この取消し要件がなくても法の目的は達成できるとし、AIシステムを改変・展開する開発者はすでに法律の直接適用対象で、執行手段も残ると説明している。",
+    "代替案として、EUのAI Act Transparency Code of Practiceに合わせ、オープンソースの特性を認めたうえで、文書内で下流利用者にベストプラクティスを通知するだけで十分だとしている。"
+  ],
+  "significance": "影響を受けるのは、オープンソースのコードを使ってAIやソフトウェアを開発・再利用・共有する開発者や、共同体主導のプロジェクト、その周辺のソフトウェアサプライチェーンだ。GitHubは、修正によって透明性要件を保ちつつオープンソース開発との互換性を維持し、カリフォルニアでAIの説明責任と協調的なイノベーションの両立を図れると主張している。",
+  "summaryEn": "GitHub joined a coalition seeking targeted amendments to California’s AI Transparency Act so its license-revocation provisions do not conflict with open source licensing. The group says the current draft could create uncertainty across collaborative software supply chains and proposes an EU-style approach that keeps the law’s transparency goals while relying on documentation-based downstream notices."
+}

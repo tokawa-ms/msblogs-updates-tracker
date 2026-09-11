@@ -1,0 +1,12 @@
+{
+  "summary": "Azure Multicloud Interconnect for AWSは、AzureとAWS間の専用プライベート接続を、従来の個別構築より簡素なクラウドネイティブ体験で提供する新しいマルチクラウド接続の枠組みとして発表された。MicrosoftとAWSはOpen API仕様を使った相互運用で連携し、Azure Private Linkまで含むエンドツーエンドのプライベート経路を目指す。記事では、一般提供時に初日から最大100Gbpsを提供し、需要増に応じて容量を動的に拡張できるとしている。",
+  "keyPoints": [
+    "AzureとAWSの接続は、Open API仕様に基づくAzure Multicloud InterconnectとAWS Interconnect – multicloudの組み合わせで提供され、プロビジョニングや運用の複雑さを抽象化する構成として説明されている。",
+    "対象ユースケースとして、複数クラウドにまたがるAIの学習・推論や分散データ利用を挙げており、Azure Private Linkまで延びる高帯域のプライベート接続で対応するとしている。",
+    "可用性やセキュリティについては、記事中でMACsecを標準提供し、可用性はfour-nines、拡張はボタン操作レベルで可能だと両社側の主張として紹介している。",
+    "性能と拡張性では、一般提供時に初日から最大100Gbpsに対応し、需要増に合わせてネットワーク再設計なしで容量を動的に拡張できる見通しが示されている。",
+    "今回の発表はAzure-AWS間接続にとどまらず、同じ共通APIモデルを将来的に他のハイパースケーラーや通信事業者、ネットワークサービス事業者にも広げる構想の一歩と位置付けられている。"
+  ],
+  "significance": "AzureとAWSの両方にまたがってアプリケーションやデータ、AI基盤を運用する組織に影響が大きい。従来は物理接続、ルーティング設定、監視、ライフサイクル管理などをまたいで調整する必要があったが、この仕組みはその複雑さを減らし、高帯域かつ閉域の経路をより一貫した方法で確保したい利用者に向く。特に、複数クラウド間で性能・セキュリティ・コンプライアンスを保ちながらデータや推論基盤をつなぎたいケースで意味がある。",
+  "summaryEn": "Azure Multicloud Interconnect for AWS was introduced as a new framework for dedicated private connectivity between Azure and AWS, aiming to replace bespoke setup with a simpler cloud-native experience. Microsoft and AWS are using open API-based interoperability, with connectivity extending to Azure Private Link for an end-to-end private path. The article says general availability will support up to 100 Gbps from day one and allow dynamic capacity expansion as demand grows."
+}

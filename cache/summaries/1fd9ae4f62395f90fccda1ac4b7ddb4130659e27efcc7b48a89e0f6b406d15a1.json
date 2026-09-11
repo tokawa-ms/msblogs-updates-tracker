@@ -1,0 +1,12 @@
+{
+  "summary": "Power BIの2026年4月更新では、Power BI Mobileのin-report Copilotが強化され、スマホやタブレットからレポートに自由質問や追質問を行い、引用付きの回答やAI生成ビジュアルまで得られるようになった。Power BI DesktopではSU04で新しいファイルピッカーが既定化され、旧UIは利用できなくなる。あわせて、テーマ切り替えやFixed sizeレイアウトなどのレポート作成改善と、Direct Lake向け計算列・計算テーブルなどのモデリング機能拡張が進められている。",
+  "keyPoints": [
+    "Power BI Mobileのin-report Copilotは、自由形式の質問と追質問に対応し、回答には参照したビジュアルへの引用が付くようになった。",
+    "Power BI DesktopではSU04から新しいファイルピッカーがプレビューを終了して既定になり、旧ファイルピッカーとの切り替えはできなくなる。利用者側の対応は不要と案内されている。",
+    "レポート作成では、Customize current themeにベーステーマ切替が追加され、カード、ボタンスライサー、リストスライサーでピクセル指定のFixed sizeが使えるようになった。Fixed size有効時はFit to spaceが無効になる。",
+    "モデリングでは、Direct Lake on OneLake向けの計算列は現在展開中で、利用可能時期はサービスのロールアウト完了後に案内される。計算テーブル対応に加え、UserCulture()やUserPrincipalName()などに応じるユーザーコンテキスト対応の計算列もプレビューとして紹介された。",
+    "IBM Netezzaでは従来の組み込みODBCドライバーの廃止が始まり、既存コネクタは再利用できるが、新しいODBCドライバーの導入が必要になる。"
+  ],
+  "significance": "外出先でPower BIレポートを確認する利用者にとって、今回の影響が最も大きいのはモバイルCopilotの拡張で、スマホやタブレットから自由質問や追質問を続けながら、回答の根拠となるビジュアルもその場で確認できるようになった点だ。特にiPhoneとiPadでは音声入力にも対応し、デスクを離れた状況でもレポート理解を進めやすくなる。",
+  "summaryEn": "Power BI’s April 2026 update expands in-report Copilot on Power BI Mobile, letting users ask open-ended and follow-up questions from phones and tablets, with cited answers and even AI-generated visuals. In Power BI Desktop, the new file picker becomes the default in SU04 and the old UI is removed, while reporting improvements such as theme switching and fixed-size layouts and modeling additions for Direct Lake continue to roll out."
+}

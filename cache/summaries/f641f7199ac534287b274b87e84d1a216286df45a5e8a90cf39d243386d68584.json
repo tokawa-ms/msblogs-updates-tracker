@@ -1,0 +1,12 @@
+{
+  "summary": "Microsoft Discoveryは、科学・工学分野のエージェント型AIワークフローを構築・管理するプラットフォームとして、全組織向けに一般提供が始まった。あわせて、研究者や学生、科学チームがフルのエンタープライズ導入なしで使い始められるローカルデスクトップ版のMicrosoft Discovery appがプレビュー公開された。中核のMicrosoft Discovery Engineでは、証拠から仮説、実行、分析、次の反復までをつなぎ、再現性やレビュー性を保ったR&D運用を支えるとしている。",
+  "keyPoints": [
+    "Microsoft Discoveryの一般提供は、科学・工学のR&D向けに、エージェント型AIワークフローの構築とガバナンスを本番利用できる形で提供する位置付けだ。",
+    "Microsoft Discovery appはプレビューとして提供され、研究者、学生、学術ラボ、小規模チームが、フルのエンタープライズ展開なしでローカル環境から利用を始められる。ダウンロード先はMicrosoft Discovery GitHubで、利用開始にはGitHub Copilotアカウントが必要だ。",
+    "中核のDiscovery Engineでは、専門エージェントを連携させ、社内知識や外部の科学情報、モデリング・シミュレーション・解析・検証ツールをまたいで作業を統合する。製品開発では、再現性、レビュー可能性、知的財産の適切な接続とガバナンスを重視したとしている。",
+    "適用事例としては、Yale Engineeringとの有機レドックスフロー電池材料研究、Georgia Techによるヒスチジン起源評価、Wileyの100万件超の記事インデックスを使うLife Sciences agent、BHPの銅浸出探索の短縮などが紹介され、分野別のエコシステム拡大も強調された。",
+    "提供状況は、Microsoft Discovery本体が一般提供、Microsoft Discovery appがプレビューで、プレビュー機能は変更される可能性がある。"
+  ],
+  "significance": "影響を受けるのは、厳密な検証やレビュー、証拠管理が必要な企業のR&D組織と、そこに至る前段階で試行したい研究者・学生・学術ラボだ。前者にはガバナンスを備えた本番向け基盤を、後者にはローカル環境から始められる入口を用意することで、同じDiscoveryの枠組みを探索段階から高度な研究開発プログラムまでつなげられる点に意味がある。",
+  "summaryEn": "Microsoft Discovery is now generally available for organizations as a platform for building and governing agentic AI workflows in scientific and engineering R&D. Microsoft also introduced the Microsoft Discovery app in preview, giving researchers, students, and scientific teams a local desktop entry point without requiring a full enterprise deployment. At the core is the Discovery Engine, which connects evidence, hypotheses, execution, analysis, and iteration while emphasizing reproducibility and reviewability."
+}

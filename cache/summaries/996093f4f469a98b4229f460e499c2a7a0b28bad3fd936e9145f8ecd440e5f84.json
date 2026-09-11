@@ -1,0 +1,11 @@
+{
+  "summary": "Microsoft Scoutは、Microsoft初のAutopilot agentとして導入され、TeamsやOutlook、OneDrive、SharePointなどMicrosoft 365全体をまたいで動作し、Teamsから利用しながらチャット、メール、予定表、連絡先の文脈も使って会議調整や予定確保、停滞リスクの検知を自律的に進める。提供は現時点で一部顧客向けのプライベートプレビューとFrontierでの実験的リリースに限られる。",
+  "keyPoints": [
+    "Scoutは新カテゴリ「Autopilots」の第1弾で、自身のIDを持つ常時稼働型エージェントとして、ユーザーに代わって自律的に動く。",
+    "クラウド、デスクトップ、Webで動作し、Teamsから操作できる。Teams、Outlook、OneDrive、SharePointに加え、チャット、メール、予定表、連絡先のデータを使って、会議調整、準備資料の生成、カレンダーの自動ブロック、停滞した意思決定の検知を行う。",
+    "企業向けには、各エージェントが個別に統制されたEntra IDで動作し、資格情報はタスク単位でスコープされる。アクセス先は承認済みリソースに限定され、機密アクションの人手承認やPurviewの機密ラベル・損失防止ポリシーも実行時に適用される。",
+    "提供は一般提供ではなく、一部顧客へのプライベートプレビューとFrontier向けの実験的リリースにとどまる。利用にはFrontier登録、Intuneポリシー設定、オプトイン証明が必要で、GitHub Copilotライセンス保有者がダウンロードとインストールを行える。"
+  ],
+  "significance": "Microsoft 365上で日々の調整業務が多い従業員と、それを既存の統制下で自動化したい企業に影響する内容だ。Scoutは会議調整や締め切り対応、リスクの早期把握を継続支援しつつ、個別のEntra ID、承認済みアクセス先、Purviewポリシー順守を前提に動くため、組織はガバナンスを保ったまま常時稼働エージェントを試せる。",
+  "summaryEn": "Microsoft Scout is Microsoft’s first Autopilot agent, working across Microsoft 365 and using Teams plus chats, email, calendar, and contacts to autonomously handle meeting coordination, calendar blocking, and stalled-decision risk detection. For now it is limited to a private preview for selected customers and an experimental release through Frontier."
+}

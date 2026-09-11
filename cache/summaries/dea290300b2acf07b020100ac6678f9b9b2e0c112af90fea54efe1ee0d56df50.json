@@ -1,0 +1,12 @@
+{
+  "summary": "Power BIの2026年8月版では、レポート、モデリング、データ接続、モバイル、埋め込み分析、開発者体験にまたがる更新が入り、一般提供機能とプレビュー機能が混在して追加された。レポートではFluent 2ベーステーマ導入や日付ピッカー強化が進み、Power BI Serviceではセマンティックモデル更新の選択肢が増え、作成と運用の両面に手が入った。",
+  "keyPoints": [
+    "Power BI Desktopの旧ファイルピッカーは4月に非推奨化され、10月以降は2026年3月以前のDesktopを使うユーザーがOne DriveとSharePointへの保存・共有を行えなくなる。",
+    "9月上旬には、データアプリテンプレートで作成したFabric Appの利用者は基盤セマンティックモデルにBuild権限ではなくRead権限でアクセスできるようになり、作成者には引き続きBuild権限が必要となる。",
+    "レポート機能では、Modern visual defaultsとテーマ書式設定ペイン、Slicer向けDate pickerが一般提供となり、新規レポートの既定はFluent 2ベーステーマになり、Date pickerには単一日付を1件だけ選ぶ設定が加わった。",
+    "Power BI Serviceのセマンティックモデル更新は、スキーマとデータの両方、スキーマのみ、データのみの3系統に分かれ、さらにテーブル単位でも更新を実行できるようになった。",
+    "Direct Lake関連では、Webモデリングで個別テーブルをImportへ変換する機能と計算列がプレビューとして追加され、Import変換機能は今後数週間で順次ロールアウトされる。"
+  ],
+  "significance": "今回の更新は、Fabric Appの閲覧者や運用者、レポート利用者、モバイル利用者に広く関係する。権限はBuildからRead中心へ寄せられ、セマンティックモデル更新も必要な単位だけ選びやすくなる。さらにレポート上でのコメント連携と、モバイルからのExcel出力が加わり、共有と利用の流れが広がる。",
+  "summaryEn": "Power BI's August 2026 release adds updates across reporting, modeling, data connectivity, mobile, embedded analytics, and developer workflows, combining GA enhancements with new preview capabilities. Reporting gains Fluent 2-based defaults and stronger date picker options, while Power BI Service adds more granular semantic model refresh choices that improve both authoring and maintenance."
+}

@@ -1,0 +1,12 @@
+{
+  "summary": "Microsoft Agent 365は商用顧客向けに一般提供を開始し、AIエージェントを単一のコントロールプレーンで可視化・ガバナンス・保護できる製品として展開を広げた。今回の発表では、独自資格情報で動くエージェントへの対応拡大に加え、DefenderとIntuneによるローカルエージェントやシャドーAIの検出、AWS BedrockとGoogle Cloudとのレジストリ同期などのプレビューも発表された。",
+  "keyPoints": [
+    "対応形態では、ユーザー代理で動くエージェントと独自アクセスで裏側実行されるエージェントがGAとなり、チームのワークフローに参加する独自アクセス型はPublic Previewとして提供される。",
+    "Windows端末上のローカルAIエージェント管理はOpenClawから始まり、GitHub Copilot CLIやClaude Codeにも拡大予定で、2026年6月にはコンテキストマッピング、ポリシー制御、実行時ブロックとアラートがIntuneとDefender経由のPublic Previewになる。",
+    "マルチクラウド対応では、Agent 365レジストリのAWS BedrockおよびGoogle Cloud接続がPublic Previewとなり、IT部門はエージェントの自動検出と棚卸しを始められ、今後は開始・停止・削除といった基本ライフサイクル管理も予定されている。",
+    "実行基盤と通信制御では、Windows 365 for Agentsが米国内限定のPublic Previewとして提供され、同時にEntraのネットワーク制御はCopilot StudioエージェントやOpenClawなどのローカルエージェントにもGAで拡張された。",
+    "提供形態はMicrosoft 365 E7または単体で、価格は1ユーザーあたり月額15米ドル。ライセンスはエージェントを管理・後援する人だけでなく、本人の代わりにエージェントを使って業務を行う個人も対象とされる。"
+  ],
+  "significance": "この発表は、実証段階から本格導入へ進む企業のIT、エンドポイント管理、セキュリティ担当にとって重要だ。ローカル、クラウド、SaaSにまたがるエージェントやシャドーAIを一貫して把握し、運用中の環境まで含めて統制できるようにすることで、増え続けるエージェントの露出範囲や対処対象を評価しやすくする。",
+  "summaryEn": "Microsoft Agent 365 is now generally available for commercial customers as a single control plane for observing, governing, and securing AI agents. Microsoft also announced previews covering agents that use their own credentials, discovery of local agents and shadow AI through Defender and Intune, and registry sync with AWS Bedrock and Google Cloud."
+}

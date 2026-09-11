@@ -1,0 +1,11 @@
+{
+  "summary": "2026 Agent Confidence Indexは、AI・データ・クラウド分野の技術専門家300人への調査から、エージェントが定型で反復的な業務ではすでに高い信頼を得ており、難度の高い業務でも補助役として浸透し始めていることを示した。101業務の平均信頼度は64/100で、レポート自動生成83.5、新機能向けの定型コード生成82.5などが上位に並ぶ。一方で導入時には人間の監督が重視され、59%が人をループに残すことを最優先に挙げている。",
+  "keyPoints": [
+    "調査は12業種・4地域にまたがる技術専門家300人を対象に、主要101業務に対するエージェントへの信頼度を尋ねたもので、全体平均は64/100、70点超えの業務は30件だった。",
+    "高信頼の業務は、レポート自動生成83.5、新機能向けの定型コード生成82.5、証明書期限監視と更新81.5、リアルタイムデータストリーム監視80.5、コミット履歴からのリリースノート生成79.5など、予測しやすく反復的な作業に集中している。",
+    "低めの評価だった最前線の業務でも、サービスメッシュ設定とトラブルシュート37.5、データベーススキーマ移行スクリプト46.5、メモリリーク検出48.5と、完全委任ではないにせよ支援役としての前進が見られる。",
+    "導入の優先事項では人間の監督が最上位で、エージェントは仕様が明確で大量かつ巻き戻し可能な作業に向き、影響が大きい・文脈依存・取り消しづらい判断では人間が承認するという線引きが示されている。"
+  ],
+  "significance": "影響を受けるのは、開発、SRE、QA、データパイプライン運用などの技術チームだ。記事では、反復作業をエージェントに委譲しつつ重要判断は人が担う前提で、キャリア機会が広がると説明する。特にジュニアはコードベース理解を深めやすくなり、シニアは単純作業から解放されて、より難しく重要な設計や判断に時間を使えるという見立てが示されている。",
+  "summaryEn": "The 2026 Agent Confidence Index shows, based on a survey of 300 technical experts in AI, data, and cloud, that agents have already earned strong trust for routine, repetitive work and are beginning to assist with more difficult tasks. Average confidence across 101 tasks was 64 out of 100, with automated report generation at 83.5 and boilerplate code generation for new features at 82.5. Human oversight remains central, with 59% naming keeping humans in the loop as their top priority."
+}

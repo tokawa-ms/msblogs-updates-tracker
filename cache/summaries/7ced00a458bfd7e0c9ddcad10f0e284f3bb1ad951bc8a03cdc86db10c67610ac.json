@@ -1,0 +1,11 @@
+{
+  "summary": "Microsoft 365 Copilotは、CopilotアプリとMicrosoft 365各アプリでの表示方法を再設計し、従来の静的なプロンプト欄をタスクに応じて支援内容が変わる作業空間へ拡張した。アプリ横断では一貫した入口から文書やセル、スライド上でCopilotを呼び出せるようにし、チャットと作業画面を行き来しながら提案や編集を受けられる。Microsoftによれば、Copilotアプリの読み込み時間は50%以上短縮され、複雑なチャットの応答時間も10%改善した。",
+  "keyPoints": [
+    "Copilotアプリでは、プロンプト欄の入力領域を広げ、下部にその作業に合ったツールや操作を表示する設計に変わった。内容の貼り付けや構造保持、送信前のインライン書式設定にも対応する。",
+    "Work IQというレイヤーがメール、ファイル、チャット、会議の情報を踏まえて応答の深さを調整し、必要に応じてAIモデルを選べるようにする。個別ファイルだけでなく、より広い業務文脈を基にCopilotの支援を変える仕組みとして位置付けられている。",
+    "Word、Excel、PowerPoint、Outlookなどのアプリでは、作業画面の上に共通の入口を設け、そこから文書と直接連動するサイドペインを開ける。段落、セル、スライド上からその場でCopilotを呼び出し、変更提案だけでなく実際の編集もできる。",
+    "Microsoftは、新しい体験の展開後に利用率がWordで27%、Excelで33%、PowerPointで43%、Outlookで30%増加したとしている。比較期間は、Word・Excel・PowerPointが2026年5月1〜5日と5月8〜12日、Outlookが2025年12月30日〜2026年1月27日と2026年1月27日〜2月24日だ。"
+  ],
+  "significance": "日常的にWord、Excel、PowerPoint、Outlookを使う業務ユーザーにとって影響が大きい。アプリごとに別々の操作感ではなく共通の入口からCopilotを使え、段落・セル・スライド上で直接呼び出せるうえ、メールやファイルなどの業務文脈も使って支援内容を変えるため、作業フローを切り替える負担を減らしやすい。",
+  "summaryEn": "Microsoft 365 Copilot has been redesigned across the Copilot app and Microsoft 365 apps, turning the static prompt box into a task-aware workspace. It now offers a consistent entry point across apps and can be invoked directly within documents, cells, and slides for suggestions and edits. Microsoft says the Copilot app now loads over 50% faster and improves response times for complex chats by 10%."
+}

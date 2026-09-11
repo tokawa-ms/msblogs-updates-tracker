@@ -1,0 +1,11 @@
+{
+  "summary": "Microsoft Foundryを使ってMicrosoftのマーケティング部門が、社内知識に基づくAIエージェントを業務フローに組み込み、ブログ審査、メッセージ検証、部門間の情報連携を標準化した事例を紹介している。製品発売が四半期ごとから週次、時には日次へ増え、支援対象も前年同期比150%まで拡大する中で、専門家の評価基準や顧客文脈を再利用可能にした。Microsoftによると、ブログ審査は分単位に短縮され、年間2,000時間超の削減を見込む一方、判断そのものは人が担い、AIは一貫性と調整負荷の軽減を担う位置づけだ。",
+  "keyPoints": [
+    "Microsoftのマーケティング部門では、製品発売が四半期ごとから週次、時には日次へ増え、対応件数も前年同期比で最大150%増となったため、Foundryで業務知識に根差したAIエージェントを構築した。",
+    "ブログ制作では、専門家が使うレビュー基準をFoundryで反復可能なワークフローに変換し、年間200本超の投稿を下書き段階で点検できるようにした。Microsoftは、レビュー工程が分単位になり、年間2,000時間超の削減を見積もっている。",
+    "AI Messaging Assistant (AMA) は、実際の顧客会話に基づくペルソナ群と製品知識、メッセージ指針を使い、市場投入前にメッセージの明確さ、関連性、実行可能性を検証する仕組みとして用いられている。",
+    "部門間連携では、企画バックログ、文書、会議シグナル、運用ソースを接続したエージェントにより、主要な変化や今後の発売計画をリアルタイムで把握できるようにし、整合性確保を手作業から反復可能な工程へ変えた。"
+  ],
+  "significance": "急増する発売やコンテンツ対応を、従来に近い人員規模のまま担うマーケティング部門や、その周辺の企画・調整担当にとって重要な事例である。この記事は、AIを人の判断の代替ではなく、社内知識の接続、一貫した基準の適用、情報収集や調整の省力化に使うことで、少数の専門家の知見を広く再利用できることを示している。",
+  "summaryEn": "Microsoft’s marketing team used Microsoft Foundry to embed AI agents grounded in internal business knowledge into workflows for blog review, messaging validation, and cross-team alignment. As launch activity grew from quarterly to weekly or even daily, reaching up to 150% year over year, the team reused expert criteria and customer context at scale. Microsoft says blog reviews now take minutes and are estimated to save more than 2,000 hours annually, while human staff still retain final judgment."
+}

@@ -1,0 +1,11 @@
+{
+  "summary": "GPT-6 AstraがMicrosoft Foundryで全顧客向けに一般提供された。OpenAIの最新フロンティアモデルとして、オープンエンドな課題を複数段階で推論し、計画作成からレビュー可能な成果物作成まで進めることを狙う。さらに高度なツール利用とコンピュータ利用でアプリをまたぐ業務実行に対応し、Foundry ModelsではStandard/Provisioned ThroughputとGlobal/US Data Zoneで利用できる。",
+  "keyPoints": [
+    "Astraはオープンエンドな課題を複数段階で推論し、計画立案から成果物作成まで進める用途を想定している。記事ではレビュー可能な文書、スプレッドシート、プレゼンテーション、分析の作成支援を具体例として挙げている。",
+    "コンピュータ利用機能は、専用APIがない業務フローも対象にし、画面情報を解釈して承認済みインターフェース上で記録更新、開発ツール操作、ソフトウェアテスト、レポート作成を支援する。OpenAIは特定評価で最先端水準の結果を報告しているが、性能はタスク、ツール、設定、セーフガードで変動するとしている。",
+    "Foundry側では、Microsoft EntraによるIDとアクセス管理、転送時・保存時の暗号化、プライベートネットワーク、RBAC、コンテンツフィルタリング、監視、ガバナンス機能を組み合わせられる。加えて、プロンプトと出力はモデル学習に使われない一方、リスクは残るため、各組織が自社シナリオと規制要件に合わせて統制を選定・設定する責任がある。",
+    "提供形態はFoundry ModelsのStandardとProvisioned Throughputで、地域はGlobalとUS Data Zone。料金表ではStandard Globalの短コンテキストが入力100万トークン当たり10ドル、出力50ドル、Standard Data Zone (US)の短コンテキストが入力11ドル、出力55ドルで、米国Data ZoneのProvisioned ThroughputはGlobal比10%増とされる。"
+  ],
+  "significance": "複雑な業務を持つ企業の開発者、BI担当者、業務部門に影響が大きい。ソフトウェア開発、Power BIでの分析、顧客記録更新やフォーム処理など、既存アプリやAPI未整備の画面操作を含む業務にAIエージェントを組み込みやすくなるためだ。一方で記事は承認、監視、人間のチェックポイントを前提としており、本番導入を検討する組織ほど統制設計の重要性が増す。",
+  "summaryEn": "GPT-6 Astra is now generally available to all customers in Microsoft Foundry. Microsoft positions OpenAI’s latest frontier model for multi-step reasoning on open-ended work, from planning to review-ready outputs. It also supports cross-application task execution with advanced tool and computer use, and is offered in Foundry Models with Standard or Provisioned Throughput across Global and US Data Zone deployments."
+}

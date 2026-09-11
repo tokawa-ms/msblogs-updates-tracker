@@ -1,0 +1,11 @@
+{
+  "summary": "Azure Chaos Studio Workspacesは、Azureで実際に起きる障害パターンに沿って回復性を検証できる新しいワークスペース機能として、現在パブリックプレビューで提供された。サブスクリプションやリソースグループを対象に、管理IDが適用可能なシナリオを自動推奨し、Zone DownやDNS Outage、データベースフェイルオーバーなどの訓練を実行できる。GAは変更の可能性付きで2026年後半を予定している。",
+  "keyPoints": [
+    "Workspacesは新しい最上位リソースとして導入され、対象のサブスクリプションまたはリソースグループを指定すると、管理IDが範囲内のリソースを検出し、該当シナリオを推奨する。現時点ではパブリックプレビューで、GAは2026年後半予定だが変更の可能性がある。",
+    "提供開始時点で、Availability Zone Down、DNS Outage、Microsoft Entra ID Outage、Event-Driven Messaging Disruptionなどのキュレーション済みシナリオが利用できる。Cache StampedeのApp Service process-crash版は現時点でWindows App Service plansのみ対応する。",
+    "キュレーション済みシナリオに合わない場合は、Azure portalのScenario Designerでドラッグアンドドロップにより独自シナリオを作成できる。さらに、CPUやメモリ圧迫といったVM agent faultsもWorkspaces内で実行可能だ。",
+    "運用連携として、GitHub Copilot向けChaos Studio Skillと、同じ操作を型付きツールとして公開するMCP serverが同時に提供される。どちらも同じChaos Studio APIと利用者自身のAzureサインインで動作し、すぐ試せる。"
+  ],
+  "significance": "Azure上で障害時の挙動を本番前に確かめたい開発・運用チーム、特にAIアプリケーションを本番投入するチームに関係する内容だ。記事は、設計上の冗長化だけでは不十分で、構成やアプリケーションロジックが障害下で持ちこたえるかを実証する必要があると位置付ける。実行後のレポートは変更管理や監査証跡にも使えるため、現場チームだけでなくレビューする管理側にも影響する。",
+  "summaryEn": "Azure Chaos Studio Workspaces is now in public preview as a scenario-based way to test real Azure outage patterns for application resilience. A Workspace can target a subscription or resource group, use managed identity to recommend applicable scenarios, and run drills such as Zone Down, DNS Outage, and database failover. GA is targeted for late 2026, subject to change."
+}

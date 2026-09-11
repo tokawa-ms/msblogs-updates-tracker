@@ -1,0 +1,11 @@
+{
+  "summary": "Dependabotは非セキュリティのバージョン更新PRを、リリース公開直後ではなく少なくとも3日待ってから作成する既定動作に変わった。待機期間はdependabot.ymlのcooldown設定で調整でき、追加設定なしで有効になる。背景には、悪性パッケージが公開後数時間で発見・撤回される事例が相次ぎ、その初動の危険時間帯を避ける狙いがある。",
+  "keyPoints": [
+    "対象は非セキュリティ更新で、公開から最低3日待ってPRを開く。待機期間はdependabot.ymlのcooldown設定で短くも長くもでき、既定で有効化される。",
+    "GitHubは、2026年5月までの1年間にnpmマルウェア勧告が6,500件超、1日当たり約18件あったとし、短時間で露見する悪性公開を避ける根拠としている。",
+    "3日という既定値は、2018年から2026年の21件の著名なサプライチェーン事案レビューで、多くの悪性版が公開後数時間で取り下げられたことと、他ツールでも3日程度の待機が採用されていることを踏まえている。",
+    "この対策は、公開直後に広がってすぐ見つかる悪性リリースには有効だが、長期潜伏バックドア、メンテナーの破壊的行為、ビルドシステム侵害には十分ではない。そのため、lockfileによる固定、CIでのinstall script無効化、トークン権限の限定、マージ前レビューを併用する前提になっている。"
+  ],
+  "significance": "Dependabotで依存関係更新を自動化している保守担当者や開発チームは、新版公開直後の危険なバージョンがそのままPRとして届く可能性を既定で下げられる。特に公開レジストリの依存を取り込むプロジェクトでは、保守者・研究者・自動スキャナが不正版を検知して撤回する時間を確保できる一方、長期潜伏型の攻撃には別の防御策が引き続き必要だ。",
+  "summaryEn": "Dependabot now defaults to waiting at least three days before opening pull requests for non-security version updates instead of reacting immediately to a new release. The delay is configurable through the cooldown setting in dependabot.yml and is enabled by default. GitHub says this is meant to avoid the risky first hours when malicious package releases are often discovered and removed."
+}

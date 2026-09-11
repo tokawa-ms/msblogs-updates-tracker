@@ -1,0 +1,11 @@
+{
+  "summary": "AutoGPTは、AIエージェントが大量に作るプルリクに対応するため、従来の貢献ガイド頼みから、コード近くのAGENTS.mdやスキル、必須チェックを組み合わせる運用へ切り替えた。記事では、エージェントは目の前の文脈しか読まないため、ディレクトリ単位の指示と強いゲートを置くことで、動かないPRをほぼ出さない状態に近づけたと説明している。",
+  "keyPoints": [
+    "単なるガイドやWikiでは効果が薄く、AutoGPTはClaude向けのCLAUDE.mdから、CopilotやCodexも参照できる標準のAGENTS.mdへ寄せ、コードのあるディレクトリ横に配置する形へ進めた。",
+    "PRテンプレートのテスト計画とスキル連携、さらにバックエンドの80%カバレッジ条件によって、エージェントが自分でアプリ起動やテスト追加まで進める流れを作り、壊れたPRをほとんど出さない運用にした。",
+    "人間を介在させるため、CLA未署名のPRは1週間で閉じる運用にし、レビュー指摘を解決済みにするには修正後のコミットSHAを添えた返信を必須にした。",
+    "運用上の注意点として、質の悪いAGENTS.mdは文脈汚染を起こしうること、GraphQL APIのレート制限、高コストな自動レビュー基盤、不要になったGitHubアプリ承認の監査が挙げられた。"
+  ],
+  "significance": "AI由来のPRが増えるオープンソースのメンテナーにとって、この記事は受け入れルールやレビュー手順をコードのそばに置き、負荷を下げながら最終判断は維持する具体策を示している点が重要だ。すべてのPRを受け入れる必要はなく、どこまで開くかの境界をメンテナー自身が調整できるという考え方が、AI前提の貢献フローに直接関わる。",
+  "summaryEn": "AutoGPT moved from relying on contributor docs to a workflow that combines AGENTS.md and skills near the code with required checks to handle large volumes of AI-generated pull requests. The article says agents follow the context directly in front of them, so directory-level instructions and hard gates helped reduce broken PRs to a rare exception."
+}

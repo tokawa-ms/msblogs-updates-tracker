@@ -1,0 +1,11 @@
+{
+  "summary": "GitHub Copilot SDK for Javaは、JavaコードからCopilotエージェントのセッション作成、ツール登録、プロンプト送信、構造化レスポンス受信を行えるクライアントライブラリで、JavaでAIを扱う初のフレームワーク非依存手段と位置付けられている。BYOKによりOpenAIやAzure、Anthropicなどの直接プロバイダーも利用でき、Jakarta EE 11のサンプルでは仮想スレッドとWebSocketを使ったエージェント実装が紹介された。Maven依存関係として示された版は1.0.7-preview.1だ。",
+  "keyPoints": [
+    "Maven依存関係としてはcopilot-sdk-java 1.0.7-preview.1が示され、サンプル実行の前提条件にはJDK 17または25、Maven 3.9以上、アクティブなCopilot契約、Copilot CLI 1.0.71以降が挙げられている。",
+    "@CopilotToolによる注釈ベースのツール定義は現時点で実験的機能で、Mavenビルドでは-Acopilot.experimental.allowed=trueの指定とannotationProcessorPathへのSDK登録が必要とされる。",
+    "サーバー側ではCopilotClientMode.EMPTYを使うことでIDE統合なしにCopilot CLIへ直接接続でき、session.sendAndWait(...)がツール呼び出しを含む一連のエージェント処理を自動で回す。",
+    "Jakarta EE統合ではManagedThreadFactory経由の仮想スレッドExecutorでCDIやJNDI、トランザクション文脈を維持でき、利用可能ツールもToolSetで必要なものだけに絞り込める。"
+  ],
+  "significance": "Jakarta EEやSpringでサーバーサイドJavaを運用するエンタープライズ開発者にとって、特定フレームワークやIDE前提に縛られず、JavaらしいAPIでCopilotを組み込める点が重要だ。加えて、サーバー環境での実行、コンテナ文脈を保つ仮想スレッド、必要最小限のツール公開といった運用上の要件に触れており、既存のJavaアプリ基盤へ組み込みたい利用者が直接影響を受ける。",
+  "summaryEn": "GitHub Copilot SDK for Java is a client library that lets Java code create Copilot agent sessions, register tools, send prompts, and receive structured responses, and it is positioned as a framework-agnostic way to drive AI from Java. With BYOK it can use direct providers such as OpenAI, Azure, and Anthropic, and the Jakarta EE 11 sample demonstrates virtual-thread and WebSocket integration. The Maven version shown is 1.0.7-preview.1."
+}
