@@ -1,0 +1,18 @@
+{
+  "summary": "GitHub CopilotとGitHub Actionsを使い、GitHubのAPACマーケティング向けイベント運用は、1件のGitHub Issueを起点にセットアップ、毎朝の登録者審査、終了後の後処理まで自動化された。Issue forms、labels、Actionsで定型処理をつなぎ、AGENTS.mdやSKILL.mdに書いた運用手順をCopilotに読ませて会話型で入力や後処理を整える。さらにDRY_RUNで外部システムへ反映せずにリハーサルでき、/lead-uploadや/event-reportでCRM向け整形やレポート作成も2コマンドに縮めている。",
+  "keyPoints": [
+    "GitHub Issueをイベントの作業単位に据え、Issue formsで入力を構造化し、labelsをトリガー、GitHub Actionsを実行基盤として一連の運用を回している。",
+    "企画段階ではAGENTS.mdにある命名規則、四半期、タイムゾーン、招待メールの基準をCopilotが参照し、過去イベントを踏まえたキャンペーン名やメール案を下書きするが、最終判断は担当者が行う。",
+    "event-setupラベルが付くと、数分でイベント基盤を用意し、ランディングページ複製、チャネル別UTM付きURL生成、招待メール文書化、依頼Issue起票、プロジェクトボード更新を実施する。加えて登録者審査は毎朝のcron実行で更新される。",
+    "DRY_RUNというリポジトリ変数で外部システムに触れず全ワークフローを試せる。イベント後はSKILL.mdで定義したGitHub Copilot agent skillsとして、/lead-uploadでCRMアップロード用整形と依頼Issue作成、/event-reportで参加実績とアンケート結果の報告を行う。"
+  ],
+  "significance": "APIやCLIで操作できる複数ツールをまたぐ反復業務を持つチームにとって、開発者向けのIssue、Actions、レビュー、CODEOWNERS、シークレット保護といった仕組みを、そのまま業務自動化の統制に転用できる実例になっている。特にCopilot appで会話の入口がターミナル不要になった一方、定期処理は5日間気づかれず止まった例も示され、運用監視が重要だと分かる。",
+  "summaryEn": "Using GitHub Copilot and GitHub Actions, GitHub’s APAC marketing event operations were automated from a single GitHub Issue through setup, daily registrant screening, and post-event follow-up. The workflow connects issue forms, labels, and Actions, while Copilot reads operating procedures written in AGENTS.md and SKILL.md to handle conversational input and post-event tasks. A DRY_RUN setting allows rehearsals without touching external systems, and /lead-upload plus /event-report reduce CRM formatting and reporting to two commands.",
+  "keyPointsEn": [
+    "GitHub Issue is treated as the unit of work for each event, with issue forms for structured input, labels as triggers, and GitHub Actions as the execution layer.",
+    "During planning, Copilot uses AGENTS.md for naming rules, fiscal quarters, time zones, and email guidance, drafts campaign names and invitation copy based on similar past events, and leaves final approval to the human owner.",
+    "When the event-setup label is added, the workflow stages the event in minutes by duplicating the landing page, generating channel-specific UTM URLs, creating the invitation document, opening request issues, and updating project boards. Registrant screening is then refreshed by a daily cron job.",
+    "A repository variable named DRY_RUN lets the team rehearse workflows without affecting external systems. After the event, GitHub Copilot agent skills defined in SKILL.md run /lead-upload for CRM upload formatting and request creation, and /event-report for attendance and survey reporting."
+  ],
+  "significanceEn": "For teams with repetitive work spread across tools that expose an API or CLI, this is a concrete example of reusing developer-native controls such as Issues, Actions, reviews, CODEOWNERS, and secret protection for business-process automation. It also shows that the Copilot app lowers the barrier for non-terminal users, while the five-day silent failure in a scheduled workflow underscores the need for operational monitoring."
+}
