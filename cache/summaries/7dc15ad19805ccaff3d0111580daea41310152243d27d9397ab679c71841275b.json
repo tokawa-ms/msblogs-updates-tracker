@@ -1,0 +1,18 @@
+{
+  "summary": "Microsoft Foundryは、Microsoftのマーケティング部門で、業務知識に基づくAIエージェントを既存ワークフローに組み込み、急増した製品ローンチやコンテンツ業務を支える形で活用が広がった。チームは専門家の評価基準や調整手順を反復可能なフローに変え、品質確認や情報共有をAIで補助している。記事では、レビュー時間の短縮や年間2,000時間超の節約を示しつつ、AIは判断を置き換えるのではなく一貫性を広げる役割だと説明している。",
+  "keyPoints": [
+    "ローンチ対応の負荷増に合わせ、MicrosoftはMicrosoft FoundryとMicrosoft IQを使って、文書や業務システムに散在する事業コンテキストをAIに接続し、日常業務の流れの中で使えるようにした。ローンチ量は前年同期比で最大150%増とされる。",
+    "ブログ制作では、専門家が使う評価ルーブリックをFoundry上の反復可能なワークフローに変換し、年間200本超の投稿に対して人手レビュー前に欠落や改善点を見つけられるようにした。レビューは数分で終わるようになり、年間2,000時間超の節約を見込む。",
+    "AI Messaging Assistant (AMA)では、実際の顧客会話に基づくペルソナ群を使い、メッセージやポジショニングを市場投入前に複数のオーディエンス視点で検証できるようにした。社内の意見だけに頼らず、分かりやすさや関連性を確かめる用途として位置づけている。",
+    "部門横断の連携では、計画バックログ、ドキュメント、会議シグナル、運用ソースをエージェントに接続し、主要な変化や今後のローンチをリアルタイムに把握できるようにした。これにより、情報を集める時間よりも、何が変わったかと次の対応を考える時間を増やした。"
+  ],
+  "significance": "恩恵を受けるのは、限られた専門家に品質基準やレビューが集中しているマーケティング部門や、変化の速い発表計画を追う担当者だ。この記事は、AIが判断者を置き換えるのではなく、企業知識と既存ツールに接続したうえで一貫性の適用、メッセージ検証、状況共有を広げることで、同じ前提に基づく意思決定や引き継ぎをしやすくすることを示している。",
+  "summaryEn": "Microsoft Foundry is being used inside Microsoft’s marketing organization to embed AI agents grounded in business knowledge into existing workflows, helping the team handle a sharp increase in launches and content work. The team has turned expert review criteria and coordination steps into repeatable workflows so AI can support quality checks and information sharing. The article says this has shortened review cycles and saved more than 2,000 hours annually, while positioning AI as a way to scale consistency rather than replace human judgment.",
+  "keyPointsEn": [
+    "To cope with rising launch volume, Microsoft used Microsoft Foundry and Microsoft IQ to connect business context from documents and operational systems to AI and make it usable in day-to-day workflows. Launch volume is described as having grown by up to 150% year over year.",
+    "For blog production, the team converted an expert’s evaluation rubric into a repeatable workflow in Foundry, allowing gaps and improvement opportunities to be identified before human review across more than 200 posts a year. Reviews now finish in minutes, with more than 2,000 hours of annual savings estimated.",
+    "With AI Messaging Assistant (AMA), the team uses a set of personas based on real customer conversations to test messaging and positioning from multiple audience perspectives before going to market. It is presented as a way to check clarity and relevance without relying only on internal opinions.",
+    "For cross-team alignment, agents were connected to planning backlogs, documentation, meeting signals, and operational sources so teams can track key changes and upcoming launches in real time. That shifts time away from gathering information and toward understanding what changed and what to do next."
+  ],
+  "significanceEn": "The main beneficiaries are marketing teams where quality standards and reviews are concentrated in a small number of experts, and staff responsible for keeping up with fast-changing launch plans. The article shows that AI is not replacing decision-makers; instead, by connecting to enterprise knowledge and existing tools, it broadens the application of consistency, message validation, and shared situational awareness, making it easier to make decisions and hand off work from a common base."
+}

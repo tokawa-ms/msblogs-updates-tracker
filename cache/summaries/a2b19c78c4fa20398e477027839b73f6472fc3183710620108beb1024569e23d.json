@@ -1,0 +1,18 @@
+{
+  "summary": "Azure Database for PostgreSQL と Azure HorizonDB を含むマネージド PostgreSQL サービスは、自己ホスト型と比べて OS 保守、パッチ適用、バックアップ、高可用性などの運用責任をクラウド側へ移せる選択肢として位置付けられている。一方で、データ、ID、構成、アクセス管理、アプリケーション動作は利用組織の責任に残る。OS への直接アクセスや未サポート拡張、独自の変更スケジュールが必要な組織では、自己管理型も引き続き有力な選択肢だ。",
+  "keyPoints": [
+    "自己ホスト型は OS、PostgreSQL、本番基盤を直接制御できる一方、プロビジョニング、セキュリティ強化、高可用性、災害復旧、ID 管理まで含むスタック全体を自社チームが運用し続ける必要がある。",
+    "マネージド型では OS 保守やサービス更新、PostgreSQL のマイナーバージョン更新は一般に提供側が担い、計画保守の時間帯を構成できる場合があるが、メジャーバージョン更新は互換性確認のため利用者主導のまま残り得る。",
+    "高可用性はサービス設定として提供されることが多く、読み取りレプリカは HA とは別機能として評価が必要で、ストレージ拡張、自動バックアップ、ポイントインタイムリストアの条件は提供者・リージョン・サービス階層・構成で変わる。",
+    "認証とアクセス管理では Microsoft Entra ID のネイティブ統合やパスワードレス認証が使える一方、データベース権限の管理自体は引き続き必要とされる。"
+  ],
+  "significance": "本稿は、本番 PostgreSQL をどこで運用するか判断する技術意思決定者やプラットフォーム担当者に関係する。自己ホスト、IaaS、PaaS のどのモデルでも責任が完全になくなるわけではなく、どの責任を保持し、どの運用負荷やリスクをクラウドへ移すかで、必要な体制や適合条件が変わるためだ。",
+  "summaryEn": "Managed PostgreSQL services including Azure Database for PostgreSQL and Azure HorizonDB are presented as options that shift operational duties such as OS maintenance, patching, backups, and high availability from self-hosted setups to the cloud provider. At the same time, the organization still retains responsibility for data, identities, configuration, access management, and application behavior. Self-managed PostgreSQL remains a strong option when OS-level access, unsupported extensions, or custom change schedules are required.",
+  "keyPointsEn": [
+    "Self-hosted PostgreSQL gives direct control over the OS, PostgreSQL, and production infrastructure, but the in-house team must continue operating the full stack, including provisioning, security hardening, high availability, disaster recovery, and identity management.",
+    "In a managed model, the provider typically handles OS maintenance, service updates, and minor PostgreSQL version updates, and may allow configurable maintenance windows, but major version upgrades can remain customer-initiated for compatibility validation.",
+    "High availability is often offered as a service configuration, read replicas must be evaluated separately from HA, and the specifics of storage growth, automated backups, and point-in-time restore vary by provider, region, service tier, and configuration.",
+    "For authentication and access management, native Microsoft Entra ID integration and passwordless authentication are available, while database permissions still need to be administered."
+  ],
+  "significanceEn": "This matters to technical decision makers and platform teams choosing where to run production PostgreSQL. In self-hosted, IaaS, and PaaS models alike, responsibility does not disappear entirely; the required operating model and fit depend on which responsibilities the organization keeps and which operational burden and risk it transfers to the cloud."
+}
