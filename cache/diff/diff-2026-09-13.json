@@ -1,0 +1,170 @@
+{
+  "date": "2026-09-13",
+  "compared_with": "2026-09-12",
+  "source_count": 6,
+  "new_count": 4,
+  "removed_count": 4,
+  "new_articles": [
+    {
+      "id": "fec227fb075a491e",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "Inside Microsoft’s marketing team: Scaling expertise with AI",
+      "url": "https://azure.microsoft.com/en-us/blog/inside-microsofts-marketing-team-scaling-expertise-with-ai/",
+      "published_at": "2026-08-31T16:00:00.000Z",
+      "summary": "AI is helping organizations meet high expectations as markets change quickly and technology advances at a rapid pace.\nThe post Inside Microsoft’s marketing team: Scaling expertise with AI appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-09-13T00:44:19.153Z"
+    },
+    {
+      "id": "60e79914d0a63fb1",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "Managed PostgreSQL vs. self-hosted PostgreSQL: Key benefits and trade-offs",
+      "url": "https://azure.microsoft.com/en-us/blog/managed-postgresql-vs-self-hosted-postgresql-key-benefits-and-trade-offs/",
+      "published_at": "2026-08-27T17:00:00.000Z",
+      "summary": "Compare managed PostgreSQL vs. self-hosted PostgreSQL across cost, control, security, resilience, scalability, and operational effort.\nThe post Managed PostgreSQL vs. self-hosted PostgreSQL: Key benefits and trade-offs appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-09-13T00:44:19.153Z"
+    },
+    {
+      "id": "bc344a9de0aada73",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "The Economics of Agent Optimization: Four ways to lower the cost",
+      "url": "https://azure.microsoft.com/en-us/blog/the-economics-of-agent-optimization-four-ways-to-lower-the-cost/",
+      "published_at": "2026-08-26T16:00:00.000Z",
+      "summary": "Microsoft Foundry gives you four levers that act on every request, before a single line of agent logic changes.\nThe post The Economics of Agent Optimization: Four ways to lower the cost appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-09-13T00:44:19.153Z"
+    },
+    {
+      "id": "8466ee8584a33fb7",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "The patch window is collapsing: Why security needs a new control plane",
+      "url": "https://azure.microsoft.com/en-us/blog/the-patch-window-is-collapsing-why-security-needs-a-new-control-plane/",
+      "published_at": "2026-08-25T16:00:00.000Z",
+      "summary": "Organizations need protection that operates in the gap between discovery and remediation.\nThe post The patch window is collapsing: Why security needs a new control plane appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-09-13T00:44:19.153Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 4,
+      "removed_count": 4,
+      "new_articles": [
+        {
+          "id": "fec227fb075a491e",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Inside Microsoft’s marketing team: Scaling expertise with AI",
+          "url": "https://azure.microsoft.com/en-us/blog/inside-microsofts-marketing-team-scaling-expertise-with-ai/",
+          "published_at": "2026-08-31T16:00:00.000Z",
+          "summary": "AI is helping organizations meet high expectations as markets change quickly and technology advances at a rapid pace.\nThe post Inside Microsoft’s marketing team: Scaling expertise with AI appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-09-13T00:44:19.153Z"
+        },
+        {
+          "id": "60e79914d0a63fb1",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Managed PostgreSQL vs. self-hosted PostgreSQL: Key benefits and trade-offs",
+          "url": "https://azure.microsoft.com/en-us/blog/managed-postgresql-vs-self-hosted-postgresql-key-benefits-and-trade-offs/",
+          "published_at": "2026-08-27T17:00:00.000Z",
+          "summary": "Compare managed PostgreSQL vs. self-hosted PostgreSQL across cost, control, security, resilience, scalability, and operational effort.\nThe post Managed PostgreSQL vs. self-hosted PostgreSQL: Key benefits and trade-offs appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-09-13T00:44:19.153Z"
+        },
+        {
+          "id": "bc344a9de0aada73",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "The Economics of Agent Optimization: Four ways to lower the cost",
+          "url": "https://azure.microsoft.com/en-us/blog/the-economics-of-agent-optimization-four-ways-to-lower-the-cost/",
+          "published_at": "2026-08-26T16:00:00.000Z",
+          "summary": "Microsoft Foundry gives you four levers that act on every request, before a single line of agent logic changes.\nThe post The Economics of Agent Optimization: Four ways to lower the cost appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-09-13T00:44:19.153Z"
+        },
+        {
+          "id": "8466ee8584a33fb7",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "The patch window is collapsing: Why security needs a new control plane",
+          "url": "https://azure.microsoft.com/en-us/blog/the-patch-window-is-collapsing-why-security-needs-a-new-control-plane/",
+          "published_at": "2026-08-25T16:00:00.000Z",
+          "summary": "Organizations need protection that operates in the gap between discovery and remediation.\nThe post The patch window is collapsing: Why security needs a new control plane appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-09-13T00:44:19.153Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "7eb41ce7c2f3f648",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Container Management",
+          "url": "https://azure.microsoft.com/en-us/blog/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-container-management/",
+          "published_at": "2026-09-10T21:00:00.000Z",
+          "summary": "Microsoft was named a Leader in the 2026 Gartner® Magic Quadrant™ for Container Management. Discover how AKS, Azure Arc, and Azure Container Apps help organizations run AI and hybrid workloads at scale.\nThe post Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Container Management appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-09-12T00:58:42.280Z"
+        },
+        {
+          "id": "a71b9aecd34093e9",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "The Economics of Agent Optimization: How AI agent governance controls cost and proves ROI",
+          "url": "https://azure.microsoft.com/en-us/blog/the-economics-of-agent-optimization-how-ai-agent-governance-controls-cost-and-proves-roi/",
+          "published_at": "2026-09-10T17:00:00.000Z",
+          "summary": "This blog post is the fourth and final installment of The Economics of Agent Optimization, which shares the strategies, capabilities, and proof points that can help you optimize agent costs and run AI as a managed investment system on Microsoft Foundry.\nThe post The Economics of Agent Optimization: How AI agent governance controls cost and proves ROI appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-09-12T00:58:42.280Z"
+        },
+        {
+          "id": "65c98dcb22be661e",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "The future of infrastructure resiliency starts with modernization",
+          "url": "https://azure.microsoft.com/en-us/blog/the-future-of-infrastructure-resiliency-starts-with-modernization/",
+          "published_at": "2026-09-10T16:00:00.000Z",
+          "summary": "Modernization only succeeds when organizations have confidence that their infrastructure can withstand disruption and continue supporting critical operations.\nThe post The future of infrastructure resiliency starts with modernization appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-09-12T00:58:42.280Z"
+        },
+        {
+          "id": "fb924f8df28546ea",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Two zones or three? A design framework for zone-resilient Azure workloads",
+          "url": "https://azure.microsoft.com/en-us/blog/two-zones-or-three-a-design-framework-for-zone-resilient-azure-workloads/",
+          "published_at": "2026-09-09T18:00:00.000Z",
+          "summary": "Zone resiliency isn't a single number you apply to a whole workload. The useful question isn't “how many zones?” but “how many zones does each component need to survive the loss of one?” Decide zone patterns component by component, use service-managed zone redundancy wherever it fits, and reserve three-zone designs for the components that genuinely require a third failure domain.\nThe post Two zones or three? A design framework for zone-resilient Azure workloads appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-09-12T00:58:42.280Z"
+        }
+      ]
+    },
+    "fabric-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "github-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "m365-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    }
+  },
+  "diff_result": true
+}
