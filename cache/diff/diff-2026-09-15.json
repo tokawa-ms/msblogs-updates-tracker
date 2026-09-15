@@ -1,0 +1,110 @@
+{
+  "date": "2026-09-15",
+  "compared_with": "2026-09-14",
+  "source_count": 6,
+  "new_count": 2,
+  "removed_count": 2,
+  "new_articles": [
+    {
+      "id": "688ebb8471dd3429",
+      "source_id": "m365-blog",
+      "source_name": "Microsoft 365 Blog",
+      "title": "ESPC 2026 is coming to Amsterdam: Bringing Microsoft and the community together",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/09/10/espc-2026-is-coming-to-amsterdam-bringing-microsoft-and-the-community-together/",
+      "published_at": "2026-09-10T16:00:00.000Z",
+      "summary": "Join Microsoft at ESPC 2026 in Amsterdam to explore the latest innovations in Microsoft 365, Copilot, agents, and AI.\nThe post ESPC 2026 is coming to Amsterdam: Bringing Microsoft and the community together appeared first on Microsoft 365 Blog.",
+      "fetched_at": "2026-09-15T01:18:11.463Z"
+    },
+    {
+      "id": "adf7f96060f51b6b",
+      "source_id": "m365-blog",
+      "source_name": "Microsoft 365 Blog",
+      "title": "Build apps in Copilot Cowork and Copilot Studio",
+      "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/build-apps-in-copilot-cowork-and-copilot-studio/",
+      "published_at": "2026-09-10T15:00:00.000Z",
+      "summary": "Create full-stack business apps through conversation, grounded in your data with app building in Copilot Cowork and Copilot Studio.\nThe post Build apps in Copilot Cowork and Copilot Studio appeared first on Microsoft 365 Blog.",
+      "fetched_at": "2026-09-15T01:18:11.463Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "fabric-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "github-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "m365-blog": {
+      "new_count": 2,
+      "removed_count": 2,
+      "new_articles": [
+        {
+          "id": "688ebb8471dd3429",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "ESPC 2026 is coming to Amsterdam: Bringing Microsoft and the community together",
+          "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/09/10/espc-2026-is-coming-to-amsterdam-bringing-microsoft-and-the-community-together/",
+          "published_at": "2026-09-10T16:00:00.000Z",
+          "summary": "Join Microsoft at ESPC 2026 in Amsterdam to explore the latest innovations in Microsoft 365, Copilot, agents, and AI.\nThe post ESPC 2026 is coming to Amsterdam: Bringing Microsoft and the community together appeared first on Microsoft 365 Blog.",
+          "fetched_at": "2026-09-15T01:18:11.463Z"
+        },
+        {
+          "id": "adf7f96060f51b6b",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Build apps in Copilot Cowork and Copilot Studio",
+          "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/build-apps-in-copilot-cowork-and-copilot-studio/",
+          "published_at": "2026-09-10T15:00:00.000Z",
+          "summary": "Create full-stack business apps through conversation, grounded in your data with app building in Copilot Cowork and Copilot Studio.\nThe post Build apps in Copilot Cowork and Copilot Studio appeared first on Microsoft 365 Blog.",
+          "fetched_at": "2026-09-15T01:18:11.463Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "92f9fa8327778c21",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "New and improved: Computer-using agents, a new workflows experience, and real-time voice experiences",
+          "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/new-and-improved-computer-using-agents-a-new-workflows-experience-and-real-time-voice-experiences/",
+          "published_at": "2026-05-26T16:00:00.000Z",
+          "summary": "Learn what’s new in Copilot Studio, May 2026: computer-using agents are now generally available, plus redesigned workflows and Work IQ extensibility.\nThe post New and improved: Computer-using agents, a new workflows experience, and real-time voice experiences appeared first on Microsoft 365 Blog.",
+          "fetched_at": "2026-09-14T00:51:36.309Z"
+        },
+        {
+          "id": "6f469e5191a542d3",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "New and improved: Agent governance, intelligent workflows, and connected app experiences",
+          "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/new-and-improved-agent-governance-intelligent-workflows-and-connected-app-experiences/",
+          "published_at": "2026-05-11T17:25:12.000Z",
+          "summary": "See what's new in Copilot Studio, April 2026: updates to workflows, increased control over agent operations, and an expanded agent usage estimator.\nThe post New and improved: Agent governance, intelligent workflows, and connected app experiences appeared first on Microsoft 365 Blog.",
+          "fetched_at": "2026-09-14T00:51:36.309Z"
+        }
+      ]
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    }
+  },
+  "diff_result": true
+}
