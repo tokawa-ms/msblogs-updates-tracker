@@ -1,0 +1,18 @@
+{
+  "summary": "Copilot CoworkがMicrosoft 365 Copilot顧客向けに世界中で一般提供となり、Microsoft 365 Copilotアプリからフル体験へ切り替えるトグルも追加された。利用にはMicrosoft 365 Copilot USLが必要で、実行したタスクに応じてCopilot Creditsで従量課金される。Frontierで対象期間中に利用したテナントには、2026年7月1日まで課金猶予が設けられる。",
+  "keyPoints": [
+    "利用にはMicrosoft 365 Copilot USLが必須で、CoworkはCopilot Credits建ての従量課金となる。支払いはPayGoまたは事前コミット型のP3を選べ、PayGoは1クレジット0.01ドル。Frontierで2026年3月30日〜6月16日にCoworkを使った対象テナントは、2026年7月1日まで課金されない。",
+    "Coworkは既定で無効で、管理者がテナント内で有効化する時期と対象ユーザーを決める。テナント、グループ、ユーザー単位の支出上限や予算、使用量アラートを設定でき、ユーザーは追加クレジットをCowork内から申請できる。",
+    "GA時点の実行モデルはAnthropic Opus 4.8とSonnet 4.6で、FrontierではGPT 5.5も使える。新モデルCowork 1は数週間以内の提供予定で、セキュアにファインチューニングされ、より低コストで日常的なCopilotタスクを処理する位置付けだ。",
+    "Microsoft 365 CopilotアプリにはCoworkのフル体験へ移るトグルが追加された。連携面では9つの新規パートナープラグインが利用可能、8つが近日提供予定で、FabricとDynamics 365 Sales、Customer Service、ERPアプリはGA。保護機能では監査ログやeDiscoveryなどがGA範囲に入り、DLPは近日提供予定。"
+  ],
+  "significance": "Microsoft 365 Copilotを使う企業ユーザーには、複雑で長時間のマルチツール作業をクラウド上で端末の電源状態に左右されず実行できる選択肢が広がる。特に管理者は、CoworkがMicrosoft 365の信頼境界内で動作しつつ既定で無効のため、導入対象と利用開始の判断を担う。",
+  "summaryEn": "Copilot Cowork is now generally available worldwide for Microsoft 365 Copilot customers, and the Microsoft 365 Copilot app now includes a toggle into the full Cowork experience. It requires a Microsoft 365 Copilot USL and uses usage-based billing in Copilot Credits. Tenants that used Cowork during the specified Frontier period receive a billing grace period until July 1, 2026.",
+  "keyPointsEn": [
+    "Copilot Cowork requires a Microsoft 365 Copilot USL and is billed on a usage basis in Copilot Credits. Customers can choose PayGo or the prepaid commitment option P3, and PayGo is priced at $0.01 per credit. Eligible tenants that used Cowork in Frontier between March 30 and June 16, 2026 are not billed until July 1, 2026.",
+    "Cowork is off by default, and admins decide when to enable it in the tenant and who can access it. They can set spending caps and budgets at the tenant, group, and user levels, configure usage alerts, and users can request additional credits from inside Cowork.",
+    "At GA, Copilot Cowork runs on Anthropic Opus 4.8 and Sonnet 4.6, while GPT 5.5 is available in Frontier. The new Cowork 1 model is planned for release in the coming weeks as a secure fine-tuned model intended to handle everyday Copilot tasks at lower cost.",
+    "The Microsoft 365 Copilot app now has a toggle into the full Cowork experience. On integrations, nine new partner plugins are available now, eight more are coming soon, and Fabric plus Dynamics 365 Sales, Customer Service, and ERP apps are GA. On protection features, audit log and eDiscovery are in the GA surface, while DLP is still coming soon."
+  ],
+  "significanceEn": "For enterprise Microsoft 365 Copilot users, this expands the option to run complex, long-running, multi-tool work in the cloud without depending on whether a device stays on. For admins in particular, Cowork matters because it operates within the Microsoft 365 trust boundary while also being off by default, so they control who gets access and when adoption begins."
+}

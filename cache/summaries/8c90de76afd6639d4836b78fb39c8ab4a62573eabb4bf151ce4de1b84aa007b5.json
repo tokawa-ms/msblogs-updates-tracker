@@ -1,0 +1,18 @@
+{
+  "summary": "GitHub Copilotのエージェントランタイムは、Node.js/V8上のTypeScript実装から、80万行超の本番Rust実装へ全面移行した。移行は128本のPRをmainへ段階的に入れるインプレース方式で進められ、2026年8月21日時点で本番実装が100% Rustになった。記事は、Copilotのエージェントを使ってこの大規模移植を進めつつ、性能が桁違いに向上した過程と運用上の学びを詳述している。",
+  "keyPoints": [
+    "移行はビッグバンではなくインプレースの原子的置換を採用し、各PRで既存のTypeScript実装をRust呼び出しの薄いshimに差し替えながら継続出荷した。約14.5週間で135リリースを出し、各リリースに含まれる移植範囲を小さく保って回帰を追いやすくした。",
+    "完成したランタイムは純粋なネイティブバイナリとしてC ABIを公開し、TypeScript、Python、Go、C#、Java、Rustの6言語SDKから同じエンジンを利用できる。実行形態はインプロセスと既存のJSON-RPC境界越しのアウトオブプロセスの両方を維持し、インプロセス接続は現時点ではopt-inになっている。",
+    "性能比較では、C# SDK経由の「client, session, one turn」が5.25秒から292ミリ秒へ短縮され、1000回の1ターンセッション処理性能も7.55件/秒から120.0件/秒へ伸びた。10クライアント時の追加常駐メモリも1,383MBから126MBへ下がったが、記事はこれは言語差だけを切り出したベンチマークではなく、同時期の他の変更も含むエンドツーエンド比較だと明記している。",
+    "移行で使ったトークンは約1363億、トークン課金は約12万ドルだった。記事は、既知の回帰は主に契約差異、状態・所有権・ライフサイクルの変化、移植やリベースでの取りこぼしに集中したと整理し、E2Eテストを移植の正しさを守る最重要の土台だと結論づけている。"
+  ],
+  "significance": "この移行は、GitHub Copilot CLIやCopilot appだけでなく、VS Code、Visual Studio、Copilot Code Reviewなど同じランタイムを使う製品群と、6言語SDKを組み込む開発者に直接関わる。記事によれば、Node.js/V8や別プロセス監視への依存を減らし、ホストプロセスへの直接組み込みと低いCPU・メモリ負荷を実現できるため、同じマシンでより多くのセッションを扱いやすくなり、クラウドからデスクトップ、デバイス、組み込みまで展開先を広げやすくなる。",
+  "summaryEn": "The GitHub Copilot agent runtime was fully migrated from a TypeScript implementation on Node.js/V8 to more than 800,000 lines of production Rust. The migration was done in place through 128 pull requests merged into main, and by August 21, 2026 the production runtime had become 100% Rust. The article details how Copilot agents were used to carry out the large-scale port while achieving order-of-magnitude performance gains and surfacing operational lessons.",
+  "keyPointsEn": [
+    "The migration used an in-place atomic replacement strategy rather than a big-bang rewrite, swapping each TypeScript implementation for a thin Rust shim while continuing to ship. Over roughly 14.5 weeks, the team released 135 builds, keeping each release’s ported surface small enough to isolate regressions more easily.",
+    "The finished runtime exposes a C ABI as a pure native binary, letting six SDKs—TypeScript, Python, Go, C#, Java, and Rust—use the same engine. It retains both in-process execution and the existing out-of-process JSON-RPC boundary, with in-process connectivity currently offered as an opt-in option.",
+    "In performance comparisons, the C# SDK scenario for client, session, and one turn dropped from 5.25 seconds to 292 milliseconds, and throughput for 1,000 one-turn session lifecycles rose from 7.55 to 120.0 per second. Added resident memory in the ten-client batch also fell from 1,383 MB to 126 MB, though the article explicitly notes this is an end-to-end comparison that includes other changes from the same period rather than isolating language effects alone.",
+    "The effort consumed about 136.3 billion tokens, with token billing of about $120,000. The article says known regressions mainly clustered around contract differences, changes in state, ownership, or lifecycle behavior, and omissions during porting or rebasing, and it concludes that end-to-end tests were the most critical safeguard for correctness."
+  ],
+  "significanceEn": "This matters directly to the products that share the runtime—such as GitHub Copilot CLI, the Copilot app, VS Code, Visual Studio, and Copilot Code Review—and to developers embedding the six-language SDK. According to the article, reducing dependence on Node.js/V8 and on supervising a second process enables direct in-process hosting with lower CPU and memory overhead, making it easier to run more sessions on the same machine and to target environments from cloud to desktop, devices, and embedded systems."
+}

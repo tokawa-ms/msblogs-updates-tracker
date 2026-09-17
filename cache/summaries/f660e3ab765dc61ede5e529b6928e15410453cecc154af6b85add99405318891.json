@@ -1,0 +1,18 @@
+{
+  "summary": "Power Platform Community Conference 2026は、第5回イベントとして2026年10月27〜29日にラスベガスのMGM Grandで開催され、Microsoft CopilotやWork IQ、エージェント、アプリ、ワークフロー、データを組み合わせた業務プロセス改善を主題に据える。200超のセッションと24のハンズオンワークショップに加え、基調講演や製品トーク、認定、コミュニティ企画を通じて、統制・セキュリティやAIコスト管理も扱う。",
+  "keyPoints": [
+    "PPCC 2026は第5回のPower Platform Community Conferenceとして、2026年10月27〜29日にラスベガスのMGM Grandで開催される。",
+    "主題は、Microsoft Copilot、Work IQ、エージェント、アプリ、ワークフロー、データを使って業務プロセスを改善し、それをガバナブルかつ安全に運用し、AIコスト管理まで最適化することに置かれている。",
+    "プログラムは200超のセッションと24のハンズオンワークショップを含み、基調講演、製品トーク、ラウンドテーブル、認定、コミュニティ企画まで用意されている。",
+    "10月27日のオープニング基調講演では、Charles LamannaとともにCopilot、エージェント、Power Platformの今後が共有される予定だ。"
+  ],
+  "significance": "業務プロセス改善に関わるビジネス担当者、開発者、ソリューション構築者、管理者、ITリーダーにとって、AIを業務の端から端までどう組み込み、実験から本番運用へ進めるかを役割別に学べる点が重要だ。特に、どこまで自動化し、どこでエージェント推論や人の判断を残すか、さらにセキュリティやガバナンスをどう整えるかを扱うため、既存業務へAIを安全に適用したい組織に直接関係する。",
+  "summaryEn": "Power Platform Community Conference 2026 is positioned as the fifth annual event, to be held October 27–29, 2026 at the MGM Grand in Las Vegas, centered on improving business processes by combining Microsoft Copilot, Work IQ, agents, apps, workflows, and data. Alongside more than 200 sessions and 24 hands-on workshops, it covers governance, security, and AI cost management through keynotes, product talks, certifications, and community programming.",
+  "keyPointsEn": [
+    "PPCC 2026 is the fifth annual Power Platform Community Conference and will take place October 27–29, 2026 at the MGM Grand in Las Vegas.",
+    "Its core theme is improving business processes with Microsoft Copilot, Work IQ, agents, apps, workflows, and data, while keeping those systems governable, secure, and optimized for AI cost management.",
+    "The program includes more than 200 sessions and 24 hands-on workshops, plus keynotes, product talks, roundtables, certifications, and community experiences.",
+    "The opening keynote on October 27 is set to feature Charles Lamanna and cover what is next for Copilot, agents, and Power Platform."
+  ],
+  "significanceEn": "This matters for business experts, developers, solution builders, admins, and IT leaders involved in process improvement because it is framed around how to apply AI across end-to-end business processes and move from experimentation into production. It is especially relevant to organizations trying to introduce AI safely into existing operations, since it addresses where to automate, where agent reasoning helps, where people should stay in control, and how to handle security and governance."
+}
