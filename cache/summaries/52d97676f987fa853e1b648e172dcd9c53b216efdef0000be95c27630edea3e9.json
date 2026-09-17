@@ -1,0 +1,18 @@
+{
+  "summary": "Microsoft 365 Copilotは有料席数が3,000万を超え、Microsoftは企業向けAIの次の局面を導入拡大ではなく業務変革だと位置づけた。あわせて、複数ステップの作業を最後まで処理するCopilot Coworkが6月に一般提供となり、背景で動く自律型エージェントMicrosoft Scoutも投入された。記事はテレメトリと顧客事例を通じて、AIが個別タスク支援からワークフロー全体の実行へ広がっていると説明している。",
+  "keyPoints": [
+    "Microsoftによると、Microsoft 365 Copilotの有料席は3,000万超で、純増席数は前四半期比で2倍超。5万席超の顧客数は前年同期比7倍超、情報労働者の過半数へ展開する企業顧客も前四半期比で約75%増え、高利用率到達までの期間も数カ月から数日に短縮した。",
+    "Copilot Coworkは6月に一般提供となり、タスクを定義すると複数ステップの作業をエンドツーエンドで実行して完了結果を返す。Microsoftの社内検証では単一モデル案より30〜40%安価で、構想からプレビュー、Fortune 500の半数での利用までを6カ月で進めたとしている。",
+    "テレメトリでは、この1年でユーザー当たり会話数がほぼ2倍になり、複数機能を使うユーザーは3桁成長、週次エンゲージメントはOutlookやTeams並みになった。さらに複数ステップのワークフローを含めると、分析関連作業は全タスクの49%を占め、単独タスクとして見た29%から比重が大きくなった。",
+    "導入効果の例として、Microsoft Cloud Supply Chainは6つのワークフロー簡素化後に70超の専用エージェントを展開し、対象工程のサイクルタイムを75%削減した。Premera Blue Crossは900超のエージェントを構築し、契約文書処理を30〜45分から約3分へ短縮、S&P Globalはデータ抽出を95%、比較分析を98%高速化したとしている。"
+  ],
+  "significance": "影響を受けるのは、Copilotを導入済みの大企業だけでなく、製造、金融、ソフトウェアに加え、自動車や医療のような新規採用業界、そして営業・人事・調達など役割別の業務部門だ。記事は、AIの価値が単なる時間短縮ではなく、役割に合わせたエージェント設計とワークフロー再設計によって、日常業務への定着や従来は難しかった業務遂行能力の獲得に移っていると示している。",
+  "summaryEn": "Microsoft 365 Copilot has surpassed 30 million paid seats, and Microsoft frames the next phase of enterprise AI as work transformation rather than just wider deployment. At the same time, Copilot Cowork became generally available in June to handle multi-step work end to end, and Microsoft also introduced the background autonomous agent Microsoft Scout. Through telemetry and customer examples, the article argues that AI is expanding from helping with individual tasks to executing entire workflows.",
+  "keyPointsEn": [
+    "Microsoft says Microsoft 365 Copilot now has more than 30 million paid seats, with net seat adds up more than 2x quarter over quarter. Customers with more than 50,000 seats grew more than 7x year over year, enterprise customers deploying Copilot to most information workers rose nearly 75% quarter over quarter, and the time to reach high usage dropped from months to days.",
+    "Copilot Cowork became generally available in June and can run multi-step work end to end once a task is defined. Microsoft says internal testing showed it was 30% to 40% cheaper than a single-model option, and it moved from inception to preview to use by half of the Fortune 500 within six months.",
+    "Telemetry shows conversations per user nearly doubled over the past year, users engaging with multiple features grew by triple digits, and weekly engagement is now on par with Outlook and Teams. When multi-step workflows are counted, analysis-related work makes up 49% of all tasks, up from 29% when analysis is treated as a standalone task.",
+    "As examples of impact, Microsoft Cloud Supply Chain simplified six workflows and then deployed more than 70 purpose-built agents, cutting cycle time in selected workflows by 75%. Premera Blue Cross built more than 900 agents and reduced a contract document process from 30 to 45 minutes to about three minutes, while S&P Global reported 95% faster data extraction and 98% faster comparative analysis."
+  ],
+  "significanceEn": "This affects not only large enterprises already deploying Copilot, but also newer adopting industries such as automotive and healthcare, as well as role-specific functions like sales, HR, and procurement. The article suggests that AI’s value is shifting from simple time savings toward role-tailored agent design and workflow redesign, making AI part of everyday operations and enabling kinds of work that were previously difficult to do."
+}

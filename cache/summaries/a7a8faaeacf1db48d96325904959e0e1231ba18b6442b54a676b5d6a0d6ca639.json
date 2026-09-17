@@ -1,0 +1,18 @@
+{
+  "summary": "MicrosoftはWork IQ APIsを2026年6月16日に一般提供すると発表し、それに先立ちGitHubでパブリックプレビューを公開している。これはMicrosoft 365のデータやアプリをエージェントから扱うためのAPI群で、Chat、Context、Tools、Workspacesの4領域を通じてCopilot相当の応答、業務コンテキスト取得、操作実行、中間状態の保存を提供する。価格はCopilot Credits建ての従量課金で、Toolsは固定要素、ChatとContextは変動要素になる。",
+  "keyPoints": [
+    "一般提供は2026年6月16日で、現時点ではGitHub上のパブリックプレビューから先行して利用を始められる。",
+    "APIはChat、Context、Tools、Workspacesの4ドメインで構成され、Copilotの応答取得、エージェント向けコンテキスト取得、Microsoft 365上の操作実行、実行中の中間状態やデータの保管を分担する。",
+    "ToolsはMCPによる段階的開示を備えた10個の汎用ツールに操作を集約しており、メール送信、会議設定、文書アップロードなどを、データごとの多数のツールを教え込まずに扱えるようにする。",
+    "料金はCopilot Creditsによる従量課金で、Toolsは固定要素、ChatとContextは変動要素になる。あわせてMicrosoft 365管理センターに新しいコスト管理ダッシュボードが導入され、AIクレジット利用確認、前払いまたは従量課金の設定、テナント・グループ・ユーザー単位の上限設定などを行える。"
+  ],
+  "significance": "Microsoft 365内で業務エージェントを構築する開発者と、利用統制を担うIT管理者に影響が大きい。開発者はCopilot相当の応答や業務コンテキスト、操作APIを同じ基盤で利用でき、IT管理者はテナント境界内で監査可能な実行とクレジット管理ダッシュボードによって、追加の統制レイヤーなしでガバナンスとコスト管理を進めやすくなる。",
+  "summaryEn": "Microsoft announced that Work IQ APIs will become generally available on June 16, 2026, and has already opened a public preview on GitHub. The API set is meant for agents to work with Microsoft 365 data and apps, spanning four areas—Chat, Context, Tools, and Workspaces—for Copilot-like responses, business context retrieval, action execution, and intermediate state storage. Pricing is usage-based in Copilot Credits, with a fixed component for Tools and variable components for Chat and Context.",
+  "keyPointsEn": [
+    "General availability is set for June 16, 2026, and developers can start earlier through the public preview on GitHub.",
+    "The APIs are organized into four domains—Chat, Context, Tools, and Workspaces—covering Copilot response access, agent-ready context retrieval, Microsoft 365 actions, and storage for intermediate execution state and data.",
+    "Tools condense operations into 10 generic tools with progressive disclosure through MCP, enabling actions such as sending emails, scheduling meetings, and uploading documents without teaching agents hundreds of data-specific tools.",
+    "Pricing is usage-based in Copilot Credits, with a fixed component for Tools and variable components for Chat and Context. Microsoft is also introducing a new cost management dashboard in the Microsoft 365 admin center for reviewing AI credit usage, choosing prepaid or pay-as-you-go billing, and setting spending limits by tenant, group, and user."
+  ],
+  "significanceEn": "This matters most to developers building enterprise agents inside Microsoft 365 and to IT administrators responsible for governance. Developers get a single foundation for Copilot-like responses, business context, and action APIs, while IT admins get auditable execution inside the tenant boundary and a credit management dashboard that helps them manage governance and costs without adding a separate control layer."
+}

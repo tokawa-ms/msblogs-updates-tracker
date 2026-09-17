@@ -1,0 +1,18 @@
+{
+  "summary": "Microsoftは7月1日、中小企業向けにCopilotを標準搭載した新SKUのMicrosoft 365 Business Standard with CopilotとBusiness Premium with Copilotを導入する。Word、Excel、PowerPoint、Outlookに組み込まれたCopilotに加え、Work IQや1,000超のコネクタでMicrosoft 365内外の業務データやSaaSとつながり、業務をまたいで自動化できる。さらに既存の機密ラベルやアクセス制御の境界内でCopilotが動作し、誤共有時のアクセス取り消しにも対応する。",
+  "keyPoints": [
+    "7月1日に、中小企業向けの新SKUとしてMicrosoft 365 Business Standard with CopilotとMicrosoft 365 Business Premium with Copilotが導入される。",
+    "CopilotはWord、Excel、PowerPoint、Outlookに直接組み込まれ、既存のMicrosoft 365アプリ内でそのまま業務の進め方を変える位置付けになっている。",
+    "Work IQがMicrosoft 365全体の作業状況を束ね、さらにShopify、PayPal、Xero、Docusign、Asanaなどを含む1,000超のコネクタで外部業務システムとも連携する。加えてOpenAIとAnthropicのモデルに直接アクセスでき、用途に応じて選べる。",
+    "機密ファイルへのラベル適用で社外転送、個人アカウントへのコピー、印刷を制御でき、誤って共有した文書のアクセスをダウンロード後でも取り消せる。なお、一部機能には追加製品の購入が必要な場合がある。"
+  ],
+  "significance": "限られた人員と時間で既存業務を回している中小企業にとって、AIを別製品として追加するのではなく、普段使うMicrosoft 365と周辺SaaSの文脈のまま使える点が重要だ。アプリ切り替えや手作業のデータ移動を減らしつつ、既存の権限制御や機密保護を維持したままAIを利用したい組織に影響する。",
+  "summaryEn": "Microsoft will introduce new small-business SKUs on July 1: Microsoft 365 Business Standard with Copilot and Business Premium with Copilot. Alongside Copilot built into Word, Excel, PowerPoint, and Outlook, Work IQ and more than 1,000 connectors link Microsoft 365 data with external SaaS and business systems to automate work across workflows. Copilot also operates within existing sensitivity labels and access controls, including the ability to revoke access after mistaken sharing.",
+  "keyPointsEn": [
+    "On July 1, Microsoft will introduce Microsoft 365 Business Standard with Copilot and Microsoft 365 Business Premium with Copilot as new SKUs for small businesses.",
+    "Copilot is built directly into Word, Excel, PowerPoint, and Outlook, positioning it to change how work is done inside existing Microsoft 365 apps.",
+    "Work IQ consolidates work context across Microsoft 365, and more than 1,000 connectors link to external business systems including Shopify, PayPal, Xero, Docusign, and Asana. It also provides direct access to models from OpenAI and Anthropic so users can choose by task.",
+    "Sensitivity labels on confidential files can restrict external forwarding, copying to personal accounts, and printing, and access to mistakenly shared documents can be revoked even after download. Some capabilities may require additional product purchases."
+  ],
+  "significanceEn": "This matters to small businesses operating with limited time and staff because AI is being added within the Microsoft 365 and surrounding SaaS context they already use, rather than as a separate tool. It affects organizations that want to reduce app switching and manual data movement while still keeping existing permission controls and information protection in place when using AI."
+}

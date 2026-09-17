@@ -1,0 +1,18 @@
+{
+  "summary": "Microsoft Scoutは、Microsoftが新設した常時稼働型エージェント「Autopilots」の第1弾として発表され、Teams、Outlook、OneDrive、SharePointやチャット、メール、予定表、連絡先をまたいで動作する。会議日程の調整、重要会議の通知、準備資料の生成、納期に向けた予定確保、停滞リスクの検知などを、都度促さなくても継続的に進める設計だ。提供は一部顧客向けのprivate previewとFrontierでのexperimental releaseとして始まる。",
+  "keyPoints": [
+    "Autopilotsは、新しいエージェントカテゴリとして定義され、常時稼働し、自身のIDでユーザーの代理として自律的に動く。組織が設定した権限とポリシーの範囲で実行される。",
+    "ScoutはMicrosoft 365のアプリ群に統合され、クラウド、デスクトップ、Webを横断して動作する。Teamsで対話しつつ、デスクトップアプリ経由でブラウザー、ローカルリソース、model context protocol serversにも接続できる。",
+    "企業向けの統制として、各エージェントは共有アカウントではなく個別のEntra IDで動作し、資格情報はタスク単位に限定されログや診断から秘匿される。さらに、機微な操作には人手承認を要求でき、Purviewの機密ラベルや損失防止ポリシーも送信・書き込み前に適用される。",
+    "提供対象は一部顧客のprivate previewとFrontier組織向けで、Frontierではexperimental releaseとして試せる。利用にはFrontier enrollment、Intune policy configuration、opt-in attestationが必要で、GitHub Copilot license保有者がダウンロードして導入できる。"
+  ],
+  "significance": "Microsoft 365を日常利用する企業ユーザー、とくに調整業務の多いチームに関係する発表だ。記事では、Scoutが単発の質問応答ではなくバックグラウンドで会議調整やリスク把握を進め、既存のID・アクセス制御やPurview保護の内側で動くと説明している。現時点で試せるのはprivate preview対象顧客とFrontier組織に限られるため、影響はまずその層に及ぶ。",
+  "summaryEn": "Microsoft Scout was introduced as Microsoft's first Autopilot, a new always-on agent category, and it works across Teams, Outlook, OneDrive, SharePoint, plus chats, email, calendars, and contacts. It is designed to continuously handle tasks such as meeting coordination, important meeting alerts, prep material generation, calendar blocking for deliverables, and stalled-risk detection without repeated prompting. Availability starts as a private preview for select customers and as an experimental release through Frontier.",
+  "keyPointsEn": [
+    "Autopilots are defined as a new agent category that stays always on, acts autonomously on a user's behalf, and operates with its own identity within organizational permissions and policies.",
+    "Scout is integrated into Microsoft 365 apps and works across cloud, desktop, and web. Users interact with it in Teams, and the desktop app extends it to the browser, local resources, and model context protocol servers.",
+    "For enterprise control, each agent runs under its own Entra identity rather than a shared account, and its credentials are scoped to the task and redacted from logs and diagnostics. Sensitive actions can require human approval, and Purview sensitivity labels and loss prevention policies are enforced before data is sent or written.",
+    "Availability is limited to select customers in private preview and Frontier organizations, where it is offered as an experimental release. Access requires Frontier enrollment, Intune policy configuration, and an opt-in attestation, and users need a GitHub Copilot license to download and install it."
+  ],
+  "significanceEn": "This matters to enterprise Microsoft 365 users, especially teams with heavy coordination work. The article positions Scout as a shift from one-off question answering to background execution of meeting coordination and risk detection while staying inside existing identity, access-control, and Purview protections. For now, the impact is mainly on select preview customers and Frontier organizations that can try it first."
+}

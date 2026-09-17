@@ -1,0 +1,20 @@
+{
+  "summary": "GitHub CopilotのVS Code向けInline Suggestionsは、補完、近傍の次編集提案（NES）、離れた位置の編集を別々のモデルで処理する方式から、単一の「3-in-1」モデルへ統合された。第1部では、まずNESと長距離編集をdiff patch形式の「2-in-1」モデルにまとめ、複数編集を返してキャッシュできるようにした過程を詳述している。最終的な2-in-1の出荷候補では主要指標の有意な回帰なしに、提案表示時間が10%短縮し、出力トークンも61%削減された。",
+  "keyPoints": [
+    "統合前のVS Code向けInline Suggestionsは、Completions、NES、Long-distance NESの3モデルをクライアント側で使い分ける構成だった。",
+    "新しい「diff patch」出力形式は、1回の応答で複数編集を返し、関連ファイルをまたぐ編集まで表現できる。後続パッチをキャッシュできるため、受理後の次の提案を低遅延で出しやすい。",
+    "2-in-1モデル向けの複数パッチ学習データは、既存の単一編集データからpseudolabelsとedit playbackで合成した。これにより、応答あたり平均1.3〜1.4パッチを返すモデルになった。",
+    "評価体制は、オフライン、社内ドッグフーディング、人手評価、オンラインA/Bに加え、POEとQMHという新しいオフライン評価を追加して強化された。",
+    "最終的な2-in-1の出荷候補は主要指標で有意な回帰がなく、提案表示時間を10%短縮し、出力トークンを61%削減した。統合版Inline Suggestionsは現在、VS Codeの有料GitHub Copilotユーザーが、最新のVS Codeに更新してnext edit suggestionsを有効にすると利用できる。"
+  ],
+  "significance": "VS CodeでGitHub CopilotのInline Suggestionsを使う開発者、特に補完だけでなく近傍修正や離れた箇所の修正を行き来しながら書く利用者に影響が大きい。単一モデルが作業全体に対して最適な編集を選び、後続パッチをキャッシュして表示時間も短縮するため、提案の分断や待ち時間を減らし、連続した編集作業をより滑らかに進めやすくする。",
+  "summaryEn": "GitHub Copilot Inline Suggestions in VS Code has been unified from separate models for completions, nearby next edit suggestions (NES), and distant edits into a single 3-in-1 model. Part one explains how GitHub first merged NES and long-distance edits into a 2-in-1 model using a diff patch format that can return and cache multiple edits. The final 2-in-1 shipping candidate showed no statistically significant regressions in key metrics while reducing suggestion display time by 10% and output tokens by 61%.",
+  "keyPointsEn": [
+    "Before unification, Inline Suggestions in VS Code used three client-orchestrated models: Completions, NES, and Long-distance NES.",
+    "The new diff patch output format can represent multiple edits in one response, including cross-file edits, and lets the system cache follow-up patches for lower-latency suggestions after acceptance.",
+    "Multi-patch training data for the 2-in-1 model was synthesized from existing single-edit data using pseudolabels and edit playback, leading to models that produced 1.3 to 1.4 patches per response on average.",
+    "The evaluation stack was expanded beyond offline tests, internal dogfooding, human evaluation, and online A/B tests by adding the new POE and QMH offline benchmarks.",
+    "The final 2-in-1 shipping candidate had no statistically significant regressions in key metrics, reduced suggestion display time by 10%, and cut output tokens by 61%. The unified Inline Suggestions experience is now available to paid GitHub Copilot users in VS Code after updating VS Code and enabling next edit suggestions."
+  ],
+  "significanceEn": "This matters most to developers using GitHub Copilot Inline Suggestions in VS Code, especially those who move between completions, nearby rewrites, and edits farther away while coding. A single model can choose the best edit across the whole task, cache follow-up patches, and reduce display latency, making consecutive editing flows less fragmented and smoother."
+}
