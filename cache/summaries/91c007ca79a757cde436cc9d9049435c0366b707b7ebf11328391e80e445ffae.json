@@ -1,0 +1,18 @@
+{
+  "summary": "Power BIサービスのsemantic model settings paneが、セマンティック モデル設定を行う既定UIになりつつあり、ワークスペースを離れず右側ペインで設定を確認・変更できるようになった。フルページの設定画面と同じ設定項目を備えつつ、周囲のコンテキストを見たまま操作できる。切り替えはプレビューの一環として段階的にロールアウトされ、環境によって反映時期が異なる。",
+  "keyPoints": [
+    "設定ペインはブラウザー右側に開き、ワークスペースを表示したまま使える。設定は refresh、data access、performance、OneDrive and SharePoint などのカテゴリ別タブと展開可能なセクションに整理され、検索ボックスから目的の設定を直接探せる。",
+    "以前はプレビュー中の任意機能だったが、今回の変更でセマンティック モデルの設定を開くとペインが既定で表示されるようになる。ロールアウトは段階的で、利用環境ごとにタイミングが異なる。",
+    "フルページ表示を望む場合は、ペイン下部の Open settings page から従来のクラシック設定ページを同じブラウザーウィンドウで開ける。比較作業や移行期の慣れたワークフロー継続に使える。",
+    "クラシック設定ページは今後段階的に廃止される予定で、scheduled refresh や data connections など関連設定の統合も設定ペイン側で進められる。なお、この体験はまだプレビューであり、一般提供前に挙動が変わる可能性がある。"
+  ],
+  "significance": "Power BIサービスでセマンティック モデルを管理する利用者にとって、設定確認や変更のたびに別ページへ移動せず、作業中のワークスペースを見たまま関連設定を探して調整しやすくなる点が重要だ。一方で、既定化は段階的なプレビュー移行として進み、従来画面への切り替えも当面は残るため、利用者ごとに移行タイミングと操作体験がしばらく併存する。",
+  "summaryEn": "In the Power BI service, the semantic model settings pane is becoming the default UI for configuring semantic models, letting users review and change settings from a right-side pane without leaving the workspace. It offers the same settings as the full-page settings experience while keeping surrounding context visible. The change is part of the preview rollout and is being deployed gradually, so timing varies by environment.",
+  "keyPointsEn": [
+    "The settings pane opens on the right side of the browser and keeps the workspace visible. Settings are organized into category tabs and expandable sections such as refresh, data access, performance, and OneDrive and SharePoint, and a search box lets users jump directly to a setting.",
+    "The pane was previously optional during preview, but with this change it opens by default when users open settings for a semantic model. The rollout is gradual, so availability timing differs by environment.",
+    "If users prefer the full-page experience, they can use Open settings page at the bottom of the pane to open the classic settings page in the same browser window. This supports comparison work and familiar workflows during the transition.",
+    "The classic settings page is planned for eventual retirement, and Microsoft is consolidating related settings such as scheduled refresh and data connections into the pane. The experience is still in preview, and behavior may change before general availability."
+  ],
+  "significanceEn": "For people who manage semantic models in the Power BI service, the change matters because they can review and adjust settings without leaving their current workspace, making related settings easier to find and change in context. At the same time, the default switch is part of a gradual preview transition, and the classic page remains available for now, so migration timing and user experience will temporarily vary across environments."
+}

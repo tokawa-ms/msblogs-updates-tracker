@@ -1,0 +1,80 @@
+{
+  "date": "2026-09-18",
+  "compared_with": "2026-09-17",
+  "source_count": 6,
+  "new_count": 1,
+  "removed_count": 1,
+  "new_articles": [
+    {
+      "id": "2141285715642b92",
+      "source_id": "fabric-blog",
+      "source_name": "Microsoft Fabric Blog",
+      "title": "Manage semantic model settings in context with the default settings pane (Preview)",
+      "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Manage-semantic-model-settings-in-context-with-the-default/ba-p/5366792",
+      "published_at": "2026-09-17T16:00:00.000Z",
+      "summary": "The semantic model settings pane is becoming the default way to configure semantic models in the Power BI service. The pane opens alongside your workspace, so you can review and change settings without leaving the current page. It provides the same settings as the full semantic model settings page while keeping the surrounding context visible. The classic settings page remains available during this transition, but it no longer opens first. This change builds on the settings pane preview and provides a more focused experience for managing semantic models.Why it mattersThe pane helps you stay in context while you manage a semantic model. It opens on the right side of the browser window and keeps your workspace visible. Settings are organized into expandable sections and tabs, including refresh, data access, performance, and OneDrive and SharePoint. You can use the search box at the top of the pane to find a setting across all sections and tabs. For example, enter \"re\" and select View refresh history to go directly to refresh history instead of opening sections one at a time. This organization is especially useful for semantic models with several connection, refresh, or performance settings. You can review a setting, make a change, and return to your work without navigating to a separate page.What's changingThe settings pane was an optional experience earlier in the preview. As this change rolls out, the pane opens by default when you open settings for a semantic model. The rollout is gradual, so the timing can vary by environment.The pane includes the settings available on the full settings page. Its main area groups related settings into expandable sections, and the tabs at the top organize settings by category. Use the search box when you know the setting you want or browse the sections to review related options together.If you prefer the full-page experience, select Open settings page at the bottom of the pane. The classic page opens in the same browser window. This option can help when you want to compare settings across semantic models or continue using a familiar workflow during the transition.The classic settings page will be retired over time, so the switchback option is intended to support the transition. We're also working to consolidate related settings, including scheduled refresh and data connections. These planned improvements apply to the settings pane. The preview experience and behavior might change before general availability.Figure: Switch from the semantic model settings pane to the classic settings page.Next stepsUnderstand Semantic model permissions in Power BI.Learn how to use the pane in Manage semantic model settings in the settings pane.Open the settings for one of your semantic models and explore the grouped sections and search.Share feature suggestions through Fabric Community Ideas.Share feedback about the preview in the comments.",
+      "fetched_at": "2026-09-18T01:09:12.679Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "fabric-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "2141285715642b92",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Manage semantic model settings in context with the default settings pane (Preview)",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Manage-semantic-model-settings-in-context-with-the-default/ba-p/5366792",
+          "published_at": "2026-09-17T16:00:00.000Z",
+          "summary": "The semantic model settings pane is becoming the default way to configure semantic models in the Power BI service. The pane opens alongside your workspace, so you can review and change settings without leaving the current page. It provides the same settings as the full semantic model settings page while keeping the surrounding context visible. The classic settings page remains available during this transition, but it no longer opens first. This change builds on the settings pane preview and provides a more focused experience for managing semantic models.Why it mattersThe pane helps you stay in context while you manage a semantic model. It opens on the right side of the browser window and keeps your workspace visible. Settings are organized into expandable sections and tabs, including refresh, data access, performance, and OneDrive and SharePoint. You can use the search box at the top of the pane to find a setting across all sections and tabs. For example, enter \"re\" and select View refresh history to go directly to refresh history instead of opening sections one at a time. This organization is especially useful for semantic models with several connection, refresh, or performance settings. You can review a setting, make a change, and return to your work without navigating to a separate page.What's changingThe settings pane was an optional experience earlier in the preview. As this change rolls out, the pane opens by default when you open settings for a semantic model. The rollout is gradual, so the timing can vary by environment.The pane includes the settings available on the full settings page. Its main area groups related settings into expandable sections, and the tabs at the top organize settings by category. Use the search box when you know the setting you want or browse the sections to review related options together.If you prefer the full-page experience, select Open settings page at the bottom of the pane. The classic page opens in the same browser window. This option can help when you want to compare settings across semantic models or continue using a familiar workflow during the transition.The classic settings page will be retired over time, so the switchback option is intended to support the transition. We're also working to consolidate related settings, including scheduled refresh and data connections. These planned improvements apply to the settings pane. The preview experience and behavior might change before general availability.Figure: Switch from the semantic model settings pane to the classic settings page.Next stepsUnderstand Semantic model permissions in Power BI.Learn how to use the pane in Manage semantic model settings in the settings pane.Open the settings for one of your semantic models and explore the grouped sections and search.Share feature suggestions through Fabric Community Ideas.Share feedback about the preview in the comments.",
+          "fetched_at": "2026-09-18T01:09:12.679Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "f48cc79e22f77a6c",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Power BI Desktop Bridge (Preview)",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Power-BI-Desktop-Bridge-Preview/ba-p/5227769",
+          "published_at": "2026-06-30T19:00:00.000Z",
+          "summary": "Power BI Desktop Bridge (Preview)Power BI Desktop Bridge introduces a new way of working, allowing external applications and agents to interact directly with Power BI Desktop!What is Power BI Desktop Bridge?The bridge is a lightweight local server that lets external applications interact directly with Power BI Desktop.Think of it as a direct, secure channel between your tools and Power BI Desktop. Your agents, scripts, and external applications can now:Check the current state of your report.Trigger key actions, like reloading files after edits.Capture screenshots to validate changes.Iterate and improve in real time, without manual handoffs.The following core capabilities are available through the bridge:Discover What's AvailableMethod: bridge.manifestCapabilities: Returns a complete list of all capabilities and their specifications.Think of this as a \"menu\" of what your version of Desktop can do. Always check this first to see what's available.Check Report StateMethod: application.state.get/v1Capabilities: Returns information about the currently open file and whether there are unsaved changes.In plain language: Know which file is open and if there are pending edits. Essential before running automation that might affect your work.Capture Report SnapshotsMethod: report.snapshot.capture/v1Capabilities: Captures a PNG screenshot of a specific report page at any resolution you want.In plain language: See exactly how your report looks right now. Perfect for validating changes visually or sharing proof of work.Reload files from DiskMethod: file.reload/v1Capabilities: Reloads the open PBIP/PBIR file from disk to pick up on-disk edits.In plain language: After making changes to report files, refresh Desktop to see them. You can control whether the semantic model is also reloaded.Why this is a big step for agents?Before the bridge, agents could be incredibly smart about generating code and automating repetitive tasks. But they hit a wall: they couldn't talk directly to Power BI Desktop. They couldn't reload files to see changes in real time. They couldn't capture screenshots to validate what they'd built. They were flying blind.Now, with the bridge, that changes completely, agents can:Read the current report state.Edit report files directly on disk.Reload to see changes instantly in Desktop.Validate with a live screenshot.Iterate immediately—observing, learning, and improving.Ready to see this in action? The Report Authoring Skill is a perfect example. It leverages the bridge to read state, make edits, reload instantly, validate visually with screenshots, and iterate continuously in one seamless loop. Now, reports that would take hours to build, debug, and refine manually can now be authored, validated, and polished by agents in minutes.But this is just the beginning. The bridge opens the door for you to build the custom solutions you need.How to get startedDesktop Bridge is enabled by default. To disable or enable it:Open Power BI Desktop.Go to File > Options and settings > Options.Open Preview features.Enable external tool access to Power BI Desktop through secure local APIs.Start using the Desktop BridgeThe easiest way to start is with the Power BI Desktop Bridge CLI. It lets you leverage the bridge in a simple, practical way, without building custom integrations first. Built on top of the bridge, it includes a set of intuitive commands ready to use.The reload command is a great example. If you are making external changes to your PBIR files, you can simply run:powerbi-desktop reloadThis command reloads your on-disk changes in Power BI Desktop through the bridge, so you can keep iterating without closing and reopening Desktop.The following are other useful commands at your fingertips:# See what the bridge can dopowerbi-desktop manifest# Check which Desktop instances are runningpowerbi-desktop status# Reload after making editspowerbi-desktop reload# Capture screenshots of every report pagepowerbi-desktop screenshot-all Ready to try it?The Desktop Bridge is here, and it's ready to transform how you work with Power BI Desktop. Stop waiting for manual steps. Start automating.Get started now: Power BI Desktop Bridge.",
+          "fetched_at": "2026-09-17T01:13:43.990Z"
+        }
+      ]
+    },
+    "github-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "m365-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    }
+  },
+  "diff_result": true
+}
