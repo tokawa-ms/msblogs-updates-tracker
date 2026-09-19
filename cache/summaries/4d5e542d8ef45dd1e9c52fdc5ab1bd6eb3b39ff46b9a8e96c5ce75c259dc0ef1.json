@@ -1,0 +1,20 @@
+{
+  "summary": "Azure LocalとAzure Arcを中核とするMicrosoftの分散ハイブリッドインフラ戦略が、2026年のGartner Magic Quadrant for Distributed Hybrid Infrastructureで4年連続のLeaderとされ、MicrosoftはAbility to Executeで最上位に位置付けられた。記事では、データセンター、エッジ、マルチクラウド、ソブリン環境を一貫したAzure基盤で管理できる点を強調している。あわせて、Azure Localによる切断環境運用や、Foundry Local on Azure LocalによるAI推論のローカル実行など、運用場所の選択肢を広げる方向性を示した。",
+  "keyPoints": [
+    "Microsoftは2026年のGartner Magic Quadrant for Distributed Hybrid Infrastructureで4年連続のLeaderに認定され、Ability to Executeで最上位とされた。これはGartnerの評価として示されている。",
+    "Azure Arcはデータセンター、エッジ、マルチクラウド上のリソースにAzureの管理とガバナンスを拡張し、Azure Localは顧客管理下の拠点にAzureのインフラとサービスを持ち込むことで、配置場所が異なるワークロードでも共通の運用モデルを提供する。",
+    "Azure Localは小型エッジから大規模データセンターまで対応範囲を拡大しており、ハイパーコンバージド構成に加えて、分離型コンピュートと外部ストレージにも対応するため、単一の配備モデルに縛られずワークロード要件に合わせて設計できる。",
+    "ソブリン要件向けには、Microsoft Sovereign Cloudを単一モデルではなく選択肢の連続体として位置付け、Azure LocalベースのMicrosoft Sovereign Private Cloudや、クラウド接続が制限・不可の環境向けの切断運用を用意している。",
+    "AI用途では、Foundry Local on Azure Localにより、Kubernetesネイティブな運用でモデルをアプリケーションやデータの近くに配置して実行でき、遅延や接続性、ガバナンス、ソブリン要件に応じた推論配置を可能にする。"
+  ],
+  "significance": "分散環境を運用する企業や公共分野の組織にとって、同じAzure基盤でデータセンター、エッジ、マルチクラウド、ソブリン環境をまたいで管理しやすくなる点が重要だ。特に、すべてのワークロードを同じ場所で動かす必要がないこと、接続制約のある環境やAI推論をデータ近傍で実行したいケースに対応できることが、運用要件の異なる利用者に影響する。",
+  "summaryEn": "Microsoft’s distributed hybrid infrastructure strategy centered on Azure Local and Azure Arc was named a Leader for the fourth straight year in the 2026 Gartner Magic Quadrant for Distributed Hybrid Infrastructure, with Microsoft positioned highest for Ability to Execute. The article emphasizes consistent management across datacenters, edge, multi-cloud, and sovereign environments through a common Azure foundation. It also highlights broader workload placement options, including disconnected operations on Azure Local and local AI inference through Foundry Local on Azure Local.",
+  "keyPointsEn": [
+    "Microsoft was recognized as a Leader in the 2026 Gartner Magic Quadrant for Distributed Hybrid Infrastructure for the fourth consecutive year and was positioned highest for Ability to Execute. The article presents this as Gartner’s evaluation.",
+    "Azure Arc extends Azure management and governance to resources in datacenters, at the edge, and across multi-cloud environments, while Azure Local brings Azure infrastructure and services into customer-controlled locations, creating a common operating model across different workload locations.",
+    "Azure Local is expanding from small-form-factor edge deployments to large-scale datacenter environments, and supports both hyperconverged architectures and disaggregated compute with external storage, allowing infrastructure to be designed around workload needs rather than a single deployment model.",
+    "For sovereignty requirements, Microsoft positions Microsoft Sovereign Cloud as a continuum of choices rather than a single model, including Azure Local-based Microsoft Sovereign Private Cloud and disconnected operations for environments with restricted or no cloud connectivity.",
+    "For AI, Foundry Local on Azure Local lets organizations deploy and run models closer to applications and data with Kubernetes-native operations, supporting inference placement based on latency, connectivity, governance, and sovereignty needs."
+  ],
+  "significanceEn": "This matters for enterprises and public-sector organizations operating distributed environments because it describes a way to manage datacenters, edge, multi-cloud, and sovereign environments more consistently on the same Azure foundation. It is especially relevant for users who do not want every workload in the same location and who need support for connectivity-constrained environments or AI inference near the data source."
+}
