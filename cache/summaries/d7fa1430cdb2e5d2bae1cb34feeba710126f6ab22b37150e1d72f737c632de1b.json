@@ -1,0 +1,18 @@
+{
+  "summary": "VS Codeは、複数のコーディングエージェントを横断して扱う統合体験を導入し、OpenAI CodexをGitHub Copilot Pro+加入者が追加契約なしで使えるようにした。あわせてローカル/クラウドの実行中セッションを管理するAgent Sessions、曖昧な依頼を計画化するPlanエージェント、文脈を分離するsubagentsを追加し、エージェント運用を一つのUIに集約した。",
+  "keyPoints": [
+    "GitHub Universeで、OpenAI CodexをGitHub Copilot Pro+サブスクリプションに含めると案内した。利用にはOpenAI Codex拡張機能のインストールとGitHub Copilotでのサインインが必要で、モデル呼び出しはCopilot側が処理し、通常のレート制限が適用される。",
+    "新しいサイドバー表示「Agent Sessions」で、プロジェクト内のエージェントセッションをローカル/クラウド横断で一覧管理できる。状態確認やセッション切り替えに加え、chat editorsから実行中エージェントを途中で軌道修正できる。",
+    "数カ月前に導入したchat modesは名称を「agents」に変更し、カスタムエージェントとして位置付け直した。あわせて新しい組み込みエージェントPlanを追加し、曖昧な依頼に対して必要な質問を返し、情報が揃うとHandoffで実行継続または計画の編集に進める。",
+    "最新のVS Codeリリースでは、文脈混線を抑えるための「runSubagent」ツールを追加した。subagentはメインチャットから独立した文脈で動き、完了後は最終結果だけがメイン文脈に戻る。"
+  ],
+  "significance": "VS Codeで複数のコーディングエージェントを併用する開発者やCopilot Pro+契約者に関わる変更だ。記事では、Codexを別OpenAIアカウントなしで使え、ローカル/クラウドのエージェントを一元管理しつつ、subagentで深掘り作業を本線の会話から切り離せるため、複数エージェント運用の負担を下げると説明している。",
+  "summaryEn": "VS Code introduced a unified experience for working across multiple coding agents and made OpenAI Codex available to GitHub Copilot Pro+ subscribers without an extra subscription. It also added Agent Sessions for managing local and cloud sessions, a Plan agent for turning vague requests into plans, and subagents for isolating context, bringing agent operations into one interface.",
+  "keyPointsEn": [
+    "At GitHub Universe, the company said OpenAI Codex can now be used with a GitHub Copilot Pro+ subscription. Users need the OpenAI Codex extension and GitHub Copilot sign-in, and Copilot handles model calls under standard rate limits.",
+    "The new Agent Sessions sidebar lets developers manage project agent sessions across local and cloud environments. It shows running status, supports quick switching, and allows mid-run course correction through chat editors.",
+    "VS Code renamed chat modes to agents to reflect their role as custom agents. It also added a built-in Plan agent that asks clarifying questions for vague requests and then uses Handoff to continue or open the full plan in the editor.",
+    "The latest VS Code release adds the runSubagent tool to reduce context confusion. Subagents run with separate context from the main chat, and only the final result is returned to the main conversation."
+  ],
+  "significanceEn": "This matters to developers who use multiple coding agents in VS Code and to Copilot Pro+ subscribers. The article says they can use Codex without a separate OpenAI account, manage local and cloud agents in one place, and use subagents to separate deep-dive work from the main conversation, reducing the overhead of multi-agent workflows."
+}

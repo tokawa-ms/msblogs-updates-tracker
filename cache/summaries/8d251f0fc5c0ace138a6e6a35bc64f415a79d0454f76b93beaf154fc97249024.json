@@ -1,0 +1,20 @@
+{
+  "summary": "GitHub Copilot appは、巨大なプルリクエストでもレビュー画面を破綻させないよう、PRビューの差分表示基盤を再設計した。コード行の確定レイアウトとコメントの可変レイアウトを分離し、遅延計測・スクロール補正・段階的データ供給を組み合わせることで、2200ファイル、100万超の変更行、400件超のインラインコメントを含むPRでも安定して開閉・スクロールできる構成をGitHubが説明している。",
+  "keyPoints": [
+    "最大の課題はコメントで、コード行のように高さを事前確定できないため、表示全体の高さをコードの確定領域とコメントなどの動的ブロック領域に分離した。これにより、コメントの再計測が入ってもコード側のジオメトリを組み直さずに済むようにした。",
+    "動的ブロックの計測は、各要素が即座にレイアウトを書き換える方式を避け、スクロール中は止めてアイドル時にまとめて処理する単一の計測パスへ切り替えた。対象はビューポート近傍に限定し、画面内ブロックは必ず実測を優先、表示中の明示的な展開では同一フレーム内で補正する。",
+    "スクロール位置の維持はピクセルではなく、行やブロックの識別子を基準に補正する方式を採った。さらに、サイドバー切り替えなど画面自身が起こすスクロールとユーザー操作を区別しないと、再レイアウト時に読んでいた位置がずれる不具合が出ることを修正した。",
+    "データ供給側では、差分の構造を先に段階取得し、シンタックスハイライトはメインスレッド外で実行し、巨大な差分本文や提案変更の文脈は必要になるまで遅延生成する設計にした。加えて、直近に見た差分を少数キャッシュして、戻った直後にヘッダーだけ先に表示されて本文が空のまま待たされる状態を減らした。",
+    "不具合検出には恒久的な構造化プローブと合成の巨大PR用E2Eテスト、自動操縦による反復計測を使った。空白ギャップ、未描画コメント、マウント数、フレーム時間、スクロール補正量などを健康指標として機械的に判定し、再現しにくい負荷時バグを潰した。"
+  ],
+  "significance": "大規模リファクタリングや移行のように変更を細かく分けにくい開発者とレビュー担当者に関係する。GitHubによれば、従来は待つか別の場所で読むしかなかった巨大PRでも、コメント込みで位置を保ったまま読み進めやすくなり、レビューをアプリ内で完結しやすくなる。",
+  "summaryEn": "The GitHub Copilot app rebuilt its pull request diff surface so very large pull requests do not break the review experience. GitHub says it separates fixed code-line layout from variable comment layout and combines lazy measurement, scroll anchoring, and incremental data loading so pull requests with 2,200 files, more than a million changed lines, and over 400 inline comments can still open and scroll smoothly.",
+  "keyPointsEn": [
+    "The biggest challenge was comments, whose height cannot be known in advance like code lines, so the app split total layout into a deterministic code domain and a dynamic block domain for comments and similar content. That lets comment remeasurement happen without rebuilding code geometry.",
+    "For dynamic blocks, the team moved away from per-element immediate layout writes and switched to a single measurement pass gated by idle time and scroll state. It limits work to near the viewport, always prefers real measurements for on-screen blocks, and applies same-frame corrections for visible user-triggered expansions.",
+    "To preserve reading position, scroll correction is anchored to the identity of a row or block rather than raw pixels. The team also fixed a bug by distinguishing user scrolling from scrolls caused by the surface itself, such as sidebar toggles during reflow.",
+    "On the data side, the app streams diff structure first, runs syntax highlighting off the main thread, and defers heavy markdown and suggested-change context until needed. It also keeps a small cache of recent diffs so returning to a pull request does not show an empty shell while waiting for content it just had.",
+    "For bug finding, the team used permanent structured probes, end-to-end tests with a synthetic huge pull request, and an autopilot loop for repeated measurements. Health signals such as blank gaps, missing comment content, mount counts, frame times, and scroll corrections were used to mechanically detect hard-to-reproduce load bugs."
+  ],
+  "significanceEn": "This matters to developers and reviewers working on large refactors or migrations that cannot be split into smaller pull requests. GitHub says that, instead of having to wait or read elsewhere, reviewers can stay in the app and read massive pull requests with comments while keeping their place more reliably."
+}
