@@ -1,0 +1,20 @@
+{
+  "summary": "VS CodeのGitHub Copilotでは、タイピング中に表示されるインライン提案がオープンソース化され、Copilot Chat拡張公開に続く次の節目になった。あわせてCopilot機能を単一のCopilot Chat拡張へ集約するため、Copilot拡張を無効化してインライン提案をCopilot Chatから提供する構成をテストしている。大半の機能は移植済みで利用体験は変えない方針とされ、従来のGitHub Copilot拡張は2026年初頭までに非推奨となる予定だ。",
+  "keyPoints": [
+    "インライン提案がオープンソース化され、6月にGitHub Copilot Chat拡張をオープンソース化した第1段階に続く次の節目と位置付けられている。",
+    "Copilot機能を単一のVS Code拡張であるCopilot Chatに集約するため、Copilot拡張を無効化してインライン提案をCopilot Chatから提供する構成をテストしている。",
+    "利用者向けには体験を変えない方針で、従来どおりタイピング中のコード提案に加え、既存のチャット機能とagent mode機能も継続利用できるとしている。",
+    "用語はghost textやnext edit suggestionsを含む総称としてinline suggestionsに統一され、GitHub Copilot拡張は2026年初頭までに非推奨となってVS Code Marketplaceから削除される予定だ。",
+    "技術面ではネットワークの問題修正でghost text配信の遅延を減らし、遅延と提案品質の両方で回帰がないことを広範な実験で確認したとしている。"
+  ],
+  "significance": "VS Code利用者は、インライン提案・チャット・agent modeを単一拡張で継続利用する移行の影響を受ける一方、問題があれば設定で旧来の2拡張構成に一時的に戻せる。OSSコミュニティにとっては、vscode-copilot-chatリポジトリでインライン提案の実装を直接調べて改善に参加できる点が重要だ。",
+  "summaryEn": "In GitHub Copilot for VS Code, inline suggestions that appear while typing have now been open sourced, marking the next milestone after the Copilot Chat extension was open sourced. At the same time, Microsoft is testing a setup that disables the Copilot extension and serves inline suggestions from the single Copilot Chat extension. Most features have already been ported, the intended user experience is unchanged, and the legacy GitHub Copilot extension is planned to be deprecated by early 2026.",
+  "keyPointsEn": [
+    "Inline suggestions have been open sourced, positioned as the next milestone after the GitHub Copilot Chat extension was open sourced in June.",
+    "To consolidate Copilot functionality into a single VS Code extension, Copilot Chat, Microsoft is testing a setup that disables the Copilot extension and serves inline suggestions from Copilot Chat.",
+    "For users, the stated goal is no change in experience: they should keep getting typing-time code suggestions along with the existing chat and agent mode features.",
+    "Terminology is being unified so that 'inline suggestions' covers ghost text and next edit suggestions, and the GitHub Copilot extension is planned to be deprecated by early 2026 and removed from the VS Code Marketplace.",
+    "On the technical side, the team says it reduced ghost text latency by fixing networking issues and validated through extensive experiments that there were no regressions in either latency or suggestion quality."
+  ],
+  "significanceEn": "VS Code users are affected by the move to a single extension because inline suggestions, chat, and agent mode are intended to continue in one place, while users can temporarily switch back to the previous two-extension setup if issues occur. For the OSS community, the change matters because the inline suggestion implementation is now available in the vscode-copilot-chat repository for direct inspection and contribution."
+}

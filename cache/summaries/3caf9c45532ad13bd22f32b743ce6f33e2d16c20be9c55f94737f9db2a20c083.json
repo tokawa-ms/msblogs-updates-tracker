@@ -1,0 +1,20 @@
+{
+  "summary": "VS Code Insiders Podcastが始まり、Visual Studio Codeチームの公式番組として、機能開発の舞台裏や意思決定、将来を形作る人たちの話を届けるようになった。各回では開発者やプロダクトマネージャー、コミュニティ貢献者が次世代機能を語り、実験的ツール、新しい拡張機能、AI時代のコーディングの方向性まで扱う。最近の回ではアクセシビリティ、Planning Agent、オープンソースコミュニティ運営、GitHub Universe 2025でのAI-nativeなVS Codeなどが取り上げられている。",
+  "keyPoints": [
+    "VS Code Insiders PodcastはVisual Studio Codeチームの公式ポッドキャストで、各エピソードでVS Codeの次世代機能を作る開発者、プロダクトマネージャー、コミュニティ貢献者が登場する。",
+    "番組内容はリリースノートの補足にとどまらず、実験的ツールや新しい拡張機能、AIがコーディングをどう変えるかといった話題まで広げている。",
+    "最近のエピソードでは、Megan Roggeがアクセシビリティ設計を説明し、Bhavya UがPlanning Agentによる複雑なコーディング作業の計画・実行支援を紹介している。",
+    "そのほか、Steve Franciaによるオープンソースコミュニティ拡大の実践策や、Pierce BogganによるGitHub Universe 2025の発表、AI-nativeなVS Codeと環境横断で動くエージェントの説明も含まれる。",
+    "記事では、Podcast home pageで過去エピソードの閲覧と購読ができると案内し、あわせてVS Code Insidersの導入と継続更新されるInsiders release notesの確認も促している。"
+  ],
+  "significance": "VS Codeの内部設計や今後の機能追加の背景を知りたい開発者、特にInsiders版やAI関連機能を追っている利用者にとって有用だ。公式チームと実装当事者の会話を通じて、単なる機能一覧ではなく、アクセシビリティやPlanning Agent、AI-native化といった取り組みの文脈まで把握できる。",
+  "summaryEn": "The VS Code Insiders Podcast has launched as an official show from the Visual Studio Code team, offering behind-the-scenes coverage of feature development, decision-making, and the people shaping VS Code's future. Episodes feature developers, product managers, and community contributors discussing next-generation features, along with experimental tooling, new extensions, and the direction of coding in the AI era. Recent episodes cover accessibility, the Planning Agent, open source community building, and AI-native VS Code at GitHub Universe 2025.",
+  "keyPointsEn": [
+    "The VS Code Insiders Podcast is an official podcast from the Visual Studio Code team, and each episode features developers, product managers, and community contributors building VS Code's next-generation features.",
+    "The show goes beyond release notes, covering experimental tooling, new extensions, and how AI is changing coding.",
+    "Recent episodes include Megan Rogge on accessibility design and Bhavya U on how the Planning Agent helps plan and execute complex coding tasks.",
+    "Other episodes cover Steve Francia's practical guidance on scaling open source communities and Pierce Boggan's explanation of GitHub Universe 2025 announcements, AI-native VS Code, and agents running across environments.",
+    "The article directs listeners to the podcast home page to browse past episodes and subscribe, and also points readers to VS Code Insiders and the continuously updated Insiders release notes."
+  ],
+  "significanceEn": "This matters for developers who want to understand the thinking behind VS Code's internal design and upcoming features, especially those following Insiders builds and AI-related capabilities. By hearing directly from the official team and the people implementing the work, listeners can understand the context behind efforts such as accessibility, the Planning Agent, and AI-native VS Code rather than seeing only a list of features."
+}

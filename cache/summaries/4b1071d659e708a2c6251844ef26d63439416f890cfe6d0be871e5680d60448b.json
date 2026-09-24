@@ -1,0 +1,20 @@
+{
+  "summary": "GitHubとYale Program on Climate Change Communicationの共同調査は、GitHubユーザー1,039人がソフトウェア効率化に強い関心を持つ一方、無駄な計算を見つけ、改善を測定し、修正の妥当性を示す実務的な道筋を欠いていると示した。回答者の80%が省エネなコードを書くツール、78%がソフトウェアの環境負荷を減らすベストプラクティス、74%が自分たちのソフトウェアや開発プロセスの環境影響の測定方法を求めた。記事は、測定可能な無駄を対象にし、GitHub Agentic WorkflowsのDaily Efficiency Improverで候補を探しつつ、最終判断は保守担当者が行う流れを提案している。",
+  "keyPoints": [
+    "調査では、気候変動やAIの環境負荷への懸念が強く、79%が地球温暖化を懸念し、71%がAIシステムの環境影響を懸念、75%が雇用主による環境負荷削減を重要視した。",
+    "GitHubユーザーは米国成人全体より気候変動への懸念が強く、温暖化が起きているとの回答は86%対68%、心配しているは79%対66%だった。ただし、マーケティングメール受信に同意したGitHubユーザーの非確率標本であり、開発者全体の代表値として扱うべきではない。",
+    "一方で、開発行為が自分の環境負荷削減に大きく効くと見ている回答者は10%にとどまり、63%は効果が小さいと答えたが、効率化ツールや測定、サステナビリティ関連OSSへの貢献意欲は高かった。",
+    "自由記述では、リポジトリやCI/CDワークフローのフットプリント推定、不要なGitHub Actions実行の特定、コード効率改善、AI利用と他の計算需要の比較支援が求められ、環境主張には証拠が必要だとの声もあった。",
+    "実務ガイドとしては、コード、データ、ネットワーク/I/O、フロントエンドの各領域で無駄を探し、実行時間・CPU使用率・メモリ割り当て・ネットワーク転送量などを指標候補にする。Daily Efficiency Improverは測定可能な変更を優先し、テスト実行のうえ、根拠とトレードオフ付きのドラフトPRを作成できる。"
+  ],
+  "significance": "効率化を通常の開発作業として進めたい開発者、レビュー責任を負う保守担当者、CI/CDやAI利用で計算資源を消費するチームに関係する内容だ。調査では関心よりも実行手段の不足が課題であり、記事は測定・テスト・ドラフトPRを通じて仮説を検証し、人間が採否を決める運用を示しているため、持続可能性の議論を既存のエンジニアリングの意思決定に結び付けやすくする。",
+  "summaryEn": "A joint GitHub and Yale Program on Climate Change Communication survey found that 1,039 GitHub users care strongly about software efficiency but often lack a practical way to find wasted compute, measure improvements, and justify fixes. 80% wanted tools for writing more energy-efficient code, 78% wanted best practices for reducing software’s environmental footprint, and 74% wanted ways to measure the environmental impact of their software or development process. The article argues for targeting measurable waste and using GitHub Agentic Workflows’ Daily Efficiency Improver to surface candidates while leaving final decisions to maintainers.",
+  "keyPointsEn": [
+    "The survey found strong concern about climate change and AI’s environmental impact: 79% were worried about global warming, 71% were concerned about the environmental impact of AI systems, and 75% said it was important for their employer to reduce its environmental impact.",
+    "GitHub users in the survey showed more concern about climate change than U.S. adults overall, with 86% vs. 68% saying global warming is happening and 79% vs. 66% saying they are worried about it. However, the sample was a non-probability group of GitHub users who had opted in to marketing emails, so it should not be treated as representative of all developers.",
+    "Only 10% of respondents said the way they develop software has a large effect on reducing their personal environmental impact, and 63% said the effect is small, yet interest remained high in efficiency tools, measurement, and contributing to sustainability-focused open source projects.",
+    "In open-ended responses, developers asked for help estimating the footprint of repositories and CI/CD workflows, finding unnecessary GitHub Actions runs, improving code efficiency, and comparing AI use with other sources of compute demand; some also warned that environmental claims need evidence.",
+    "The practical guidance is to look for waste across code, data, network/I/O, and frontend work, and to use metrics such as execution time, CPU use, memory allocation, and network transfer size as proxies. Daily Efficiency Improver prioritizes measurable changes, runs tests, and can open draft pull requests with evidence and trade-offs."
+  ],
+  "significanceEn": "This matters to developers who want to make efficiency part of normal engineering work, to maintainers responsible for review decisions, and to teams consuming compute through CI/CD and AI usage. The survey shows the main gap is not interest but a lack of practical execution paths, and the article outlines a process built around measurement, testing, and draft pull requests so humans can judge whether a proposed change belongs in the codebase."
+}

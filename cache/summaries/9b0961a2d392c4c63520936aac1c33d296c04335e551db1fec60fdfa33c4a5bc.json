@@ -1,0 +1,18 @@
+{
+  "summary": "GitHub CopilotのInline Suggestionsは、補完のゴーストテキスト、カーソル近くのnext edit suggestions、離れた編集を1つの「3-in-1」モデルに統合した。記事では、モデル学習に加えてクライアント側の表示・キャッシュ・抑制挙動を見直し、オンライン実験で却下率を10.1%下げつつ主要指標の有意な悪化を出さなかった経緯を説明している。統合版はVS Codeで有料のGitHub Copilotユーザー向けに提供中で、最新のVS Codeに更新しnext edit suggestionsを有効にする必要がある。",
+  "keyPoints": [
+    "従来は別モデルだった補完、NES、離れた編集を統合し、1回のリクエストで最適な編集や連続した編集を返せる設計にした。これによりモデル呼び出しと配信の複雑さを減らした。",
+    "v4では補完データを加えて3-in-1モデルを学習したが、accumulated retained charactersにわずかな有意回帰が見つかった。v5では長めの出力向けデータの重み付けとghost text completeness用の補助グレーダーを追加し、この問題の縮小を狙った。",
+    "クライアント挙動の見直しが大きく効き、無視されたゴーストテキストがカーソル移動後にNESとして再表示される挙動を抑制したところ、却下率は+15.9%増から-10.1%減へと26%分改善した。あわせて speculative decoding、progressive reveal、diff-based edit rendering など5つの最適化を組み合わせた。",
+    "最終的なオンライン結果では、カーソル位置のゴーストテキスト比率が対照より13%低いにもかかわらず、主要指標の有意な悪化なしに却下率が10.1%低下した。統合版は現在、VS Codeの有料GitHub Copilotユーザーが利用できる。"
+  ],
+  "significance": "VS CodeでGitHub Copilotを使う有料ユーザーにとっては、現在行っている入力補完からファイル内の追随編集までを単一モデルが状況に応じて出し分けるため、より一貫したインライン編集体験につながる。さらに、無視した提案の再浮上を抑えるなど、結果はモデル単体の性能だけでなく表示方法やキャッシュなどのクライアント設計にも大きく左右されることを示している。",
+  "summaryEn": "GitHub Copilot Inline Suggestions has been moved to a unified 3-in-1 model that combines ghost-text completions, next edit suggestions near the cursor, and farther-away edits. The post explains how training changes plus client-side work on rendering, caching, and suppression behavior led to a 10.1% drop in dismissals in online experiments without statistically significant regressions in key metrics. The unified experience is now available to paid GitHub Copilot users in VS Code, with the latest VS Code and next edit suggestions enabled.",
+  "keyPointsEn": [
+    "What used to be separate models for completions, NES, and farther-away edits was unified so a single request can choose the best edit or chain multiple edits, reducing model calls and serving complexity.",
+    "For v4, the team added completion data to train the 3-in-1 model, but saw a marginally significant regression in accumulated retained characters. In v5, they upweighted longer-output data and added an auxiliary grader for ghost-text completeness to address that regression.",
+    "Client behavior changes mattered heavily: suppressing ignored ghost text from resurfacing as NES after cursor movement shifted dismissal rate from a 15.9% increase to a 10.1% decrease, a 26% swing. The team also combined five client-side optimizations including speculative decoding, progressive reveal, and diff-based edit rendering.",
+    "In online results, the unified model reduced dismissals by 10.1% with no statistically significant regressions in key metrics even though it showed 13% less ghost text at the cursor. The unified experience is available now for paid GitHub Copilot users in VS Code."
+  ],
+  "significanceEn": "For paid GitHub Copilot users in VS Code, this means inline editing is handled more coherently across immediate completions and follow-up edits, while unwanted suggestions are less likely to reappear after being ignored. The article also shows that outcomes depend not only on model quality but on client choices such as rendering, caching, and other client behavior."
+}

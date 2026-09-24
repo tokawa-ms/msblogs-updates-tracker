@@ -1,0 +1,231 @@
+{
+  "date": "2026-09-24",
+  "compared_with": "2026-09-23",
+  "source_count": 6,
+  "new_count": 8,
+  "removed_count": 2,
+  "new_articles": [
+    {
+      "id": "0f1a07da5479caba",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "Rendering huge pull requests in the GitHub Copilot app",
+      "url": "https://github.blog/engineering/user-experience/rendering-huge-pull-requests-in-the-github-copilot-app/",
+      "published_at": "2026-09-23T18:29:49.000Z",
+      "summary": "How we rebuilt the diff surface in the GitHub Copilot app to open a million-line pull request with hundreds of inline review comments.\nThe post Rendering huge pull requests in the GitHub Copilot app appeared first on The GitHub Blog.",
+      "fetched_at": "2026-09-24T01:15:50.960Z"
+    },
+    {
+      "id": "8aa9c39b3a9624b8",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "Developers want more efficient software. Here’s what over 1000 GitHub users told us they need.",
+      "url": "https://github.blog/news-insights/research/developers-want-more-efficient-software-heres-what-over-1000-github-users-told-us-they-need/",
+      "published_at": "2026-09-23T13:00:00.000Z",
+      "summary": "New research from GitHub and Yale Program on Climate Change Communication finds strong demand for tools, measurement, and practical guidance that can help developers reduce wasted compute.\nThe post Developers want more efficient software. Here’s what over 1000 GitHub users told us they need. appeared first on The GitHub Blog.",
+      "fetched_at": "2026-09-24T01:15:50.960Z"
+    },
+    {
+      "id": "958c3483761172ad",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "Building the new GitHub Copilot Inline Suggestions Model: Part Two",
+      "url": "https://code.visualstudio.com/blogs/2026/09/23/building-the-github-copilot-inline-suggestions-model-part-two",
+      "published_at": "2026-09-23T00:00:00.000Z",
+      "summary": "See how GitHub Copilot added completions to its unified inline suggestions model, refined ghost text and editor behavior, and improved user satisfaction.\nRead the full article",
+      "fetched_at": "2026-09-24T01:15:50.989Z"
+    },
+    {
+      "id": "b7ee04c92c6213bb",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "Building docfind: Fast Client-Side Search with Rust and WebAssembly",
+      "url": "https://code.visualstudio.com/blogs/2026/01/15/docfind",
+      "published_at": "2026-01-15T00:00:00.000Z",
+      "summary": "How we built docfind, a high-performance client-side search engine using Rust and WebAssembly, and how GitHub Copilot accelerated development.\nRead the full article",
+      "fetched_at": "2026-09-24T01:15:50.989Z"
+    },
+    {
+      "id": "77eb2a33c46983c3",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "Introducing the VS Code Insiders Podcast",
+      "url": "https://code.visualstudio.com/blogs/2025/12/03/introducing-vs-code-insiders-podcast",
+      "published_at": "2025-12-03T00:00:00.000Z",
+      "summary": "The VS Code Insiders Podcast is your insider's guide to the features, decisions, and people shaping the future of Visual Studio Code.\nRead the full article",
+      "fetched_at": "2026-09-24T01:15:50.989Z"
+    },
+    {
+      "id": "57011fa557caf1c6",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "Introducing the Visual Studio Code Private Marketplace: Your Team's Secure, Curated Extension Hub 🎉",
+      "url": "https://code.visualstudio.com/blogs/2025/11/18/PrivateMarketplace",
+      "published_at": "2025-11-18T00:00:00.000Z",
+      "summary": "Private Marketplace for VS Code extensions now generally available.\nRead the full article",
+      "fetched_at": "2026-09-24T01:15:50.989Z"
+    },
+    {
+      "id": "3493e31daa3ce4ec",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "Open Source AI Editor: Second Milestone",
+      "url": "https://code.visualstudio.com/blogs/2025/11/04/openSourceAIEditorSecondMilestone",
+      "published_at": "2025-11-06T00:00:00.000Z",
+      "summary": "Ghost text suggestions are now open source as part of the Copilot Chat extension - the second milestone in making VS Code an open source AI editor.\nRead the full article",
+      "fetched_at": "2026-09-24T01:15:50.990Z"
+    },
+    {
+      "id": "f57c0e162da4f835",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "A Unified Experience for all Coding Agents",
+      "url": "https://code.visualstudio.com/blogs/2025/11/03/unified-agent-experience",
+      "published_at": "2025-11-05T00:00:00.000Z",
+      "summary": "Agents took over VS Code in 2025. We released agent mode for VS Code, integration for the Copilot coding agent, and the new GitHub Copilot CLI. But Copilot is not the only agent game in town. There are now more coding agents than ever, including options from OpenAI and Anthropic.\nRead the full article",
+      "fetched_at": "2026-09-24T01:15:50.990Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "fabric-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "github-blog": {
+      "new_count": 2,
+      "removed_count": 2,
+      "new_articles": [
+        {
+          "id": "0f1a07da5479caba",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "Rendering huge pull requests in the GitHub Copilot app",
+          "url": "https://github.blog/engineering/user-experience/rendering-huge-pull-requests-in-the-github-copilot-app/",
+          "published_at": "2026-09-23T18:29:49.000Z",
+          "summary": "How we rebuilt the diff surface in the GitHub Copilot app to open a million-line pull request with hundreds of inline review comments.\nThe post Rendering huge pull requests in the GitHub Copilot app appeared first on The GitHub Blog.",
+          "fetched_at": "2026-09-24T01:15:50.960Z"
+        },
+        {
+          "id": "8aa9c39b3a9624b8",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "Developers want more efficient software. Here’s what over 1000 GitHub users told us they need.",
+          "url": "https://github.blog/news-insights/research/developers-want-more-efficient-software-heres-what-over-1000-github-users-told-us-they-need/",
+          "published_at": "2026-09-23T13:00:00.000Z",
+          "summary": "New research from GitHub and Yale Program on Climate Change Communication finds strong demand for tools, measurement, and practical guidance that can help developers reduce wasted compute.\nThe post Developers want more efficient software. Here’s what over 1000 GitHub users told us they need. appeared first on The GitHub Blog.",
+          "fetched_at": "2026-09-24T01:15:50.960Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "1738353f28d07e4a",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "How we make AI coding more cost efficient without sacrificing task quality",
+          "url": "https://github.blog/ai-and-ml/github-copilot/how-we-make-ai-coding-more-cost-efficient-without-sacrificing-task-quality/",
+          "published_at": "2026-09-02T18:00:00.000Z",
+          "summary": "Why shorter outputs can cost more, and how GitHub Copilot reduces wasted work across the complete coding task.\nThe post How we make AI coding more cost efficient without sacrificing task quality appeared first on The GitHub Blog.",
+          "fetched_at": "2026-09-23T01:21:17.834Z"
+        },
+        {
+          "id": "82080db91ac8d733",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "OpenClaw went viral. Meet the maintainers building and securing it.",
+          "url": "https://github.blog/open-source/maintainers/openclaw-went-viral-meet-the-maintainers-building-and-securing-it/",
+          "published_at": "2026-08-27T16:00:00.000Z",
+          "summary": "OpenClaw is the fastest-growing project in GitHub history. Peter Steinberger and several maintainers share what they learned in the project's first six months.\nThe post OpenClaw went viral. Meet the maintainers building and securing it. appeared first on The GitHub Blog.",
+          "fetched_at": "2026-09-23T01:21:17.834Z"
+        }
+      ]
+    },
+    "m365-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 6,
+      "removed_count": 0,
+      "new_articles": [
+        {
+          "id": "958c3483761172ad",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Building the new GitHub Copilot Inline Suggestions Model: Part Two",
+          "url": "https://code.visualstudio.com/blogs/2026/09/23/building-the-github-copilot-inline-suggestions-model-part-two",
+          "published_at": "2026-09-23T00:00:00.000Z",
+          "summary": "See how GitHub Copilot added completions to its unified inline suggestions model, refined ghost text and editor behavior, and improved user satisfaction.\nRead the full article",
+          "fetched_at": "2026-09-24T01:15:50.989Z"
+        },
+        {
+          "id": "b7ee04c92c6213bb",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Building docfind: Fast Client-Side Search with Rust and WebAssembly",
+          "url": "https://code.visualstudio.com/blogs/2026/01/15/docfind",
+          "published_at": "2026-01-15T00:00:00.000Z",
+          "summary": "How we built docfind, a high-performance client-side search engine using Rust and WebAssembly, and how GitHub Copilot accelerated development.\nRead the full article",
+          "fetched_at": "2026-09-24T01:15:50.989Z"
+        },
+        {
+          "id": "77eb2a33c46983c3",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Introducing the VS Code Insiders Podcast",
+          "url": "https://code.visualstudio.com/blogs/2025/12/03/introducing-vs-code-insiders-podcast",
+          "published_at": "2025-12-03T00:00:00.000Z",
+          "summary": "The VS Code Insiders Podcast is your insider's guide to the features, decisions, and people shaping the future of Visual Studio Code.\nRead the full article",
+          "fetched_at": "2026-09-24T01:15:50.989Z"
+        },
+        {
+          "id": "57011fa557caf1c6",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Introducing the Visual Studio Code Private Marketplace: Your Team's Secure, Curated Extension Hub 🎉",
+          "url": "https://code.visualstudio.com/blogs/2025/11/18/PrivateMarketplace",
+          "published_at": "2025-11-18T00:00:00.000Z",
+          "summary": "Private Marketplace for VS Code extensions now generally available.\nRead the full article",
+          "fetched_at": "2026-09-24T01:15:50.989Z"
+        },
+        {
+          "id": "3493e31daa3ce4ec",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Open Source AI Editor: Second Milestone",
+          "url": "https://code.visualstudio.com/blogs/2025/11/04/openSourceAIEditorSecondMilestone",
+          "published_at": "2025-11-06T00:00:00.000Z",
+          "summary": "Ghost text suggestions are now open source as part of the Copilot Chat extension - the second milestone in making VS Code an open source AI editor.\nRead the full article",
+          "fetched_at": "2026-09-24T01:15:50.990Z"
+        },
+        {
+          "id": "f57c0e162da4f835",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "A Unified Experience for all Coding Agents",
+          "url": "https://code.visualstudio.com/blogs/2025/11/03/unified-agent-experience",
+          "published_at": "2025-11-05T00:00:00.000Z",
+          "summary": "Agents took over VS Code in 2025. We released agent mode for VS Code, integration for the Copilot coding agent, and the new GitHub Copilot CLI. But Copilot is not the only agent game in town. There are now more coding agents than ever, including options from OpenAI and Anthropic.\nRead the full article",
+          "fetched_at": "2026-09-24T01:15:50.990Z"
+        }
+      ],
+      "removed_articles": []
+    }
+  },
+  "diff_result": true
+}

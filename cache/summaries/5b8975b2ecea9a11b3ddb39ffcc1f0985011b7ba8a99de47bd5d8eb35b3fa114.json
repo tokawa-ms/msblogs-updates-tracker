@@ -1,0 +1,18 @@
+{
+  "summary": "docfindは、VS Codeドキュメントサイトの検索を従来の検索エンジンへのリダイレクト型から、WebAssemblyでブラウザー内だけで動く即時検索へ置き換えた。Rust製CLIが文書JSONからRAKEでキーワードを抽出し、FSTとFSSTで圧縮した索引を単一のWASMモジュールに埋め込む構成で、記事ではその実装経緯とWASMバイナリを後からパッチする手法を説明している。現在はVS Codeサイトで使われており、索引サイズは未圧縮約5.9MB、Brotli圧縮で約2.7MB、検索は約0.4ms/クエリとしている。",
+  "keyPoints": [
+    "docfindは、documents.jsonにあるタイトル、カテゴリ、URL、本文を読み込み、RAKEでキーワード抽出、FSTでキーワード索引、FSSTで文字列圧縮を行って索引を構築するCLIとして設計された。",
+    "索引は別ファイルではなく検索ライブラリのWASMモジュールに直接埋め込まれ、事前コンパイル済みテンプレートに対してCLIがデータセグメント追加やグローバル値の書き換えを行う。",
+    "クライアント側の検索では、Levenshtein automatonによるタイプミス許容とprefix matchingを使い、複数キーワードのスコアを合算し、必要な文字列だけを展開して順位付き結果を返す。",
+    "VS Codeサイトでは約3MBのMarkdownを約3,700文書に分割したデータで、索引サイズは未圧縮約5.9MB、Brotli圧縮約2.7MB、検索は約0.4ms/クエリとされる。docfindは静的サイトで利用できるが、検索結果を表示するクライアント側UIは自前で用意する必要がある。"
+  ],
+  "significance": "VS Codeドキュメント利用者にとっては、検索意図があるときだけ単一のWASMモジュールを取得し、ブラウザー内で即時検索できる点が影響する。静的サイト運営者にとっても、サーバーやAPIキーなしでクライアント側検索を構成できる実例だが、結果表示UIは別途必要である。",
+  "summaryEn": "docfind replaced the VS Code documentation site's old redirect-based search with near-instant search that runs entirely in the browser via WebAssembly. A Rust CLI builds an index from document JSON using RAKE, FST, and FSST, then embeds that index into a single WASM module; the article explains both that architecture and the technique for patching the WASM binary afterward. It is now used on the VS Code site, with an index of about 5.9 MB uncompressed, about 2.7 MB with Brotli, and claimed search latency of about 0.4 ms per query.",
+  "keyPointsEn": [
+    "docfind was designed as a CLI that reads document titles, categories, URLs, and body text from documents.json, extracts keywords with RAKE, builds a keyword index with FST, and compresses strings with FSST.",
+    "Instead of shipping the index as a separate file, it embeds the index directly into the search library's WASM module, with the CLI adding a data segment and patching global values in a precompiled template.",
+    "On the client side, search uses a Levenshtein automaton for typo tolerance and prefix matching, combines scores from multiple keywords, and decompresses only the needed strings to return ranked results.",
+    "For the VS Code site, using about 3 MB of Markdown split into about 3,700 documents, the index is about 5.9 MB uncompressed and about 2.7 MB with Brotli, with claimed search speed of about 0.4 ms per query. docfind can be used for static sites, but the client-side UI for displaying results must be provided separately."
+  ],
+  "significanceEn": "For VS Code documentation users, this means search can be loaded only when they show intent to search and then run instantly in the browser from a single WASM module. For static site operators, it shows a way to provide client-side search without servers or API keys, although they still need to supply their own results UI."
+}
