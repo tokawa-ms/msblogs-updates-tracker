@@ -1,0 +1,232 @@
+{
+  "date": "2026-09-25",
+  "compared_with": "2026-09-24",
+  "source_count": 6,
+  "new_count": 6,
+  "removed_count": 6,
+  "new_articles": [
+    {
+      "id": "cc00b97f83044944",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "Your architecture diagram is not your resilience",
+      "url": "https://azure.microsoft.com/en-us/blog/your-architecture-diagram-is-not-your-resilience/",
+      "published_at": "2026-09-23T16:00:00.000Z",
+      "summary": "For years, resilience was something you set up once. That kept the lights on, but it treated resilience as a project with an end date rather than a property you maintain.\nThe post Your architecture diagram is not your resilience appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-09-25T01:18:39.426Z"
+    },
+    {
+      "id": "443300f133d68284",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "Designing agent-first platforms: What changes when agents do the work",
+      "url": "https://azure.microsoft.com/en-us/blog/designing-agent-first-platforms-what-changes-when-agents-do-the-work/",
+      "published_at": "2026-09-23T15:00:00.000Z",
+      "summary": "The organizations pulling ahead are not simply adding AI to what they already have. They are designing for a different kind of software.\nThe post Designing agent-first platforms: What changes when agents do the work appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-09-25T01:18:39.426Z"
+    },
+    {
+      "id": "dd3c176ae5526b3e",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "GPT-6 Astra, Sol, and Luna: For production agents in Microsoft Foundry",
+      "url": "https://azure.microsoft.com/en-us/blog/gpt-6-astra-sol-and-luna-for-production-agents-in-microsoft-foundry/",
+      "published_at": "2026-09-22T18:30:00.000Z",
+      "summary": "Explore GPT-6 Astra, Sol, and GPT-6 Luna in Microsoft Foundry, with scalable model options for production AI agents, complex workflows, and high-volume tasks.\nThe post GPT-6 Astra, Sol, and Luna: For production agents in Microsoft Foundry appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-09-25T01:18:39.426Z"
+    },
+    {
+      "id": "7663b51ef99ebb29",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "Claude Opus 5.5 comes to Microsoft Foundry for long-running coding and knowledge work",
+      "url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/claude-opus-5-5-comes-to-microsoft-foundry-for-long-running-coding-and-knowledge/4558051",
+      "published_at": "2026-09-22T17:00:25.000Z",
+      "summary": "AI models are increasingly taking on work that extends far beyond a single prompt: building a feature across a codebase, investigating a complex issue, synthesizing hundreds of pages of information, or working through a multi-step business process.\nThe post Claude Opus 5.5 comes to Microsoft Foundry for long-running coding and knowledge work appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-09-25T01:18:39.426Z"
+    },
+    {
+      "id": "3d14844898469c56",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "When chat is the wrong UI",
+      "url": "https://github.blog/ai-and-ml/github-copilot/when-chat-is-the-wrong-ui/",
+      "published_at": "2026-09-24T20:00:00.000Z",
+      "summary": "What is a developer to do when they need something more tangible than a chat box? Enter canvases.\nThe post When chat is the wrong UI appeared first on The GitHub Blog.",
+      "fetched_at": "2026-09-25T01:18:39.327Z"
+    },
+    {
+      "id": "4431c738b4b1e8a1",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "AI-powered fuzzing with the GitHub Security Lab Taskflow Agent",
+      "url": "https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent/",
+      "published_at": "2026-09-24T18:26:12.000Z",
+      "summary": "In this blog post, I explain how to use the new fuzzing taskflow based on the GitHub Security Lab Taskflow Agent AI framework. \nThe post AI-powered fuzzing with the GitHub Security Lab Taskflow Agent appeared first on The GitHub Blog.",
+      "fetched_at": "2026-09-25T01:18:39.327Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 4,
+      "removed_count": 4,
+      "new_articles": [
+        {
+          "id": "cc00b97f83044944",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Your architecture diagram is not your resilience",
+          "url": "https://azure.microsoft.com/en-us/blog/your-architecture-diagram-is-not-your-resilience/",
+          "published_at": "2026-09-23T16:00:00.000Z",
+          "summary": "For years, resilience was something you set up once. That kept the lights on, but it treated resilience as a project with an end date rather than a property you maintain.\nThe post Your architecture diagram is not your resilience appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-09-25T01:18:39.426Z"
+        },
+        {
+          "id": "443300f133d68284",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Designing agent-first platforms: What changes when agents do the work",
+          "url": "https://azure.microsoft.com/en-us/blog/designing-agent-first-platforms-what-changes-when-agents-do-the-work/",
+          "published_at": "2026-09-23T15:00:00.000Z",
+          "summary": "The organizations pulling ahead are not simply adding AI to what they already have. They are designing for a different kind of software.\nThe post Designing agent-first platforms: What changes when agents do the work appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-09-25T01:18:39.426Z"
+        },
+        {
+          "id": "dd3c176ae5526b3e",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "GPT-6 Astra, Sol, and Luna: For production agents in Microsoft Foundry",
+          "url": "https://azure.microsoft.com/en-us/blog/gpt-6-astra-sol-and-luna-for-production-agents-in-microsoft-foundry/",
+          "published_at": "2026-09-22T18:30:00.000Z",
+          "summary": "Explore GPT-6 Astra, Sol, and GPT-6 Luna in Microsoft Foundry, with scalable model options for production AI agents, complex workflows, and high-volume tasks.\nThe post GPT-6 Astra, Sol, and Luna: For production agents in Microsoft Foundry appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-09-25T01:18:39.426Z"
+        },
+        {
+          "id": "7663b51ef99ebb29",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Claude Opus 5.5 comes to Microsoft Foundry for long-running coding and knowledge work",
+          "url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/claude-opus-5-5-comes-to-microsoft-foundry-for-long-running-coding-and-knowledge/4558051",
+          "published_at": "2026-09-22T17:00:25.000Z",
+          "summary": "AI models are increasingly taking on work that extends far beyond a single prompt: building a feature across a codebase, investigating a complex issue, synthesizing hundreds of pages of information, or working through a multi-step business process.\nThe post Claude Opus 5.5 comes to Microsoft Foundry for long-running coding and knowledge work appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-09-25T01:18:39.426Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "5565711fec830608",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Enterprise AI transformation relies on the end-to-end platform: Azure was built for this moment",
+          "url": "https://azure.microsoft.com/en-us/blog/enterprise-ai-transformation-relies-on-the-end-to-end-platform-azure-was-built-for-this-moment/",
+          "published_at": "2026-09-03T19:00:00.000Z",
+          "summary": "The recognition for Microsoft over the past couple of weeks comes down to models, infrastructure, data, applications, and developer tools working as one system when AI moves into production.\nThe post Enterprise AI transformation relies on the end-to-end platform: Azure was built for this moment appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-09-24T01:15:51.094Z"
+        },
+        {
+          "id": "da38a0a8e3455f5f",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "GPT-6 Astra: Frontier intelligence for work, now generally available in Microsoft Foundry",
+          "url": "https://azure.microsoft.com/en-us/blog/gpt-6-astra-frontier-intelligence-for-work-now-generally-available-in-microsoft-foundry/",
+          "published_at": "2026-09-03T18:15:00.000Z",
+          "summary": "GPT-6 Astra, OpenAI's newest frontier model, begins rolling out today through the Microsoft Foundry Limited Access Program, with availability expanding to participating customers over the coming days.\nThe post GPT-6 Astra: Frontier intelligence for work, now generally available in Microsoft Foundry appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-09-24T01:15:51.094Z"
+        },
+        {
+          "id": "dfa436e77cd218f4",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "How Microsoft’s Physical Security Engineering Team scaled hybrid operations with Azure Arc and Azure Virtual Desktop",
+          "url": "https://azure.microsoft.com/en-us/blog/how-microsofts-physical-security-engineering-team-scaled-hybrid-operations-with-azure-arc-and-azure-virtual-desktop/",
+          "published_at": "2026-09-03T15:00:00.000Z",
+          "summary": "Learn how Microsoft used Azure Arc and Azure Virtual Desktop to simplify hybrid security operations, improve visibility, and scale globally.\nThe post How Microsoft’s Physical Security Engineering Team scaled hybrid operations with Azure Arc and Azure Virtual Desktop appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-09-24T01:15:51.094Z"
+        },
+        {
+          "id": "567188de284c26a2",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "The Economics of Agent Optimization: Context engineering for enterprise AI agents",
+          "url": "https://azure.microsoft.com/en-us/blog/the-economics-of-agent-optimization-context-engineering-for-enterprise-ai-agents/",
+          "published_at": "2026-09-02T16:00:00.000Z",
+          "summary": "AI cost optimization goes beyond model selection. Discover how context engineering in Microsoft Foundry helps lower AI costs by improving knowledge retrieval, tool selection, memory, and agent performance at scale.\nThe post The Economics of Agent Optimization: Context engineering for enterprise AI agents appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-09-24T01:15:51.094Z"
+        }
+      ]
+    },
+    "fabric-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "github-blog": {
+      "new_count": 2,
+      "removed_count": 2,
+      "new_articles": [
+        {
+          "id": "3d14844898469c56",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "When chat is the wrong UI",
+          "url": "https://github.blog/ai-and-ml/github-copilot/when-chat-is-the-wrong-ui/",
+          "published_at": "2026-09-24T20:00:00.000Z",
+          "summary": "What is a developer to do when they need something more tangible than a chat box? Enter canvases.\nThe post When chat is the wrong UI appeared first on The GitHub Blog.",
+          "fetched_at": "2026-09-25T01:18:39.327Z"
+        },
+        {
+          "id": "4431c738b4b1e8a1",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "AI-powered fuzzing with the GitHub Security Lab Taskflow Agent",
+          "url": "https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent/",
+          "published_at": "2026-09-24T18:26:12.000Z",
+          "summary": "In this blog post, I explain how to use the new fuzzing taskflow based on the GitHub Security Lab Taskflow Agent AI framework. \nThe post AI-powered fuzzing with the GitHub Security Lab Taskflow Agent appeared first on The GitHub Blog.",
+          "fetched_at": "2026-09-25T01:18:39.327Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "3096b36f6056d24c",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "GitHub Copilot app for Beginners: Run several agents at once",
+          "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-run-several-agents-at-once/",
+          "published_at": "2026-09-03T16:00:00.000Z",
+          "summary": "Learn how to run parallel agents in the GitHub Copilot app, and experience the moment it stops feeling scary and starts feeling powerful.\nThe post GitHub Copilot app for Beginners: Run several agents at once appeared first on The GitHub Blog.",
+          "fetched_at": "2026-09-24T01:15:50.960Z"
+        },
+        {
+          "id": "407299432d9998ec",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "Decoding the new AI lingo: Loops, harnesses, squads, hill climbing… oh my!",
+          "url": "https://github.blog/ai-and-ml/decoding-the-new-ai-lingo-loops-harnesses-squads-hill-climbing-oh-my/",
+          "published_at": "2026-09-02T21:00:00.000Z",
+          "summary": "From loop engineering to harnesses, squads, and open weights, the GitHub Podcast breaks down the AI terms showing up in developer conversations.\nThe post Decoding the new AI lingo: Loops, harnesses, squads, hill climbing… oh my! appeared first on The GitHub Blog.",
+          "fetched_at": "2026-09-24T01:15:50.960Z"
+        }
+      ]
+    },
+    "m365-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    }
+  },
+  "diff_result": true
+}

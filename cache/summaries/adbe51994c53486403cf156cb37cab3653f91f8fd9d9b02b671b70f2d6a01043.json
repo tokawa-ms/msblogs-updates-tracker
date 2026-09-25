@@ -1,0 +1,18 @@
+{
+  "summary": "Azure Infrastructure Resiliency Managerはパブリックプレビューとして、アプリごとの回復性目標の定義、設計との差分把握、復旧経路の検証を支援する位置付けが示された。記事は、可用性ゾーンやリージョン冗長を描いた設計図だけでは現在の回復性の証明にならず、変更やAIモデルなどの依存関係によって実態が静かにずれると指摘する。AzureはIaC生成、ヘルスモデル、フェイルオーバー検証、Chaos Studioなどを組み合わせ、回復性を継続的に測定・実証する運用への移行を訴えている。",
+  "keyPoints": [
+    "回復性の劣化は派手な障害ではなく変更に伴って起きやすく、記事は業界全体でクラウド障害の約70%が何らかの変更に関連すると述べる。このため設計時の対策だけでなく、カナリアやパイロットでの段階展開と監視を含む変更統制が重要だとしている。",
+    "設計図は現在の健全性、アプリにとっての回復性の定義、フェイルオーバー経路の実効性、描かれていないリソースを示せない。記事は、Azure Monitorのhealth modelsやサービスレベル指標でアプリ単位の状態を表し、テストでフェイルオーバー経路を実証すべきだと説明している。",
+    "AI時代の依存関係では、モデル消失だけでなく同じ問いに毎回違う答えを返す確率的な振る舞い自体が新たなドリフト要因になる。プロンプトやモデル、ハーネス変更も通常の変更管理対象とし、可能な限り決定的な検証や第二のエージェントによる対抗レビューを使っても、最終責任は人間に残るとしている。",
+    "実運用では、ワークロードごとにRTOとRPOを明示し、可用性ゾーンによるリージョン内高可用性と、二次リージョンによるディザスターリカバリーを別のリスクとして設計する必要がある。記事はさらに、回復性はコスト判断でもあり、Azure Infrastructure Resiliency Managerのプレビューでは、設計時のIaC生成、差分の特定、VM向けzone-down drillやChaos Studioなどでの検証を支援するとしている。"
+  ],
+  "significance": "多数のワークロードを抱える運用チーム、とくにグローバル環境や主権・規制環境をまたぐ組織にとって重要な内容だ。記事は、設計意図と実運用のずれがインシデント時まで見えにくく、暗号鍵やAIサービスのような隠れた依存関係も復旧を妨げ得るため、単なる設計図ではなく継続的な測定と証明が必要だと示している。DORAのように回復性の立証が求められる文脈でも、その必要性が強調されている。",
+  "summaryEn": "Azure Infrastructure Resiliency Manager is positioned in public preview to help teams define resiliency goals per application, detect gaps between design and reality, and validate recovery paths. The article argues that diagrams showing availability zones or regional redundancy do not prove current resilience, because ordinary changes and dependencies such as AI models can quietly introduce drift. Azure advocates combining generated IaC, health models, failover validation, and Chaos Studio to continuously measure and prove resilience.",
+  "keyPointsEn": [
+    "Resilience degradation often comes from ordinary change rather than dramatic failure, and the article says roughly 70% of cloud outages across the industry are related to change in some way. That makes change discipline, including staged rollout through canary and pilot regions with monitoring, as important as the original design.",
+    "A diagram cannot show current health, what resilience means for a given application, whether the failover path actually works, or resources nobody drew. The article says teams should use health models in Azure Monitor and service level indicators to express application health, and use testing to prove failover paths.",
+    "In the AI era, risk is not only model disappearance but also probabilistic behavior, where the same question can get different answers. Changes to prompts, models, or harnesses should be treated like normal software changes, with deterministic checks where possible or adversarial review by a second agent, while human accountability remains unchanged.",
+    "In operations, teams should set explicit RTO and RPO per workload and treat intra-region high availability with availability zones separately from disaster recovery with a secondary region. The article also says resilience is a cost decision, and that Azure Infrastructure Resiliency Manager preview supports IaC generation at design time, gap identification, and validation through VM zone-down drills and tools such as Chaos Studio."
+  ],
+  "significanceEn": "This matters to operations teams managing many workloads, especially across global, sovereign, or regulated environments. The article argues that drift between intended design and actual operation is hard to see until an incident, and that hidden dependencies such as encryption keys or AI services can block recovery, so teams need continuous measurement and proof rather than diagrams alone. It is especially relevant where frameworks such as DORA require organizations to prove resilience rather than merely claim it."
+}
