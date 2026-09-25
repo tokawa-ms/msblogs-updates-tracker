@@ -1,0 +1,18 @@
+{
+  "summary": "GPT-6 SolとGPT-6 LunaがMicrosoft Foundryの一般提供ラインアップに加わり、Astraを含むGPT-6系の本番向け選択肢が広がった。Solは一般的な本番AIエージェントや複雑な知識業務向け、Lunaは抽出・要約・リクエスト振り分けなど高ボリューム処理向けとして位置付けられる。あわせて展開先、価格、ガードレールや監視を含む運用面も示され、Azure上で評価から本番運用まで設計しやすい構成が打ち出された。",
+  "keyPoints": [
+    "GPT-6 SolとGPT-6 LunaはMicrosoft Foundryで一般提供になった。Microsoftは、要求の高い推論にはGPT-6 Astraから始めることを勧め、Solを一般用途の本番向け、Lunaを高ボリューム処理向けに位置付けている。",
+    "提供形態は細かく分かれており、Standard deploymentはAstra/Sol/Lunaで全28のGlobalリージョンと米欧Data Zonesに対応する。Provisioned ThroughputはAstraとSolでGlobalおよび米欧Data Zones、Priority ProcessingはSolでGlobalとUS Data Zonesに提供される。",
+    "価格表では、Global Standardの短コンテキストにおける100万トークン当たりの入力/出力単価はAstraが10ドル/50ドル、Solが2ドル/10ドル、Lunaが0.10ドル/0.50ドルと示された。Provisioned ThroughputとPriority Processingの価格は配備方式で変動し、U.S. Data ZoneはGlobalより10%高い。",
+    "安全性と運用管理では、モデル自体の安全学習に加え、入出力のコンテンツフィルターとガードレール、ツール呼び出しに対するプロンプトインジェクション対策、IDとアクセス制御、Purview、評価・トレース・監視を組み合わせる構成が説明されている。"
+  ],
+  "significance": "Microsoft Foundry上で本番エージェントを設計・運用する企業チームにとって重要で、複雑な判断を伴う業務と定型の大量処理で別のモデルを選び分けられるようになる。さらに、処理場所要件、応答性、予約容量、安全管理の要件を持つ組織は、GlobalやData Zone、Priority Processing、Provisioned Throughputを比較しながら、本番構成を証拠ベースで決めやすくなる。",
+  "summaryEn": "GPT-6 Sol and GPT-6 Luna have been added to the generally available Microsoft Foundry lineup, expanding the GPT-6 options for production agents alongside Astra. Sol is positioned for general production AI agents and complex knowledge work, while Luna targets high-volume tasks such as extraction, summarization, and request routing. The article also lays out deployment options, pricing, and operational controls including guardrails and monitoring, framing Azure as a path from evaluation to production.",
+  "keyPointsEn": [
+    "GPT-6 Sol and GPT-6 Luna are now generally available in Microsoft Foundry. Microsoft recommends starting with GPT-6 Astra for demanding reasoning, positioning Sol for general production use and Luna for high-volume workloads.",
+    "Deployment options are segmented: Standard deployment is available for Astra, Sol, and Luna across all 28 Global regions plus US and EU Data Zones. Provisioned Throughput is available for Astra and Sol across Global and US/EU Data Zones, while Priority Processing is available for Sol across Global and US Data Zones.",
+    "The pricing table lists Global Standard short-context input/output rates per million tokens at $10/$50 for Astra, $2/$10 for Sol, and $0.10/$0.50 for Luna. Pricing for Provisioned Throughput and Priority Processing varies by deployment type, and the U.S. Data Zone carries a 10% premium over Global.",
+    "For safety and operations, the article describes a stack combining built-in model safety training with content filters and guardrails for prompts and outputs, prompt-injection mitigation for tool calls, identity and access controls, Purview, and evaluation, tracing, and monitoring."
+  ],
+  "significanceEn": "This matters for enterprise teams designing and operating production agents on Microsoft Foundry because they can now choose different models for complex judgment-heavy work versus routine high-volume processing. It also gives organizations with processing-location, responsiveness, reserved-capacity, and safety requirements more concrete options to compare across Global, Data Zone, Priority Processing, and Provisioned Throughput when deciding on a production setup."
+}
