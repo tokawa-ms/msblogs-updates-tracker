@@ -1,0 +1,20 @@
+{
+  "summary": "Microsoft Foundryは、OpenAIのGPT-6ファミリー（GPT-6 Sol、GPT-6 Luna）とAnthropicのClaude Opus 5.5を追加し、エージェント向けのモデル選択肢を広げた。Foundry Agent Serviceでは、音声エージェントと長時間実行の回復性をいずれもパブリックプレビューとして投入し、同じ基盤・API・SDKで構築・運用できるようにした。さらに、本番トレースを使って品質・遅延・コストを継続改善する機能群も拡充した。",
+  "keyPoints": [
+    "Microsoft Foundryで、OpenAIのGPT-6ファミリー（GPT-6 Sol、GPT-6 Luna）とAnthropicのClaude Opus 5.5が利用可能になり、複数プロバイダーのモデルを自社データやワークロードで比較しやすくした。",
+    "Foundry Agent Serviceの音声エージェントはパブリックプレビューで、prompt agentとhosted agentの両方をサポートする。80超の言語と140超のロケールに対応し、Web、Microsoft Teams、Teams Phone、Twilioベースの音声チャネルへ展開できる。",
+    "長時間実行の回復性もFoundry Agent Serviceでパブリックプレビューとなり、接続が切れた後もhosted agentの処理を継続し、ホスト停止時の復旧を支援する。Microsoft Agent Frameworkは耐久チェックポイントからの再開を補完する。",
+    "ツール周りでは、Toolboxesがhosted agentで既にGA、prompt agent向けにはパブリックプレビューに拡大し、Tool searchはGAとなった。公開ベンチマークを使った社内評価では、50ツールのToolboxで入力トークン消費を60％超、1,000ツールで97％超削減したという。",
+    "運用改善ではInsights in Foundryがパブリックプレビューで、本番トレースから問題や原因を洗い出す。Agent optimizerは今月後半のGA予定で、指示・ツール・スキル・モデル選択の変更を検証できる。ガバナンス面ではEntra/Agent 365由来の操作を実行時に反映し、AI Gateway tierとの連携は10月にプレビュー予定とされた。"
+  ],
+  "significance": "複数ベンダーのモデルを比べつつ企業向けエージェントを本番運用したい開発者や運用チームにとって重要だ。Microsoftは、音声、長時間ジョブ、ツール接続、評価・最適化、統制を同じFoundry基盤にまとめることで、ばらばらの開発ツールやゲートウェイ、スケジューラを個別に組み合わせる負担を減らし、本番トレースを使って品質・遅延・コストを継続的に調整できるとしている。",
+  "summaryEn": "Microsoft Foundry expanded model choice for agents by adding OpenAI's GPT-6 family, including GPT-6 Sol and GPT-6 Luna, and Anthropic's Claude Opus 5.5. In Foundry Agent Service, it also introduced voice agents and long-running resilience in public preview so teams can build and operate them on the same platform, API, and SDK. It further expanded capabilities for continuously improving quality, latency, and cost using production traces.",
+  "keyPointsEn": [
+    "Microsoft Foundry now offers OpenAI's GPT-6 family, including GPT-6 Sol and GPT-6 Luna, and Anthropic's Claude Opus 5.5, making it easier to compare models from multiple providers against a team's own data and workloads.",
+    "Voice agents in Foundry Agent Service are in public preview and support both prompt agents and hosted agents. They cover more than 80 languages and 140 locales and can be deployed to web channels, Microsoft Teams, Teams Phone, and Twilio-based voice channels.",
+    "Long-running resilience is also in public preview for Foundry Agent Service, allowing hosted agents to continue work after a request disconnects and recover from hosting interruptions. Microsoft Agent Framework complements this with resume-from-checkpoint support.",
+    "For tools, Toolboxes are already generally available for hosted agents and are expanding to prompt agents in public preview, while Tool search is now generally available. In Microsoft's internal evaluation using a public benchmark, it reduced input token usage by more than 60% for a 50-tool toolbox and by over 97% for a 1,000-tool toolbox.",
+    "For operations, Insights in Foundry is in public preview and analyzes production traces to identify issues and likely causes. Agent optimizer is planned for general availability later this month to test changes across instructions, tools, skills, and model choice. On governance, Foundry now enforces operations originating in Entra and Agent 365 at runtime, and AI Gateway tier integration is planned for preview in October."
+  ],
+  "significanceEn": "This matters to developers and operations teams that want to run enterprise agents in production while comparing models from multiple vendors. Microsoft is positioning Foundry as a single foundation for voice, long-running jobs, tool connectivity, evaluation and optimization, and governance, reducing the need to stitch together separate developer tools, gateways, and schedulers while enabling ongoing tuning of quality, latency, and cost from production traces."
+}
