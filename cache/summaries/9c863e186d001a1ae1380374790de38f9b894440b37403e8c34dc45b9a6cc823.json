@@ -1,0 +1,18 @@
+{
+  "summary": "GitHub.comはUIスタイル基盤をCSS-in-JSからCSS Modulesへ段階移行し、2026年6月時点で100% CSS Modules運用になった。Primerでは2024年12月までに全コンポーネントの移行を終え、機能フラグと既存のビジュアルリグレッションテストを使って互換性を保ちながら展開した。記事では、Primer移行でサーバーサイドレンダリング時間55%減、コンポーネント初期化時間25%減、GitHub本体のsx削減でもページによって1%から22%のSSR改善が出たと説明している。",
+  "keyPoints": [
+    "Primerチームは、クラス名をデフォルトでローカル化でき、クライアント／サーバーのランタイム処理を不要にできる手法としてCSS Modulesを採用した。スタイルはJavaScript横のCSSファイルとして管理し、最終的にページのHTMLに含まれるスタイルシートとして配信する構成に変えた。",
+    "Primerの移行はコンポーネントごとに新旧スタイルを機能フラグで切り替え、既存のビジュアルリグレッションテストで同一性を確認しながら段階展開された。2024年12月までに全コンポーネント移行を完了し、SSR時間55%減、ページ上のコンポーネント初期化時間25%減という改善が示された。",
+    "GitHub本体では、styled-componentsに依存するsx propの削減が次の大仕事になった。2025年4月に約7,760個のsx prop削減から始まり、8人のエンジニアが6カ月で6,419個を移行し、ページによって1%から22%のSSR改善を観測、残る895個は2026年4月に2人のエンジニアとCopilot coding agentsで3週間で0にした。",
+    "完全撤去の最後の障害はテーマ機構で、GitHubは高コントラスト派生を含む7テーマをstyled-components経由で有効化していた。テーマ関連のJavaScript利用とユーティリティも段階移行し、最終的にdotcomからsx、styled-components、styled-systemを外したと述べている。"
+  ],
+  "significance": "この変更は、GitHub利用者にはページ描画とコンポーネント初期化の高速化として影響し、GitHubのフロントエンド開発者には大規模なスタイル基盤の置き換えを本番で段階的に進める運用例になっている。記事の記述では、7テーマと高コントラスト対応を維持したまま依存関係を外し、破壊的な障害なくdotcom全体へ展開できた点が重要だ。",
+  "summaryEn": "GitHub.com gradually migrated its UI styling foundation from CSS-in-JS to CSS Modules and was running on 100% CSS Modules by June 2026. Primer finished migrating all components by December 2024, using feature flags and existing visual regression tests to preserve compatibility during rollout. The article says the Primer migration cut server-side rendering time by 55% and component initialization time by 25%, while reducing sx usage in GitHub itself delivered 1% to 22% SSR gains on some pages.",
+  "keyPointsEn": [
+    "The Primer team chose CSS Modules because it could localize class names by default and remove client- and server-side runtime behavior. Styles were moved into CSS files next to JavaScript source and shipped as stylesheets included with page HTML.",
+    "Primer’s migration was rolled out component by component with feature flags switching between old and new styles, while existing visual regression tests verified identical output. All Primer components had migrated by December 2024, and the reported improvements were 55% less SSR time and 25% less component initialization time.",
+    "In GitHub’s main codebase, reducing the styled-components-based sx prop became the next major effort. It started in April 2025 with about 7,760 sx props to migrate; eight engineers migrated 6,419 over six months and saw 1% to 22% SSR gains on some pages, and the remaining 895 were reduced to 0 in three weeks in April 2026 by two engineers using Copilot coding agents.",
+    "The final blocker to full removal was theming, because GitHub supported seven themes plus high-contrast variants through styled-components. After migrating the JavaScript theme usage and utilities as well, GitHub says it removed sx, styled-components, and styled-system from dotcom."
+  ],
+  "significanceEn": "This matters to GitHub users because it affects page rendering and component initialization speed, and to GitHub frontend engineers because it provides an operating model for rolling out a large styling-platform replacement gradually in production. In the article’s account, the important point is that GitHub removed those dependencies while keeping seven themes and high-contrast support and deploying the change across dotcom without breaking it."
+}

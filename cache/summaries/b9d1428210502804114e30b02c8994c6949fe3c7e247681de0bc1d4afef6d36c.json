@@ -1,0 +1,18 @@
+{
+  "summary": "GitHub Copilot appのcanvasesでは、/create-canvasに平易な説明を書くと、作業フローに合わせた共有UIをエージェントが生成できる。キャンバスは双方向で、ボタンやカード、フィルターなどを通じて利用者とエージェントの双方が同じ状態を更新しながら作業できる。作成後は拡張機能として保存され、チームで共有するプロジェクト用にも個人用にも再利用できる。",
+  "keyPoints": [
+    "キャンバス作成時は、対応させたいワークフロー、画面上で自分ができる操作、エージェントにさせたい操作の3点をプロンプトに含めるよう案内している。",
+    "最初に生成されたUIは出発点であり、列やフィルターの追加、未処理のプルリクエストの取り込み、その日のチェックリスト化など、説明に応じて継続的に作り替えられる。",
+    "共有状態は即時に反映され、利用者がボタン操作やカード移動をするとエージェント側にも別の送信や同期なしで見え、逆にエージェントに同じ機能でカード移動や項目追加をさせることもできる。",
+    "ゼロから作らなくても、Awesome Copilotで公開されているrelease notes、kanban、issue triageなどの既成キャンバス拡張を導入し、自分のワークフロー向けに調整できる。"
+  ],
+  "significance": "固定的な画面に業務を合わせるのではなく、自分やチームの進め方に合わせたUIを必要とする開発者に影響が大きい。カンバン、issue triage、リリースチェックリスト、フォーム、スプレッドシートのような作業面をエージェントと共有し、コマンド送信を待つ形ではなく同時に更新しながら進められる点が重要だ。",
+  "summaryEn": "In GitHub Copilot app, canvases let you describe a workflow in plain English with /create-canvas and have the agent generate a shared UI around that work. The canvas is bidirectional, so both the user and the agent can update the same state through buttons, cards, filters, and other controls. Once created, it is saved as an extension that can be reused either for a shared project or as a personal tool.",
+  "keyPointsEn": [
+    "When creating a canvas, the prompt should cover three things: the workflow to support, what you should be able to do in the interface, and what the agent should be able to do.",
+    "The first generated UI is only a starting point and can be refined continuously, including adding columns or filters, pulling in open pull requests, or turning it into a daily checklist.",
+    "The shared state updates immediately: when a user clicks buttons or moves cards, the agent sees it without a separate send or sync step, and the agent can use the same built-in actions to add items or move cards.",
+    "You do not have to start from scratch: ready-made canvas extensions for release notes, kanban, issue triage, and more are available through Awesome Copilot and can be customized for your workflow."
+  ],
+  "significanceEn": "This matters for developers who need a UI tailored to their own or their team’s workflow instead of adapting to fixed screens. It makes shared work surfaces such as kanban boards, issue triage boards, release checklists, forms, and spreadsheets collaborative with the agent, so work can progress through simultaneous updates rather than by sending a command and waiting."
+}
