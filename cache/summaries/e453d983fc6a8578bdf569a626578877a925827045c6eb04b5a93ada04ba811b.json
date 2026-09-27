@@ -1,0 +1,20 @@
+{
+  "summary": "Microsoft CopilotアプリにHome、Code、Autopilotが追加され、ChatとCoworkの統合、Office文書の直接編集、自然言語での社内向けソリューション構築、常時動き続ける個人向けエージェントが新たに提供される。HomeとCodeは今後数週間でFrontierプログラムに展開され、Autopilotは月末にプライベートプレビューを拡大する。あわせて、業務データ連携やプラグイン統合、AI支出を管理するFinOps機能も強化された。",
+  "keyPoints": [
+    "HomeはChatとCoworkを1か所にまとめ、Office in CopilotでWord、Excel、PowerPointをCopilot内から直接作成・更新できる。Homeは今後数週間でFrontier向けに展開開始予定。",
+    "CodeはGitHub Copilotと同じ基盤技術を使い、自然言語からアプリやダッシュボード、ワークフローを生成できる。サンドボックス実行とテナント内ホスティングに対応し、月末にFrontier展開、数週間後に広く提供、年内にはMicrosoft 365 Premium/Pro向けプレビューも予定される。",
+    "Autopilotは旧Scoutで、名前・役割・目標を与えると継続的に作業するクラウドホスト型エージェントとして提供される。TeamsやOutlookなど既存の作業場所で使え、月末にプライベートプレビュー拡大予定。",
+    "業務コンテキスト拡張では、Fabric IQがPower BIのセマンティックモデルを含むデータをChatとCoworkに提供し、これは本日GAで、Code連携はFrontierで近日提供される。Dynamics 365とPower Platformのデータやワークフロー連携は今後1か月でパブリックプレビューに入る。",
+    "運用面では、新しいプラグインレジストリが段階的に提供され、今後数週間で各画面にGAされる見込みだ。さらにFinOps for AIで、Agent 365のコスト管理対象がCodeとCopilot Managed Runtimeに広がり、管理者は支出ポリシーや利用可能なモデル群を制御できる。"
+  ],
+  "significance": "Microsoft 365を使う組織の情報労働者とIT管理者にとって影響が大きい。利用者はCopilot内でWord、Excel、PowerPointの実ファイル作成や、自然言語による社内アプリ構築、継続実行するAutopilotまで一つの環境で扱えるようになる一方、管理者は支出ポリシーや利用可能なモデル群を統制できるためだ。",
+  "summaryEn": "Microsoft Copilot adds Home, Code, and Autopilot, bringing together Chat and Cowork, direct Office document editing, natural-language solution building, and a persistent personal agent. Home and Code begin rolling out to the Frontier program in the coming weeks, while Autopilot expands to private preview at the end of the month. The announcement also expands business-data integrations, plugin unification, and FinOps capabilities for managing AI spend.",
+  "keyPointsEn": [
+    "Home combines Chat and Cowork in one place, and Office in Copilot lets users create and update Word, Excel, and PowerPoint files directly within Copilot. Home starts rolling out to Frontier in the coming weeks.",
+    "Code uses the same underlying technology as GitHub Copilot and can generate apps, dashboards, and workflows from natural language. It supports sandboxed execution and tenant hosting, rolls out to Frontier at the end of the month, reaches broad availability in the following weeks, and is planned for preview later this year for Microsoft 365 Premium and Pro subscribers.",
+    "Autopilot, formerly Scout, is presented as a cloud-hosted agent that keeps working after being given a name, role, and goal. It works in existing surfaces such as Teams and Outlook and expands to private preview at the end of the month.",
+    "For business context, Fabric IQ brings Power BI semantic-model data into Chat and Cowork and is generally available there today, with Code integration coming soon through Frontier. Grounding in Dynamics 365 and Power Platform data and workflows enters public preview over the next month.",
+    "Operationally, a new plugin registry is rolling out now and is expected to become generally available across surfaces in the coming weeks. FinOps for AI also expands Agent 365 cost management to Code and Copilot Managed Runtime, while admins gain control over spending policies and available model families."
+  ],
+  "significanceEn": "This matters most for information workers and IT administrators in Microsoft 365 organizations. End users gain a single environment for creating real Word, Excel, and PowerPoint files, building internal apps from natural language, and using a persistent Autopilot agent, while administrators can control spending policies and which model families are available."
+}
