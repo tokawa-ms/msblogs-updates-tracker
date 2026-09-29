@@ -1,0 +1,110 @@
+{
+  "date": "2026-09-29",
+  "compared_with": "2026-09-28",
+  "source_count": 6,
+  "new_count": 2,
+  "removed_count": 2,
+  "new_articles": [
+    {
+      "id": "0baeacde9feacfd4",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "How we found 24 Android vulnerabilities using our open source AI security agent",
+      "url": "https://github.blog/security/how-we-found-24-android-vulnerabilities-using-our-open-source-ai-security-agent/",
+      "published_at": "2026-09-28T19:00:00.000Z",
+      "summary": "A look at the targeted AI taskflows behind these findings, the critical Android bugs they uncovered, and how to run the same open-source agent on your own app.\nThe post How we found 24 Android vulnerabilities using our open source AI security agent appeared first on The GitHub Blog.",
+      "fetched_at": "2026-09-29T02:32:01.397Z"
+    },
+    {
+      "id": "b50539d473adb522",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "Highlights from Git 2.56",
+      "url": "https://github.blog/open-source/git/highlights-from-git-2-56/",
+      "published_at": "2026-09-28T17:23:33.000Z",
+      "summary": "The open source Git project just released Git 2.56. Here is GitHub's look at some of the most interesting features and changes introduced since last time.\nThe post Highlights from Git 2.56 appeared first on The GitHub Blog.",
+      "fetched_at": "2026-09-29T02:32:01.397Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "fabric-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "github-blog": {
+      "new_count": 2,
+      "removed_count": 2,
+      "new_articles": [
+        {
+          "id": "0baeacde9feacfd4",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "How we found 24 Android vulnerabilities using our open source AI security agent",
+          "url": "https://github.blog/security/how-we-found-24-android-vulnerabilities-using-our-open-source-ai-security-agent/",
+          "published_at": "2026-09-28T19:00:00.000Z",
+          "summary": "A look at the targeted AI taskflows behind these findings, the critical Android bugs they uncovered, and how to run the same open-source agent on your own app.\nThe post How we found 24 Android vulnerabilities using our open source AI security agent appeared first on The GitHub Blog.",
+          "fetched_at": "2026-09-29T02:32:01.397Z"
+        },
+        {
+          "id": "b50539d473adb522",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "Highlights from Git 2.56",
+          "url": "https://github.blog/open-source/git/highlights-from-git-2-56/",
+          "published_at": "2026-09-28T17:23:33.000Z",
+          "summary": "The open source Git project just released Git 2.56. Here is GitHub's look at some of the most interesting features and changes introduced since last time.\nThe post Highlights from Git 2.56 appeared first on The GitHub Blog.",
+          "fetched_at": "2026-09-29T02:32:01.397Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "c493987b897c3716",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "Marketing ops as code: Automating events from planning to follow-up on GitHub",
+          "url": "https://github.blog/ai-and-ml/github-copilot/marketing-ops-as-code-automating-events-from-planning-to-follow-up-on-github/",
+          "published_at": "2026-09-11T18:26:10.000Z",
+          "summary": "If you can write down how you do your work, you can automate it. Here's what I did to support GitHub's APAC marketing team.\nThe post Marketing ops as code: Automating events from planning to follow-up on GitHub appeared first on The GitHub Blog.",
+          "fetched_at": "2026-09-28T01:29:12.360Z"
+        },
+        {
+          "id": "53dc2a824ef94f8a",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "GitHub Copilot app for Beginners: Using the diff, terminal, and browser",
+          "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-using-the-diff-terminal-and-browser/",
+          "published_at": "2026-09-10T21:31:19.000Z",
+          "summary": "Checking agent-generated code usually means hopping between tabs. Learn how to view diffs, run terminal commands, and preview web apps side by side in the GitHub Copilot app.\nThe post GitHub Copilot app for Beginners: Using the diff, terminal, and browser appeared first on The GitHub Blog.",
+          "fetched_at": "2026-09-28T01:29:12.360Z"
+        }
+      ]
+    },
+    "m365-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    }
+  },
+  "diff_result": true
+}
