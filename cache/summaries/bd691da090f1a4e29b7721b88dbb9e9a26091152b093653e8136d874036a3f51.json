@@ -1,0 +1,18 @@
+{
+  "summary": "Git 2.56では、競合解決後のファイルだけを安全にステージするgit add --resolvedが追加され、merge-base探索の打ち切り最適化で履歴探索性能も改善された。さらに、--path-walk repackがビットマップやdelta islandsと併用可能になり、大規模リポジトリ運用で小さいパックと高速配信を両立しやすくなった。",
+  "keyPoints": [
+    "git add --resolvedが新設され、インデックス上で未解決だったパスだけを対象に競合解決済みとしてステージできる。競合マーカーが残っている通常ファイルがあれば何もステージせず、競合と無関係な変更は拾わない。",
+    "merge-base探索は、片側だけに色付けされたキューが尽きた時点で打ち切れるようになり、長い履歴の無駄な探索を削減する。記事の例では、あるモノレポで0.68秒から0.01秒、別の評価では約70倍や平均約20倍の改善、Linuxカーネルの例でも0.29秒から0.01秒への短縮が示された。",
+    "path-walk repackは、到達可能性ビットマップとdelta islandsの両方に対応し、サーバー運用で採用しやすくなった。記事のベンチマークではFluent UIで通常の558.5 MBに対し--path-walkでは164.4 MB、約71%小さいパックになったが、この方式はまだデフォルトでは有効化されない。",
+    "部分クローンでは、git repack -a --filter=blob:limit=1m --drop-filteredにより、後で再取得できる大きなblobを手動でローカルから削除できるようになった。これは自動キャッシュ上限ではなく、blob:limitフィルターのみ対応で、promisor remoteが必須であり、現在のインデックスが参照するオブジェクトなど安全でないケースは拒否される。"
+  ],
+  "significance": "この更新は、競合解決を頻繁に行う保守担当者、大規模モノレポを扱うチーム、プルリク差分やオブジェクト配信を支えるリポジトリホストに特に関係する。競合解消時の誤ステージを防ぎやすくしつつ、merge-base計算やパック生成のボトルネックを減らせるため、記事中の実例では巨大履歴やサーバー側処理の時間短縮と保存効率の改善余地が示されている。",
+  "summaryEn": "Git 2.56 adds git add --resolved to safely stage only files whose conflicts have been resolved, and it improves history traversal by stopping merge-base searches earlier when possible. It also makes --path-walk repacks compatible with bitmaps and delta islands, making it easier for large repository operators to combine smaller packfiles with fast serving.",
+  "keyPointsEn": [
+    "A new git add --resolved mode stages only paths that were unmerged in the index. If any selected regular file still contains conflict markers, Git stages nothing, and unrelated local changes are not included.",
+    "Merge-base search can now stop once one side’s exclusively painted queue is exhausted, reducing wasted history traversal. The article cites drops from 0.68s to 0.01s in one monorepo, around 70x and 20x gains in other evaluations, and 0.29s to 0.01s in a Linux kernel example.",
+    "Path-walk repack now works with reachability bitmaps and delta islands, making it more practical for server use. In the article’s Fluent UI benchmark, a normal repack was 558.5 MB versus 164.4 MB with --path-walk, about 71% smaller, though the mode is still not enabled by default.",
+    "For partial clones, git repack -a --filter=blob:limit=1m --drop-filtered can now manually remove large blobs that can be fetched again later. This is not an automatic cache limit, currently supports only blob:limit filters, requires a promisor remote, and refuses unsafe cases such as dropping objects referenced by the current index."
+  ],
+  "significanceEn": "This update especially affects maintainers who frequently resolve conflicts, teams working on large monorepos, and repository hosts that power pull request diffs and object serving. By reducing accidental staging during conflict resolution and cutting bottlenecks in merge-base computation and pack generation, the examples in the article show potential gains in processing time and storage efficiency for large histories and server-side workloads."
+}
