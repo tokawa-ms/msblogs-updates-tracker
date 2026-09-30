@@ -1,0 +1,20 @@
+{
+  "summary": "GitHubはTransparency CenterのH1 2026報告で、政府の削除要請の集計方法を見直した結果、件数が2025年通年98件から2026年上半期708件へ増えたと説明したが、削除運用自体が厳格化したわけではないとした。あわせて2026年の米州法政策では、オープンソースと衝突していたカリフォルニア州AI透明性法案SB 1000がより限定的なnotice-and-response方式へ修正された一方、年齢保証やプラットフォーム定義を巡る論点は継続している。今後はDMCA Section 1201の例外見直しや若年層のAIアクセスを巡る議論を追うとしている。",
+  "keyPoints": [
+    "Transparency CenterのH1 2026データでは、政府の削除要請は2025年通年98件から2026年上半期708件へ急増したが、要因は報告対象を全要請へ広げ、同一コンテンツへの重複要請も数えるようにした集計方法の変更であり、削除件数の急増を意味しない。",
+    "カリフォルニア州のAI Transparency Act（SB 1000、旧SB 942）は、初期案にあったライセンス取消し要件がオープンソースの取消不能なライセンスと根本的に衝突していたが、最終的により狭いnotice-and-response方式へ修正された。法案は2026年8月30日にenrolledとなり、9月30日まで州知事の署名待ちだ。",
+    "AB 2713では、AB 853にあるlarge online platform、file-sharing platform、GenAI hosting platformの定義がコードリポジトリなど開発者向け基盤まで含み得る点が問題視された。GitHubは定義修正を求めるsupport-if-amendedの立場だったが、今会期では採用されず、来年も優先課題になる見込みだ。",
+    "年齢保証と若年層オンライン安全の論点では、カリフォルニア州AB 1043で開発ツールやオープンソースOSまで広く巻き込まないよう働きかけ、コロラド州SB 26ではオープンソースと開発者基盤への懸念に対応する修正が入った。一方、イリノイ州HB 5511は成立したが重要課題が残っており、今後も修正協議を続けるとしている。",
+    "今後の重点として、GitHubはDMCA Section 1201の3年ごとのルール策定を追跡し、FOSSライセンス順守調査、学術的テキスト・データマイニング、過去にも支持してきた善意のセキュリティ研究例外の更新に関わる請願に注目している。また、若者のAIツール利用では、消費者向け対話サービスと学習・制作・ソフトウェア開発のためのツールを区別すべきだとしている。"
+  ],
+  "significance": "影響を受けるのは、コードリポジトリや開発ツール、オープンソースOSに関わる開発者と研究者だ。記事は、消費者向け前提の規制が広い定義のまま適用されると開発基盤に法的不確実性や実装負担を生む一方、開発者の技術的知見が早期に政策へ届けば、より実務的で整合的な制度設計につながると示している。",
+  "summaryEn": "GitHub says its H1 2026 Transparency Center update shows government takedown requests rising from 98 in all of 2025 to 708 in the first half of 2026 because of reporting changes, not tougher moderation. It also says California’s SB 1000 was narrowed to a notice-and-response approach after open source license concerns, while debates over age assurance and platform definitions remain unresolved. Next, GitHub plans to follow the DMCA Section 1201 exemption process and policy debates over young people’s access to AI tools.",
+  "keyPointsEn": [
+    "In the H1 2026 Transparency Center data, government takedown requests jumped from 98 in all of 2025 to 708 in the first half of 2026, but GitHub says this was caused by broader reporting and counting duplicate requests rather than a surge in removals.",
+    "California’s AI Transparency Act (SB 1000, previously SB 942) was revised from an earlier license-revocation requirement that conflicted with irrevocable open source licenses to a narrower notice-and-response approach. The bill was enrolled on August 30, 2026 and is awaiting the governor’s signature by September 30.",
+    "AB 2713 raised concerns because definitions in AB 853 for large online platforms, file-sharing platforms, and GenAI hosting platforms could be read to include developer infrastructure such as code repositories. GitHub supported the bill only if amended, but those changes were not adopted this session and it expects the issue to remain a priority next year.",
+    "On age assurance and youth online safety, GitHub worked on California’s AB 1043 to avoid sweeping in developer tools and open source operating systems, while Colorado’s SB 26 was changed to address key concerns about open source and developer infrastructure. Illinois’ HB 5511 became law, but GitHub says important issues remain and further amendments are needed.",
+    "Looking ahead, GitHub is tracking the DMCA Section 1201 triennial rulemaking, including petitions on FOSS license-compliance investigations, scholarly text and data mining, and renewal of the good-faith security research exemption. It is also arguing that policymakers should distinguish consumer-facing conversational AI services from tools used for learning, creating, and building software."
+  ],
+  "significanceEn": "The people most affected are developers and researchers working with code repositories, developer tools, and open source operating systems. The article argues that when rules designed for consumer services are applied through broad definitions, they can create legal uncertainty and implementation burdens for developer infrastructure, while early technical input from developers can lead to more workable and better-aligned policy."
+}

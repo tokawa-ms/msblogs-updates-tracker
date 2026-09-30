@@ -1,0 +1,18 @@
+{
+  "summary": "Power BIの2026年9月更新では、Microsoft 365 CopilotをPower BIとMicrosoft Fabricに直接統合するプレビューが始まり、Power BIデータ回答はMicrosoft 365 Copilotで本番サポート付きに移行した。加えて、Web向けの新しいレポートリボンでブラウザー上の閲覧・作成体験を拡張し、AIやWeb中心の利用を前提にした強化が進んだ。さらに10月からは2026年3月以前のPower BI DesktopでOneDriveとSharePointへの保存・共有が使えなくなるため、Desktop更新が必要になる。",
+  "keyPoints": [
+    "10月以降、2026年3月以前のPower BI DesktopではOneDriveとSharePointへのPower BIファイル保存・共有ができなくなる。継続利用にはPower BI Desktopの更新が必要。",
+    "Microsoft 365 CopilotをPower BIとMicrosoft Fabricに直接組み込む統合版がプレビュー開始した。管理者向け設定は既定でオフで、初期プレビューではMicrosoft 365 Copilotライセンス保有者だけが利用対象となる。",
+    "Microsoft 365 CopilotからPower BIレポートやセマンティックモデルを見つけて自然言語で質問できる機能は、Microsoft Purview DLPと情報保護に対応し、本番サポートとサービスコミットメント付きで利用できる。",
+    "DirectQueryセマンティックモデルをPower BIサービスで直接作成・編集できるようになり、Power BI Desktopのダウンロードが不要になった。Mac、Linux、Windowsからブラウザーで作業でき、同じモデルを複数メンバーで同時に編集できる。"
+  ],
+  "significance": "恩恵を受けるのは、Microsoft 365 Copilotライセンスを持つ利用者、管理者、そしてDesktopに縛られず作業したい分析者や開発者だ。統合Copilotは既定でオフにされており、既存の権限とガバナンスを維持したまま管理者が導入可否を判断できる。さらにDirectQueryモデルをブラウザーから扱えるため、Mac・Linux・Windows混在環境でも同じワークフローで共同作業しやすくなる。",
+  "summaryEn": "In the September 2026 Power BI update, a preview of Microsoft 365 Copilot integrated directly into Power BI and Microsoft Fabric began, and Power BI data answers in Microsoft 365 Copilot moved to production-supported availability. It also expanded browser-based consumption and authoring with the new report ribbon on the web, reinforcing AI and web-first usage. In addition, starting in October, versions of Power BI Desktop from March 2026 or earlier will lose the ability to save and share files to OneDrive and SharePoint, so updating Desktop is required.",
+  "keyPointsEn": [
+    "Starting in October, Power BI Desktop versions from March 2026 or earlier will no longer be able to save and share Power BI files to OneDrive and SharePoint. Updating Power BI Desktop is required to keep using that functionality.",
+    "A preview of Microsoft 365 Copilot integrated directly into Power BI and Microsoft Fabric has started. The admin setting is off by default, and during the initial preview only users with a Microsoft 365 Copilot license are eligible.",
+    "Power BI report and semantic model question answering from Microsoft 365 Copilot now supports Microsoft Purview DLP and information protection, and it is available with production support and service commitments.",
+    "DirectQuery semantic models can now be created and edited directly in the Power BI service, removing the need to download Power BI Desktop. Teams can work from the browser on Mac, Linux, and Windows, and multiple members can edit the same model simultaneously."
+  ],
+  "significanceEn": "The main beneficiaries are users with Microsoft 365 Copilot licenses, administrators, and analysts or developers who want to work without being tied to Desktop. The integrated Copilot experience is off by default, so administrators can decide when to introduce it while keeping existing permissions and governance in place. DirectQuery browser authoring also makes collaboration easier across mixed Mac, Linux, and Windows environments."
+}
