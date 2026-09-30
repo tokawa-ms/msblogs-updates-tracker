@@ -1,0 +1,20 @@
+{
+  "summary": "Power BIは、Fabricのappsを基盤にしたPower BI Desktopの新しいアプリ構築体験を導入し、自然言語からデータアプリを生成・編集・公開できるようにする。提供は今後数か月以内の予定で、プレビューではMicrosoft Fabric容量顧客だけでなくPower BI ProとPremium Per User顧客も対象になる。あわせて、semantic viewsの初期公開、Apache Ossieへの関与、Fabric IQのCopilot連携の一般提供により、Power BIのセマンティック層を分析、アプリ、AIへ広げる方向性が示された。",
+  "keyPoints": [
+    "Power BI DesktopにFabricのappsを使った新しいアプリ構築体験が追加され、信頼できるセマンティックモデルを起点に、自然言語でアプリを生成、プレビュー、編集、公開できる。アプリは入力受付、データ書き戻し、共有状態の保持、運用ワークフローにも対応する。",
+    "この新体験は今後数か月以内に提供予定で、プレビュー対象はMicrosoft Fabric容量顧客に限られず、Power BI ProとPremium Per User顧客にも広がる。さらにProとPremium Per User顧客はFabric Database機能も利用でき、分析とトランザクションの両シナリオ向けアプリを作成できる。",
+    "FabCon Barcelonaではsemantic viewsの初期公開が示され、OneLake上のデータがある場所で統制された業務指標とセマンティクスを定義し、Fabric内外で再利用できる方向性が示された。",
+    "MicrosoftはApache Ossieへのコミットメントを明言し、Snowflakeとの協業ではクロスプラットフォームのセマンティック層変換に取り組んでいる。セマンティックな文脈を一度定義して、データや業務ロジックを複製せずに複数エコシステムで再利用することを目指す。",
+    "Fabric IQのMicrosoft Copilot CoworkとMicrosoft Copilot Chat向け機能は一般提供となった。Copilot Chatでは統制されたPower BIレポートとセマンティックモデルに基づく回答を返し、同じCopilot体験はCopilot in Power BIにも提供予定で、Fabric IQ MCPも一般提供へ移行する。"
+  ],
+  "significance": "影響を受けるのは、日常的にPower BIを使う作成者、アナリスト、開発者、業務ユーザーである。既存ライセンスでAI支援のアプリ作成にアクセスできる範囲が広がり、Copilot Chatでは統制されたPower BIの意味づけに基づく回答を得られるため、分析結果をアプリや業務フロー、AI利用へつなげやすくなる。加えて、セマンティック定義を他エコシステムでも再利用する方針が示され、Power BIの役割がレポート作成から横断的な業務基盤へ広がることを示している。",
+  "summaryEn": "Power BI is introducing a new app-building experience in Power BI Desktop based on apps in Fabric, letting users generate, edit, and publish data applications from natural language. It is planned for the coming months, and the preview will cover not only Microsoft Fabric capacity customers but also Power BI Pro and Premium Per User customers. Alongside this, Microsoft showed an early look at semantic views, reaffirmed its Apache Ossie work, and expanded Fabric IQ Copilot integrations, signaling a broader use of Power BI’s semantic layer across analytics, apps, and AI.",
+  "keyPointsEn": [
+    "Power BI Desktop is getting a new app-building experience using apps in Fabric, allowing users to generate, preview, edit, and publish apps in natural language from a trusted semantic model. These apps can accept inputs, write back data, preserve shared state, and support operational workflows.",
+    "This new experience is planned for the coming months, and the preview will extend beyond Microsoft Fabric capacity customers to Power BI Pro and Premium Per User customers. Pro and Premium Per User customers will also get Fabric Database capabilities to build apps for both analytical and transactional scenarios.",
+    "At FabCon Barcelona, Microsoft shared an early look at semantic views, intended to let users define governed business metrics and semantics where data lives in OneLake and reuse them across and beyond Fabric.",
+    "Microsoft reaffirmed its commitment to Apache Ossie and said its collaboration with Snowflake is focused on cross-platform semantic-layer conversion. The goal is to define semantic context once and reuse it across ecosystems without duplicating data or business logic.",
+    "Fabric IQ for Microsoft Copilot Cowork and Microsoft Copilot Chat is now generally available. In Copilot Chat, users can get answers grounded in governed Power BI reports and semantic models, the same Copilot experience is planned for Copilot in Power BI, and Fabric IQ MCP is entering general availability."
+  ],
+  "significanceEn": "The changes primarily affect the creators, analysts, developers, and business users who use Power BI every day. Access to AI-assisted app creation is expanding through existing licenses, and Copilot Chat can return answers grounded in governed Power BI meaning, making it easier to connect analytics with apps, workflows, and AI use. Microsoft also outlined a path for reusing semantic definitions across ecosystems, indicating that Power BI is expanding from report creation into a broader operational foundation."
+}

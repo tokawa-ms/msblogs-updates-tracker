@@ -1,0 +1,18 @@
+{
+  "summary": "Microsoft CopilotアプリにHome、Code、Autopilotの3機能が加わり、チャット、委任、アプリ作成、継続実行型エージェントを1つの体験に統合した。HomeではChatとCoworkに加えWord、Excel、PowerPointを直接扱え、CodeはGitHub Copilotと同じ基盤技術で自然言語からソリューションを構築できる。HomeとCodeはFrontier programで順次展開され、Autopilotは月末にprivate previewを拡大する。",
+  "keyPoints": [
+    "HomeはChatとCoworkを1カ所にまとめ、Office in CopilotでWord、Excel、PowerPointの実ファイルをCopilotから直接作成・更新できる。",
+    "Codeは自然言語でアプリ、トラッカー、ダッシュボード、オートメーションを生成でき、sandboxed environmentで動作しtenant内に安全にホストできる。Frontierには月末から展開され、その後数週間でbroad availabilityとなり、Microsoft 365 PremiumとPro向けpreviewも年内予定。",
+    "Autopilotは旧Scoutで、プロンプト待ちをせずに継続作業やフォローアップを進めるクラウドホスト型の個人エージェントとして提供される。tenant内で独自のidentity、memory、computer、workspaceを持ち、月末にprivate previewが拡大する。",
+    "課金面では、ChatやWord/Excel/PowerPointなどは固定費のUSL、Cowork・Code・Autopilotやfrontier modelsは従量課金のUBBに分け、FinOps for AIではCodeとCopilot Managed Runtimeまで支出管理を拡張する。"
+  ],
+  "significance": "Microsoft 365を使う知識労働者は、Copilot内で文書作成、委任作業、軽量アプリ構築、自律実行をまたいで進めやすくなり、会話から実ファイルや実業務へ直接つなげやすくなる。特に非開発者はCodeで小規模ソリューションを作りやすくなり、IT部門はtenant内実行やプラグイン集中管理、支出ポリシー管理によって統制を保ちながら展開しやすい。",
+  "summaryEn": "Microsoft has added three capabilities—Home, Code, and Autopilot—to the Copilot app, unifying chat, delegated work, app creation, and persistent agents in one experience. In Home, users can work with Word, Excel, and PowerPoint directly, while Code uses the same underlying technology as GitHub Copilot to build solutions from natural language. Home and Code are rolling out through the Frontier program, and Autopilot expands to private preview at the end of the month.",
+  "keyPointsEn": [
+    "Home brings Chat and Cowork together in one place, and Office in Copilot lets users create and update real Word, Excel, and PowerPoint files directly from Copilot.",
+    "Code can generate apps, trackers, dashboards, and automations from natural language, runs in a sandboxed environment, and can be hosted securely within the tenant. It starts rolling out to Frontier at the end of the month, reaches broad availability in the following weeks, and is planned for preview later this year for Microsoft 365 Premium and Pro subscribers.",
+    "Autopilot, formerly Scout, is a cloud-hosted personal agent that can continue recurring work and follow-ups without waiting for prompts. It has its own identity, memory, computer, and workspace inside the tenant, and its private preview expands at the end of the month.",
+    "On pricing, Chat and apps like Word, Excel, and PowerPoint stay under the fixed-cost USL, while Cowork, Code, Autopilot, and frontier models use usage-based billing. FinOps for AI also expands spend management to cover Code and Copilot Managed Runtime."
+  ],
+  "significanceEn": "For Microsoft 365 knowledge workers, this makes it easier to move across document creation, delegated tasks, lightweight app building, and autonomous execution within Copilot, linking conversations more directly to real files and real work. Non-developers are especially affected because Code lowers the barrier to building small solutions, while IT teams get tenant-hosted execution, centralized plugin approval, and spending policy controls to support broader rollout with governance."
+}

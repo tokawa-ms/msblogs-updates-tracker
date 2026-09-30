@@ -1,0 +1,102 @@
+[
+  {
+    "id": "85a2ee1ccabf9baf",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "Developer policy update: Transparency, state policy, and what’s ahead",
+    "url": "https://github.blog/news-insights/policy-news-and-insights/developer-policy-update-transparency-state-policy-and-whats-ahead/",
+    "published_at": "2026-09-29T15:00:00.000Z",
+    "summary": "Explore GitHub’s latest transparency data and learn more about policy updates affecting developers and open source.\nThe post Developer policy update: Transparency, state policy, and what’s ahead appeared first on The GitHub Blog.",
+    "fetched_at": "2026-09-30T01:55:06.253Z"
+  },
+  {
+    "id": "0baeacde9feacfd4",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "How we found 24 Android vulnerabilities using our open source AI security agent",
+    "url": "https://github.blog/security/how-we-found-24-android-vulnerabilities-using-our-open-source-ai-security-agent/",
+    "published_at": "2026-09-28T19:00:00.000Z",
+    "summary": "A look at the targeted AI taskflows behind these findings, the critical Android bugs they uncovered, and how to run the same open-source agent on your own app.\nThe post How we found 24 Android vulnerabilities using our open source AI security agent appeared first on The GitHub Blog.",
+    "fetched_at": "2026-09-30T01:55:06.253Z"
+  },
+  {
+    "id": "b50539d473adb522",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "Highlights from Git 2.56",
+    "url": "https://github.blog/open-source/git/highlights-from-git-2-56/",
+    "published_at": "2026-09-28T17:23:33.000Z",
+    "summary": "The open source Git project just released Git 2.56. Here is GitHub's look at some of the most interesting features and changes introduced since last time.\nThe post Highlights from Git 2.56 appeared first on The GitHub Blog.",
+    "fetched_at": "2026-09-30T01:55:06.253Z"
+  },
+  {
+    "id": "a2908e03cf24041e",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "GitHub Copilot app for Beginners: How to build custom workflows with canvases",
+    "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-build-custom-workflows-with-canvases/",
+    "published_at": "2026-09-25T18:00:00.000Z",
+    "summary": "Describe the interface you need in plain English, then let the agent build a live surface you can both use and update—so you spend less time adapting to tools and more time getting work done.\nThe post GitHub Copilot app for Beginners: How to build custom workflows with canvases appeared first on The GitHub Blog.",
+    "fetched_at": "2026-09-30T01:55:06.253Z"
+  },
+  {
+    "id": "c6ab1f25135f39c7",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "Improving site performance by shipping more CSS",
+    "url": "https://github.blog/engineering/architecture-optimization/improving-site-performance-by-shipping-more-css/",
+    "published_at": "2026-09-25T15:00:00.000Z",
+    "summary": "How we fully migrated github.com away from CSS-in-JS.\nThe post Improving site performance by shipping more CSS appeared first on The GitHub Blog.",
+    "fetched_at": "2026-09-30T01:55:06.253Z"
+  },
+  {
+    "id": "3d14844898469c56",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "When chat is the wrong UI",
+    "url": "https://github.blog/ai-and-ml/github-copilot/when-chat-is-the-wrong-ui/",
+    "published_at": "2026-09-24T20:00:00.000Z",
+    "summary": "What is a developer to do when they need something more tangible than a chat box? Enter canvases.\nThe post When chat is the wrong UI appeared first on The GitHub Blog.",
+    "fetched_at": "2026-09-30T01:55:06.253Z"
+  },
+  {
+    "id": "4431c738b4b1e8a1",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "AI-powered fuzzing with the GitHub Security Lab Taskflow Agent",
+    "url": "https://github.blog/security/application-security/ai-powered-fuzzing-with-the-github-security-lab-taskflow-agent/",
+    "published_at": "2026-09-24T18:26:12.000Z",
+    "summary": "In this blog post, I explain how to use the new fuzzing taskflow based on the GitHub Security Lab Taskflow Agent AI framework. \nThe post AI-powered fuzzing with the GitHub Security Lab Taskflow Agent appeared first on The GitHub Blog.",
+    "fetched_at": "2026-09-30T01:55:06.253Z"
+  },
+  {
+    "id": "0f1a07da5479caba",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "Rendering huge pull requests in the GitHub Copilot app",
+    "url": "https://github.blog/engineering/user-experience/rendering-huge-pull-requests-in-the-github-copilot-app/",
+    "published_at": "2026-09-23T18:29:49.000Z",
+    "summary": "How we rebuilt the diff surface in the GitHub Copilot app to open a million-line pull request with hundreds of inline review comments.\nThe post Rendering huge pull requests in the GitHub Copilot app appeared first on The GitHub Blog.",
+    "fetched_at": "2026-09-30T01:55:06.253Z"
+  },
+  {
+    "id": "8aa9c39b3a9624b8",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "Developers want more efficient software. Here’s what over 1,000 GitHub users told us they need.",
+    "url": "https://github.blog/news-insights/research/developers-want-more-efficient-software-heres-what-over-1000-github-users-told-us-they-need/",
+    "published_at": "2026-09-23T13:00:00.000Z",
+    "summary": "New research from GitHub and Yale Program on Climate Change Communication finds strong demand for tools, measurement, and practical guidance that can help developers reduce wasted compute.\nThe post Developers want more efficient software. Here’s what over 1,000 GitHub users told us they need. appeared first on The GitHub Blog.",
+    "fetched_at": "2026-09-30T01:55:06.253Z"
+  },
+  {
+    "id": "18bdedfb0c5ed6fd",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "Should you read the code, is RAG dead, and did Skills kill MCP?",
+    "url": "https://github.blog/ai-and-ml/should-you-read-the-code-is-rag-dead-and-did-skills-kill-mcp/",
+    "published_at": "2026-09-18T15:00:00.000Z",
+    "summary": "We dive into these questions and other AI hot takes on the latest episode of the GitHub Podcast.\nThe post Should you read the code, is RAG dead, and did Skills kill MCP? appeared first on The GitHub Blog.",
+    "fetched_at": "2026-09-30T01:55:06.253Z"
+  }
+]
