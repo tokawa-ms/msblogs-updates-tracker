@@ -1,0 +1,18 @@
+{
+  "summary": "SQL Server on Azure Localが一般提供となり、接続環境と切断環境の両方でSQL ServerをAzure Local上に展開できるようになった。自社データセンターやエッジ拠点で、インフラ、接続性、データ配置の制御を保ちながら運用できる。加えて既存のSQL Serverライセンスを活用でき、AI推論向けのFoundry Local on Azure Localは2026年9月29日時点でプレビュー提供とされている。",
+  "keyPoints": [
+    "展開形態は2種類あり、接続環境ではAzure Arc経由でAzureからSQL Serverリソースを管理できる一方、ALDOでは外部接続が制限・断続的・不在でもローカルで運用を継続できる。",
+    "対象基盤は顧客のデータセンターやエッジ拠点にあるAzure Localで、Windows ServerまたはLinuxを実行する仮想マシン上のSQL Serverワークロードをサポートする。",
+    "ライセンスはSQL ServerとAzure Local基盤が別体系で、接続構成ではSoftware Assurance付きライセンスや対象サブスクリプションを含む既存ライセンス、またはAzure Arc経由の従量課金を使える。完全切断構成ではAzure Hybrid Benefit経由で対象の既存ライセンスを利用する。",
+    "Foundry Local on Azure Localでは、SQL Serverと並べてAzure Local上でAIモデルを動かし、データの近くで推論できる。ただしFoundry Local on Azure Localは2026年9月29日時点でプレビューであり、提供状況や機能は一般提供前に変わりうる。"
+  ],
+  "significance": "主に恩恵を受けるのは、主権、規制、低遅延、運用継続性、エッジ要件のためにローカル制御が必要な組織や、接続制約のある環境を持つ業種だ。公共部門、防衛、金融、医療、製造、エネルギーなどは、外部接続が前提でない場所でもSQL ServerをAzure整合の基盤で運用し、必要に応じてローカルAI機能も取り込める。",
+  "summaryEn": "SQL Server on Azure Local is now generally available, enabling SQL Server deployments on Azure Local in both connected and disconnected environments. Organizations can run it in their own datacenters and edge sites while retaining control over infrastructure, connectivity, and data placement. It also supports use of existing SQL Server licenses, while Foundry Local on Azure Local for AI inference is in preview as of September 29, 2026.",
+  "keyPointsEn": [
+    "There are two deployment models: connected environments can manage SQL Server resources through Azure via Azure Arc, while ALDO supports continued local operations when external connectivity is restricted, intermittent, or unavailable.",
+    "The platform targets Azure Local in customer datacenters and edge locations, and supports SQL Server workloads on virtual machines running Windows Server or Linux.",
+    "Licensing for SQL Server is separate from the Azure Local infrastructure platform. Connected deployments can use eligible existing licenses, including Software Assurance licenses or qualifying subscriptions, or pay-as-you-go through Azure Arc. Fully disconnected deployments use eligible existing licenses through Azure Hybrid Benefit.",
+    "Foundry Local on Azure Local lets customers run AI models alongside SQL Server on Azure Local and perform inference close to the data. However, Foundry Local on Azure Local is in preview as of September 29, 2026, and its availability and capabilities may change before general availability."
+  ],
+  "significanceEn": "The main beneficiaries are organizations that need local control for sovereignty, regulatory, low-latency, operational continuity, or edge requirements, as well as industries with connectivity-constrained environments. Public sector, defense, financial services, healthcare, manufacturing, and energy organizations can run SQL Server on Azure-consistent infrastructure even where external connectivity cannot be assumed, and can incorporate local AI capabilities when needed."
+}

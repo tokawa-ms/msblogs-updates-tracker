@@ -1,0 +1,18 @@
+{
+  "summary": "Microsoft Azureは、退役ハードウェアを扱うMicrosoft Circular Centersをウェールズのニューポートとオーストラリアのシドニーに新設し、北米・欧州・アジア太平洋をまたぐ運用体制を拡大した。あわせてAzure基盤では、2014年以降ラック当たりのコア数が約13倍に増え、同じ処理に必要な電力は約90%減少したと説明している。さらに同社は、昨年の退役サーバーと部品で92%の再利用・再資源化率を達成し、新旧ハードウェアのライフサイクル全体を最適化していると述べた。",
+  "keyPoints": [
+    "Microsoft Circular Centersはウェールズとオーストラリアで最近稼働し、現在は北米・欧州・アジア太平洋で8拠点となった。さらに米テキサス州サンアントニオの新拠点も計画されている。",
+    "Azure基盤の高密度化が進み、2014年比でラック当たりコア数は約13倍になり、コードコンパイルのような処理の消費電力は約100ワットから10ワット未満に下がったという。",
+    "Azure Cobalt 200は、Cobalt 100比で最大50%高い性能をうたい、最新のMicrosoftのセキュリティ、ネットワーク、ストレージ技術を組み込む。",
+    "昨年の退役サーバーと部品の再利用・再資源化率は92%で、完全なシステムは社内ラボや研修、学校・大学、適格な買い手向けに回され、再利用できない場合に資材が再資源化される。"
+  ],
+  "significance": "Azure利用者にとって重要なのは、同じデータセンターの設置面積と電力でより多くのサーバー能力を提供できるようになる点と、旧機材の回収・再利用で新しいインフラ向けのスペース確保や部材寿命の延長が進む点だ。これにより、基盤更新と資源活用を並行して進めながら、顧客ワークロードを支える能力を増やせるというのが同社の説明である。",
+  "summaryEn": "Microsoft Azure expanded its Microsoft Circular Centers for retired hardware with new sites in Newport, Wales, and Sydney, Australia, extending operations across North America, Europe, and Asia Pacific. It also says Azure infrastructure has improved sharply since 2014, with roughly 13 times more cores per rack and about 90% less power needed for the same task. Microsoft added that it achieved a 92% reuse and recycling rate for decommissioned servers and components last year, aiming to optimize the full hardware lifecycle.",
+  "keyPointsEn": [
+    "Microsoft Circular Centers recently launched in Wales and Australia, bringing the network to eight sites across North America, Europe, and Asia Pacific. A new site is also planned for San Antonio, Texas.",
+    "Azure infrastructure has become denser and more efficient: cores per rack are up about 13-fold versus 2014, and a workload such as code compilation dropped from about 100 watts to under 10 watts.",
+    "Azure Cobalt 200 is claimed to deliver up to 50% higher performance than Cobalt 100 and includes Microsoft’s latest security, networking, and storage technologies.",
+    "Last year, the reuse and recycling rate for decommissioned servers and components reached 92%; complete systems can be redirected to internal labs and training, schools and universities, or qualified buyers, while materials are recycled when reuse is no longer possible."
+  ],
+  "significanceEn": "For Azure customers, the key point is that Microsoft says it can deliver more server capacity within the same datacenter space and power envelope, while recovering and reusing older hardware helps free space for new infrastructure and extend component life. In Microsoft’s framing, that lets it expand the capacity supporting customer workloads while updating infrastructure and making further use of existing resources."
+}
