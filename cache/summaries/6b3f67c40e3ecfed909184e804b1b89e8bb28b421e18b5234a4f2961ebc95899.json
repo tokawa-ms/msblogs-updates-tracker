@@ -1,0 +1,20 @@
+{
+  "summary": "Apache Ossie（インキュベーション中）について、MicrosoftはSnowflakeと連携し、分析・AI・BI間で意味メタデータを交換するベンダー中立標準へのコミットメントを表明した。現在は基盤データを移動・複製せずにセマンティック層をクロスプラットフォーム変換する用途に注力しており、Ossie文書をSnowflake Semantic ViewとPower BIセマンティックモデルへ変換し、共有セマンティックコンテキストを一度定義して両基盤で再利用する統合シナリオを示した。",
+  "keyPoints": [
+    "MicrosoftはApache Ossieへのコミットメントを表明し、Snowflakeが設立を支えたこの取り組みを、分析・AI・BI向けのベンダー中立な意味メタデータ交換標準として位置づけた。",
+    "現在の共同作業は、基盤データを移動・複製せずにApache Ossieでセマンティック層をクロスプラットフォーム変換することに重点を置いている。",
+    "新たに示した統合シナリオでは、1つのOssie文書をSnowflake Semantic ViewとPower BIセマンティックモデルの両方へ変換でき、SnowflakeとFabricで共有セマンティックコンテキストを再利用できる。",
+    "今後は、DAXをOssieで認識されるクエリ言語として確立する支援と、オントロジー対応の前進を進める計画を示した。",
+    "Apache OssieはApache Software Foundationでインキュベーション中であり、成熟したApacheプロジェクトに求められるガバナンスやインフラ、コミュニティ運営の整備を進めている段階だ。"
+  ],
+  "significance": "SnowflakeとFabric/Power BIをまたいで使う顧客や、プラットフォーム非依存のエージェント体験を求める利用者に関係する。記事によれば、従来はセマンティック定義を各基盤で作り直す必要があり複雑性や不整合、管理負荷が生じていたが、Ossieはそれを一度定義して再利用できる共通仕様にし、意味やガバナンスを保ったまま横断利用をしやすくする狙いがある。",
+  "summaryEn": "Apache Ossie (incubating) has gained a public commitment from Microsoft, working with Snowflake, to promote a vendor-neutral standard for exchanging semantic metadata across analytics, AI, and BI. The current focus is cross-platform semantic-layer conversion without moving or duplicating underlying data, highlighted by a scenario that converts one Ossie document into both a Snowflake Semantic View and a Power BI semantic model so shared semantic context can be defined once and reused across both platforms.",
+  "keyPointsEn": [
+    "Microsoft affirmed its commitment to Apache Ossie, a vendor-neutral effort for semantic metadata exchange across analytics, AI, and BI, and noted that Snowflake helped found the project.",
+    "The current collaboration is focused on cross-platform semantic-layer conversion through Apache Ossie without moving or duplicating the underlying data.",
+    "The highlighted integration scenario converts one Ossie document into both a Snowflake Semantic View and a Power BI semantic model, allowing shared semantic context to be reused across Snowflake and Fabric.",
+    "Microsoft and Snowflake said they plan to help establish DAX as an Ossie-recognized query language and advance ontology support in Ossie.",
+    "Apache Ossie remains in incubation at the Apache Software Foundation, meaning it is still working toward the governance, infrastructure, and community practices expected of established Apache projects."
+  ],
+  "significanceEn": "This matters to customers that use Snowflake and Fabric/Power BI together, and to users seeking platform-agnostic agentic experiences. The article says semantic definitions previously had to be recreated across platforms, creating complexity, inconsistency, and management overhead; Ossie aims to let those definitions be created once and reused across systems while preserving semantic meaning and governance."
+}
