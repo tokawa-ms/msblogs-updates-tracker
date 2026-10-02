@@ -1,0 +1,18 @@
+{
+  "summary": "GitHub Universe 2026では、AIエージェントの記憶・評価・権限制御、npm依存関係の保護、GitHub Actionsのサプライチェーン防御、JavaScriptツール群、低接続環境向け開発などを扱う注目セッション10本が取り上げられている。記事は、実務に持ち帰れる論点としてコード検証や依存関係の信頼性を重視しつつ、会期が10月28〜29日で、現地参加とオンライン参加の両パスがまだ案内されていることも伝えている。",
+  "keyPoints": [
+    "AIエージェント関連では、Copilotの記憶設計、実運用での評価、AI生成コードの検証、MCPサーバーの細粒度権限といった、性能と安全性の両立に関わるテーマが複数含まれている。",
+    "依存関係とサプライチェーン防御では、npm installの背後にある公開・保護の仕組み、npm auditで拾えない点、package provenanceやOpenID Connect、GitHub Actions向け脅威フレームワークが焦点として挙げられている。",
+    "開発者ツールと実装面では、Vite+によるフロントエンドツールチェーン統合を実際の移行例つきで扱うほか、ガーナの低接続地域向けCarbonSight開発の教訓とオフラインデモも予定されている。",
+    "イベント案内としては、残りのスケジュール確認とアジェンダ追加が促されており、会期は10月28〜29日、参加形態は現地またはオンラインの両方が用意されている。"
+  ],
+  "significance": "GitHub Universe参加者や、AI支援開発、依存関係の信頼性、CI/CDの防御、JavaScript運用、低接続環境対応に関心のある開発者にとって、どのセッションが実務上の疑問に直結するかを見極める材料になる。記事自体が「仕事に持ち帰れるアイデア」を基準にセッションを絞り込み、優先テーマからアジェンダを組む視点を示しているため、参加判断だけでなく学習テーマの優先順位付けにも役立つ。",
+  "summaryEn": "At GitHub Universe 2026, the article highlights 10 notable sessions covering AI agent memory, evaluation, and permissions, protection of npm dependencies, GitHub Actions supply-chain defense, JavaScript tooling, and development for low-connectivity environments. It frames code verification and dependency trust as practical takeaways for daily work, and also notes that the event runs on October 28–29 with both in-person and virtual passes still available.",
+  "keyPointsEn": [
+    "The AI agent lineup includes multiple topics tied to balancing capability and safety, such as Copilot memory design, production evaluation, verification of AI-generated code, and fine-grained authorization for hosted MCP servers.",
+    "For dependencies and supply-chain defense, the article emphasizes the publishing and protection systems behind npm install, gaps that npm audit cannot catch, the role of package provenance and OpenID Connect, and a threat framework for GitHub Actions.",
+    "On developer tooling and implementation, it highlights Vite+ as a front-end toolchain CLI shown with a real migration example, alongside lessons from building CarbonSight for low-connectivity communities in Ghana and an offline demo.",
+    "For event logistics, readers are prompted to review the rest of the schedule and add sessions to their agenda; the event dates are October 28–29, and both in-person and virtual attendance options are available."
+  ],
+  "significanceEn": "For GitHub Universe attendees and developers interested in AI-assisted development, dependency trust, CI/CD defense, JavaScript operations, and low-connectivity support, this serves as a practical guide to which sessions map directly to real engineering questions. Because the article explicitly narrows the agenda around ideas to bring back to day-to-day work and around prioritized topics, it helps with learning prioritization as much as with deciding what to attend."
+}
