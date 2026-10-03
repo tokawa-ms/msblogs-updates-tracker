@@ -1,0 +1,16 @@
+{
+  "summary": "AIによって開発者の仕事は、コードを自分で書き切る比重から、AIエージェントに作業を任せつつ問題定義、文脈提示、出力レビュー、技術判断を担う形へと変わりつつある。記事は、AIエージェントを指揮する力、最初の回答をうのみにせず別モデルや自分の判断で検証する姿勢、そして浮いた実装時間を顧客理解や設計判断などより大きな課題に振り向けることを強化すべき技能として挙げる。あわせてGitHub CopilotのRubber Duckエージェントが、計画やコード、テストを別モデルで批評する例も紹介している。",
+  "keyPoints": [
+    "記事は、AIを単に使うのではなく指揮する力を重視している。明確な問題設定、適切な文脈の提示、AI生成コードの評価、出荷可否の判断が重要になり、認証機能追加の例でも複数のAIエージェントを調整する役割が開発者側に残ると説明する。",
+    "AIの最初の答えはそのまま信用せず、別のAIモデルに批評させたうえで自分の判断で見極めるべきだとしている。例としてSQLクエリに対し、重複タイムスタンプ未対応やインデックス推奨欠如、大規模テーブルでの性能問題といった見落としを二つ目のモデルが指摘する流れを示す。",
+    "AIで実装時間が節約できる分、開発者はより大きな課題に時間を振り向けるべきだとしている。具体的には顧客ニーズの理解、トレードオフ評価、より良いシステム設計、アクセシビリティ確認、成功指標の定義や解決策承認などが挙げられている。"
+  ],
+  "significance": "この内容は、AIを日常の開発フローに組み込み始めている開発者やチームに関係する。記事は、コードを書く力が不要になるとは述べず、依然として実装は重要だとしつつ、AIが実装の一部を担うほど、出力を吟味してトレードオフを判断し、正しい問題に集中する技術的判断がより価値を持つことを示している。",
+  "summaryEn": "AI is changing developer work from writing every piece of code by hand to directing AI agents while owning problem definition, context, review, and technical judgment. The article highlights three skills to strengthen: directing AI agents, not trusting the first answer without checking it with another model and your own judgment, and using saved implementation time on larger problems such as customer understanding and design tradeoffs. It also cites GitHub Copilot’s Rubber Duck agent as an example of using a second model to critique plans, code, and tests.",
+  "keyPointsEn": [
+    "The article emphasizes learning to direct AI rather than merely use it. It says clear problem definition, supplying the right context, evaluating AI-generated code, and deciding what is ready to ship become more important, and that in the authentication example the developer still coordinates multiple AI agents.",
+    "It argues that AI’s first answer should not be trusted as-is, and recommends having another AI model critique it before applying your own judgment. In the SQL example, the second model points out missed issues such as duplicate timestamps, lack of an index recommendation, and poor performance on large tables.",
+    "It says developers should use implementation time saved by AI on broader problems. Examples include understanding customer needs, evaluating tradeoffs, designing better systems, checking accessibility, defining success metrics, and approving the solution."
+  ],
+  "significanceEn": "This matters to developers and teams that are starting to embed AI into everyday workflows. The article does not say coding stops mattering; instead, it says implementation remains essential while technical judgment becomes more valuable as AI takes on more of the implementation, especially for reviewing outputs, weighing tradeoffs, and focusing on the right problems."
+}
