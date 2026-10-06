@@ -1,0 +1,20 @@
+{
+  "summary": "ReviewBenchは、GitHubが公開したAIコードレビュー向けのオープンなベンチマークで、研究プレビュー版がReviewBenchサイトから利用可能になった。GitHub全体の分布に合わせた19言語・219件の公開PRを収録し、複数ソースのゴールデンセットと重大度・カテゴリ付きの評価でレビューエージェントを比較できる。自前エージェントの持ち込み評価やリーダーボード比較にも対応する。",
+  "keyPoints": [
+    "ベンチマーク本体は、GitHubの1億390万件のPR分布を分析して選んだ、187リポジトリ・19言語・219件の公開PRで構成される。PRサイズは極小変更の偏りを減らすため、レビューしやすい中〜大規模側に意図的に重み付けしている。",
+    "正解集合は、人間のレビュー、作者の追補コミットから推定した問題、静的解析、複数の最先端LLMから候補を集め、重複を意味的に統合して共有ルーブリックで判定する。評価はgrounded/augmentedのprecision・recall・F1を備え、重大度やカテゴリ、Fβで重み付けを変えた比較もできる。",
+    "信頼性確保のため、公開前にベンチマーク作成に関与していないシニアエンジニアが全グラウンドトゥルース所見を独立に再ラベルし、判定一致率は96.6%だった。データセット、judge、matcherはバージョン管理され、検証方法や妥当性への脅威も公開される。",
+    "研究プレビュー版では、完全なデータセット、評価手法、judge prompt、judge model configuration、self-serve runnerが公開され、自前エージェントを評価できる。提出時はコンテナイメージ、設定、自分のモデルキーが必要で、まず25 PRのテストセット、最終的に219 PRを3ラウンド実行する。",
+    "GitHubは、Copilot code reviewのlite-tier実験でReviewBenchの事前評価が本番A/Bテストと同じ方向を示したと説明している。オンラインではaddressed rateが8.0%、recallが13.6%、comment volumeが61%上昇し、review当たりコストは8.0%低下し、重大コメントはReviewBench予測227%増に対し本番262%増だった。"
+  ],
+  "significance": "AIコードレビューの開発者や導入側にとって、ReviewBenchは公開データと評価手法で比較できるため、既知の問題だけでなく新たに見つけた妥当な問題も含めて各エージェントの強みやノイズの傾向を見極めやすい。重大度・カテゴリやprecision/recall重視で評価を切り替えられるので、セキュリティ重視から低ノイズ重視まで異なるレビュー方針に合わせて選定しやすく、GitHubによれば本番実験前のオフライン指標としても使いやすい。",
+  "summaryEn": "ReviewBench is an open benchmark for AI code review launched by GitHub, and its research preview is now available on the ReviewBench website. It uses 219 public pull requests across 19 languages, aligned with GitHub-wide distributions, and compares review agents with a multi-source golden set plus severity- and category-based evaluation. It also supports bring-your-own-agent evaluation and leaderboard comparisons.",
+  "keyPointsEn": [
+    "The benchmark corpus consists of 219 public pull requests from 187 repositories across 19 languages, selected after analyzing 103.9 million GitHub pull requests. Pull request size is intentionally weighted toward the reviewable mid-range and tail to reduce overrepresentation of tiny changes.",
+    "Its ground truth gathers candidate findings from human review, issues inferred from follow-up commits, static analysis, and multiple frontier LLMs, then semantically deduplicates and judges them under a shared rubric. Evaluation includes grounded and augmented precision, recall, and F1, and can be sliced by severity, category, and Fβ weighting.",
+    "To support trustworthiness, senior engineers who did not help build the benchmark independently relabeled every ground-truth finding before release, with 96.6% agreement. The dataset, judge, and matcher are versioned, and the validation methodology and threats to validity are published.",
+    "In the research preview, the full dataset, evaluation method, judge prompt, judge model configuration, and self-serve runner are public, so users can evaluate their own agents. Submission requires a container image, configuration, and the user's own model key, starting with a 25-PR test set and ending with three rounds on the full 219-PR set.",
+    "GitHub says that in a lite-tier Copilot code review experiment, ReviewBench's offline evaluation predicted the same direction as the production A/B test. Online, addressed rate rose 8.0%, recall rose 13.6%, comment volume rose 61%, cost per review fell 8.0%, and critical comments increased 262% online versus a 227% increase predicted by ReviewBench."
+  ],
+  "significanceEn": "For teams building or adopting AI code review, ReviewBench matters because its public dataset and evaluation method make it easier to compare agents and understand not only known issues but also valid newly discovered ones and each system's noise profile. Because results can be sliced by severity, category, and precision-versus-recall preferences, it helps users choose systems that match different review priorities, and GitHub says it is also useful as an offline signal before production experiments."
+}
