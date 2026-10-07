@@ -1,0 +1,18 @@
+{
+  "summary": "GitHubは、エージェント規模の開発に対応するためGitインフラを稼働中のまま再構築している。新アーキテクチャでは、参照更新以外の処理の協調を減らし、ストレージとコンピュートを分離して読み書きを独立に拡張する。これにより高頻度のpushやCIの大量読み取りに対応しつつ、ブランチ保護や監査ログなど既存の運用統制は維持する方針だ。",
+  "keyPoints": [
+    "GitHub全体のGit負荷は急増しており、2025年9月から2026年8月の月間イベント数は218.2 billionから473.3 billionへ2倍超、2026年9月のコミット数は7.38 billionで前年の5倍超になった。",
+    "現行構成では各リポジトリを既定で5台のファイルサーバーに丸ごと複製し、その複製が耐久性と読み取り拡張の両方を担うため、読み取り容量のためにレプリカを増やすと書き込みが遅くなり、クォーラム喪失時は書き込みが止まる。",
+    "新設計では、合意が必要なのは参照更新だけに絞り、オブジェクト保存や接続性検証、シークレットスキャンは他の書き込みと並行実行する。さらに圧縮やガベージコレクションも配信経路から外し、永続ストレージに対する別ワーカーへ移す。",
+    "ストレージとコンピュートは分離され、正本データはAzure Blob Storageに置き、軽量ワーカーがキャッシュで読み取りをさばく。GitHubによれば、この構成は内部ベンチマークで書き込みスループットが最大35倍に達した。"
+  ],
+  "significance": "単一リポジトリで多数のエージェントやCIを並行稼働させる大規模開発チームが主な対象だが、GitHubはその設計改善が一般利用者にも波及すると位置付ける。高負荷向けに読み書きの独立拡張と障害回復性を高めつつ、ブランチ保護や監査ログなど既存の統制を保つことで、保守者、セキュリティ担当、初学者まで同じ基盤の恩恵を受けるという説明だ。",
+  "summaryEn": "GitHub is rebuilding its Git infrastructure in place to support agent-scale development. The new architecture reduces coordination to the reference update, separates storage from compute so reads and writes can scale independently, and is intended to preserve existing controls such as branch protections and audit logs while handling frequent pushes and heavy CI fan-out.",
+  "keyPointsEn": [
+    "Git activity on GitHub is surging: monthly events more than doubled from 218.2 billion to 473.3 billion between September 2025 and August 2026, and September 2026 saw 7.38 billion commits, more than five times a year earlier.",
+    "In the current design, each repository is fully replicated across five file servers by default, and the same replicas provide both durability and read scaling, so adding replicas to increase read capacity slows writes and losing quorum halts writes.",
+    "The new design limits coordination to reference updates, while object storage, connectivity validation, and secret scanning run in parallel with other writes. Compaction and garbage collection also move off the serving path to separate workers against durable storage.",
+    "Storage and compute are separated: authoritative repository data sits in Azure Blob Storage, while lightweight cached workers serve reads. GitHub says internal benchmarks showed up to 35x higher write throughput."
+  ],
+  "significanceEn": "The biggest immediate beneficiaries are large teams running many agents and CI jobs against a single repository, but GitHub positions the redesign as a broader platform upgrade. By improving independent scaling and failure recovery while keeping controls like branch protections and audit logs, the same foundation is meant to benefit maintainers, security teams, and even first-time contributors."
+}
