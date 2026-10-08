@@ -1,0 +1,18 @@
+{
+  "summary": "GitHub Secret Protectionでは、新しいModernBERT分類器をpush protectionに組み込み、非構造化シークレットまで防止対象を広げた。候補シークレット群を文脈付きで2ミリ秒未満に評価でき、GitHubは防止できるシークレット数を2倍超に増やせるとしている。機能は現時点でプライベートプレビューで、今月後半にEnterprise CloudとGitHub TeamsでGitHub Secret Protectionを持つ組織向けに提供予定で、AIクレジットを消費する。",
+  "keyPoints": [
+    "GitHubは9四半期分のデータから、AIで開発者が不注意になったという見方に否定的だ。Q2 2024からQ2 2026にかけてscreened pushesは2.84倍、認証情報を含むpushesは2.59倍に増えたが、push単位の発生率に統計的に有意な傾向はなく、ブロック上書き率は6.63%から3.93%へ低下した。",
+    "新しいModernBERT分類器は、コードや設定の文脈を見て候補シークレットを判定する。GitHubによれば、既存のLLMベースのパイプラインより高精度で、候補バッチを2ミリ秒未満で評価でき、push protectionで防げるシークレット数を2倍超に広げられる。",
+    "push protectionへのこの機能追加は、現時点ではプライベートプレビューだ。今月後半に、Enterprise CloudとGitHub TeamsでGitHub Secret Protectionを契約している組織向けに提供予定で、利用時にはAIクレジットを消費する。",
+    "同じモデルはpush後や周辺ツールにも展開される。AI secret detectionを持つ組織は本日から自動更新され、post-push scanのアラートは追加料金なしのまま、GitHub Enterprise Server 3.23ではパブリックプレビュー、Copilot CLIとCopilot Appの/security-reviewコマンドにも追加される。"
+  ],
+  "significance": "AIエージェントの利用でコード生成量が増える一方、漏えい後のシークレット失効は平均40日程度かかっており、人手中心の対応では追いつきにくい。GitHubを使う組織や開発者にとって、今回の変更は保護を人手ではなく計算資源側で拡張し、push前に止められる範囲を広げることで、増え続けるコード量に対する防御を強化する意味がある。",
+  "summaryEn": "GitHub Secret Protection has added a new ModernBERT classifier to push protection, expanding prevention to unstructured secrets. It can evaluate batches of candidate secrets with context in under two milliseconds, and GitHub says it can more than double the number of secrets it can prevent. The feature is currently in private preview and is scheduled to become available later this month for organizations with GitHub Secret Protection on Enterprise Cloud and GitHub Teams, consuming AI credits.",
+  "keyPointsEn": [
+    "GitHub argues that its nine quarters of data do not support the idea that AI has made developers more careless. From Q2 2024 to Q2 2026, screened pushes grew 2.84x and pushes carrying credentials grew 2.59x, but there was no statistically detectable trend in per-push prevalence, while the block override rate fell from 6.63% to 3.93%.",
+    "The new ModernBERT classifier judges candidate secrets using code and configuration context. According to GitHub, it is more precise than existing LLM-based pipelines, can evaluate candidate batches in under two milliseconds, and can more than double the number of secrets that push protection can prevent.",
+    "This push protection capability is currently in private preview. Later this month it is planned to become available for organizations with GitHub Secret Protection on Enterprise Cloud and GitHub Teams, and it will consume AI credits.",
+    "The same model is also being rolled out to post-push and adjacent surfaces. Organizations with AI secret detection are being automatically updated starting today, post-push scan alerts remain at no additional cost, GitHub Enterprise Server 3.23 gets it in public preview, and it is also being added to the /security-review command in Copilot CLI and Copilot App."
+  ],
+  "significanceEn": "As AI agents increase code output, secret revocation after exposure still takes about 40 days on average, making a human-centered response hard to scale. For organizations and developers using GitHub, this change matters because it shifts more protection onto compute rather than manual effort and expands what can be blocked before a push, strengthening defense as code volume keeps growing."
+}

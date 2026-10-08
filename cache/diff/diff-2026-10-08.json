@@ -1,0 +1,155 @@
+{
+  "date": "2026-10-08",
+  "compared_with": "2026-10-07",
+  "source_count": 6,
+  "new_count": 3,
+  "removed_count": 4,
+  "new_articles": [
+    {
+      "id": "f447ab3c07770462",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Global Industrial AIoT Platforms",
+      "url": "https://azure.microsoft.com/en-us/blog/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-global-industrial-aiot-platforms/",
+      "published_at": "2026-10-06T21:00:00.000Z",
+      "summary": "We’re proud to share that Microsoft has been named a Leader in the 2026 Gartner® Magic Quadrant™ for Global Industrial AIoT Platforms.\nThe post Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Global Industrial AIoT Platforms appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-10-08T02:37:06.734Z"
+    },
+    {
+      "id": "c6fb2b313984d9d2",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "Secret protection must scale with software",
+      "url": "https://github.blog/ai-and-ml/github-copilot/secret-protection-must-scale-with-software/",
+      "published_at": "2026-10-07T17:45:34.000Z",
+      "summary": "Developers aren’t becoming more careless; they’re being outpaced. The tools that let developers create more software should also take on more of the work of protecting it.\nThe post Secret protection must scale with software appeared first on The GitHub Blog.",
+      "fetched_at": "2026-10-08T02:37:06.495Z"
+    },
+    {
+      "id": "f524e9886f009cfd",
+      "source_id": "m365-blog",
+      "source_name": "Microsoft 365 Blog",
+      "title": "Introducing the new Copilot with Home, Code and Autopilot",
+      "url": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/",
+      "published_at": "2026-09-25T12:07:25.000Z",
+      "summary": "We’re reimagining Microsoft Copilot to enable work as it evolves and to help expand what every individual and every organization can accomplish in the flow of human ambition.\nThe post Introducing the new Copilot with Home, Code and Autopilot appeared first on AI at Work Blog.",
+      "fetched_at": "2026-10-08T02:37:06.874Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "f447ab3c07770462",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Global Industrial AIoT Platforms",
+          "url": "https://azure.microsoft.com/en-us/blog/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-global-industrial-aiot-platforms/",
+          "published_at": "2026-10-06T21:00:00.000Z",
+          "summary": "We’re proud to share that Microsoft has been named a Leader in the 2026 Gartner® Magic Quadrant™ for Global Industrial AIoT Platforms.\nThe post Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Global Industrial AIoT Platforms appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-10-08T02:37:06.734Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "e7eeb28a54828e0f",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Microsoft recognized as a Leader in the 2026 Gartner® Magic Quadrant™ for Distributed Hybrid Infrastructure",
+          "url": "https://azure.microsoft.com/en-us/blog/microsoft-recognized-as-a-leader-in-the-2026-gartner-magic-quadrant-for-distributed-hybrid-infrastructure/",
+          "published_at": "2026-09-16T16:00:00.000Z",
+          "summary": "Gartner highlighted Microsoft’s unified single-product architecture, flexibility across hyperconverged and disaggregated architectures, and more.\nThe post Microsoft recognized as a Leader in the 2026 Gartner® Magic Quadrant™ for Distributed Hybrid Infrastructure appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-10-07T02:11:29.708Z"
+        }
+      ]
+    },
+    "fabric-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "github-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "c6fb2b313984d9d2",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "Secret protection must scale with software",
+          "url": "https://github.blog/ai-and-ml/github-copilot/secret-protection-must-scale-with-software/",
+          "published_at": "2026-10-07T17:45:34.000Z",
+          "summary": "Developers aren’t becoming more careless; they’re being outpaced. The tools that let developers create more software should also take on more of the work of protecting it.\nThe post Secret protection must scale with software appeared first on The GitHub Blog.",
+          "fetched_at": "2026-10-08T02:37:06.495Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "3d14844898469c56",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "When chat is the wrong UI",
+          "url": "https://github.blog/ai-and-ml/github-copilot/when-chat-is-the-wrong-ui/",
+          "published_at": "2026-09-24T20:00:00.000Z",
+          "summary": "What is a developer to do when they need something more tangible than a chat box? Enter canvases.\nThe post When chat is the wrong UI appeared first on The GitHub Blog.",
+          "fetched_at": "2026-10-07T02:11:29.643Z"
+        }
+      ]
+    },
+    "m365-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "f524e9886f009cfd",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Introducing the new Copilot with Home, Code and Autopilot",
+          "url": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/",
+          "published_at": "2026-09-25T12:07:25.000Z",
+          "summary": "We’re reimagining Microsoft Copilot to enable work as it evolves and to help expand what every individual and every organization can accomplish in the flow of human ambition.\nThe post Introducing the new Copilot with Home, Code and Autopilot appeared first on AI at Work Blog.",
+          "fetched_at": "2026-10-08T02:37:06.874Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "cc0334ef418f3cdb",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Announcing the new Work IQ APIs",
+          "url": "https://www.microsoft.com/en-us/copilot/blog/2026/06/02/announcing-the-new-work-iq-apis/",
+          "published_at": "2026-06-02T17:00:15.000Z",
+          "summary": "Work IQ is a new intelligence layer for Microsoft 365, designed to understand how work gets done across your organizations.\nThe post Announcing the new Work IQ APIs appeared first on AI at Work Blog.",
+          "fetched_at": "2026-10-07T02:11:29.766Z"
+        }
+      ]
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 1,
+      "new_articles": [],
+      "removed_articles": [
+        {
+          "id": "3493e31daa3ce4ec",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Open Source AI Editor: Second Milestone",
+          "url": "https://code.visualstudio.com/blogs/2025/11/04/openSourceAIEditorSecondMilestone",
+          "published_at": "2025-11-06T00:00:00.000Z",
+          "summary": "Ghost text suggestions are now open source as part of the Copilot Chat extension - the second milestone in making VS Code an open source AI editor.\nRead the full article",
+          "fetched_at": "2026-10-07T02:11:29.670Z"
+        }
+      ]
+    }
+  },
+  "diff_result": true
+}
