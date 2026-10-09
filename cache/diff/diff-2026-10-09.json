@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-09",
+  "compared_with": "2026-10-08",
+  "source_count": 6,
+  "new_count": 2,
+  "removed_count": 2,
+  "new_articles": [
+    {
+      "id": "68aea5f02d37dc36",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "AI transformation across the infrastructure lifecycle: From supply chain to fleet operations",
+      "url": "https://azure.microsoft.com/en-us/blog/ai-transformation-across-the-infrastructure-lifecycle-from-supply-chain-to-fleet-operations/",
+      "published_at": "2026-10-07T15:00:00.000Z",
+      "summary": "The opportunity is bigger than making individual tasks faster. It’s to build a system that learns from how infrastructure is designed, sourced, and operated.\nThe post AI transformation across the infrastructure lifecycle: From supply chain to fleet operations appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-10-09T02:51:59.985Z"
+    },
+    {
+      "id": "400f93c3a2faae18",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "How one bug bounty researcher chooses the features they investigate",
+      "url": "https://github.blog/security/how-one-bug-bounty-researcher-chooses-the-features-they-investigate/",
+      "published_at": "2026-10-08T17:02:52.000Z",
+      "summary": "As we kick off Cybersecurity Awareness Month, the GitHub Bug Bounty team spotlights @vaib25vicky, exploring their methodology, techniques, and experiences hacking on GitHub.\nThe post How one bug bounty researcher chooses the features they investigate appeared first on The GitHub Blog.",
+      "fetched_at": "2026-10-09T02:51:59.901Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "68aea5f02d37dc36",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "AI transformation across the infrastructure lifecycle: From supply chain to fleet operations",
+          "url": "https://azure.microsoft.com/en-us/blog/ai-transformation-across-the-infrastructure-lifecycle-from-supply-chain-to-fleet-operations/",
+          "published_at": "2026-10-07T15:00:00.000Z",
+          "summary": "The opportunity is bigger than making individual tasks faster. It’s to build a system that learns from how infrastructure is designed, sourced, and operated.\nThe post AI transformation across the infrastructure lifecycle: From supply chain to fleet operations appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-10-09T02:51:59.985Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "7663b51ef99ebb29",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Claude Opus 5.5 comes to Microsoft Foundry for long-running coding and knowledge work",
+          "url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/claude-opus-5-5-comes-to-microsoft-foundry-for-long-running-coding-and-knowledge/4558051",
+          "published_at": "2026-09-22T17:00:25.000Z",
+          "summary": "AI models are increasingly taking on work that extends far beyond a single prompt: building a feature across a codebase, investigating a complex issue, synthesizing hundreds of pages of information, or working through a multi-step business process.\nThe post Claude Opus 5.5 comes to Microsoft Foundry for long-running coding and knowledge work appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-10-08T02:37:06.734Z"
+        }
+      ]
+    },
+    "fabric-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "github-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "400f93c3a2faae18",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "How one bug bounty researcher chooses the features they investigate",
+          "url": "https://github.blog/security/how-one-bug-bounty-researcher-chooses-the-features-they-investigate/",
+          "published_at": "2026-10-08T17:02:52.000Z",
+          "summary": "As we kick off Cybersecurity Awareness Month, the GitHub Bug Bounty team spotlights @vaib25vicky, exploring their methodology, techniques, and experiences hacking on GitHub.\nThe post How one bug bounty researcher chooses the features they investigate appeared first on The GitHub Blog.",
+          "fetched_at": "2026-10-09T02:51:59.901Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "c6ab1f25135f39c7",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "Improving site performance by shipping more CSS",
+          "url": "https://github.blog/engineering/architecture-optimization/improving-site-performance-by-shipping-more-css/",
+          "published_at": "2026-09-25T15:00:00.000Z",
+          "summary": "How we fully migrated github.com away from CSS-in-JS.\nThe post Improving site performance by shipping more CSS appeared first on The GitHub Blog.",
+          "fetched_at": "2026-10-08T02:37:06.495Z"
+        }
+      ]
+    },
+    "m365-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    }
+  },
+  "diff_result": true
+}

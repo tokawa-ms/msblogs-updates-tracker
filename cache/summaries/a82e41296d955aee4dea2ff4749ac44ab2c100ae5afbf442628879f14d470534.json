@@ -1,0 +1,18 @@
+{
+  "summary": "GitHubのBug Bounty Programでは、報告件数より質を重視する形に報奨体系を再構成し、継続的に高品質な報告を行う研究者向けの招待制VIPプログラムを恒久化した。記事は、そのVIP研究者である@vaib25vickyへのインタビューを通じて、複雑な機能を選んで挙動を深く理解し、異常が出るまで使い込みながら機能ごとに異なるバグ仮説を試す調査手法を紹介している。AIは生産性向上に役立つ一方、出力の検証は研究者自身が行うべきだという姿勢も示された。",
+  "keyPoints": [
+    "GitHubは今年、報告数ではなく報告の質を重視する方向に報奨体系を見直し、高品質・高影響の成果を継続する研究者向けに恒久的な招待制VIPプログラムを整備した。",
+    "VIP研究者には、重大な報告で3万ドル超の支払い、応答の高速化、一般公開前のベータ製品や機能の早期プレビューが提供される。",
+    "VIP招待の目安として、解決済みの重大1件、高2件、中4件、低7件のいずれかに達した研究者が対象になり得ると説明している。",
+    "取材対象の@vaib25vickyは、複雑で理解しにくい機能を優先して調べ、機能を使い込みながら不自然な挙動を起点に掘り下げ、機能に応じて異なるバグ種別を検証する。AIは時間短縮に使うが、未確認の結果をそのまま提出しないことを重視している。"
+  ],
+  "significance": "この内容は、GitHubの脆弱性報奨金制度に参加する、あるいは参加を検討するセキュリティ研究者にとって重要だ。評価基準が件数ではなく質へ移ったこと、VIP到達条件と特典、さらに実際に成果を出している研究者の調査手法とAI利用の注意点が示されており、GitHub上でどのような研究が歓迎されるのかを具体的に理解できるためである。",
+  "summaryEn": "GitHub’s Bug Bounty Program has restructured its reward model to emphasize report quality over volume and has formalized a permanent invite-only VIP program for researchers who consistently submit high-quality findings. Through an interview with VIP researcher @vaib25vicky, the article outlines a methodology centered on choosing complex features, understanding how they work deeply, and testing different bug hypotheses until anomalous behavior appears. It also says AI can improve productivity, but researchers should verify AI output themselves.",
+  "keyPointsEn": [
+    "This year, GitHub revised its bounty structure to prioritize the quality of submissions rather than the number of reports, and formalized a permanent invite-only VIP program for researchers who consistently deliver high-quality, high-impact work.",
+    "VIP researchers receive higher payouts of up to $30,000 or more for critical findings, faster response times, and early previews of beta products and features before public launch.",
+    "The article says researchers with one critical, two high, four medium, or seven low-severity resolved findings may qualify for an invitation to the VIP program.",
+    "Featured researcher @vaib25vicky says they focus on complex features that are hard to understand, keep exploring a feature until something odd happens, and test bug classes based on the feature itself. They use AI to save time, but stress that unverified AI output should never be submitted as a finding."
+  ],
+  "significanceEn": "This matters for security researchers who participate in, or are considering, GitHub’s bug bounty program. It clarifies that the program now rewards quality over volume, specifies the VIP eligibility thresholds and benefits, and provides a concrete example of the research approach and AI-use caution followed by a successful participant, helping readers understand what kind of work GitHub wants to encourage."
+}
