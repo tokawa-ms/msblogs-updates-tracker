@@ -1,0 +1,102 @@
+[
+  {
+    "id": "68aea5f02d37dc36",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "AI transformation across the infrastructure lifecycle: From supply chain to fleet operations",
+    "url": "https://azure.microsoft.com/en-us/blog/ai-transformation-across-the-infrastructure-lifecycle-from-supply-chain-to-fleet-operations/",
+    "published_at": "2026-10-07T15:00:00.000Z",
+    "summary": "The opportunity is bigger than making individual tasks faster. It’s to build a system that learns from how infrastructure is designed, sourced, and operated.\nThe post AI transformation across the infrastructure lifecycle: From supply chain to fleet operations appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-10-10T02:12:28.293Z"
+  },
+  {
+    "id": "f447ab3c07770462",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Global Industrial AIoT Platforms",
+    "url": "https://azure.microsoft.com/en-us/blog/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-global-industrial-aiot-platforms/",
+    "published_at": "2026-10-06T21:00:00.000Z",
+    "summary": "We’re proud to share that Microsoft has been named a Leader in the 2026 Gartner® Magic Quadrant™ for Global Industrial AIoT Platforms.\nThe post Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Global Industrial AIoT Platforms appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-10-10T02:12:28.293Z"
+  },
+  {
+    "id": "9e3738afcbdf2597",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "Responsible infrastructure at hyperscale: Managing the full lifecycle of Azure hardware",
+    "url": "https://azure.microsoft.com/en-us/blog/responsible-infrastructure-at-hyperscale-managing-the-full-lifecycle-of-azure-hardware/",
+    "published_at": "2026-09-30T15:00:00.000Z",
+    "summary": "Microsoft is advancing Azure cloud infrastructure with more efficient systems and Circular Centers that extend the useful life of datacenter hardware.\nThe post Responsible infrastructure at hyperscale: Managing the full lifecycle of Azure hardware appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-10-10T02:12:28.293Z"
+  },
+  {
+    "id": "b207d93ee246121a",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "SQL Server on Azure Local is now generally available",
+    "url": "https://www.microsoft.com/en-us/sql-server/blog/2026/09/28/sql-server-on-azure-local-is-now-generally-available/",
+    "published_at": "2026-09-29T16:40:06.000Z",
+    "summary": "With SQL Server on Azure Local, customers can modernize where their data resides while maintaining control over infrastructure, connectivity, and data placement.\nThe post SQL Server on Azure Local is now generally available appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-10-10T02:12:28.293Z"
+  },
+  {
+    "id": "36138c270920188f",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "FabCon and SQLCon 2026 in Barcelona: Building the data foundation for Microsoft Copilot and agents",
+    "url": "https://azure.microsoft.com/en-us/blog/fabcon-and-sqlcon-2026-in-barcelona-building-the-data-foundation-for-microsoft-copilot-and-agents/",
+    "published_at": "2026-09-29T06:30:00.000Z",
+    "summary": "Microsoft Fabric and SQL innovations announced at FabCon and SQLCon Barcelona 2026 help organizations build trusted data foundations for AI.\nThe post FabCon and SQLCon 2026 in Barcelona: Building the data foundation for Microsoft Copilot and agents appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-10-10T02:12:28.293Z"
+  },
+  {
+    "id": "cb668c5b27e4138b",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "Enhancing Microsoft Azure Virtual Machine lifecycle",
+    "url": "https://azure.microsoft.com/en-us/blog/enhancing-microsoft-azure-virtual-machine-lifecycle/",
+    "published_at": "2026-09-28T15:00:00.000Z",
+    "summary": "Our Virtual Machine Lifecycle policy guides how we manage these transitions, giving Azure customers transparency, predictability, and guidance.\nThe post Enhancing Microsoft Azure Virtual Machine lifecycle appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-10-10T02:12:28.293Z"
+  },
+  {
+    "id": "8c6ccd384bd032af",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "Ship agents faster with expanded model choice, voice agents, and continuous optimization",
+    "url": "https://azure.microsoft.com/en-us/blog/ship-agents-faster-with-expanded-model-choice-voice-agents-and-continuous-optimization/",
+    "published_at": "2026-09-24T18:00:00.000Z",
+    "summary": "The best model for your business will keep changing. Adopting it should move your business forward, not send your team back to rebuild the architecture around it.\nThe post Ship agents faster with expanded model choice, voice agents, and continuous optimization appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-10-10T02:12:28.293Z"
+  },
+  {
+    "id": "cc00b97f83044944",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "Your architecture diagram is not your resilience",
+    "url": "https://azure.microsoft.com/en-us/blog/your-architecture-diagram-is-not-your-resilience/",
+    "published_at": "2026-09-23T16:00:00.000Z",
+    "summary": "For years, resilience was something you set up once. That kept the lights on, but it treated resilience as a project with an end date rather than a property you maintain.\nThe post Your architecture diagram is not your resilience appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-10-10T02:12:28.293Z"
+  },
+  {
+    "id": "443300f133d68284",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "Designing agent-first platforms: What changes when agents do the work",
+    "url": "https://azure.microsoft.com/en-us/blog/designing-agent-first-platforms-what-changes-when-agents-do-the-work/",
+    "published_at": "2026-09-23T15:00:00.000Z",
+    "summary": "The organizations pulling ahead are not simply adding AI to what they already have. They are designing for a different kind of software.\nThe post Designing agent-first platforms: What changes when agents do the work appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-10-10T02:12:28.293Z"
+  },
+  {
+    "id": "dd3c176ae5526b3e",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "GPT-6 Astra, Sol, and Luna: For production agents in Microsoft Foundry",
+    "url": "https://azure.microsoft.com/en-us/blog/gpt-6-astra-sol-and-luna-for-production-agents-in-microsoft-foundry/",
+    "published_at": "2026-09-22T18:30:00.000Z",
+    "summary": "Explore GPT-6 Astra, Sol, and GPT-6 Luna in Microsoft Foundry, with scalable model options for production AI agents, complex workflows, and high-volume tasks.\nThe post GPT-6 Astra, Sol, and Luna: For production agents in Microsoft Foundry appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-10-10T02:12:28.293Z"
+  }
+]
