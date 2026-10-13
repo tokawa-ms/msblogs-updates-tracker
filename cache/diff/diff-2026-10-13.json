@@ -1,0 +1,144 @@
+{
+  "date": "2026-10-13",
+  "compared_with": "2026-10-12",
+  "source_count": 6,
+  "new_count": 3,
+  "removed_count": 3,
+  "new_articles": [
+    {
+      "id": "67d54252a65ac409",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "Deep dive into Azure Maia 300 architecture",
+      "url": "https://azure.microsoft.com/en-us/blog/deep-dive-into-azure-maia-300-architecture/",
+      "published_at": "2026-10-12T13:00:00.000Z",
+      "summary": "Maia 300 operates as a single platform to meet the demands of cloud-scale agentic inference.\nThe post Deep dive into Azure Maia 300 architecture appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-10-13T03:26:13.040Z"
+    },
+    {
+      "id": "23216cfbe10c8c92",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "GitHub Copilot app for Beginners: How to teach Copilot about your codebase",
+      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase/",
+      "published_at": "2026-10-12T17:43:59.000Z",
+      "summary": "Learn how to add custom instructions and skills to your repository, use custom agents, and connect MCP servers like Playwright.\nThe post GitHub Copilot app for Beginners: How to teach Copilot about your codebase appeared first on The GitHub Blog.",
+      "fetched_at": "2026-10-13T03:26:12.321Z"
+    },
+    {
+      "id": "f524e9886f009cfd",
+      "source_id": "m365-blog",
+      "source_name": "Microsoft 365 Blog",
+      "title": "Introducing the new Copilot with Home, Code and Autopilot",
+      "url": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/",
+      "published_at": "2026-09-25T12:07:25.000Z",
+      "summary": "We’re reimagining Microsoft Copilot to enable work as it evolves and to help expand what every individual and every organization can accomplish in the flow of human ambition.\nThe post Introducing the new Copilot with Home, Code and Autopilot appeared first on AI at Work Blog.",
+      "fetched_at": "2026-10-13T03:26:13.167Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "67d54252a65ac409",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Deep dive into Azure Maia 300 architecture",
+          "url": "https://azure.microsoft.com/en-us/blog/deep-dive-into-azure-maia-300-architecture/",
+          "published_at": "2026-10-12T13:00:00.000Z",
+          "summary": "Maia 300 operates as a single platform to meet the demands of cloud-scale agentic inference.\nThe post Deep dive into Azure Maia 300 architecture appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-10-13T03:26:13.040Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "dd3c176ae5526b3e",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "GPT-6 Astra, Sol, and Luna: For production agents in Microsoft Foundry",
+          "url": "https://azure.microsoft.com/en-us/blog/gpt-6-astra-sol-and-luna-for-production-agents-in-microsoft-foundry/",
+          "published_at": "2026-09-22T18:30:00.000Z",
+          "summary": "Explore GPT-6 Astra, Sol, and GPT-6 Luna in Microsoft Foundry, with scalable model options for production AI agents, complex workflows, and high-volume tasks.\nThe post GPT-6 Astra, Sol, and Luna: For production agents in Microsoft Foundry appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-10-12T02:11:56.679Z"
+        }
+      ]
+    },
+    "fabric-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "github-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "23216cfbe10c8c92",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "GitHub Copilot app for Beginners: How to teach Copilot about your codebase",
+          "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase/",
+          "published_at": "2026-10-12T17:43:59.000Z",
+          "summary": "Learn how to add custom instructions and skills to your repository, use custom agents, and connect MCP servers like Playwright.\nThe post GitHub Copilot app for Beginners: How to teach Copilot about your codebase appeared first on The GitHub Blog.",
+          "fetched_at": "2026-10-13T03:26:12.321Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "b50539d473adb522",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "Highlights from Git 2.56",
+          "url": "https://github.blog/open-source/git/highlights-from-git-2-56/",
+          "published_at": "2026-09-28T17:23:33.000Z",
+          "summary": "The open source Git project just released Git 2.56. Here is GitHub's look at some of the most interesting features and changes introduced since last time.\nThe post Highlights from Git 2.56 appeared first on The GitHub Blog.",
+          "fetched_at": "2026-10-12T02:11:56.540Z"
+        }
+      ]
+    },
+    "m365-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "f524e9886f009cfd",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Introducing the new Copilot with Home, Code and Autopilot",
+          "url": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/",
+          "published_at": "2026-09-25T12:07:25.000Z",
+          "summary": "We’re reimagining Microsoft Copilot to enable work as it evolves and to help expand what every individual and every organization can accomplish in the flow of human ambition.\nThe post Introducing the new Copilot with Home, Code and Autopilot appeared first on AI at Work Blog.",
+          "fetched_at": "2026-10-13T03:26:13.167Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "cc0334ef418f3cdb",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Announcing the new Work IQ APIs",
+          "url": "https://www.microsoft.com/en-us/copilot/blog/2026/06/02/announcing-the-new-work-iq-apis/",
+          "published_at": "2026-06-02T17:00:15.000Z",
+          "summary": "Work IQ is a new intelligence layer for Microsoft 365, designed to understand how work gets done across your organizations.\nThe post Announcing the new Work IQ APIs appeared first on AI at Work Blog.",
+          "fetched_at": "2026-10-12T02:11:56.861Z"
+        }
+      ]
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    }
+  },
+  "diff_result": true
+}

@@ -1,0 +1,18 @@
+{
+  "summary": "GitHub Copilot appでコードベース固有の文脈を教える方法として、記事はカスタム指示、エージェントスキル、カスタムエージェント、MCPサーバーの4つを整理している。リポジトリ全体や特定パス向けの指示を .github 配下に置き、手順化できる作業はスキルとしてまとめることで、Copilotが毎回推測せず既存の規約や手順に沿って動けるようにする。さらに、広範な作業向けの専用エージェントや、Playwrightのような外部ツール接続を組み合わせることで、リポジトリ外の情報やブラウザー操作まで活用できる。",
+  "keyPoints": [
+    "リポジトリ共通の規約は .github/copilot-instructions.md に置き、アーキテクチャ、命名規則、テストや検証の期待値などを定義できる。さらに .github/instructions 配下では applyTo フィールド付きのパス別指示を作れ、該当ファイルでは全体向けと個別向けの両方をCopilotが参照できる。",
+    "反復的な手順は .github/skills の各サブフォルダーにスキルとして置ける。SKILL.md には、いつ使うか、どのスクリプトでテストやlintを回すか、何を確認するか、よくある失敗の切り分け方まで書けるため、Copilotはコマンドを推測せず既存プロセスに従える。",
+    "複数ファイルにまたがる専門的な作業には、.github/agents に置くカスタムエージェントを使う。用途、指示、利用ツール、関連するプロジェクト文脈を定義でき、アクセシビリティレビューのような単一手順では収まらない継続的な役割に向く。",
+    "MCPサーバーを接続すると、Copilotはリポジトリ外のツールやデータにもアクセスできる。例としてPlaywrightを設定すれば、ブラウザーでアプリを開いて手動テストのように操作でき、自動チェック通過だけでなく更新後の画面挙動も確認できる。"
+  ],
+  "significance": "この内容は、毎回同じ規約や手順を説明している開発者やチームに関係する。記事の要点は、そうした知識をリポジトリ内の指示、スキル、エージェント定義として置くことで、Copilotがプロジェクト固有のやり方を継続的に参照し、必要に応じて外部ツールまで使えるようにする点にある。",
+  "summaryEn": "For the GitHub Copilot app, the article explains four ways to teach it about a codebase: custom instructions, agent skills, custom agents, and MCP servers. By storing repository-wide and path-specific guidance under .github and packaging repeatable procedures as skills, teams can let Copilot follow existing conventions and workflows instead of guessing each time. It also shows how dedicated agents for broader tasks and external-tool connections such as Playwright can extend Copilot beyond the repository to browser-based verification and other outside context.",
+  "keyPointsEn": [
+    "Repository-wide conventions can be stored in .github/copilot-instructions.md, covering architecture, naming, and testing expectations. Path-specific files under .github/instructions can use an applyTo field, and Copilot can use both the repository-wide and file-specific guidance on matching files.",
+    "Repeatable procedures can be packaged as skills under .github/skills, with one subfolder per skill. A SKILL.md file can describe when to use it, which scripts run tests and linting, what those scripts check, and how to troubleshoot common failures, so Copilot follows the established process instead of guessing commands.",
+    "For broader specialized work across multiple files, custom agents can be defined under .github/agents. They can specify purpose, instructions, tools, and relevant project context, making them suitable for recurring roles such as accessibility reviews that go beyond a single procedure.",
+    "By connecting MCP servers, Copilot can access tools and data outside the repository. With Playwright configured, for example, it can open the app in a browser and interact with it for manual-style testing, helping verify interface behavior in addition to automated checks."
+  ],
+  "significanceEn": "This matters to developers and teams who keep repeating the same conventions and procedures to Copilot. The article’s core point is that by storing that knowledge in repository instructions, skills, and agent definitions, Copilot can consistently use project-specific practices and, when needed, reach external tools as well."
+}
