@@ -1,0 +1,16 @@
+{
+  "summary": "Microsoft Data FactoryのAmazon Redshiftコネクタは、新しいAmazon Redshift ODBC 2.xドライバーを使うV2コネクタへ更新され、既存のRedshiftコネクタもこのドライバーへ移行します。新コネクタはリージョンごとに自動展開中で、早めに導入・検証したい顧客にはプレビュー機能の有効化が案内されています。機能面では外部オブジェクトのメタデータ可視化、Redshift Data Sharingの読み取り、接続監査などが追加されます。",
+  "keyPoints": [
+    "Data Factory内の既存のRedshiftコネクタはAmazon Redshift ODBC 2.xドライバーへ移行し、新しいコネクタは各リージョンに自動でロールアウトされています。",
+    "新コネクタの主な機能として、外部オブジェクトのメタデータ可視化、Redshift Data Sharingの読み取り対応、Amazon Redshiftの新機能への対応強化、Microsoft製品とRedshift間の接続監査が挙げられています。",
+    "この変更はFabric Copyjob、Fabric Copy pipeline、Dataflows Gen2、Semantic models、Power BI Desktop、Gatewayなど、Redshiftと接続する複数のMicrosoft製品にまたがって影響します。早期に実装・テストしたい顧客はプレビュー機能を有効化する必要があります。"
+  ],
+  "significance": "Amazon RedshiftをMicrosoft Data Factoryや関連製品と接続している利用者に関係する更新です。Microsoftはこの変更により互換性、安定性、セキュリティ、サポートの向上や接続脅威の軽減をうたっており、加えて接続監査やData Sharing読み取り対応など、運用と可視性の改善が見込まれます。",
+  "summaryEn": "Microsoft Data Factory's Amazon Redshift connector is being updated to a V2 connector that uses the new Amazon Redshift ODBC 2.x driver, and existing Redshift connectors are also moving to that driver. The new connector is being rolled out automatically across regions, while customers who want to implement and test it sooner are advised to enable preview features. Key additions include metadata visibility for external objects, Redshift Data Sharing reads, and connection auditing.",
+  "keyPointsEn": [
+    "Existing Redshift connectors within Data Factory are transitioning to the Amazon Redshift ODBC 2.x driver, and the new connector is rolling out automatically across regions.",
+    "Key capabilities listed for the new connector include metadata visibility for external objects, support for Redshift Data Sharing reads, enhanced support for new Amazon Redshift features, and auditing of connections between Microsoft products and Redshift.",
+    "The change affects multiple Microsoft products that connect to Redshift, including Fabric Copyjob, Fabric Copy pipeline, Dataflows Gen2, Semantic models, Power BI Desktop, and Gateway. Customers who want to implement and test it earlier need to enable preview features."
+  ],
+  "significanceEn": "This update matters to users connecting Amazon Redshift with Microsoft Data Factory and related Microsoft products. Microsoft says the change improves compatibility, stability, security, and support while helping mitigate connectivity threats, and it also adds operational visibility through connection auditing and support for Data Sharing reads."
+}

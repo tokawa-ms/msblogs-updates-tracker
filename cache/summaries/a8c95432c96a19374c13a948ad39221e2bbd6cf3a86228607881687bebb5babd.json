@@ -1,0 +1,18 @@
+{
+  "summary": "GitHubのシークレットスキャンは、正規表現で候補を拾い、ModernBERTで文脈判定する新しいコンテキスト対応分類器へ更新された。GitHubによれば、この変更でリポジトリー所有者加重の受理率は11.5%向上し、ポストプッシュのスキャン実行時間中央値は86%短縮、提供コストは98%以上削減した。高速化により、汎用シークレット検出をコミット後だけでなくプッシュ保護にも広げ、開発者がプッシュ前に結果を受け取れるようになった。",
+  "keyPoints": [
+    "新パイプラインは、まず正規表現で高再現率に候補を集め、その後に微調整したModernBERTが候補値と周辺文脈を見て真のシークレットかを判定する2段構成で、決定論的スキャンを置き換えるのではなく補完する。",
+    "GitHubの評価では、オンラインでリポジトリー所有者加重の受理率が11.5%上がり、ポストプッシュの実行時間中央値は86%低下、提供コストは従来のLLMパイプライン比で98%以上下がった。オフライン評価でも、同一の公開トラフィックで精度が13%、再現率が19%改善した。",
+    "この効率化で、汎用シークレット検出はコミット後だけでなくプッシュ保護にも拡張され、結果をプッシュ前に返せるようになった。記事では、ポストプッシュスキャンはコミット済みのリポジトリー内容を継続的に走査してアラートを作成する役割も担うと説明している。",
+    "学習には、GitHubリポジトリー由来の例、人手注釈や弱ラベルを含む高再現率の正規表現候補、そしてドキュメント用シークレットやテストフィクスチャなどの合成例を組み合わせた。学習済みモデルはONNX形式と8ビット量子化で書き出し、高速推論に対応している。"
+  ],
+  "significance": "恩恵を受けるのは、コミットやプルリクエスト、日常の開発フローでシークレット検出を使う開発者とセキュリティチームだ。GitHubは、文脈判定で誤検知を減らしつつ実運用での速度とコストを下げたことで、より少ないノイズで本物の認証情報を見つけ、プッシュ前の早い段階でもフィードバックを返しやすくなるとしている。",
+  "summaryEn": "GitHub secret scanning was updated to a new context-aware classifier that uses regex to find candidates and ModernBERT to judge them in context. According to GitHub, this raised repository-owner-weighted acceptance by 11.5%, cut median post-push scan execution time by 86%, and reduced serving cost by more than 98%. The speedup also let GitHub extend generic secret detection from after-commit scanning into push protection so developers can get results before pushing.",
+  "keyPointsEn": [
+    "The new pipeline is two-stage: regex first gathers candidates with high recall, then a fine-tuned ModernBERT judges whether they are real secrets using the candidate and surrounding context, complementing rather than replacing deterministic scanning.",
+    "In GitHub’s evaluation, repository-owner-weighted acceptance increased by 11.5% online, median post-push execution time fell by 86%, and serving cost dropped by more than 98% versus the previous LLM pipeline. Offline evaluation on the same public traffic also showed 13% higher precision and 19% higher recall.",
+    "This efficiency let GitHub extend generic secret detection beyond after-commit scanning into push protection, so results can be returned before a push. The article also says post-push scanning continues to scan committed repository content and create alerts.",
+    "Training combined examples from GitHub repositories, high-recall regex candidates with human annotations and weak labels, and synthetic examples such as documentation secrets and test fixtures. The trained model is exported in ONNX format with 8-bit quantization for fast inference."
+  ],
+  "significanceEn": "The main beneficiaries are developers and security teams that use secret detection in commits, pull requests, and everyday development workflows. GitHub says the context-aware approach reduces false positives while improving operational speed and cost, making it easier to find real credentials with less noise and to provide feedback earlier, including before a push."
+}
