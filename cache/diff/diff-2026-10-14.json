@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-14",
+  "compared_with": "2026-10-13",
+  "source_count": 6,
+  "new_count": 2,
+  "removed_count": 2,
+  "new_articles": [
+    {
+      "id": "1c335049bb397613",
+      "source_id": "fabric-blog",
+      "source_name": "Microsoft Fabric Blog",
+      "title": "Amazon Redshift V2 Connector for Microsoft Data Factory",
+      "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Amazon-Redshift-V2-Connector-for-Microsoft-Data-Factory/ba-p/5365631",
+      "published_at": "2026-10-13T19:00:00.000Z",
+      "summary": "Microsoft is updating our Amazon Redshift connector to use the new Amazon Redshift ODBC 2.x driver.\r\nWhat’s new and why upgrade\r\nMicrosoft and Amazon Redshift have been collaborating to provide our shared customers with an industry-leading, improved security, connectivity experience. The new driver will ensure compatibility, stability, security, and support for your data connectivity. This improvement aligns with Microsoft’s continued commitment to enhancing and providing secure data connectivity solutions for customers, enabling the mitigation of data connectivity threats.\r\nTo support this initiative, existing connectors within Data Factory are transitioning to the Amazon Redshift ODBC 2.x driver for all Redshift connectors; the new connector is rolling out automatically across regions.\r\nThis improvement will benefit connectivity between Redshift and various Microsoft products, ranging from Fabric Copyjob, Fabric Copy pipeline, and Dataflows Gen2 to Semantic models, Power BI Desktop, Gateway, and more.\r\nKey capabilities in this new connector include (and are not limited to):\r\n\r\nMetadata visibility for external objects.\r\nSupport for Redshift Data Sharing reads.\r\nEnhanced support for new features launched in Amazon Redshift.\r\nAbility to audit connections between Microsoft products and Amazon Redshift.\r\n\r\nRollout details\r\nThe new connector is rolling out automatically across regions. To be best prepared, we recommend that customers who want to implement and test the connector sooner should enable the preview features.\r\nTo learn more, please reference the Microsoft Redshift documentation.",
+      "fetched_at": "2026-10-14T01:43:04.364Z"
+    },
+    {
+      "id": "7a679d710e8c186b",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "GitHub’s model for secret detection: Finding more secrets with less noise",
+      "url": "https://github.blog/ai-and-ml/githubs-model-for-secret-detection-finding-more-secrets-with-less-noise/",
+      "published_at": "2026-10-13T17:56:33.000Z",
+      "summary": "GitHub’s context-aware secret classifier improves detection quality, raises weighted acceptance by 11.5%, and reduces median scan execution time by 86%.\nThe post GitHub’s model for secret detection: Finding more secrets with less noise appeared first on The GitHub Blog.",
+      "fetched_at": "2026-10-14T01:43:01.386Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "fabric-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "1c335049bb397613",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Amazon Redshift V2 Connector for Microsoft Data Factory",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Amazon-Redshift-V2-Connector-for-Microsoft-Data-Factory/ba-p/5365631",
+          "published_at": "2026-10-13T19:00:00.000Z",
+          "summary": "Microsoft is updating our Amazon Redshift connector to use the new Amazon Redshift ODBC 2.x driver.\r\nWhat’s new and why upgrade\r\nMicrosoft and Amazon Redshift have been collaborating to provide our shared customers with an industry-leading, improved security, connectivity experience. The new driver will ensure compatibility, stability, security, and support for your data connectivity. This improvement aligns with Microsoft’s continued commitment to enhancing and providing secure data connectivity solutions for customers, enabling the mitigation of data connectivity threats.\r\nTo support this initiative, existing connectors within Data Factory are transitioning to the Amazon Redshift ODBC 2.x driver for all Redshift connectors; the new connector is rolling out automatically across regions.\r\nThis improvement will benefit connectivity between Redshift and various Microsoft products, ranging from Fabric Copyjob, Fabric Copy pipeline, and Dataflows Gen2 to Semantic models, Power BI Desktop, Gateway, and more.\r\nKey capabilities in this new connector include (and are not limited to):\r\n\r\nMetadata visibility for external objects.\r\nSupport for Redshift Data Sharing reads.\r\nEnhanced support for new features launched in Amazon Redshift.\r\nAbility to audit connections between Microsoft products and Amazon Redshift.\r\n\r\nRollout details\r\nThe new connector is rolling out automatically across regions. To be best prepared, we recommend that customers who want to implement and test the connector sooner should enable the preview features.\r\nTo learn more, please reference the Microsoft Redshift documentation.",
+          "fetched_at": "2026-10-14T01:43:04.364Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "7694e5eb7bb01e68",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Deep dive into tooltip options in Power BI visuals (Generally Available)",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Deep-dive-into-tooltip-options-in-Power-BI-visuals-Generally/ba-p/5255518",
+          "published_at": "2026-07-06T17:00:00.000Z",
+          "summary": "Discover how Power BI’s tooltip (Generally Available) options help you tailor hover experiences—from curated field lists and sentence-style insights to fully custom report page tooltips.",
+          "fetched_at": "2026-10-13T03:26:13.969Z"
+        }
+      ]
+    },
+    "github-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "7a679d710e8c186b",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "GitHub’s model for secret detection: Finding more secrets with less noise",
+          "url": "https://github.blog/ai-and-ml/githubs-model-for-secret-detection-finding-more-secrets-with-less-noise/",
+          "published_at": "2026-10-13T17:56:33.000Z",
+          "summary": "GitHub’s context-aware secret classifier improves detection quality, raises weighted acceptance by 11.5%, and reduces median scan execution time by 86%.\nThe post GitHub’s model for secret detection: Finding more secrets with less noise appeared first on The GitHub Blog.",
+          "fetched_at": "2026-10-14T01:43:01.386Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "0baeacde9feacfd4",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "How we found 24 Android vulnerabilities using our open source AI security agent",
+          "url": "https://github.blog/security/how-we-found-24-android-vulnerabilities-using-our-open-source-ai-security-agent/",
+          "published_at": "2026-09-28T19:00:00.000Z",
+          "summary": "A look at the targeted AI taskflows behind these findings, the critical Android bugs they uncovered, and how to run the same open-source agent on your own app.\nThe post How we found 24 Android vulnerabilities using our open source AI security agent appeared first on The GitHub Blog.",
+          "fetched_at": "2026-10-13T03:26:12.321Z"
+        }
+      ]
+    },
+    "m365-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    }
+  },
+  "diff_result": true
+}
