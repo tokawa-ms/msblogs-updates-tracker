@@ -1,0 +1,20 @@
+{
+  "summary": "GitHubは2026年8〜9月に、共有データベース負荷の軽減、プルリクエスト障害の封じ込め、GitHub Actionsの運用余力拡大、Azureへの本番移行を進めた。10月7日時点でCentral USには160の本番サービスのうち120、主要MySQL 51基のうち13基を移し、コアアプリの読み取りトラフィックの65.4%をAzureで処理している。一方で9月には共有データベース負荷による性能低下と、Copilot code review結果が一部顧客に返らない障害が起き、移行作業も容量制約で一時停止した。",
+  "keyPoints": [
+    "Azure移行は10月7日時点で、Central USに本番サービス160のうち120、主要MySQL 51基のうち13基まで進み、Azure側でコアアプリ読み取り65.4%、Git読み取り48.3%、ストリーム処理80.2%を担っている。",
+    "Central US移行は9月11日に可用性ゾーン間の容量不均衡で停止し、9月18日に恒久的な増強を再開したが、9月30日までに全本番サービスを配備する目標は未達だった。計画フェイルオーバー時には自動緊急プロセスがCentral USのDBコピーを切断し、同地域の顧客影響も発生した。",
+    "共有データベース改善では、認証コア24テーブルを最古の共有DBから移し、レプリカ負荷を毎秒約100万クエリ削減した。issues/PR向けクラスタでは不要な編集履歴約9.8億行を削除して推定1.8TBを回収可能にし、週次デッドロックは6月ピーク比で約77%減った。",
+    "GitHub ActionsではRedis運用負荷を下げ、測定されたRedis操作を約28%、相対CPUを約30%削減した。別のインフラキャッシュによりRedis帯域幅84%、平均応答時間66%、主要インベントリ要求の中央値96%、キュー済み要求95%の改善が報告されている。",
+    "9月28日のCopilot code review障害では、レビュー実行サービス変更により一部顧客へは完全なレビュー結果ではなく限定版だけが返され、レビューを構築できないのにジョブは成功扱いになった。監視不足で検知が遅れ、変更のロールバック後にGitHubは影響を受けたレビューの再依頼を案内した。"
+  ],
+  "significance": "この内容はGitHub利用者全般、とくにPull Request、GitHub Actions、Copilot code reviewを使うチームに関わる。GitHubによれば、共有DB負荷の削減や過負荷制御、PRの限定継続動作、ActionsのRedis改善で可用性リスクの低減を進めている一方、9月の2件の障害とCentral US移行の容量制約が、実運用での影響抑制はまだ完了していないことを示した。",
+  "summaryEn": "GitHub spent August and September 2026 reducing shared database pressure, improving pull request failure containment, increasing GitHub Actions operating headroom, and moving more production workloads to Azure. As of October 7, 120 of 160 production services and 13 of 51 primary MySQL databases had been moved to Central US, with Azure handling 65.4% of core application read traffic. But September still saw a shared-database degradation incident and a Copilot code review delivery failure for some customers, and the migration was temporarily paused due to capacity constraints.",
+  "keyPointsEn": [
+    "As of October 7, the Azure migration had moved 120 of 160 production services and 13 of 51 primary MySQL databases to Central US, with Azure handling 65.4% of core app reads, 48.3% of Git read traffic, and 80.2% of stream-processing traffic.",
+    "The Central US migration was paused on September 11 because of uneven capacity across availability zones and permanently resumed on September 18, but GitHub missed its September 30 target to deploy every production service there. During a planned failover, an automated emergency process also disconnected Central US database copies and affected customers in that region.",
+    "For shared database improvements, GitHub moved 24 authentication-core tables off its oldest shared database, cutting replica load by about one million queries per second. In the issues and pull requests cluster, it removed about 980 million unnecessary edit-history rows for an estimated 1.8 TB of recoverable storage, and weekly deadlocks fell about 77% from the June peak.",
+    "For GitHub Actions, GitHub reported lower Redis operating load, reducing measured Redis operations by about 28% and relative CPU by about 30%. A separate infrastructure cache also improved Redis bandwidth by 84%, average response time by 66%, median latency for the primary inventory request by 96%, and queued requests by 95%.",
+    "In the September 28 Copilot code review incident, a service change caused some customers to receive only a limited result instead of the full review output, so reviews could not be built even though jobs were marked successful. Missing results were not caught because of insufficient monitoring, and after the rollback GitHub told customers to request affected reviews again."
+  ],
+  "significanceEn": "This matters to GitHub users broadly, especially teams relying on pull requests, GitHub Actions, and Copilot code review. According to GitHub, reducing shared database load, adding overload controls, allowing limited pull request continuity, and improving Actions Redis performance are intended to reduce availability risk, but the two September incidents and the Central US migration capacity constraints show that limiting real-world customer impact is still unfinished."
+}

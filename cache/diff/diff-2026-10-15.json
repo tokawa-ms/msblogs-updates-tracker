@@ -1,0 +1,215 @@
+{
+  "date": "2026-10-15",
+  "compared_with": "2026-10-14",
+  "source_count": 6,
+  "new_count": 5,
+  "removed_count": 6,
+  "new_articles": [
+    {
+      "id": "95741fd459fa5556",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "Advancing hardware security with open-source Integrated HSM technology",
+      "url": "https://azure.microsoft.com/en-us/blog/advancing-hardware-security-with-open-source-integrated-hsm-technology/",
+      "published_at": "2026-10-13T16:15:00.000Z",
+      "summary": "Explore how Microsoft is advancing hardware security through open-source Integrated HSM technology, collaboration, and cryptographic key protection.\nThe post Advancing hardware security with open-source Integrated HSM technology appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-10-15T01:19:37.059Z"
+    },
+    {
+      "id": "2d42d7d3c693af57",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "Infrastructure for the frontier era: Scaling intelligence through open industry collaboration",
+      "url": "https://azure.microsoft.com/en-us/blog/infrastructure-for-the-frontier-era-scaling-intelligence-through-open-industry-collaboration/",
+      "published_at": "2026-10-13T16:15:00.000Z",
+      "summary": "AI is reaching such a pivotal moment, and the focus is shifting from building larger frontier models to intelligence that delivers practical impact.\nThe post Infrastructure for the frontier era: Scaling intelligence through open industry collaboration appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-10-15T01:19:37.059Z"
+    },
+    {
+      "id": "3cbafd4338038f81",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "GitHub availability report: September 2026",
+      "url": "https://github.blog/news-insights/company-news/github-availability-report-september-2026/",
+      "published_at": "2026-10-14T20:01:35.000Z",
+      "summary": "In September, we experienced two incidents that resulted in degraded performance across GitHub services.  \nThe post GitHub availability report: September 2026 appeared first on The GitHub Blog.",
+      "fetched_at": "2026-10-15T01:19:34.960Z"
+    },
+    {
+      "id": "f919ddb4bb1767a4",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "From 2,500 requests to 24: Rebuilding star history without the stargazers",
+      "url": "https://github.blog/engineering/architecture-optimization/from-2500-requests-to-24-rebuilding-star-history-without-the-stargazers/",
+      "published_at": "2026-10-14T19:11:33.000Z",
+      "summary": "Our new repo star history API now provides trends without returning individual identities or requiring unbounded database work. These are the engineering tradeoffs we made.\nThe post From 2,500 requests to 24: Rebuilding star history without the stargazers appeared first on The GitHub Blog.",
+      "fetched_at": "2026-10-15T01:19:34.960Z"
+    },
+    {
+      "id": "cc0334ef418f3cdb",
+      "source_id": "m365-blog",
+      "source_name": "Microsoft 365 Blog",
+      "title": "Announcing the new Work IQ APIs",
+      "url": "https://www.microsoft.com/en-us/copilot/blog/2026/06/02/announcing-the-new-work-iq-apis/",
+      "published_at": "2026-06-02T17:00:15.000Z",
+      "summary": "Work IQ is a new intelligence layer for Microsoft 365, designed to understand how work gets done across your organizations.\nThe post Announcing the new Work IQ APIs appeared first on AI at Work Blog.",
+      "fetched_at": "2026-10-15T01:19:37.225Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 2,
+      "removed_count": 2,
+      "new_articles": [
+        {
+          "id": "95741fd459fa5556",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Advancing hardware security with open-source Integrated HSM technology",
+          "url": "https://azure.microsoft.com/en-us/blog/advancing-hardware-security-with-open-source-integrated-hsm-technology/",
+          "published_at": "2026-10-13T16:15:00.000Z",
+          "summary": "Explore how Microsoft is advancing hardware security through open-source Integrated HSM technology, collaboration, and cryptographic key protection.\nThe post Advancing hardware security with open-source Integrated HSM technology appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-10-15T01:19:37.059Z"
+        },
+        {
+          "id": "2d42d7d3c693af57",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Infrastructure for the frontier era: Scaling intelligence through open industry collaboration",
+          "url": "https://azure.microsoft.com/en-us/blog/infrastructure-for-the-frontier-era-scaling-intelligence-through-open-industry-collaboration/",
+          "published_at": "2026-10-13T16:15:00.000Z",
+          "summary": "AI is reaching such a pivotal moment, and the focus is shifting from building larger frontier models to intelligence that delivers practical impact.\nThe post Infrastructure for the frontier era: Scaling intelligence through open industry collaboration appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-10-15T01:19:37.059Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "cc00b97f83044944",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Your architecture diagram is not your resilience",
+          "url": "https://azure.microsoft.com/en-us/blog/your-architecture-diagram-is-not-your-resilience/",
+          "published_at": "2026-09-23T16:00:00.000Z",
+          "summary": "For years, resilience was something you set up once. That kept the lights on, but it treated resilience as a project with an end date rather than a property you maintain.\nThe post Your architecture diagram is not your resilience appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-10-14T01:43:01.819Z"
+        },
+        {
+          "id": "443300f133d68284",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Designing agent-first platforms: What changes when agents do the work",
+          "url": "https://azure.microsoft.com/en-us/blog/designing-agent-first-platforms-what-changes-when-agents-do-the-work/",
+          "published_at": "2026-09-23T15:00:00.000Z",
+          "summary": "The organizations pulling ahead are not simply adding AI to what they already have. They are designing for a different kind of software.\nThe post Designing agent-first platforms: What changes when agents do the work appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-10-14T01:43:01.819Z"
+        }
+      ]
+    },
+    "fabric-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "github-blog": {
+      "new_count": 2,
+      "removed_count": 2,
+      "new_articles": [
+        {
+          "id": "3cbafd4338038f81",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "GitHub availability report: September 2026",
+          "url": "https://github.blog/news-insights/company-news/github-availability-report-september-2026/",
+          "published_at": "2026-10-14T20:01:35.000Z",
+          "summary": "In September, we experienced two incidents that resulted in degraded performance across GitHub services.  \nThe post GitHub availability report: September 2026 appeared first on The GitHub Blog.",
+          "fetched_at": "2026-10-15T01:19:34.960Z"
+        },
+        {
+          "id": "f919ddb4bb1767a4",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "From 2,500 requests to 24: Rebuilding star history without the stargazers",
+          "url": "https://github.blog/engineering/architecture-optimization/from-2500-requests-to-24-rebuilding-star-history-without-the-stargazers/",
+          "published_at": "2026-10-14T19:11:33.000Z",
+          "summary": "Our new repo star history API now provides trends without returning individual identities or requiring unbounded database work. These are the engineering tradeoffs we made.\nThe post From 2,500 requests to 24: Rebuilding star history without the stargazers appeared first on The GitHub Blog.",
+          "fetched_at": "2026-10-15T01:19:34.960Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "a0c03d16e7252ace",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "10 technical talks I’m excited about at GitHub Universe 2026",
+          "url": "https://github.blog/news-insights/company-news/10-technical-talks-im-excited-about-at-github-universe-2026/",
+          "published_at": "2026-10-01T15:07:16.000Z",
+          "summary": "From verifying AI-written code to securing npm dependencies, these are the sessions I’m building my Universe agenda around.\nThe post 10 technical talks I’m excited about at GitHub Universe 2026 appeared first on The GitHub Blog.",
+          "fetched_at": "2026-10-14T01:43:01.386Z"
+        },
+        {
+          "id": "85a2ee1ccabf9baf",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "Developer policy update: Transparency, state policy, and what’s ahead",
+          "url": "https://github.blog/news-insights/policy-news-and-insights/developer-policy-update-transparency-state-policy-and-whats-ahead/",
+          "published_at": "2026-09-29T15:00:00.000Z",
+          "summary": "Explore GitHub’s latest transparency data and learn more about policy updates affecting developers and open source.\nThe post Developer policy update: Transparency, state policy, and what’s ahead appeared first on The GitHub Blog.",
+          "fetched_at": "2026-10-14T01:43:01.386Z"
+        }
+      ]
+    },
+    "m365-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "cc0334ef418f3cdb",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Announcing the new Work IQ APIs",
+          "url": "https://www.microsoft.com/en-us/copilot/blog/2026/06/02/announcing-the-new-work-iq-apis/",
+          "published_at": "2026-06-02T17:00:15.000Z",
+          "summary": "Work IQ is a new intelligence layer for Microsoft 365, designed to understand how work gets done across your organizations.\nThe post Announcing the new Work IQ APIs appeared first on AI at Work Blog.",
+          "fetched_at": "2026-10-15T01:19:37.225Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "f524e9886f009cfd",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Introducing the new Copilot with Home, Code and Autopilot",
+          "url": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/",
+          "published_at": "2026-09-25T12:07:25.000Z",
+          "summary": "We’re reimagining Microsoft Copilot to enable work as it evolves and to help expand what every individual and every organization can accomplish in the flow of human ambition.\nThe post Introducing the new Copilot with Home, Code and Autopilot appeared first on AI at Work Blog.",
+          "fetched_at": "2026-10-14T01:43:02.030Z"
+        }
+      ]
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 1,
+      "new_articles": [],
+      "removed_articles": [
+        {
+          "id": "57011fa557caf1c6",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Introducing the Visual Studio Code Private Marketplace: Your Team's Secure, Curated Extension Hub 🎉",
+          "url": "https://code.visualstudio.com/blogs/2025/11/18/PrivateMarketplace",
+          "published_at": "2025-11-18T00:00:00.000Z",
+          "summary": "Private Marketplace for VS Code extensions now generally available.\nRead the full article",
+          "fetched_at": "2026-10-14T01:43:01.639Z"
+        }
+      ]
+    }
+  },
+  "diff_result": true
+}
