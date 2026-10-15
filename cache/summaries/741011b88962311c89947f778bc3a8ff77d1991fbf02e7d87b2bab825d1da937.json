@@ -1,0 +1,18 @@
+{
+  "summary": "Project Tesseraは、Azure Integrated HSMをMarvell、Oracle、Open Compute Projectと共同で進める完全なオープンソース構想へ発展させたものとして、OCP Global Summitで発表された。アーキテクチャ、仕様、プロトコル、ドライバー、ソフトウェア、ファームウェア、再現可能なビルド環境を公開し、将来的には完全なオープンソースのシリコン実装と広範なハードウェア提供を目指す。記事では、AI時代の攻撃拡大と量子計算移行を背景に、ワークロード直結型HSMと耐量子暗号対応で鍵保護を強化する取り組みとして位置付けている。",
+  "keyPoints": [
+    "Project TesseraはAzure Integrated HSMの発展版としてOCP Global Summitで公表され、仕様やソフトウェアだけでなくファームウェアや再現可能なビルド環境まで公開対象に含める。さらに将来は完全なオープンソースのシリコン実装と、広く利用可能なハードウェア提供へ進む計画だ。",
+    "この構想の中核はワークロード直結型の統合HSMで、鍵をHSM境界内に保持したまま暗号処理をワークロード近傍で実行する。記事では、鍵ライフサイクル全体でFIPS 140-3 Level 3の保護を一貫適用することと、耐量子暗号のネイティブ対応で移行を助けることを目標にしている。",
+    "MicrosoftとMarvellは、Tessera Integrated HSMとMarvell LiquidSecurity 2 HSMの間で、HSMパーティションの複製とレジリエンシーリングを成立させる転送プロトコルを実演した。異種HSMでも単一のセキュリティドメインとして動作でき、非抽出型鍵はHSM内にとどまり、許可されたパーティションだけが利用できるとしている。",
+    "Project Tesseraは専用HSMハードウェアのない環境にも広げられ、最小のunikernelベースTesseraファームウェアスタックを機密コンピューティング向けにオープンソース化する。初期実装はAMD SEV-SNPとOpenVMMを利用し、他の機密コンピューティングアーキテクチャへの対応拡大も進める。"
+  ],
+  "significance": "この発表は、鍵や認証情報の保護強化と、量子計算時代への暗号移行が課題になっている組織やハードウェア業界に関係する。記事によれば、専用の統合HSMと機密コンピューティングで同じファームウェアとプログラミングモデルを共有するため、異なるハードウェア条件でも一貫した鍵保護基盤を取りやすくし、相互運用性と導入範囲の拡大を狙っている。",
+  "summaryEn": "Project Tessera was announced at the OCP Global Summit as the evolution of Azure Integrated HSM into a fully open-source effort developed with Marvell, Oracle, and the Open Compute Project. It opens the architecture, specifications, protocols, drivers, software, firmware, and reproducible build environments, with a longer-term goal of fully open-source silicon and broadly available hardware. The article positions it as a way to strengthen key protection for the era of AI-driven attacks and quantum transition through a workload-attached HSM model and native post-quantum cryptography support.",
+  "keyPointsEn": [
+    "Project Tessera was introduced at the OCP Global Summit as the next stage of Azure Integrated HSM, and its open-source scope includes firmware and reproducible build environments in addition to specifications and software. The plan also extends toward fully open-source silicon and broadly available hardware.",
+    "At the core is a workload-attached integrated HSM that keeps keys inside the HSM boundary while performing cryptographic operations closer to the workload. The article says the goal is to enforce FIPS 140-3 Level 3 protection across the full key lifecycle and to ease migration with native post-quantum cryptography support.",
+    "Microsoft and Marvell demonstrated transfer protocols between Tessera Integrated HSM and Marvell LiquidSecurity 2 HSM, enabling HSM partition cloning and resiliency rings. The article says heterogeneous HSMs can operate within one security domain while non-extractable keys remain inside HSMs and are available only to authorized partitions.",
+    "Project Tessera is also being extended to environments without dedicated integrated HSM hardware by open-sourcing a minimal unikernel-based Tessera firmware stack for confidential computing. The initial implementation uses AMD SEV-SNP and OpenVMM, with work underway to extend support to other confidential computing architectures."
+  ],
+  "significanceEn": "This matters to organizations and the hardware ecosystem that need stronger protection for keys and credentials while also preparing for cryptographic migration in the quantum era. According to the article, using the same firmware and programming model across dedicated integrated HSMs and confidential computing can provide a more consistent foundation for key protection across different hardware conditions, while aiming to expand interoperability and deployment reach."
+}

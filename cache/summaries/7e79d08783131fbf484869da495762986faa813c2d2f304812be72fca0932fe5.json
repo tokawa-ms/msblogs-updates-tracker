@@ -1,0 +1,18 @@
+{
+  "summary": "Azure Maia 300とCobalt 200について、Microsoftが推論とエージェント処理向けの次世代設計と性能指標を公表した。Maia 300は主要GPU系比で40%高いtokens per watt、96アクセラレータ構成でMaia 200比最大7倍のラック単位スループットを見込むとし、Cobalt 200はCobalt 100比で50%以上の性能向上と33%の遅延削減をうたう。あわせてOCPを通じ、ネットワーク、800VDC電源、冷却、HSMまでを含むオープンなAI基盤整備の取り組みも示した。",
+  "keyPoints": [
+    "Maia 300は長文脈推論、低遅延の会話型体験、マルチステップのエージェント処理向けの完全システムとして設計され、主要GPU系システム比で40%多いtokens per watt、96アクセラレータ構成でMaia 200比最大7倍のラックスケールのトークンスループットを見込む。",
+    "現行のMaia 200は米国、欧州、オーストラリアで展開中で、Microsoft TeamsやCopilotなどの組み込みAI機能では、主要GPU基盤比で最大1.7倍のtokens per wattを提供しているとする。",
+    "Cobalt 200はエージェントネイティブCPUとして設計され、Cobalt 100比で50%以上の性能向上、エージェント呼び出し遅延33%削減、エージェント系ワークロードで23%高いスループットを示した。",
+    "業界連携では、MRCが2階層ネットワークで10万GPU超まで拡張可能とされ、ESUNには175超の組織が参加して仕様v1.0を公開、MarvellとOracleと進めるTessera Integrated HSMでは統合HSMのアーキテクチャやソフトウェア、ファームウェア、シリコンまでをオープンソース化する。"
+  ],
+  "significance": "影響を受けるのは、大規模AI基盤を設計・運用するクラウド事業者や機器ベンダー、そしてその上でAI機能を使う企業ユーザーだ。記事は、推論が主役になる局面で効率、遅延、電力、冷却、鍵管理までを同時に見直し、OCPやオープンソース仕様で共有することで、相互運用しやすいAIインフラを広げつつ顧客の選択肢を増やす方向を示している。",
+  "summaryEn": "Microsoft detailed Azure Maia 300 and Cobalt 200 as next-generation designs for inference and agentic workloads, along with their performance targets. It says Maia 300 is expected to deliver 40% more tokens per watt than leading GPU-based systems and up to 7x the rack-scale token throughput of Maia 200 in a 96-accelerator configuration, while Cobalt 200 claims over 50% higher performance and 33% lower latency than Cobalt 100. The company also outlined open AI infrastructure efforts through OCP spanning networking, 800VDC power, cooling, and HSMs.",
+  "keyPointsEn": [
+    "Maia 300 is designed as a complete system for long-context reasoning, latency-sensitive conversational experiences, and multi-step agentic tasks, and Microsoft says it is expected to deliver 40% more tokens per watt than leading GPU-based systems and up to 7x the rack-scale token throughput of Maia 200 in a 96-accelerator configuration.",
+    "The current Maia 200 is being deployed across the United States, Europe, and Australia, and Microsoft says it delivers up to 1.7x more tokens per watt for built-in AI capabilities in Microsoft Teams, Copilot, and Cowork experiences compared with leading GPU infrastructure.",
+    "Cobalt 200 was designed as an agent-native CPU and is described as delivering more than 50% better performance than Cobalt 100, 33% lower agent call latency, and 23% higher throughput on agentic workloads.",
+    "In industry collaboration, Microsoft says MRC can scale beyond 100,000 GPUs with a two-tier network, ESUN has more than 175 participating organizations and has released specification version 1.0, and Tessera Integrated HSM with Marvell and Oracle will open-source integrated HSM architecture, software, firmware, and silicon."
+  ],
+  "significanceEn": "This matters to cloud operators and hardware vendors building large-scale AI infrastructure, as well as enterprise users consuming AI features on top of it. The article indicates that as inference becomes the dominant workload, Microsoft is trying to redesign efficiency, latency, power, cooling, and key protection together and share that work through OCP and open-source specifications, expanding interoperable AI infrastructure while increasing customer choice."
+}

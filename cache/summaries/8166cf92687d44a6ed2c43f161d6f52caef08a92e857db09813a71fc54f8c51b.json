@@ -1,0 +1,20 @@
+{
+  "summary": "GitHubはリポジトリのスター履歴APIを刷新し、個々のスター付与者を返さずに、1回のリクエストで最大30週間分の日次スター数を取得できるようにした。従来はstargazer一覧をページングして履歴を再構築する必要があったが、新設計では集計前に期間で絞り込むことで、人気リポジトリでも要求数とDB負荷を大きく下げる。あわせて旧来のstargazer/watcher一覧は管理者とコラボレーター向けに制限された。",
+  "keyPoints": [
+    "新しいスター履歴APIは、リポジトリのスター推移を個人識別情報なしで返す集計エンドポイントで、1回の応答に最大30週間分の日次カウントを含める。",
+    "旧GET /repos/{owner}/{repo}/stargazersは、人気リポジトリほど全履歴の再構築に多数のページ取得が必要で、react/reactでは約251,000スターに対して約2,511リクエストが必要だった。",
+    "新設計はページとper_pageをcreated_atのインデックス範囲に変換し、対象期間だけを絞り込んでから日次集計するため、react/reactでは全履歴でも約24リクエストで済み、各スターをおおむね1回ずつ処理する。",
+    "アクセス制限後、権限のない呼び出し元は空レスポンスまたは403 Forbiddenを受けることがあり、さらにGitHubはGitHub.com上のスター一覧ページなど他の経路でもオンデマンド集計を見直した。",
+    "このAPIには残る制約もあり、週単位の区切り、スター解除済みデータ、特定週にスターが極端に集中するケースが返却内容や性能に影響しうる。"
+  ],
+  "significance": "恩恵を受けるのは、リリースや告知の前後で関心の変化を見たいメンテナーや、その可視化ツールを作る開発者である。従来のようにユーザー名付きの一覧を大量取得せずに傾向だけを取れるため、公開スター一覧の悪用リスクを抑えつつ、レート制限や高負荷に悩まされていた利用形態により適した取得手段になる。",
+  "summaryEn": "GitHub rebuilt its repository star history API so clients can fetch up to 30 weeks of daily star counts in a single request without returning individual stargazer identities. Previously, tools had to page through stargazer lists to reconstruct history, but the new design filters by time before aggregation to cut request volume and database work even for highly starred repositories. At the same time, the old stargazer and watcher lists were restricted to administrators and collaborators.",
+  "keyPointsEn": [
+    "The new star history API is an aggregate endpoint for repository star trends that omits personal identities and returns daily counts for up to 30 weeks per response.",
+    "The old GET /repos/{owner}/{repo}/stargazers endpoint required many paginated requests to rebuild full history for popular repositories; for react/react, about 251,000 stars meant about 2,511 requests.",
+    "The new design converts page and per_page into an indexed created_at range, filters to that period before daily aggregation, and reduces full-history retrieval for react/react to about 24 requests while examining each star roughly once.",
+    "After access restrictions, unauthorized callers could receive an empty response or 403 Forbidden, and GitHub also fixed other star-counting paths such as the GitHub.com stargazers page.",
+    "The API still has limitations: calendar-week boundaries, removed stars, and unusually dense weeks can affect what it returns and how expensive some requests are."
+  ],
+  "significanceEn": "This mainly benefits maintainers who want to see how releases or announcements changed interest in a project, and developers who build visualization tools around that signal. By letting them retrieve trends without bulk access to username-linked stargazer lists, GitHub reduces abuse risk from public star data while providing a better fit for use cases that previously hit rate limits and heavy database work."
+}
