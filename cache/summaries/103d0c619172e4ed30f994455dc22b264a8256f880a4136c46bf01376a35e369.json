@@ -1,0 +1,20 @@
+{
+  "summary": "VS CodeではモダナイズされたUIがプレビューとして提供され、エディターとAgentsウィンドウをまたぐ共通のデザイン基盤で、画面の階層を分かりやすくしつつ視覚的なノイズを減らす変更が進められている。2026テーマやAgents windowで進めてきた設計をエディター本体にも広げ、密度やカスタマイズ性、既存の操作感は維持する方針だ。公開後のフィードバックを受け、CompactなLayout Densityやconnected tabsなどの調整も加えられた。",
+  "keyPoints": [
+    "モダナイズUIは2026年時点でプレビュー提供中で、Stableでは段階的に展開され、移行期間中はclassic UIへ戻す設定も一時的に残されている。",
+    "レイアウト密度にはCompactが追加され、小さい画面や情報密度の高い作業向けに余白を減らせる。タイトルバーのCustomize Layoutから選ぶか、window.density.layoutをcompactに設定して有効化できる。",
+    "エディタータブはpill型を見直し、選択中タブがエディター面とつながるconnected tabsを導入した。一方でpill型を好む場合はworkbench.experimental.modernUIEditorTabStyleで切り替えられる。",
+    "テーマ互換性は維持され、既存テーマはclassic UIとmodernized UIの両方で動作する。テーマ作者は新しい色IDを使ってsurface、border、tab、Activity Bar、window stateをより細かく制御できるが、これらのIDは実験的扱いだ。",
+    "応答性改善では、高コストなCSSセレクターの見直しにより、反復ベンチマークでstyle recalculation timeが8.2%減り、wall-clock timeが3.3%改善した一方、layout timeは6.6%増加した。記事は、ワークベンチ全体が高速化したと主張するものではないとしている。"
+  ],
+  "significance": "この変更は、VS Codeを日常的に使う開発者、とくに小さいディスプレイや高密度レイアウトで作業する利用者に影響する。新UIは表示の整理と操作性向上を狙う一方で、コード表示領域の圧迫に対する懸念に対応して密度設定やタブ設計を調整している。またテーマ作者にとっては、既存テーマの互換性を保ちながら新UI要素を細かく調整できる余地が広がる。",
+  "summaryEn": "VS Code has introduced a modernized UI in preview, using a shared design foundation across the editor and the Agents window to clarify hierarchy and reduce visual noise. The effort extends work that started with the 2026 themes and the Agents window into the editor itself while aiming to preserve density, customization, and existing muscle memory. Based on feedback, Microsoft has also added adjustments such as Compact Layout Density and connected tabs.",
+  "keyPointsEn": [
+    "The modernized UI is available in preview in 2026, was rolled out gradually in Stable, and a temporary option to return to the classic UI remains during the transition.",
+    "A Compact layout density option was added to reduce spacing for smaller screens and information-dense workflows. It can be enabled from Customize Layout in the title bar or by setting window.density.layout to compact.",
+    "Editor tabs were revised from the pill design to connected tabs that visually join the selected tab with the editor surface. Users who prefer pill tabs can still switch back with workbench.experimental.modernUIEditorTabStyle.",
+    "Theme compatibility is preserved: existing themes continue to work with both the classic and modernized UI. Theme authors can use new color IDs for finer control over surfaces, borders, tabs, the Activity Bar, and window states, but those IDs are experimental.",
+    "For responsiveness, CSS selector changes reduced style recalculation time by 8.2% and wall-clock time by 3.3% in a repeatable benchmark, while layout time increased by 6.6%. The article says this is not a claim that the whole workbench became faster."
+  ],
+  "significanceEn": "This matters to everyday VS Code users, especially those working on smaller displays or in dense layouts. The new UI aims to improve organization and discoverability, but it also responds to concerns about reduced space for code by adding density controls and revising tab behavior. It also matters to theme authors because they keep compatibility with existing themes while gaining more detailed control over modernized UI elements."
+}

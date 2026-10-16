@@ -1,0 +1,18 @@
+{
+  "summary": "Power BIの2026年10月更新では、カスタム ビジュアル対応のPower BI Report Authoring skillがGAとなり、自然言語で進められるレポート作成の範囲が広がった。あわせて、Gantt visualとリスト スライサーのドロップダウン表示がプレビューとして加わり、レポートの操作性と表現力が強化された。さらにセマンティック モデルでは、長時間実行されるバックグラウンド処理中のCU使用量を継続報告するようになり、サージ保護が進行中の消費をより現在に近い形で把握できるようになった。",
+  "keyPoints": [
+    "GAとなったPower BI Report Authoring skillは、対応するカスタム ビジュアルを自然言語で追加し、レポート データへのバインド、書式設定、可視化の検証まで支援する。既にレポートへ追加済みの対応カスタム ビジュアルを利用でき、必要な機能が標準ビジュアルにない場合はAppSourceビジュアルの特定も補助する。",
+    "プレビューのGantt visualは、時間ベースの軸でタスクと進捗を表示できるPower BIの新しいコア ビジュアルで、プロジェクト計画やスケジュール追跡に使える。試すにはPower BI DesktopのPreview featuresで有効化し、再起動が必要だ。",
+    "プレビューのlist slicerのdropdown modeでは、長い候補を扱いやすくし、Show selected firstで現在の選択をドロップダウン上部に固定できる。さらに、Select all後に一部を外した場合はNot (item) pillsで除外中の値を明示する。",
+    "セマンティック モデルでは、長時間のバックグラウンド処理中もCU使用量を継続的に報告する方式に変わり、設定変更なしでサージ保護が進行中の消費をより正確に見られるようになった。2026年8月の実測では、事前のサージ保護リジェクトが5%から12%に増え、最終的に受理された遅延処理は11%から16%に増え、後段のFabric throttling rejectionは23%から13%に低下した。"
+  ],
+  "significance": "Power BIのレポート作成者は、ビジュアル識別子の探索やレポート ファイル編集、フィールド対応付けのトラブル対応に費やす時間を減らせる。閲覧者はスライサーから階層を上下にたどれ、個人用ブックマークで列幅も保持できる。加えて、Fabric容量の運用ではサージ保護が新しいバックグラウンド処理をより早く拒否し、オンデマンド処理を拒否せず遅延させやすくなる。",
+  "summaryEn": "In the October 2026 Power BI update, the Power BI Report Authoring skill gained GA support for custom visuals, expanding how much report creation can be done in natural language. It also adds the Gantt visual and dropdown mode for the list slicer in preview, improving report usability and expressiveness. In addition, semantic models now report CU usage continuously during long-running background operations, giving surge protection a more current view of in-progress consumption.",
+  "keyPointsEn": [
+    "The now generally available Power BI Report Authoring skill can add supported custom visuals through natural language and help with binding them to report data, formatting, and validation. It can use supported custom visuals already added to a report, and it can also help identify an AppSource visual when core visuals do not provide the needed capability.",
+    "The preview Gantt visual is a new core Power BI visual that shows tasks and progress on a time-based axis and can be used for project planning and schedule tracking. To try it, users must enable it in Power BI Desktop under Preview features and restart the app.",
+    "The preview dropdown mode for the list slicer makes long option lists easier to use, and Show selected first can pin current selections to the top of the dropdown. After using Select all and clearing some items, Power BI explicitly shows the excluded values as Not (item) pills.",
+    "For semantic models, CU usage is now reported continuously during long-running background operations, giving surge protection a more accurate current view without requiring settings changes. In August 2026 measurements, proactive surge-protection rejections rose from 5% to 12%, delayed but accepted work rose from 11% to 16%, and late-stage Fabric throttling rejections fell from 23% to 13%."
+  ],
+  "significanceEn": "Power BI report authors can spend less time finding visual identifiers, editing report files, and troubleshooting field mappings. Viewers can move up and down hierarchies from slicers and keep column widths in personal bookmarks. In Fabric capacity operations, surge protection can reject new background operations earlier and delay on-demand work more often without rejecting it."
+}

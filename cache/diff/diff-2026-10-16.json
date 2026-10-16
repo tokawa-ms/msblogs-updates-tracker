@@ -1,0 +1,204 @@
+{
+  "date": "2026-10-16",
+  "compared_with": "2026-10-15",
+  "source_count": 6,
+  "new_count": 5,
+  "removed_count": 5,
+  "new_articles": [
+    {
+      "id": "96c737add5a788d4",
+      "source_id": "fabric-blog",
+      "source_name": "Microsoft Fabric Blog",
+      "title": "Power BI October 2026 Feature Summary",
+      "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Power-BI-October-2026-Feature-Summary/ba-p/5374650",
+      "published_at": "2026-10-15T21:25:10.000Z",
+      "summary": "Last month, we shared a packed September update alongside the European Microsoft Fabric + SQL Community Conference. Even so, the Power BI team has continued delivering new capabilities, and we didn't want to wait another month to share them.\r\nThis update includes enhancements across Copilot and AI, reporting, and semantic models, helping users create richer reports, streamline workflows, and get more value from their data.\r\n\r\nTable of Contents\r\n\r\nCopilot and AI\r\n\r\nCreate Power BI reports with custom visuals using skills for Fabric (Generally Available)\r\n\r\n\r\nReporting\r\n\r\nGantt chart (Preview)\r\nList slicer with dropdown option (Preview)\r\nChart plot area background color (Generally Available)\r\nAuto-expand hierarchy axis with field parameter support (Generally Available)\r\nPersonal bookmarks keep column widths (Generally Available)\r\n\r\n\r\nSemantic models\r\n\r\nMore accurate surge protection with semantic models\r\n\r\n\r\nThat’s a wrap!\r\n\r\n\r\nCopilot and AI \r\nCreate Power BI reports with custom visuals using skills for Fabric (Generally Available)\r\nThe Power BI Report Authoring skill now extends natural-language report authoring to custom visuals, helping teams create reports that meet specialized business and design requirements with less manual configuration. Ask the agent to add a visual, bind it to report data, apply formatting, and validate the visualization.\r\nThe skill can use supported custom visuals already added to a report, including visuals imported from a file, and it can help identify an AppSource visual when the report needs a capability that core visuals don’t provide. This reduces time spent finding visual identifiers, editing report files, and troubleshooting field mappings, so report authors can focus on selecting the right presentation for the business question.\r\nLearn more in the Power BI Report Authoring skill overview and Install Skills for Fabric guidance.\r\nReporting\r\nGantt chart (Preview)\r\nThe Gantt visual is a new core visual for Power BI reports that lets you show tasks and progress on a time-based axis. Use it to plan projects, track schedules, or compare activities across categories directly in your report.\r\nFigure: Gantt visual showing a project schedule grouped by Planning, Development, Testing, and Deployment phases from January to April 2025, with the Format visual pane open to the Visual tab.\r\nThe visual includes:\r\n\r\nPlotting of bars showing the duration of each row with progress formatting and milestones to mark key -dates.\r\nAxis with custom formatting and range controls, so you can set the start and end dates, adjust the date and time format, and choose the units that appear on the axis.\r\nBar colors cascade naturally by category, which keeps related tasks visually grouped without extra configuration.\r\nYou can add more columns next to the task list to show fields such as owner, status, or duration.\r\nA zoom axis lets report readers focus on a specific window of time and then return to the full range.\r\n\r\nTo try the Gantt visual, enable it in Power BI Desktop under File > Options and settings > Options > Preview features, and then restart Power BI Desktop.\r\nTo learn more and try it in your reports, refer to the Gantt visual documentation.\r\nList slicer with dropdown option (Preview)\r\nThe list slicer now includes a dropdown mode that makes long lists easier to navigate and active filters easier to review. Enable Show selected first to pin current selections to the top of the dropdown, eliminating the need to scroll through every item to confirm what is filtered. The button slicer also supports Show selected first, providing the same quick view of active selections in either slicer style.\r\nFigure: List slicer in dropdown mode showing selected values as dismissible pills and the Show selected first option.\r\nThe dropdown carries over the formatting you've already applied to the list slicer items, and you can now customize the height and width of the dropdown drawer to fit your report layout. The search box also has more formatting options, so you can match the slicer to the look you want across background, border, and text styles.\r\nEach selection appears as a pill outside the dropdown that shows the item name and a dismiss button, so report readers can remove a value with one click. When selections exceed the available space, a count pill shows how many more values are selected, so you can see the total without opening the dropdown.\r\nWhen you use Select all and then clear one or more items, the slicer makes the resulting filter state explicit. Cleared values appear as Not (item) pills, showing that Power BI is excluding those values rather than including every remaining item individually. If you do not clear any items, Select all behaves like no selection and does not filter other visuals.\r\nTo learn more, refer to the Slicers in Power BI documentation.\r\nChart plot area background color (Generally Available)\r\nThe plot area of bar, column, line, area, combo, ribbon, waterfall, and scatter charts now supports a single fill color and conditional formatting in addition to the existing background options. A solid color can improve visual separation, while conditional formatting can use a measure or field value to make changes in the data easier to recognize.\r\nFigure: Bar chart with the Plot area background formatting pane open, showing the new Background color and Transparency options.\r\nTo learn more, refer to the Customize visualizations in a Power BI report documentation.\r\nAuto-expand hierarchy axis with field parameter support (Generally Available)\r\nBar, column, and line charts now support auto-expand for the hierarchy axis when you add more than one column to the axis, and the hierarchy axis now works with field parameters.\r\nFigure: Column chart using a field parameter on the axis with Auto expand turned on in the X-axis formatting pane.\r\nThis matches the existing auto-expand behavior in the slicer and matrix visuals, so hierarchy interactions stay consistent across your report. Add a field parameter to the axis so you can quickly switch between a single column and any combination of columns as the hierarchy, without rebuilding the visual.\r\nReport viewers can drill up, drill down, or move across hierarchy levels from a slicer, allowing them to explore the data based on the question they want to answer. The same behavior is available when viewers use Personalize this visual to change the chart’s axis fields.\r\nFigure: Selecting a field in the Category parameter slicer updates the column chart axis and the matrix hierarchy at the same time.\r\nThe animation shows a report page with a Category parameter slicer, a column chart, and a matrix. When you select Country in the slicer, the column chart updates to show Sales by Country with one bar per country, and the matrix updates to show the Country level of the hierarchy. Selecting Segment or Product instead swaps the chart axis and matrix hierarchy to that field. When you make multiple selections, the hierarchy expands automatically, so a single slicer controls the fields used across both visuals without requiring other changes to the report.\r\nTo learn more, refer to the Customize X-axis and Y-axis properties, Drill mode in the Power BI service and Create field parameters documentation.\r\nPersonal bookmarks keep column widths (Generally Available)\r\nPersonal bookmarks now preserve visual column widths, so you can return to the exact table or matrix layout you saved instead of resizing columns again. This includes reordered and resized columns, helping you maintain a consistent personal view each time you apply the bookmark.\r\n Figure: Save a personal bookmark to preserve your report’s table column widths.\r\nTo learn more, refer to the Personal bookmarks in Power BI documentation.\r\nSemantic models\r\nMore accurate surge protection with semantic models\r\nSemantic models now report capacity unit (CU) usage continuously during long-running background operations instead of reporting most usage when an operation finishes. This gives surge protection a more current view of in-progress consumption, so configured rejection and recovery thresholds respond more closely to actual capacity usage. The improvement is automatic and requires no settings changes.\r\nActual capacity measurements from August 2026, when continuous CU reporting was first enabled, show that capacity intervention shifted earlier in the process. Compared with the period before enablement, proactive surge-protection rejections increased from 5% to 12%, and operations that were delayed but ultimately accepted increased from 11% to 16%. Late-stage Fabric throttling rejections decreased from 23% to 13%. These observed changes correspond to a 145% increase in proactive surge-protection rejections, a 52% increase in delayed but accepted work, and a 41% reduction in late-stage Fabric throttling rejections.\r\nFigure: Continuous CU reporting shifts capacity intervention toward proactive surge-protection rejections and accepted delays, based on actual measurements from August 2026.\r\nContinuous CU reporting exposes consumption sooner, allowing surge protection to reject more new background operations proactively and delay more on-demand work without rejecting it. As a result, fewer operations reach deeper Fabric Throttling rejection states.\r\nTo learn more, refer to the Surge protection documentation.\r\nThat’s a wrap!\r\nThe momentum from last month continues with new capabilities that make Power BI more flexible, efficient, and powerful for both report authors and consumers. We encourage you to explore the features highlighted in this post and review the accompanying documentation to start taking advantage of them in your own solutions.\r\nWe'll be back next month with more updates and innovations from across Power BI.",
+      "fetched_at": "2026-10-16T01:05:12.511Z"
+    },
+    {
+      "id": "3a2874863f625f06",
+      "source_id": "fabric-blog",
+      "source_name": "Microsoft Fabric Blog",
+      "title": "Databricks ADBC connector for Power BI and Microsoft Fabric (Generally Available)",
+      "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Databricks-ADBC-connector-for-Power-BI-and-Microsoft-Fabric/ba-p/5369591",
+      "published_at": "2026-10-15T17:00:00.000Z",
+      "summary": "This release is part of the broader ODBC-to-ADBC transition for Power Query connectors described in the Transition from ODBC to ADBC drivers in Power BI and Microsoft Fabric documentation.\r\nWhat’s new\r\nExisting connections in your semantic models, dataflows, and paginated reports continue to work unchanged — the migration path is currently opt-in per connection, per workspace, or per tenant.\r\nHighlights:\r\n\r\nImproved security - ADBC drivers incorporate security enhancements, such as memory safety and garbage collection.\r\nNo changes to existing behavior - This transition moves away from the embedded ODBC drivers that ship with Power BI. It does not change behavior for the ODBC connector when you use a separately installed ODBC driver.\r\nEfficient large dataset support - ADBC provides a set of standard interfaces for interacting with Arrow data, which is especially efficient at fetching large datasets with minimal overhead and no serialization or copying.\r\nSupported authentication - Databricks ADBC supports OAuth (user), OAuth (M2M / Client Credentials), and Microsoft Entra ID.\r\n\r\nConnectors covered by this release\r\n\n\nConnectorPrevious driverNew driver (GA)\n\nDatabricksSimba Spark ODBCDatabricks ADBC\nAzure DatabricksSimba Spark ODBCDatabricks ADBC\n\n\r\nHow to try it\r\nYou can test the ADBC driver now. We suggest you start soon to help ensure the eventual deprecation of ODBC and migration to ADBC runs smoothly. There are three ways to begin validating ADBC, ordered by how much control you want.\r\n1. Opt in per connection using Implementation=\"2.0\"\r\nThe fastest way to compare ADBC and ODBC for a specific report or dataset. Add the Implementation=\"2.0\" option to the source step in your Power Query expression:\r\nSource = Databricks.Catalogs(\"adb-1234567890.1.azuredatabricks.net\",\r\n                             \"/sql/1.0/warehouses/<warehouse-id>\",\r\n                             [Implementation=\"2.0\"])\r\nRefresh the dataset and compare row counts, column types, and totals against your production baseline. If you want to force a side-by-side comparison against ODBC, use Implementation=\"1.0\".\r\n2. Override the default for a validation workspace\r\nIf you want to validate several reports together, a workspace admin can turn ADBC on for a single workspace while the rest of the tenant continues to use the legacy driver. Publish the reports you want to test into that workspace and run your normal refresh schedule.\r\n3. Enable ADBC by default at the tenant level\r\nWhen you’re confident with the results, the tenant admin can enable Users can connect to data sources by using Apache Arrow database connectivity (ADBC) in the Admin portal. New connections across the tenant will use the ADBC driver by default, and Desktop and the service stay aligned on the same driver.\r\nWhat to expect during validation\r\nThe ADBC driver is designed as a compatibility-preserving replacement for the Simba Spark ODBC driver. Validate your key reports in Desktop before enabling ADBC at the tenant level and report any regressions to adbcmigration@microsoft.com.\r\nExplore Transition from ODBC to ADBC drivers in Power BI and Microsoft Fabric for more information.\r\nWhat’s next\r\nThe Power BI service will move from ODBC to ADBC through the first quarter of 2027. We recommend that you start validating today, so the tenant-level move is a non-event when it lands.\r\nWe’d love your feedback\r\nTry the new Databricks ADBC driver. If anything looks different from what you'd expect — a refresh that fails, a total that changed, a performance regression — send the tenant ID, connector, M expression, and what you observed to adbcmigration@microsoft.com.\r\nGet started this week:\r\n\r\nRead the Databricks connector documentation.\r\nInstall the latest Power BI Desktop.\r\nPick one production report on Databricks and add Implementation=\"2.0\" to its source step.\r\nCompare row counts, column data types, and key totals against your production baseline.\r\nReport anything unexpected to adbcmigration@microsoft.com.",
+      "fetched_at": "2026-10-16T01:05:12.511Z"
+    },
+    {
+      "id": "a47e85dd89b9a253",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "The next developer interface is ambient intelligence",
+      "url": "https://github.blog/news-insights/company-news/the-next-developer-interface-is-ambient-intelligence/",
+      "published_at": "2026-10-15T19:39:27.000Z",
+      "summary": "AI, agents, voice, and physical controls are shifting software development from operating tools to expressing intent—and helping developers stay focused on building.\nThe post The next developer interface is ambient intelligence appeared first on The GitHub Blog.",
+      "fetched_at": "2026-10-16T01:05:11.382Z"
+    },
+    {
+      "id": "377b59f097432230",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "Staying Evergreen: How we automated secure access and repo hygiene in a shared org",
+      "url": "https://github.blog/engineering/platform-security/staying-evergreen-how-we-automated-secure-access-and-repo-hygiene-in-a-shared-org/",
+      "published_at": "2026-10-15T18:00:00.000Z",
+      "summary": "Put native GitHub features to work to review outside collaborator access and archive stale repositories.\nThe post Staying Evergreen: How we automated secure access and repo hygiene in a shared org appeared first on The GitHub Blog.",
+      "fetched_at": "2026-10-16T01:05:11.382Z"
+    },
+    {
+      "id": "3da9635ba543c1be",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "Modernizing the VS Code UI",
+      "url": "https://code.visualstudio.com/blogs/2026/10/15/modern-ui",
+      "published_at": "2026-10-15T00:00:00.000Z",
+      "summary": "See how developer feedback is shaping the modern VS Code interface, from layout density and editor tabs to themes and responsiveness.\nRead the full article",
+      "fetched_at": "2026-10-16T01:05:11.405Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "fabric-blog": {
+      "new_count": 2,
+      "removed_count": 2,
+      "new_articles": [
+        {
+          "id": "96c737add5a788d4",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Power BI October 2026 Feature Summary",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Power-BI-October-2026-Feature-Summary/ba-p/5374650",
+          "published_at": "2026-10-15T21:25:10.000Z",
+          "summary": "Last month, we shared a packed September update alongside the European Microsoft Fabric + SQL Community Conference. Even so, the Power BI team has continued delivering new capabilities, and we didn't want to wait another month to share them.\r\nThis update includes enhancements across Copilot and AI, reporting, and semantic models, helping users create richer reports, streamline workflows, and get more value from their data.\r\n\r\nTable of Contents\r\n\r\nCopilot and AI\r\n\r\nCreate Power BI reports with custom visuals using skills for Fabric (Generally Available)\r\n\r\n\r\nReporting\r\n\r\nGantt chart (Preview)\r\nList slicer with dropdown option (Preview)\r\nChart plot area background color (Generally Available)\r\nAuto-expand hierarchy axis with field parameter support (Generally Available)\r\nPersonal bookmarks keep column widths (Generally Available)\r\n\r\n\r\nSemantic models\r\n\r\nMore accurate surge protection with semantic models\r\n\r\n\r\nThat’s a wrap!\r\n\r\n\r\nCopilot and AI \r\nCreate Power BI reports with custom visuals using skills for Fabric (Generally Available)\r\nThe Power BI Report Authoring skill now extends natural-language report authoring to custom visuals, helping teams create reports that meet specialized business and design requirements with less manual configuration. Ask the agent to add a visual, bind it to report data, apply formatting, and validate the visualization.\r\nThe skill can use supported custom visuals already added to a report, including visuals imported from a file, and it can help identify an AppSource visual when the report needs a capability that core visuals don’t provide. This reduces time spent finding visual identifiers, editing report files, and troubleshooting field mappings, so report authors can focus on selecting the right presentation for the business question.\r\nLearn more in the Power BI Report Authoring skill overview and Install Skills for Fabric guidance.\r\nReporting\r\nGantt chart (Preview)\r\nThe Gantt visual is a new core visual for Power BI reports that lets you show tasks and progress on a time-based axis. Use it to plan projects, track schedules, or compare activities across categories directly in your report.\r\nFigure: Gantt visual showing a project schedule grouped by Planning, Development, Testing, and Deployment phases from January to April 2025, with the Format visual pane open to the Visual tab.\r\nThe visual includes:\r\n\r\nPlotting of bars showing the duration of each row with progress formatting and milestones to mark key -dates.\r\nAxis with custom formatting and range controls, so you can set the start and end dates, adjust the date and time format, and choose the units that appear on the axis.\r\nBar colors cascade naturally by category, which keeps related tasks visually grouped without extra configuration.\r\nYou can add more columns next to the task list to show fields such as owner, status, or duration.\r\nA zoom axis lets report readers focus on a specific window of time and then return to the full range.\r\n\r\nTo try the Gantt visual, enable it in Power BI Desktop under File > Options and settings > Options > Preview features, and then restart Power BI Desktop.\r\nTo learn more and try it in your reports, refer to the Gantt visual documentation.\r\nList slicer with dropdown option (Preview)\r\nThe list slicer now includes a dropdown mode that makes long lists easier to navigate and active filters easier to review. Enable Show selected first to pin current selections to the top of the dropdown, eliminating the need to scroll through every item to confirm what is filtered. The button slicer also supports Show selected first, providing the same quick view of active selections in either slicer style.\r\nFigure: List slicer in dropdown mode showing selected values as dismissible pills and the Show selected first option.\r\nThe dropdown carries over the formatting you've already applied to the list slicer items, and you can now customize the height and width of the dropdown drawer to fit your report layout. The search box also has more formatting options, so you can match the slicer to the look you want across background, border, and text styles.\r\nEach selection appears as a pill outside the dropdown that shows the item name and a dismiss button, so report readers can remove a value with one click. When selections exceed the available space, a count pill shows how many more values are selected, so you can see the total without opening the dropdown.\r\nWhen you use Select all and then clear one or more items, the slicer makes the resulting filter state explicit. Cleared values appear as Not (item) pills, showing that Power BI is excluding those values rather than including every remaining item individually. If you do not clear any items, Select all behaves like no selection and does not filter other visuals.\r\nTo learn more, refer to the Slicers in Power BI documentation.\r\nChart plot area background color (Generally Available)\r\nThe plot area of bar, column, line, area, combo, ribbon, waterfall, and scatter charts now supports a single fill color and conditional formatting in addition to the existing background options. A solid color can improve visual separation, while conditional formatting can use a measure or field value to make changes in the data easier to recognize.\r\nFigure: Bar chart with the Plot area background formatting pane open, showing the new Background color and Transparency options.\r\nTo learn more, refer to the Customize visualizations in a Power BI report documentation.\r\nAuto-expand hierarchy axis with field parameter support (Generally Available)\r\nBar, column, and line charts now support auto-expand for the hierarchy axis when you add more than one column to the axis, and the hierarchy axis now works with field parameters.\r\nFigure: Column chart using a field parameter on the axis with Auto expand turned on in the X-axis formatting pane.\r\nThis matches the existing auto-expand behavior in the slicer and matrix visuals, so hierarchy interactions stay consistent across your report. Add a field parameter to the axis so you can quickly switch between a single column and any combination of columns as the hierarchy, without rebuilding the visual.\r\nReport viewers can drill up, drill down, or move across hierarchy levels from a slicer, allowing them to explore the data based on the question they want to answer. The same behavior is available when viewers use Personalize this visual to change the chart’s axis fields.\r\nFigure: Selecting a field in the Category parameter slicer updates the column chart axis and the matrix hierarchy at the same time.\r\nThe animation shows a report page with a Category parameter slicer, a column chart, and a matrix. When you select Country in the slicer, the column chart updates to show Sales by Country with one bar per country, and the matrix updates to show the Country level of the hierarchy. Selecting Segment or Product instead swaps the chart axis and matrix hierarchy to that field. When you make multiple selections, the hierarchy expands automatically, so a single slicer controls the fields used across both visuals without requiring other changes to the report.\r\nTo learn more, refer to the Customize X-axis and Y-axis properties, Drill mode in the Power BI service and Create field parameters documentation.\r\nPersonal bookmarks keep column widths (Generally Available)\r\nPersonal bookmarks now preserve visual column widths, so you can return to the exact table or matrix layout you saved instead of resizing columns again. This includes reordered and resized columns, helping you maintain a consistent personal view each time you apply the bookmark.\r\n Figure: Save a personal bookmark to preserve your report’s table column widths.\r\nTo learn more, refer to the Personal bookmarks in Power BI documentation.\r\nSemantic models\r\nMore accurate surge protection with semantic models\r\nSemantic models now report capacity unit (CU) usage continuously during long-running background operations instead of reporting most usage when an operation finishes. This gives surge protection a more current view of in-progress consumption, so configured rejection and recovery thresholds respond more closely to actual capacity usage. The improvement is automatic and requires no settings changes.\r\nActual capacity measurements from August 2026, when continuous CU reporting was first enabled, show that capacity intervention shifted earlier in the process. Compared with the period before enablement, proactive surge-protection rejections increased from 5% to 12%, and operations that were delayed but ultimately accepted increased from 11% to 16%. Late-stage Fabric throttling rejections decreased from 23% to 13%. These observed changes correspond to a 145% increase in proactive surge-protection rejections, a 52% increase in delayed but accepted work, and a 41% reduction in late-stage Fabric throttling rejections.\r\nFigure: Continuous CU reporting shifts capacity intervention toward proactive surge-protection rejections and accepted delays, based on actual measurements from August 2026.\r\nContinuous CU reporting exposes consumption sooner, allowing surge protection to reject more new background operations proactively and delay more on-demand work without rejecting it. As a result, fewer operations reach deeper Fabric Throttling rejection states.\r\nTo learn more, refer to the Surge protection documentation.\r\nThat’s a wrap!\r\nThe momentum from last month continues with new capabilities that make Power BI more flexible, efficient, and powerful for both report authors and consumers. We encourage you to explore the features highlighted in this post and review the accompanying documentation to start taking advantage of them in your own solutions.\r\nWe'll be back next month with more updates and innovations from across Power BI.",
+          "fetched_at": "2026-10-16T01:05:12.511Z"
+        },
+        {
+          "id": "3a2874863f625f06",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Databricks ADBC connector for Power BI and Microsoft Fabric (Generally Available)",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Databricks-ADBC-connector-for-Power-BI-and-Microsoft-Fabric/ba-p/5369591",
+          "published_at": "2026-10-15T17:00:00.000Z",
+          "summary": "This release is part of the broader ODBC-to-ADBC transition for Power Query connectors described in the Transition from ODBC to ADBC drivers in Power BI and Microsoft Fabric documentation.\r\nWhat’s new\r\nExisting connections in your semantic models, dataflows, and paginated reports continue to work unchanged — the migration path is currently opt-in per connection, per workspace, or per tenant.\r\nHighlights:\r\n\r\nImproved security - ADBC drivers incorporate security enhancements, such as memory safety and garbage collection.\r\nNo changes to existing behavior - This transition moves away from the embedded ODBC drivers that ship with Power BI. It does not change behavior for the ODBC connector when you use a separately installed ODBC driver.\r\nEfficient large dataset support - ADBC provides a set of standard interfaces for interacting with Arrow data, which is especially efficient at fetching large datasets with minimal overhead and no serialization or copying.\r\nSupported authentication - Databricks ADBC supports OAuth (user), OAuth (M2M / Client Credentials), and Microsoft Entra ID.\r\n\r\nConnectors covered by this release\r\n\n\nConnectorPrevious driverNew driver (GA)\n\nDatabricksSimba Spark ODBCDatabricks ADBC\nAzure DatabricksSimba Spark ODBCDatabricks ADBC\n\n\r\nHow to try it\r\nYou can test the ADBC driver now. We suggest you start soon to help ensure the eventual deprecation of ODBC and migration to ADBC runs smoothly. There are three ways to begin validating ADBC, ordered by how much control you want.\r\n1. Opt in per connection using Implementation=\"2.0\"\r\nThe fastest way to compare ADBC and ODBC for a specific report or dataset. Add the Implementation=\"2.0\" option to the source step in your Power Query expression:\r\nSource = Databricks.Catalogs(\"adb-1234567890.1.azuredatabricks.net\",\r\n                             \"/sql/1.0/warehouses/<warehouse-id>\",\r\n                             [Implementation=\"2.0\"])\r\nRefresh the dataset and compare row counts, column types, and totals against your production baseline. If you want to force a side-by-side comparison against ODBC, use Implementation=\"1.0\".\r\n2. Override the default for a validation workspace\r\nIf you want to validate several reports together, a workspace admin can turn ADBC on for a single workspace while the rest of the tenant continues to use the legacy driver. Publish the reports you want to test into that workspace and run your normal refresh schedule.\r\n3. Enable ADBC by default at the tenant level\r\nWhen you’re confident with the results, the tenant admin can enable Users can connect to data sources by using Apache Arrow database connectivity (ADBC) in the Admin portal. New connections across the tenant will use the ADBC driver by default, and Desktop and the service stay aligned on the same driver.\r\nWhat to expect during validation\r\nThe ADBC driver is designed as a compatibility-preserving replacement for the Simba Spark ODBC driver. Validate your key reports in Desktop before enabling ADBC at the tenant level and report any regressions to adbcmigration@microsoft.com.\r\nExplore Transition from ODBC to ADBC drivers in Power BI and Microsoft Fabric for more information.\r\nWhat’s next\r\nThe Power BI service will move from ODBC to ADBC through the first quarter of 2027. We recommend that you start validating today, so the tenant-level move is a non-event when it lands.\r\nWe’d love your feedback\r\nTry the new Databricks ADBC driver. If anything looks different from what you'd expect — a refresh that fails, a total that changed, a performance regression — send the tenant ID, connector, M expression, and what you observed to adbcmigration@microsoft.com.\r\nGet started this week:\r\n\r\nRead the Databricks connector documentation.\r\nInstall the latest Power BI Desktop.\r\nPick one production report on Databricks and add Implementation=\"2.0\" to its source step.\r\nCompare row counts, column data types, and key totals against your production baseline.\r\nReport anything unexpected to adbcmigration@microsoft.com.",
+          "fetched_at": "2026-10-16T01:05:12.511Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "5d5483054da10a89",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Deep dive into Power BI reporting with the new date picker slicer option (Preview)",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Deep-dive-into-Power-BI-reporting-with-the-new-date-picker/ba-p/5295674",
+          "published_at": "2026-07-16T16:00:00.000Z",
+          "summary": "Power BI’s new date picker slicer helps report authors set dynamic default date ranges while giving viewers flexible, easy ways to explore dates, ranges, and rolling periods as data refreshes.",
+          "fetched_at": "2026-10-15T01:19:38.034Z"
+        },
+        {
+          "id": "5e7aa43bc923e188",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Deep dive into the Shape Map in Power BI (Generally Available)",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Deep-dive-into-the-Shape-Map-in-Power-BI-Generally-Available/ba-p/5255561",
+          "published_at": "2026-07-07T16:00:00.000Z",
+          "summary": "Discover how the Shape Map visual (Generally Available) in Power BI helps you bring custom geographic boundaries, flexible map formats, and data-driven color formatting into your reports.",
+          "fetched_at": "2026-10-15T01:19:38.034Z"
+        }
+      ]
+    },
+    "github-blog": {
+      "new_count": 2,
+      "removed_count": 2,
+      "new_articles": [
+        {
+          "id": "a47e85dd89b9a253",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "The next developer interface is ambient intelligence",
+          "url": "https://github.blog/news-insights/company-news/the-next-developer-interface-is-ambient-intelligence/",
+          "published_at": "2026-10-15T19:39:27.000Z",
+          "summary": "AI, agents, voice, and physical controls are shifting software development from operating tools to expressing intent—and helping developers stay focused on building.\nThe post The next developer interface is ambient intelligence appeared first on The GitHub Blog.",
+          "fetched_at": "2026-10-16T01:05:11.382Z"
+        },
+        {
+          "id": "377b59f097432230",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "Staying Evergreen: How we automated secure access and repo hygiene in a shared org",
+          "url": "https://github.blog/engineering/platform-security/staying-evergreen-how-we-automated-secure-access-and-repo-hygiene-in-a-shared-org/",
+          "published_at": "2026-10-15T18:00:00.000Z",
+          "summary": "Put native GitHub features to work to review outside collaborator access and archive stale repositories.\nThe post Staying Evergreen: How we automated secure access and repo hygiene in a shared org appeared first on The GitHub Blog.",
+          "fetched_at": "2026-10-16T01:05:11.382Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "6f397884428e9f0f",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "ReviewBench: An open benchmark for AI code review",
+          "url": "https://github.blog/ai-and-ml/github-copilot/reviewbench-an-open-benchmark-for-ai-code-review/",
+          "published_at": "2026-10-05T15:59:40.000Z",
+          "summary": "We’re launching ReviewBench, a benchmark for code review agents built on representative GitHub pull requests, multi-source ground truth, calibrated evaluation, and production-aligned metrics.\nThe post ReviewBench: An open benchmark for AI code review appeared first on The GitHub Blog.",
+          "fetched_at": "2026-10-15T01:19:34.960Z"
+        },
+        {
+          "id": "afd517ff06180871",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "AI is changing developer work. Here are three skills to strengthen.",
+          "url": "https://github.blog/ai-and-ml/ai-is-rewriting-the-developer-career-ladder-heres-how-to-stand-out/",
+          "published_at": "2026-10-02T15:00:00.000Z",
+          "summary": "Learn to direct AI agents, critically review their output, and keep technical judgment at the center of your workflow.\nThe post AI is changing developer work. Here are three skills to strengthen. appeared first on The GitHub Blog.",
+          "fetched_at": "2026-10-15T01:19:34.960Z"
+        }
+      ]
+    },
+    "m365-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "3da9635ba543c1be",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Modernizing the VS Code UI",
+          "url": "https://code.visualstudio.com/blogs/2026/10/15/modern-ui",
+          "published_at": "2026-10-15T00:00:00.000Z",
+          "summary": "See how developer feedback is shaping the modern VS Code interface, from layout density and editor tabs to themes and responsiveness.\nRead the full article",
+          "fetched_at": "2026-10-16T01:05:11.405Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "77eb2a33c46983c3",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Introducing the VS Code Insiders Podcast",
+          "url": "https://code.visualstudio.com/blogs/2025/12/03/introducing-vs-code-insiders-podcast",
+          "published_at": "2025-12-03T00:00:00.000Z",
+          "summary": "The VS Code Insiders Podcast is your insider's guide to the features, decisions, and people shaping the future of Visual Studio Code.\nRead the full article",
+          "fetched_at": "2026-10-15T01:19:36.949Z"
+        }
+      ]
+    }
+  },
+  "diff_result": true
+}
