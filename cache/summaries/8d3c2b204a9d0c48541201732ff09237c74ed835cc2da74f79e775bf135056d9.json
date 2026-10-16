@@ -1,0 +1,18 @@
+{
+  "summary": "GitHub App「Evergreen」は、共有組織での外部コラボレーターアクセス見直しと、放置リポジトリの検出・アーカイブを四半期ごとに自動化する仕組みだ。各変更はissueとgitに記録され、アクセス判断の追跡や差し戻しがしやすいよう設計されている。記事は、専用UIや独自データベースではなく、GitHubの標準機能を組み合わせてこの運用を実現した事例として説明している。",
+  "keyPoints": [
+    "controller repoの定期ワークフローは、毎月1日・8日・16日・23日にそれぞれ放置レビュー、アクセスレビュー、放置クリーンアップ、アクセスクリーンアップを実行し、レビュー開始からクリーンアップまで2週間の猶予を設ける。",
+    "アクセスレビューは各リポジトリのチェックリストissueで進め、残す相手にチェックを入れてissueを閉じると、Evergreenがチェック済みのコラボレーターを保持し、それ以外を取り消す。判断できるのはHubberだけで、権限のない人が閉じた場合は自動で再オープンされる。",
+    "レビュー期限まで応答がなければ、スナップショットに含まれる外部コラボレーター全員のアクセスを取り消す。取り消しが一部でも失敗した場合はreviewを完了扱いにせず、issueを開いたまま次回実行で再試行し、削除した対象はissueに書き残す。",
+    "大規模組織への導入では、DRY_RUNで実組織に対する挙動を確認し、Splunkの構造化ログで監視した。さらに、GitHubのコンテンツ作成に対する二次レート制限80 requests/minute、500/hourを踏まえ、バッチ処理と数秒間隔の投稿で制限超過を避けている。"
+  ],
+  "significance": "外部の顧客やパートナーと共同作業する共有組織のリポジトリ所有者や組織管理者にとって重要な内容だ。記事は、協力者の棚卸しや期限管理、アーカイブ判断を手作業で追う負担が大きい環境でも、GitHub標準機能だけで監査しやすく、既存の作業場所であるissue中心に運用できるパターンを示しており、同様の組織が応用しやすい。",
+  "summaryEn": "Evergreen is a GitHub App that automates quarterly outside-collaborator access reviews and the detection and archival of stale repositories in a shared organization. Changes are recorded in issues and git so access decisions can be tracked and reversed more easily. The article presents this as a case study of achieving the workflow by combining standard GitHub features rather than building a custom UI or database.",
+  "keyPointsEn": [
+    "The controller repository runs scheduled workflows on the 1st, 8th, 16th, and 23rd for stale-repo review, access review, stale cleanup, and access cleanup, with a two-week grace period between review opening and cleanup.",
+    "Access reviews happen through checklist issues in each repository: checking who stays and closing the issue keeps those collaborators and revokes the rest. Only Hubbers can make the decision, and unauthorized closures are automatically reopened.",
+    "If nobody responds by the deadline, access is revoked for all outside collaborators in the snapshot. If any removal fails, the review is not marked complete, the issue stays open for retry, and removed accounts are written into the issue.",
+    "For rollout at large scale, the team validated behavior with DRY_RUN and monitored structured logs in Splunk. To stay within GitHub’s secondary content-creation limits of 80 requests per minute and 500 per hour, Evergreen uses batching and spacing between posts."
+  ],
+  "significanceEn": "This matters to repository owners and organization administrators in shared organizations that work with outside customers and partners. The article shows a pattern for replacing manual collaborator tracking, deadline follow-up, and archival decisions with an auditable workflow built from standard GitHub features and centered on issues, making it easier for similar organizations to adapt."
+}

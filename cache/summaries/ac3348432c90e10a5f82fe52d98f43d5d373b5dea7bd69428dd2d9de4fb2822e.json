@@ -1,0 +1,18 @@
+{
+  "summary": "Power BIとMicrosoft Fabric向けのDatabricks ADBCコネクタが一般提供となり、DatabricksとAzure Databricks向けの新しいGAドライバーとしてSimba Spark ODBCからDatabricks ADBCへ切り替えられるようになった。既存のsemantic models、dataflows、paginated reportsの接続はそのまま動作し、移行は接続・ワークスペース・テナント単位でオプトインできる。Power BIサービスのODBCからADBCへの移行は2027年第1四半期まで続くため、利用者はImplementation=\"2.0\"などで事前検証を進められる。",
+  "keyPoints": [
+    "DatabricksコネクタとAzure Databricksコネクタでは、従来のSimba Spark ODBCに代わるGAドライバーとしてDatabricks ADBCが位置付けられた。",
+    "既存接続の挙動は維持され、移行は接続単位・ワークスペース単位・テナント単位で段階的に有効化できる。",
+    "Databricks ADBCはOAuth（ユーザー）、OAuth（M2M / Client Credentials）、Microsoft Entra ID認証をサポートする。",
+    "検証はPower Queryのソース手順にImplementation=\"2.0\"を追加して始められ、テナント全体の既定化は管理ポータルのADBC設定で行う。Power BIサービス側のODBCからADBCへの移行は2027年第1四半期まで進む。"
+  ],
+  "significance": "DatabricksやAzure DatabricksをPower BIやMicrosoft Fabricで使うテナント管理者、ワークスペース管理者、レポート担当者に影響する変更だ。既存接続を壊さずに段階的にADBCへ切り替えられ、記事ではメモリ安全性や大規模データ取得効率の改善を利点として挙げている。一方で、サービス全体の移行が2027年第1四半期までに進むため、主要レポートの回帰確認が重要になる。",
+  "summaryEn": "The Databricks ADBC connector for Power BI and Microsoft Fabric is now generally available, enabling Databricks and Azure Databricks to move from the Simba Spark ODBC driver to Databricks ADBC as the new GA driver. Existing connections in semantic models, dataflows, and paginated reports continue to work unchanged, and migration is opt-in at the connection, workspace, or tenant level. Because the Power BI service will transition from ODBC to ADBC through the first quarter of 2027, users can begin validating with options such as Implementation=\"2.0\".",
+  "keyPointsEn": [
+    "For the Databricks and Azure Databricks connectors, Databricks ADBC is positioned as the GA driver replacing Simba Spark ODBC.",
+    "Existing connection behavior is preserved, and migration can be enabled gradually per connection, workspace, or tenant.",
+    "Databricks ADBC supports OAuth (user), OAuth (M2M / Client Credentials), and Microsoft Entra ID authentication.",
+    "Validation can start by adding Implementation=\"2.0\" to the Power Query source step, and tenant-wide default enablement is done through the Admin portal ADBC setting. The Power BI service transition from ODBC to ADBC will continue through the first quarter of 2027."
+  ],
+  "significanceEn": "This change affects tenant admins, workspace admins, and report owners using Databricks or Azure Databricks with Power BI or Microsoft Fabric. They can move to ADBC gradually without breaking existing connections, and the article cites improved memory safety and more efficient large dataset retrieval as benefits. At the same time, because the broader service transition will continue through the first quarter of 2027, checking key reports for regressions becomes important."
+}
