@@ -1,0 +1,18 @@
+{
+  "summary": "Power BIの新しいDate picker slicerオプションは、データ更新に合わせて前進する相対日付範囲を既定値として設定でき、閲覧者は必要に応じて相対範囲や任意の日付範囲へ切り替えられるプレビュー機能だ。作成者は最終日・開始日・今日を基準にした設定やオフセットを使え、公開後もその既定範囲を保てる。プレビュー期間中の作成はPower BI Desktopに限られ、公開後はPower BI serviceで表示・編集できる。",
+  "keyPoints": [
+    "相対日付範囲は最終日・開始日・今日を基準にオフセット付きで設定でき、公開したレポートではその相対範囲が既定値になり、ダッシュボードにピン留めしても新しいデータに追随する。",
+    "閲覧者は単一カレンダーから相対範囲や手動範囲を選べるほか、同じ日付を2回選ぶ単一日付指定や、スライダーによる範囲の素早い調整も行える。",
+    "利用にはプレビュー機能の有効化が必要で、Slicer visualのFormat paneにDate pickerが現れない場合は、Power BI DesktopのPreview featuresでDate picker slicerをオンにする必要がある。",
+    "日付テーブルが将来日付まで含む場合は、対象メジャーにAdvanced filterで「is not blank」を設定することで、実データがある最終日を基準に相対範囲を絞り、不完全な比較期間を避けられる。"
+  ],
+  "significance": "継続的に更新されるレポートの作成者と閲覧者の双方に関わる変更だ。記事によれば、作成者は新しいデータ到着に追随する既定の日付範囲を維持しながら手動メンテナンスを減らせ、閲覧者は公開後も相対・手動・単一日付を自分で選んで分析を続けられる。",
+  "summaryEn": "Power BI’s new Date picker slicer option is a preview feature that lets authors set dynamic relative date ranges that move forward as data refreshes, while viewers can switch to their own relative or manual date ranges as needed. Authors can anchor ranges to the last date, first date, or today with offsets and keep that relative range as the published default. During preview, creation is limited to Power BI Desktop, while published reports can be viewed and edited in the Power BI service.",
+  "keyPointsEn": [
+    "Relative date ranges can be configured with offsets from the last date, first date, or today; they become the default in the published report and remain relative even when the visual is pinned to a dashboard.",
+    "Viewers can choose relative or manual ranges from a single calendar, select a single date by choosing the same date twice, and quickly adjust the range with the slider.",
+    "The feature requires preview enablement, and if Date picker does not appear in the slicer format pane, authors must turn on Date picker slicer in Power BI Desktop’s Preview features.",
+    "When a date table extends into future dates, authors can apply an Advanced filter with “is not blank” on the relevant measure so the relative range is based on the last date with actual data and avoids incomplete comparison periods."
+  ],
+  "significanceEn": "This matters to both report authors and report viewers working with continuously refreshed reports. According to the article, authors can keep a default date range aligned with incoming data while reducing manual maintenance, and viewers can still choose relative, manual, or single-date selections after publication to continue their own analysis."
+}

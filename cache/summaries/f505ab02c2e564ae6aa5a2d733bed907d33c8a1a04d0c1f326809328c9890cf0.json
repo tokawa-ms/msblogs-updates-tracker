@@ -1,0 +1,20 @@
+{
+  "summary": "Microsoft Copilotアプリは、開始地点となるHome、自然言語で社内向けソリューションを作れるCode、継続稼働する個人向けエージェントAutopilotを追加し、Word・Excel・PowerPointの機能も体験内に統合した。HomeとCodeはFrontier programで今後数週間かけて展開され、Autopilotは月末にプライベートプレビューを拡大する。あわせて、Copilotやエージェントの支出管理を支援するFinOps for AI機能も発表した。",
+  "keyPoints": [
+    "HomeはChatとCoworkを1か所にまとめ、Copilot内からWord、Excel、PowerPointの実ファイルを作成・更新できる。",
+    "CodeはGitHub Copilotと同じ基盤技術を使い、サンドボックス環境とテナント内ホスティングに対応する。Frontierには月末から展開され、数週間後に広く利用可能になり、Microsoft 365 PremiumとProの購読者向けプレビューは年内予定。",
+    "Copilot Managed Runtimeは、企業のMicrosoft 365環境内でコードを安全に動かすホスティング基盤としてプレビュー提供され、Code内からも利用できる。",
+    "業務コンテキスト拡張では、Fabric IQがChatとCoworkで本日から一般提供され、Dynamics 365とPower Platformのデータやワークフロー連携は今後1か月でパブリックプレビュー展開される。新しいプラグインレジストリも展開中で、数週間以内に各画面で一般提供される。",
+    "料金と運用管理では、ChatやWord、Excelなどは固定費のUSL、Cowork・Code・Autopilotや先端モデルは従量課金のUBBを使い分ける。Agent 365のコスト管理はCodeとCopilot Managed Runtimeまで拡張され、Copilot Studio製エージェント対応は10月予定だ。"
+  ],
+  "significance": "Copilotを日常業務で使う従業員、社内向けツールを作る部門ユーザー、権限やコストを管理するIT・管理者に影響する。1つのCopilotで質問、委任、構築、自動化まで扱えるようになり、非開発者にも作成範囲が広がる一方で、プラグイン承認や支出ポリシー管理も集中して行えるため、組織内での利用拡大と運用統制を同時に進めやすくなる。",
+  "summaryEn": "The Microsoft Copilot app adds Home as a starting point, Code for building internal solutions in natural language, and Autopilot as a persistent personal agent, while also bringing Word, Excel, and PowerPoint directly into the experience. Home and Code will roll out through the Frontier program in the coming weeks, and Autopilot expands to private preview at the end of the month. Microsoft also announced new FinOps for AI capabilities to help manage spending on Copilot and agents.",
+  "keyPointsEn": [
+    "Home combines Chat and Cowork in one place and can create or update real Word, Excel, and PowerPoint files directly from Copilot.",
+    "Code uses the same underlying technology as GitHub Copilot and supports a sandboxed environment and secure tenant hosting. It starts rolling out to Frontier at the end of the month, reaches broad availability in the coming weeks, and will enter preview for Microsoft 365 Premium and Pro subscribers later this year.",
+    "Copilot Managed Runtime is a preview hosting foundation for running code safely inside a company’s Microsoft 365 environment, and it will also be available inside Code.",
+    "For business context expansion, Fabric IQ is generally available in Chat and Cowork today, while Dynamics 365 and Power Platform data and workflow grounding will roll out in public preview over the next month. A new plugin registry is also rolling out now and will become generally available across surfaces in the coming weeks.",
+    "For pricing and operations, Chat and apps like Word and Excel use the fixed-cost USL, while Cowork, Code, Autopilot, and frontier models use usage-based billing. Agent 365 cost management is expanding to Code and Copilot Managed Runtime, with support for Copilot Studio-built agents planned for October."
+  ],
+  "significanceEn": "This affects employees who use Copilot for daily work, business users who build internal tools, and IT and administrators who manage permissions and costs. A single Copilot can now handle asking, delegating, building, and automating, while extending creation to non-developers. At the same time, centralized plugin approval and spending policy controls make it easier for organizations to expand usage while maintaining operational governance."
+}

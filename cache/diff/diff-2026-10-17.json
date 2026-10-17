@@ -1,0 +1,144 @@
+{
+  "date": "2026-10-17",
+  "compared_with": "2026-10-16",
+  "source_count": 6,
+  "new_count": 3,
+  "removed_count": 3,
+  "new_articles": [
+    {
+      "id": "20efc1f2b3465ebc",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Server Virtualization Platforms",
+      "url": "https://azure.microsoft.com/en-us/blog/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-server-virtualization-platforms/",
+      "published_at": "2026-10-14T19:00:00.000Z",
+      "summary": "We're building operational consistency through Azure and Azure Arc, and infrastructure consistency through Hyper-V.\nThe post Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Server Virtualization Platforms appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-10-17T01:11:28.007Z"
+    },
+    {
+      "id": "5d5483054da10a89",
+      "source_id": "fabric-blog",
+      "source_name": "Microsoft Fabric Blog",
+      "title": "Deep dive into Power BI reporting with the new date picker slicer option (Preview)",
+      "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Deep-dive-into-Power-BI-reporting-with-the-new-date-picker/ba-p/5295674",
+      "published_at": "2026-07-16T16:00:00.000Z",
+      "summary": "Power BI’s new date picker slicer helps report authors set dynamic default date ranges while giving viewers flexible, easy ways to explore dates, ranges, and rolling periods as data refreshes.",
+      "fetched_at": "2026-10-17T01:11:28.853Z"
+    },
+    {
+      "id": "f524e9886f009cfd",
+      "source_id": "m365-blog",
+      "source_name": "Microsoft 365 Blog",
+      "title": "Introducing the new Copilot with Home, Code and Autopilot",
+      "url": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/",
+      "published_at": "2026-09-25T12:07:25.000Z",
+      "summary": "We’re reimagining Microsoft Copilot to enable work as it evolves and to help expand what every individual and every organization can accomplish in the flow of human ambition.\nThe post Introducing the new Copilot with Home, Code and Autopilot appeared first on AI at Work Blog.",
+      "fetched_at": "2026-10-17T01:11:28.088Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "20efc1f2b3465ebc",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Server Virtualization Platforms",
+          "url": "https://azure.microsoft.com/en-us/blog/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-server-virtualization-platforms/",
+          "published_at": "2026-10-14T19:00:00.000Z",
+          "summary": "We're building operational consistency through Azure and Azure Arc, and infrastructure consistency through Hyper-V.\nThe post Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Server Virtualization Platforms appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-10-17T01:11:28.007Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "8c6ccd384bd032af",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Ship agents faster with expanded model choice, voice agents, and continuous optimization",
+          "url": "https://azure.microsoft.com/en-us/blog/ship-agents-faster-with-expanded-model-choice-voice-agents-and-continuous-optimization/",
+          "published_at": "2026-09-24T18:00:00.000Z",
+          "summary": "The best model for your business will keep changing. Adopting it should move your business forward, not send your team back to rebuild the architecture around it.\nThe post Ship agents faster with expanded model choice, voice agents, and continuous optimization appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-10-16T01:05:11.541Z"
+        }
+      ]
+    },
+    "fabric-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "5d5483054da10a89",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Deep dive into Power BI reporting with the new date picker slicer option (Preview)",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Deep-dive-into-Power-BI-reporting-with-the-new-date-picker/ba-p/5295674",
+          "published_at": "2026-07-16T16:00:00.000Z",
+          "summary": "Power BI’s new date picker slicer helps report authors set dynamic default date ranges while giving viewers flexible, easy ways to explore dates, ranges, and rolling periods as data refreshes.",
+          "fetched_at": "2026-10-17T01:11:28.853Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "1c335049bb397613",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Amazon Redshift V2 Connector for Microsoft Data Factory",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Amazon-Redshift-V2-Connector-for-Microsoft-Data-Factory/ba-p/5365631",
+          "published_at": "2026-10-13T19:00:00.000Z",
+          "summary": "Microsoft is updating our Amazon Redshift connector to use the new Amazon Redshift ODBC 2.x driver.\r\nWhat’s new and why upgrade\r\nMicrosoft and Amazon Redshift have been collaborating to provide our shared customers with an industry-leading, improved security, connectivity experience. The new driver will ensure compatibility, stability, security, and support for your data connectivity. This improvement aligns with Microsoft’s continued commitment to enhancing and providing secure data connectivity solutions for customers, enabling the mitigation of data connectivity threats.\r\nTo support this initiative, existing connectors within Data Factory are transitioning to the Amazon Redshift ODBC 2.x driver for all Redshift connectors; the new connector is rolling out automatically across regions.\r\nThis improvement will benefit connectivity between Redshift and various Microsoft products, ranging from Fabric Copyjob, Fabric Copy pipeline, and Dataflows Gen2 to Semantic models, Power BI Desktop, Gateway, and more.\r\nKey capabilities in this new connector include (and are not limited to):\r\n\r\nMetadata visibility for external objects.\r\nSupport for Redshift Data Sharing reads.\r\nEnhanced support for new features launched in Amazon Redshift.\r\nAbility to audit connections between Microsoft products and Amazon Redshift.\r\n\r\nRollout details\r\nThe new connector is rolling out automatically across regions. To be best prepared, we recommend that customers who want to implement and test the connector sooner should enable the preview features.\r\nTo learn more, please reference the Microsoft Redshift documentation.",
+          "fetched_at": "2026-10-16T01:05:12.511Z"
+        }
+      ]
+    },
+    "github-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "m365-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "f524e9886f009cfd",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Introducing the new Copilot with Home, Code and Autopilot",
+          "url": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/",
+          "published_at": "2026-09-25T12:07:25.000Z",
+          "summary": "We’re reimagining Microsoft Copilot to enable work as it evolves and to help expand what every individual and every organization can accomplish in the flow of human ambition.\nThe post Introducing the new Copilot with Home, Code and Autopilot appeared first on AI at Work Blog.",
+          "fetched_at": "2026-10-17T01:11:28.088Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "cc0334ef418f3cdb",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Announcing the new Work IQ APIs",
+          "url": "https://www.microsoft.com/en-us/copilot/blog/2026/06/02/announcing-the-new-work-iq-apis/",
+          "published_at": "2026-06-02T17:00:15.000Z",
+          "summary": "Work IQ is a new intelligence layer for Microsoft 365, designed to understand how work gets done across your organizations.\nThe post Announcing the new Work IQ APIs appeared first on AI at Work Blog.",
+          "fetched_at": "2026-10-16T01:05:11.753Z"
+        }
+      ]
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    }
+  },
+  "diff_result": true
+}
