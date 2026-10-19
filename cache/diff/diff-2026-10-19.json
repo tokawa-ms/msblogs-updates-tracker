@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-19",
+  "compared_with": "2026-10-18",
+  "source_count": 6,
+  "new_count": 2,
+  "removed_count": 2,
+  "new_articles": [
+    {
+      "id": "30b8aca672158aa6",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "Evolving the cloud-native foundation for the next generation of AI",
+      "url": "https://azure.microsoft.com/en-us/blog/evolving-the-cloud-native-foundation-for-the-next-generation-of-ai/",
+      "published_at": "2026-10-15T16:00:00.000Z",
+      "summary": "Discover how Azure is advancing cloud-native infrastructure to help organizations build, run, and optimize applications and agents at scale.\nThe post Evolving the cloud-native foundation for the next generation of AI appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-10-19T00:59:38.731Z"
+    },
+    {
+      "id": "cc0334ef418f3cdb",
+      "source_id": "m365-blog",
+      "source_name": "Microsoft 365 Blog",
+      "title": "Announcing the new Work IQ APIs",
+      "url": "https://www.microsoft.com/en-us/copilot/blog/2026/06/02/announcing-the-new-work-iq-apis/",
+      "published_at": "2026-06-02T17:00:15.000Z",
+      "summary": "Work IQ is a new intelligence layer for Microsoft 365, designed to understand how work gets done across your organizations.\nThe post Announcing the new Work IQ APIs appeared first on AI at Work Blog.",
+      "fetched_at": "2026-10-19T00:59:38.790Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "30b8aca672158aa6",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Evolving the cloud-native foundation for the next generation of AI",
+          "url": "https://azure.microsoft.com/en-us/blog/evolving-the-cloud-native-foundation-for-the-next-generation-of-ai/",
+          "published_at": "2026-10-15T16:00:00.000Z",
+          "summary": "Discover how Azure is advancing cloud-native infrastructure to help organizations build, run, and optimize applications and agents at scale.\nThe post Evolving the cloud-native foundation for the next generation of AI appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-10-19T00:59:38.731Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "cb668c5b27e4138b",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Enhancing Microsoft Azure Virtual Machine lifecycle",
+          "url": "https://azure.microsoft.com/en-us/blog/enhancing-microsoft-azure-virtual-machine-lifecycle/",
+          "published_at": "2026-09-28T15:00:00.000Z",
+          "summary": "Our Virtual Machine Lifecycle policy guides how we manage these transitions, giving Azure customers transparency, predictability, and guidance.\nThe post Enhancing Microsoft Azure Virtual Machine lifecycle appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-10-18T00:46:11.395Z"
+        }
+      ]
+    },
+    "fabric-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "github-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "m365-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "cc0334ef418f3cdb",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Announcing the new Work IQ APIs",
+          "url": "https://www.microsoft.com/en-us/copilot/blog/2026/06/02/announcing-the-new-work-iq-apis/",
+          "published_at": "2026-06-02T17:00:15.000Z",
+          "summary": "Work IQ is a new intelligence layer for Microsoft 365, designed to understand how work gets done across your organizations.\nThe post Announcing the new Work IQ APIs appeared first on AI at Work Blog.",
+          "fetched_at": "2026-10-19T00:59:38.790Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "f524e9886f009cfd",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Introducing the new Copilot with Home, Code and Autopilot",
+          "url": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/",
+          "published_at": "2026-09-25T12:07:25.000Z",
+          "summary": "We’re reimagining Microsoft Copilot to enable work as it evolves and to help expand what every individual and every organization can accomplish in the flow of human ambition.\nThe post Introducing the new Copilot with Home, Code and Autopilot appeared first on AI at Work Blog.",
+          "fetched_at": "2026-10-18T00:46:11.462Z"
+        }
+      ]
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    }
+  },
+  "diff_result": true
+}
