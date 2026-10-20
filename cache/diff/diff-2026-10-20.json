@@ -1,0 +1,144 @@
+{
+  "date": "2026-10-20",
+  "compared_with": "2026-10-19",
+  "source_count": 6,
+  "new_count": 3,
+  "removed_count": 3,
+  "new_articles": [
+    {
+      "id": "8df5728e9ef179a0",
+      "source_id": "fabric-blog",
+      "source_name": "Microsoft Fabric Blog",
+      "title": "Fabric Data Warehouse integration with Fabric User Data Functions (Preview)",
+      "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Fabric-Data-Warehouse-integration-with-Fabric-User-Data/ba-p/5375137",
+      "published_at": "2026-10-19T21:00:00.000Z",
+      "summary": "Microsoft Fabric Data Warehouse now integrates with Fabric User Data Functions in preview, so you can extend T-SQL with custom Python logic without building separate applications or pipelines. Use the integration to send email or Teams messages, retrieve parameters and secrets from Fabric variable libraries or Azure Key Vault, and access data across OneLake.\r\nThese capabilities are now available directly from T-SQL queries in your Warehouse.\r\n \r\nFigure: Calling a Fabric User Data Function from a T-SQL query in Fabric Data Warehouse.\r\nYou can create T-SQL external functions in Fabric Data Warehouse that reference Python functions in a Fabric User Data Functions item. You can then invoke those functions from familiar statements such as SELECT, INSERT, and UPDATE. When an external function is called, Data Warehouse delegates its execution to the Fabric User Data Functions runtime.\r\nThis integration enables scenarios such as:\r\n\r\nCalling Fabric or external APIs and sending email, Teams messages, or notifications.\r\nReading Excel, XML, PDF, and other file formats through Python.\r\nAccessing data in OneLake and reading from or writing to Fabric databases, Azure Cosmos DB, and warehouses across workspaces.\r\nRetrieving secrets and configuration values from Azure Key Vault or Fabric variable libraries to parameterize custom logic.\r\nEncrypting, decrypting, or masking sensitive columns with custom Python logic and organization-managed keys.\r\nEnriching and validating data by geocoding addresses, verifying VAT or IBAN numbers, or scoring records with a machine learning model.\r\n\r\nExample: Use Python to classify IPv6 network events from T-SQL\r\nClassifying IPv6 events by network prefix can support security analysis, but the required parsing and binary arithmetic are complex in T-SQL. Python provides a purpose-built standard library for this task, allowing warehouses that store network and security telemetry to organize events into consistent network ranges for analysis.\r\nIn this example, Python’s ipaddress function accepts an IPv6 address and prefix length and returns the corresponding network in CIDR notation. Persisting this value as an analytics column lets downstream queries group events into consistent network ranges without repeating calculation.\r\nimport ipaddressimport fabric.functions as fnudf = fn.UserDataFunctions()@udf.function()def getIpv6Network(address: str, prefixLength: int) -> str:    interface = ipaddress.ip_interface(f\"{address}/{prefixLength}\")    return str(interface.network)\r\nThe published Python function is mapped to a T-SQL external function that accepts an IPv6 address and prefix length and returns the corresponding network prefix in CIDR notation.\r\nCREATE FUNCTION ipv6.get_networkAS EXTERNAL FUNCTION utilities.getIpv6Network;\r\nYou can then calculate and persist a /48 network prefix for each event:\r\nUPDATE dbo.NetworkEventsSET NetworkPrefix = ipv6.get_network(SourceIp, 48)WHERE NetworkPrefix IS NULL;\r\nEach call to ipv6.get_network delegates execution to the Fabric User Data Function runtime. After the result is stored in NetworkPrefix column, downstream queries can use it without recalculating the prefix.\r\nConclusion\r\nFabric User Data Functions let teams continue working in T-SQL while using Python to address scenarios that traditionally require separate applications or pipelines. Explore the preview and start extending your Fabric Data Warehouse solutions with custom logic today.\r\nYou learn how to use the User Data Functions in Fabric Data Warehouse in the documentation.\r\nTry this feature during the preview and share your feedback with the Microsoft Fabric community on Reddit.",
+      "fetched_at": "2026-10-20T01:39:33.138Z"
+    },
+    {
+      "id": "5e09805dda87945d",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "How to continue a GitHub Copilot app session in VS Code",
+      "url": "https://github.blog/ai-and-ml/github-copilot/how-to-continue-a-github-copilot-app-session-in-vs-code/",
+      "published_at": "2026-10-19T18:47:22.000Z",
+      "summary": "Learn how to move an agent session from the GitHub Copilot app into VS Code without losing the conversation, code changes, or working context.\nThe post How to continue a GitHub Copilot app session in VS Code appeared first on The GitHub Blog.",
+      "fetched_at": "2026-10-20T01:39:32.403Z"
+    },
+    {
+      "id": "f524e9886f009cfd",
+      "source_id": "m365-blog",
+      "source_name": "Microsoft 365 Blog",
+      "title": "Introducing the new Copilot with Home, Code and Autopilot",
+      "url": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/",
+      "published_at": "2026-09-25T12:07:25.000Z",
+      "summary": "We’re reimagining Microsoft Copilot to enable work as it evolves and to help expand what every individual and every organization can accomplish in the flow of human ambition.\nThe post Introducing the new Copilot with Home, Code and Autopilot appeared first on AI at Work Blog.",
+      "fetched_at": "2026-10-20T01:39:32.549Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "fabric-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "8df5728e9ef179a0",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Fabric Data Warehouse integration with Fabric User Data Functions (Preview)",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Fabric-Data-Warehouse-integration-with-Fabric-User-Data/ba-p/5375137",
+          "published_at": "2026-10-19T21:00:00.000Z",
+          "summary": "Microsoft Fabric Data Warehouse now integrates with Fabric User Data Functions in preview, so you can extend T-SQL with custom Python logic without building separate applications or pipelines. Use the integration to send email or Teams messages, retrieve parameters and secrets from Fabric variable libraries or Azure Key Vault, and access data across OneLake.\r\nThese capabilities are now available directly from T-SQL queries in your Warehouse.\r\n \r\nFigure: Calling a Fabric User Data Function from a T-SQL query in Fabric Data Warehouse.\r\nYou can create T-SQL external functions in Fabric Data Warehouse that reference Python functions in a Fabric User Data Functions item. You can then invoke those functions from familiar statements such as SELECT, INSERT, and UPDATE. When an external function is called, Data Warehouse delegates its execution to the Fabric User Data Functions runtime.\r\nThis integration enables scenarios such as:\r\n\r\nCalling Fabric or external APIs and sending email, Teams messages, or notifications.\r\nReading Excel, XML, PDF, and other file formats through Python.\r\nAccessing data in OneLake and reading from or writing to Fabric databases, Azure Cosmos DB, and warehouses across workspaces.\r\nRetrieving secrets and configuration values from Azure Key Vault or Fabric variable libraries to parameterize custom logic.\r\nEncrypting, decrypting, or masking sensitive columns with custom Python logic and organization-managed keys.\r\nEnriching and validating data by geocoding addresses, verifying VAT or IBAN numbers, or scoring records with a machine learning model.\r\n\r\nExample: Use Python to classify IPv6 network events from T-SQL\r\nClassifying IPv6 events by network prefix can support security analysis, but the required parsing and binary arithmetic are complex in T-SQL. Python provides a purpose-built standard library for this task, allowing warehouses that store network and security telemetry to organize events into consistent network ranges for analysis.\r\nIn this example, Python’s ipaddress function accepts an IPv6 address and prefix length and returns the corresponding network in CIDR notation. Persisting this value as an analytics column lets downstream queries group events into consistent network ranges without repeating calculation.\r\nimport ipaddressimport fabric.functions as fnudf = fn.UserDataFunctions()@udf.function()def getIpv6Network(address: str, prefixLength: int) -> str:    interface = ipaddress.ip_interface(f\"{address}/{prefixLength}\")    return str(interface.network)\r\nThe published Python function is mapped to a T-SQL external function that accepts an IPv6 address and prefix length and returns the corresponding network prefix in CIDR notation.\r\nCREATE FUNCTION ipv6.get_networkAS EXTERNAL FUNCTION utilities.getIpv6Network;\r\nYou can then calculate and persist a /48 network prefix for each event:\r\nUPDATE dbo.NetworkEventsSET NetworkPrefix = ipv6.get_network(SourceIp, 48)WHERE NetworkPrefix IS NULL;\r\nEach call to ipv6.get_network delegates execution to the Fabric User Data Function runtime. After the result is stored in NetworkPrefix column, downstream queries can use it without recalculating the prefix.\r\nConclusion\r\nFabric User Data Functions let teams continue working in T-SQL while using Python to address scenarios that traditionally require separate applications or pipelines. Explore the preview and start extending your Fabric Data Warehouse solutions with custom logic today.\r\nYou learn how to use the User Data Functions in Fabric Data Warehouse in the documentation.\r\nTry this feature during the preview and share your feedback with the Microsoft Fabric community on Reddit.",
+          "fetched_at": "2026-10-20T01:39:33.138Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "5d5483054da10a89",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Deep dive into Power BI reporting with the new date picker slicer option (Preview)",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Deep-dive-into-Power-BI-reporting-with-the-new-date-picker/ba-p/5295674",
+          "published_at": "2026-07-16T16:00:00.000Z",
+          "summary": "Power BI’s new date picker slicer helps report authors set dynamic default date ranges while giving viewers flexible, easy ways to explore dates, ranges, and rolling periods as data refreshes.",
+          "fetched_at": "2026-10-19T00:59:39.346Z"
+        }
+      ]
+    },
+    "github-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "5e09805dda87945d",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "How to continue a GitHub Copilot app session in VS Code",
+          "url": "https://github.blog/ai-and-ml/github-copilot/how-to-continue-a-github-copilot-app-session-in-vs-code/",
+          "published_at": "2026-10-19T18:47:22.000Z",
+          "summary": "Learn how to move an agent session from the GitHub Copilot app into VS Code without losing the conversation, code changes, or working context.\nThe post How to continue a GitHub Copilot app session in VS Code appeared first on The GitHub Blog.",
+          "fetched_at": "2026-10-20T01:39:32.403Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "9ddb77314617db92",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "Building Git infrastructure for agent-scale development",
+          "url": "https://github.blog/engineering/architecture-optimization/building-git-infrastructure-for-agent-scale-development/",
+          "published_at": "2026-10-06T20:57:56.000Z",
+          "summary": "We're rebuilding GitHub's Git infrastructure while GitHub keeps running, creating a foundation for agent-scale software development.\nThe post Building Git infrastructure for agent-scale development appeared first on The GitHub Blog.",
+          "fetched_at": "2026-10-19T00:59:38.623Z"
+        }
+      ]
+    },
+    "m365-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "f524e9886f009cfd",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Introducing the new Copilot with Home, Code and Autopilot",
+          "url": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/",
+          "published_at": "2026-09-25T12:07:25.000Z",
+          "summary": "We’re reimagining Microsoft Copilot to enable work as it evolves and to help expand what every individual and every organization can accomplish in the flow of human ambition.\nThe post Introducing the new Copilot with Home, Code and Autopilot appeared first on AI at Work Blog.",
+          "fetched_at": "2026-10-20T01:39:32.549Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "cc0334ef418f3cdb",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Announcing the new Work IQ APIs",
+          "url": "https://www.microsoft.com/en-us/copilot/blog/2026/06/02/announcing-the-new-work-iq-apis/",
+          "published_at": "2026-06-02T17:00:15.000Z",
+          "summary": "Work IQ is a new intelligence layer for Microsoft 365, designed to understand how work gets done across your organizations.\nThe post Announcing the new Work IQ APIs appeared first on AI at Work Blog.",
+          "fetched_at": "2026-10-19T00:59:38.790Z"
+        }
+      ]
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    }
+  },
+  "diff_result": true
+}
