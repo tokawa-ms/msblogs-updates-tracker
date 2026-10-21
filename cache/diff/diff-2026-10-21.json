@@ -1,0 +1,174 @@
+{
+  "date": "2026-10-21",
+  "compared_with": "2026-10-20",
+  "source_count": 6,
+  "new_count": 4,
+  "removed_count": 4,
+  "new_articles": [
+    {
+      "id": "5560f044cfefdcbe",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "Designing for sovereign AI: A shared foundation from edge to cloud",
+      "url": "https://azure.microsoft.com/en-us/blog/designing-for-sovereign-ai-a-shared-foundation-from-edge-to-cloud/",
+      "published_at": "2026-10-19T19:00:00.000Z",
+      "summary": "A flexible sovereign architecture allows organizations to place each workload in the right environment, apply the controls it requires, and maintain consistency.\nThe post Designing for sovereign AI: A shared foundation from edge to cloud appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-10-21T01:25:15.326Z"
+    },
+    {
+      "id": "8c6bd6ba9f92f079",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "Managing open-weight model risk in enterprise deployments",
+      "url": "https://azure.microsoft.com/en-us/blog/managing-open-weight-model-risk-in-enterprise-deployments/",
+      "published_at": "2026-10-16T16:05:00.000Z",
+      "summary": "The growing AI landscape is giving enterprises more choice in how they build, customize, and deploy increasingly capable models.\nThe post Managing open-weight model risk in enterprise deployments appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-10-21T01:25:15.326Z"
+    },
+    {
+      "id": "806b1f92932cb664",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "How 3 Java Champions are using GitHub Copilot for increased productivity",
+      "url": "https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/",
+      "published_at": "2026-10-20T16:05:03.000Z",
+      "summary": "Three Java Champions share how they use GitHub Copilot to solve problems, accelerate development, and keep humans responsible for the results.\nThe post How 3 Java Champions are using GitHub Copilot for increased productivity appeared first on The GitHub Blog.",
+      "fetched_at": "2026-10-21T01:25:14.661Z"
+    },
+    {
+      "id": "cc0334ef418f3cdb",
+      "source_id": "m365-blog",
+      "source_name": "Microsoft 365 Blog",
+      "title": "Announcing the new Work IQ APIs",
+      "url": "https://www.microsoft.com/en-us/copilot/blog/2026/06/02/announcing-the-new-work-iq-apis/",
+      "published_at": "2026-06-02T17:00:15.000Z",
+      "summary": "Work IQ is a new intelligence layer for Microsoft 365, designed to understand how work gets done across your organizations.\nThe post Announcing the new Work IQ APIs appeared first on AI at Work Blog.",
+      "fetched_at": "2026-10-21T01:25:15.458Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 2,
+      "removed_count": 2,
+      "new_articles": [
+        {
+          "id": "5560f044cfefdcbe",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Designing for sovereign AI: A shared foundation from edge to cloud",
+          "url": "https://azure.microsoft.com/en-us/blog/designing-for-sovereign-ai-a-shared-foundation-from-edge-to-cloud/",
+          "published_at": "2026-10-19T19:00:00.000Z",
+          "summary": "A flexible sovereign architecture allows organizations to place each workload in the right environment, apply the controls it requires, and maintain consistency.\nThe post Designing for sovereign AI: A shared foundation from edge to cloud appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-10-21T01:25:15.326Z"
+        },
+        {
+          "id": "8c6bd6ba9f92f079",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Managing open-weight model risk in enterprise deployments",
+          "url": "https://azure.microsoft.com/en-us/blog/managing-open-weight-model-risk-in-enterprise-deployments/",
+          "published_at": "2026-10-16T16:05:00.000Z",
+          "summary": "The growing AI landscape is giving enterprises more choice in how they build, customize, and deploy increasingly capable models.\nThe post Managing open-weight model risk in enterprise deployments appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-10-21T01:25:15.326Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "b207d93ee246121a",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "SQL Server on Azure Local is now generally available",
+          "url": "https://www.microsoft.com/en-us/sql-server/blog/2026/09/28/sql-server-on-azure-local-is-now-generally-available/",
+          "published_at": "2026-09-29T16:40:06.000Z",
+          "summary": "With SQL Server on Azure Local, customers can modernize where their data resides while maintaining control over infrastructure, connectivity, and data placement.\nThe post SQL Server on Azure Local is now generally available appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-10-20T01:39:32.482Z"
+        },
+        {
+          "id": "36138c270920188f",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "FabCon and SQLCon 2026 in Barcelona: Building the data foundation for Microsoft Copilot and agents",
+          "url": "https://azure.microsoft.com/en-us/blog/fabcon-and-sqlcon-2026-in-barcelona-building-the-data-foundation-for-microsoft-copilot-and-agents/",
+          "published_at": "2026-09-29T06:30:00.000Z",
+          "summary": "Microsoft Fabric and SQL innovations announced at FabCon and SQLCon Barcelona 2026 help organizations build trusted data foundations for AI.\nThe post FabCon and SQLCon 2026 in Barcelona: Building the data foundation for Microsoft Copilot and agents appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-10-20T01:39:32.482Z"
+        }
+      ]
+    },
+    "fabric-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "github-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "806b1f92932cb664",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "How 3 Java Champions are using GitHub Copilot for increased productivity",
+          "url": "https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/",
+          "published_at": "2026-10-20T16:05:03.000Z",
+          "summary": "Three Java Champions share how they use GitHub Copilot to solve problems, accelerate development, and keep humans responsible for the results.\nThe post How 3 Java Champions are using GitHub Copilot for increased productivity appeared first on The GitHub Blog.",
+          "fetched_at": "2026-10-21T01:25:14.661Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "c6fb2b313984d9d2",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "Secret protection must scale with software",
+          "url": "https://github.blog/ai-and-ml/github-copilot/secret-protection-must-scale-with-software/",
+          "published_at": "2026-10-07T17:45:34.000Z",
+          "summary": "Developers aren’t becoming more careless; they’re being outpaced. The tools that let developers create more software should also take on more of the work of protecting it.\nThe post Secret protection must scale with software appeared first on The GitHub Blog.",
+          "fetched_at": "2026-10-20T01:39:32.403Z"
+        }
+      ]
+    },
+    "m365-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "cc0334ef418f3cdb",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Announcing the new Work IQ APIs",
+          "url": "https://www.microsoft.com/en-us/copilot/blog/2026/06/02/announcing-the-new-work-iq-apis/",
+          "published_at": "2026-06-02T17:00:15.000Z",
+          "summary": "Work IQ is a new intelligence layer for Microsoft 365, designed to understand how work gets done across your organizations.\nThe post Announcing the new Work IQ APIs appeared first on AI at Work Blog.",
+          "fetched_at": "2026-10-21T01:25:15.458Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "f524e9886f009cfd",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Introducing the new Copilot with Home, Code and Autopilot",
+          "url": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/",
+          "published_at": "2026-09-25T12:07:25.000Z",
+          "summary": "We’re reimagining Microsoft Copilot to enable work as it evolves and to help expand what every individual and every organization can accomplish in the flow of human ambition.\nThe post Introducing the new Copilot with Home, Code and Autopilot appeared first on AI at Work Blog.",
+          "fetched_at": "2026-10-20T01:39:32.549Z"
+        }
+      ]
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    }
+  },
+  "diff_result": true
+}
