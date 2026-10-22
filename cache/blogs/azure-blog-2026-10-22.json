@@ -1,0 +1,102 @@
+[
+  {
+    "id": "02ab68be675b3bf6",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "Advancing digital sovereignty with greater control and choice",
+    "url": "https://blogs.microsoft.com/blog/2026/10/20/advancing-digital-sovereignty-with-greater-control-and-choice/",
+    "published_at": "2026-10-20T17:34:47.000Z",
+    "summary": "Across conversations with leaders in government, critical infrastructure and regulated industries, one priority consistently rises to the top: putting technology to work on the most important systems while maintaining the control those systems require.\nThe post Advancing digital sovereignty with greater control and choice appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-10-22T01:22:52.247Z"
+  },
+  {
+    "id": "5560f044cfefdcbe",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "Designing for sovereign AI: A shared foundation from edge to cloud",
+    "url": "https://azure.microsoft.com/en-us/blog/designing-for-sovereign-ai-a-shared-foundation-from-edge-to-cloud/",
+    "published_at": "2026-10-19T19:00:00.000Z",
+    "summary": "A flexible sovereign architecture allows organizations to place each workload in the right environment, apply the controls it requires, and maintain consistency.\nThe post Designing for sovereign AI: A shared foundation from edge to cloud appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-10-22T01:22:52.247Z"
+  },
+  {
+    "id": "8c6bd6ba9f92f079",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "Managing open-weight model risk in enterprise deployments",
+    "url": "https://azure.microsoft.com/en-us/blog/managing-open-weight-model-risk-in-enterprise-deployments/",
+    "published_at": "2026-10-16T16:05:00.000Z",
+    "summary": "The growing AI landscape is giving enterprises more choice in how they build, customize, and deploy increasingly capable models.\nThe post Managing open-weight model risk in enterprise deployments appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-10-22T01:22:52.247Z"
+  },
+  {
+    "id": "30b8aca672158aa6",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "Evolving the cloud-native foundation for the next generation of AI",
+    "url": "https://azure.microsoft.com/en-us/blog/evolving-the-cloud-native-foundation-for-the-next-generation-of-ai/",
+    "published_at": "2026-10-15T16:00:00.000Z",
+    "summary": "Discover how Azure is advancing cloud-native infrastructure to help organizations build, run, and optimize applications and agents at scale.\nThe post Evolving the cloud-native foundation for the next generation of AI appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-10-22T01:22:52.247Z"
+  },
+  {
+    "id": "20efc1f2b3465ebc",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Server Virtualization Platforms",
+    "url": "https://azure.microsoft.com/en-us/blog/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-server-virtualization-platforms/",
+    "published_at": "2026-10-14T19:00:00.000Z",
+    "summary": "We're building operational consistency through Azure and Azure Arc, and infrastructure consistency through Hyper-V.\nThe post Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Server Virtualization Platforms appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-10-22T01:22:52.247Z"
+  },
+  {
+    "id": "95741fd459fa5556",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "Advancing hardware security with open-source Integrated HSM technology",
+    "url": "https://azure.microsoft.com/en-us/blog/advancing-hardware-security-with-open-source-integrated-hsm-technology/",
+    "published_at": "2026-10-13T16:15:00.000Z",
+    "summary": "Explore how Microsoft is advancing hardware security through open-source Integrated HSM technology, collaboration, and cryptographic key protection.\nThe post Advancing hardware security with open-source Integrated HSM technology appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-10-22T01:22:52.247Z"
+  },
+  {
+    "id": "2d42d7d3c693af57",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "Infrastructure for the frontier era: Scaling intelligence through open industry collaboration",
+    "url": "https://azure.microsoft.com/en-us/blog/infrastructure-for-the-frontier-era-scaling-intelligence-through-open-industry-collaboration/",
+    "published_at": "2026-10-13T16:15:00.000Z",
+    "summary": "AI is reaching such a pivotal moment, and the focus is shifting from building larger frontier models to intelligence that delivers practical impact.\nThe post Infrastructure for the frontier era: Scaling intelligence through open industry collaboration appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-10-22T01:22:52.247Z"
+  },
+  {
+    "id": "67d54252a65ac409",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "Deep dive into Azure Maia 300 architecture",
+    "url": "https://azure.microsoft.com/en-us/blog/deep-dive-into-azure-maia-300-architecture/",
+    "published_at": "2026-10-12T13:00:00.000Z",
+    "summary": "Maia 300 operates as a single platform to meet the demands of cloud-scale agentic inference.\nThe post Deep dive into Azure Maia 300 architecture appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-10-22T01:22:52.247Z"
+  },
+  {
+    "id": "68aea5f02d37dc36",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "AI transformation across the infrastructure lifecycle: From supply chain to fleet operations",
+    "url": "https://azure.microsoft.com/en-us/blog/ai-transformation-across-the-infrastructure-lifecycle-from-supply-chain-to-fleet-operations/",
+    "published_at": "2026-10-07T15:00:00.000Z",
+    "summary": "The opportunity is bigger than making individual tasks faster. It’s to build a system that learns from how infrastructure is designed, sourced, and operated.\nThe post AI transformation across the infrastructure lifecycle: From supply chain to fleet operations appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-10-22T01:22:52.247Z"
+  },
+  {
+    "id": "f447ab3c07770462",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Global Industrial AIoT Platforms",
+    "url": "https://azure.microsoft.com/en-us/blog/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-global-industrial-aiot-platforms/",
+    "published_at": "2026-10-06T21:00:00.000Z",
+    "summary": "We’re proud to share that Microsoft has been named a Leader in the 2026 Gartner® Magic Quadrant™ for Global Industrial AIoT Platforms.\nThe post Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Global Industrial AIoT Platforms appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-10-22T01:22:52.247Z"
+  }
+]
