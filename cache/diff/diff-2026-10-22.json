@@ -1,0 +1,155 @@
+{
+  "date": "2026-10-22",
+  "compared_with": "2026-10-21",
+  "source_count": 6,
+  "new_count": 3,
+  "removed_count": 4,
+  "new_articles": [
+    {
+      "id": "02ab68be675b3bf6",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "Advancing digital sovereignty with greater control and choice",
+      "url": "https://blogs.microsoft.com/blog/2026/10/20/advancing-digital-sovereignty-with-greater-control-and-choice/",
+      "published_at": "2026-10-20T17:34:47.000Z",
+      "summary": "Across conversations with leaders in government, critical infrastructure and regulated industries, one priority consistently rises to the top: putting technology to work on the most important systems while maintaining the control those systems require.\nThe post Advancing digital sovereignty with greater control and choice appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-10-22T01:22:52.247Z"
+    },
+    {
+      "id": "4ba30d9b0c538cac",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "The bridge to agent-scale Git infrastructure",
+      "url": "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/",
+      "published_at": "2026-10-21T16:00:00.000Z",
+      "summary": "We moved a copy of 99.99999% of GitHub's repositories to Azure. Here's how per-reference quorums will bring over the rest, and how object storage lets reads scale independently.\nThe post The bridge to agent-scale Git infrastructure appeared first on The GitHub Blog.",
+      "fetched_at": "2026-10-22T01:22:52.137Z"
+    },
+    {
+      "id": "f524e9886f009cfd",
+      "source_id": "m365-blog",
+      "source_name": "Microsoft 365 Blog",
+      "title": "Introducing the new Copilot with Home, Code and Autopilot",
+      "url": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/",
+      "published_at": "2026-09-25T12:07:25.000Z",
+      "summary": "We’re reimagining Microsoft Copilot to enable work as it evolves and to help expand what every individual and every organization can accomplish in the flow of human ambition.\nThe post Introducing the new Copilot with Home, Code and Autopilot appeared first on AI at Work Blog.",
+      "fetched_at": "2026-10-22T01:22:52.378Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "02ab68be675b3bf6",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Advancing digital sovereignty with greater control and choice",
+          "url": "https://blogs.microsoft.com/blog/2026/10/20/advancing-digital-sovereignty-with-greater-control-and-choice/",
+          "published_at": "2026-10-20T17:34:47.000Z",
+          "summary": "Across conversations with leaders in government, critical infrastructure and regulated industries, one priority consistently rises to the top: putting technology to work on the most important systems while maintaining the control those systems require.\nThe post Advancing digital sovereignty with greater control and choice appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-10-22T01:22:52.247Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "9e3738afcbdf2597",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Responsible infrastructure at hyperscale: Managing the full lifecycle of Azure hardware",
+          "url": "https://azure.microsoft.com/en-us/blog/responsible-infrastructure-at-hyperscale-managing-the-full-lifecycle-of-azure-hardware/",
+          "published_at": "2026-09-30T15:00:00.000Z",
+          "summary": "Microsoft is advancing Azure cloud infrastructure with more efficient systems and Circular Centers that extend the useful life of datacenter hardware.\nThe post Responsible infrastructure at hyperscale: Managing the full lifecycle of Azure hardware appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-10-21T01:25:15.326Z"
+        }
+      ]
+    },
+    "fabric-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "github-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "4ba30d9b0c538cac",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "The bridge to agent-scale Git infrastructure",
+          "url": "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/",
+          "published_at": "2026-10-21T16:00:00.000Z",
+          "summary": "We moved a copy of 99.99999% of GitHub's repositories to Azure. Here's how per-reference quorums will bring over the rest, and how object storage lets reads scale independently.\nThe post The bridge to agent-scale Git infrastructure appeared first on The GitHub Blog.",
+          "fetched_at": "2026-10-22T01:22:52.137Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "400f93c3a2faae18",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "How one bug bounty researcher chooses the features they investigate",
+          "url": "https://github.blog/security/how-one-bug-bounty-researcher-chooses-the-features-they-investigate/",
+          "published_at": "2026-10-08T17:02:52.000Z",
+          "summary": "As we kick off Cybersecurity Awareness Month, the GitHub Bug Bounty team spotlights @vaib25vicky, exploring their methodology, techniques, and experiences hacking on GitHub.\nThe post How one bug bounty researcher chooses the features they investigate appeared first on The GitHub Blog.",
+          "fetched_at": "2026-10-21T01:25:14.661Z"
+        }
+      ]
+    },
+    "m365-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "f524e9886f009cfd",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Introducing the new Copilot with Home, Code and Autopilot",
+          "url": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/",
+          "published_at": "2026-09-25T12:07:25.000Z",
+          "summary": "We’re reimagining Microsoft Copilot to enable work as it evolves and to help expand what every individual and every organization can accomplish in the flow of human ambition.\nThe post Introducing the new Copilot with Home, Code and Autopilot appeared first on AI at Work Blog.",
+          "fetched_at": "2026-10-22T01:22:52.378Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "cc0334ef418f3cdb",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Announcing the new Work IQ APIs",
+          "url": "https://www.microsoft.com/en-us/copilot/blog/2026/06/02/announcing-the-new-work-iq-apis/",
+          "published_at": "2026-06-02T17:00:15.000Z",
+          "summary": "Work IQ is a new intelligence layer for Microsoft 365, designed to understand how work gets done across your organizations.\nThe post Announcing the new Work IQ APIs appeared first on AI at Work Blog.",
+          "fetched_at": "2026-10-21T01:25:15.458Z"
+        }
+      ]
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 1,
+      "new_articles": [],
+      "removed_articles": [
+        {
+          "id": "b7ee04c92c6213bb",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Building docfind: Fast Client-Side Search with Rust and WebAssembly",
+          "url": "https://code.visualstudio.com/blogs/2026/01/15/docfind",
+          "published_at": "2026-01-15T00:00:00.000Z",
+          "summary": "How we built docfind, a high-performance client-side search engine using Rust and WebAssembly, and how GitHub Copilot accelerated development.\nRead the full article",
+          "fetched_at": "2026-10-21T01:25:15.224Z"
+        }
+      ]
+    }
+  },
+  "diff_result": true
+}
