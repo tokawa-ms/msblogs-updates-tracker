@@ -1,0 +1,144 @@
+{
+  "date": "2026-10-27",
+  "compared_with": "2026-10-26",
+  "source_count": 6,
+  "new_count": 3,
+  "removed_count": 3,
+  "new_articles": [
+    {
+      "id": "a9dcb410f7163a89",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "Scale reservoir uncertainty analysis with agile reservoir modeling",
+      "url": "https://azure.microsoft.com/en-us/blog/scale-reservoir-uncertainty-analysis-with-agile-reservoir-modeling/",
+      "published_at": "2026-10-26T16:00:00.000Z",
+      "summary": "As subsurface data grows in scale and complexity, teams need a faster, more connected way to transform uncertainty into actionable decisions.\nThe post Scale reservoir uncertainty analysis with agile reservoir modeling appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-10-27T01:55:52.765Z"
+    },
+    {
+      "id": "5d5483054da10a89",
+      "source_id": "fabric-blog",
+      "source_name": "Microsoft Fabric Blog",
+      "title": "Deep dive into Power BI reporting with the new date picker slicer option (Preview)",
+      "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Deep-dive-into-Power-BI-reporting-with-the-new-date-picker/ba-p/5295674",
+      "published_at": "2026-07-16T16:00:00.000Z",
+      "summary": "Power BI’s new date picker slicer helps report authors set dynamic default date ranges while giving viewers flexible, easy ways to explore dates, ranges, and rolling periods as data refreshes.",
+      "fetched_at": "2026-10-27T01:55:53.645Z"
+    },
+    {
+      "id": "f2d8a7a1dfa74ad3",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "Tune GitHub Copilot Inline Suggestions with Configurable Eagerness",
+      "url": "https://code.visualstudio.com/blogs/2026/10/27/configurable-eagerness",
+      "published_at": "2026-10-26T00:00:00.000Z",
+      "summary": "Choose how proactively Copilot offers inline suggestions.\nRead the full article",
+      "fetched_at": "2026-10-27T01:55:52.668Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "a9dcb410f7163a89",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Scale reservoir uncertainty analysis with agile reservoir modeling",
+          "url": "https://azure.microsoft.com/en-us/blog/scale-reservoir-uncertainty-analysis-with-agile-reservoir-modeling/",
+          "published_at": "2026-10-26T16:00:00.000Z",
+          "summary": "As subsurface data grows in scale and complexity, teams need a faster, more connected way to transform uncertainty into actionable decisions.\nThe post Scale reservoir uncertainty analysis with agile reservoir modeling appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-10-27T01:55:52.765Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "f447ab3c07770462",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Global Industrial AIoT Platforms",
+          "url": "https://azure.microsoft.com/en-us/blog/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-global-industrial-aiot-platforms/",
+          "published_at": "2026-10-06T21:00:00.000Z",
+          "summary": "We’re proud to share that Microsoft has been named a Leader in the 2026 Gartner® Magic Quadrant™ for Global Industrial AIoT Platforms.\nThe post Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Global Industrial AIoT Platforms appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-10-26T01:04:07.156Z"
+        }
+      ]
+    },
+    "fabric-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "5d5483054da10a89",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Deep dive into Power BI reporting with the new date picker slicer option (Preview)",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Deep-dive-into-Power-BI-reporting-with-the-new-date-picker/ba-p/5295674",
+          "published_at": "2026-07-16T16:00:00.000Z",
+          "summary": "Power BI’s new date picker slicer helps report authors set dynamic default date ranges while giving viewers flexible, easy ways to explore dates, ranges, and rolling periods as data refreshes.",
+          "fetched_at": "2026-10-27T01:55:53.645Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "8df5728e9ef179a0",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Fabric Data Warehouse integration with Fabric User Data Functions (Preview)",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Fabric-Data-Warehouse-integration-with-Fabric-User-Data/ba-p/5375137",
+          "published_at": "2026-10-19T21:00:00.000Z",
+          "summary": "Microsoft Fabric Data Warehouse now integrates with Fabric User Data Functions in preview, so you can extend T-SQL with custom Python logic without building separate applications or pipelines. Use the integration to send email or Teams messages, retrieve parameters and secrets from Fabric variable libraries or Azure Key Vault, and access data across OneLake.\r\nThese capabilities are now available directly from T-SQL queries in your Warehouse.\r\n \r\nFigure: Calling a Fabric User Data Function from a T-SQL query in Fabric Data Warehouse.\r\nYou can create T-SQL external functions in Fabric Data Warehouse that reference Python functions in a Fabric User Data Functions item. You can then invoke those functions from familiar statements such as SELECT, INSERT, and UPDATE. When an external function is called, Data Warehouse delegates its execution to the Fabric User Data Functions runtime.\r\nThis integration enables scenarios such as:\r\n\r\nCalling Fabric or external APIs and sending email, Teams messages, or notifications.\r\nReading Excel, XML, PDF, and other file formats through Python.\r\nAccessing data in OneLake and reading from or writing to Fabric databases, Azure Cosmos DB, and warehouses across workspaces.\r\nRetrieving secrets and configuration values from Azure Key Vault or Fabric variable libraries to parameterize custom logic.\r\nEncrypting, decrypting, or masking sensitive columns with custom Python logic and organization-managed keys.\r\nEnriching and validating data by geocoding addresses, verifying VAT or IBAN numbers, or scoring records with a machine learning model.\r\n\r\nExample: Use Python to classify IPv6 network events from T-SQL\r\nClassifying IPv6 events by network prefix can support security analysis, but the required parsing and binary arithmetic are complex in T-SQL. Python provides a purpose-built standard library for this task, allowing warehouses that store network and security telemetry to organize events into consistent network ranges for analysis.\r\nIn this example, Python’s ipaddress function accepts an IPv6 address and prefix length and returns the corresponding network in CIDR notation. Persisting this value as an analytics column lets downstream queries group events into consistent network ranges without repeating calculation.\r\nimport ipaddressimport fabric.functions as fnudf = fn.UserDataFunctions()@udf.function()def getIpv6Network(address: str, prefixLength: int) -> str:    interface = ipaddress.ip_interface(f\"{address}/{prefixLength}\")    return str(interface.network)\r\nThe published Python function is mapped to a T-SQL external function that accepts an IPv6 address and prefix length and returns the corresponding network prefix in CIDR notation.\r\nCREATE FUNCTION ipv6.get_networkAS EXTERNAL FUNCTION utilities.getIpv6Network;\r\nYou can then calculate and persist a /48 network prefix for each event:\r\nUPDATE dbo.NetworkEventsSET NetworkPrefix = ipv6.get_network(SourceIp, 48)WHERE NetworkPrefix IS NULL;\r\nEach call to ipv6.get_network delegates execution to the Fabric User Data Function runtime. After the result is stored in NetworkPrefix column, downstream queries can use it without recalculating the prefix.\r\nConclusion\r\nFabric User Data Functions let teams continue working in T-SQL while using Python to address scenarios that traditionally require separate applications or pipelines. Explore the preview and start extending your Fabric Data Warehouse solutions with custom logic today.\r\nYou learn how to use the User Data Functions in Fabric Data Warehouse in the documentation.\r\nTry this feature during the preview and share your feedback with the Microsoft Fabric community on Reddit.",
+          "fetched_at": "2026-10-26T01:04:08.044Z"
+        }
+      ]
+    },
+    "github-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "m365-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "f2d8a7a1dfa74ad3",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Tune GitHub Copilot Inline Suggestions with Configurable Eagerness",
+          "url": "https://code.visualstudio.com/blogs/2026/10/27/configurable-eagerness",
+          "published_at": "2026-10-26T00:00:00.000Z",
+          "summary": "Choose how proactively Copilot offers inline suggestions.\nRead the full article",
+          "fetched_at": "2026-10-27T01:55:52.668Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "45ffe1ce89885428",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Giving Agents a Visual Voice: MCP Apps Support in VS Code",
+          "url": "https://code.visualstudio.com/blogs/2026/01/26/mcp-apps-support",
+          "published_at": "2026-01-26T00:00:00.000Z",
+          "summary": "VS Code now supports MCP Apps, enabling AI agents to display interactive UIs for richer developer workflows.\nRead the full article",
+          "fetched_at": "2026-10-26T01:04:07.035Z"
+        }
+      ]
+    }
+  },
+  "diff_result": true
+}
