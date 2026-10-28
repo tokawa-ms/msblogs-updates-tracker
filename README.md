@@ -94,6 +94,7 @@ npm run build:static
 - 📊 Microsoft 365 Blog
 - 📈 Microsoft Fabric Blog
 - 🤖 Microsoft AI Blog
+- [Windows Command Line Blog](https://devblogs.microsoft.com/commandline/)
 
 ## 📋 実装フェーズ
 

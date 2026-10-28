@@ -48,5 +48,13 @@
     "feedUrl": "https://blogs.microsoft.com/feed/",
     "filterUrlIncludes": ["/ai/"],
     "limit": 30
+  },
+  {
+    "id": "commandline-blog",
+    "name": "Windows Command Line Blog",
+    "type": "rss",
+    "url": "https://devblogs.microsoft.com/commandline/",
+    "feedUrl": "https://devblogs.microsoft.com/commandline/feed/",
+    "limit": 30
   }
 ]
