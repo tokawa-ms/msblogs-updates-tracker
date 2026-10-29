@@ -1,0 +1,102 @@
+[
+  {
+    "id": "6d59dd7c1f354e08",
+    "source_id": "commandline-blog",
+    "source_name": "Windows Command Line Blog",
+    "title": "PowerToys 0.102 is here: new mouse utilities, Command Palette improvements and much more",
+    "url": "https://devblogs.microsoft.com/commandline/powertoys-0-102-is-here-new-mouse-utilities-command-palette-improvements-and-much-more/",
+    "published_at": "2026-10-21T11:06:49.000Z",
+    "summary": "We’re back with a fresh PowerToys release! This one brings two new mouse utilities, Mouse Button Lock and CursorHide, an optional quick-access shelf for Command Palette, snip dictation in ZoomIt, and a set of new command-line tools for automating PowerToys. Color Picker and Text Extractor also move to WinUI 3, and Keyboard Manager picks up […]\nThe post PowerToys 0.102 is here: new mouse utilities, Command Palette improvements and much more appeared first on Windows Command Line.",
+    "fetched_at": "2026-10-29T02:14:53.947Z"
+  },
+  {
+    "id": "85b49a520ff34014",
+    "source_id": "commandline-blog",
+    "source_name": "Windows Command Line Blog",
+    "title": "WSLC Architecture deep dive",
+    "url": "https://devblogs.microsoft.com/commandline/wslc-architecture-deep-dive/",
+    "published_at": "2026-09-29T17:00:19.000Z",
+    "summary": "WSL containers is now generally available! Check out this blog post to learn more about this overall feature enabling seamless access to Linux containers on Windows via the new “wslc.exe” command. This new Linux container platform comes with multiple architectures changes compared to WSL, which we’ll detail in this post. Session model Similarly to WSL, […]\nThe post WSLC Architecture deep dive appeared first on Windows Command Line.",
+    "fetched_at": "2026-10-29T02:14:53.947Z"
+  },
+  {
+    "id": "4a3a8f2cf9cfce1e",
+    "source_id": "commandline-blog",
+    "source_name": "Windows Command Line Blog",
+    "title": "Intelligent Terminal 0.2.2572: Faster, Smoother, and More Reliable",
+    "url": "https://devblogs.microsoft.com/commandline/intelligent-terminal-0-2-25-performance-reliability/",
+    "published_at": "2026-09-14T19:00:09.000Z",
+    "summary": "We’re back with Intelligent Terminal v0.2.2572, and this one is all about making things faster, easier to use, more reliable, and more polished. This release lands over 60 fixes and improvements as well as API key support for local models, automatic approval for supported agents, and native slash commands your agent brings with it. You […]\nThe post Intelligent Terminal 0.2.2572: Faster, Smoother, and More Reliable appeared first on Windows Command Line.",
+    "fetched_at": "2026-10-29T02:14:53.947Z"
+  },
+  {
+    "id": "e8b1464cee766dcf",
+    "source_id": "commandline-blog",
+    "source_name": "Windows Command Line Blog",
+    "title": "PowerToys 0.101 is here: Window Hopper, Insider updates, and Command Palette compact mode",
+    "url": "https://devblogs.microsoft.com/commandline/powertoys-0-101-is-here-window-hopper-insider-updates-and-command-palette-compact-mode/",
+    "published_at": "2026-08-25T13:24:02.000Z",
+    "summary": "We’re back with a fresh PowerToys release! PowerToys 0.101 introduces Window Hopper for quickly moving between windows from the same app, a redesigned update experience with Stable and Insider channels, and compact mode for Command Palette. This release also continues our WinUI 3 modernization, brings on-device Phi Silica transformations to Advanced Paste, and adds a […]\nThe post PowerToys 0.101 is here: Window Hopper, Insider updates, and Command Palette compact mode appeared first on Windows Command Line.",
+    "fetched_at": "2026-10-29T02:14:53.947Z"
+  },
+  {
+    "id": "ebc6c19205db0f18",
+    "source_id": "commandline-blog",
+    "source_name": "Windows Command Line Blog",
+    "title": "Intelligent Terminal 0.2 is here with local model support",
+    "url": "https://devblogs.microsoft.com/commandline/intelligent-terminal-0-2-is-here-with-local-model-support/",
+    "published_at": "2026-08-10T19:00:01.000Z",
+    "summary": "We’re back, and this is our first minor version bump: 0.1 to 0.2! It’s our biggest release yet. This update adds support for local models, lets you run a different agent in each tab with /agent, brings OpenCode into the built-in agent lineup, runs your agent inside WSL where your work actually lives, and makes […]\nThe post Intelligent Terminal 0.2 is here with local model support appeared first on Windows Command Line.",
+    "fetched_at": "2026-10-29T02:14:53.947Z"
+  },
+  {
+    "id": "f9569ec373719db5",
+    "source_id": "commandline-blog",
+    "source_name": "Windows Command Line Blog",
+    "title": "WSL container is now available for public preview",
+    "url": "https://devblogs.microsoft.com/commandline/wsl-container-is-now-available-for-public-preview/",
+    "published_at": "2026-06-29T15:29:48.000Z",
+    "summary": "At Microsoft Build 2026, we introduced WSL containers, bringing Linux container development directly into Windows through the Windows Subsystem for Linux (WSL). Containers have become a foundational part of modern development – from cloud-native applications and AI workloads to testing and deployment pipelines and WSL containers simplify this experience by providing a built-in, enterprise-ready way […]\nThe post WSL container is now available for public preview appeared first on Windows Command Line.",
+    "fetched_at": "2026-10-29T02:14:53.947Z"
+  },
+  {
+    "id": "5e0dbb1b6f371fc5",
+    "source_id": "commandline-blog",
+    "source_name": "Windows Command Line Blog",
+    "title": "Intelligent Terminal 0.1.1 is here: bash support, new slash commands, and more customization",
+    "url": "https://devblogs.microsoft.com/commandline/intelligent-terminal-0-1-1-is-here-bash-support-new-slash-commands-and-customization/",
+    "published_at": "2026-06-17T22:31:51.000Z",
+    "summary": "We’re back with the first servicing release of Intelligent Terminal! This update brings auto error detection to Bash and WSL, a new /fix command for on-demand help, an on-the-fly /model picker, a customizable agent pane, and Windows 10 support, along with a round of bug fixes and reliability improvements. You can grab the update from […]\nThe post Intelligent Terminal 0.1.1 is here: bash support, new slash commands, and more customization appeared first on Windows Command Line.",
+    "fetched_at": "2026-10-29T02:14:53.947Z"
+  },
+  {
+    "id": "efa07eac462c3786",
+    "source_id": "commandline-blog",
+    "source_name": "Windows Command Line Blog",
+    "title": "PowerToys 0.100 is here: new Shortcut Guide, Command Palette improvements and much more!",
+    "url": "https://devblogs.microsoft.com/commandline/powertoys-0-100-is-here-new-shortcut-guide-command-palette-improvements-and-much-more/",
+    "published_at": "2026-06-10T06:26:45.000Z",
+    "summary": "We’re back with a fresh PowerToys release! This month introduces the brand-new Shortcut Guide, a major Command Palette update with the new Extension Gallery and multi-monitor Dock support, and a wave of improvements to Power Display. We’ve also upgraded PowerToys to .NET 10, improved auto-update reliability, reduced installer size, and continued modernizing the app experience […]\nThe post PowerToys 0.100 is here: new Shortcut Guide, Command Palette improvements and much more! appeared first on Windows Command Line.",
+    "fetched_at": "2026-10-29T02:14:53.947Z"
+  },
+  {
+    "id": "9f3b2d93ac860689",
+    "source_id": "commandline-blog",
+    "source_name": "Windows Command Line Blog",
+    "title": "Announcing Intelligent Terminal 0.1",
+    "url": "https://devblogs.microsoft.com/commandline/announcing-intelligent-terminal-version-0-1/",
+    "published_at": "2026-06-02T17:00:09.000Z",
+    "summary": "Today we’re announcing Intelligent Terminal version 0.1, an open-source experimental fork of Windows Terminal with native agent integration. Get started Install from the Microsoft Store: Intelligent Terminal on the Microsoft Store Install via WinGet: winget install Microsoft.IntelligentTerminal Visit our GitHub repository for documentation and to file issues. Here’s a look at what’s in this experimental […]\nThe post Announcing Intelligent Terminal 0.1 appeared first on Windows Command Line.",
+    "fetched_at": "2026-10-29T02:14:53.947Z"
+  },
+  {
+    "id": "576c4c09cdb06377",
+    "source_id": "commandline-blog",
+    "source_name": "Windows Command Line Blog",
+    "title": "The new Run dialog: faster, cleaner, and more capable",
+    "url": "https://devblogs.microsoft.com/commandline/the-new-run-dialog-faster-cleaner-and-more-capable/",
+    "published_at": "2026-05-01T17:00:39.000Z",
+    "summary": "We’ve shipped the new Run dialog – and we want to say thanks. As the team behind Windows Terminal and PowerToys, we’re excited to bring this to Windows 11, and your feedback helped shape it! Run has been rebuilt from the ground up: Modern design: A refreshed look that matches Fluent Design and Windows 11, […]\nThe post The new Run dialog: faster, cleaner, and more capable appeared first on Windows Command Line.",
+    "fetched_at": "2026-10-29T02:14:53.947Z"
+  }
+]
