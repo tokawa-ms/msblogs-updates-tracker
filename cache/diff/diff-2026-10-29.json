@@ -1,0 +1,451 @@
+{
+  "date": "2026-10-29",
+  "compared_with": "2026-10-28",
+  "source_count": 7,
+  "new_count": 16,
+  "removed_count": 7,
+  "new_articles": [
+    {
+      "id": "6d59dd7c1f354e08",
+      "source_id": "commandline-blog",
+      "source_name": "Windows Command Line Blog",
+      "title": "PowerToys 0.102 is here: new mouse utilities, Command Palette improvements and much more",
+      "url": "https://devblogs.microsoft.com/commandline/powertoys-0-102-is-here-new-mouse-utilities-command-palette-improvements-and-much-more/",
+      "published_at": "2026-10-21T11:06:49.000Z",
+      "summary": "We’re back with a fresh PowerToys release! This one brings two new mouse utilities, Mouse Button Lock and CursorHide, an optional quick-access shelf for Command Palette, snip dictation in ZoomIt, and a set of new command-line tools for automating PowerToys. Color Picker and Text Extractor also move to WinUI 3, and Keyboard Manager picks up […]\nThe post PowerToys 0.102 is here: new mouse utilities, Command Palette improvements and much more appeared first on Windows Command Line.",
+      "fetched_at": "2026-10-29T02:14:53.947Z"
+    },
+    {
+      "id": "85b49a520ff34014",
+      "source_id": "commandline-blog",
+      "source_name": "Windows Command Line Blog",
+      "title": "WSLC Architecture deep dive",
+      "url": "https://devblogs.microsoft.com/commandline/wslc-architecture-deep-dive/",
+      "published_at": "2026-09-29T17:00:19.000Z",
+      "summary": "WSL containers is now generally available! Check out this blog post to learn more about this overall feature enabling seamless access to Linux containers on Windows via the new “wslc.exe” command. This new Linux container platform comes with multiple architectures changes compared to WSL, which we’ll detail in this post. Session model Similarly to WSL, […]\nThe post WSLC Architecture deep dive appeared first on Windows Command Line.",
+      "fetched_at": "2026-10-29T02:14:53.947Z"
+    },
+    {
+      "id": "4a3a8f2cf9cfce1e",
+      "source_id": "commandline-blog",
+      "source_name": "Windows Command Line Blog",
+      "title": "Intelligent Terminal 0.2.2572: Faster, Smoother, and More Reliable",
+      "url": "https://devblogs.microsoft.com/commandline/intelligent-terminal-0-2-25-performance-reliability/",
+      "published_at": "2026-09-14T19:00:09.000Z",
+      "summary": "We’re back with Intelligent Terminal v0.2.2572, and this one is all about making things faster, easier to use, more reliable, and more polished. This release lands over 60 fixes and improvements as well as API key support for local models, automatic approval for supported agents, and native slash commands your agent brings with it. You […]\nThe post Intelligent Terminal 0.2.2572: Faster, Smoother, and More Reliable appeared first on Windows Command Line.",
+      "fetched_at": "2026-10-29T02:14:53.947Z"
+    },
+    {
+      "id": "e8b1464cee766dcf",
+      "source_id": "commandline-blog",
+      "source_name": "Windows Command Line Blog",
+      "title": "PowerToys 0.101 is here: Window Hopper, Insider updates, and Command Palette compact mode",
+      "url": "https://devblogs.microsoft.com/commandline/powertoys-0-101-is-here-window-hopper-insider-updates-and-command-palette-compact-mode/",
+      "published_at": "2026-08-25T13:24:02.000Z",
+      "summary": "We’re back with a fresh PowerToys release! PowerToys 0.101 introduces Window Hopper for quickly moving between windows from the same app, a redesigned update experience with Stable and Insider channels, and compact mode for Command Palette. This release also continues our WinUI 3 modernization, brings on-device Phi Silica transformations to Advanced Paste, and adds a […]\nThe post PowerToys 0.101 is here: Window Hopper, Insider updates, and Command Palette compact mode appeared first on Windows Command Line.",
+      "fetched_at": "2026-10-29T02:14:53.947Z"
+    },
+    {
+      "id": "ebc6c19205db0f18",
+      "source_id": "commandline-blog",
+      "source_name": "Windows Command Line Blog",
+      "title": "Intelligent Terminal 0.2 is here with local model support",
+      "url": "https://devblogs.microsoft.com/commandline/intelligent-terminal-0-2-is-here-with-local-model-support/",
+      "published_at": "2026-08-10T19:00:01.000Z",
+      "summary": "We’re back, and this is our first minor version bump: 0.1 to 0.2! It’s our biggest release yet. This update adds support for local models, lets you run a different agent in each tab with /agent, brings OpenCode into the built-in agent lineup, runs your agent inside WSL where your work actually lives, and makes […]\nThe post Intelligent Terminal 0.2 is here with local model support appeared first on Windows Command Line.",
+      "fetched_at": "2026-10-29T02:14:53.947Z"
+    },
+    {
+      "id": "f9569ec373719db5",
+      "source_id": "commandline-blog",
+      "source_name": "Windows Command Line Blog",
+      "title": "WSL container is now available for public preview",
+      "url": "https://devblogs.microsoft.com/commandline/wsl-container-is-now-available-for-public-preview/",
+      "published_at": "2026-06-29T15:29:48.000Z",
+      "summary": "At Microsoft Build 2026, we introduced WSL containers, bringing Linux container development directly into Windows through the Windows Subsystem for Linux (WSL). Containers have become a foundational part of modern development – from cloud-native applications and AI workloads to testing and deployment pipelines and WSL containers simplify this experience by providing a built-in, enterprise-ready way […]\nThe post WSL container is now available for public preview appeared first on Windows Command Line.",
+      "fetched_at": "2026-10-29T02:14:53.947Z"
+    },
+    {
+      "id": "5e0dbb1b6f371fc5",
+      "source_id": "commandline-blog",
+      "source_name": "Windows Command Line Blog",
+      "title": "Intelligent Terminal 0.1.1 is here: bash support, new slash commands, and more customization",
+      "url": "https://devblogs.microsoft.com/commandline/intelligent-terminal-0-1-1-is-here-bash-support-new-slash-commands-and-customization/",
+      "published_at": "2026-06-17T22:31:51.000Z",
+      "summary": "We’re back with the first servicing release of Intelligent Terminal! This update brings auto error detection to Bash and WSL, a new /fix command for on-demand help, an on-the-fly /model picker, a customizable agent pane, and Windows 10 support, along with a round of bug fixes and reliability improvements. You can grab the update from […]\nThe post Intelligent Terminal 0.1.1 is here: bash support, new slash commands, and more customization appeared first on Windows Command Line.",
+      "fetched_at": "2026-10-29T02:14:53.947Z"
+    },
+    {
+      "id": "efa07eac462c3786",
+      "source_id": "commandline-blog",
+      "source_name": "Windows Command Line Blog",
+      "title": "PowerToys 0.100 is here: new Shortcut Guide, Command Palette improvements and much more!",
+      "url": "https://devblogs.microsoft.com/commandline/powertoys-0-100-is-here-new-shortcut-guide-command-palette-improvements-and-much-more/",
+      "published_at": "2026-06-10T06:26:45.000Z",
+      "summary": "We’re back with a fresh PowerToys release! This month introduces the brand-new Shortcut Guide, a major Command Palette update with the new Extension Gallery and multi-monitor Dock support, and a wave of improvements to Power Display. We’ve also upgraded PowerToys to .NET 10, improved auto-update reliability, reduced installer size, and continued modernizing the app experience […]\nThe post PowerToys 0.100 is here: new Shortcut Guide, Command Palette improvements and much more! appeared first on Windows Command Line.",
+      "fetched_at": "2026-10-29T02:14:53.947Z"
+    },
+    {
+      "id": "9f3b2d93ac860689",
+      "source_id": "commandline-blog",
+      "source_name": "Windows Command Line Blog",
+      "title": "Announcing Intelligent Terminal 0.1",
+      "url": "https://devblogs.microsoft.com/commandline/announcing-intelligent-terminal-version-0-1/",
+      "published_at": "2026-06-02T17:00:09.000Z",
+      "summary": "Today we’re announcing Intelligent Terminal version 0.1, an open-source experimental fork of Windows Terminal with native agent integration. Get started Install from the Microsoft Store: Intelligent Terminal on the Microsoft Store Install via WinGet: winget install Microsoft.IntelligentTerminal Visit our GitHub repository for documentation and to file issues. Here’s a look at what’s in this experimental […]\nThe post Announcing Intelligent Terminal 0.1 appeared first on Windows Command Line.",
+      "fetched_at": "2026-10-29T02:14:53.947Z"
+    },
+    {
+      "id": "576c4c09cdb06377",
+      "source_id": "commandline-blog",
+      "source_name": "Windows Command Line Blog",
+      "title": "The new Run dialog: faster, cleaner, and more capable",
+      "url": "https://devblogs.microsoft.com/commandline/the-new-run-dialog-faster-cleaner-and-more-capable/",
+      "published_at": "2026-05-01T17:00:39.000Z",
+      "summary": "We’ve shipped the new Run dialog – and we want to say thanks. As the team behind Windows Terminal and PowerToys, we’re excited to bring this to Windows 11, and your feedback helped shape it! Run has been rebuilt from the ground up: Modern design: A refreshed look that matches Fluent Design and Windows 11, […]\nThe post The new Run dialog: faster, cleaner, and more capable appeared first on Windows Command Line.",
+      "fetched_at": "2026-10-29T02:14:53.947Z"
+    },
+    {
+      "id": "8d24f5677c199a45",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "GitHub Universe 2026: Evolving every layer of the stack",
+      "url": "https://github.blog/news-insights/company-news/github-universe-2026-evolving-every-layer-of-the-stack/",
+      "published_at": "2026-10-28T16:09:28.000Z",
+      "summary": "Today, we laid out our vision for GitHub as the most comprehensive, end-to-end software delivery system in the world.\nThe post GitHub Universe 2026: Evolving every layer of the stack appeared first on The GitHub Blog.",
+      "fetched_at": "2026-10-29T02:14:52.717Z"
+    },
+    {
+      "id": "34902b30f790e3e6",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "Octoverse: Commits, pushes, reach new highs in 2026 as developers build with agents",
+      "url": "https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/",
+      "published_at": "2026-10-28T16:07:40.000Z",
+      "summary": "See how a record year of growth reached every industry, every field, and every kind of builder in the 2026 Octoverse report.\nThe post Octoverse: Commits, pushes, reach new highs in 2026 as developers build with agents appeared first on The GitHub Blog.",
+      "fetched_at": "2026-10-29T02:14:52.717Z"
+    },
+    {
+      "id": "a19ec6c0d78fb26e",
+      "source_id": "m365-blog",
+      "source_name": "Microsoft 365 Blog",
+      "title": "The AI advantage your company can keep",
+      "url": "https://www.microsoft.com/en-us/copilot/blog/2026/10/27/the-ai-advantage-your-company-can-keep/",
+      "published_at": "2026-10-27T16:00:00.000Z",
+      "summary": "New research across more than 200 enterprises looks at how shared knowledge can help companies coordinate their agents—and turn lessons from their work into an operational edge.\nThe post The AI advantage your company can keep appeared first on Microsoft Copilot Blog.",
+      "fetched_at": "2026-10-29T02:14:52.867Z"
+    },
+    {
+      "id": "8cdba707ca078131",
+      "source_id": "m365-blog",
+      "source_name": "Microsoft 365 Blog",
+      "title": "Bringing CRM into the flow of work and agents into business process for sales and service teams",
+      "url": "https://www.microsoft.com/en-us/copilot/blog/2026/10/08/bringing-crm-into-the-flow-of-work-and-agents-into-business-process-for-sales-and-service-teams/",
+      "published_at": "2026-10-08T15:00:00.000Z",
+      "summary": "The traditional boundaries of business applications are disappearing. For decades, people went to their customer relationship management (CRM) to find customer context, take action, and move work forward. AI is inverting that model. This shift creates two complementary opportunities: greater individual productivity and organization-wide process transformation.\nThe post Bringing CRM into the flow of work and agents into business process for sales and service teams appeared first on Microsoft Copilot Blog.",
+      "fetched_at": "2026-10-29T02:14:52.867Z"
+    },
+    {
+      "id": "b24f6205698a0ebe",
+      "source_id": "m365-blog",
+      "source_name": "Microsoft 365 Blog",
+      "title": "Introducing Microsoft 365 G7: Intelligence + Trust for the mission ahead",
+      "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/us-government/2026/09/15/introducing-microsoft-365-g7-intelligence-trust-for-the-mission-ahead/",
+      "published_at": "2026-09-15T15:00:00.000Z",
+      "summary": "Microsoft 365 G7 brings AI, Copilot, agent governance, security, and compliance together to help government agencies modernize securely.\nThe post Introducing Microsoft 365 G7: Intelligence + Trust for the mission ahead appeared first on Microsoft Copilot Blog.",
+      "fetched_at": "2026-10-29T02:14:52.867Z"
+    },
+    {
+      "id": "8498dcc26b7abf49",
+      "source_id": "vscode-blog",
+      "source_name": "VSCode Blog",
+      "title": "VS Code Wrapped: GitHub Universe 2026",
+      "url": "https://code.visualstudio.com/blogs/2026/10/28/vscode-wrapped",
+      "published_at": "2026-10-28T00:00:00.000Z",
+      "summary": "Explore how VS Code evolved between GitHub Universe 2025 and 2026, with new ways to code, collaborate with agents, and manage work across tools and environments.\nRead the full article",
+      "fetched_at": "2026-10-29T02:14:52.754Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "commandline-blog": {
+      "new_count": 10,
+      "removed_count": 0,
+      "new_articles": [
+        {
+          "id": "6d59dd7c1f354e08",
+          "source_id": "commandline-blog",
+          "source_name": "Windows Command Line Blog",
+          "title": "PowerToys 0.102 is here: new mouse utilities, Command Palette improvements and much more",
+          "url": "https://devblogs.microsoft.com/commandline/powertoys-0-102-is-here-new-mouse-utilities-command-palette-improvements-and-much-more/",
+          "published_at": "2026-10-21T11:06:49.000Z",
+          "summary": "We’re back with a fresh PowerToys release! This one brings two new mouse utilities, Mouse Button Lock and CursorHide, an optional quick-access shelf for Command Palette, snip dictation in ZoomIt, and a set of new command-line tools for automating PowerToys. Color Picker and Text Extractor also move to WinUI 3, and Keyboard Manager picks up […]\nThe post PowerToys 0.102 is here: new mouse utilities, Command Palette improvements and much more appeared first on Windows Command Line.",
+          "fetched_at": "2026-10-29T02:14:53.947Z"
+        },
+        {
+          "id": "85b49a520ff34014",
+          "source_id": "commandline-blog",
+          "source_name": "Windows Command Line Blog",
+          "title": "WSLC Architecture deep dive",
+          "url": "https://devblogs.microsoft.com/commandline/wslc-architecture-deep-dive/",
+          "published_at": "2026-09-29T17:00:19.000Z",
+          "summary": "WSL containers is now generally available! Check out this blog post to learn more about this overall feature enabling seamless access to Linux containers on Windows via the new “wslc.exe” command. This new Linux container platform comes with multiple architectures changes compared to WSL, which we’ll detail in this post. Session model Similarly to WSL, […]\nThe post WSLC Architecture deep dive appeared first on Windows Command Line.",
+          "fetched_at": "2026-10-29T02:14:53.947Z"
+        },
+        {
+          "id": "4a3a8f2cf9cfce1e",
+          "source_id": "commandline-blog",
+          "source_name": "Windows Command Line Blog",
+          "title": "Intelligent Terminal 0.2.2572: Faster, Smoother, and More Reliable",
+          "url": "https://devblogs.microsoft.com/commandline/intelligent-terminal-0-2-25-performance-reliability/",
+          "published_at": "2026-09-14T19:00:09.000Z",
+          "summary": "We’re back with Intelligent Terminal v0.2.2572, and this one is all about making things faster, easier to use, more reliable, and more polished. This release lands over 60 fixes and improvements as well as API key support for local models, automatic approval for supported agents, and native slash commands your agent brings with it. You […]\nThe post Intelligent Terminal 0.2.2572: Faster, Smoother, and More Reliable appeared first on Windows Command Line.",
+          "fetched_at": "2026-10-29T02:14:53.947Z"
+        },
+        {
+          "id": "e8b1464cee766dcf",
+          "source_id": "commandline-blog",
+          "source_name": "Windows Command Line Blog",
+          "title": "PowerToys 0.101 is here: Window Hopper, Insider updates, and Command Palette compact mode",
+          "url": "https://devblogs.microsoft.com/commandline/powertoys-0-101-is-here-window-hopper-insider-updates-and-command-palette-compact-mode/",
+          "published_at": "2026-08-25T13:24:02.000Z",
+          "summary": "We’re back with a fresh PowerToys release! PowerToys 0.101 introduces Window Hopper for quickly moving between windows from the same app, a redesigned update experience with Stable and Insider channels, and compact mode for Command Palette. This release also continues our WinUI 3 modernization, brings on-device Phi Silica transformations to Advanced Paste, and adds a […]\nThe post PowerToys 0.101 is here: Window Hopper, Insider updates, and Command Palette compact mode appeared first on Windows Command Line.",
+          "fetched_at": "2026-10-29T02:14:53.947Z"
+        },
+        {
+          "id": "ebc6c19205db0f18",
+          "source_id": "commandline-blog",
+          "source_name": "Windows Command Line Blog",
+          "title": "Intelligent Terminal 0.2 is here with local model support",
+          "url": "https://devblogs.microsoft.com/commandline/intelligent-terminal-0-2-is-here-with-local-model-support/",
+          "published_at": "2026-08-10T19:00:01.000Z",
+          "summary": "We’re back, and this is our first minor version bump: 0.1 to 0.2! It’s our biggest release yet. This update adds support for local models, lets you run a different agent in each tab with /agent, brings OpenCode into the built-in agent lineup, runs your agent inside WSL where your work actually lives, and makes […]\nThe post Intelligent Terminal 0.2 is here with local model support appeared first on Windows Command Line.",
+          "fetched_at": "2026-10-29T02:14:53.947Z"
+        },
+        {
+          "id": "f9569ec373719db5",
+          "source_id": "commandline-blog",
+          "source_name": "Windows Command Line Blog",
+          "title": "WSL container is now available for public preview",
+          "url": "https://devblogs.microsoft.com/commandline/wsl-container-is-now-available-for-public-preview/",
+          "published_at": "2026-06-29T15:29:48.000Z",
+          "summary": "At Microsoft Build 2026, we introduced WSL containers, bringing Linux container development directly into Windows through the Windows Subsystem for Linux (WSL). Containers have become a foundational part of modern development – from cloud-native applications and AI workloads to testing and deployment pipelines and WSL containers simplify this experience by providing a built-in, enterprise-ready way […]\nThe post WSL container is now available for public preview appeared first on Windows Command Line.",
+          "fetched_at": "2026-10-29T02:14:53.947Z"
+        },
+        {
+          "id": "5e0dbb1b6f371fc5",
+          "source_id": "commandline-blog",
+          "source_name": "Windows Command Line Blog",
+          "title": "Intelligent Terminal 0.1.1 is here: bash support, new slash commands, and more customization",
+          "url": "https://devblogs.microsoft.com/commandline/intelligent-terminal-0-1-1-is-here-bash-support-new-slash-commands-and-customization/",
+          "published_at": "2026-06-17T22:31:51.000Z",
+          "summary": "We’re back with the first servicing release of Intelligent Terminal! This update brings auto error detection to Bash and WSL, a new /fix command for on-demand help, an on-the-fly /model picker, a customizable agent pane, and Windows 10 support, along with a round of bug fixes and reliability improvements. You can grab the update from […]\nThe post Intelligent Terminal 0.1.1 is here: bash support, new slash commands, and more customization appeared first on Windows Command Line.",
+          "fetched_at": "2026-10-29T02:14:53.947Z"
+        },
+        {
+          "id": "efa07eac462c3786",
+          "source_id": "commandline-blog",
+          "source_name": "Windows Command Line Blog",
+          "title": "PowerToys 0.100 is here: new Shortcut Guide, Command Palette improvements and much more!",
+          "url": "https://devblogs.microsoft.com/commandline/powertoys-0-100-is-here-new-shortcut-guide-command-palette-improvements-and-much-more/",
+          "published_at": "2026-06-10T06:26:45.000Z",
+          "summary": "We’re back with a fresh PowerToys release! This month introduces the brand-new Shortcut Guide, a major Command Palette update with the new Extension Gallery and multi-monitor Dock support, and a wave of improvements to Power Display. We’ve also upgraded PowerToys to .NET 10, improved auto-update reliability, reduced installer size, and continued modernizing the app experience […]\nThe post PowerToys 0.100 is here: new Shortcut Guide, Command Palette improvements and much more! appeared first on Windows Command Line.",
+          "fetched_at": "2026-10-29T02:14:53.947Z"
+        },
+        {
+          "id": "9f3b2d93ac860689",
+          "source_id": "commandline-blog",
+          "source_name": "Windows Command Line Blog",
+          "title": "Announcing Intelligent Terminal 0.1",
+          "url": "https://devblogs.microsoft.com/commandline/announcing-intelligent-terminal-version-0-1/",
+          "published_at": "2026-06-02T17:00:09.000Z",
+          "summary": "Today we’re announcing Intelligent Terminal version 0.1, an open-source experimental fork of Windows Terminal with native agent integration. Get started Install from the Microsoft Store: Intelligent Terminal on the Microsoft Store Install via WinGet: winget install Microsoft.IntelligentTerminal Visit our GitHub repository for documentation and to file issues. Here’s a look at what’s in this experimental […]\nThe post Announcing Intelligent Terminal 0.1 appeared first on Windows Command Line.",
+          "fetched_at": "2026-10-29T02:14:53.947Z"
+        },
+        {
+          "id": "576c4c09cdb06377",
+          "source_id": "commandline-blog",
+          "source_name": "Windows Command Line Blog",
+          "title": "The new Run dialog: faster, cleaner, and more capable",
+          "url": "https://devblogs.microsoft.com/commandline/the-new-run-dialog-faster-cleaner-and-more-capable/",
+          "published_at": "2026-05-01T17:00:39.000Z",
+          "summary": "We’ve shipped the new Run dialog – and we want to say thanks. As the team behind Windows Terminal and PowerToys, we’re excited to bring this to Windows 11, and your feedback helped shape it! Run has been rebuilt from the ground up: Modern design: A refreshed look that matches Fluent Design and Windows 11, […]\nThe post The new Run dialog: faster, cleaner, and more capable appeared first on Windows Command Line.",
+          "fetched_at": "2026-10-29T02:14:53.947Z"
+        }
+      ],
+      "removed_articles": []
+    },
+    "fabric-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "github-blog": {
+      "new_count": 2,
+      "removed_count": 2,
+      "new_articles": [
+        {
+          "id": "8d24f5677c199a45",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "GitHub Universe 2026: Evolving every layer of the stack",
+          "url": "https://github.blog/news-insights/company-news/github-universe-2026-evolving-every-layer-of-the-stack/",
+          "published_at": "2026-10-28T16:09:28.000Z",
+          "summary": "Today, we laid out our vision for GitHub as the most comprehensive, end-to-end software delivery system in the world.\nThe post GitHub Universe 2026: Evolving every layer of the stack appeared first on The GitHub Blog.",
+          "fetched_at": "2026-10-29T02:14:52.717Z"
+        },
+        {
+          "id": "34902b30f790e3e6",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "Octoverse: Commits, pushes, reach new highs in 2026 as developers build with agents",
+          "url": "https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/",
+          "published_at": "2026-10-28T16:07:40.000Z",
+          "summary": "See how a record year of growth reached every industry, every field, and every kind of builder in the 2026 Octoverse report.\nThe post Octoverse: Commits, pushes, reach new highs in 2026 as developers build with agents appeared first on The GitHub Blog.",
+          "fetched_at": "2026-10-29T02:14:52.717Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "7a679d710e8c186b",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "GitHub’s model for secret detection: Finding more secrets with less noise",
+          "url": "https://github.blog/ai-and-ml/githubs-model-for-secret-detection-finding-more-secrets-with-less-noise/",
+          "published_at": "2026-10-13T17:56:33.000Z",
+          "summary": "GitHub’s context-aware secret classifier improves detection quality, raises weighted acceptance by 11.5%, and reduces median scan execution time by 86%.\nThe post GitHub’s model for secret detection: Finding more secrets with less noise appeared first on The GitHub Blog.",
+          "fetched_at": "2026-10-28T02:05:00.590Z"
+        },
+        {
+          "id": "23216cfbe10c8c92",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "GitHub Copilot app for Beginners: How to teach Copilot about your codebase",
+          "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase/",
+          "published_at": "2026-10-12T17:43:59.000Z",
+          "summary": "Learn how to add custom instructions and skills to your repository, use custom agents, and connect MCP servers like Playwright.\nThe post GitHub Copilot app for Beginners: How to teach Copilot about your codebase appeared first on The GitHub Blog.",
+          "fetched_at": "2026-10-28T02:05:00.590Z"
+        }
+      ]
+    },
+    "m365-blog": {
+      "new_count": 3,
+      "removed_count": 3,
+      "new_articles": [
+        {
+          "id": "a19ec6c0d78fb26e",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "The AI advantage your company can keep",
+          "url": "https://www.microsoft.com/en-us/copilot/blog/2026/10/27/the-ai-advantage-your-company-can-keep/",
+          "published_at": "2026-10-27T16:00:00.000Z",
+          "summary": "New research across more than 200 enterprises looks at how shared knowledge can help companies coordinate their agents—and turn lessons from their work into an operational edge.\nThe post The AI advantage your company can keep appeared first on Microsoft Copilot Blog.",
+          "fetched_at": "2026-10-29T02:14:52.867Z"
+        },
+        {
+          "id": "8cdba707ca078131",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Bringing CRM into the flow of work and agents into business process for sales and service teams",
+          "url": "https://www.microsoft.com/en-us/copilot/blog/2026/10/08/bringing-crm-into-the-flow-of-work-and-agents-into-business-process-for-sales-and-service-teams/",
+          "published_at": "2026-10-08T15:00:00.000Z",
+          "summary": "The traditional boundaries of business applications are disappearing. For decades, people went to their customer relationship management (CRM) to find customer context, take action, and move work forward. AI is inverting that model. This shift creates two complementary opportunities: greater individual productivity and organization-wide process transformation.\nThe post Bringing CRM into the flow of work and agents into business process for sales and service teams appeared first on Microsoft Copilot Blog.",
+          "fetched_at": "2026-10-29T02:14:52.867Z"
+        },
+        {
+          "id": "b24f6205698a0ebe",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Introducing Microsoft 365 G7: Intelligence + Trust for the mission ahead",
+          "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/us-government/2026/09/15/introducing-microsoft-365-g7-intelligence-trust-for-the-mission-ahead/",
+          "published_at": "2026-09-15T15:00:00.000Z",
+          "summary": "Microsoft 365 G7 brings AI, Copilot, agent governance, security, and compliance together to help government agencies modernize securely.\nThe post Introducing Microsoft 365 G7: Intelligence + Trust for the mission ahead appeared first on Microsoft Copilot Blog.",
+          "fetched_at": "2026-10-29T02:14:52.867Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "dd89ceb12e0814c2",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Introducing Microsoft 365 G7: Intelligence + Trust for the mission ahead",
+          "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/government/government-operations-and-infrastructure/2026/09/15/introducing-microsoft-365-g7-intelligence-trust-for-the-mission-ahead/",
+          "published_at": "2026-09-15T15:00:00.000Z",
+          "summary": "Microsoft 365 G7 brings AI, Copilot, agent governance, security, and compliance together to help government agencies modernize securely.\nThe post Introducing Microsoft 365 G7: Intelligence + Trust for the mission ahead appeared first on AI at Work Blog.",
+          "fetched_at": "2026-10-28T02:05:00.844Z"
+        },
+        {
+          "id": "675ce4910858546c",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Copilot Cowork is now generally available",
+          "url": "https://www.microsoft.com/en-us/copilot/blog/2026/06/16/copilot-cowork-is-now-generally-available/",
+          "published_at": "2026-06-16T15:00:00.000Z",
+          "summary": "Cowork is the fastest growing feature in the history of our Frontier program, and Cowork has among the highest user satisfaction of any Copilot or agent experience we have shipped.\nThe post Copilot Cowork is now generally available appeared first on AI at Work Blog.",
+          "fetched_at": "2026-10-28T02:05:00.844Z"
+        },
+        {
+          "id": "061d135e7e2d4d93",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Introducing Microsoft Scout: Your always-on personal agent",
+          "url": "https://www.microsoft.com/en-us/copilot/blog/2026/06/02/introducing-microsoft-scout-your-always-on-personal-agent/",
+          "published_at": "2026-06-02T18:00:00.000Z",
+          "summary": "Microsoft Scout is integrated across the Microsoft 365 apps you use every day, keeping it grounded in your flow of work.\nThe post Introducing Microsoft Scout: Your always-on personal agent appeared first on AI at Work Blog.",
+          "fetched_at": "2026-10-28T02:05:00.844Z"
+        }
+      ]
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 1,
+      "removed_count": 2,
+      "new_articles": [
+        {
+          "id": "8498dcc26b7abf49",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "VS Code Wrapped: GitHub Universe 2026",
+          "url": "https://code.visualstudio.com/blogs/2026/10/28/vscode-wrapped",
+          "published_at": "2026-10-28T00:00:00.000Z",
+          "summary": "Explore how VS Code evolved between GitHub Universe 2025 and 2026, with new ways to code, collaborate with agents, and manage work across tools and environments.\nRead the full article",
+          "fetched_at": "2026-10-29T02:14:52.754Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "94971b434ca4c8a9",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Building Long-Distance Next Edit Suggestions",
+          "url": "https://code.visualstudio.com/blogs/2026/02/26/long-distance-nes",
+          "published_at": "2026-02-26T00:00:00.000Z",
+          "summary": "Learn how we extended next edit suggestions to work across your entire file, reducing friction and improving productivity in GitHub Copilot.\nRead the full article",
+          "fetched_at": "2026-10-28T02:05:00.626Z"
+        },
+        {
+          "id": "7984e37741c8865e",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Your Home for Multi-Agent Development",
+          "url": "https://code.visualstudio.com/blogs/2026/02/05/multi-agent-development",
+          "published_at": "2026-02-05T00:00:00.000Z",
+          "summary": "VS Code has become the unified interface for all your coding agents. Manage local, background, and cloud agents in one place, use Claude and Codex agents alongside Copilot, and benefit from open standards like MCP and Agent Skills.\nRead the full article",
+          "fetched_at": "2026-10-28T02:05:00.626Z"
+        }
+      ]
+    }
+  },
+  "diff_result": true
+}
