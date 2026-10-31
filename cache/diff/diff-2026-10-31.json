@@ -1,0 +1,238 @@
+{
+  "date": "2026-10-31",
+  "compared_with": "2026-10-30",
+  "source_count": 7,
+  "new_count": 6,
+  "removed_count": 6,
+  "new_articles": [
+    {
+      "id": "9a0356b4ea7116d2",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "Azure Cloud HSM Hardware Audit Logging: Verifiable audit trails for security and compliance",
+      "url": "https://azure.microsoft.com/en-us/blog/azure-cloud-hsm-hardware-audit-logging-verifiable-audit-trails-for-security-and-compliance/",
+      "published_at": "2026-10-29T16:00:00.000Z",
+      "summary": "Security, compliance, and operations teams can use this hardware-originated evidence for monitoring, compliance reporting, and forensic investigations.\nThe post Azure Cloud HSM Hardware Audit Logging: Verifiable audit trails for security and compliance appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-10-31T02:10:40.220Z"
+    },
+    {
+      "id": "5dbadd761c8e8714",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "Introducing the Microsoft Copilot harness in Foundry Agent Service",
+      "url": "https://devblogs.microsoft.com/foundry/microsoft-copilot-harness-in-foundry/",
+      "published_at": "2026-10-28T17:40:56.000Z",
+      "summary": "Today, we’re introducing the Microsoft Copilot harness in Foundry Agent Service in public preview.\nThe post Introducing the Microsoft Copilot harness in Foundry Agent Service appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-10-31T02:10:40.220Z"
+    },
+    {
+      "id": "a19ec6c0d78fb26e",
+      "source_id": "m365-blog",
+      "source_name": "Microsoft 365 Blog",
+      "title": "The AI advantage your company can keep",
+      "url": "https://www.microsoft.com/en-us/copilot/blog/2026/10/27/the-ai-advantage-your-company-can-keep/",
+      "published_at": "2026-10-27T16:00:00.000Z",
+      "summary": "New research across more than 200 enterprises looks at how shared knowledge can help companies coordinate their agents—and turn lessons from their work into an operational edge.\nThe post The AI advantage your company can keep appeared first on Microsoft Copilot Blog.",
+      "fetched_at": "2026-10-31T02:10:40.452Z"
+    },
+    {
+      "id": "8cdba707ca078131",
+      "source_id": "m365-blog",
+      "source_name": "Microsoft 365 Blog",
+      "title": "Bringing CRM into the flow of work and agents into business process for sales and service teams",
+      "url": "https://www.microsoft.com/en-us/copilot/blog/2026/10/08/bringing-crm-into-the-flow-of-work-and-agents-into-business-process-for-sales-and-service-teams/",
+      "published_at": "2026-10-08T15:00:00.000Z",
+      "summary": "The traditional boundaries of business applications are disappearing. For decades, people went to their customer relationship management (CRM) to find customer context, take action, and move work forward. AI is inverting that model. This shift creates two complementary opportunities: greater individual productivity and organization-wide process transformation.\nThe post Bringing CRM into the flow of work and agents into business process for sales and service teams appeared first on Microsoft Copilot Blog.",
+      "fetched_at": "2026-10-31T02:10:40.452Z"
+    },
+    {
+      "id": "f524e9886f009cfd",
+      "source_id": "m365-blog",
+      "source_name": "Microsoft 365 Blog",
+      "title": "Introducing the new Copilot with Home, Code and Autopilot",
+      "url": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/",
+      "published_at": "2026-09-25T12:07:25.000Z",
+      "summary": "We’re reimagining Microsoft Copilot to enable work as it evolves and to help expand what every individual and every organization can accomplish in the flow of human ambition.\nThe post Introducing the new Copilot with Home, Code and Autopilot appeared first on Microsoft Copilot Blog.",
+      "fetched_at": "2026-10-31T02:10:40.452Z"
+    },
+    {
+      "id": "b24f6205698a0ebe",
+      "source_id": "m365-blog",
+      "source_name": "Microsoft 365 Blog",
+      "title": "Introducing Microsoft 365 G7: Intelligence + Trust for the mission ahead",
+      "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/us-government/2026/09/15/introducing-microsoft-365-g7-intelligence-trust-for-the-mission-ahead/",
+      "published_at": "2026-09-15T15:00:00.000Z",
+      "summary": "Microsoft 365 G7 brings AI, Copilot, agent governance, security, and compliance together to help government agencies modernize securely.\nThe post Introducing Microsoft 365 G7: Intelligence + Trust for the mission ahead appeared first on Microsoft Copilot Blog.",
+      "fetched_at": "2026-10-31T02:10:40.452Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 2,
+      "removed_count": 2,
+      "new_articles": [
+        {
+          "id": "9a0356b4ea7116d2",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Azure Cloud HSM Hardware Audit Logging: Verifiable audit trails for security and compliance",
+          "url": "https://azure.microsoft.com/en-us/blog/azure-cloud-hsm-hardware-audit-logging-verifiable-audit-trails-for-security-and-compliance/",
+          "published_at": "2026-10-29T16:00:00.000Z",
+          "summary": "Security, compliance, and operations teams can use this hardware-originated evidence for monitoring, compliance reporting, and forensic investigations.\nThe post Azure Cloud HSM Hardware Audit Logging: Verifiable audit trails for security and compliance appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-10-31T02:10:40.220Z"
+        },
+        {
+          "id": "5dbadd761c8e8714",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Introducing the Microsoft Copilot harness in Foundry Agent Service",
+          "url": "https://devblogs.microsoft.com/foundry/microsoft-copilot-harness-in-foundry/",
+          "published_at": "2026-10-28T17:40:56.000Z",
+          "summary": "Today, we’re introducing the Microsoft Copilot harness in Foundry Agent Service in public preview.\nThe post Introducing the Microsoft Copilot harness in Foundry Agent Service appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-10-31T02:10:40.220Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "67d54252a65ac409",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Deep dive into Azure Maia 300 architecture",
+          "url": "https://azure.microsoft.com/en-us/blog/deep-dive-into-azure-maia-300-architecture/",
+          "published_at": "2026-10-12T13:00:00.000Z",
+          "summary": "Maia 300 operates as a single platform to meet the demands of cloud-scale agentic inference.\nThe post Deep dive into Azure Maia 300 architecture appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-10-30T02:28:54.696Z"
+        },
+        {
+          "id": "68aea5f02d37dc36",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "AI transformation across the infrastructure lifecycle: From supply chain to fleet operations",
+          "url": "https://azure.microsoft.com/en-us/blog/ai-transformation-across-the-infrastructure-lifecycle-from-supply-chain-to-fleet-operations/",
+          "published_at": "2026-10-07T15:00:00.000Z",
+          "summary": "The opportunity is bigger than making individual tasks faster. It’s to build a system that learns from how infrastructure is designed, sourced, and operated.\nThe post AI transformation across the infrastructure lifecycle: From supply chain to fleet operations appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-10-30T02:28:54.696Z"
+        }
+      ]
+    },
+    "commandline-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "fabric-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "github-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "m365-blog": {
+      "new_count": 4,
+      "removed_count": 4,
+      "new_articles": [
+        {
+          "id": "a19ec6c0d78fb26e",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "The AI advantage your company can keep",
+          "url": "https://www.microsoft.com/en-us/copilot/blog/2026/10/27/the-ai-advantage-your-company-can-keep/",
+          "published_at": "2026-10-27T16:00:00.000Z",
+          "summary": "New research across more than 200 enterprises looks at how shared knowledge can help companies coordinate their agents—and turn lessons from their work into an operational edge.\nThe post The AI advantage your company can keep appeared first on Microsoft Copilot Blog.",
+          "fetched_at": "2026-10-31T02:10:40.452Z"
+        },
+        {
+          "id": "8cdba707ca078131",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Bringing CRM into the flow of work and agents into business process for sales and service teams",
+          "url": "https://www.microsoft.com/en-us/copilot/blog/2026/10/08/bringing-crm-into-the-flow-of-work-and-agents-into-business-process-for-sales-and-service-teams/",
+          "published_at": "2026-10-08T15:00:00.000Z",
+          "summary": "The traditional boundaries of business applications are disappearing. For decades, people went to their customer relationship management (CRM) to find customer context, take action, and move work forward. AI is inverting that model. This shift creates two complementary opportunities: greater individual productivity and organization-wide process transformation.\nThe post Bringing CRM into the flow of work and agents into business process for sales and service teams appeared first on Microsoft Copilot Blog.",
+          "fetched_at": "2026-10-31T02:10:40.452Z"
+        },
+        {
+          "id": "f524e9886f009cfd",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Introducing the new Copilot with Home, Code and Autopilot",
+          "url": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/",
+          "published_at": "2026-09-25T12:07:25.000Z",
+          "summary": "We’re reimagining Microsoft Copilot to enable work as it evolves and to help expand what every individual and every organization can accomplish in the flow of human ambition.\nThe post Introducing the new Copilot with Home, Code and Autopilot appeared first on Microsoft Copilot Blog.",
+          "fetched_at": "2026-10-31T02:10:40.452Z"
+        },
+        {
+          "id": "b24f6205698a0ebe",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Introducing Microsoft 365 G7: Intelligence + Trust for the mission ahead",
+          "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/us-government/2026/09/15/introducing-microsoft-365-g7-intelligence-trust-for-the-mission-ahead/",
+          "published_at": "2026-09-15T15:00:00.000Z",
+          "summary": "Microsoft 365 G7 brings AI, Copilot, agent governance, security, and compliance together to help government agencies modernize securely.\nThe post Introducing Microsoft 365 G7: Intelligence + Trust for the mission ahead appeared first on Microsoft Copilot Blog.",
+          "fetched_at": "2026-10-31T02:10:40.452Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "dd89ceb12e0814c2",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Introducing Microsoft 365 G7: Intelligence + Trust for the mission ahead",
+          "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/government/government-operations-and-infrastructure/2026/09/15/introducing-microsoft-365-g7-intelligence-trust-for-the-mission-ahead/",
+          "published_at": "2026-09-15T15:00:00.000Z",
+          "summary": "Microsoft 365 G7 brings AI, Copilot, agent governance, security, and compliance together to help government agencies modernize securely.\nThe post Introducing Microsoft 365 G7: Intelligence + Trust for the mission ahead appeared first on AI at Work Blog.",
+          "fetched_at": "2026-10-30T02:28:54.753Z"
+        },
+        {
+          "id": "675ce4910858546c",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Copilot Cowork is now generally available",
+          "url": "https://www.microsoft.com/en-us/copilot/blog/2026/06/16/copilot-cowork-is-now-generally-available/",
+          "published_at": "2026-06-16T15:00:00.000Z",
+          "summary": "Cowork is the fastest growing feature in the history of our Frontier program, and Cowork has among the highest user satisfaction of any Copilot or agent experience we have shipped.\nThe post Copilot Cowork is now generally available appeared first on AI at Work Blog.",
+          "fetched_at": "2026-10-30T02:28:54.753Z"
+        },
+        {
+          "id": "061d135e7e2d4d93",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Introducing Microsoft Scout: Your always-on personal agent",
+          "url": "https://www.microsoft.com/en-us/copilot/blog/2026/06/02/introducing-microsoft-scout-your-always-on-personal-agent/",
+          "published_at": "2026-06-02T18:00:00.000Z",
+          "summary": "Microsoft Scout is integrated across the Microsoft 365 apps you use every day, keeping it grounded in your flow of work.\nThe post Introducing Microsoft Scout: Your always-on personal agent appeared first on AI at Work Blog.",
+          "fetched_at": "2026-10-30T02:28:54.753Z"
+        },
+        {
+          "id": "cc0334ef418f3cdb",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Announcing the new Work IQ APIs",
+          "url": "https://www.microsoft.com/en-us/copilot/blog/2026/06/02/announcing-the-new-work-iq-apis/",
+          "published_at": "2026-06-02T17:00:15.000Z",
+          "summary": "Work IQ is a new intelligence layer for Microsoft 365, designed to understand how work gets done across your organizations.\nThe post Announcing the new Work IQ APIs appeared first on AI at Work Blog.",
+          "fetched_at": "2026-10-30T02:28:54.753Z"
+        }
+      ]
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    }
+  },
+  "diff_result": true
+}
