@@ -1,0 +1,86 @@
+{
+  "date": "2026-11-07",
+  "compared_with": "2026-11-06",
+  "source_count": 7,
+  "new_count": 1,
+  "removed_count": 1,
+  "new_articles": [
+    {
+      "id": "aff32afb63af01e7",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "Beyond code generation: A developer’s guide to agentic engineering",
+      "url": "https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/",
+      "published_at": "2026-11-06T22:15:59.000Z",
+      "summary": "Writing code got faster. The work around it didn't. See how you can plan, write code, review changes, and investigate production issues with GitHub Copilot, and what work still needs your judgment.\nThe post Beyond code generation: A developer’s guide to agentic engineering appeared first on The GitHub Blog.",
+      "fetched_at": "2026-11-07T02:38:29.442Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "commandline-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "fabric-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "github-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "aff32afb63af01e7",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "Beyond code generation: A developer’s guide to agentic engineering",
+          "url": "https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/",
+          "published_at": "2026-11-06T22:15:59.000Z",
+          "summary": "Writing code got faster. The work around it didn't. See how you can plan, write code, review changes, and investigate production issues with GitHub Copilot, and what work still needs your judgment.\nThe post Beyond code generation: A developer’s guide to agentic engineering appeared first on The GitHub Blog.",
+          "fetched_at": "2026-11-07T02:38:29.442Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "5e09805dda87945d",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "How to continue a GitHub Copilot app session in VS Code",
+          "url": "https://github.blog/ai-and-ml/github-copilot/how-to-continue-a-github-copilot-app-session-in-vs-code/",
+          "published_at": "2026-10-19T18:47:22.000Z",
+          "summary": "Learn how to move an agent session from the GitHub Copilot app into VS Code without losing the conversation, code changes, or working context.\nThe post How to continue a GitHub Copilot app session in VS Code appeared first on The GitHub Blog.",
+          "fetched_at": "2026-11-06T03:18:29.493Z"
+        }
+      ]
+    },
+    "m365-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    }
+  },
+  "diff_result": true
+}
