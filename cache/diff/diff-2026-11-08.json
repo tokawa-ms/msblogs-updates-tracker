@@ -1,0 +1,146 @@
+{
+  "date": "2026-11-08",
+  "compared_with": "2026-11-07",
+  "source_count": 7,
+  "new_count": 3,
+  "removed_count": 3,
+  "new_articles": [
+    {
+      "id": "8844055d4f3ec016",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "Building the next generation of multimodal AI experiences with fal in Microsoft Foundry",
+      "url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/building-the-next-generation-of-multimodal-ai-experiences-with-fal-in-microsoft-/4570032",
+      "published_at": "2026-11-06T19:08:44.000Z",
+      "summary": "Microsoft and fal partner to expand video generation in Microsoft Foundry, helping developers bring creative ideas into enterprise applications.\nThe post Building the next generation of multimodal AI experiences with fal in Microsoft Foundry appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-11-08T02:12:21.800Z"
+    },
+    {
+      "id": "3399c882f4124f42",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "Stop treating agents as one-off projects and start running them as a continuous discipline",
+      "url": "https://azure.microsoft.com/en-us/blog/stop-treating-agents-as-one-off-projects-and-start-running-them-as-a-continuous-discipline/",
+      "published_at": "2026-11-05T17:00:00.000Z",
+      "summary": "AI must be selected, architected, and managed as a continuous business discipline, not a series of isolated projects.\nThe post Stop treating agents as one-off projects and start running them as a continuous discipline appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-11-08T02:12:21.800Z"
+    },
+    {
+      "id": "fd007c3aeb0ce2e1",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "Designing Azure silicon on Azure silicon: EDA workloads on Cobalt 200",
+      "url": "https://azure.microsoft.com/en-us/blog/designing-azure-silicon-on-azure-silicon-eda-workloads-on-cobalt-200/",
+      "published_at": "2026-11-05T16:00:00.000Z",
+      "summary": "Discover how Microsoft is accelerating electronic design automation (EDA) workloads with Azure Cobalt 200 VMs. Explore early performance results demonstrating faster simulation, verification, and static timing analysis, along with the benefits of scalable cloud infrastructure for silicon design and development.\nThe post Designing Azure silicon on Azure silicon: EDA workloads on Cobalt 200 appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-11-08T02:12:21.800Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 3,
+      "removed_count": 3,
+      "new_articles": [
+        {
+          "id": "8844055d4f3ec016",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Building the next generation of multimodal AI experiences with fal in Microsoft Foundry",
+          "url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/building-the-next-generation-of-multimodal-ai-experiences-with-fal-in-microsoft-/4570032",
+          "published_at": "2026-11-06T19:08:44.000Z",
+          "summary": "Microsoft and fal partner to expand video generation in Microsoft Foundry, helping developers bring creative ideas into enterprise applications.\nThe post Building the next generation of multimodal AI experiences with fal in Microsoft Foundry appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-11-08T02:12:21.800Z"
+        },
+        {
+          "id": "3399c882f4124f42",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Stop treating agents as one-off projects and start running them as a continuous discipline",
+          "url": "https://azure.microsoft.com/en-us/blog/stop-treating-agents-as-one-off-projects-and-start-running-them-as-a-continuous-discipline/",
+          "published_at": "2026-11-05T17:00:00.000Z",
+          "summary": "AI must be selected, architected, and managed as a continuous business discipline, not a series of isolated projects.\nThe post Stop treating agents as one-off projects and start running them as a continuous discipline appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-11-08T02:12:21.800Z"
+        },
+        {
+          "id": "fd007c3aeb0ce2e1",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Designing Azure silicon on Azure silicon: EDA workloads on Cobalt 200",
+          "url": "https://azure.microsoft.com/en-us/blog/designing-azure-silicon-on-azure-silicon-eda-workloads-on-cobalt-200/",
+          "published_at": "2026-11-05T16:00:00.000Z",
+          "summary": "Discover how Microsoft is accelerating electronic design automation (EDA) workloads with Azure Cobalt 200 VMs. Explore early performance results demonstrating faster simulation, verification, and static timing analysis, along with the benefits of scalable cloud infrastructure for silicon design and development.\nThe post Designing Azure silicon on Azure silicon: EDA workloads on Cobalt 200 appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-11-08T02:12:21.800Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "e79b238687258d4b",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Managing open-weight model risk in enterprise deployments",
+          "url": "https://www.microsoft.com/en-us/security/blog/2026/10/16/managing-open-weight-model-risk-in-enterprise-deployments/",
+          "published_at": "2026-10-16T16:05:00.000Z",
+          "summary": "The growing AI landscape is giving enterprises more choice in how they build, customize, and deploy increasingly capable models.\nThe post Managing open-weight model risk in enterprise deployments appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-11-07T02:38:29.771Z"
+        },
+        {
+          "id": "30b8aca672158aa6",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Evolving the cloud-native foundation for the next generation of AI",
+          "url": "https://azure.microsoft.com/en-us/blog/evolving-the-cloud-native-foundation-for-the-next-generation-of-ai/",
+          "published_at": "2026-10-15T16:00:00.000Z",
+          "summary": "Discover how Azure is advancing cloud-native infrastructure to help organizations build, run, and optimize applications and agents at scale.\nThe post Evolving the cloud-native foundation for the next generation of AI appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-11-07T02:38:29.771Z"
+        },
+        {
+          "id": "20efc1f2b3465ebc",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Server Virtualization Platforms",
+          "url": "https://azure.microsoft.com/en-us/blog/microsoft-named-a-leader-in-the-2026-gartner-magic-quadrant-for-server-virtualization-platforms/",
+          "published_at": "2026-10-14T19:00:00.000Z",
+          "summary": "We're building operational consistency through Azure and Azure Arc, and infrastructure consistency through Hyper-V.\nThe post Microsoft named a Leader in the 2026 Gartner® Magic Quadrant™ for Server Virtualization Platforms appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-11-07T02:38:29.771Z"
+        }
+      ]
+    },
+    "commandline-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "fabric-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "github-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "m365-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    }
+  },
+  "diff_result": true
+}
