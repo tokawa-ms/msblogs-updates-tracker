@@ -1,0 +1,102 @@
+[
+  {
+    "id": "aff32afb63af01e7",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "Beyond code generation: A developer’s guide to agentic engineering",
+    "url": "https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/",
+    "published_at": "2026-11-06T22:15:59.000Z",
+    "summary": "Writing code got faster. The work around it didn't. See how you can plan, write code, review changes, and investigate production issues with GitHub Copilot, and what work still needs your judgment.\nThe post Beyond code generation: A developer’s guide to agentic engineering appeared first on The GitHub Blog.",
+    "fetched_at": "2026-11-09T02:30:18.703Z"
+  },
+  {
+    "id": "51dc1d2f6b3bd6df",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "Inside GitHub’s new Git storage architecture",
+    "url": "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/",
+    "published_at": "2026-11-05T20:23:21.000Z",
+    "summary": "GitHub's new Git storage architecture is built so thousands of agents can push to a single repository at once. Here's how it works.\nThe post Inside GitHub’s new Git storage architecture appeared first on The GitHub Blog.",
+    "fetched_at": "2026-11-09T02:30:18.703Z"
+  },
+  {
+    "id": "1558c78d072630b6",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "Accessibility statements now have a home on GitHub",
+    "url": "https://github.blog/open-source/maintainers/accessibility-statements-now-have-a-home-on-github/",
+    "published_at": "2026-11-05T16:00:00.000Z",
+    "summary": "GitHub now highlights ACCESSIBILITY.md files and helps maintainers document accessibility goals, known barriers, supported environments, contributor expectations, and reporting processes.\nThe post Accessibility statements now have a home on GitHub appeared first on The GitHub Blog.",
+    "fetched_at": "2026-11-09T02:30:18.703Z"
+  },
+  {
+    "id": "410a92595886a074",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "Arnis turns any place on Earth into a Minecraft world",
+    "url": "https://github.blog/open-source/maintainers/arnis-turns-any-place-on-earth-into-a-minecraft-world/",
+    "published_at": "2026-11-03T16:00:00.000Z",
+    "summary": "Louis Erbkamm built the first prototype in his free time. Now GitHub Copilot helps him maintain it alone.\nThe post Arnis turns any place on Earth into a Minecraft world appeared first on The GitHub Blog.",
+    "fetched_at": "2026-11-09T02:30:18.704Z"
+  },
+  {
+    "id": "9a97986aa28bfe34",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "Game Off 2026: The theme is SHIFT",
+    "url": "https://github.blog/open-source/gaming/game-off-2026-the-theme-is-shift/",
+    "published_at": "2026-11-01T21:36:00.000Z",
+    "summary": "GitHub’s annual month-long game jam is back for its 14th year! This November, make a game inspired by the theme SHIFT. Change gears, swap perspectives, bend reality, or just press a certain key.\nThe post Game Off 2026: The theme is SHIFT appeared first on The GitHub Blog.",
+    "fetched_at": "2026-11-09T02:30:18.704Z"
+  },
+  {
+    "id": "8d24f5677c199a45",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "GitHub Universe 2026: Evolving every layer of the stack",
+    "url": "https://github.blog/news-insights/company-news/github-universe-2026-evolving-every-layer-of-the-stack/",
+    "published_at": "2026-10-28T16:09:28.000Z",
+    "summary": "Today, we laid out our vision for GitHub as the most comprehensive, end-to-end software delivery system in the world.\nThe post GitHub Universe 2026: Evolving every layer of the stack appeared first on The GitHub Blog.",
+    "fetched_at": "2026-11-09T02:30:18.704Z"
+  },
+  {
+    "id": "34902b30f790e3e6",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "Octoverse: Commits, pushes, reach new highs in 2026 as developers build with agents",
+    "url": "https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/",
+    "published_at": "2026-10-28T16:07:40.000Z",
+    "summary": "See how a record year of growth reached every industry, every field, and every kind of builder in the 2026 Octoverse report.\nThe post Octoverse: Commits, pushes, reach new highs in 2026 as developers build with agents appeared first on The GitHub Blog.",
+    "fetched_at": "2026-11-09T02:30:18.704Z"
+  },
+  {
+    "id": "c10dae251e662270",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "How bug bounty sharpens one researcher’s security skills",
+    "url": "https://github.blog/security/how-bug-bounty-sharpens-one-researchers-security-skills/",
+    "published_at": "2026-10-22T17:21:30.000Z",
+    "summary": "As Cybersecurity Awareness Month continues, the GitHub Bug Bounty team spotlights @r31n, diving into their research approach, favorite bug classes, and advice for aspiring hackers.\nThe post How bug bounty sharpens one researcher’s security skills appeared first on The GitHub Blog.",
+    "fetched_at": "2026-11-09T02:30:18.704Z"
+  },
+  {
+    "id": "4ba30d9b0c538cac",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "The bridge to agent-scale Git infrastructure",
+    "url": "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/",
+    "published_at": "2026-10-21T16:00:00.000Z",
+    "summary": "We moved a copy of 99.99999% of GitHub's repositories to Azure. Here's how per-reference quorums will bring over the rest, and how object storage lets reads scale independently.\nThe post The bridge to agent-scale Git infrastructure appeared first on The GitHub Blog.",
+    "fetched_at": "2026-11-09T02:30:18.704Z"
+  },
+  {
+    "id": "806b1f92932cb664",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "How 3 Java Champions are using GitHub Copilot for increased productivity",
+    "url": "https://github.blog/ai-and-ml/github-copilot/how-3-java-champions-are-using-github-copilot-for-increased-productivity/",
+    "published_at": "2026-10-20T16:05:03.000Z",
+    "summary": "Three Java Champions share how they use GitHub Copilot to solve problems, accelerate development, and keep humans responsible for the results.\nThe post How 3 Java Champions are using GitHub Copilot for increased productivity appeared first on The GitHub Blog.",
+    "fetched_at": "2026-11-09T02:30:18.704Z"
+  }
+]
