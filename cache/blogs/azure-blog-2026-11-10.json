@@ -1,0 +1,102 @@
+[
+  {
+    "id": "8844055d4f3ec016",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "Building the next generation of multimodal AI experiences with fal in Microsoft Foundry",
+    "url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/building-the-next-generation-of-multimodal-ai-experiences-with-fal-in-microsoft-/4570032",
+    "published_at": "2026-11-06T19:08:44.000Z",
+    "summary": "Microsoft and fal partner to expand video generation in Microsoft Foundry, helping developers bring creative ideas into enterprise applications.\nThe post Building the next generation of multimodal AI experiences with fal in Microsoft Foundry appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-11-10T04:32:26.939Z"
+  },
+  {
+    "id": "3399c882f4124f42",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "Stop treating agents as one-off projects and start running them as a continuous discipline",
+    "url": "https://azure.microsoft.com/en-us/blog/stop-treating-agents-as-one-off-projects-and-start-running-them-as-a-continuous-discipline/",
+    "published_at": "2026-11-05T17:00:00.000Z",
+    "summary": "AI must be selected, architected, and managed as a continuous business discipline, not a series of isolated projects.\nThe post Stop treating agents as one-off projects and start running them as a continuous discipline appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-11-10T04:32:26.939Z"
+  },
+  {
+    "id": "fd007c3aeb0ce2e1",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "Designing Azure silicon on Azure silicon: EDA workloads on Cobalt 200",
+    "url": "https://azure.microsoft.com/en-us/blog/designing-azure-silicon-on-azure-silicon-eda-workloads-on-cobalt-200/",
+    "published_at": "2026-11-05T16:00:00.000Z",
+    "summary": "Discover how Microsoft is accelerating electronic design automation (EDA) workloads with Azure Cobalt 200 VMs. Explore early performance results demonstrating faster simulation, verification, and static timing analysis, along with the benefits of scalable cloud infrastructure for silicon design and development.\nThe post Designing Azure silicon on Azure silicon: EDA workloads on Cobalt 200 appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-11-10T04:32:26.939Z"
+  },
+  {
+    "id": "6ea64dab9955b6ef",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "Predicting and detecting failures: How Azure strengthens reliability for mission-critical workloads",
+    "url": "https://azure.microsoft.com/en-us/blog/predicting-and-detecting-failures-how-azure-strengthens-reliability-for-mission-critical-workloads/",
+    "published_at": "2026-11-04T16:00:00.000Z",
+    "summary": "Azure Failure Prediction and Detection (AFPD) helps reduce interruptions by predicting hardware failures, moving eligible workloads, and notifying customers when action is needed. See what that means for SAP on Azure and other mission-critical workloads.\nThe post Predicting and detecting failures: How Azure strengthens reliability for mission-critical workloads appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-11-10T04:32:26.939Z"
+  },
+  {
+    "id": "c2c7b014228817a3",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "The Platform Behind the Next AI Breakthrough",
+    "url": "https://www.wired.com/sponsored/story/the-platform-behind-the-next-ai-breakthrough/",
+    "published_at": "2026-11-02T20:52:22.000Z",
+    "summary": "The next frontier of AI is coming into focus as agents take on longer, more strategic work.\nThe post The Platform Behind the Next AI Breakthrough appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-11-10T04:32:26.939Z"
+  },
+  {
+    "id": "9a0356b4ea7116d2",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "Azure Cloud HSM Hardware Audit Logging: Verifiable audit trails for security and compliance",
+    "url": "https://azure.microsoft.com/en-us/blog/azure-cloud-hsm-hardware-audit-logging-verifiable-audit-trails-for-security-and-compliance/",
+    "published_at": "2026-10-29T16:00:00.000Z",
+    "summary": "Security, compliance, and operations teams can use this hardware-originated evidence for monitoring, compliance reporting, and forensic investigations.\nThe post Azure Cloud HSM Hardware Audit Logging: Verifiable audit trails for security and compliance appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-11-10T04:32:26.939Z"
+  },
+  {
+    "id": "5dbadd761c8e8714",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "Introducing the Microsoft Copilot harness in Foundry Agent Service",
+    "url": "https://devblogs.microsoft.com/foundry/microsoft-copilot-harness-in-foundry/",
+    "published_at": "2026-10-28T17:40:56.000Z",
+    "summary": "Today, we’re introducing the Microsoft Copilot harness in Foundry Agent Service in public preview.\nThe post Introducing the Microsoft Copilot harness in Foundry Agent Service appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-11-10T04:32:26.939Z"
+  },
+  {
+    "id": "a9dcb410f7163a89",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "Scale reservoir uncertainty analysis with agile reservoir modeling",
+    "url": "https://azure.microsoft.com/en-us/blog/scale-reservoir-uncertainty-analysis-with-agile-reservoir-modeling/",
+    "published_at": "2026-10-26T16:00:00.000Z",
+    "summary": "As subsurface data grows in scale and complexity, teams need a faster, more connected way to transform uncertainty into actionable decisions.\nThe post Scale reservoir uncertainty analysis with agile reservoir modeling appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-11-10T04:32:26.939Z"
+  },
+  {
+    "id": "02ab68be675b3bf6",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "Advancing digital sovereignty with greater control and choice",
+    "url": "https://blogs.microsoft.com/blog/2026/10/20/advancing-digital-sovereignty-with-greater-control-and-choice/",
+    "published_at": "2026-10-20T17:34:47.000Z",
+    "summary": "Across conversations with leaders in government, critical infrastructure and regulated industries, one priority consistently rises to the top: putting technology to work on the most important systems while maintaining the control those systems require.\nThe post Advancing digital sovereignty with greater control and choice appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-11-10T04:32:26.939Z"
+  },
+  {
+    "id": "5560f044cfefdcbe",
+    "source_id": "azure-blog",
+    "source_name": "Azure Blog",
+    "title": "Designing for sovereign AI: A shared foundation from edge to cloud",
+    "url": "https://azure.microsoft.com/en-us/blog/designing-for-sovereign-ai-a-shared-foundation-from-edge-to-cloud/",
+    "published_at": "2026-10-19T19:00:00.000Z",
+    "summary": "A flexible sovereign architecture allows organizations to place each workload in the right environment, apply the controls it requires, and maintain consistency.\nThe post Designing for sovereign AI: A shared foundation from edge to cloud appeared first on Microsoft Azure Blog.",
+    "fetched_at": "2026-11-10T04:32:26.939Z"
+  }
+]
