@@ -1,0 +1,64 @@
+{
+  "date": "2026-11-12",
+  "compared_with": "2026-11-11",
+  "source_count": 7,
+  "new_count": 0,
+  "removed_count": 1,
+  "new_articles": [],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "commandline-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "fabric-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "github-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "m365-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 1,
+      "new_articles": [],
+      "removed_articles": [
+        {
+          "id": "0e850ae5c0cccb15",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "How VS Code Builds with AI",
+          "url": "https://code.visualstudio.com/blogs/2026/03/13/how-VS-Code-Builds-with-AI",
+          "published_at": "2026-03-13T00:00:00.000Z",
+          "summary": "Learn how VS Code uses AI across its own development workflow with GitHub Copilot agent mode, automated testing, and AI-powered code review.\nRead the full article",
+          "fetched_at": "2026-11-11T02:38:29.799Z"
+        }
+      ]
+    }
+  },
+  "diff_result": true
+}
