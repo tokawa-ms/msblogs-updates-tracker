@@ -22,7 +22,7 @@ describe('blog sources', () => {
     assert.ok(source);
     assert.equal(source.url, 'https://news.microsoft.com/source/topics/ai/');
     assert.equal(source.feedUrl, 'https://news.microsoft.com/source/topics/ai/feed/');
-    assert.equal(source.filterUrlIncludes, undefined);
+    assert.deepEqual(source.filterUrlIncludes, ['/source/', '/signal/articles/']);
   });
 
   it('ブログソースの ID が重複しない', () => {

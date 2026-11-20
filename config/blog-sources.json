@@ -46,6 +46,7 @@
     "type": "rss",
     "url": "https://news.microsoft.com/source/topics/ai/",
     "feedUrl": "https://news.microsoft.com/source/topics/ai/feed/",
+    "filterUrlIncludes": ["/source/", "/signal/articles/"],
     "limit": 30
   },
   {
