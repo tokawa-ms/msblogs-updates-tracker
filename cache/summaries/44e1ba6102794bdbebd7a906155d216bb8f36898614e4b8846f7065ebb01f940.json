@@ -1,0 +1,20 @@
+{
+  "summary": "Claude Opus 5.5がMicrosoft Foundryで利用可能になり、複数段階にわたるコーディングや知識業務、長時間のエージェント作業向けに提供されます。適応的な推論や作業内容の伝達を備え、記事はOpus 5と比べてトークン効率が高く、共有前の編集も少なくて済むと説明しています。Microsoft Foundryでの提供はGAです。",
+  "keyPoints": [
+    "ソフトウェア開発では、コードベースをまたぐ機能開発、デバッグ、リファクタリング、コードレビューなどの長時間タスクに対応し、変更前の原因調査や作業中の確認、変更内容の説明を行います。",
+    "適応的推論により、タスクに応じて必要な推論量を自動で判断します。開発者は思考のオン・オフやトークン予算の指定ではなく、effortで推論量を調整できます。",
+    "長時間エージェント向けに、Anthropicは非同期コンパクション、keep-tail compaction、会話中のツール変更を思考とプロンプトキャッシュを保って行うベータAPI機能を導入します。",
+    "Microsoft FoundryではGlobal Standard、US DataZoneの両モデル構成がGAでAzure上にホストされます。価格表は入力100万トークンあたり4ドル、出力100万トークンあたり20ドル、キャッシュヒット0.20ドル、通常のキャッシュ書き込み5ドル、1時間の書き込み8ドルを示しています。",
+    "安全対策では、サイバーセキュリティ、生物学、AI開発、蒸留の領域で安全分類器を採用し、Anthropicが高リスクまたはデュアルユースと判断する一部の依頼は、適切な保護策を備えた別のClaudeモデルが処理する場合があります。"
+  ],
+  "significance": "長い作業を担うエージェントを開発する企業や開発者にとって、推論量の調整や会話の継続を助ける仕組みは、長時間タスクをアプリ側で管理する負担を抑える助けになります。また、モデルの作業内容や判断、ユーザーへの確認事項を把握しやすくすることで、人が必要な場面で介入しやすくなります。一方、高リスクと判断された依頼は別モデルに回る場合があります。",
+  "summaryEn": "Claude Opus 5.5 is available in Microsoft Foundry for multi-step coding, knowledge work, and long-running agent tasks. It offers adaptive reasoning and clearer communication about its work; the article says it uses fewer tokens and requires less editing before sharing than Opus 5. Its availability in Microsoft Foundry is GA.",
+  "keyPointsEn": [
+    "For software development, it supports long-running tasks such as building features across a codebase, debugging, refactoring, and code review, and can investigate causes before changes, check its work, and explain changes.",
+    "With adaptive thinking, the model automatically determines how much reasoning a task needs. Developers can adjust reasoning effort with effort rather than toggling thinking or specifying a token budget.",
+    "For long-running agents, Anthropic is introducing beta API capabilities for asynchronous compaction, keep-tail compaction, and changing tools during a conversation while preserving thinking and prompt caching.",
+    "Both Global Standard and US DataZone configurations are GA in Microsoft Foundry and hosted on Azure. The pricing table lists $4 per million input tokens, $20 per million output tokens, $0.20 for cache hits, $5 for cache writes, and $8 for one-hour cache writes.",
+    "For safeguards, the model uses safety classifiers in cybersecurity, biology, AI development, and distillation. Some requests Anthropic identifies as higher-risk or dual-use may be handled by another Claude model with appropriate safeguards."
+  ],
+  "significanceEn": "For companies and developers building agents for extended work, adjustable reasoning and mechanisms for continuing conversations can help reduce the application logic needed to manage long-running tasks. Making the agent's work, decisions, and requests for input easier to follow can also help people intervene when needed. Some requests identified as higher-risk may instead be routed to another model."
+}

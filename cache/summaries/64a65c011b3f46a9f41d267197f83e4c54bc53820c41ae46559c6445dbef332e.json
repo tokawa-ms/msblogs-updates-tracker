@@ -1,0 +1,18 @@
+{
+  "summary": "GitHub Copilotアプリの「キャンバス」は、チャットだけでは扱いにくい作業向けに、エージェントと双方向にやり取りできるカスタムUIとして紹介されている。記事ではConnect 4、Wingetのローカルパッケージ管理、SQLite操作、開発工程の自動化などを例示し、用途に応じた画面を作って作業する考え方を示す。",
+  "keyPoints": [
+    "キャンバスはCopilotアプリ内で動くフルスタックアプリで、ブラウザーの枠を表示せず、エージェントと双方向に通信できる。",
+    "キャンバスからサードパーティAPIを呼び出せるほか、ローカルでコードを実行できる。例として、Wingetのパッケージ検索やローカルパッケージのインストール・アンインストール用UIが挙げられている。",
+    "著者は、SQLiteデータベースを操作する画面など、AIを介さずに使えるツールもキャンバスの例に挙げ、エージェントに毎回依頼するよりトークンを節約できると主張している。",
+    "開発ワークフローでは、調査から最終化までをキャンバスで自動化し、人が確認するタイミングや関与の度合いを調整する例を紹介。設計と自動化を整えるのに、ワークフロー例では1日の大半がかかったという。"
+  ],
+  "significance": "チャット欄だけでは作業に必要な操作画面を用意しにくいと感じる開発者にとって、キャンバスは、作業に合わせたUIやローカルで使うツールを作り、エージェントとのやり取りを必要な場面に絞る選択肢となる。記事は、開発工程の一部をエージェントに任せてレビュー時に戻る使い方も示している。",
+  "summaryEn": "The canvas in the GitHub Copilot app is presented as a customizable UI for tasks that are awkward to handle through chat alone, with two-way interaction between the user and agent. Examples include Connect 4, local package management with Winget, SQLite operations, and automating development workflows.",
+  "keyPointsEn": [
+    "A canvas is a full-stack app running inside the Copilot app without browser chrome, and it can communicate bidirectionally with the agent.",
+    "Canvases can call third-party APIs and run code locally. One example is a Winget UI for browsing packages and installing or uninstalling local packages.",
+    "The author gives examples of tools usable without AI, such as a SQLite interface, and argues that building a tool can save tokens compared with asking the agent to perform every interaction.",
+    "The article shows a canvas automating a development workflow from research through finalization, with adjustable human involvement. The author says the workflow example took most of a day to design and automate."
+  ],
+  "significanceEn": "For developers who find a chat box insufficient for the operations their work requires, canvases offer a way to create task-specific UIs and local tools, limiting agent interactions to where they are needed. The article also demonstrates delegating parts of a development workflow to an agent and returning for review."
+}

@@ -1,0 +1,18 @@
+{
+  "summary": "GitHub Security Lab Taskflow Agentを基盤にしたFuzzing Taskflowは、C/C++プロジェクト向けに、GitHubリポジトリを指定するとファジング対象の選定、ハーネス作成、AFL++実行、カバレッジ改善、クラッシュの分類と脆弱性レポート作成までを自動化するパイプラインとして紹介された。反復ごとに未到達分岐を追い、改善が頭打ちになると停止する一方、LLMがホスト上で任意のビルドコマンドを実行し得るため使い捨て環境での実行が求められ、判定や修正案には人間の確認が必要だ。",
+  "keyPoints": [
+    "実行はCodespaceを起動し、リポジトリのowner/repoを引数にスクリプトを実行する方式で、既定モデルはClaude Sonnet 5。AFL、clang、LLMが選ぶビルドコマンドをホスト上で実行するため、記事は使い捨て環境での利用を警告している。",
+    "カバレッジ改善では、ハーネスごとにAFLを実行してキューを再生し、未到達分岐に応じてシード追加やハーネス修正などを行う。時間枠は反復ごとに30秒から960秒へ倍増し、連続2回の増加が既定で絶対値1%未満なら打ち切る。",
+    "JSON、XML、正規表現、PNG、長さ付きバイナリTLV向けの辞書やカスタムミューターに加え、ソースコードから文字列や数値定数を抽出して入力生成に利用する。ハーネスごとのコーパスは反復やキャンペーンをまたいで保持され、各反復後にAFLのキューを統合・縮小する。",
+    "終了後はクラッシュを最小化してASanで再実行し、スタック情報で重複をまとめ、既知のクラッシュも再確認する。エージェントは分類付きレポートや修正案を作るが、修正案は「review required」とされ、結果は人間が確認する前提。進捗はポート8765のライブダッシュボードで表示される。"
+  ],
+  "significance": "C/C++プロジェクトのメンテナーやセキュリティ研究者は、ハーネス作成、カバレッジ確認、クラッシュ分類といった反復作業をエージェントに任せ、ファジング開始や未到達コードの探索を支援させられる。一方、ホスト上での実行には隔離環境が必要で、脆弱性の判定や修正案も確定事項ではなく、人間による確認が引き続き重要となる。",
+  "summaryEn": "Fuzzing Taskflow, built on the GitHub Security Lab Taskflow Agent, is presented as a pipeline that automates fuzzing for C/C++ projects, from selecting targets and writing harnesses to running AFL++, improving coverage, triaging crashes, and preparing vulnerability reports. It pursues uncovered branches across iterations and stops when gains plateau, but must be run in a disposable environment because the LLM can execute arbitrary build commands on the host; its verdicts and suggested fixes also require human review.",
+  "keyPointsEn": [
+    "Run it by starting a Codespace and passing a repository owner/repo to the script; Claude Sonnet 5 is the default model. Because AFL, clang, and LLM-selected build commands run directly on the host, the article warns users to run it in a disposable environment.",
+    "For each harness, the pipeline runs AFL, replays its queue, and uses uncovered branches to guide actions such as adding seeds or changing the harness. Time budgets double from 30 to 960 seconds per iteration; it stops when gains are below the default absolute 1% line-coverage threshold for two consecutive iterations.",
+    "It includes dictionaries and custom mutators for JSON, XML, regex, PNG, and length-prefixed binary TLV formats, and can extract strings and numeric constants from source code for other formats. Each harness's corpus persists across iterations and campaigns, with AFL's queue merged and minimized after each iteration.",
+    "After fuzzing, crashes are minimized, replayed under ASan, and deduplicated using stack information; known crashes are also rechecked. The agent produces categorized reports and suggested fixes, but marks patches as requiring review. A live dashboard on port 8765 displays progress."
+  ],
+  "significanceEn": "C/C++ maintainers and security researchers can delegate repetitive work such as writing harnesses, checking coverage, and triaging crashes, helping them start fuzzing and explore unreached code. However, host execution requires an isolated disposable environment, and human review remains important because vulnerability verdicts and suggested fixes are not definitive."
+}
