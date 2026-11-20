@@ -192,16 +192,20 @@ function readerRetryDelay(error, attempt) {
 
 async function fetchArticleText(url, get = axios.get, wait = (milliseconds) =>
   new Promise((resolve) => setTimeout(resolve, milliseconds))) {
-  try {
-    const response = await get(url, {
-      timeout: 20000,
-      maxContentLength: 5 * 1024 * 1024,
-      headers: ARTICLE_FETCH_HEADERS,
-    });
-    const articleText = extractArticleText(response.data);
-    if (articleText.length <= MAX_ARTICLE_LENGTH) return articleText;
-  } catch (error) {
-    if (error.response?.status !== 403 && error.code !== 'ECONNABORTED') throw error;
+  // Fabric Community serves a dynamic shell whose navigation can look like article text.
+  const dynamicCommunityArticle = /^https:\/\/community\.fabric\.microsoft\.com\/(?:t5\/.*\/ba-p\/|blog\/)/u.test(url);
+  if (!dynamicCommunityArticle) {
+    try {
+      const response = await get(url, {
+        timeout: 20000,
+        maxContentLength: 5 * 1024 * 1024,
+        headers: ARTICLE_FETCH_HEADERS,
+      });
+      const articleText = extractArticleText(response.data);
+      if (articleText.length <= MAX_ARTICLE_LENGTH) return articleText;
+    } catch (error) {
+      if (error.response?.status !== 403 && error.code !== 'ECONNABORTED') throw error;
+    }
   }
 
   let readerError;

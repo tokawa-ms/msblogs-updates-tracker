@@ -256,15 +256,23 @@ describe('article extraction', () => {
     const calls = [];
     const get = async (requestUrl) => {
       calls.push(requestUrl);
-      if (calls.length === 1) {
-        const error = new Error('Forbidden');
-        error.response = { status: 403 };
-        throw error;
-      }
-      return { data: calls.length === 2 ? 'Markdown Content:\nUnavailable' : `Markdown Content:\n${body}` };
+      return { data: calls.length === 1 ? 'Markdown Content:\nUnavailable' : `Markdown Content:\n${body}` };
     };
     assert.equal(await fetchArticleText(url, get), body);
-    assert.equal(calls[2], 'https://r.jina.ai/https://community.fabric.microsoft.com/blog/fbc_pbiupdatesblog/article/5190703');
+    assert.deepEqual(calls, [
+      `https://r.jina.ai/${url}`,
+      'https://r.jina.ai/https://community.fabric.microsoft.com/blog/fbc_pbiupdatesblog/article/5190703',
+    ]);
+  });
+
+  it('Fabric Community の動的ページはナビゲーションでなく Reader 本文を使う', async () => {
+    const url = 'https://community.fabric.microsoft.com/blog/fbc_pbiupdatesblog/example/5295674';
+    const calls = [];
+    assert.equal(await fetchArticleText(url, async (requestUrl) => {
+      calls.push(requestUrl);
+      return { data: `Markdown Content:\n${body}` };
+    }), body);
+    assert.deepEqual(calls, [`https://r.jina.ai/${url}`]);
   });
 
   it('Reader の 429 は待機して最大3回まで再試行する', async () => {
