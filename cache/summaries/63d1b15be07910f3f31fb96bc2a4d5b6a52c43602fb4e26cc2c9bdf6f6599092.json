@@ -1,0 +1,18 @@
+{
+  "summary": "Power BI Desktopの新しいPower Query体験（Preview）は、Get dataをモジュール方式にし、接続先を知っている場合や、既存のOneLake項目・最近使ったデータを探す場合、値やクエリを作る場合に応じた入口を用意します。2026年10月版Desktopでプレビューを試せますが、認証やデータの選択・確認は引き続き必要で、接続設定やファイル結合などの課題への対応も続いています。",
+  "keyPoints": [
+    "Desktopの入口にはNew、Recent data、OneLake catalog、Blank table、Blank queryがあり、既知の接続先、既存データ、値やMクエリなど、作業の起点に合わせて選べます。",
+    "モジュールや操作はホストによって異なります。Browse Azure、SharePoint browsing、Uploadは現時点でDesktopのモジュールではなく、Dataflow Gen2などで提供されます。Desktopでの提供時期は未定です。",
+    "対応コネクタでは接続作成時のネイティブSQL入力が追加されましたが、Sourceステップから設定を再度開く対応は一部に限られます。Web API／Web Pageの詳細設定復元やCombine Filesの問題にも対応中です。",
+    "フィードバック調査では、初回接続時のネイティブSQL不足が24人、後からのクエリ編集が16人、起動・操作開始の遅さが8人、Web詳細設定とCombine Filesがそれぞれ5人から報告されました。Desktopの起動・読み込み改善は2026年12月リリースで予定されています。"
+  ],
+  "significance": "接続先の名前や場所を知っている人だけでなく、チーム管理のデータ項目を文脈から探したい人や、既存の値・クエリを起点にしたい人も、目的に合う入口を選べるようになります。一方、認証やアクセス権は別途必要で、SQL設定の再編集やWeb接続、ファイル結合に依存する利用者には未解決の制約が残っています。",
+  "summaryEn": "The new Power Query experience (Preview) in Power BI Desktop organizes Get data into modules for users who know their source, want to find existing OneLake items or recent data, or need to create values or queries. The preview can be tried in the October 2026 Desktop release, but authentication and data selection and review are still required, and work continues on connection settings, file combining, and other issues.",
+  "keyPointsEn": [
+    "Desktop offers New, Recent data, OneLake catalog, Blank table, and Blank query, with entry points suited to known sources, existing data, or starting from values or M queries.",
+    "Modules and actions vary by host. Browse Azure, SharePoint browsing, and Upload are not currently Desktop modules; they are available in Dataflow Gen2 and other supported hosts. There is no committed Desktop release date.",
+    "Native SQL input when creating a connection has been restored for supported connectors, but reopening settings from the Source step is still only partially supported. Work also continues on restoring advanced Web API and Web Page settings and addressing Combine Files issues.",
+    "In the feedback review, 24 contributors reported missing native SQL on first connection, 16 reported later query editing, eight reported slow startup or time to begin using Get data, and five each reported advanced Web settings and Combine Files. Startup and loading improvements are expected in the December 2026 Power BI Desktop release."
+  ],
+  "significanceEn": "Users can choose an entry point suited not only to those who know a source name or location, but also to those looking for team-maintained data in context or starting from existing values or queries. Authentication and access permissions are still required, and limitations remain for users who depend on editing SQL settings, advanced Web connections, or combining files."
+}
