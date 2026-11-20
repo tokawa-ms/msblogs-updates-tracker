@@ -1,0 +1,16 @@
+{
+  "summary": "Saint-GobainはMicrosoftと共同で、科学者・技術者向けAIエージェント型プラットフォームMicrosoft Discoveryを使い、セメント添加剤の研究を進めた。62,000件の特許と44,000件の抄録を基に、従来なら1年かかる知識基盤の作成を数時間で行い、約6週間で試験候補となる成分の仮説を複数導いたが、候補分子は現在評価中だ。",
+  "keyPoints": [
+    "Discoveryでは、AIエージェントが文献検索、情報の関連付け、仮説生成、実験設計、分析を担える。",
+    "研究チームは62,000件の特許と44,000件の抄録を集め、知識基盤の作成を従来の1年から数時間に短縮した。",
+    "既存のセメント添加剤EnviroAddはクリンカーの必要量を約20%減らす。Discoveryで見つけた分子は、クリンカーをさらに減らしつつセメントを強くする可能性を探るため、現在試験中。"
+  ],
+  "significance": "研究者は建設分野以外の情報も横断して候補を探し、材料開発の仮説づくりを速められる可能性がある。セメント製造は世界の年間CO2排出量の約7%を占めると記事は述べており、クリンカーをさらに減らす添加剤が実現すれば排出削減につながり得るが、候補分子はまだ試験段階にある。",
+  "summaryEn": "Saint-Gobain worked with Microsoft to use the AI-agent platform Microsoft Discovery in cement-additive research. The team used 62,000 patents and 44,000 abstracts to build a knowledge base in hours rather than the year previously expected, and developed several candidate ingredient hypotheses for testing in about six weeks; the molecules are still being evaluated.",
+  "keyPointsEn": [
+    "Discovery lets scientists orchestrate AI agents to search literature, connect information, generate hypotheses, design experiments, and run analyses.",
+    "The team gathered 62,000 patents and 44,000 abstracts, reducing knowledge-base creation from a year to a few hours.",
+    "Saint-Gobain’s existing cement additive EnviroAdd reduces the need for clinker by about 20%. Molecules found with Discovery are being tested for a potential additive that could further reduce clinker while strengthening cement."
+  ],
+  "significanceEn": "Researchers may be able to search across fields for candidates and accelerate the development of material hypotheses. The article says cement production accounts for around 7% of annual global CO2 emissions, so an additive that further reduces clinker could help cut emissions if successful; the candidate molecules are still being tested."
+}

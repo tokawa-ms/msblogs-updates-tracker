@@ -1,0 +1,18 @@
+{
+  "summary": "Bar-Ilan University（BIU）は2月、Moodle上で、教員が登録した講義録画・文字起こし・資料などを自然言語で検索・要約し、小テストも作れるAIエージェントの試験運用を始めた。Azure AI Servicesを基盤にKPMGとOpenAppがCopilot Studioで開発し、ヘブライ語・アラビア語・英語に対応する。試験運用は71科目・約2,400人が対象で、2026/27年度第1学期にさらに100科目へ展開する計画だ。",
+  "keyPoints": [
+    "試験運用は71科目・約2,400人を対象に実施。エージェントはヘブライ語、アラビア語、英語に対応し、2026/27年度第1学期にさらに100科目へ展開する予定。",
+    "Azure AI Servicesを基盤とし、KPMGとOpenAppがMicrosoft Copilot Studioで開発。回答の根拠は教員が登録した授業資料に限定され、大学のセキュアなAzure環境で稼働する。",
+    "学生は講義で扱った話題の検索、要約、クイズ形式の理解度確認に利用できる。学生のYarden Shayは、講義後の学習時間が以前の1日5～6時間から約3時間になったと話している。",
+    "教員は資料の拡充や回答の検証を行った。講師Eliyahu Bitonは定型的・事務的な質問が減ったと述べ、担当学生約50人の期末試験平均は前年までより3ポイント高かったが、学生集団の違いも要因になり得るとしている。"
+  ],
+  "significance": "授業を欠席した学生は、授業資料をまとめて探し、復習や自己テストに使うことで学習の遅れを補いやすくなる。教員側では定型的な質問への対応が減ったとの報告があり、Bitonは情報提供に加えて学生を導く役割を重視している。試験成績の上昇は報告されているものの、記事は別の要因の可能性も挙げている。",
+  "summaryEn": "In February, Bar-Ilan University (BIU) piloted an AI agent on Moodle that lets students use natural-language queries to find and summarize faculty-uploaded materials, and take quizzes. Built by KPMG and OpenApp using Microsoft Copilot Studio and Azure AI Services, it supports Hebrew, Arabic, and English. The pilot covered 71 courses and about 2,400 students, with another 100 courses planned for the first semester of 2026/27.",
+  "keyPointsEn": [
+    "The pilot covered 71 courses and about 2,400 students. The agent supports Hebrew, Arabic, and English, and is planned to expand to another 100 courses in the first semester of 2026/27.",
+    "Powered by Azure AI Services, the agent was developed by KPMG and OpenApp using Microsoft Copilot Studio. Its answers are grounded exclusively in course materials uploaded by BIU teaching staff, and it runs in the university’s secure Azure environment.",
+    "Students can search for lecture topics, create summaries, and check their understanding with quizzes. Student Yarden Shay said she now studies about three hours after lectures each day, down from five to six hours previously.",
+    "Faculty expanded materials and tested the agent’s responses. Lecturer Eliyahu Biton said routine and administrative questions decreased; the average final score among his approximately 50 students was three percentage points higher than in previous years, though he noted the cohort may have contributed."
+  ],
+  "significanceEn": "Students who miss classes may find it easier to catch up by locating course materials in one place and using them for review and self-testing. On the teaching side, one lecturer reported fewer routine questions and emphasized guiding students in addition to providing information. Although an increase in exam scores was reported, the article notes that other factors may have contributed."
+}

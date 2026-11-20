@@ -1,0 +1,20 @@
+{
+  "summary": "MicrosoftとSalesforceは、Microsoft Igniteで新パートナーシップ「Copilotforce」を発表し、Salesforceの顧客情報、ワークフロー、業務アクションをMicrosoft Copilot、Teams、Fabricから利用できる統合を提供するとした。Salesforce Data 360とMicrosoft Fabric間の双方向Zero Copy連携に加え、Copilot向けの公開プレビュー機能やTeams向けのSales Cloudパイロットが含まれる。",
+  "keyPoints": [
+    "Copilot、Teams、FabricからSalesforceの顧客情報や業務アクションへアクセスでき、アプリを切り替えずにインサイト取得や操作を行える。",
+    "Salesforce Data 360とMicrosoft Fabricは双方向Zero Copy連携を行い、データセットを複製せず両環境のデータを照会・分析できる。",
+    "Microsoft OneLakeとSalesforce Data 360間のデータ連携は一般提供で、Data 360からOneLakeへのデータ共有はパブリックプレビューとなっている。",
+    "Copilotには38以上の販売スキルが備え、TeamsのSales Cloudは現在パイロット中で、オープンベータは同年後半に予定されている。",
+    "AccentureはAccentureのグローバル営業組織で統合を検証し、740,000人以上のCopilot利用者と55,000人のSalesforce利用者を挙げている。"
+  ],
+  "significance": "企業の営業担当者は、Copilot、Teams、Fabric上で顧客情報やパイプライン更新、営業ワークフローを利用できるため、複数アプリ間を移動せずに業務を進められる可能性がある。Salesforce側のアクセス管理とビジネスアクションのガバナンスを維持しながら、Zero Copy連携やデータ連携を利用できる対象は、両サービスを導入する企業やその販売組織になる。",
+  "summaryEn": "Microsoft and Salesforce announced Copilotforce at Microsoft Ignite, a partnership that lets Salesforce customer context, workflows, and business actions be used through Microsoft Copilot, Teams, and Fabric. It includes bidirectional Zero Copy integrations between Salesforce Data 360 and Microsoft Fabric, as well as a public preview for Salesforce in Copilot and a pilot for Sales Cloud in Teams.",
+  "keyPointsEn": [
+    "Enterprises can connect Salesforce with Copilot, Teams, and Fabric to access customer insights and take action without switching applications.",
+    "Salesforce Data 360 and Microsoft Fabric support bidirectional Zero Copy integrations, allowing data across both platforms to be queried and analyzed without dataset duplication.",
+    "Data federation between Microsoft OneLake and Salesforce Data 360 is generally available, while sharing data from Data 360 into OneLake is in public preview.",
+    "Copilot includes more than 38 prebuilt sales skills, while Sales Cloud in Teams is in pilot and an open beta is planned later this year.",
+    "Accenture is validating the integrations within its global sales organization and cites more than 740,000 Copilot users and 55,000 Salesforce users."
+  ],
+  "significanceEn": "Sales employees at participating enterprises may work with customer information, pipeline updates, and sales workflows across Copilot, Teams, and Fabric without moving between applications. Organizations using both platforms can use secure data federation and Zero Copy integration while Salesforce maintains governance over access and business actions."
+}
