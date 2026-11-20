@@ -105,7 +105,7 @@ npm run build:static
 - ☁️ Azure Blog
 - 📊 Microsoft 365 Blog
 - 📈 Microsoft Fabric Blog
-- 🤖 Microsoft AI Blog
+- 🤖 [Microsoft AI Blog](https://news.microsoft.com/source/topics/ai/)（旧 `blogs.microsoft.com/ai/` は Microsoft Source の AI トピックへ移転したため、そのフィードを使う）
 - [Windows Command Line Blog](https://devblogs.microsoft.com/commandline/)
 
 ## 📋 実装フェーズ

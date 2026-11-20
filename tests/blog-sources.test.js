@@ -16,6 +16,15 @@ describe('blog sources', () => {
     assert.equal(source.limit, 30);
   });
 
+  it('Microsoft AI Blog を移転先の Microsoft Source AI トピックの RSS で追跡する', () => {
+    const source = sources.find((entry) => entry.id === 'microsoft-ai-blog');
+
+    assert.ok(source);
+    assert.equal(source.url, 'https://news.microsoft.com/source/topics/ai/');
+    assert.equal(source.feedUrl, 'https://news.microsoft.com/source/topics/ai/feed/');
+    assert.equal(source.filterUrlIncludes, undefined);
+  });
+
   it('ブログソースの ID が重複しない', () => {
     assert.equal(new Set(sources.map((source) => source.id)).size, sources.length);
   });

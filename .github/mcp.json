@@ -8,7 +8,8 @@
         "https://azure.microsoft.com/*",
         "https://www.microsoft.com/*",
         "https://powerbi.microsoft.com/*",
-        "https://blogs.microsoft.com/*"
+        "https://blogs.microsoft.com/*",
+        "https://news.microsoft.com/*"
       ]
     }
   }

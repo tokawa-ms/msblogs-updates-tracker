@@ -34,7 +34,7 @@ Microsoft と GitHub の主要ブログから毎日のアップデート情報�
 | Azure Blog            | https://azure.microsoft.com/en-us/blog/                                   | RSS      | RSS フィード   |
 | Microsoft 365 Blog    | https://www.microsoft.com/en-us/microsoft-365/business/microsoft-365-blog | HTML     | スクレイピング |
 | Microsoft Fabric Blog | https://powerbi.microsoft.com/en-us/blog/                                 | RSS      | RSS フィード   |
-| Microsoft AI Blog     | https://blogs.microsoft.com/ai/                                           | RSS      | RSS フィード   |
+| Microsoft AI Blog     | https://news.microsoft.com/source/topics/ai/                              | RSS      | RSS フィード   |
 
 ### 主要な特徴
 

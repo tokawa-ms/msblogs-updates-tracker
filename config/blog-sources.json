@@ -44,9 +44,8 @@
     "id": "microsoft-ai-blog",
     "name": "Microsoft AI Blog",
     "type": "rss",
-    "url": "https://blogs.microsoft.com/ai/",
-    "feedUrl": "https://blogs.microsoft.com/feed/",
-    "filterUrlIncludes": ["/ai/"],
+    "url": "https://news.microsoft.com/source/topics/ai/",
+    "feedUrl": "https://news.microsoft.com/source/topics/ai/feed/",
     "limit": 30
   },
   {
