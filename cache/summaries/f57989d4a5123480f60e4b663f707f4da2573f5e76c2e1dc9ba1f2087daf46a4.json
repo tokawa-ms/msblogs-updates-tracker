@@ -1,0 +1,18 @@
+{
+  "summary": "GitHub Copilotのインライン候補に、提案の積極性を「低・中・高」から選べる設定が追加されました。低は少数で小さめの編集、中は従来の既定動作、高はより積極的で大きめの編集を目指し、有料Copilot契約者はVS Codeで利用できます。A/B実験では、低設定で中設定より却下率が29%低く、高設定では受け入れられて保持された文字数が40%増えました。",
+  "keyPoints": [
+    "設定は提案の頻度と編集の大きさを目安として制御します。中は既定の支援レベルで、低・高でも厳格な上限を設けるのではなく、状況に応じた提案を行います。",
+    "モデルは軽量な制御タグで3段階を切り替え、教師ありファインチューニングで各動作を学習し、強化学習で提案品質を高めながらその動作を維持します。",
+    "本番の3-in-1モデルとのA/B実験では、低設定は中設定より却下率が29%低く提案が28%短くなりました。高設定では受け入れられて保持された文字数が40%、表示された提案数が40%、提案の長さが22%増加し、中設定では基準から有意な変化はありませんでした。",
+    "有料GitHub Copilot契約者向けにVS Codeで利用可能です。VS Codeを最新にし、既定で有効なNext Edit Suggestionsを確認してから、Copilot設定メニューで積極性を選びます。"
+  ],
+  "significance": "提案を控えめにしたい開発者は、小さく保守的な編集を選びやすくなり、先回りした支援を望む開発者は、より多く大きな提案を選べます。既定の中設定を保つ選択肢もあるため、利用者は作業時の好みに合わせてCopilotの提案傾向を調整できます。",
+  "summaryEn": "GitHub Copilot inline suggestions now have a setting for choosing low, medium, or high eagerness. Low aims for fewer, smaller edits; medium retains the default behavior; and high aims for more proactive, larger edits. Paid Copilot subscribers can use the feature in VS Code. In A/B experiments, low eagerness had a 29% lower dismissal rate than medium, while high eagerness increased accepted and retained characters by 40%.",
+  "keyPointsEn": [
+    "The setting guides suggestion frequency and edit size. Medium provides the default assistance level, while low and high guide behavior without imposing strict limits.",
+    "One model switches among the three modes using a lightweight control tag. Supervised fine-tuning taught the behaviors, and reinforcement learning improved suggestion quality while preserving them.",
+    "In A/B experiments against the production 3-in-1 model, low eagerness had a 29% lower dismissal rate and 28% shorter suggestions than medium. High eagerness increased accepted and retained characters by 40%, suggestions shown by 40%, and suggestion length by 22%; medium had no significant changes from baseline.",
+    "The feature is available to paid GitHub Copilot subscribers in VS Code. Update VS Code, confirm Next Edit Suggestions are enabled (they are on by default), then choose an eagerness setting in the Copilot settings menu."
+  ],
+  "significanceEn": "Developers who prefer less intrusive help can choose smaller, more conservative edits, while those who want more anticipatory assistance can choose more and larger suggestions. The medium option preserves the default level, allowing users to adjust Copilot's suggestion behavior to their preferences."
+}

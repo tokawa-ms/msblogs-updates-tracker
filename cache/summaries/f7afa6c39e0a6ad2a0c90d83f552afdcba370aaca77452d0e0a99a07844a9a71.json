@@ -1,0 +1,18 @@
+{
+  "summary": "Power BIのスライサーに日付ピッカーのプレビュー機能が加わり、更新されるデータに合わせて進む相対日付範囲を既定値として設定できるようになりました。閲覧者は相対範囲や任意の期間、単一の日付を選べ、スライダーでも調整できます。プレビュー中の作成はPower BI Desktopで行い、公開後はPower BIサービスで表示・編集できます。",
+  "keyPoints": [
+    "相対範囲は最終日、初日、今日を基準にオフセットを設定でき、データ更新に伴って自動的に進みます。公開したレポートではその範囲が既定値になります。",
+    "閲覧者は相対範囲や開始・終了日、単一の日付を選べ、スライダーで範囲を調整できます。スライサーにはデータに適用中の日付範囲と、選択した範囲の要約を別々に表示できます。",
+    "有効化はDesktopの「Preview features」で「Date picker slicer」を選択します。プレビュー期間中に作成できるのはDesktopのみで、公開後はPower BIサービスで表示・編集できます。",
+    "日付テーブルが実データより先の日付まで含む場合は、スライサーのビジュアルフィルターで対象メジャーを「is not blank」にすると、実データの最終日に基づいて相対範囲を絞り込めます。"
+  ],
+  "significance": "レポート作成者はデータ更新のたびに既定の日付範囲を手動で保守する負担を減らせ、閲覧者は既定値を保ちながら必要に応じて期間を変えて分析できます。未完了期間や将来日付を含む日付テーブルにも対処方法が示されており、全期間が揃わないことによる表示上の問題を避ける助けになります。",
+  "summaryEn": "Power BI's slicer now has a date picker option in preview, allowing authors to set a default relative date range that moves forward as data refreshes. Viewers can choose relative or custom ranges, or a single date, and adjust the range with a slider. During preview, date picker slicers can be created only in Power BI Desktop; published slicers can be viewed and edited in the Power BI service.",
+  "keyPointsEn": [
+    "Relative ranges can be anchored to the last date, first date, or today, with an offset, and move forward automatically as data refreshes. The range becomes the report's default when published.",
+    "Viewers can choose a relative range, start and end dates, or a single date, and adjust the range with a slider. The slicer can separately summarize the dates currently applied to the data and the selected range.",
+    "Enable the option by selecting Date picker slicer under Preview features in Desktop. During preview, creation is limited to Desktop; after publication, slicers can be viewed and edited in the Power BI service.",
+    "If a date table extends beyond the actual data, setting a visual filter on the slicer to Advanced filter and is not blank for the relevant measure limits the relative range based on the last date with data."
+  ],
+  "significanceEn": "Report authors can reduce the need to manually maintain default date ranges after data refreshes, while viewers can explore different periods without losing the published default. The article also describes how to handle incomplete periods or date tables that extend into the future, helping avoid misleading displays when the full period is not available."
+}

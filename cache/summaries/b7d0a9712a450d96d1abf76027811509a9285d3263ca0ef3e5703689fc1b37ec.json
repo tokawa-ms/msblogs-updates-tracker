@@ -1,0 +1,18 @@
+{
+  "summary": "Power BIはIgniteで、Power BI Desktop for Appsとsemantic viewsをパブリックプレビューとして提供開始した。前者では、既存のセマンティックモデルを選び、自然言語で指示してアプリを作成・編集し、Fabricに公開できる。後者はOneLake上で管理された指標や意味定義を扱い、レポート、アプリ、AIでの再利用を目指す。",
+  "keyPoints": [
+    "Power BI Desktop for Appsでは、公開済みのセマンティックモデルを基に、エージェントの自然言語によるアプリ作成と反復編集ができる。直接編集やデザインペインで仕上げ、ローカルでプレビューしてからMicrosoft Fabricに公開する。",
+    "アプリはデータ表示に加え、入力の受け付け、共有状態の保持、業務ワークフローを支援できる。Fabric容量の顧客に限定されず、Power BI Proでは数週間以内、Premium Per Userでは数カ月以内に対応予定で、基盤技術のFabric appsは一般提供となった。",
+    "Fabric apps向けの新しいビジュアルは、ライト／ダークテーマとアプリ独自の色に対応し、ツールチップ、クロスフィルター、クロスハイライト、キーボード操作、スクリーンリーダーをサポートする。",
+    "semantic viewsはパブリックプレビューで、Apache Ossie（incubating）のオープン標準に基づくセマンティックレイヤーとして発表された。OneLake上に管理された指標・意味定義を置き、DAXで記述した指標をレポート、アプリ、AIで再利用する構想で、Snowflakeなどとの相互運用も今後を見込む。"
+  ],
+  "significance": "既存のセマンティックモデルを使って、閲覧用レポートだけでなく入力や承認などの業務を担うアプリを作りたいPower BI利用者に選択肢が広がる。また、組織で合意した指標の定義を計算基盤から分離して再利用することで、複数のエンジンやエコシステムで定義を作り直さずに使うことを目指す。ただし、相互運用先の拡大は今後の取り組みとして記載されている。",
+  "summaryEn": "At Ignite, Power BI introduced Power BI Desktop for Apps and semantic views in public preview. Desktop for Apps lets users select an existing semantic model, create and refine an app with natural-language instructions, and publish it to Fabric. Semantic views manage governed metrics and meanings in OneLake, with reuse across reports, apps, and AI as a goal.",
+  "keyPointsEn": [
+    "Power BI Desktop for Apps lets users build an app from a published semantic model with an agent using natural-language instructions, refine it through direct edits or a design pane, preview it locally, and publish it to Microsoft Fabric.",
+    "Apps can accept input, preserve shared state, and support operational workflows. They are not limited to Fabric-capacity customers; support for Power BI Pro is expected in the coming weeks and for Premium Per User in the coming months. Fabric apps, the underlying technology, is generally available.",
+    "New visuals for Fabric apps support light and dark themes and app-specific colors, as well as tooltips, cross-filtering, cross-highlighting, keyboard navigation, and screen readers.",
+    "Semantic views are in public preview as a semantic layer based on Apache Ossie (incubating) open standards. They put governed metrics and semantics in OneLake, allow measures to be written in DAX, and aim to enable reuse across reports, apps, and AI, with interoperability with Snowflake and others envisioned over time."
+  ],
+  "significanceEn": "Power BI users who want to build apps for workflows such as data entry and approvals, rather than only reports for viewing, gain another option based on existing semantic models. Semantic views aim to let organizations reuse agreed business definitions across compute engines and ecosystems without rebuilding them. The article describes broader interoperability as future work."
+}
