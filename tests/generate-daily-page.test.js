@@ -6,7 +6,7 @@ const fs = require('node:fs/promises');
 const os = require('node:os');
 const path = require('node:path');
 const axios = require('axios');
-const { cleanText, enumerateDates, extractArticleText, extractReaderArticleText, fetchArticleText, resolveTargetDates, summarizeArticleCached, toMarkdown } = require('../scripts/generate-daily-page');
+const { cleanText, enumerateDates, extractArticleText, extractReaderArticleText, fetchArticleText, generateDates, resolveGenerationDates, resolveTargetDates, summarizeArticleCached, toMarkdown } = require('../scripts/generate-daily-page');
 const { buildSummaryPrompt, validateSummary, summarizeArticle, parseCopilotOutput, runCopilot } = require('../scripts/utils/article-summarizer');
 
 const article = { title: 'Example Search preview', url: 'https://example.com/search', source_id: 'example', source_name: 'Example', summary: 'Feed teaser only.' };
@@ -86,6 +86,47 @@ describe('target date resolution', () => {
   it('不正な日付や逆順の範囲を拒否する', () => {
     assert.throws(() => resolveTargetDates(['2026-09-31']), /Invalid date/);
     assert.throws(() => resolveTargetDates(['2026-09-08', '2026-09-06']), /Start date must be on or before end date/);
+  });
+});
+
+describe('missing page recovery', () => {
+  it('保存済み差分だけを対象にし、正常な既存ページを除外する', async () => {
+    const root = await fs.mkdtemp(path.join(os.tmpdir(), 'missing-pages-test-'));
+    const diffDir = path.join(root, 'diff');
+    const updatesDirs = [path.join(root, 'content'), path.join(root, 'astro')];
+    try {
+      await Promise.all([diffDir, ...updatesDirs].map((dir) => fs.mkdir(dir)));
+      for (const date of ['2026-09-25', '2026-10-20', '2026-10-21']) {
+        await fs.writeFile(path.join(diffDir, `diff-${date}.json`), '{}');
+      }
+      await fs.writeFile(path.join(diffDir, 'unrelated.json'), '{}');
+      for (const dir of updatesDirs) {
+        await fs.writeFile(path.join(dir, '2026-10-20.md'), 'Existing valid page');
+      }
+      await fs.writeFile(path.join(updatesDirs[0], '2026-10-21.md'), 'One copy only');
+      const options = { diffDir, updatesDirs };
+      assert.deepEqual(await resolveGenerationDates(['--missing'], options), ['2026-09-25', '2026-10-21']);
+      assert.deepEqual(await resolveGenerationDates(['2026-10-20', '2026-10-21', '--missing'], options), ['2026-10-21']);
+      assert.deepEqual(await resolveGenerationDates(['2026-10-20', '--missing'], options), []);
+      assert.deepEqual(await resolveGenerationDates(['2026-10-20'], options), ['2026-10-20']);
+      assert.equal(await fs.readFile(path.join(updatesDirs[0], '2026-10-20.md'), 'utf8'), 'Existing valid page');
+      await assert.rejects(resolveGenerationDates(['--unknown'], options), /Usage:/);
+    } finally {
+      await fs.rm(root, { recursive: true, force: true });
+    }
+  });
+
+  it('失敗した日付を明示し、後続の日付も生成してチェックポイントを残す', async () => {
+    const called = [];
+    const result = await generateDates(['2026-10-20', '2026-10-21', '2026-10-22'], async (date) => {
+      called.push(date);
+      if (date === '2026-10-21') throw new Error('Article unavailable');
+      return { date };
+    });
+    assert.deepEqual(called, ['2026-10-20', '2026-10-21', '2026-10-22']);
+    assert.equal(result.generated, 2);
+    assert.deepEqual(result.dates, ['2026-10-20', '2026-10-22']);
+    assert.deepEqual(result.failures, [{ date: '2026-10-21', error: 'Article unavailable' }]);
   });
 });
 
@@ -462,6 +503,35 @@ describe('grounded summary', () => {
     }
   });
 
+  it('失敗理由を残し、トークンと記事本文を診断に含めない', async () => {
+    const original = process.env.COPILOT_GITHUB_TOKEN;
+    process.env.COPILOT_GITHUB_TOKEN = 'test-secret-token';
+    const output = [
+      { type: 'user.message', data: { content: 'PRIVATE ARTICLE BODY' } },
+      { type: 'session.error', data: { message: 'Model is unavailable: test-secret-token' } },
+      { type: 'result', exitCode: 1 },
+    ].map((event) => JSON.stringify(event)).join('\n');
+    const execute = (command, args, options, callback) => ({
+      stdin: {
+        on: () => {},
+        end: () => callback({ code: 1 }, output,
+          '\u001b[31mAuthentication failed: github_pat_example, Bearer another-secret\u001b[0m'),
+      },
+    });
+    try {
+      await assert.rejects(runCopilot('PRIVATE ARTICLE BODY', execute), (error) => {
+        assert.match(error.message, /Model is unavailable: \[REDACTED\]/);
+        assert.match(error.message, /Authentication failed: \[REDACTED\], Bearer \[REDACTED\]/);
+        assert.doesNotMatch(error.message, /test-secret|github_pat_|another-secret|PRIVATE ARTICLE|\u001b/u);
+        return true;
+      });
+      assert.throws(() => parseCopilotOutput(output), /Model is unavailable: \[REDACTED\]/);
+    } finally {
+      if (original === undefined) delete process.env.COPILOT_GITHUB_TOKEN;
+      else process.env.COPILOT_GITHUB_TOKEN = original;
+    }
+  });
+
   it('シェルを使わず標準入力へ本文を渡し、環境・ツールを隔離して後始末する', async () => {
     const original = process.env.COPILOT_GITHUB_TOKEN;
     process.env.COPILOT_GITHUB_TOKEN = 'test-only';
@@ -477,6 +547,7 @@ describe('grounded summary', () => {
           assert.ok(args.includes('--disable-builtin-mcps'));
           assert.ok(args.includes('--no-custom-instructions'));
           assert.ok(args.includes('--no-remote-export'));
+          assert.equal(args[args.indexOf('--model') + 1], process.env.SUMMARY_MODEL || 'auto');
           assert.ok(!args.includes(prompt));
           assert.equal(options.shell, undefined);
           assert.equal(options.timeout, 180000);

@@ -1,0 +1,20 @@
+{
+  "summary": "Microsoft Copilotは、ChatやCoworkをまとめるHome、自然言語から業務用ソリューションを作るCode、指示後も継続して動くAutopilotを備える新しい体験へ刷新される。Word、Excel、PowerPointの編集機能や企業データとの連携、AI利用費を管理する機能も拡充される。提供はFrontierでの段階的な展開やプレビューが中心で、機能ごとに時期と提供状況が異なる。",
+  "keyPoints": [
+    "HomeではChatとCoworkを一か所で利用でき、Office in CopilotによりWord、Excel、PowerPointの編集可能な文書・ブック・プレゼンテーションを会話と並行して作成・更新できる。チームの編集内容も同期される。",
+    "Codeは自然言語でアプリや自動化などを作成し、サンドボックスで実行してテナント内に安全にホストできる。Frontierには9月末に展開開始、幅広い提供は数週間以内、Microsoft 365 PremiumとProの加入者向けプレビューは年内予定。Copilot Managed Runtimeもプレビュー中。",
+    "Autopilot（旧称Scout）は、名前・役割・目標を設定すると、スレッドのフォローや定期業務などを継続して実行するクラウドホスト型エージェント。テナント内の独自IDや権限・監査・ガバナンスを備え、9月末にプライベートプレビューを拡大する。",
+    "Fabric IQのPower BIセマンティックモデルを使ったChatとCoworkのグラウンディングは一般提供中。Dynamics 365とPower Platformのデータ・ワークフロー連携は翌月にパブリックプレビューとして展開予定で、プラグインの統合カタログは現在展開中、数週間以内に各サーフェスで一般提供予定。",
+    "日常利用向けのユーザーサブスクリプションライセンス（USL）は固定費で、モデル選択やCopilot機能を含む一方、Cowork、Code、Autopilotなどのエージェント型機能と先端モデルは従量課金（UBB）で動作する。管理者には支出ポリシー、クレジット申請、利用可能モデルの設定機能が提供される。"
+  ],
+  "significance": "個人ユーザーは会話、委任、業務ツールの作成をCopilot内で行い、チームは共同編集や継続稼働するエージェントを活用できる。企業の管理者はデータ連携や権限管理に加え、利用モデルやAI支出を制御できる一方、機能によって一般提供・プレビュー・段階展開が分かれているため、利用可否は各機能の提供状況に左右される。",
+  "summaryEn": "Microsoft Copilot is being refreshed with Home, which brings Chat and Cowork together; Code, which builds work solutions from natural-language requests; and Autopilot, which continues working after receiving instructions. The update also expands Word, Excel, and PowerPoint editing, enterprise-data integration, and tools for managing AI spending. Rollout is staged through Frontier and previews, with availability varying by capability.",
+  "keyPointsEn": [
+    "Home brings Chat and Cowork together, while Office in Copilot lets users create and update editable Word, Excel, and PowerPoint files alongside their conversation, with team edits synchronized.",
+    "Code builds apps and automations from natural language and can run in a sandbox and be hosted securely within a tenant. It starts rolling out to Frontier at the end of September, with broader availability in the coming weeks and a preview for Microsoft 365 Premium and Pro subscribers later in the year. Copilot Managed Runtime is also in preview.",
+    "Autopilot, formerly Scout, is a cloud-hosted agent that can continue tasks such as following up on threads and running recurring work after being given a name, role, and goal. It has its own identity within a tenant and is expanding to private preview at the end of September.",
+    "Chat and Cowork grounding with Fabric IQ and Power BI semantic models is generally available. Dynamics 365 and Power Platform data and workflow integration is planned for public preview over the next month, while a unified plugin registry is rolling out now and expected to be generally available across surfaces in the coming weeks.",
+    "The user subscription license (USL) covers everyday use at a fixed cost and includes model selection and Copilot capabilities, while agentic features such as Cowork, Code, and Autopilot and frontier models use usage-based billing (UBB). Admins can manage spending policies, credit requests, and available models."
+  ],
+  "significanceEn": "Individuals can use Copilot for conversation, delegated work, and building work tools, while teams can use collaborative editing and agents that keep working. Enterprise admins can manage data connections and permissions as well as control models and AI spending. Because capabilities have different general-availability, preview, and staged-rollout statuses, access depends on each feature’s availability."
+}

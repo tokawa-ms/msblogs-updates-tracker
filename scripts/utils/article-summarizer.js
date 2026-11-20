@@ -2,9 +2,11 @@ const { execFile } = require('node:child_process');
 const fs = require('node:fs/promises');
 const os = require('node:os');
 const path = require('node:path');
+const { stripVTControlCharacters } = require('node:util');
 
 const MAX_ARTICLE_LENGTH = 100000;
 const MAX_SUMMARY_ATTEMPTS = 3;
+const DEFAULT_SUMMARY_MODEL = 'auto';
 
 function normalize(value) {
   return String(value || '').replace(/\s+/gu, ' ').trim();
@@ -115,6 +117,29 @@ function validateSummary(value, body) {
   return { summary, keyPoints, significance, summaryEn, keyPointsEn, significanceEn };
 }
 
+function copilotFailureDetails(output = '', stderr = '') {
+  const messages = [];
+  for (const line of output.split(/\r?\n/u)) {
+    try {
+      const event = JSON.parse(line);
+      if (event.type === 'session.error' && typeof event.data?.message === 'string') {
+        messages.push(event.data.message);
+      }
+    } catch {
+      // Only structured error events are diagnostics; never echo article or assistant content.
+    }
+  }
+  if (stderr.trim()) messages.push(stderr);
+  let detail = stripVTControlCharacters(messages.join('\n'));
+  if (process.env.COPILOT_GITHUB_TOKEN) {
+    detail = detail.split(process.env.COPILOT_GITHUB_TOKEN).join('[REDACTED]');
+  }
+  return normalize(detail
+    .replace(/\b(?:github_pat_|gh[pousr]_)[A-Za-z0-9_]+/gu, '[REDACTED]')
+    .replace(/\bBearer\s+\S+/giu, 'Bearer [REDACTED]'))
+    .slice(0, 2000);
+}
+
 function parseCopilotOutput(output) {
   const events = [];
   const lines = output.trim().split(/\r?\n/u).filter((line) => line.trim());
@@ -136,7 +161,8 @@ function parseCopilotOutput(output) {
   const result = events.at(-1);
   if (result?.type !== 'result' || result.exitCode !== 0 ||
       events.some((event) => event?.type === 'session.error')) {
-    throw new Error('Copilot did not complete successfully. Check model access and quota.');
+    const detail = copilotFailureDetails(output);
+    throw new Error(`Copilot did not complete successfully. Check model access and quota.${detail ? ` ${detail}` : ''}`);
   }
   const message = events.findLast((event) =>
     event?.type === 'assistant.message' && !event.agentId && !event.data?.parentToolCallId);
@@ -157,7 +183,7 @@ async function runCopilot(prompt, execute = execFile) {
     // Text mode renders Markdown even with --silent; JSONL preserves the model's raw response.
     const args = [loader, '--silent', '--stream=off', '--output-format=json', '--available-tools=', '--no-ask-user',
       '--disable-builtin-mcps', '--no-custom-instructions', '--no-auto-update', '--no-color',
-      '--no-remote', '--no-remote-export', '--model', process.env.SUMMARY_MODEL || 'gpt-5.4'];
+      '--no-remote', '--no-remote-export', '--model', process.env.SUMMARY_MODEL || DEFAULT_SUMMARY_MODEL];
     const env = {};
     for (const key of ['PATH', 'Path', 'SystemRoot', 'WINDIR', 'TEMP', 'TMP', 'TMPDIR', 'HTTPS_PROXY', 'HTTP_PROXY', 'NO_PROXY', 'NODE_EXTRA_CA_CERTS', 'COPILOT_GITHUB_TOKEN']) {
       if (process.env[key]) env[key] = process.env[key];
@@ -167,9 +193,10 @@ async function runCopilot(prompt, execute = execFile) {
     const output = await new Promise((resolve, reject) => {
       const child = execute(process.execPath, args, {
         cwd: workingDirectory, env, timeout: 180000, maxBuffer: 1024 * 1024, windowsHide: true,
-      }, (error, stdout) => {
+      }, (error, stdout, stderr) => {
         if (error) {
-          reject(new Error(`Copilot summary failed (${error.killed ? 'timeout' : error.code || 'process error'}). Check CLI installation, token permissions, model access and quota.`));
+          const detail = copilotFailureDetails(stdout, stderr);
+          reject(new Error(`Copilot summary failed (${error.killed ? 'timeout' : error.code || 'process error'}). Check CLI installation, token permissions, model access and quota.${detail ? ` ${detail}` : ''}`));
         } else {
           resolve(stdout);
         }
@@ -206,4 +233,4 @@ Generate a corrected JSON object from the same article body. Follow the required
   }
 }
 
-module.exports = { MAX_ARTICLE_LENGTH, buildSummaryPrompt, validateSummary, summarizeArticle, parseCopilotOutput, runCopilot };
+module.exports = { DEFAULT_SUMMARY_MODEL, MAX_ARTICLE_LENGTH, buildSummaryPrompt, validateSummary, summarizeArticle, parseCopilotOutput, runCopilot };

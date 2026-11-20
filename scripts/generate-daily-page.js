@@ -5,7 +5,7 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 const { isDateString, toDateString } = require('./utils/date-utils');
 const { diffFile, fileExists, readJson, writeJson } = require('./utils/cache-manager');
-const { MAX_ARTICLE_LENGTH, summarizeArticle } = require('./utils/article-summarizer');
+const { DEFAULT_SUMMARY_MODEL, MAX_ARTICLE_LENGTH, summarizeArticle } = require('./utils/article-summarizer');
 
 const ROOT = path.resolve(__dirname, '..');
 const UPDATES_DIR = path.join(ROOT, 'content', 'updates');
@@ -236,7 +236,7 @@ function isCompleteSummary(value) {
 async function summarizeArticleCached(article, body, summarize = summarizeArticle, cacheDir = SUMMARY_CACHE_DIR) {
   const fingerprint = crypto.createHash('sha256').update(JSON.stringify({
     schema: SUMMARY_CACHE_SCHEMA,
-    model: process.env.SUMMARY_MODEL || 'gpt-5.4',
+    model: process.env.SUMMARY_MODEL || DEFAULT_SUMMARY_MODEL,
     url: cleanText(article.url),
     body,
   })).digest('hex');
@@ -465,6 +465,32 @@ function resolveTargetDates(args, fallbackDate = toDateString()) {
   return enumerateDates(startArg, endArg);
 }
 
+async function resolveGenerationDates(args, {
+  diffDir = path.join(ROOT, 'cache', 'diff'),
+  updatesDirs = [UPDATES_DIR, ASTRO_UPDATES_DIR],
+} = {}) {
+  const missingOnly = args.includes('--missing');
+  const dateArgs = args.filter((arg) => arg !== '--missing');
+  if (dateArgs.length > 2 || dateArgs.some((arg) => arg.startsWith('--'))) {
+    throw new Error('Usage: generate-daily-page.js [start-date [end-date]] [--missing]');
+  }
+  if (!missingOnly) return resolveTargetDates(dateArgs);
+
+  const dates = dateArgs.length ? resolveTargetDates(dateArgs) : (await fs.readdir(diffDir))
+    .filter((name) => /^diff-\d{4}-\d{2}-\d{2}\.json$/u.test(name))
+    .map((name) => name.slice(5, 15))
+    .filter(isDateString)
+    .sort();
+  if (!dates.length) throw new Error('No saved diffs found for recovery.');
+
+  const missingDates = [];
+  for (const date of dates) {
+    const copies = await Promise.all(updatesDirs.map((dir) => fileExists(path.join(dir, `${date}.md`))));
+    if (copies.some((exists) => !exists)) missingDates.push(date);
+  }
+  return missingDates;
+}
+
 async function generateDate(date, options) {
   const diffPath = diffFile(date);
   if (!(await fileExists(diffPath))) {
@@ -479,19 +505,32 @@ async function generateDate(date, options) {
   return { date, output_file: output, new_count: diff.new_count || 0 };
 }
 
-async function main() {
-  const dates = resolveTargetDates(process.argv.slice(2));
+async function generateDates(dates, generate = generateDate) {
   const results = [];
-
+  const failures = [];
   for (const date of dates) {
-    results.push(await generateDate(date));
+    console.log(`Generating daily page: ${date}`);
+    try {
+      results.push(await generate(date));
+    } catch (error) {
+      failures.push({ date, error: error.message });
+      console.error(`Generation failed for ${date}: ${error.message}`);
+    }
   }
 
-  console.log(JSON.stringify({
+  return {
     generated: results.length,
     dates: results.map((result) => result.date),
     outputs: results,
-  }, null, 2));
+    failures,
+  };
+}
+
+async function main() {
+  const dates = await resolveGenerationDates(process.argv.slice(2));
+  const result = await generateDates(dates);
+  console.log(JSON.stringify(result, null, 2));
+  if (result.failures.length) process.exitCode = 1;
 }
 
 if (require.main === module) {
@@ -508,6 +547,8 @@ module.exports = {
   extractReaderArticleText,
   fetchArticleText,
   generateDate,
+  generateDates,
+  resolveGenerationDates,
   resolveTargetDates,
   summarizeArticleCached,
   toMarkdown,

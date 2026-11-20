@@ -18,6 +18,11 @@ on:
         description: 'Regenerate from saved diffs through this date (YYYY-MM-DD).'
         required: false
         type: string
+      recover_missing:
+        description: 'Restore all missing daily pages from saved diffs, without fetching current feeds.'
+        required: false
+        type: boolean
+        default: false
       update_branch:
         description: 'Branch to update. Defaults to main.'
         required: false
@@ -75,13 +80,21 @@ jobs:
           TARGET_DATE_INPUT: ${{ github.event.inputs.target_date }}
           REGENERATE_START_DATE_INPUT: ${{ github.event.inputs.regenerate_start_date }}
           REGENERATE_END_DATE_INPUT: ${{ github.event.inputs.regenerate_end_date }}
+          RECOVER_MISSING_INPUT: ${{ github.event.inputs.recover_missing }}
         run: |
           is_valid_date() {
             [[ "$1" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]] &&
               [ "$(date -d "$1" +%F 2>/dev/null)" = "$1" ]
           }
 
-          if [ -n "$REGENERATE_START_DATE_INPUT" ] || [ -n "$REGENERATE_END_DATE_INPUT" ]; then
+          if [ "$RECOVER_MISSING_INPUT" = "true" ]; then
+            if [ -n "$TARGET_DATE_INPUT$REGENERATE_START_DATE_INPUT$REGENERATE_END_DATE_INPUT" ]; then
+              echo "::error::recover_missing cannot be combined with target_date or a regeneration range."
+              exit 1
+            fi
+            echo "mode=recover" >> "$GITHUB_OUTPUT"
+            echo "display_date=missing pages" >> "$GITHUB_OUTPUT"
+          elif [ -n "$REGENERATE_START_DATE_INPUT" ] || [ -n "$REGENERATE_END_DATE_INPUT" ]; then
             if [ -n "$TARGET_DATE_INPUT" ]; then
               echo "::error::target_date cannot be combined with a regeneration range."
               exit 1
@@ -131,10 +144,12 @@ jobs:
         continue-on-error: true
         env:
           COPILOT_GITHUB_TOKEN: ${{ secrets.COPILOT_GITHUB_TOKEN }}
-          SUMMARY_MODEL: ${{ vars.SUMMARY_MODEL || 'gpt-5.4' }}
+          SUMMARY_MODEL: ${{ vars.SUMMARY_MODEL || 'auto' }}
         shell: bash
         run: |
-          if [ "${{ steps.dates.outputs.mode }}" = "regenerate" ]; then
+          if [ "${{ steps.dates.outputs.mode }}" = "recover" ]; then
+            node scripts/generate-daily-page.js --missing
+          elif [ "${{ steps.dates.outputs.mode }}" = "regenerate" ]; then
             node scripts/generate-daily-page.js \
               "${{ steps.dates.outputs.start_date }}" \
               "${{ steps.dates.outputs.end_date }}"
