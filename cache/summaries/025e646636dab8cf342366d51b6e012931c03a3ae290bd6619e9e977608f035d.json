@@ -1,0 +1,18 @@
+{
+  "summary": "GitHub Copilotアプリのセッションは、会話やコード変更、作業コンテキストを保ったままVS Codeで開いて継続できる。セッションに紐づく同じworktreeで差分を確認し、手作業で編集・ローカル検証した後、関連PRを追跡するブランチへ変更をpushする手順を解説している。新しいエディターで作業を再構成する必要はない。",
+  "keyPoints": [
+    "セッションから「Open in VS Code」を選ぶと、セッション用worktreeでプロジェクトが開き、既存セッションもCopilotサイドバーに表示される。複数のエディターやVS Code環境が提示された場合は利用するものを選ぶ。",
+    "編集前にSource Controlビューで変更ファイルを確認し、差分を行単位でレビューする。実装の妥当性、リポジトリ規約、エッジケース、テスト、無関係な変更の有無を点検する。",
+    "VS Code上で既存worktreeのファイルを直接編集でき、統合ターミナルからリポジトリに応じた検証を実行する。例としてnpm install、npm test、npm run lint、npm run devが挙げられている。",
+    "仕上げに差分を再確認してコミット・pushすると、セッションに関連付けられたブランチの更新が既存のプルリクエストに反映される。別のチェックアウトへのファイルコピーやPRとの手動再接続は不要。"
+  ],
+  "significance": "エージェントに大枠の実装を任せた開発者は、会話や作業履歴を引き継いだままVS Codeで細部を確認し、手作業の修正やローカルテストに移れる。作業やPRを作り直さずに編集者へ移行できるため、エージェントの変更を自分でレビューして仕上げる流れをつなげられる。",
+  "summaryEn": "A GitHub Copilot app session can be opened in VS Code with its conversation, code changes, and working context intact. The tutorial explains how to review the diff in the session’s worktree, edit and test locally, then push the changes on the branch that tracks the associated pull request without reconstructing the work in a new editor.",
+  "keyPointsEn": [
+    "Choose Open in VS Code from the session to open the project in its worktree and show the existing session in the Copilot sidebar; choose an editor or VS Code installation if more than one is offered.",
+    "Before editing, use the Source Control view to inspect changed files and review the diff line by line, checking the implementation, repository conventions, edge cases, tests, and unrelated changes.",
+    "Edit files directly in the existing worktree and run the repository’s validation workflow in the integrated terminal. Examples include npm install, npm test, npm run lint, and npm run dev.",
+    "Review the final diff, commit, and push; updating the session-associated branch updates the pull request already tracking the work, without copying files to another checkout or reconnecting the PR manually."
+  ],
+  "significanceEn": "Developers who delegate the bulk of an implementation can move to VS Code for detailed review, hands-on edits, and local testing while retaining the conversation and work history. This connects the editor workflow to the existing work and pull request, so there is no need to recreate the task or reconnect the changes."
+}

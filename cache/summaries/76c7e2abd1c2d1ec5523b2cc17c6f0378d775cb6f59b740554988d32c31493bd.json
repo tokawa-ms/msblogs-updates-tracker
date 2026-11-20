@@ -1,0 +1,18 @@
+{
+  "summary": "Fabric Data WarehouseがFabric User Data Functionsとの連携をプレビューで提供し、T-SQLからPythonのカスタム関数を呼び出せるようになりました。外部関数はSELECT、INSERT、UPDATEなどで実行でき、メールやTeams通知、OneLakeや各種データソースへのアクセス、秘密情報の取得などに利用できます。記事では、IPv6アドレスからネットワークプレフィックスを計算して列に保存する例も紹介しています。",
+  "keyPoints": [
+    "Fabric Data WarehouseでT-SQL外部関数を作成し、Fabric User Data Functions項目内のPython関数を参照できます。呼び出し時にはUser Data Functionsランタイムに処理を委譲します。",
+    "用途として、API呼び出しやメール・Teams通知、Excel・XML・PDFの読み取り、OneLakeやFabricデータベース、Azure Cosmos DB、他ワークスペースのウェアハウスへのアクセスが挙げられています。",
+    "Azure Key VaultまたはFabric variable librariesからシークレットや設定値を取得でき、暗号化・復号・マスキング、データの補強や検証、機械学習モデルによるスコアリングにも利用できます。",
+    "IPv6の例では、Pythonのipaddress機能でアドレスとプレフィックス長からCIDR表記のネットワークを求め、T-SQLのUPDATEで各イベントの/48プレフィックスをNetworkPrefix列に保存します。"
+  ],
+  "significance": "T-SQLを中心に作業するデータウェアハウスのチームは、別のアプリケーションやパイプラインを構築せずにPythonの処理をクエリから利用できます。特に、複雑なIPv6プレフィックス計算の結果を保存すれば、後続クエリで計算を繰り返さずネットワーク範囲ごとにイベントを分析できます。この連携はプレビューとして案内されています。",
+  "summaryEn": "Fabric Data Warehouse has introduced a preview integration with Fabric User Data Functions, allowing T-SQL to invoke custom Python functions. External functions can run in statements such as SELECT, INSERT, and UPDATE and support tasks including notifications, data access, and retrieving secrets. The article also demonstrates calculating IPv6 network prefixes and storing them in a column.",
+  "keyPointsEn": [
+    "In Fabric Data Warehouse, T-SQL external functions can reference Python functions in a Fabric User Data Functions item. Calls are delegated to the User Data Functions runtime.",
+    "Use cases include calling APIs and sending email or Teams notifications, reading Excel, XML, and PDF files, and accessing OneLake, Fabric databases, Azure Cosmos DB, and warehouses across workspaces.",
+    "The integration can retrieve secrets and configuration values from Azure Key Vault or Fabric variable libraries, and can support encryption, decryption, masking, data enrichment and validation, and machine-learning scoring.",
+    "In the IPv6 example, Python's ipaddress functionality derives a CIDR network from an address and prefix length, and a T-SQL UPDATE stores each event's /48 prefix in the NetworkPrefix column."
+  ],
+  "significanceEn": "Teams working primarily in T-SQL can use Python logic from warehouse queries without building separate applications or pipelines. In particular, storing the results of complex IPv6 prefix calculations lets downstream queries analyze events by network range without repeating the calculation. The integration is presented as a preview."
+}
