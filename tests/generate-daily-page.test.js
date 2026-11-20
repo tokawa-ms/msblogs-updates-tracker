@@ -279,8 +279,9 @@ describe('article extraction', () => {
 
   it('Tech Community も動的ページではなく Reader 本文を使う', async () => {
     const url = 'https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/example/4558051';
-    assert.equal(await fetchArticleText(url, async (requestUrl) => {
+    assert.equal(await fetchArticleText(url, async (requestUrl, options) => {
       assert.equal(requestUrl, `https://r.jina.ai/${url}`);
+      assert.equal(options.headers['X-Target-Selector'], '[class*="lia-g-message-body"]');
       return { data: `Markdown Content:\n${body}` };
     }), body);
   });

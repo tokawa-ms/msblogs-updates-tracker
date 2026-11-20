@@ -83,6 +83,8 @@ npm run generate -- 2026-09-25 2026-11-20 --missing
 
 参考: [CLI のプログラム実行と認証](https://docs.github.com/en/copilot/how-tos/copilot-cli/automate-copilot-cli/run-cli-programmatically)
 
+Fabric Community と Microsoft Tech Community の記事は動的ページのため、Reader で取得した本文を優先します。Reader には script、style、ナビゲーションなどの除外とキャッシュの更新を指定し、ページ内部のデータや古い取得エラーが本文に混入することを避けます。本文の長さ上限と根拠引用の検証は、この経路でも維持します。
+
 ### 開発用スクリプト
 
 ```bash

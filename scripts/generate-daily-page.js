@@ -220,6 +220,9 @@ async function fetchArticleText(url, get = axios.get, wait = (milliseconds) =>
             'User-Agent': ARTICLE_FETCH_HEADERS['User-Agent'],
             'X-Remove-Selector': 'script, style, nav, footer, aside, noscript',
             'X-No-Cache': 'true',
+            ...(new URL(url).hostname === 'techcommunity.microsoft.com'
+              ? { 'X-Target-Selector': '[class*="lia-g-message-body"]' }
+              : {}),
           },
         });
         return extractReaderArticleText(response.data);
