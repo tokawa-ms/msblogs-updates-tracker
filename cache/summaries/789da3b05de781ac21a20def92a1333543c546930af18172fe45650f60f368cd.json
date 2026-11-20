@@ -1,0 +1,20 @@
+{
+  "summary": "Intelligent Terminal 0.1は、エージェントをネイティブ統合したWindows Terminalのオープンソース実験的フォークとして発表され、Microsoft StoreまたはWinGetから導入できます。シェル出力を共有するドッキング式エージェントペインを備え、コマンド失敗の検出や修正提案、複数エージェントのセッション管理に対応します。GitHub Copilot CLIが既定ですがACP互換エージェントも設定でき、既存のWindows Terminalとは別アプリとして併設されます。",
+  "keyPoints": [
+    "エージェントペインはシェル出力のコンテキストを利用するドッキング式の作業領域です。既定のGitHub Copilot CLIのほか、インストール済みのACP互換エージェントを利用できます。",
+    "コマンド失敗時にはステータスバーに表示し、Ctrl+Alt+.または表示のクリックでエラー情報付きのエージェントペインを開けます。設定により自動検出のみ、または修正の自動提案も選べます。",
+    "エージェント管理パネルでは実行中のエージェントの状態や過去のセッションを確認でき、Ctrl+Shift+/で開けます。",
+    "コマンドパレットでは「?」に続けて依頼を入力すると、アクティブペインのコンテキストを渡してバックグラウンドタブでエージェントを開始できます。Alt+Shift+/で入力モードを開けます。",
+    "設定ではエージェントやモデル、ペイン位置（上・下・左・右）、自動エラー検出を構成できます。Terminal ChatはCanaryで非推奨となり、Intelligent Terminalは既存版と別アプリで提供されます。"
+  ],
+  "significance": "シェルで作業する開発者は、コマンドのエラー情報をエージェントに渡して説明や修正提案を受けたり、複数の実行中セッションを追跡したりできます。既存のWindows Terminalとは別アプリとして導入されるため、メインライン版でエージェント機能を望まない利用者には変更がありません。",
+  "summaryEn": "Intelligent Terminal 0.1 is announced as an open-source experimental fork of Windows Terminal with native agent integration, available from the Microsoft Store or WinGet. It includes a docked agent pane with shell-output context, failed-command detection and fix suggestions, and management for multiple agent sessions. GitHub Copilot CLI is the default, ACP-compatible agents can also be configured, and the app installs alongside existing Windows Terminal.",
+  "keyPointsEn": [
+    "The agent pane is a docked workspace that uses shell-output context. GitHub Copilot CLI is the default, and installed ACP-compatible agents can also be used.",
+    "When a command fails, an indicator appears in the status bar; clicking it or pressing Ctrl+Alt+. opens the agent pane with error context. Settings allow automatic detection alone or automatic fix suggestions as well.",
+    "The agent management panel shows active agents and their status, as well as past sessions; it opens with Ctrl+Shift+/.",
+    "In Command Palette, entering a request after “?” passes context from the active pane and starts the agent in a background tab. Alt+Shift+/ opens prompt mode.",
+    "Settings let users configure the agent and model, pane placement (top, bottom, left, or right), and automatic error detection. Terminal Chat is deprecated in Canary, and Intelligent Terminal is provided as a separate app."
+  ],
+  "significanceEn": "Developers working in the shell can pass command-error context to an agent for explanations or fix suggestions and track multiple active sessions. Because it installs as a separate app from Windows Terminal, users who do not want an agent experience in the mainline terminal are unaffected."
+}

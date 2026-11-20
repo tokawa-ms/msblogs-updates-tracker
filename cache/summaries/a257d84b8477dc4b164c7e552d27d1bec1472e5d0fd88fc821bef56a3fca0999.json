@@ -1,0 +1,20 @@
+{
+  "summary": "PowerToys 0.100では、利用中のアプリに応じたショートカットを表示する新しいShortcut Guideを導入し、Command Paletteに拡張機能ギャラリーとモニターごとに設定できるDockを追加した。Power DisplayやZoomItも改善され、基盤を.NET 10へ更新するとともに、インストーラー容量を15%削減し、自動更新の信頼性も高めている。",
+  "keyPoints": [
+    "Shortcut Guideは画面脇のペインとして表示され、起動時にアクティブなアプリを検出して関連するショートカットを示す。Windowsや有効化済みのPowerToysユーティリティのショートカットも含む。",
+    "Command Paletteの設定からExtension Galleryを利用でき、拡張機能の閲覧、検索、インストール、更新、削除をCommand Palette内で行える。",
+    "Command PaletteのDockはモニターごとに独立して設定でき、表示するモニターを選択できる。コマンドをDockのどこにピン留めするかも選べる。",
+    "Power Displayでは起動やモニター識別の信頼性などが改善され、DDC機能を適切に通知しないディスプレイ向けにMax Compatibility Modeを追加した。スリープ復帰時にはディスプレイを自動再スキャンする。",
+    "ZoomItでは録画中のウェブカメラオーバーレイに対応し、複数のクリップをトランジション付きでつなげられるようになった。"
+  ],
+  "significance": "アプリに応じたショートカットを確認したい利用者は、作業中の画面から離れずに関連情報を得られる。複数モニターを使う人は画面ごとにDockを構成でき、DDC機能の通知に対応しないディスプレイを使う場合もPower Displayの互換性向上が役立つ。",
+  "summaryEn": "PowerToys 0.100 introduces a new Shortcut Guide that shows shortcuts relevant to the active app, and adds an Extension Gallery and per-monitor Dock configurations to Command Palette. It also improves Power Display and ZoomIt, upgrades the foundation to .NET 10, reduces installer size by 15%, and improves auto-update reliability.",
+  "keyPointsEn": [
+    "Shortcut Guide appears in a side pane, detects the active app when invoked, and shows relevant shortcuts, including Windows and enabled PowerToys utility shortcuts.",
+    "The Extension Gallery in Command Palette Settings lets users browse, discover, install, update, and remove extensions without leaving Command Palette.",
+    "Command Palette’s Dock can be configured independently for each monitor; users can choose which monitors show a Dock and where to pin commands.",
+    "Power Display improves startup and monitor identification reliability, adds Max Compatibility Mode for displays that do not properly advertise DDC capabilities, and rescans displays when the PC wakes from sleep.",
+    "ZoomIt adds webcam overlays while recording and lets users join multiple clips with transitions."
+  ],
+  "significanceEn": "Users looking up shortcuts for their current app can see relevant information without leaving their work. People using multiple monitors can configure a Dock for each display, while improved compatibility in Power Display can help users whose displays do not properly advertise DDC capabilities."
+}

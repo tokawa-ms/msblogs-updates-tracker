@@ -1,0 +1,18 @@
+{
+  "summary": "Power BIレポートは、OAPで保護された別ワークスペースのセマンティックモデルにも、ワークスペース管理者が宛先を例外ポリシーで許可すれば接続できるようになりました。既定ではレポートからモデルへの接続は引き続き遮断され、レポートを開く際にレポート側のポリシーが評価されます。例外がなければレポートは開かず、許可されれば既存のレポートバインディングのまま表示できます。ポリシー変更の反映には約15分かかる場合があります。",
+  "keyPoints": [
+    "レポートを開くとPower BIがレポートのワークスペースポリシーを評価します。適用可能な例外があれば接続でき、なければ接続が遮断されてレポートは開きません。",
+    "管理者はセマンティックモデルのワークスペース設定でOutbound networkingを開き、「Add new cloud connection rule」を選択します。Connection Kindを「Power BI Semantic Model」、Workspace exceptionを対象のモデルのワークスペースに設定して保存します。",
+    "レポートごとに例外を設定したり、レポートとモデルを同じワークスペースへ移動したりする必要はありません。レポートとセマンティックモデルの両方でOAPを有効にし、モデルから各データソースへの接続はモデル側のルールで引き続き評価します。",
+    "承認済みのセマンティックモデルの宛先ごとに例外ポリシーを作成します。ポリシー変更の反映には約15分かかる場合があります。"
+  ],
+  "significance": "共有セマンティックモデルを中央チームが管理し、業務チームが別々のワークスペースでレポートを作る構成において、ワークスペース間の所有権の分離を保ちながら、管理者が承認した接続だけを許可できます。レポート側のアウトバウンド境界をなくさずにこの構成を支援する点が重要です。",
+  "summaryEn": "Power BI reports can now connect to semantic models in another OAP-protected workspace when a workspace administrator allows that destination through an exception policy. Connections remain blocked by default, and the report workspace policy is evaluated when a report opens. Without an applicable exception, the report does not open; when allowed, it can render without changing its existing binding. Policy changes may take about 15 minutes to propagate.",
+  "keyPointsEn": [
+    "When a report opens, Power BI evaluates the report workspace policy. An applicable exception allows the connection; otherwise, the connection is blocked and the report does not open.",
+    "In the semantic model workspace settings, an administrator opens Outbound networking and selects Add new cloud connection rule. They set Connection Kind to Power BI Semantic Model, choose the model's workspace under Workspace exception, and save the rule.",
+    "An exception does not need to be configured on each report, and the report and model do not need to be moved into the same workspace. OAP must be enabled for both workspaces, and connections from the semantic model to data sources continue to be evaluated under the model workspace's rules.",
+    "Create an exception policy for each approved semantic model destination. Policy changes may take about 15 minutes to propagate."
+  ],
+  "significanceEn": "For architectures where a central team manages shared semantic models and business teams create reports in separate workspaces, this allows approved connections while preserving the separation of ownership. It supports that setup without removing the outbound boundary from the report workspace."
+}

@@ -1,0 +1,18 @@
+{
+  "summary": "Windows 11の新しい「Run」ダイアログは、Fluent Designに沿った外観とダークモードに対応し、ユーザーディレクトリへ移動する「~\\」も追加されました。Microsoftの測定では表示までの中央値は94ミリ秒で、従来版の103ミリ秒を下回ります。現在はWindows Insider Experimental Channel向けに、設定から有効化するオプトイン機能として段階的に展開中です。",
+  "keyPoints": [
+    "新しいダイアログはFluent DesignとWindows 11に合わせた外観で、ダークモードに対応します。「~\\」を入力するとユーザーディレクトリに移動でき、そこからコマンドラインのように移動を続けられます。",
+    "Microsoftによると、新版の表示時間中央値は94ミリ秒で、既存版の103ミリ秒から短縮しました。記事では、いずれも測定値として紹介されています。",
+    "提供は現時点でWindows Insider Experimental Channelのビルド向けで、オプトイン方式です。有効化には「Settings → System → Advanced」を開き、画面上部の「Run Dialog」をオンにします。",
+    "実装はC#/WinUI 3アプリで、dotnet AOTでコンパイルされています。PowerToysのCommand Palette（CmdPal）とコードを共有し、Runコマンドプロバイダーは新版と同じコードだと説明されています。"
+  ],
+  "significance": "Win+Rからパスやツールを素早く開く開発者や上級ユーザーにとって、従来の使い方を保ちながら新しい外観やホームディレクトリへのショートカットを使える変更です。一方、現状はInsider向けのオプトイン展開なので、利用できる範囲は限定されています。",
+  "summaryEn": "The new Windows 11 Run dialog adds a Fluent Design interface with dark mode and a “~\\” shortcut to the user directory. Microsoft reports a 94 ms median time-to-show, compared with 103 ms for the previous dialog. It is currently rolling out gradually as an opt-in feature in Windows Insider builds.",
+  "keyPointsEn": [
+    "The new dialog has an appearance aligned with Fluent Design and Windows 11, supports dark mode, and lets users type “~\\” to reach and navigate from their user directory.",
+    "Microsoft reports a 94 ms median time-to-show for the new version, down from 103 ms for the existing dialog; the article presents both as measured figures.",
+    "The feature is currently opt-in for Windows Insider Experimental Channel builds. To enable it, open Settings → System → Advanced and turn on “Run Dialog” at the top of the screen.",
+    "The implementation is a C#/WinUI 3 application compiled with dotnet AOT. It shares code with PowerToys Command Palette (CmdPal), including the Run command provider."
+  ],
+  "significanceEn": "For developers and advanced users who use Win+R to quickly open paths and tools, the update preserves the familiar workflow while adding a refreshed interface and a shortcut to the home directory. Availability is currently limited to an opt-in rollout for Insiders."
+}
