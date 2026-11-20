@@ -1,0 +1,18 @@
+{
+  "summary": "WSL containersがWSLの最新プレリリースでパブリックプレビューとして利用可能になり、Linuxコンテナーを扱うCLIと、Windowsアプリから利用するAPIが追加されました。Microsoftは2026年秋の一般提供を目指しており、現時点ではプレリリース版での提供です。",
+  "keyPoints": [
+    "WSL更新後にwslc.exeが利用でき、実行・デバッグ・テストなどのコンテナー開発に使えます。container.exeはwslc.exeのエイリアスです。",
+    "Windowsアプリ向けAPIはNuGetで提供され、C、C++、C#をサポートします。MSBuildとCMakeにも統合され、アプリのビルド工程にコンテナーのビルドやデプロイを組み込めます。",
+    "組織ではGPOとADMXポリシーを使ってWSLディストリビューションやコンテナーの利用、取得可能なレジストリを制御できます。Intuneダッシュボードの公式サポートは数週間以内の予定です。MDEによるコンテナーイベント監視はパブリックプレビューとして提供されています。",
+    "WSL containerではvirtiofsが既定のファイルシステムとなり、記事はWindowsファイルアクセスが2倍速くなるとしています。既定ネットワークモードのconsommeは実験的で、これらの変更は当面WSL containerでのみ有効です。"
+  ],
+  "significance": "Windows上でLinuxコンテナーを開発・実行したい開発者は、組み込みCLIやWindowsアプリ向けAPIを利用できます。組織の管理者には、利用可能なコンテナーイメージの制御やセキュリティイベント監視の選択肢が加わりますが、機能の一部はプレリリースまたはプレビュー段階です。",
+  "summaryEn": "WSL containers is now available as a public preview in the latest WSL pre-release, adding a CLI for Linux containers and an API for Windows applications to use them. Microsoft aims for general availability in fall 2026; for now, the feature is only in the pre-release.",
+  "keyPointsEn": [
+    "After updating WSL, users can use wslc.exe for container development tasks such as running, debugging, and testing. container.exe is an alias for wslc.exe.",
+    "The API for Windows applications is distributed through NuGet and supports C, C++, and C#. It integrates with MSBuild and CMake to include container build and deployment steps in an application's build process.",
+    "Organizations can use GPO and ADMX policies to control WSL distributions, container use, and which registries may be used. Official support in Intune dashboards is planned within the next few weeks. MDE monitoring of container events is available as a public preview.",
+    "In WSL container, virtiofs is the default filesystem, which the article says makes Windows file access twice as fast. The default consomme networking mode is experimental, and these changes are enabled only in WSL container for now."
+  ],
+  "significanceEn": "Developers who want to build and run Linux containers on Windows can use the built-in CLI or the API for Windows applications. Organization administrators gain options to control which container images can be used and to monitor security events, though some capabilities remain in pre-release or preview."
+}

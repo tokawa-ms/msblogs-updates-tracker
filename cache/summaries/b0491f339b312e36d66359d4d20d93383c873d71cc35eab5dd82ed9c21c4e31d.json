@@ -1,0 +1,18 @@
+{
+  "summary": "AzureはMicrosoft Ignite 2026で、AI基盤からアプリ、業務コンテキストまでを強化する新機能を発表しました。Azure Cobalt 200仮想マシン、Azure HorizonDB、Fabric appsなどが一般提供となり、Fabric HorizonDBはパブリックプレビューで提供されます。エージェントによる近代化・運用機能や、複数のアプリ・エージェントで業務知識を活用するMicrosoft IQも紹介されました。",
+  "keyPoints": [
+    "Azure Cobalt 200は一般提供を開始しました。クラウドネイティブやエージェント型AIなどのワークロード向けで、MicrosoftによるとCobalt 100よりCPU性能が最大50%向上します。",
+    "Azure HorizonDBはミッションクリティカル用途向けのPostgreSQL互換データベースとして一般提供になりました。Fabric HorizonDBはFabricネイティブのサーバーレスPostgreSQLとしてパブリックプレビューで、FabricのDatabase Hubも一般提供です。",
+    "Fabric appsは信頼できるFabricデータへのアクセス、組み込みセキュリティ、ガバナンスを備えて一般提供になりました。Microsoft Copilotとの統合はFrontierのパブリックプレビューで、Fabricには容量ベースに加えて使用量ベースのCopilot Credits課金が導入されます。",
+    "Azure Copilotのデプロイエージェントは一般提供となり、自然言語の要件からクラウドワークロードのデプロイを支援します。Azure Workload CenterによるOracleおよびSAPへのエージェント運用の拡張は限定プレビューです。"
+  ],
+  "significance": "AIエージェントを業務に展開する組織にとって、基盤の制御性を保ちながら、既存システムの近代化やデータに基づくアプリ作成を進める選択肢が広がります。Microsoft IQは業務コンテキストを一元的に管理して複数のエージェントやアプリで再利用する構想であり、記事は権限とガバナンスも引き継がれると説明しています。",
+  "summaryEn": "At Microsoft Ignite 2026, Azure announced capabilities spanning AI infrastructure, applications, and business context. Azure Cobalt 200 VMs, Azure HorizonDB, and Fabric apps are generally available, while Fabric HorizonDB is in public preview. Microsoft also introduced agent-led modernization and operations capabilities and Microsoft IQ for using business knowledge across apps and agents.",
+  "keyPointsEn": [
+    "Azure Cobalt 200 VMs are generally available for cloud-native and agentic AI workloads. Microsoft says they deliver up to 50% better CPU performance than Cobalt 100.",
+    "Azure HorizonDB is generally available as a PostgreSQL-compatible database for mission-critical workloads. Fabric HorizonDB is a serverless, Fabric-native PostgreSQL offering in public preview, and Database Hub in Fabric is generally available.",
+    "Fabric apps are generally available with access to trusted Fabric data, built-in security, and governance. Microsoft Copilot integration is in Frontier public preview, and Copilot Credits adds usage-based billing alongside capacity-based options for Fabric.",
+    "The Azure Copilot deployment agent is generally available to help deploy cloud workloads from natural-language requirements. Extending agentic operations to Oracle and SAP through Azure Workload Center is in limited preview."
+  ],
+  "significanceEn": "For organizations putting AI agents to work, these capabilities broaden options for retaining control of infrastructure while modernizing existing systems and creating data-backed apps. Microsoft IQ is intended to manage business context centrally for reuse across agents and apps; the article says permissions and governance carry over as well."
+}

@@ -1,0 +1,20 @@
+{
+  "summary": "VS Codeは、複数のAIエージェントを異なる環境やアプリで動かし、作業を一元管理する開発環境へと進化しています。Agent Host Protocol（AHP）1.0により、クラウドのセッションはPCを閉じても継続し、VS CodeやGitHub Copilotアプリなどから同じ作業を引き継げます。Agentsウィンドウでは並行作業や変更の確認ができ、共有ブラウザーなどエージェントと協働する機能も加わっています。",
+  "keyPoints": [
+    "AHPはエージェント機能を独立プロセスで実行し、複数のハーネス、モデル、ファイル、ターミナルを扱います。オープンなプロトコルで、対応クライアントから同じライブセッションに接続できます。",
+    "新しいCopilotハーネスはエディターとAgentsウィンドウの新規セッションで既定となり、カスタマイズをCopilotの各体験で再利用できます。ClaudeとCodexのハーネスも利用でき、モデル選択では推論の強さやコンテキストサイズを指定できます。",
+    "Agentsウィンドウはワークスペースや環境をまたぐセッションの並行実行、進捗確認、変更レビューに対応します。自動化はローカルまたはクラウドで実行でき、worktreeでエージェント間の変更を分離できます。リモートエージェントは、マシンとホストが動作している限り切断後も作業を続けます。",
+    "Copilotコネクターはプレビューで、Slack、Notion、Microsoft Learnなどの情報をセッションに取り込めます。全Copilotプランで利用可能ですが、BusinessおよびEnterpriseでは管理者がエディターのプレビュー機能を許可する必要があります。",
+    "統合ブラウザーでは開発者とエージェントがページを共有し、Playwrightによるワークフロー検証などを行えます。Canvasesはプレビュー、コンピューター操作は実験的機能で、後者はmacOSとWindowsが対象です。Next edit suggestionsはCopilot Freeユーザーにも提供されています。"
+  ],
+  "significance": "複数のエージェントに作業を分担させる開発者は、作業中も判断や変更レビューを自分で行いながら、セッションを別のアプリや環境から引き継げます。組織では管理ポリシーやサンドボックスでエージェントのアクセスを制限でき、コネクター利用にはプラン別の管理者設定条件があります。",
+  "summaryEn": "VS Code is evolving into a development environment for running AI agents across different apps and environments and managing their work in one place. With Agent Host Protocol (AHP) 1.0, cloud sessions continue after a laptop is closed and can be resumed from VS Code, the GitHub Copilot app, and other clients. The Agents window supports parallel work and change review, alongside collaborative features such as a shared browser.",
+  "keyPointsEn": [
+    "AHP runs agent functionality in an independent process and manages multiple harnesses, models, files, and terminals. Its open protocol lets compatible clients connect to the same live sessions.",
+    "The new Copilot harness is the default for new sessions in the editor and Agents window, and customizations can be reused across Copilot experiences. Claude and Codex harnesses are also supported, and model selection includes options for reasoning effort and context size.",
+    "The Agents window supports running sessions in parallel across workspaces and environments, tracking progress, and reviewing changes. Automations can run locally or in the cloud, worktrees isolate agent changes, and remote agents continue after disconnection as long as the machine and host remain running.",
+    "Copilot connectors are in preview and bring information from services such as Slack, Notion, and Microsoft Learn into sessions. They are available on all Copilot plans, but Business and Enterprise administrators must allow editor preview features.",
+    "The integrated browser lets developers and agents share and interact with a page, including testing workflows with Playwright. Canvases are in preview, computer use is experimental and targets macOS and Windows, and Next edit suggestions are available to Copilot Free users."
+  ],
+  "significanceEn": "Developers who delegate work to multiple agents can continue making decisions and reviewing changes while resuming sessions from other apps or environments. Organizations can restrict agent access through policies and sandboxing, and connector use has an administrator-approval condition for certain plans."
+}

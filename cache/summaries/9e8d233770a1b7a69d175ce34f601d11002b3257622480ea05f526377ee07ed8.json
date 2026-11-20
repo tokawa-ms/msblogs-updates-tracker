@@ -1,0 +1,20 @@
+{
+  "summary": "Arnisは、OpenStreetMapなどの実世界データをMinecraftの探索可能な世界に変換するオープンソースプロジェクトで、Louis Erbkammが2022年に始めた。GitHubからのダウンロードは約90万回に達し、約70人が貢献する一方、唯一のメンテナーであるErbkammはCopilotを使い、課題や不具合の把握、修正、回帰テストの検討を支援させている。近年は月や火星も対象に加わり、学校で地域の公園を題材にした授業にも使われている。",
+  "keyPoints": [
+    "選択した地域についてOpenStreetMapから地図上の要素を取得し、位置と種類に応じてMinecraft内に配置する。地図に登録されていない要素は配置できず、詳細な建造物には3Dモデルをブロックへ変換する方法も使う。",
+    "プロジェクトはPythonで始まり、Rustへの移植前にはGitHub上で意見を募った。貢献者は約20言語への翻訳や独自機能の開発にも参加している。",
+    "単独メンテナーのErbkammはCopilotで課題や不具合の概要把握、原因追跡、修正を行い、大きなプルリクエストでは性能確認や回帰テストの観点出しにサブエージェントも使う。",
+    "学校では、同じ地域の生成ワールドを使い、生徒が公園や遊び場を改善して成果を比べる授業が行われている。",
+    "最近のリリースでは地球以外に月と火星が加わった。Erbkammは、使いやすさを保ちながら、より短時間で現実に近い詳細な世界を生成し、学校での利用も広げたいとしている。"
+  ],
+  "significance": "Arnisは、地図データをMinecraftで探索したり、授業で地域の公園を共同で作り変えたりする手段を生徒や利用者に提供する。一方、再現できる要素は地図への登録状況に左右され、唯一のメンテナーにはプルリクエストが積み上がる。Copilotによる課題整理や回帰テストの支援は、メンテナーが定型作業を任せつつ開発に取り組むための使い方として紹介されている。",
+  "summaryEn": "Arnis is an open-source project that turns real-world data, including OpenStreetMap data, into explorable Minecraft worlds; Louis Erbkamm started it in 2022. It has reached close to 900,000 downloads from GitHub and about 70 contributors. As its sole maintainer, Erbkamm uses Copilot to help understand issues and bugs, make fixes, and consider regression tests. Recent releases added the Moon and Mars, and the project is also used in school lessons about local parks.",
+  "keyPointsEn": [
+    "For a selected area, Arnis retrieves mapped elements from OpenStreetMap and places them in Minecraft based on their location and type. Unmapped elements cannot be placed; 3D models can be converted into blocks for detailed structures.",
+    "The project began in Python, and Louis sought input on GitHub before porting it to Rust. Contributors have also translated it into about 20 languages and built major features.",
+    "As the sole maintainer, Erbkamm uses Copilot to review issues and bugs, trace causes, and make fixes. For large pull requests, he also uses sub-agents to review performance and suggest regression test cases.",
+    "In schools, students have used the same generated area to improve a park or playground and compare their results.",
+    "Recent releases added the Moon and Mars. Erbkamm wants to keep Arnis easy to use while making worlds more detailed and realistic in less time, and hopes to see it used in more schools."
+  ],
+  "significanceEn": "Arnis gives users and students a way to explore map data in Minecraft and collaboratively redesign local parks in lessons. At the same time, what can be represented depends on what is mapped, and pull requests accumulate for the sole maintainer. The article presents Copilot's help with issue triage and regression testing as a way for the maintainer to delegate routine work while focusing on development."
+}

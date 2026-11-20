@@ -1,0 +1,20 @@
+{
+  "summary": "Oracle AI Database@Azureに、Oracleの業務データとMicrosoft Work IQが把握する会議・メール・文書・Teamsの文脈を組み合わせ、Excel、Teams、Microsoft Copilotから使えるエージェント型AI連携が発表された。運用向けAzure Workload Center for Oracleは限定プレビューで、Excel向けプラグインは本日提供開始。開発者はMicrosoft FoundryからMCPサーバーとA2Aプロトコルを使い、Oracleデータベースにつながるエージェントを構築できる。",
+  "keyPoints": [
+    "Azure Workload Center for Oracleは、Workload Virtual Instanceでワークロードの構成、リソース、依存関係をまとめ、Azure Monitor Health ModelsやCopilotのOracleエージェントと連携して、アプリケーション、データベース、インフラ各層の監視情報をつなぐ限定プレビュー。",
+    "Excel向けOracle AI Databaseプラグインは本日利用可能。ExcelからOracle Databaseに直接接続して信頼できるデータをシートに取り込み、表計算ソフトを離れずにCopilotで分析できる。",
+    "エージェントのデータアクセスにはMicrosoft Entra認証とOracle Deep Data Securityを利用でき、既存のユーザー権限の範囲に制限する。データベース呼び出しは管理されたMCPサーバーを通り、操作は監査可能。",
+    "開発者はMicrosoft Foundryで、管理されたMCPサーバーとA2Aプロトコルを使ってOracle AI Database接続エージェントを構築できる。MCP経由のアクセスは承認済みのSQL・PL/SQL操作、ツール、定義済みレポートに限られ、アプリケーションロールで利用可能なツールを決める。",
+    "Oracle AI Database@Azureは33のAzureリージョンに展開。Oracle AI World 2026では、米国政府・公共部門向けFedRAMP Class D認証を近日取得予定と発表し、Proximity Placement Groups利用時は未整合の配置と比べ、VMからExadataへのネットワーク往復遅延が約50%低くなるとしている。"
+  ],
+  "significance": "業務ユーザーは、技術担当者に抽出や整形を頼まずに、Excel上でOracleの信頼できるデータを分析できる。IT運用担当者には複数層をまたぐ監視と監査可能なエージェント操作が、開発者には権限を制御しながらOracleデータを使うエージェント構築手段が示されている。",
+  "summaryEn": "Oracle AI Database@Azure is gaining announced agentic AI integrations that combine Oracle business data with Microsoft Work IQ context from meetings, email, documents, and Teams, accessible through Excel, Teams, and Microsoft Copilot. Azure Workload Center for Oracle is in limited preview, while the Excel plug-in is available today. Developers can build agents connected to Oracle databases using Microsoft Foundry with MCP servers and the A2A protocol.",
+  "keyPointsEn": [
+    "Azure Workload Center for Oracle is in limited preview. Its Workload Virtual Instance brings together workload architecture, resources, and dependencies, and integrations with Azure Monitor Health Models and the Copilot Oracle agent connect monitoring signals across application, database, and infrastructure layers.",
+    "The Oracle AI Database plug-in for Excel is available today. Users can connect directly to Oracle Database, bring trusted data into a worksheet, and analyze it with Copilot without leaving Excel.",
+    "Agents can use Microsoft Entra authentication and Oracle Deep Data Security to stay within users’ existing permissions. Database calls go through a managed MCP server, and activity is auditable.",
+    "Developers can build agents connected to Oracle AI Database in Microsoft Foundry using managed MCP servers and the A2A protocol. MCP access is governed by approved SQL and PL/SQL operations, tools, and predefined reports, with application roles determining which tools are available.",
+    "Oracle AI Database@Azure spans 33 Azure regions. At Oracle AI World 2026, Oracle announced that FedRAMP Class D certification for US government and public-sector workloads is coming soon, and said Proximity Placement Groups result in approximately 50% lower VM-to-Exadata network round-trip latency than deployments without PPG alignment."
+  ],
+  "significanceEn": "Business users can analyze trusted Oracle data in Excel without asking technical staff to extract and format it. IT operations staff get monitoring across multiple layers and auditable agent activity, while developers gain a way to build agents using Oracle data with controlled permissions."
+}

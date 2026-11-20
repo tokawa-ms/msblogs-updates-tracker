@@ -1,0 +1,18 @@
+{
+  "summary": "GitHub Copilotを使う3人のJava Championが、機能開発、教材の移行、障害調査などでの活用例と、生成結果を検証して人が責任を持つ実践を紹介した。数週間かかる想定だった開発を2日で実装した例や、約900枚のスライド移行を8〜10時間で終えた例、Pi4Jの不具合を調査・修正した例が語られている。",
+  "keyPoints": [
+    "Vlad Mihalcea氏は、Hypersistence Optimizerのイベント履歴を表示するアプリをCopilotで作成し、数週間かかると考えていた作業を2日で実装した。アプリは同製品の次のバージョンで提供予定だという。",
+    "Patrick Baumgartner氏は、15件のプレゼンテーションにまたがる約900枚のスライドをReveal.jsからMarpへ移行し、約8〜10時間で完了した。スクリーンショットやPDFの比較、アニメーションの手動確認を検証に用いた。",
+    "Baumgartner氏は、複雑な作業では実行前に要件を明確にし、計画とタスク別の検証条件を定めることを重視する。学んだことは再利用可能なAgent Skillsに反映し、CheckstyleやPMDなどの決定的なツールも品質確認に組み込んでいる。",
+    "Frank Delporte氏は、Pi4Jで5つ目の入力ボタンが動かない問題をCopilot coding agentに調査させ、ネイティブ呼び出しで仮想スレッドがキャリアスレッドに固定されることが原因と特定した。修正提案は人がレビューし、メンテナーが承認してから取り込む運用を説明した。"
+  ],
+  "significance": "記事が示すのは、Copilotが開発や調査の実行を速めても、信頼できる成果には適切な文脈、テストや比較による検証、コードの保守性を確認する人の判断が欠かせないという点だ。特に既存プロジェクトの開発者やメンテナーにとって、作業を委ねながらも内容とリリースの責任を手放さない進め方が重要だと、3人の経験が示している。",
+  "summaryEn": "Three Java Champions describe using GitHub Copilot for feature development, slide migration, and bug investigation while validating generated work and retaining human responsibility. Examples include completing a project estimated to take weeks in two days, migrating about 900 slides in eight to ten hours, and investigating and fixing a Pi4J bug.",
+  "keyPointsEn": [
+    "Vlad Mihalcea used Copilot to build an event-history app for Hypersistence Optimizer, completing work he expected to take weeks in two days. The app is planned for the product’s next version.",
+    "Patrick Baumgartner migrated around 900 slides across 15 presentations from Reveal.js to Marp in roughly eight to ten hours. He verified the work using screenshot and PDF comparisons and manual animation checks.",
+    "Baumgartner emphasizes clarifying requirements before execution, defining plans and task-specific verification gates, recording lessons in reusable Agent Skills, and using deterministic tools such as Checkstyle and PMD for quality checks.",
+    "Frank Delporte used the Copilot coding agent to investigate why a fifth input button did not work in Pi4J. The investigation identified virtual-thread pinning during native calls as the cause; maintainers reviewed and approved the pull requests before merging."
+  ],
+  "significanceEn": "The article shows that Copilot can speed up development and investigation, but reliable results still depend on context, verification through tests or comparisons, and human judgment about maintainability. For developers and maintainers of existing projects, the three accounts emphasize delegating work without giving up responsibility for the content or what ships."
+}

@@ -1,0 +1,20 @@
+{
+  "summary": "MicrosoftはDynamics 365とCopilot／Teamsの連携を拡張し、営業・サービス・マーケティング向けの30種類の事前構築スキルや、Teams上で顧客情報を共有するCRM機能を発表した。自律型のService AgentとSales Development Agentによる顧客対応・見込み顧客開拓、AIを使った旧CRM環境の分析と移行計画を支援するDynamics 365 Activateも紹介した。提供状況は機能ごとに異なり、一般提供やパブリック／プライベートプレビューなどに分かれる。",
+  "keyPoints": [
+    "Dynamics 365 Sales、Customer Service、Customer Insights向けに30種類の事前構築スキルを追加。Coworkでは一般提供、Autopilotではプライベートプレビュー、CodeではFrontier Programを通じて利用でき、営業案件のリスク把握や顧客対応案の作成などに使える。",
+    "Teamsのチャネルを顧客アカウントに接続し、営業・サービス双方の顧客情報や会議前の要約、ケース通知、アカウントの更新情報を会話内で確認できるCRM機能は、パブリックプレビューで提供中。",
+    "Service AgentはOutlook、Teams、Word、Excel、PowerPointで従業員が顧客を支援できるようにし、問い合わせへの返信案作成やCRMケースの自動作成、必要に応じた専門家へのエスカレーションを行う。Microsoft 365での早期提供は一部のFrontier顧客向けプライベートプレビュー。",
+    "Sales Development Agentは見込み顧客の調査、個別化した連絡、フォローアップ、案件の選別を自律的に支援し、パブリックプレビューで提供中。2026年12月1日からCopilotクレジットを消費する。",
+    "Dynamics 365 Activateはパブリックプレビューで、顧客の許可を得て既存CRM環境をAIで分析し、Dynamics 365への移行に向けた明確でリスクを抑えた計画を提案する。"
+  ],
+  "significance": "営業・サービス担当者は、CRMを別の行き先として開かずにCopilotやTeamsで顧客情報や対応手段にアクセスでき、組織内の他の従業員もService Agentを通じて顧客対応に加われる。見込み顧客開拓や定型的な対応をエージェントに任せる構想と、旧CRMの移行計画を支援する機能が示されているため、顧客対応の担い手やCRM近代化を検討する組織に関係する発表だ。",
+  "summaryEn": "Microsoft announced expanded Dynamics 365 integration with Copilot and Teams, including 30 prebuilt skills for sales, service, and marketing and a CRM experience that brings customer context into Teams. It also introduced autonomous customer-service and prospecting capabilities through Service Agent and Sales Development Agent, and described Dynamics 365 Activate for analyzing legacy CRM environments and planning migration with AI. Availability varies by feature, including general availability and public or private previews.",
+  "keyPointsEn": [
+    "Thirty prebuilt skills are being added for Dynamics 365 Sales, Customer Service, and Customer Insights. They are generally available in Cowork, in private preview in Autopilot, and available through the Frontier Program in Code; examples include identifying at-risk deals and drafting customer-service responses.",
+    "The Teams CRM feature lets organizations connect a channel to a customer account and see sales and service context, meeting briefs, case notifications, and account updates in conversations. It is in public preview.",
+    "Service Agent enables employees to help customers in Outlook, Teams, Word, Excel, and PowerPoint, including drafting replies, creating CRM cases, and escalating to specialists when needed. Its early Microsoft 365 experience is in private preview for a select group of Frontier customers.",
+    "Sales Development Agent supports prospect research, personalized outreach, follow-ups, and qualification of opportunities. It is in public preview and will begin consuming Copilot credits on December 1, 2026.",
+    "Dynamics 365 Activate is in public preview and uses AI, with customer authorization, to analyze an existing CRM environment and recommend a clearer, lower-risk migration path to Dynamics 365."
+  ],
+  "significanceEn": "Sales and service representatives can access customer context and actions in Copilot or Teams rather than treating CRM as a separate destination, while other employees can participate in customer support through Service Agent. The announcements also describe agents handling prospecting and routine work, plus a tool to help organizations plan modernization of legacy CRM systems, making them relevant to customer-facing teams and organizations considering CRM migration."
+}

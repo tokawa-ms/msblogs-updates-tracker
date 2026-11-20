@@ -1,0 +1,20 @@
+{
+  "summary": "VS Codeでは、Copilot SDKを基盤とするCopilot harnessが新しいエージェントセッションの既定となり、従来のLocal harnessは非推奨化された。Local harnessは組織による制限がなければ移行期間中も利用でき、2027年2月に削除予定。Business／EnterpriseのStable利用者比較では、Copilot harness既定群はアクティブデバイス当たりのトークン使用量が14.2%少なく、推定処理コストが9.6%低かった。記事は共有ランタイムの機能・評価結果と、カスタマイズ移行時の確認事項も説明している。",
+  "keyPoints": [
+    "Local harnessは非推奨となり、3カ月の移行期間を経て2027年2月に削除予定。ただし、組織が使用を制限している場合は利用できない。",
+    "Business／EnterpriseのStable利用者を対象とした10月の比較では、既定をCopilot harnessにしたグループで、アクティブデバイス当たりのトークンが14.2%、モデルリクエストが7.7%、推定処理コストが9.6%減少し、リクエスト当たりの推定コストも2.3%低かった。",
+    "VS Code内で7モデルを使った112件の長時間コーディングタスクを比較し、12,845回の比較を実施。Copilot harnessはLocal harnessよりエラー率が低く（1.9%対5.3%）、停止・クラッシュ率も低く（0.2%対3.1%）、タスク完了率は高かった（61.2%対54.8%）。",
+    "共有ランタイムにより、Copilot Fusionの複数モデル利用、実行時に適用される企業向け権限・サンドボックスポリシー、VS Codeを起動したままプロジェクトウィンドウを閉じても継続するAgent Hostセッションに対応する。",
+    "カスタマイズは自動移行されず、プロンプトファイルのスキル化など確認が必要。Askは1.142、Keep and Undoは1.144で提供され、SSH・WSL・Dev Containers向けのリモートBYOK対応はLocal harnessの廃止前を目指して作業中。"
+  ],
+  "significance": "VS Codeでエージェントを使う開発者には、共有ランタイムによる複数のCopilotクライアント間の一貫性と、記事の評価で報告された効率・信頼性の改善が関係する。一方、Local harnessから切り替える利用者はカスタマイズの移行要否を確認する必要があり、権限やサンドボックスを管理する組織では管理者による設定・連携の調整が影響する。",
+  "summaryEn": "In VS Code, the Copilot SDK-based Copilot harness is now the default for new agent sessions, and the Local harness has been deprecated. The Local harness remains available during a transition period unless restricted by an organization, and is scheduled for removal in February 2027. In a comparison of Business and Enterprise users on Stable, the group defaulting to the Copilot harness used 14.2% fewer tokens per active device and had 9.6% lower estimated processing costs. The article also covers shared-runtime capabilities and evaluation results, along with customization migration considerations.",
+  "keyPointsEn": [
+    "The Local harness is deprecated and is scheduled for removal in February 2027 after a three-month transition period, though organizations may restrict its use.",
+    "In an October comparison of Business and Enterprise users on Stable, the group defaulting to the Copilot harness had 14.2% fewer tokens, 7.7% fewer model requests, and 9.6% lower estimated processing costs per active device, plus 2.3% lower estimated cost per request.",
+    "The VS Code comparison covered 112 long coding tasks across seven models, with 12,845 comparisons. The Copilot harness had a lower error rate than the Local harness (1.9% vs. 5.3%), fewer hangs or crashes (0.2% vs. 3.1%), and higher task completion (61.2% vs. 54.8%).",
+    "The shared runtime supports Copilot Fusion for multi-model work, runtime-enforced enterprise permission and sandbox policies, and Agent Host sessions that continue after a project window closes while VS Code remains running.",
+    "Customizations do not migrate automatically, and may need review, such as converting recurring prompt files to skills. Ask shipped in version 1.142 and Keep and Undo in 1.144; remote BYOK support for SSH, WSL, and Dev Containers is in progress, targeted before the Local harness is fully retired."
+  ],
+  "significanceEn": "For developers using agents in VS Code, the shared runtime brings consistency across Copilot clients and the efficiency and reliability improvements reported in the article's evaluations. Users switching from the Local harness need to check whether their customizations require migration, while organizations managing permissions or sandboxing may need administrators to coordinate configuration and integrations."
+}

@@ -1,0 +1,20 @@
+{
+  "summary": "Microsoft Sovereign Cloudは、公開クラウド、顧客運用環境、パートナー環境をまたぎ、ワークロードごとに管理・制御の度合いを選べる機能を拡充する。Sovereign Control PanelはMicrosoft Igniteでパブリックプレビューに入り、オンプレミスなど顧客が運用する環境では、データ、開発、AI関連のサービスも追加される。外部キー管理や一部のローカル機能は一般提供済みまたは一般提供予定である一方、複数の機能はプレビュー段階にある。",
+  "keyPoints": [
+    "Sovereign Control PanelはMicrosoft Igniteでパブリックプレビューに入り、Azureポータルで主権状況や制御策、リスク、ワークロード依存関係を把握する機能を提供する。外部キー管理は一般提供となり、顧客所有のハードウェアをオンプレミスまたは信頼できる第三者経由で運用して、ルート暗号化キーを保持できる。",
+    "EUおよびEFTAの顧客向けに、対象となる本番システムへのMicrosoftエンジニアのリモートアクセスを、信頼できるEUパートナーが監督するData Guardianを展開中。アクセスと実行操作の改ざん検知可能な記録を作るProduction Touch Ledgerも、同地域で段階的に提供を開始した。",
+    "事業継続ガイダンスとアーキテクチャパターンを公開し、接続環境から切断環境へワークロードを移行する機能はパブリックプレビューに入る。Sovereign Private CloudはAzure Localを基盤に、接続・切断両方の運用を支援する。",
+    "Azure Localでは、SQL Serverが接続・切断環境で一般提供済み。DocumentDBとBlob Storageはパブリックプレビューに入り、GitHub Enterprise LocalはMicrosoft Igniteで一般提供予定。Foundry LocalもIgniteで接続・切断運用向けに一般提供となる予定で、ローカルモデルや企業データを使う推論機能を追加する。",
+    "Azure Localにはマルチテナント対応が追加され、共有インフラ上で複数テナントのリソース、ガバナンス、管理を分離できる。パートナーエコシステムでは、独立運営のクラウドや専門パートナー、地域の知識を組み合わせる選択肢を広げる。"
+  ],
+  "significance": "規制産業、公共機関、重要インフラなど、データの所在だけでなくアクセス権限、運用の継続性、技術依存関係にも制約がある組織にとって、ワークロードごとにクラウドや顧客運用環境、パートナー環境を使い分ける選択肢が広がる。機能ごとの提供段階は異なるため、現時点で利用可能な制御とプレビュー機能を区別して捉える必要がある。",
+  "summaryEn": "Microsoft Sovereign Cloud is expanding its workload-based choices across public cloud, customer-operated environments, and partners. Sovereign Control Panel enters public preview at Microsoft Ignite, while additional data, development, and AI services are coming to customer-operated environments. External key management and some local capabilities are generally available or scheduled for general availability, while several others remain in preview.",
+  "keyPointsEn": [
+    "Sovereign Control Panel enters public preview at Microsoft Ignite, offering an Azure portal view of sovereignty posture, controls, risks, and workload dependencies. External key management is generally available, allowing customers to keep the root encryption key in hardware they own and operate on-premises or through a trusted third party.",
+    "For customers in the EU and EFTA, Data Guardian is rolling out to provide oversight by a trusted EU partner for qualifying Microsoft engineer remote access to in-scope production systems. Production Touch Ledger has also launched in phased rollout in those regions, creating tamper-evident records of access and actions.",
+    "Microsoft is publishing business continuity guidance and architecture patterns, and the ability to transition workloads from connected to disconnected operations is entering public preview. Sovereign Private Cloud, built on Azure Local, supports both connected and disconnected operations.",
+    "SQL Server on Azure Local is already generally available for connected and disconnected deployments. DocumentDB and Blob Storage are entering public preview, while GitHub Enterprise Local is scheduled to become generally available at Microsoft Ignite. Foundry Local is also scheduled for general availability at Ignite for connected and disconnected Azure Local operations, with local models and enterprise-data inference capabilities.",
+    "Azure Local will support multitenancy, separating resources, governance, and management across tenants sharing infrastructure. The partner ecosystem broadens options to combine independently operated clouds, specialist partners, and local expertise."
+  ],
+  "significanceEn": "For organizations such as regulated industries, public institutions, and critical infrastructure operators, constraints may involve not only data location but also access, operational continuity, and technology dependencies. The announcement broadens options to choose among cloud, customer-operated, and partner environments for different workloads. Availability differs by capability, so generally available and preview features are distinct."
+}

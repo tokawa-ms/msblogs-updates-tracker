@@ -1,0 +1,20 @@
+{
+  "summary": "PowerToys 0.102では、Mouse Button LockとCursorHideの追加に加え、Command Paletteのクイックアクセス棚、ZoomItの音声付き切り抜き、PowerToys操作用CLI、Keyboard Managerのキー単独再割り当てなどが導入された。Color PickerとText ExtractorはWinUI 3へ移行し、その他のユーティリティにも機能改善が加わった。更新はPowerToys内で確認するか、リリースページから取得できる。",
+  "keyPoints": [
+    "Mouse Button Lockはボタンをしばらく押して離すと押し続けた状態を保ち、いずれかのボタンをクリックすると解除される。CursorHideは入力中や一定時間操作がないときにポインターを隠し、マウスを動かすと再表示する。",
+    "Command PaletteのCompact modeでは、設定のAppearance > Compact modeからクイックアクセス棚を有効にできる。Alt+1〜Alt+9でピン留めした項目を実行し、Alt+Shift+数字では実行せず選択できるほか、並べ替えや最近使った項目の表示にも対応する。",
+    "ZoomItでは設定でSnip with dictationを有効にし、切り抜き範囲をドラッグ中にSpaceを押すと、説明音声を端末上で文字起こしできる。貼り付けるとスクリーンショットとテキストの両方が入る。",
+    "新しいコマンドライン機能では、Advanced Pasteのアクション実行、Light Switchのテーマやスケジュール管理、Settingsでのユーティリティ有効・無効切り替え、Peekでのファイルプレビューなどが可能。FancyZones、Image Resizer、File Locksmith、PowerDisplayの各コマンドは任意のターミナルフォルダーから使える。",
+    "Keyboard Managerは、単独で押したときだけ別の操作を割り当てる機能と、検索・修飾キーやアプリでの絞り込み・一括削除を追加した。IT管理者はDSC v3で再割り当てプロファイルを配布・エクスポートできる。"
+  ],
+  "significance": "マウスボタンを長時間押すのが難しい人や、ドラッグ・選択を多用する人は操作負担を減らせる。ターミナルからの自動化を行う利用者や、再割り当て設定を配布するIT管理者にも、PowerToysの操作や設定管理を効率化する選択肢が増える。",
+  "summaryEn": "PowerToys 0.102 adds Mouse Button Lock and CursorHide, a quick-access shelf for Command Palette, snip dictation in ZoomIt, command-line tools for PowerToys, and tap-alone remapping in Keyboard Manager. Color Picker and Text Extractor move to WinUI 3, alongside improvements to other utilities. The update can be obtained through PowerToys' update check or the release page.",
+  "keyPointsEn": [
+    "Mouse Button Lock keeps a button held after you press and release it, until you click any button. CursorHide hides the pointer while typing or after inactivity and shows it again when you move the mouse.",
+    "In Command Palette's Compact mode, the quick-access shelf can be enabled in Settings > Appearance > Compact mode. Alt+1 through Alt+9 launches pinned items, while Alt+Shift+number selects one without running it; the shelf also supports reordering and showing recent items.",
+    "In ZoomIt, enable Snip with dictation in Settings and press Space while dragging a snip to dictate a description, which is transcribed on-device. Pasting delivers both the screenshot and text.",
+    "New command-line capabilities include running Advanced Paste actions, managing themes and schedules with Light Switch, enabling or disabling utilities in Settings, and previewing files with Peek. FancyZones, Image Resizer, File Locksmith, and PowerDisplay commands work from any terminal folder.",
+    "Keyboard Manager adds remaps for keys tapped alone, plus search, modifier and app filters, and bulk deletion. IT admins can deploy and export remapping profiles with DSC v3."
+  ],
+  "significanceEn": "People who have difficulty holding a mouse button down or often drag and select can reduce the effort involved. Users who automate tasks from the terminal and IT admins distributing remapping settings also gain more ways to streamline PowerToys operations and configuration management."
+}

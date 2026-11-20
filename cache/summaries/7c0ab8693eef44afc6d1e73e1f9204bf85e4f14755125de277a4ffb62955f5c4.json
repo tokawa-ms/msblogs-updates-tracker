@@ -1,0 +1,18 @@
+{
+  "summary": "GitHubのバグバウンティ研究者スポットライトで、@r31nがGitHub Enterprise Serverなどでの脆弱性調査の考え方を紹介している。複雑な機能や信頼境界を調べ、攻撃者が制御するデータの流れを追い、動作するPoCと影響を確認して報告する。AIは調査を加速するが、結論は手動で検証し、実際のセキュリティ境界の侵害を示すべきだと述べる。",
+  "keyPoints": [
+    "調査では複雑な機能、連携、信頼境界に注目し、攻撃者制御データの入力元からネットワーク要求や認可判断などの重要処理までを追跡する。検証可能な攻撃経路、PoC、影響をそろえて発見を確認する。",
+    "AIはコード構造の把握、呼び出し箇所やデータフローの追跡、PoC作成などの補助に使う一方、誤りや誤検知があり得るため、結果を事実と見なさず自分で再現・検証する。",
+    "AI機能の評価でも、モデルを予想外に動かすこと自体ではなく、攻撃者が本来許可されないアクセスや操作を実現できるかを重視する。モデルのガードレールだけに頼らず、認可、最小権限、分離、検証などの決定的な制御が必要だとする。",
+    "初めて有効な報告を目指す研究者には、対象を頻繁に変えず一つのプログラムを継続して理解し、アプリや権限別の挙動、APIを調べることを勧める。早い段階でツールに頼りすぎず、報告時は再現しやすいPoCを用意する。"
+  ],
+  "significance": "この記事は、バグバウンティに取り組む研究者に、AIや自動化ツールの利用だけでなく、対象システムへの理解、手動での再現、明確な影響説明が有効な報告に重要だと示す。AI搭載機能を実装・評価する側にも、モデルの出力を信頼境界とせず、周辺システムの権限や入力検証を保つという観点を提示している。",
+  "summaryEn": "In a GitHub bug bounty researcher spotlight, @r31n describes how they investigate vulnerabilities, including on GitHub Enterprise Server. They focus on complex features and trust boundaries, trace attacker-controlled data, and confirm findings with a working proof of concept and clear impact. AI can accelerate research, but its conclusions must be manually verified and demonstrate a real security-boundary violation.",
+  "keyPointsEn": [
+    "The researcher focuses on complex features, integrations, and trust boundaries, tracing attacker-controlled input to sensitive operations such as network requests or authorization decisions. A confirmed finding requires a verifiable attack path, a proof of concept, and an explanation of impact.",
+    "AI helps navigate code, find call sites, trace data flows, and write proof-of-concept scripts, but can produce errors and false positives, so researchers must reproduce and verify findings themselves.",
+    "When assessing AI-powered features, the key question is what an attacker can achieve, such as unauthorized access or actions. Model guardrails should not be the only security boundary; deterministic controls such as authorization, least privilege, isolation, and validation are needed.",
+    "For researchers seeking a first valid report, the advice is to stick with one program and target long enough to understand it, explore application behavior and APIs, avoid relying on tools too early, and provide an easily reproducible proof of concept."
+  ],
+  "significanceEn": "The article shows bug bounty researchers that effective reports depend not just on AI or automated tools, but also on understanding the target, reproducing findings manually, and explaining their impact. It also offers teams building or assessing AI-powered features a security perspective: model output should not be trusted as a boundary, and authorization and input validation in surrounding systems remain important."
+}

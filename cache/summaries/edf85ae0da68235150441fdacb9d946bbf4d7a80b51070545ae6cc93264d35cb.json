@@ -1,0 +1,18 @@
+{
+  "summary": "Azure Cobalt 200上でEDA（電子設計自動化）ワークロードを評価した初期結果として、MicrosoftはCobalt 100比で1.30～4.15倍の性能を示したと報告した。Cadence、Synopsys、Siemensの対象ツールは変更せず実行され、シミュレーションや検証、静的タイミング解析などで改善が確認された。結果は社内の特定ワークロードとテスト条件に限られ、Cobalt 200の一般提供に向けて検証範囲を広げている。",
+  "keyPoints": [
+    "Cadence XceliumとSynopsys VCSのRTLシミュレーションでは、評価した他のシステムすべてに対し、論理コア当たりのスループットが40%超高かった。",
+    "Cadence Spectreは、Cobalt 100比で世代間のスループットが38%向上し、比較した他のプラットフォームに対しても論理コア当たり11～52%高かった。",
+    "16コア/jobでのSiemens Calibre DRCはCobalt 100より実行時間が約23%短く、同じく16コア/jobで測定したSynopsys PrimeTimeはピークスループットがCobalt 100の2倍だった。",
+    "数値は社内テストの対象ワークロード、ソフトウェア、VM構成、同時実行数、テスト条件に限られる。Microsoftは対象範囲を広げて検証を続け、Cobalt 200の一般提供に向けてEDAパートナーと協力している。"
+  ],
+  "significance": "半導体設計チームやCAD管理者にとって、夜間の検証回帰テストなどを高い同時実行数で行う際のコア当たり性能の予測しやすさは、計算資源の計画に関わる。評価結果に加え、Azureでは検証やサインオフ時の需要増に合わせて計算容量を確保し、需要低下時に解放できるため、設計ワークロードの変動に対応する選択肢となる。",
+  "summaryEn": "Microsoft reports early results from evaluating EDA workloads on Azure Cobalt 200, with 1.30x to 4.15x more performance than Cobalt 100. The evaluated Cadence, Synopsys, and Siemens tools ran unmodified, with improvements across simulation, verification, and static timing analysis. Results are limited to specific internal workloads and test conditions; Microsoft is expanding validation as Cobalt 200 enters general availability.",
+  "keyPointsEn": [
+    "For RTL simulation with Cadence Xcelium and Synopsys VCS, throughput per logical core was more than 40% higher than on any other system tested.",
+    "Cadence Spectre achieved a 38% generation-over-generation increase in throughput versus Cobalt 100 and 11–52% higher throughput per logical core than the other platforms tested.",
+    "For 16-core-per-job tests, Siemens Calibre DRC had approximately 23% lower runtime than on Cobalt 100, while Synopsys PrimeTime achieved twice Cobalt 100's peak throughput.",
+    "The figures are limited to the internal test workloads, software, VM configurations, concurrency, and conditions. Microsoft is expanding testing and working with EDA partners as Cobalt 200 enters general availability."
+  ],
+  "significanceEn": "For semiconductor design teams and CAD managers, predictable per-core performance matters when planning highly concurrent workloads such as overnight verification regressions. In addition to the measured results, Azure can provision compute capacity for spikes in regression or signoff demand and release it as demand falls, offering an option for workloads with changing resource needs."
+}

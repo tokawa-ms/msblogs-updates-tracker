@@ -1,0 +1,18 @@
+{
+  "summary": "SLBのagile reservoir modeling（ARM）とAzure Data Manager for Energy（ADME）の統合ソリューションが一般提供となった。Petrelで定義した不確実性ワークフローを起点に、貯留層モデルの実現値生成やシミュレーションをAzureの弾力的なHPCで並列実行し、ADMEの統制データ基盤と連携して結果の検索・分析・再利用まで支援する。利用開始にあたっては、MicrosoftとSLBのアカウントチームへの相談が案内されている。",
+  "keyPoints": [
+    "ADMEはOSDU Technical Standardに沿ったサービスとDDMSで地震探査、坑井、解釈、シミュレーションのデータを管理し、Petrelは解釈・不確実性ワークフローの定義に、ARMは実現値生成とシミュレーション実行の調整に用いられる。",
+    "AzureのHPCで複数の実現値を並列計算し、共有Azure Filesに入力モデルや結果を置く。計算資源、ストレージ容量、スループット、IOPSは個別に拡張でき、アンサンブルの並列度に合わせて環境を構成できる。",
+    "Petrelで不確実性ワークフローを作成し、対応するSLBシミュレーターのIntersectまたはEclipseで実行できる。計算結果は検索・絞り込み・並べ替えで見つけられ、エンジニアリング用ワークスペースやPetrelに戻して分析できる。",
+    "ARM on ADMEは一般提供中で、記事は導入する初期の貯留層ワークフローを特定し、導入方法を相談するためMicrosoftとSLBのアカウントチームへの連絡を案内している。"
+  ],
+  "significance": "貯留層エンジニアや資産チームにとっては、大規模なアンサンブル解析を個別のインフラ構築案件にせず、観測された生産履歴に整合するモデルで開発案を検証し、新しい坑井やデータに応じて理解を更新する手段となる。エネルギー分野のIT・データ担当者には、シミュレーションをOSDU標準に沿う基盤につなぎ、データの統制や検索、相互運用を支える点が関係する。",
+  "summaryEn": "SLB’s agile reservoir modeling (ARM), integrated with Azure Data Manager for Energy (ADME), is now generally available. It starts with uncertainty workflows defined in Petrel, runs reservoir realization generation and simulations in parallel on elastic Azure HPC, and works with ADME’s governed data foundation to support discovery, analysis, and reuse of results. To get started, the article directs customers to contact their Microsoft and SLB account teams.",
+  "keyPointsEn": [
+    "ADME manages seismic, wellbore, interpretation, and simulation data through OSDU Technical Standard-aligned services and DDMS; Petrel is used to define interpretation and uncertainty workflows, while ARM orchestrates realization generation and simulation runs.",
+    "Azure HPC runs multiple realizations in parallel, with a shared Azure Files volume for model inputs and results. Compute, storage capacity, throughput, and IOPS can be scaled independently to match ensemble concurrency.",
+    "Uncertainty workflows are prepared in Petrel and can run on the supported SLB simulators Intersect or Eclipse. Results can be discovered, filtered, and sorted, then analyzed in the reservoir engineering workspace or returned to Petrel.",
+    "ARM on ADME is generally available, and the article directs customers to contact Microsoft and SLB account teams to identify an initial reservoir workflow and discuss deployment."
+  ],
+  "significanceEn": "For reservoir engineers and asset teams, this provides a way to make large ensemble analysis a repeatable workflow rather than a bespoke infrastructure project, test development concepts against models calibrated to observed production history, and update their understanding as wells and data are added. For energy IT and data leaders, it connects simulation to an OSDU-aligned architecture supporting governance, search, and interoperability."
+}

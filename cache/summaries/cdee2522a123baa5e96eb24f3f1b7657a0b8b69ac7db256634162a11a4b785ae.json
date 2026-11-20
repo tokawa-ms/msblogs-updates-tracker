@@ -1,0 +1,18 @@
+{
+  "summary": "Power BIの2026年11月更新では、Copilot、レポート作成、セマンティックモデル、データ接続などに新機能や改善が加わりました。更新内容はPower BI Desktopのリリースに先行して案内されており、Desktop版は2026年11月23日の週以降に公開予定です。",
+  "keyPoints": [
+    "Microsoft Copilotでは、Basicライセンスでも条件に応じてFabric IQを利用可能になります。2026年12月8日にCopilotのテナント設定が既定でオン、単体版Power BI Copilotが既定でオフになりますが、既存の管理者設定は維持されます。",
+    "OneDriveとSharePointとのPower BI連携が一般提供になりました。ブラウザーでレポートを見るには、Power BI Pro、Premium Per User、またはE5ライセンスと、ファイルへの読み取りアクセスが必要です。",
+    "レポート機能では、カードビジュアルに折れ線・棒・縦棒・シェイプマップのトレンド表示が加わりました。また、テーブルとマトリックスでは、プレビュー版のFilterアクションボタンからビジュアル単位のフィルターを操作できます。",
+    "セマンティックビューとDirect Lake on OneLakeモデル向けMパラメーターがプレビューとして紹介されました。Mパラメーターは、デプロイパイプラインで環境ごとのOneLake参照先を設定する用途です。"
+  ],
+  "significance": "指標の定義をOneLake上で一度作成して複数チームやレポート、データエージェントで再利用できるため、共通の意味づけを共有したい組織に役立ちます。また、環境別のOneLake参照先をパイプラインで設定でき、同じセマンティックモデルを開発・テスト・本番で扱いやすくなります。",
+  "summaryEn": "Power BI’s November 2026 update adds features and improvements for Copilot, report authoring, semantic models, and data connectivity. The updates were announced ahead of the Power BI Desktop release, which is scheduled to follow the week of November 23, 2026.",
+  "keyPointsEn": [
+    "Microsoft Copilot will make Fabric IQ available in the Power BI service to eligible users with a Basic license, subject to permissions and licensed access. On December 8, 2026, Microsoft Copilot will default to on and standalone Power BI Copilot to off, while existing admin choices are preserved.",
+    "Power BI integration with OneDrive and SharePoint is now generally available. Viewing reports in a browser requires a Power BI Pro, Premium Per User, or E5 license and read access to the file.",
+    "Reporting updates add line, bar, column, and shape map trend charts to the Card visual. In preview, a Filter action button lets users adjust visual-level filters on table and matrix visuals.",
+    "Semantic views and M parameter support for Direct Lake on OneLake models were introduced in preview. M parameters let deployment pipelines configure the OneLake source for each environment."
+  ],
+  "significanceEn": "Organizations can define a metric once in OneLake and reuse it across teams, reports, and data agents, helping share consistent business definitions. Pipeline rules can also set environment-specific OneLake sources, making it easier to use the same semantic model across development, test, and production."
+}

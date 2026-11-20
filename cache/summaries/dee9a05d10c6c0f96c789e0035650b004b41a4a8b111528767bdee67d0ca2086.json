@@ -1,0 +1,18 @@
+{
+  "summary": "Azure Catalystは、AIエージェントでアプリケーション、データ、インフラのモダナイズを支援する機能を拡充し、調査から実行までをつなぐ新機能や、アプリとデータベースの同時モダナイズなどのプレビューを発表しました。AzureではFoundryとAKSの連携、エージェント向けの隔離実行・通信制御・コンテキスト再利用など、AIアプリを構築・運用するための基盤も強化します。分散環境へのAI展開も拡大し、Windows Server 2028はパブリックプレビューとして紹介されています。",
+  "keyPoints": [
+    "FoundryからAKSへの連携経路を整え、クラウドからエッジまでオープンウェイトモデルやエージェントを展開できるようにします。AKSではセッションごとのVMレベル隔離を備えたAgent Sandbox、認証・暗号化通信と既定拒否のネットワーク分離を備えたAgent Grid、処理済みコンテキストの再利用を紹介しています。",
+    "Azure Catalystは、資産の把握、AIによるアプリ発見、モダナイズ戦略とコスト比較、移行ウェーブ作成を支援し、アプリ、コンテナ、ストレージ、ネットワーク、データベースにまたがる実行をつなぎます。アプリとデータベースの同時モダナイズ、およびBizTalkからAzure Logic Appsへの移行は新たなプレビューです。",
+    "MicrosoftはAzure Catalystの実績として、140万件のアプリケーションのモダナイズを挙げています。Levi Straussは企業システムをモダナイズし1,000超のエージェントを展開したとされ、Microsoft QuantumとXboxはアプリのモダナイズを80%高速化、Intuneは主要ライブラリを想定より75%速くアップグレードしたと説明しています。",
+    "Azure Local、AKSのフレックスノード、Microsoft Foundryを通じてクラウドや分散環境でAIを動かし、Azure Arcで管理・ガバナンスを行う構成を示しています。Windows Server 2028はパブリックプレビューで、Windows PCではローカル処理によるAIを紹介しています。"
+  ],
+  "significance": "既存アプリやデータの技術的負債、限られた開発者リソース、複雑な依存関係を抱える企業のIT・開発チームにとって、発見から計画、実行までをエージェントでつなぐ選択肢が示されました。また、AIアプリを構築・運用するチームは、隔離や通信制御、コンテキスト管理を備えた基盤を使い、ワークロードに応じてクラウドやエッジなどの配置先を選べます。所要期間や効果の数値はMicrosoftの説明として提示されています。",
+  "summaryEn": "Azure Catalyst is adding capabilities to help AI agents modernize applications, data, and infrastructure, including new features connecting discovery to execution and previews for modernizing applications and databases together. Azure is also strengthening the foundation for building and running AI applications with a Foundry-to-AKS path and agent isolation, network controls, and context reuse. AI deployment across distributed environments is expanding, and Windows Server 2028 is presented in public preview.",
+  "keyPointsEn": [
+    "The Foundry-to-AKS path supports deploying open-weight models and agents from cloud to edge. Azure also describes the Agent Sandbox with VM-level session isolation, Agent Grid with authenticated and encrypted connections and default-deny network isolation, and reuse of processed context.",
+    "Azure Catalyst supports estate insights, AI-powered application discovery, modernization strategies and cost comparisons, and migration-wave generation, connecting execution across applications, containers, storage, networking, and databases. Modernizing applications and databases together and migrating from BizTalk to Azure Logic Apps are new previews.",
+    "Microsoft cites modernization of 1.4 million applications as an Azure Catalyst result. It says Levi Strauss modernized enterprise systems and deployed more than 1,000 agents, while Microsoft Quantum and Xbox achieved 80% faster app modernization and Intune upgraded a key library 75% faster than anticipated.",
+    "Azure Local, AKS flex nodes, and Microsoft Foundry extend AI across cloud and distributed environments, with Azure Arc for management and governance. Windows Server 2028 is in public preview, and Windows PCs are described as bringing AI through local processing."
+  ],
+  "significanceEn": "For enterprise IT and development teams facing technical debt in existing applications and data, limited developer capacity, and complex dependencies, the announcement presents an agent-based option linking discovery, planning, and execution. Teams building and running AI applications also get a foundation with isolation, network controls, and context management, and can choose deployment locations such as cloud or edge according to workload needs. The reported timelines and results are presented as Microsoft’s claims."
+}

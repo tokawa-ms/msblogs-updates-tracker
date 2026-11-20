@@ -1,0 +1,18 @@
+{
+  "summary": "PowerToys 0.101では、同じアプリのウィンドウを切り替えるWindow Hopper、StableとInsiderを選べる更新設定、Command Paletteのコンパクトモードが導入されました。Advanced Pasteには対応Windowsデバイス上で動くPhi Silica変換が加わり、PowerDisplayやShortcut Guideなどにも改善が広がっています。更新はPowerToysで確認するか、リリースページから入手できます。",
+  "keyPoints": [
+    "Window Hopperは有効化後、設定可能なAlt + backtickショートカットで、デスクトップ全体ではなく現在使っているアプリのウィンドウを順に切り替えます。",
+    "更新設定ではStableが既定で、Insiderを選ぶとPowerToys Previewビルドを試せます。プレビュー更新は組織のポリシーで制御される場合があります。",
+    "Command Paletteのコンパクトモードは設定で有効にする方式で、既定では無効です。検索結果に合わせて広がり、詳細表示や確認ダイアログでは必要に応じて全面表示になります。",
+    "Advanced Pasteは、対応するWindowsデバイスでPhi Silicaによるオンデバイス変換を利用できます。設定で利用可能か確認し、求められた場合はモデルをダウンロードして、アクションごとにプロバイダーなどを設定します。"
+  ],
+  "significance": "複数のブラウザーやエディターのウィンドウを扱う人は、同じアプリ内で素早く切り替えられます。更新チャネルを選びたい人はInsiderでプレビュービルドを試せますが、管理対象デバイスでは組織のポリシーが適用される場合があります。また、対応デバイスの利用者はクラウドの接続先やAPIキーを設定せずに、Advanced PasteでローカルAI変換を使えます。",
+  "summaryEn": "PowerToys 0.101 introduces Window Hopper for switching between windows of the same app, update settings with Stable and Insider channels, and compact mode for Command Palette. Advanced Paste adds Phi Silica transformations on supported Windows devices, alongside improvements to PowerDisplay, Shortcut Guide, and other utilities. The update is available through PowerToys or the release page.",
+  "keyPointsEn": [
+    "Once enabled, Window Hopper uses the configurable Alt + backtick shortcut to cycle through windows of the current app rather than all desktop windows.",
+    "Stable is the default update channel; selecting Insider opts into PowerToys Preview builds. Preview updates on managed devices may be controlled by organizational policy.",
+    "Command Palette compact mode is opt-in and off by default. It expands to show matching results and opens fully when more room is needed, such as for detailed views or confirmation dialogs.",
+    "Advanced Paste supports on-device Phi Silica transformations on supported Windows devices. Users can check availability in Settings, download the model when prompted, and configure the provider and other settings per action."
+  ],
+  "significanceEn": "People working with several browser or editor windows can switch quickly within the same app. Users who want to choose an update channel can opt into Insider preview builds, although organizational policy may apply on managed devices. Users of supported devices can also run local AI transformations in Advanced Paste without configuring a cloud endpoint or API key."
+}

@@ -1,0 +1,18 @@
+{
+  "summary": "Microsoft 365 G7は、政府向けGCC環境に生産性、AI、エージェント、セキュリティ、ID、コンプライアンス、ガバナンスを統合する「Frontier Suite」として発表された。G7とAgent 365は10月1日からGCC顧客向けに購入可能となり、追加の購入オプションは11月1日から提供される。機能は必要なGCC認可の達成に合わせて段階的に拡大し、顧客は発売時点で利用可能な体験から導入を始められる。",
+  "keyPoints": [
+    "G7はMicrosoft 365 G5の生産性・コラボレーション、情報保護、セキュリティ、コンプライアンスを基盤とし、Microsoft Entra Suiteでユーザーとエージェント向けの高度なID、アクセスガバナンス、ネットワークセキュリティ機能を加える。",
+    "一般提供時には、Copilotを使った調査・分析、組織内の知識の検索・要約、Microsoft 365アプリでの文書作成や共同作業を提供する。GA後数カ月には、最新の商用GPTモデル、Work IQの記憶・パーソナライズ、Word・Excel・PowerPointのCopilot編集機能、Copilot Coworkが順次展開される予定。",
+    "GCCで利用可能なResearcherやAnalystから始められ、Agent BuilderやCopilot Studioでエージェントを作成できる。Copilot Connectorsや管理された接続を通じて、承認済みの機関データや業務アプリケーションを利用できる。",
+    "Agent 365は一般提供時にエージェントの発見・識別・ガバナンスを行う共通基盤と、展開・利用を管理する中核的な制御を提供する。セキュリティ、リスク管理、ライフサイクルガバナンスの機能は今後進化する見込みで、GCCでの機能提供状況はサービス説明に掲載される。"
+  ],
+  "significance": "政府機関は、個別のAI実験から組織規模での管理された導入へ進むための基盤として、日常業務へのAI組み込み、機関の任務に沿ったエージェント、管理制御を組み合わせて利用できる。機能はGCCの認可要件を満たしながら段階的に展開されるため、政府顧客は利用可能な体験から始め、追加ワークロードの提供を待つ形となる。",
+  "summaryEn": "Microsoft 365 G7 was announced as a government-focused Frontier Suite for GCC environments, bringing together productivity, AI, agents, security, identity, compliance, and governance. G7 and Agent 365 will be available for GCC customers to purchase beginning October 1, with additional purchasing options starting November 1. Capabilities will expand in phases as required GCC authorizations are completed, and customers can begin with experiences available at launch.",
+  "keyPointsEn": [
+    "G7 builds on Microsoft 365 G5 productivity and collaboration, information protection, security, and compliance, adding Microsoft Entra Suite capabilities for advanced identity, access governance, and network security for users and agents.",
+    "At general availability, Copilot will support research and analysis, finding and synthesizing organizational knowledge, and creating and collaborating on content in Microsoft 365 apps. In the months after GA, the planned rollout includes the latest commercially available GPT models, Work IQ memory and personalization, Copilot editing in Word, Excel, and PowerPoint, and Copilot Cowork.",
+    "Agencies can start with Researcher and Analyst, available in GCC, and create agents with Agent Builder or Copilot Studio. Copilot Connectors and managed connections provide access to agency knowledge, approved data, and line-of-business applications.",
+    "At general availability, Agent 365 will provide a unified foundation to discover, identify, and govern agents, with core controls for managing deployment and use. Security, risk management, and lifecycle governance capabilities are expected to evolve over time; GCC feature availability is listed in the service description."
+  ],
+  "significanceEn": "Government agencies can use this as a foundation for moving from isolated AI experiments toward governed adoption at organizational scale, combining AI in everyday work, mission-focused agents, and management controls. Capabilities will roll out in phases as GCC authorization requirements are met, so government customers can start with available experiences while additional workloads follow."
+}

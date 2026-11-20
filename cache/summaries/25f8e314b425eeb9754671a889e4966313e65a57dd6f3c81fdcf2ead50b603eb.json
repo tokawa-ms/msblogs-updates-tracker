@@ -1,0 +1,18 @@
+{
+  "summary": "Intelligent Terminal 0.1.1では、従来PowerShellに限られていた自動エラー検出と修正提案がBashおよびWSL Bashにも拡大し、エージェントペインに手動修正用の /fix と、セッション中にモデルを切り替える /model が追加されました。エージェントペインは色・フォント・不透明度を設定できるプロファイルとなり、Windows 10 10.0.19041.0以降をサポートします。更新はMicrosoft Store、winget、GitHubリリースページから入手でき、セッション表示や初回セットアップなどの修正も含まれます。",
+  "keyPoints": [
+    "BashおよびWSL Bashでも、失敗したコマンドに対する自動エラー検出と修正提案が利用可能になりました。また、/fix を使えば自動検出・自動修正の設定に関係なく、エラーや期待どおりでない出力について手動で修正を求められます。",
+    "/model でセッションを再起動せずにエージェントのモデルを切り替えられます。エージェントペインは設定上のプロファイルとなり、カラースキーム、フォント、不透明度などをカスタマイズできます。",
+    "Windows 10はバージョン10.0.19041.0以降がサポート対象となり、非対応バージョンでクラッシュしなくなりました。シェル統合フックがなくても、エージェントペインまたはコマンドパレットで作成・再開したエージェントのセッション状態を簡易表示します。",
+    "更新はMicrosoft Store、winget install Microsoft.IntelligentTerminal、またはGitHubのリリースページから入手できます。修正には、初回ログイン後に空になるエージェントセッションの再接続や、エージェント実行ファイルのパス解決などが含まれます。"
+  ],
+  "significance": "BashやWSL Bashを使う人もコマンド失敗時の説明・修正提案を利用でき、自動エラー検出では拾えない「成功扱いだが結果が期待と異なる」ケースにも /fix で対処できます。Windows 10の対応範囲拡大に加え、フックなしでのセッション状態表示やペインの外観設定により、より多くの環境でエージェントを使い、作業状況を把握しやすくなります。",
+  "summaryEn": "Intelligent Terminal 0.1.1 extends automatic error detection and fix suggestions to Bash and WSL Bash, and adds /fix for on-demand help and /model for switching models mid-session. The agent pane becomes a customizable profile, and Windows 10 version 10.0.19041.0 and later is supported. The update is available through the Microsoft Store, winget, and the GitHub release page, and includes fixes for session display and first-run setup.",
+  "keyPointsEn": [
+    "Automatic error detection and fix suggestions are now available in Bash and WSL Bash. With /fix, users can request a fix for errors or unexpected output regardless of the auto-detection and auto-fix settings.",
+    "Users can switch the agent’s model with /model without restarting the session. The agent pane is a profile whose color scheme, font, opacity, and other appearance settings can be customized.",
+    "Windows 10 version 10.0.19041.0 and later is supported, and the app no longer crashes on unsupported versions. It also shows minimal session status for agents created or resumed through the agent pane or Command Palette, even without shell integration hooks.",
+    "The update is available from the Microsoft Store, via winget install Microsoft.IntelligentTerminal, or from the GitHub release page. Fixes include reconnecting agent sessions that appeared blank after first login and resolving the agent executable path."
+  ],
+  "significanceEn": "Bash and WSL Bash users can now get explanations and fix suggestions for failed commands, and use /fix for cases automatic detection misses, such as a command that succeeds but produces an unexpected result. Support for Windows 10, session status without hooks, and agent-pane appearance settings make it easier to use the agent and track its sessions across more environments."
+}

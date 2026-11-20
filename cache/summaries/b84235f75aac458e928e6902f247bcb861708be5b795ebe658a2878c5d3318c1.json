@@ -1,0 +1,18 @@
+{
+  "summary": "GitHubのゲームジャム「Game Off 2026」は第14回として2026年11月に開催され、テーマは「SHIFT」です。参加者はテーマを自由に解釈したゲームを制作し、12月1日13:37 PSTまでにitch.ioで応募します。応募締切後は参加者が作品を評価し、投票は2027年1月1日13:37 PSTに終了します。",
+  "keyPoints": [
+    "「SHIFT」の解釈は自由で、強い着想でも緩やかな着想でも応募作品のテーマとして認められます。",
+    "参加者はGitHub上に公開リポジトリを作り、12月1日13:37 PSTまでにゲームのコードをpushしたうえで、itch.ioでも別途応募する必要があります。GitHubへのpushだけでは応募完了になりません。",
+    "個人でもチームでも参加でき、使用する言語やゲームエンジン、ツールに制限はありません。AI支援開発も認められますが、応募時にAIの使用について回答します。",
+    "応募締切後に参加者が作品をプレイして評価し、評価項目は総合、ゲームプレイ、グラフィックス、音声、革新性、テーマ解釈です。投票は2027年1月1日13:37 PSTに終了し、受賞者はその後まもなく発表されます。"
+  ],
+  "significance": "初めてゲームを作る人から経験者まで、個人またはチームで参加でき、使う技術や道具も選べるため、幅広い開発者が作品制作に取り組めます。公開リポジトリへのコード公開に加え、参加者同士のプレイと投票が行われ、作品を共有し評価し合う機会になります。",
+  "summaryEn": "GitHub’s Game Off 2026 returns for its 14th year in November with the theme “SHIFT.” Participants can interpret the theme freely and submit a game on itch.io by December 1 at 13:37 PST. After submissions close, participants will evaluate entries, with voting ending January 1, 2027, at 13:37 PST.",
+  "keyPointsEn": [
+    "The theme “SHIFT” can be interpreted freely, and both strong and loose inspirations are accepted.",
+    "Participants must create a public GitHub repository and push their game code by December 1 at 13:37 PST, then submit separately on itch.io. Pushing code to GitHub alone does not complete the entry.",
+    "Participants may work solo or in teams and choose their programming languages, engines, and tools. AI-assisted development is allowed, but entrants will be asked about their AI use when submitting.",
+    "After submissions close, participants play and rate entries in overall, gameplay, graphics, audio, innovation, and theme interpretation categories. Voting ends January 1, 2027, at 13:37 PST, and winners will be announced shortly afterward."
+  ],
+  "significanceEn": "From first-time game makers to experienced developers, people can participate individually or in teams and choose their own technologies and tools. Alongside publishing code in a public repository, the jam gives participants an opportunity to share, play, and evaluate one another’s games."
+}

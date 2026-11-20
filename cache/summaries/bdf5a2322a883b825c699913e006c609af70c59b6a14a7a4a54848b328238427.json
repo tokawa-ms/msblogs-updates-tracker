@@ -1,0 +1,18 @@
+{
+  "summary": "Intelligent Terminal 0.3では、タブやエージェントをまとめて管理するサイドバーが導入され、タブごとの状態表示、検索、エージェントのみの絞り込み、他のウィンドウを含む最近のセッション表示が可能になりました。新しいタブメニューから検出済みのエージェントCLIを起動でき、ヘッドレスモードではターミナルを閉じてもタブの処理をバックグラウンドで継続できます。更新はMicrosoft StoreまたはGitHubのリリースページから入手でき、Intelligent Terminalは実験段階です。",
+  "keyPoints": [
+    "サイドバーでは、タブのライブ状態や注意が必要なタブを確認でき、ピン留め、ペイン表示、開いているタブと最近のエージェントセッションの横断検索、エージェントだけの絞り込みができます。最近のセッションには、別のターミナルウィンドウで実行中のエージェントも表示されます。",
+    "タブには既定で状態と作業ディレクトリが表示され、サイドバーのフィルターメニューから最大2項目を選んで、エージェントの状態、作業ディレクトリ、リポジトリ・ブランチ・変更などのGit情報を表示できます。",
+    "インストール済みの対応エージェントCLIは自動検出され、プロファイルが作成されます。新しいタブメニューからGitHub Copilot CLIやClaudeなどを、PowerShellなどのターミナルプロファイルと同様に起動できます。",
+    "ヘッドレスモードをタブごとに有効にすると、ターミナルを閉じた後も処理がマシンの停止までバックグラウンドで続きます。ヘッドレス実行中のタブはサイドバーや、ウィンドウがない場合のシステムトレイから確認でき、閉じたエージェントセッションは最近のセッション欄に表示されます。"
+  ],
+  "significance": "複数のタブやエージェントを使う人は、各タブを開かずに実行状況や入力待ちを見分け、最近のセッションへ戻りやすくなります。また、長時間のエージェント処理やビルドは、ターミナルを閉じてもマシンが停止するまで継続できるため、ウィンドウを閉じる操作で処理が終了するのを避けられます。",
+  "summaryEn": "Intelligent Terminal 0.3 introduces a sidebar for managing tabs and agents, with per-tab status, search, agent filtering, and recent sessions from other windows. It can launch detected agent CLIs from the new-tab menu, and headless mode keeps tab processes running in the background after the terminal closes. The update is available from the Microsoft Store or GitHub release page, while Intelligent Terminal remains experimental.",
+  "keyPointsEn": [
+    "The sidebar shows live tab status and attention indicators, and supports pinning, pane visibility, global search across open tabs and recent agent sessions, and filtering to agents. Recent sessions include agents running in other terminal windows.",
+    "Tabs show status and working directory by default. The sidebar filter menu lets users choose up to two fields from agent status, working directory, and Git information such as repository, branch, or changes.",
+    "Installed supported agent CLIs are detected and automatically given profiles. Users can launch GitHub Copilot CLI, Claude, or another detected agent from the new-tab menu like a terminal profile such as PowerShell.",
+    "Enabling headless mode for a tab keeps its process running in the background after the terminal closes, until the machine stops. Headless tabs are visible in the sidebar and, when there are no active windows, the system tray; closed headless agent sessions appear in Recent agent sessions."
+  ],
+  "significanceEn": "People working with multiple tabs and agents can check their status or whether they need input without opening each tab, and return to recent sessions more easily. Long-running agent tasks or builds can also continue until the machine stops after the terminal window is closed, avoiding termination solely from closing the window."
+}

@@ -1,0 +1,16 @@
+{
+  "summary": "WSLC（Windows上でLinuxコンテナーを扱う基盤）は一般提供となり、wslc.exeから利用できる。アーキテクチャでは、特権サービスがユーザー単位の子プロセスwslcsession.exeにセッション操作を委ね、分離とセキュリティ境界を強化する。ストレージにはWindowsパス共有やVHD-backed volumeを用意し、ネットワークにはWindowsのVPNやファイアウォールとの互換性を考慮したConsommé方式を採用する。",
+  "keyPoints": [
+    "wslservice.exeは仮想マシンを作成した後、呼び出しユーザーの権限で動くwslcsession.exeにコンテナー作成やマウントなどを任せる。セッションを別プロセスに分け、より低い権限で操作することで分離とセキュリティ境界を強化する。",
+    "各セッションには状態を保存するVHDがあり、wslc.exe利用時の保存先は%AppData%\\Local\\wslc\\sessions。コンテナーのボリュームはWindowsパス共有にvirtiofsを使い、記事によればvirtiofsはPlan 9の約2倍の速度。VHD-backed volumeはネイティブなLinuxファイルシステムやサイズ制限が必要な場合に使える。",
+    "Consommé方式では、Linux仮想マシンの通信をvirtioキュー経由でWindowsプロセスに渡し、DNS応答、UDP・TCPのルーティング、ポートマッピングを提供する。通信はセッション所有ユーザーのプロセスとして送出され、VPNやファイアウォールとの互換性を実現すると記事は説明している。"
+  ],
+  "significance": "Windows上でLinuxコンテナーを使うユーザーは、ユーザー単位で分離されたセッションを利用しながら、Windows上のファイルをコンテナーに共有したり、必要に応じてLinuxネイティブのファイルシステムを使ったりできる。ネットワーク通信もWindowsのVPNやファイアウォールとの互換性を考慮した設計で、Windows環境との連携に関わる仕組みが具体化されている。",
+  "summaryEn": "WSLC, a platform for using Linux containers on Windows, is generally available through wslc.exe. Its architecture delegates session operations to a per-user child process, strengthening isolation and security boundaries. It supports Windows-path sharing and VHD-backed volumes, and uses the Consommé networking model with Windows VPN and firewall compatibility in mind.",
+  "keyPointsEn": [
+    "After creating a virtual machine, wslservice.exe delegates container creation, mounting, and other session operations to wslcsession.exe running on behalf of the calling user. Separating sessions into different processes and using a less privileged process for operations strengthens isolation and security boundaries.",
+    "Each session has a VHD for its state, stored at %AppData%\\Local\\wslc\\sessions when using wslc.exe. Container volumes can share Windows paths using virtiofs, which the article says is about twice as fast as Plan 9. VHD-backed volumes can be used when a container needs a native Linux filesystem or a volume size limit.",
+    "The Consommé model sends Linux virtual-machine traffic through a virtio queue to a Windows process, which provides DNS responses, UDP and TCP routing, and port mapping. The article says traffic is sent on behalf of the session-owning user, providing compatibility with VPNs and firewalls."
+  ],
+  "significanceEn": "Users running Linux containers on Windows can use per-user isolated sessions while sharing Windows files with containers or using a native Linux filesystem when needed. The networking design also accounts for compatibility with Windows VPNs and firewalls, making the mechanisms for integrating with a Windows environment more concrete."
+}

@@ -1,0 +1,18 @@
+{
+  "summary": "Microsoft Scoutは、常時稼働型エージェント「Autopilot」の第1弾として発表された。Microsoft 365のアプリやデータに接続し、会議調整や準備資料の作成、納期に向けた予定確保、停滞リスクの検知を支援する。クラウド、デスクトップ、Webをまたいで動作し、提供は一部顧客向けプライベートプレビューとFrontier経由の実験版。",
+  "keyPoints": [
+    "Teamsなどを通じて業務データに接続し、会議の調整、準備資料の作成、カレンダーの時間確保、停滞した意思決定などのリスク検知を行う。",
+    "各エージェントは共有サービスアカウントではなく、管理された個別のEntra IDで動作する。承認済みリソースへのアクセスに限定でき、機密操作では人の承認を求められ、Purviewの機密ラベルやデータ損失防止も適用される。",
+    "MicrosoftはOpenClawにポリシー適合性の検証機能を上流提供し、OpenClawを運用する組織が、環境のセキュリティ・コンプライアンス要件への適合を検証して監査可能な回答を得られるようにする。",
+    "一部顧客向けのプライベートプレビューとFrontier経由の実験版として提供。利用にはFrontier登録、Intuneポリシー設定、オプトイン確認が必要で、GitHub Copilotライセンス保有者はダウンロードしてインストールできる。"
+  ],
+  "significance": "会議調整や納期管理に伴う連携作業を減らしたい利用者にとって、都度指示しなくても予定調整やリスク把握を進められる点が意義となる。組織側は個別のエージェントIDや既存のアクセス・データ保護策で動作を統制できる一方、現時点での利用はプレビュー段階で、登録やIntune設定などが必要。",
+  "summaryEn": "Microsoft Scout was introduced as the first always-on agent in the Autopilots category. It connects to Microsoft 365 apps and data to help coordinate meetings, prepare materials, block calendar time for deliverables, and identify stalled work. It operates across cloud, desktop, and web, and is being offered in private preview to select customers and as an experimental release through Frontier.",
+  "keyPointsEn": [
+    "Through Teams and other connections to work data, Scout can coordinate meetings, prepare materials, block calendar time, and flag risks such as stalled decisions.",
+    "Each agent operates under its own governed Entra identity rather than a shared service account. Access can be limited to approved resources, sensitive actions can require human approval, and Purview sensitivity labels and data loss prevention are enforced.",
+    "Microsoft is contributing policy-conformance capabilities upstream to OpenClaw, allowing organizations running it to check alignment with security and compliance requirements and obtain a verifiable, audit-ready answer.",
+    "Scout is offered in private preview to select customers and as an experimental release through Frontier. Access requires Frontier enrollment, Intune policy configuration, and an opt-in attestation; users with a GitHub Copilot license can download and install it."
+  ],
+  "significanceEn": "For users seeking to reduce coordination around meetings and deliverables, Scout can move scheduling and risk identification forward without requiring a prompt for every action. Organizations can govern its activity through individual agent identities and existing access and data-protection controls, but access is currently at the preview stage and requires enrollment and Intune configuration."
+}

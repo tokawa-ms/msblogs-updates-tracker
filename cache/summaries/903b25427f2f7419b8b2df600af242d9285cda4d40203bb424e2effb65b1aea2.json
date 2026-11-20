@@ -1,0 +1,18 @@
+{
+  "summary": "Intelligent Terminal v0.2.2572では、60件超の修正・改善に加え、ローカルモデル向けAPIキー設定、対応エージェントの自動承認、エージェント提供のスラッシュコマンドを追加した。デバッグベンチマークでは、接続からエージェント準備完了までの中央値が単一タブで56%、5タブ起動時の5番目のヘルパーで47%短縮し、コンテキスト収集時間も負荷に応じて約48～89%短縮した。",
+  "keyPoints": [
+    "ローカルおよびOpenAI互換モデルのAPIキーをSettings > Agentsから登録でき、キーは設定ファイルではなくWindows Credential Managerに保存される。",
+    "自動承認はオプトインで有効化でき、Copilot、Claude、Codex、Geminiのネイティブ承認モードで動作する。管理者ポリシーによる制御にも対応する。",
+    "エージェントが提供するスラッシュコマンドは、追加テキストを受け取るものも含め、組み込みコマンドと同じ検索可能なメニューに表示される。",
+    "エージェントの操作履歴では、成功したツール呼び出しを1行にまとめ、連続する操作をグループ化するほか、編集箇所を行単位で確認できる。"
+  ],
+  "significance": "ローカルまたはOpenAI互換モデルでAPIキーが必要な利用者は、キーをWindows Credential Managerに保存してエージェント設定に追加できる。複数タブや長いやり取りでエージェントを使う利用者には起動・コンテキスト収集の短縮や操作状況の把握が関係するが、掲載された性能値はデバッグベンチマークで、負荷によって異なる。",
+  "summaryEn": "Intelligent Terminal v0.2.2572 adds more than 60 fixes and improvements, including API key configuration for local models, automatic approval for supported agents, and agent-provided slash commands. Debug benchmarks report median agent startup reductions of 56% for a single tab and 47% for the fifth helper in a five-tab burst, plus roughly 48% to 89% faster context collection, depending on workload.",
+  "keyPointsEn": [
+    "API keys for local and OpenAI-compatible models can be added under Settings > Agents and are stored in Windows Credential Manager rather than a settings file.",
+    "Automatic approval is opt-in, works through the native approval modes of Copilot, Claude, Codex, and Gemini, and can be controlled by administrator policy.",
+    "Agent-provided slash commands, including commands that take additional text, appear in the same searchable menu as built-in commands.",
+    "The agent activity view summarizes successful tool calls on one line, groups consecutive operations, and shows edits with line-level additions, removals, and nearby context."
+  ],
+  "significanceEn": "Users who need API keys for local or OpenAI-compatible models can add them to agent settings and store them in Windows Credential Manager. For users working with agents across multiple tabs or long conversations, the reported startup and context-collection reductions and clearer activity view are relevant; the performance figures are from debug benchmarks and depend on workload."
+}

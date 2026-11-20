@@ -1,0 +1,18 @@
+{
+  "summary": "GitHubのGitストレージ基盤では、Azure移行の障壁となる高負荷リポジトリに向け、書き込みクォーラムの直列化単位をリポジトリ全体から個々の参照へ変更し、別々のブランチへの更新を並行処理する。加えて、Azure Blob Storageをクォーラムに含める仮想書き込みレプリカと、クォーラムに参加しない仮想読み取りレプリカにより、読み取り処理を独立して拡張する。GitHubによる内部テストでは異なる参照への書き込みスループットが3～4倍となった一方、仮想読み取りレプリカには対応できない読み取り負荷があり、さらなる書き込み拡張も今後の課題だ。",
+  "keyPoints": [
+    "移行開始から約1年でGitHubのリポジトリの99.99999%が自社データセンターとAzureの両方に置かれた。最初の複製は2025年8月で、現在は大半のリポジトリが5つのレプリカのうち2つをAzureに持ち、Gitトラフィックの約半分をAzureが処理する。",
+    "クォーラムの範囲をリポジトリ全体から個々の参照に変え、同じ参照への更新だけを順番待ちにする。GitHubの現実的なトラフィックを用いた内部テストでは、異なる参照への書き込みはスループットが3～4倍になり、レイテンシも低下した。",
+    "Azure Blob Storageをクォーラムに加える仮想書き込みレプリカは、書き込みをストレージに永続化してから応答し、読み取りは処理しない。異なる参照への書き込みをまとめてストレージへのネットワークI/Oを行い、仮想読み取りレプリカは必要に応じて追加できる。",
+    "仮想読み取りレプリカはAzure Blob Storageからキャッシュを温め、クォーラムに加わらずに読み取りを処理するが、現在のバックグラウンド同期のままではすべての読み取り負荷に対応できない。さらに、書き込みは依然としてレプリカを含むクォーラムに制約され、Gitオブジェクトと参照状態の扱いなどが次の設計課題として挙げられている。"
+  ],
+  "significance": "エージェントや開発者の書き込みが増える中、同じリポジトリの別ブランチへの更新を並行させることで、高負荷リポジトリの書き込み待ちを緩和できる。読み取りの多いリポジトリでは読み取り用計算資源を独立して増やせるため、最終形の完成を待たずに段階的に余力を広げられる。ただし、読み取り方式とクォーラムによる書き込み上限には引き続き課題がある。",
+  "summaryEn": "GitHub’s Git storage architecture is changing quorum serialization from repository-wide to per-reference, allowing updates to different branches to proceed concurrently at repositories that are difficult to migrate to Azure. Virtual write replicas that include Azure Blob Storage in the quorum, together with read replicas outside the quorum, are intended to scale reads independently. GitHub reports 3–4x higher write throughput for different references in internal testing, while noting that some read workloads and further write scaling remain challenges.",
+  "keyPointsEn": [
+    "After about a year of migration, 99.99999% of GitHub repositories were living in both its data centers and Azure. The first copy arrived in August 2025; today, most repositories have two of five replicas in Azure, which serves about half of Git traffic.",
+    "The quorum scope is changing from the whole repository to individual references, so only writes to the same reference must wait. In GitHub’s internal testing with realistic traffic, writes to different references achieved 3–4x higher throughput at lower latency.",
+    "A virtual write replica adds Azure Blob Storage to the quorum, persisting writes before acknowledgment and serving no reads. It combines network I/O for writes to disjoint references, and virtual read replicas can be added on demand.",
+    "Virtual read replicas warm their cache from Azure Blob Storage and serve reads without joining the quorum, but background reconciliation does not yet support every read workload. Writes also remain constrained by the quorum, and handling Git objects and reference state is among the next design challenges."
+  ],
+  "significanceEn": "As agent and developer writes increase, allowing updates to different branches in the same repository to proceed concurrently can reduce write contention for heavily loaded repositories. Repositories with many more reads than writes can also scale read compute independently, gaining headroom incrementally rather than waiting for the end state. Read workloads and the quorum’s write-throughput ceiling remain challenges."
+}

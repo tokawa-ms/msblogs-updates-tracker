@@ -1,0 +1,18 @@
+{
+  "summary": "Microsoft Foundryに、エージェントの実行トレースや利用者の入力を活用し、運用を通じて性能を継続的に改善する仕組みが導入された。評価基準の設定、課題の特定、指示・スキル・モデルの最適化、改善の検証を繰り返し、本番に反映する変更はチームが選ぶ。関連機能はGAとプレビューに分かれ、InsightsはGA、トレース注釈や各種最適化はプレビューとして示されている。",
+  "keyPoints": [
+    "改善サイクルは「Establish（良し悪しの基準設定）」「Identify（改善箇所の特定）」「Optimize（最適化）」「Validate（検証）」の4段階。評価には業務固有の基準や実際の利用から作ったデータを使い、新旧版の差は統計的に検証できる。",
+    "Insightsは繰り返し発生する問題の把握機能としてGAで提供され、LangGraph、LangChain、CrewAIで構築したFoundry外のエージェントも対象にできる。トレースへの注釈、注釈から作る評価データセット、ゴールデンデータセットはプレビュー。",
+    "Agent optimizerは評価を通じて候補変更をテストし、最終的に本番へ適用するかはチームが決める。Insightsからの修正連携、経験に基づくスキル最適化、品質を保ちながら費用を抑える最適化はいずれもプレビュー。",
+    "アラスカ航空の分類評価では、MAI-Code-2-Flashは調整前の81.2%から調整後91.1%に向上し、記事によればGPT-6 AstraとGPT-6.1 Solを低コストで上回った。最終確認と判断は資格を持つ従業員が担う用途として紹介されている。"
+  ],
+  "significance": "エージェントを運用するチームは、実際の利用記録や専門家の評価を改善に結び付け、変更を評価基準で確かめたうえで本番反映を管理できる。アラスカ航空の事例は、航空機整備報告の分類支援で調整後の評価スコアが上がった一方、確認と最終判断は従業員が保持する使い方を示している。",
+  "summaryEn": "Microsoft Foundry introduces a way to continuously improve agents using their runtime traces and user input. Teams set evaluation criteria, identify issues, optimize instructions, skills, or models, and validate changes; teams choose what reaches production. Related capabilities have different release statuses: Insights is generally available, while trace annotations and several optimization features are in preview.",
+  "keyPointsEn": [
+    "The improvement cycle repeats four stages: Establish standards, Identify issues, Optimize, and Validate. Evaluations can use business-specific criteria and datasets drawn from real usage, and statistical tests help assess differences between versions.",
+    "Insights, which groups recurring issues, is generally available and can also provide visibility into agents built outside Foundry with LangGraph, LangChain, and CrewAI. Trace annotations, evaluation datasets generated from them, and golden datasets are in preview.",
+    "Agent optimizer tests candidate changes against evaluations, while teams decide whether to apply them in production. Sending Insights issues to the optimizer, experience-based skill optimization, and cost optimization are in preview.",
+    "In Alaska Airlines’ classification evaluation, MAI-Code-2-Flash scored 81.2% before tuning and 91.1% after tuning; the article says it outperformed GPT-6 Astra and GPT-6.1 Sol at a fraction of the cost. Qualified employees retain responsibility for review and final decisions."
+  ],
+  "significanceEn": "Teams operating agents can use real usage records and expert feedback to drive improvements, evaluate changes against their standards, and control what reaches production. The Alaska Airlines example describes improved evaluation scores for aircraft-maintenance report classification while employees retain review and final decision-making."
+}

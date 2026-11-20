@@ -1,0 +1,18 @@
+{
+  "summary": "GitHubはリポジトリ概要ページでACCESSIBILITY.mdを認識・表示し、アクセシビリティ目標、既知の障壁、対応環境、報告手順などをまとめる場所を提供する。ファイルはルート、.github/、docs/に置け、組織の.githubリポジトリから継承することもできる。公開リポジトリではCommunity Standardsから追加・提案でき、新規リポジトリにはアクセシビリティ用issueラベルが既定で含まれる。",
+  "keyPoints": [
+    "ACCESSIBILITY.mdはリポジトリのルート、.github/、docs/で認識され、組織の.githubリポジトリにある声明を継承することもできる。公開リポジトリではInsights > Community Standardsからスターター文書を使って追加・提案できる。",
+    "新規リポジトリにはアクセシビリティ用issueラベルが既定で追加される。声明は障壁の報告方法と次に期待できる対応を説明し、ラベルは関連作業の整理・追跡に使える。",
+    "ACCESSIBILITY.mdに固定形式はなく、プロジェクトが維持できる正確な情報から始める。目標、変更時の確認やレビューの期待、報告経路、対応環境、既知の制約と回避策などを記載できる。",
+    "WCAGのバージョンやレベルを目標として示しても、適合性が検証されたことにはならない。適合を主張するには評価が必要で、対象範囲、日付、方法、評価者を明示する必要がある。"
+  ],
+  "significance": "障壁に遭遇した利用者は、報告先や回避策、プロジェクトが確認済みの範囲をリポジトリ内で見つけやすくなる。貢献者には変更時のアクセシビリティ上の期待が伝わり、メンテナーは報告や対応作業を整理しやすくなるため、利用者・貢献者・メンテナー間で情報を共有する基盤となる。",
+  "summaryEn": "GitHub now recognizes and displays ACCESSIBILITY.md on repository overview pages, giving projects a place to document accessibility goals, known barriers, supported environments, and reporting processes. The file can be placed in the repository root, .github/, or docs/, and can also be inherited from an organization’s .github repository. Public repositories can add or propose one through Community Standards, and new repositories include an accessibility issue label by default.",
+  "keyPointsEn": [
+    "ACCESSIBILITY.md is recognized in the repository root, .github/, or docs/, and a repository can inherit a statement from its organization’s .github repository. Public repositories can add or propose one using a starter document from Insights > Community Standards.",
+    "New repositories include an accessibility issue label by default. The statement explains how to report a barrier and what to expect next, while the label helps maintainers organize and track the resulting work.",
+    "There is no fixed format for ACCESSIBILITY.md; projects should start with accurate information they can maintain. It can cover goals, checks or review expectations for changes, reporting routes, supported environments, and known limitations with workarounds.",
+    "Naming a WCAG version or level as a target does not establish verified conformance. A conformance claim requires an evaluation and should identify its scope, date, method, and evaluator."
+  ],
+  "significanceEn": "People who encounter barriers can more easily find reporting routes, workarounds, and what the project has or has not verified. Contributors can see accessibility expectations for changes, while maintainers can organize reports and related work, providing a shared information base for users, contributors, and maintainers."
+}

@@ -1,0 +1,18 @@
+{
+  "summary": "MicrosoftとIntelは、AIを機密データや業務の近くで動かしながら、ワークロードの配置や制御方法を選べるよう、シリコンからクラウド、AIまでをつなぐデジタル主権の共通基盤を整える方針を示した。Azure LocalとIntel Xeon 6、機密VMの保護機能、Foundry Localなどを組み合わせ、顧客管理環境を含む複数の実行場所で一貫した運用を目指す。",
+  "keyPoints": [
+    "Azure LocalはIntel Xeon 6プロセッサ上で動作し、顧客管理環境向けの分散Azure基盤と共通のコンピュート基盤を提供する。記事では、データや業務の近くでクラウド・AI機能を使いつつ、セキュリティ、管理、ガバナンスの一貫性を保つとしている。",
+    "対応するAzure Confidential VM構成では、Intel XeonのIntel TDXが使用中のワークロードをハードウェアで隔離できる。ハードウェアベースのアテステーションは、環境のセキュリティ特性を組織自身の要件と照合するための証拠を提供する。",
+    "Microsoft Foundryは要件に応じたAIの実行場所を選ぶ選択肢を提供し、Foundry Localは自組織の環境で推論を実行する。Intel Xeon 6のIntel AMXはCPU上のAI処理を高速化でき、OpenVINOは対応インフラでのモデル最適化と展開を支援する。",
+    "Microsoft 365 LocalとGitHub Enterprise Localは、コラボレーション、ソースコード、ソフトウェア開発のワークフローにも顧客管理型の選択肢を広げる。"
+  ],
+  "significance": "機密性の高い製造データ、政府サービス、臨床環境、知的財産などを扱う組織にとって、AIの実行場所と適用する制御をワークロードごとに選び、必要に応じて環境を検証できることが重要になる。MicrosoftとIntelは、規制や運用条件が変化しても基盤を作り直さずに配置や保護を調整できる共通アーキテクチャを目指しているが、記事は個別製品の新たな提供開始や価格を発表しているわけではない。",
+  "summaryEn": "Microsoft and Intel outlined a shared digital-sovereignty foundation spanning silicon, cloud, and AI, intended to let organizations choose where workloads run and how they are controlled while bringing AI closer to sensitive data and operations. The approach combines Azure Local and Intel Xeon 6, protections for confidential VMs, and services such as Foundry Local, including customer-controlled environments.",
+  "keyPointsEn": [
+    "Azure Local runs on Intel Xeon 6 and brings distributed Azure infrastructure together with a common compute foundation for customer-controlled environments. The article says organizations can use cloud and AI capabilities closer to their data and operations while maintaining consistent approaches to security, management, and governance.",
+    "In supported Azure Confidential VM configurations, Intel Xeon’s Intel TDX can hardware-isolate workloads while they are in use. Hardware-backed attestation provides evidence to check relevant security properties of the environment against an organization’s own requirements.",
+    "Microsoft Foundry offers choices for where AI runs based on requirements, and Foundry Local runs inference in an organization’s own environment. Intel AMX on Xeon 6 can accelerate AI workloads on the CPU, while OpenVINO helps optimize and deploy models across supported infrastructure.",
+    "Microsoft 365 Local and GitHub Enterprise Local extend customer-controlled options to collaboration, source code, and software development workflows."
+  ],
+  "significanceEn": "For organizations handling sensitive manufacturing data, government services, clinical environments, or intellectual property, it matters to choose where AI runs, apply controls by workload, and verify the environment when needed. Microsoft and Intel aim to provide a shared architecture that can adapt workload placement and protections as regulations and operating conditions change without rebuilding the management and security model. The article does not announce a new product availability date or pricing."
+}

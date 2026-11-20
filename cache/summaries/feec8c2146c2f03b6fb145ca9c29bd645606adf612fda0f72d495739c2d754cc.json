@@ -1,0 +1,18 @@
+{
+  "summary": "Agent Host Protocol（AHP）は、VS Codeで開発されGitHub各サービスにも採用されたオープン標準で、エージェントのセッションをアプリや端末をまたいで継続できるようにする。サーバーが状態を管理し、クライアントが操作を送る仕組みで、ネットワークの切断や再接続にも対応する。記事では、VS CodeやGitHub Copilotアプリ、クラウド環境での利用に加え、独自のクライアントやサーバーを構築する方法も紹介している。",
+  "keyPoints": [
+    "AHPはエージェントの動作方法ではなく、クライアントとエージェントのやりとりを標準化する。サーバーはURIで識別されるチャネルを提供し、root、session、chatが必須で、terminalやMCP、OTel向けのチャネルも追加できる。",
+    "各チャネルの状態はreducer方式で管理され、クライアントは状態変更やチャット送信などの操作を送る。接続が切れた場合は操作を再送し、サーバーが照合・確認してから確定する。",
+    "VS CodeのホストはTypeScript、GitHubのホストはRustで実装され、ローカル実行や多様なクラウド環境など異なる要件に対応する。独立した実装間の連携を通じて、プロトコルの不足やクライアント側の前提も明らかになった。",
+    "ライブラリはRust、TypeScript、Kotlin、Swift、.NET、Goで利用できる。CopilotアプリではExperimental > Direct Connectionsを有効にしてホストを追加でき、VS CodeではAgentsウィンドウから追加できるほか、code agent hostやcode agent endpointsコマンドも用意されている。"
+  ],
+  "significance": "複数のアプリや端末で同じエージェントのセッションや履歴、状態を扱いたい利用者と、独自のエディターやツールにエージェントを組み込みたい開発者に関係する。共通プロトコルによって、クライアントごとの個別連携に頼らず、異なるホストやクライアント間でセッションを継続できる基盤を提供する。",
+  "summaryEn": "The Agent Host Protocol (AHP), developed first in VS Code and adopted across GitHub, is an open standard for continuing agent sessions across apps and devices. Its server-managed state and client actions support reconnection after network interruptions. The article describes its use in VS Code, GitHub Copilot apps, and cloud environments, as well as building custom clients and servers.",
+  "keyPointsEn": [
+    "AHP standardizes how clients interact with agents rather than how agents work. Servers provide URI-identified channels; root, session, and chat are required, and additional channels can support terminal, MCP, or OTel features.",
+    "State in each channel is managed using reducers, and clients send actions such as state changes or chat messages. After a disconnection, queued actions are resent and confirmed by the server before being committed.",
+    "The VS Code host is implemented in TypeScript and the GitHub host in Rust to meet differing requirements, including local execution and varied cloud environments. Independent implementations exposed protocol gaps and client assumptions.",
+    "Libraries are available in Rust, TypeScript, Kotlin, Swift, .NET, and Go. The Copilot app can connect to a host by enabling Experimental > Direct Connections and adding it under Environments; VS Code can add one from the Agents window, and the code agent host and code agent endpoints commands are also available."
+  ],
+  "significanceEn": "The protocol is relevant to users who want to work with the same agent sessions and state across apps and devices, and to developers integrating agents into their own editors or tools. A shared protocol provides a basis for session continuity across different hosts and clients without relying on one-off integrations for each client."
+}

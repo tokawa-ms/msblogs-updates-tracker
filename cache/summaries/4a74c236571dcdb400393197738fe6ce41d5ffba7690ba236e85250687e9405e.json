@@ -1,0 +1,18 @@
+{
+  "summary": "Gitは6件のセキュリティ脆弱性を修正する新バージョンをリリースし、悪意あるリポジトリのクローン時のコード実行や、マージ・バイナリパッチ処理時のメモリ破損などに対処しました。修正はGit 2.56.1と保守系列向けのバックポート版に含まれます。Git本体に加え、Gitを同梱するアプリや自動化・サービス上のインストールも更新するよう呼びかけています。",
+  "keyPoints": [
+    "修正版はGit 2.56.1で、2.55.1、2.54.1、2.53.1、2.52.1、2.51.3、2.50.2にもバックポートされました。Gitを同梱するアプリも更新対象です。",
+    "脆弱性は、悪意あるリポジトリのクローンによるコード実行、protocol v2のHEADを介したパストラバーサル、署名付きタグのマージ時のメモリ破損、細工されたバイナリパッチや大規模マージによる異常終了・メモリ破損などに及びます。",
+    "GitHubはgithub.com、GitHub Enterprise Cloud、データレジデンシー対応のGitHub Enterprise Cloudに修正を展開済みです。GitHub Enterprise Server向けには3.19.16、3.20.12、3.21.10、3.22.5が提供され、管理者には速やかなアップグレードを推奨しています。",
+    "git fast-importでは、入力ストリームからの3機能が既定で拒否されます。信頼できるストリーム生成元の場合に限り、明示的に--allow-unsafe-featuresを指定できます。更新できない間は、信頼できない相手からのクローンやマージ、パッチ・fast-import処理を避けるよう案内しています。"
+  ],
+  "significance": "悪意あるリポジトリや未信頼のマージ・パッチを扱う開発者に加え、利用者の代わりにマージを行うホスティングサービスや自動化環境も影響を受け得ます。クローン時のコード実行や意図しないファイル書き込み、クラッシュにつながる問題が含まれるため、Git本体だけでなく同梱版やサービス上のGitも修正版へ更新することが重要です。",
+  "summaryEn": "Git released new versions fixing six security vulnerabilities, including code execution when cloning malicious repositories and memory corruption while processing merges or binary patches. The fixes are in Git 2.56.1 and backported maintenance releases. Users are urged to update Git as well as applications, automation, and services that bundle or use it.",
+  "keyPointsEn": [
+    "The fixes are in Git 2.56.1 and backported to 2.55.1, 2.54.1, 2.53.1, 2.52.1, 2.51.3, and 2.50.2. Applications that bundle Git should also be updated.",
+    "The vulnerabilities include code execution when cloning malicious repositories, path traversal through a protocol v2 HEAD, memory corruption when merging signed tags, and crashes or memory corruption from crafted binary patches or large merges.",
+    "GitHub has deployed fixes to github.com, GitHub Enterprise Cloud, and GitHub Enterprise Cloud with data residency. GitHub Enterprise Server updates are available in 3.19.16, 3.20.12, 3.21.10, and 3.22.5, and administrators are urged to upgrade promptly.",
+    "Three git fast-import features are now rejected by default when supplied through an input stream. The caller can explicitly enable --allow-unsafe-features only when the stream generator is trusted. Until updating, users are advised to avoid untrusted clones, merges, patches, and fast-import streams."
+  ],
+  "significanceEn": "Developers handling malicious repositories or untrusted merges and patches may be affected, as may hosting services and automation that merge or process repositories on users’ behalf. Because the issues include code execution during cloning, unintended file writes, and crashes, the article emphasizes updating not only Git itself but also bundled copies and Git installations used by services and automation."
+}

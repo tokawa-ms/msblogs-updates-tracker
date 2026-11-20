@@ -1,0 +1,18 @@
+{
+  "summary": "MicrosoftとKeystoneは、AIを利用する大企業202社を対象に、エージェントの調整や学習を支える共有知識基盤「知識スパイン」などの実践を調べた。関連する実践が多い企業ほど、2022～2025年の営業利益率や総資産利益率の伸びが大きい傾向が見られた。一方、この研究が示すのは相関であり、エージェントが業績向上を引き起こしたとは結論づけていない。",
+  "keyPoints": [
+    "調査は2026年6～9月に、従業員1,000人超でAIを利用中の米国企業202社を対象に実施されたため、米国企業全体を代表する標本ではない。",
+    "2022～2025年の公開企業の比較では、スコア上位四分位の営業利益率は約5.8ポイント増、最下位は約0.4ポイント増で、総資産利益率はそれぞれ約2.3ポイント増、約0.0ポイントだった。実践状況は対象期間後に測定されており、結果は因果関係ではなく過去の業績との関連を示す。",
+    "知識スパインにつながる4つの実践すべてを報告した企業は、調査対象202社のうち6社（3%）だった。該当する実践には、エージェント登録情報の自動更新、本番環境のシグナルによる評価、過去のエラーを使ったテスト、タスク別のモデル選択が含まれる。",
+    "構築時は、複数の業務情報源から最新の文脈を集約し、エージェントの修正を次版のテストに変え、知識スパインの責任者を置くことが提案されている。全社一斉ではなく、1チームや少数の連携ワークフローから始めて広げる方法も示された。"
+  ],
+  "significance": "複数のエージェントを使う企業にとって、あるエージェントへの修正を他のエージェントにも共有し、社内業務から得た知識を蓄積できる点が重要になる。一方、調査で知識スパインの構成要素をすべて整えた企業は3%にとどまり、こうした運用基盤はまだ少数に限られている。",
+  "summaryEn": "Microsoft and Keystone studied practices, including a shared knowledge system called a knowledge spine, that help 202 AI-using enterprises coordinate and learn from agents. Companies with more of these practices tended to show greater growth in operating margins and return on assets from 2022 to 2025, but the study establishes correlation, not causation.",
+  "keyPointsEn": [
+    "Conducted from June to September 2026, the study covered 202 US enterprises with more than 1,000 employees that were already using AI, so its sample does not represent all US companies.",
+    "Among public companies from 2022 to 2025, the top score quartile’s operating margins rose about 5.8 percentage points versus about 0.4 in the bottom quartile; return on assets rose about 2.3 points versus about 0.0. Practices were measured after that period, so the results show an association, not causation.",
+    "Six of the 202 companies (3%) reported all four practices connected to knowledge-spine operations: an automatically updated agent registry, evaluations triggered by production signals, tests reusing past error patterns, and task-specific model selection.",
+    "The proposed practices include centralizing current business context from diverse sources, turning agent corrections into tests, and assigning an owner to the knowledge spine. The article also suggests starting with one team or a few connected workflows before expanding."
+  ],
+  "significanceEn": "For companies using multiple agents, a knowledge spine can let other agents learn from corrections and preserve knowledge gained through the company’s own work. Yet only 3% of companies in the study had deployed all the building blocks, so this kind of operating foundation remained uncommon."
+}

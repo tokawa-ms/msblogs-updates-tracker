@@ -1,0 +1,18 @@
+{
+  "summary": "GitHubの新しいGitストレージアーキテクチャは、Gitオブジェクトの保存と参照情報の更新を分離し、読み書きやメンテナンスを独立して拡張できる設計です。Gitのpush・fetch・branchの使い方や保護機能は維持したまま、社内テストでは単一リポジトリで5,000エージェントの同時作業と毎秒7,200回のpushを実証したとGitHubは説明しています。現在は限定的なプライベートプレビューで、より広い展開は来年初めの予定です。",
+  "keyPoints": [
+    "GitオブジェクトはAzure Blob Storageに保存し、参照情報とリポジトリを構成するpackの一覧は、複製ログサービスRef-CASで管理します。",
+    "読み書きを担う仮想レプリカは必要に応じて増やせ、compactionは専用ノードがバックグラウンドで実行します。これにより、リクエスト処理とメンテナンスの計算資源を分けます。",
+    "GitHubは社内テストで、1つのリポジトリに同時に作業する5,000エージェントと毎秒7,200回のpushを実証したとしています。読み取りも一貫して低レイテンシで処理したとの説明です。",
+    "新アーキテクチャは現在、限定的なプライベートプレビューで提供されており、より広い展開は来年初めの予定です。"
+  ],
+  "significance": "エージェントによる並行作業で単一リポジトリの書き込みや、それに伴う読み取りが増えても、保存・参照更新・メンテナンスを別々に拡張できる基盤を目指しています。GitHubは、小規模なリポジトリが急に活発になっても移行や特別扱いを必要としないことを目標にしており、開発者の通常のGit操作は変わらないとしています。",
+  "summaryEn": "GitHub’s new Git storage architecture separates Git object storage from reference updates so reads, writes, and maintenance can scale independently. GitHub says internal tests demonstrated 5,000 agents working concurrently on one repository and 7,200 pushes per second while serving reads with consistently low latency. It is now in a limited private preview, with broader rollout planned for early next year.",
+  "keyPointsEn": [
+    "Git objects are stored in Azure Blob Storage, while references and the list of packs making up a repository are managed by Ref-CAS, a separate replicated log service.",
+    "Virtual replicas serving reads and writes can be added as needed, while dedicated nodes run compaction in the background, separating request handling from maintenance compute.",
+    "GitHub says internal tests demonstrated 5,000 agents working concurrently on one repository and 7,200 pushes per second, with consistently low latency for reads.",
+    "The new architecture is currently available in a limited private preview, with broader rollout planned for early next year."
+  ],
+  "significanceEn": "The architecture is intended to provide a foundation that can scale storage, reference updates, and maintenance separately as parallel agent work increases writes to a repository and amplifies read traffic. GitHub’s goal is for repositories to handle sudden growth without migration or special treatment, while developers continue using Git as before."
+}

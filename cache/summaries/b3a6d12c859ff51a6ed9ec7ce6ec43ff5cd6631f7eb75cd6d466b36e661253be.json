@@ -1,0 +1,18 @@
+{
+  "summary": "GitHubは2026年10月、サービス全体で性能低下を伴う8件のインシデントを経験し、Azure Central USの容量拡張と障害の波及を抑える対策を進めた。11月9日時点で本番サービス151件中140件が同リージョンで稼働し、移行済みサービスのトラフィックは3月以降82%増加した。一方、書き込み停止や移行時の監視不足、地域ネットワーク障害も発生し、移行の安全性、依存先の分離、地域復旧の強化を続ける。",
+  "keyPoints": [
+    "11月9日時点で本番サービス151件中140件、MySQLプライマリ50件中32件がAzure Central USで稼働。9つのKubernetesクラスターすべてでコンピュートを拡張し、容量は2倍超となった。移行済みサービスのトラフィックは3月以降82%増加した。",
+    "負荷集中の緩和策として、1日2億5,000万件超を処理するGitHub Actionsの高トラフィックAPI経路を効率化し、ピーク時のデータベース読み取りを85%削減した。リポジトリトピック検索では、検索語を3文字以上にすることで遅い、または中断されるクエリを約98%減らした。",
+    "10月7日に2回の書き込み障害が起き、約10分と約9分、合計約19分続いた。古いデータベースサーバー情報を持つ新しいルーティング管理マシンが誤った書き込み先を公開したことが原因で、GitHubはルーティング設定の検証と保守制御を強化した。",
+    "East US 3の構築は計画より約1週間遅れており、次段階では12月第1週に初の検証済みトラフィック移行を始める予定。移行の安全性、依存関係の分離、地域復旧の強化も継続する。"
+  ],
+  "significance": "容量拡張は増加するサービス需要を受け止める一方、10月にはActionsのジョブ遅延、データベース起因の書き込み停止、Copilotの一部モデルのエラーなど、開発者や組織に影響する障害も起きた。報告は容量増強だけでは可用性を確保できず、運用の安全性や障害の隔離、地域復旧も並行して必要であることを示している。",
+  "summaryEn": "In October 2026, GitHub experienced eight incidents that degraded services and expanded capacity in Azure Central US while taking steps to limit incident escalation. As of November 9, 140 of 151 production services were running there, and migrated-service traffic had grown 82% since March. Write outages, monitoring gaps during migrations, and a regional network disruption also prompted continued work on migration safety, dependency isolation, and regional recovery.",
+  "keyPointsEn": [
+    "As of November 9, 140 of 151 production services and 32 of 50 MySQL primaries were running in Azure Central US. Compute capacity was more than doubled across all nine Kubernetes clusters, while migrated-service traffic had grown 82% since March.",
+    "To reduce concentrated load, GitHub moved a high-traffic Actions endpoint handling over 250 million requests a day to a more efficient path, cutting peak database reads by 85%. Requiring at least three characters for repository topic searches reduced slow or terminated queries for that pattern by about 98%.",
+    "Two write outages on October 7 lasted about 10 and 9 minutes, or about 19 minutes total. A new routing-management machine with outdated database-server records published incorrect write destinations; GitHub strengthened routing validation and maintenance controls.",
+    "The East US 3 buildout is about one week behind schedule, with its first validated traffic ramp planned for the first week of December. GitHub is also continuing work on migration safety, dependency isolation, and regional recovery."
+  ],
+  "significanceEn": "Expanded capacity can absorb growing service demand, but October also brought incidents affecting developers and organizations, including delayed Actions jobs, database-related write outages, and errors with some Copilot models. The report shows that capacity growth alone does not ensure availability; operational safety, incident isolation, and regional recovery also need to improve."
+}

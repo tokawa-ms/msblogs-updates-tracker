@@ -1,0 +1,20 @@
+{
+  "summary": "Microsoft IQは、企業の業務知識やデータをエージェントで活用するためのエンタープライズ向けコンテキスト管理基盤として発表された。Work IQ、Fabric IQ、Foundry IQ、Web IQと350超の外部コネクターをまとめ、業務の文脈や技能を管理可能なビジネスプラグインとして複数のエージェントやプラットフォームで再利用できる。各構成要素では一般提供済みの機能、プレビュー機能、今後提供予定の機能がそれぞれ示されている。",
+  "keyPoints": [
+    "ビジネスプラグインに、各エージェントが継承するコンテキスト、技能、信頼できる情報源をまとめて管理できる。Microsoft Copilot、GitHub Copilot、MCP経由のMicrosoft Foundryのほか、ChatGPTやClaudeなどで利用できる。",
+    "Work IQでは、CRM・ERP記録を含むBusiness Applications、権限で絞り込んだMicrosoft 365コンテンツなどを返すRetrieve、進行中の会議コンテキスト、複数段階のタスクやエージェント間連携、粒度の細かいMCPポリシー、OpenAI・Anthropicプラグインが一般提供。MemoryやOffice文書の作成・編集、Listenイベント購読、人による承認付きポリシー管理はパブリックプレビュー。",
+    "Fabric IQでは、Power BIセマンティックモデルのCopilot利用が一般提供済みで、Fabric data agentsの一般提供は近日予定。ExcelのCopilot編集機能やChatGPT・Claude向けコネクター、GitHub Copilot向けオントロジー、Fabric apps、IQ sharingのオントロジー対応はプレビュー。",
+    "Foundry IQでは、ナレッジグラフとMicrosoft Retriever 1がプレビューで、SharePoint（indexed）ナレッジソースは権限サポート付きで一般提供。Foundry IQ Serverlessは2026年12月に一般提供予定で、プロビジョニング容量ではなく利用量に応じた課金と無料の月間枠を設ける。FoundryのAgent Optimizerは成功基準に沿って構成を評価・改善し、Programmed Trainingは対応するオープンウェイトモデル向けにパブリックプレビュー。",
+    "Web IQは待機リストなしで全Azure顧客が利用可能で、料金は1,000回の呼び出しあたり1ドルから。Auto／Auto Advancedモードはウェブ、画像、動画、ニュース、新設のPlaces・Weatherを統合し、サイトやドメインの対象制御、ライセンス済み出版物コンテンツの併用にも対応する。40億超の掲載・オファーを含むCommerceデータはプライベートプレビュー。"
+  ],
+  "significance": "組織内の業務知識やデータを、権限や統制を保ちながら複数のエージェントで再利用したいチームに関係する発表だ。Microsoftは、共通の基盤をエージェントごとに作り直す時間を減らし、組織が知識や知的財産の管理を保ったまま改善を積み重ねられるとしている。",
+  "summaryEn": "Microsoft announced Microsoft IQ, an enterprise context management platform for using organizational knowledge and data with agents. It brings together Work IQ, Fabric IQ, Foundry IQ, Web IQ, and more than 350 third-party connectors, and makes business context and skills reusable across agents and platforms through governed business plugins. The announcement distinguishes generally available, preview, and planned capabilities across its components.",
+  "keyPointsEn": [
+    "Business plugins can centrally curate and govern the context, skills, and authoritative sources agents inherit. They can be used with Microsoft Copilot, GitHub Copilot, Microsoft Foundry via MCP, and assistants such as ChatGPT and Claude.",
+    "Work IQ features generally available include Business Applications with CRM and ERP records, Retrieve with permission-trimmed Microsoft 365 content, real-time meeting context, multi-step tasks and agent-to-agent support, granular MCP policies, and OpenAI and Anthropic plugins. Memory, Office document creation and editing, Listen event subscriptions, and policy governance with human approval are in public preview.",
+    "In Fabric IQ, Power BI semantic models in Copilot are generally available, while general availability for Fabric data agents in Copilot is coming soon. Excel's Copilot editing feature, connectors for ChatGPT and Claude, GitHub Copilot ontologies, Fabric apps, and ontology support for IQ sharing are in preview.",
+    "In Foundry IQ, knowledge graphs and Microsoft Retriever 1 are in preview, while the SharePoint (indexed) knowledge source is generally available with permissions support. Foundry IQ Serverless is planned for general availability in December 2026, with usage-based pricing and free monthly allowances. Foundry's Agent Optimizer evaluates and improves configurations against success criteria, and Programmed Training is in public preview for supported open-weight models.",
+    "Web IQ is available to all Azure customers without a waitlist, with pricing starting at $1 per 1,000 calls. Auto and Auto Advanced unify web, images, videos, news, new Places and Weather sources; Web IQ also supports site and domain controls and licensed publisher content. Commerce data covering over 40 billion listings and offers is in private preview."
+  ],
+  "significanceEn": "The announcement concerns teams that want to reuse organizational knowledge and data across agents while maintaining permissions and governance. Microsoft says this can reduce the time spent rebuilding common foundations and enable ongoing improvements while organizations retain control of their knowledge and intellectual property."
+}

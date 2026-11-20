@@ -1,0 +1,18 @@
+{
+  "summary": "Microsoft FoundryでGPT-6 SolとGPT-6 Lunaが一般提供ラインアップに加わった。Solは企業向けエージェントや複雑なワークフロー向け、Lunaは抽出・要約・振り分けなど大量処理向けと位置付けられ、Microsoftは難しい推論業務にはGPT-6 Astraを推奨する。発表では展開方式、提供地域、コンテキスト長別の料金も示されている。",
+  "keyPoints": [
+    "モデルの役割は、Astraが高度な推論を要する業務、Solが企業向けエージェントや複雑な知識作業、Lunaが抽出・要約・リクエスト振り分けなどの大量処理とされている。",
+    "Standard展開はAstra、Sol、LunaでGlobalの全28リージョンと米国・EU Data Zonesに対応。Provisioned ThroughputはAstraとSol、Priority ProcessingはSolが対象で、対応地域もそれぞれ記載されている。",
+    "Global Standardの短コンテキスト料金は、100万トークン当たりの入力／出力でAstraが10／50ドル、Solが2／10ドル、Lunaが0.10／0.50ドル。Provisioned ThroughputとPriority Processingの料金は展開タイプによって異なる。",
+    "レガシーモデルを利用する顧客には、GPT-5.6 Sol以上へのアップグレードを評価するよう推奨している。"
+  ],
+  "significance": "複雑な判断や多段階の作業と、抽出・振り分けなどの大量処理とでモデルを使い分けられるため、エージェントを運用するチームは業務に合った選択を検討できる。Foundryの評価・監視機能や複数の展開方式も示されており、選定時にはトークン単価だけでなくタスク当たりのコストを評価するよう説明している。",
+  "summaryEn": "GPT-6 Sol and GPT-6 Luna have joined the generally available lineup in Microsoft Foundry. Sol is positioned for enterprise agents and complex workflows, while Luna is intended for high-volume tasks such as extraction, summarization, and routing; Microsoft recommends GPT-6 Astra for demanding reasoning work. The announcement also provides deployment options, regional availability, and context-length-based pricing.",
+  "keyPointsEn": [
+    "Astra is positioned for demanding reasoning, Sol for enterprise agents and complex knowledge work, and Luna for high-volume tasks such as extraction, summarization, and request routing.",
+    "Standard deployment is available for Astra, Sol, and Luna across all 28 Global regions and the US and EU Data Zones. Provisioned Throughput covers Astra and Sol, while Priority Processing covers Sol, with the respective regions specified.",
+    "For Global Standard short context, input/output pricing per million tokens is $10/$50 for Astra, $2/$10 for Sol, and $0.10/$0.50 for Luna. Provisioned Throughput and Priority Processing pricing varies by deployment type.",
+    "Customers on legacy models are advised to evaluate an upgrade to GPT-5.6 Sol or above."
+  ],
+  "significanceEn": "Teams can consider different models for complex, multi-step work and high-volume tasks such as extraction or routing. The article also describes Foundry evaluation and monitoring features and deployment options, and advises assessing cost per task rather than token price alone."
+}

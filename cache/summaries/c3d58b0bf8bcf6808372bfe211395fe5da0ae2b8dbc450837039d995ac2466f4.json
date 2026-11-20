@@ -1,0 +1,18 @@
+{
+  "summary": "MicrosoftとNVIDIAは、企業がオープンウェイトモデルのリスクを評価・管理するための共同論文「Risk Management for Open-Weight Models in Enterprise」を公開した。論文は、重みが公開されているかどうかだけではリスクは決まらず、モデルの用途や導入環境、保護策によって変わるとし、ISOやNISTの枠組みに基づく共通のリスク分類と評価の進め方を示す。初版は主にモデル層を扱い、今後はランタイムやアプリケーション層にも対象を広げる予定。",
+  "keyPoints": [
+    "初版の分類体系は、サイバーセキュリティ、データ保護、コンテンツ、人間とAIの相互作用、バイアスの5領域を扱う。導入チェックリストではなく、企業が自社のシステムや用途に合わせ、評価・緩和策・責任者と結び付けて使う想定。",
+    "論文は主にモデル層のリスクを扱う。エージェントやアプリケーションの安全性をモデル単体の評価で判断せず、権限、データアクセス、ツール、実行環境、運用上の統制も評価する必要がある。",
+    "論文は5領域のリスクと評価方法を対応付け、導入上のリスクに関する証拠を得る手掛かりを示す。Microsoft Foundryには組み込み・カスタム評価や自動レッドチーミング、コンテンツ安全性制御があるが、モデルや導入構成ごとの利用可否（プレビュー状況を含む）を確認し、個別テスト、監視、人の監督と組み合わせるよう求めている。",
+    "オープンウェイトへのアクセスと導入方法は別の選択であり、オープンウェイトモデルもマネージドプラットフォームで利用できる。自社でモデルを運用する企業は、マネージドサービスが担う場合のある保護策を自ら担うことがあり、リスクに応じて統制を選び、モデルや導入環境の変更時に見直す必要がある。"
+  ],
+  "significance": "企業のエンジニアリング、セキュリティ、法務、安全性、事業の各チームにとって、共通の分類を使い、導入環境ごとに重要なリスクを評価や対策、責任者へ結び付けるための指針となる。モデル単体の評価や公開形態だけではシステム全体の安全性を示せないため、実際の権限・データ・ツール・運用と、保護策の担い手を含めて検討する必要がある。",
+  "summaryEn": "Microsoft and NVIDIA published Risk Management for Open-Weight Models in Enterprise, a joint paper to help enterprises assess and manage risks from open-weight models. It argues that risk depends on the model, use case, deployment, and safeguards—not weight openness alone—and presents a shared taxonomy and assessment approach grounded in ISO and NIST frameworks. The first paper focuses mainly on the model layer, with future work intended to cover runtime and application layers.",
+  "keyPointsEn": [
+    "The initial taxonomy covers five areas: cybersecurity, data protection, content, human-AI interaction, and bias. It is not a deployment checklist; enterprises are expected to adapt it to their systems and use cases and connect risks to evaluations, mitigations, and accountable owners.",
+    "The paper focuses mainly on model-layer risks. Assessing a model alone does not establish an agent or application's safety; teams should also assess permissions, data access, tools, runtime, and operational controls.",
+    "The paper maps risks across the five areas to evaluation methods that can provide relevant evidence. Microsoft Foundry offers built-in and custom evaluations, automated red teaming, and content-safety controls, but teams should verify availability for their model and deployment, including preview status, and combine them with application-specific testing, monitoring, and human oversight.",
+    "Access to open weights and the deployment method are separate choices, and open-weight models can also be used through managed platforms. Enterprises operating their own deployments may assume safeguards otherwise provided by a managed service; controls should be selected for the risks and revisited as models and deployments change."
+  ],
+  "significanceEn": "For engineering, security, legal, safety, and business teams, the paper provides a shared taxonomy and guidance for connecting deployment-specific risks to evaluations, mitigations, and accountable owners. Because model-only assessment or weight openness does not establish system-wide safety, teams need to consider the actual permissions, data, tools, operations, and responsibility for safeguards."
+}

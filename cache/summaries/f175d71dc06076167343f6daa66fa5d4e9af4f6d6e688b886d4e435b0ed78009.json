@@ -1,0 +1,20 @@
+{
+  "summary": "エージェントスキルは、SKILL.mdを中心とするバージョン管理可能なディレクトリに、繰り返し作業の手順と適用条件を記録し、複数のエージェントで再利用する方法として紹介されている。記事はData Forgeの例を通じ、プロジェクト固有情報をマニフェストに分離してスキル間で共有する設計や、人の承認・CI検査を組み込む手順を説明する。スキル自体は実行環境のツール、資格情報、権限を与えないため、クライアントごとに配布とセットアップを確認する必要がある。",
+  "keyPoints": [
+    "スキルには明確な作業、入力、出力、適用条件を定める。Proof Agentの例では、別の検証役がAI生成の変更を確認し、指摘の根拠を示す。",
+    "Data Forgeでは、初期化スキルがテーブルや命名規則を調べてマニフェストに記録し、他のスキルがその情報を使う。プロジェクト設定とチーム標準は分け、必要な判断には人の確認を挟む。",
+    "ワークフローは7段階で、各段階に人の確認地点を設ける。スキーマ変更の実行前には承認を求め、前段階の完了も確認する。",
+    "配布スクリプトはClaude Code、Cursor、GitHub Copilot向けのファイルを生成でき、CI用にnode scripts/package.mjs --checkを用意する。導入後は、クライアントがスキルや参照情報、必要なツールを扱えるか確認する。",
+    "Proof AgentのGitHub Actionsは差分を静的にレビューし、コード実行やテストは行わない。デモではblock-on-fail: falseで指摘を助言扱いにしたが、既定ではFAILがチェック失敗となり、必須チェックならマージを止める。"
+  ],
+  "significance": "同じ手順や判断を繰り返し説明しているチームは、知識を再利用できるスキルとして共有し、複数の関連作業を一貫した形で進めやすくなる。一方、スキルは環境固有のアクセス権を補わず、判断が必要な場面では人の確認が、マージを止める必要がある場合はリポジトリのルール設定が引き続き重要となる。",
+  "summaryEn": "Agent skills are presented as a way to record repeatable tasks and when to apply them in versioned directories centered on SKILL.md, so multiple agents can reuse them. Through the Data Forge example, the article explains separating project-specific details into a manifest, sharing them across skills, and adding human approvals and CI checks. Skills do not provide the tools, credentials, or permissions of the execution environment, so packaging and setup must be checked for each client.",
+  "keyPointsEn": [
+    "Give a skill a clear task, input, output, and applicability. In the Proof Agent example, a separate verifier checks AI-generated changes and provides evidence for its findings.",
+    "In Data Forge, an initialization skill discovers tables and naming conventions and records them in a manifest for other skills to use. Keep project configuration separate from team standards, and include human review where judgment is needed.",
+    "The workflow has seven phases, each with a human checkpoint. It checks that the previous phase is complete and requests approval before schema changes run.",
+    "A packaging script can generate files for Claude Code, Cursor, and GitHub Copilot, and provides node scripts/package.mjs --check for CI. After installation, check that each client recognizes the skill, loads its references, and can use the required tools.",
+    "Proof Agent’s GitHub Action statically reviews the diff and does not execute code or run tests. The demo set block-on-fail: false to make findings advisory, while by default FAIL fails the check and blocks merging if the check is required."
+  ],
+  "significanceEn": "Teams that repeatedly explain the same processes and judgment can share them as reusable skills and coordinate related work more consistently. However, skills do not provide environment-specific access; human review remains important where judgment is needed, and repository rules must still be configured when a check is required to block a merge."
+}

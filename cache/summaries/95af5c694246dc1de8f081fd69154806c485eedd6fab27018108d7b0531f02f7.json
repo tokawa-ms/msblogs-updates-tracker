@@ -1,0 +1,18 @@
+{
+  "summary": "GitHub Copilotを使う開発手法として、要件整理から実装、検証、リリース後の調査までを「Plan／Build／Verify／Observe」の各段階で支援するエージェント型ワークフローを解説している。計画では要件をIssueや実装計画に落とし込み、実装では作業を並行・継続しやすくする。レビュー前の品質・セキュリティ確認や運用データに基づく調査も扱い、開発者の判断が必要な場面を残す。記事が紹介する調査では、AI導入率が低い状態から高い状態へ移ったチームで、PRレビュー時間が441%長くなったという。",
+  "keyPoints": [
+    "Planでは、Copilotで散在する情報や関係者の意見をまとめ、合意した要件と受け入れ条件をGitHub Issuesに反映できる。GitHub Agentic Workflowsでラベル付けや複雑度推定を行い、複雑な作業ではPlan Modeの計画を人が確認・承認してから実装に渡す。",
+    "Buildでは、同じCopilotセッションを別のクライアントで再開し、クラウドサンドボックスでタスクを継続できる。Copilotアプリはセッションごとにリポジトリの分離コピーを用意する。リポジトリの指示や共有メモリでプロジェクト知識を引き継ぎ、Copilot Fusionではモデルや推論の深さを選び、品質・コスト・応答時間のバランスを調整する。",
+    "Verifyでは、依存する作業を小さな積み上げ型PRに分け、Code QualityやCopilot code reviewで定型的な確認を支援する。AI ScanはCodeQLの対象範囲外の言語・ファイルの脆弱性を検出し、AI secret detectionはパターン照合で見逃しうる秘密情報を識別する。npm向けのGitHub package firewallはパブリックプレビューで、設定されたセキュリティポリシーに反するダウンロードをブロックできる。",
+    "Observeでは、Fabricなどのコネクター経由で可観測性ツールや業務データを参照し、影響を受けたリクエストや顧客層の調査を支援する。調査結果を根拠や受け入れ条件、回帰テストを含むIssue案にまとめ、Dreamingの改善提案を通じて今後のメモリや指示、スキルを更新できる。"
+  ],
+  "significance": "開発者は情報の検索や定型確認に費やす時間を減らし、実装上の判断や変更の意図・リスクの検討に集中しやすくなる。レビュー担当者にとっては、小さく焦点を絞った変更と事前の確認により、コードの意図や問題点に注意を向けやすい。リリース後も運用上の証拠を開発コンテキストと結び付けることで、影響範囲の調査と後続作業の記録を支援する。",
+  "summaryEn": "The article describes an agentic engineering workflow using GitHub Copilot to support planning, building, verification, and post-release investigation. It covers turning requirements into issues and implementation plans, keeping work moving across sessions, checking quality and security before review, and investigating behavior with operational data, while leaving room for developer judgment. It cites a study reporting that pull request review took 441% longer for teams moving from low to high AI adoption.",
+  "keyPointsEn": [
+    "For planning, Copilot can consolidate scattered information and stakeholder input, then turn agreed requirements and acceptance criteria into GitHub Issues. GitHub Agentic Workflows can label and estimate task complexity, while people can review and approve plans made with Plan Mode before implementation.",
+    "For building, users can resume the same Copilot session across clients and continue tasks in cloud sandboxes. The Copilot app provides isolated repository copies for sessions. Repository instructions and shared memory carry project knowledge forward, while Copilot Fusion lets users choose models and reasoning depth to balance quality, cost, and response time.",
+    "For verification, dependent work can be split into smaller stacked pull requests, with Code Quality and Copilot code review supporting routine checks. AI Scan finds vulnerabilities in languages and files outside CodeQL coverage, and AI secret detection identifies unstructured secrets that pattern matching may miss. GitHub package firewall is in public preview for npm and can block downloads that violate configured security policies.",
+    "For observation, connectors such as Fabric can provide access to observability tools and business data to help investigate affected requests or customer groups. Copilot can draft issues with evidence, acceptance criteria, and regression tests, while Dreaming suggestions can help refine future memories, instructions, skills, and code review guidance."
+  ],
+  "significanceEn": "Developers can spend less time retrieving information and performing routine checks, and more time on implementation decisions and assessing intent and risk. Reviewers can focus more on what changes are meant to do and what might go wrong when changes are smaller and routine checks happen beforehand. After release, connecting operational evidence with engineering context can help investigate impact and record follow-up work."
+}

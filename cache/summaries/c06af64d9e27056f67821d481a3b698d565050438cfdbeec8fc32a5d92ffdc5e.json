@@ -1,0 +1,20 @@
+{
+  "summary": "Intelligent Terminal 0.2では、0.1からの初のマイナー更新として、ローカルモデル対応、タブごとのエージェント切り替え、OpenCode対応、WSL内でのエージェント実行などが追加されました。Agent Paneの操作性やAutofix、信頼性も改善されています。更新はMicrosoft Store、winget、GitHubのリリースページから入手できます。",
+  "keyPoints": [
+    "Agent Paneでローカルモデルを利用可能になりました。BYOM設定でBase URLとModel IDを指定し、モデルを選択します。GitHub CopilotとOpenCodeに対応し、OllamaなどOpenAI API互換のサーバーを使えます。",
+    "/agentでタブごとに異なるエージェントを使え、会話はタブ間で分離されます。/moveは各タブのAgent Paneの位置を個別に変更し、/sessionsではセッション名を検索して会話を再開できます。",
+    "OpenCodeが組み込みエージェントの選択肢に加わり、Agent PaneでのチャットとAutofix、以前のセッションの再開に対応しました。対話型OpenCodeセッションを管理画面に表示する追跡フックも任意でインストールできます。",
+    "Agent Paneのエージェントと?<prompt>委任エージェントを、プロファイルごとにWindowsホストまたはWSLディストリビューション内から選べます。未設定のプロファイルはグローバル既定値を引き続き使います。",
+    "Agent PaneではAlt+Vで画像を貼り付けられ、タブごとに最大50件の最近のプロンプトを上下キーで呼び戻せます。AutofixはPowerShell 5.1の実行時エラーやBashのプロンプト循環などへの対応を広げ、トークン使用量とコストの表示は設定で切り替えられます。"
+  ],
+  "significance": "自分のマシン上のモデルを使いたい利用者は、クラウド依存なしでAgent Paneのワークフローを実行できるようになります。また、WSL内に作業環境がある利用者は、プロファイルごとに適切なエージェントを設定でき、複数タブでの作業やセッション管理も行いやすくなります。",
+  "summaryEn": "Intelligent Terminal 0.2, its first minor update from 0.1, adds local model support, per-tab agent switching, OpenCode support, and the ability to run agents inside WSL. It also improves Agent Pane usability, Autofix, and reliability. The update is available through the Microsoft Store, winget, or the GitHub release page.",
+  "keyPointsEn": [
+    "The Agent Pane now supports local models. Configure a Base URL and Model ID in BYOM settings, then select the model. It works with GitHub Copilot and OpenCode and supports Ollama and other OpenAI API-compatible servers.",
+    "Use /agent to run different agents in separate tabs, with conversations isolated between tabs. /move repositions each tab’s Agent Pane independently, and /sessions searches session titles so you can resume a conversation.",
+    "OpenCode joins the built-in agent options, supporting chat and Autofix in the Agent Pane and resuming previous sessions. Optional tracking hooks can show interactive OpenCode sessions in session management.",
+    "You can configure the Agent Pane agent and the ?<prompt> delegation agent per profile to run on Windows or inside a WSL distribution. Unconfigured profiles continue to use the global defaults.",
+    "The Agent Pane accepts pasted images with Alt+V and lets you recall up to 50 recent prompts per tab with the Up and Down keys. Autofix handles more cases, including PowerShell 5.1 runtime errors and Bash prompt cycles, and token usage and cost can be displayed in the status bar and toggled in settings."
+  ],
+  "significanceEn": "Users who want to run models on their own machines can use Agent Pane workflows without cloud dependencies. Users whose work lives in WSL can configure an agent suited to each profile, while per-tab agents and session tools make it easier to work across multiple tasks."
+}

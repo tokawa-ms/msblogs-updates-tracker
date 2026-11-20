@@ -1,0 +1,18 @@
+{
+  "summary": "Azureは、情報収集や判断、承認待ちを含む長時間・変動的なAIエージェント処理に対応するため、既存のクラウドネイティブ基盤を進化させる方針を示した。柱は、計算資源・ストレージ・ネットワークの協調、オープン技術の本番利用、モデルから運用まで含む費用と事業価値の管理、制御下での運用自動化だ。Azureは、安全に隔離されたエージェント環境やクラウド・エッジ横断実行などの機能にも投資を続けるとしている。",
+  "keyPoints": [
+    "AIの処理段階ごとに必要な資源が異なるため、計算資源・ストレージ・ネットワークを連携させ、性能・信頼性・コストのバランスを取る考え方を示した。事例としてBasecamp ResearchはAzureでEDEN向けに9.7兆個のヌクレオチドを組み立て、約3週間で3つの治療用途の実験検証を行ったと報告した。",
+    "オープン技術の本番活用では、Gartnerの予測として2028年に新たに展開されるAIエージェントの95%がKubernetesを利用すると紹介。Azure Kubernetes Service（AKS）は、オープンソース技術の本番運用に伴う複雑さやリスクの管理を支援するとしている。",
+    "AI投資の評価では、モデルのトークン利用やエージェントの振る舞いだけでなく、計算資源・ストレージ・ネットワーク・運用費も合わせて把握し、事業成果を基に最適化や追加投資を判断するよう提案している。",
+    "エージェント型運用は、分断されたシステムのシグナルを結び付けて問題の早期発見・迅速な解決や自動化を支援する構想。自動化を広げる場合も、明確な制御の下で人が重要な判断に関与し、説明責任を担うとしている。"
+  ],
+  "significance": "AIエージェントが長時間の処理や複数システムの連携を担う組織では、需要の変動に対応するインフラ、運用状況の可視性、信頼性の確保が重要になる。Azureの提案は、AIの成果と費用を一体で見ながら運用自動化を進め、重要な判断では人の統制を維持するという、AIを本番で活用する際の基盤上の課題に関わる。",
+  "summaryEn": "Azure outlined its approach to evolving its cloud-native foundation for AI agents that gather information, make decisions, and handle long-running, changing workflows. Its priorities are coordinated compute, storage, and networking; production use of open technologies; managing costs against business value; and automating operations within controls. Azure says it is also continuing to invest in capabilities such as secure isolated environments for agents and workloads across cloud and edge.",
+  "keyPointsEn": [
+    "Because AI workloads need different resources at different stages, Azure emphasizes coordinating compute, storage, and networking while balancing performance, reliability, and cost. As an example, Basecamp Research reported using Azure to assemble 9.7 trillion nucleotides for EDEN and achieve laboratory validation across three therapeutic applications in about three weeks.",
+    "For production use of open technologies, the article cites Gartner's forecast that 95% of new AI agent deployments will use Kubernetes by 2028. It says Azure Kubernetes Service (AKS) helps manage the complexity and risk of running open-source technologies in production.",
+    "To assess AI investment, the article recommends accounting not only for model token usage and agent behavior but also compute, storage, networking, and operations, then using business outcomes to guide optimization and further investment.",
+    "Agentic operations are described as connecting signals across otherwise disconnected systems to help detect and resolve issues sooner and increase automation. The article says automation should expand under defined controls, with people involved in and accountable for critical decisions."
+  ],
+  "significanceEn": "For organizations using agents to handle long-running work and coordinate across systems, infrastructure that adapts to changing demand, operational visibility, and reliability become important. Azure's proposal addresses a foundational challenge of putting AI into production: managing outcomes and costs together while expanding operational automation and retaining human control over critical decisions."
+}

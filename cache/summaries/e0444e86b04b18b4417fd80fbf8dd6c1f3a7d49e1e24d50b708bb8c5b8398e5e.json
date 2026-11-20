@@ -1,0 +1,18 @@
+{
+  "summary": "MicrosoftのCodename MDASHを使ったGitHubとMicrosoftの試験では、6つの広く使われるオープンソースプロジェクトでAIが見つけた脆弱性候補を選別・人手検証し、修正案付きの非公開報告として保守担当者へ届けました。数千件の候補は99件に絞られ、11月15日時点で55件が修正され、そのうち14件はリリース済みです。試験は修正支援が保守担当者の負担軽減につながる可能性を示す一方、確認に研究者7人が各プロジェクト約2日を費やし、規模拡大には課題が残ります。",
+  "keyPoints": [
+    "試験では6プロジェクトで数千件の脆弱性候補が見つかり、AIによる選別と研究者の確認後に99件を報告。11月15日時点で55件が修正され、14件はリリースに含まれました。",
+    "Codename MDASHがスキャンと修正案の提示を行い、GitHub Security LabのAIトリアージが重複や妥当性を確認。Microsoft FORGE Labの研究者が残った報告をすべて手作業で検証してから、概念実証と修正案を添えて非公開で届けました。",
+    "個別事例では、Caddyの保守担当者が受け取った22件すべてを1週間以内に修正しました。ImageMagickでは、ある報告を受けて15分で修正を公開した事例が紹介されています。",
+    "手作業での検証には研究者7人が各プロジェクト約2日を要し、記事は現状では拡大に課題があるとしています。今後GitHubは知見を非公開脆弱性報告やセキュリティアドバイザリーに取り込み、基金の卒業プロジェクトに検証済みのAIスキャンを提供する予定です。"
+  ],
+  "significance": "保守担当者は、生のスキャン結果を自分で選別する代わりに、確認済みで修正案のある非公開報告から対応を始められ、記事によれば報告対応にかかる時間を減らせます。さらに、GitHubで公開されたアドバイザリーがデータベースの審査を受ければ、Dependabotが依存先のリポジトリに警告を出せるため、修正の効果はそのソフトウェアを利用する側にも及びます。",
+  "summaryEn": "In a GitHub and Microsoft pilot using Microsoft’s Codename MDASH, AI findings across six widely used open source projects were filtered and manually verified before being sent to maintainers as private reports with suggested fixes. Thousands of potential issues were narrowed to 99 reports; as of November 15, 55 had been fixed, including 14 fixes already in a release. The pilot suggests that fix-oriented support may ease maintainers’ workload, but scaling remains a challenge: seven researchers spent about two days per project checking findings.",
+  "keyPointsEn": [
+    "Across six projects, the pilot found thousands of potential vulnerabilities and reported 99 after AI triage and researcher review. As of November 15, 55 had been fixed, and 14 were included in a release.",
+    "Codename MDASH scanned projects and suggested fixes; GitHub Security Lab’s AI triage checked validity and removed duplicates. Microsoft FORGE Lab researchers manually verified every remaining finding before it was privately reported with a proof of concept and suggested fix.",
+    "In one example, Caddy’s maintainers fixed all 22 reports they received within a week. For ImageMagick, the article describes one fix being published in 15 minutes after a report.",
+    "Manual verification required seven researchers to spend about two days per project, and the article says scaling remains a challenge. GitHub plans to incorporate the lessons into private vulnerability reporting and security advisories, and to offer the Fund’s alumni projects AI scans with findings checked before private reporting."
+  ],
+  "significanceEn": "Maintainers can start from verified private reports with suggested fixes instead of sorting raw scan results themselves; the article says this takes less of their time. In addition, if a security advisory published on GitHub is reviewed for the GitHub Advisory Database, Dependabot can alert repositories that depend on the package, extending the benefit of a fix to downstream users."
+}

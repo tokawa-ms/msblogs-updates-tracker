@@ -1,0 +1,18 @@
+{
+  "summary": "Azure Infrastructure Resiliency Managerはパブリックプレビューとして、構成図上の設計意図と実際の回復性のずれを継続的に把握・検証する機能を提示した。Resiliency Agentによる回復性を考慮したIaC生成、設計との差分や優先課題の可視化、対応用IaCの生成、ゾーン障害訓練などを支援する。記事はAIモデルなどの依存関係や変更で回復性が損なわれ得ると指摘し、全ワークロード・環境での一貫したセルフサービス評価は未完了としている。",
+  "keyPoints": [
+    "構成図は設計意図を示すもので、現時点の稼働状況やフェイルオーバー経路の実効性を証明しない。記事は、実際にテストして確認する必要があると述べる。",
+    "AIモデルや推論エンドポイントも重要な依存先となり、停止だけでなく回答のばらつきもリスクになる。モデルやプロンプト等の変更は評価し、可能な限り決定論的なチェックを設けるべきだとしている。",
+    "地域レベルの災害復旧にはワークロードごとのRTO・RPOを定め、可用性ゾーンとセカンダリリージョンが異なるリスクに備えることを明確にする。復旧先のリージョンは、規制対象の環境では同じ法域内に置く必要がある場合がある。",
+    "Azure Infrastructure Resiliency Managerは、Resiliency AgentによるIaC生成、設計との差分や優先課題の確認、対応IaCの生成、復旧経路の検証を支援するパブリックプレビュー。仮想マシンなど利用者がコンピュートを管理するワークロードではゾーン停止訓練を行え、他のサービスではフェイルオーバー検証やAzure Chaos Studioなどを利用する。"
+  ],
+  "significance": "Azure上で多数のワークロードを運用するチームにとって、設計後の変更で回復性が崩れていないかを確認し、問題の優先順位付けや復旧経路の検証を進める手段となる。一方、全ワークロードと環境を対象とした一貫したセルフサービス評価はまだ完成しておらず、利用範囲には限界がある。",
+  "summaryEn": "Azure Infrastructure Resiliency Manager is presented in public preview to help teams continuously identify and validate gaps between intended design and actual resilience. It supports resilience-aware IaC generation, visibility into design gaps and priorities, generated IaC for supported fixes, and zone-down drills. The article notes that dependencies such as AI models and ongoing changes can undermine resilience, and that consistent self-service assessment across all workloads and environments is not yet complete.",
+  "keyPointsEn": [
+    "Architecture diagrams show design intent but do not prove current health or whether failover paths work; the article says these need to be tested.",
+    "AI models and inference endpoints are dependencies, and variable outputs can also pose risks. The article says changes to models, prompts, or related systems should be evaluated and deterministic checks used where possible.",
+    "For regional disaster recovery, define RTO and RPO for each workload and distinguish the different risks addressed by availability zones and a secondary region. In regulated environments, the recovery region may need to be within the same jurisdiction.",
+    "Azure Infrastructure Resiliency Manager is in public preview and supports IaC generation with the Resiliency Agent, identifying design gaps and priorities, generating IaC for supported fixes, and validating recovery paths. Zone-down drills are available for workloads where customers manage compute, such as virtual machines; other services can use failover validation, product-specific recovery capabilities, or Azure Chaos Studio."
+  ],
+  "significanceEn": "For teams operating many workloads on Azure, the service provides a way to check whether changes have undermined resilience after design, prioritize gaps, and validate recovery paths. However, consistent self-service assessment across all workloads and environments is not yet complete, which limits its current scope."
+}

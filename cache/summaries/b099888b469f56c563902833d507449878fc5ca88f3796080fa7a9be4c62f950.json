@@ -1,0 +1,20 @@
+{
+  "summary": "GitHubはUniverse 2026で、アイデアから完成ソフトウェアまでをつなぐエージェント型ソフトウェアデリバリー構想と、それを支える基盤刷新を発表した。Copilotアプリなどを通じて複数リポジトリやツールをまたぐ作業を支援し、開発者が方向付けや判断を担い、エージェントが実装と検証を行う。Azureのマルチリージョン環境への移行は来年初めの完了を見込む。",
+  "keyPoints": [
+    "Copilot projectsはGitHub Copilotアプリで本日からネイティブに利用でき、複数リポジトリにまたがるエージェント作業を、管理された並列セッションで実行できる。",
+    "Session continuityにより、GitHubアプリ、VS Code、CLI、Web間で同じクラウドエージェントセッションを開始・継続できる。",
+    "GitHubによると、Copilot Fusion MaxはArtificial Analysis Coding Agent IndexでOpus 5.5 Maxから2ポイント以内のスコアを、コスト半分・タスク時間40%短縮で達成した。また、Copilot code review MaxはReviewBenchの高重大度問題で最高のF1スコアを記録した。",
+    "GitHub Enterpriseの顧客は本日から別のCopilot契約なしで全Copilot機能を使え、利用したAIクレジット分を支払う。現時点ではGitHub Sales経由で利用可能で、セルフサービスは近日提供予定。既存のBusinessおよびEnterprise契約は継続または移行を選べる。",
+    "GitHubは今年、CPUコア400万個、高速ストレージ160 PB、ネットワーク容量50 Tb/sを追加し、Azureのマルチリージョン環境への移行を来年初めに完了する見込み。"
+  ],
+  "significance": "エージェントを使う開発者は、複数リポジトリやツールをまたぐ作業の進捗をまとめて追い、実装や検証をエージェントに委ねながら、判断や方向付けに集中できる。GitHub Enterpriseの顧客には別契約なしでCopilot機能を利用できる選択肢が加わる一方、支払いは使用したAIクレジットに応じる。",
+  "summaryEn": "At GitHub Universe 2026, GitHub announced an agentic software delivery vision connecting ideas to completed software, alongside infrastructure changes to support it. Copilot apps and related features support work across repositories and tools, with developers setting direction and making decisions while agents implement and verify changes. GitHub expects to complete its migration to a multi-region Azure deployment early next year.",
+  "keyPointsEn": [
+    "Copilot projects are available natively in the GitHub Copilot app starting today and let users run agent work across multiple repositories in fully managed, parallel sessions.",
+    "Session continuity lets users start and continue the same cloud agent session across the GitHub app, VS Code, the CLI, and the web.",
+    "GitHub says Copilot Fusion Max scored within two points of Opus 5.5 Max in the Artificial Analysis Coding Agent Index at half the cost and 40% less time per task. GitHub also says Copilot code review Max posted the highest F1 score on ReviewBench for high-severity issues.",
+    "Starting today, GitHub Enterprise customers can use all Copilot features without a separate Copilot subscription and pay for the AI credits they use. It is available through GitHub Sales, with self-service coming soon; existing Copilot Business and Enterprise customers can keep their plans or move over when ready.",
+    "GitHub added 4 million CPU cores, 160 PB of high-speed storage, and 50 Tb/s of network capacity this year, and expects to complete its migration to a multi-region Azure deployment early next year."
+  ],
+  "significanceEn": "Developers using agents can track work across repositories and tools in one place, delegating implementation and verification while retaining responsibility for direction and decisions. GitHub Enterprise customers also gain the option to use Copilot features without a separate subscription, with charges based on the AI credits they use."
+}

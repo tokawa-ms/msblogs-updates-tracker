@@ -1,0 +1,18 @@
+{
+  "summary": "Azure Failure Prediction and Detection（AFPD）は、2024年に本格稼働した、機械学習とテレメトリーでハードウェア障害を予測・検知し、ワークロードへの影響前に緩和・修復する仕組みです。Microsoftによると、月間ノード修復率は80%向上し、ハードウェア再起動数は36%超減少しました。SAP専用ではなく、Azureの複数のコンピュートや一部ストレージにも適用されます。",
+  "keyPoints": [
+    "障害の予測・検知後、対象ノードを新規割り当てから除外し、対象となる既存VMは再起動なしで正常ノードへライブマイグレーションします。通常は数秒の停止で済みますが、Mシリーズの全VMサイズが対象ではなく、非対応の場合は再配置期限と推奨措置が通知されます。",
+    "MicrosoftはAFPDにより月間ノード修復率が80%上がり、ハードウェア再起動数が36%超減少したと報告しています。関連するシステム論文は2025 IEEE Cloud Summitの最優秀論文賞を受賞しました。",
+    "AFPDはSAP専用機能ではなく、General Purpose、Specialized Compute、HPC/AI、および一部のStorageで動作します。記事によれば、追加料金の階層やインフラ層での設定を要さず、フリート全体で自動的に稼働します。",
+    "障害情報はResource Health、Resource Graph Explorer、Event Grid、Scheduled Eventsの4経路で確認・連携できます。運用者は通知設定を確認し、Scheduled Eventsを処理する自動化では、最大7日先のNotBefore時刻を含むイベントに対応する必要があります。"
+  ],
+  "significance": "停止に敏感なSAP環境や、Azure上でミッションクリティカルなサービスを運用する企業・ISVにとって、AFPDは障害の影響を利用者が受ける前の緩和と、通知・自動化による対応の仕組みを提供します。SAPは影響の大きさが分かりやすい例ですが、記事では適用範囲はより広いAzureワークロードに及ぶとしています。",
+  "summaryEn": "Azure Failure Prediction and Detection (AFPD), fully operational since 2024, uses machine learning and telemetry to predict and detect hardware failures and mitigate or remediate them before they affect workloads. Microsoft reports an 80% increase in monthly node repair rates and a reduction of more than 36% in hardware reboots. AFPD is not SAP-specific and applies to several Azure compute offerings and select storage workloads.",
+  "keyPointsEn": [
+    "After predicting or detecting a failure, AFPD removes the affected node from new allocations and, for eligible existing VMs, live-migrates workloads to a healthy node without a reboot, typically with only a pause of a few seconds. Live migration is not available for every M-series VM size; otherwise, a redeployment deadline and recommended action are posted.",
+    "Microsoft reports that AFPD increased the monthly node repair rate by 80% and reduced hardware reboots by more than 36%. The system's related paper won the Best Paper Award at the 2025 IEEE Cloud Summit.",
+    "AFPD is not SAP-specific; it operates across General Purpose, Specialized Compute, HPC/AI, and select Storage workloads. According to the article, it runs automatically across the fleet without a paid tier or infrastructure-layer configuration.",
+    "AFPD findings are available through Resource Health, Resource Graph Explorer, Event Grid, and Scheduled Events. Operators should check their notification setup, and automation for Scheduled Events must handle events with NotBefore times up to seven days in the future."
+  ],
+  "significanceEn": "For SAP environments that are sensitive to downtime, and for enterprises and ISVs running mission-critical services on Azure, AFPD provides a way to mitigate hardware failures before users experience their effects and to respond through notifications and automation. SAP illustrates the stakes, but the article says the system applies to a broader range of Azure workloads."
+}

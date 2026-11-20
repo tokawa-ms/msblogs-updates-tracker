@@ -1,0 +1,16 @@
+{
+  "summary": "Microsoft Foundryは、AIエージェントを単発の実証から、コストや品質などを継続管理する本番運用へ移す枠組みとして説明されている。MicrosoftがスポンサーのIDC調査では、AI施策の承認前に財務基準を適用する組織が約90%ある一方、本番コストの拡大を予測するモデルを作る組織は17%にとどまる。記事は、モデル選定、コストの可視化、ルーティング、評価を計画・統制・最適化の循環に組み込む方法を紹介する。",
+  "keyPoints": [
+    "調査では、約90%の組織がAI施策の承認前に財務基準を設ける一方、本番でのコスト拡大を予測する組織は17%。モデル選定でコスト効率を重視する組織は約78%で、86%は6～24カ月以内に財務成果を期待している。",
+    "資金投入前に利用量が3倍・10倍になった場合のコストを見積もり、支出をアプリ、チーム、エージェントに紐づけることを提案。モデルはコスト・品質・遅延で比較し、予測可能な需要には予約容量を活用する。",
+    "Microsoft Foundryの運用ループでは、計画段階でモデルや容量を比較し、統制ではコスト・品質・遅延・安全性を可視化、最適化ではモデルルーティングや評価ツールを使う。記事は、Foundryで利用できるモデルが1万1,000超としている。"
+  ],
+  "significance": "AIエージェントを導入・拡大する組織や、その成果に責任を持つ事業責任者にとって、コストを個々のリクエストや成果に結びつけて測り、品質を保ちながら運用を見直すことが重要となる。記事は、証拠や統制をチームごとに手作業で作るのではなくプラットフォームで共有することで、利用例が増えても同じ運用規律を繰り返し構築せずに済むと説明している。",
+  "summaryEn": "Microsoft Foundry is presented as a framework for moving AI agents from one-off experiments to production operations that continuously manage costs and quality. In an IDC study sponsored by Microsoft, about 90% of organizations apply financial thresholds before approving AI initiatives, while only 17% model how production costs scale. The article describes incorporating model selection, cost visibility, routing, and evaluation into a plan-control-optimize loop.",
+  "keyPointsEn": [
+    "The study finds that about 90% of organizations set financial thresholds before approving AI initiatives, while 17% model production cost scaling. About 78% prioritize cost efficiency when selecting models, and 86% expect financial results within six to 24 months.",
+    "Before funding, the article recommends estimating costs at three and ten times usage, attributing spending to an application, team, and agent, comparing models on cost, quality, and latency, and using reserved capacity for predictable demand.",
+    "Microsoft Foundry’s operating loop compares models and capacity during planning, makes cost, quality, latency, and safety visible for control, and uses model routing and evaluation tools for optimization. The article says more than 11,000 models are available in Foundry."
+  ],
+  "significanceEn": "For organizations deploying or scaling AI agents and the business owners accountable for their results, it matters to link costs to individual requests and outcomes and review operations while maintaining quality. The article says that sharing evidence and controls through a platform, rather than building them manually for each team, avoids having to recreate the same operating discipline as use cases multiply."
+}

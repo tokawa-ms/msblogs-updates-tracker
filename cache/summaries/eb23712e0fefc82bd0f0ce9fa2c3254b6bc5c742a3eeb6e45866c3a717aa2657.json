@@ -1,0 +1,18 @@
+{
+  "summary": "Microsoft Copilot harness in Foundry Agent Serviceがパブリックプレビューとして導入され、エージェントの実行ループやサンドボックスを管理し、再利用可能なスキル、接続ツール、ファイル・コード操作、サブエージェントへの委任を利用できるようになりました。あわせて、Foundryのホステッドエージェント向け長時間実行のレジリエンスが一般提供となり、中断後の再開を支援します。ハーネスの課金は2026年12月1日に始まり、それ以前はハーネスのランタイム利用が無料ですが、モデル推論や別途課金のツールなどは対象外です。",
+  "keyPoints": [
+    "プレビューでは、宣言的に定義したエージェント向けに、再利用可能なスキル、認証・承認を設定したFoundry/MCPツール、ファイルやコードの操作、組み込みサブエージェントへの委任、ソース管理可能な定義を提供します。",
+    "ホステッドエージェントの長時間実行レジリエンスは今週一般提供となりました。Foundryが中断を検知して元の入力で作業を再開し、アプリ側は進捗・中間結果の保存と、再実行時の重複操作防止を担います。",
+    "プレビュー中はエージェント作成時にハーネスを選ぶ必要があります。既存エージェントには変更がなく、作成後の切り替えは未対応で、実行環境のCPU・メモリ・アイドル設定はFoundryが管理します。",
+    "ハーネスの従量課金は2026年12月1日開始で、それまではハーネスのランタイム利用は無料です。開始後のサンドボックス料金はvCPU時間あたり0.0994米ドル、GiB時間あたり0.0118米ドルで、モデル推論や別途課金のツール・接続サービスは別料金となり、価格は地域や契約で異なる場合があります。"
+  ],
+  "significance": "実行ループやサンドボックスを自前で組み立てずに複雑なタスク向けエージェントを作りたい開発者は、管理された基盤とスキル・ツール連携を利用できます。一方、ホステッドエージェントの中断復旧では、作業状態の保存や再実行時の重複防止はアプリ側に必要です。プレビュー利用者には作成後にハーネスを切り替えられない制約があり、課金開始後はサンドボックス利用料も発生します。",
+  "summaryEn": "The Microsoft Copilot harness in Foundry Agent Service is now in public preview, providing managed agent execution and a sandbox, along with reusable skills, connected tools, file and code work, and subagent delegation. Long-running resilience for hosted agents is also generally available, helping work resume after interruptions. Harness billing begins December 1, 2026; runtime use is free before then, while model inference and separately billed tools and services remain chargeable.",
+  "keyPointsEn": [
+    "The preview provides reusable skills, Foundry and MCP tools with configured authentication and approvals, file and code operations, delegation to built-in subagents, and source-controlled definitions for declaratively defined agents.",
+    "Long-running resilience for hosted agents became generally available this week. Foundry detects interruptions and restarts work with its original input; the application must save progress and intermediate results and prevent duplicate actions on restart.",
+    "During the preview, the harness must be selected when creating an agent. Existing agents are unchanged, switching after creation is not yet supported, and Foundry manages the execution environment's CPU, memory, and idle settings.",
+    "Consumption-based harness billing starts December 1, 2026, and harness runtime use is free before then. From that date, sandbox compute costs USD $0.0994 per vCPU-hour and memory USD $0.0118 per GiB-hour; model inference and separately billed tools and connected services are charged separately, and prices may vary by region and agreement."
+  ],
+  "significanceEn": "Developers who want to build agents for complex tasks without assembling their own execution loop and sandbox can use a managed foundation with skills and tool integration. For interruption recovery in hosted agents, however, the application must save work state and prevent duplicate actions on restart. Preview users also cannot switch the harness after agent creation, and sandbox usage becomes billable when billing starts."
+}

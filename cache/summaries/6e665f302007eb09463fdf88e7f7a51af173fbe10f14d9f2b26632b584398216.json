@@ -1,0 +1,18 @@
+{
+  "summary": "Microsoft Foundryでは、falとの提携により、Kling、LTX、MiniMaxの動画生成モデルがパブリックプレビューとして順次提供されます。テキストからの動画生成や画像の動画化に対応し、初期ポートフォリオにはKling v3 Pro、LTX-2.5 Fast／Pro、MiniMax H3 Max／Turboが含まれます。開発者は用途に応じてモデルを選び、アプリケーションの動画生成ワークフローに組み込めます。",
+  "keyPoints": [
+    "初期ラインアップは5モデルで、テキストからの動画生成と既存画像のアニメーション化に対応します。",
+    "Kling v3 Proは音声生成とカスタム要素に対応。LTX-2.5 Fastは高速な反復向け、LTX-2.5 Proは高忠実度の出力向けで、両モデルともテキスト・画像からの生成と同期音声をサポートします。",
+    "初期モデル群は米国内でホストされ、Microsoft Foundryは米国ホスト型Kling 3エンドポイントを提供する最初のプロバイダーとしています。データ所在地の要件がある組織には、各モデルのデータ処理・保存条件の確認が必要です。",
+    "料金はモデルと出力解像度によって異なり、動画1秒あたりの米ドル価格が示されています。例としてMiniMax H3 Maxは480pで$0.05、768pで$0.08、1080pで$0.16です。"
+  ],
+  "significance": "動画生成を組み込む開発者や企業チームは、用途に合わせて複数モデルを比較し、品質・性能・コストを評価して選べます。企業利用では、ホスティング場所に加えて各モデルのデータ処理・保存条件も要件に照らして確認する必要があります。",
+  "summaryEn": "Microsoft Foundry is rolling out Kling, LTX, and MiniMax video models in public preview through its partnership with fal. The text-to-video and image-to-video portfolio includes Kling v3 Pro, LTX-2.5 Fast and Pro, and MiniMax H3 Max and Turbo. Developers can choose models for their use cases and incorporate them into video-generation workflows.",
+  "keyPointsEn": [
+    "The initial lineup has five models and supports generating video from text and animating existing images.",
+    "Kling v3 Pro supports native audio generation and custom elements. LTX-2.5 Fast is optimized for rapid iteration, while LTX-2.5 Pro targets high-fidelity output; both support text-to-video, image-to-video, and synchronized audio.",
+    "The initial models are hosted in the US, and Microsoft Foundry says it is the first provider to offer a US-hosted Kling 3 endpoint. Organizations with data residency requirements should review each model’s data processing and storage terms.",
+    "Pricing varies by model and output resolution and is listed in US dollars per generated video second. For example, MiniMax H3 Max costs $0.05 at 480p, $0.08 at 768p, and $0.16 at 1080p."
+  ],
+  "significanceEn": "Developers and enterprise teams integrating video generation can compare multiple models and evaluate quality, performance, and cost for their use cases. For enterprise use, they also need to check hosting location and each model’s data processing and storage terms against their requirements."
+}

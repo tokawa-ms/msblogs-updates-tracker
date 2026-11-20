@@ -1,0 +1,20 @@
+{
+  "summary": "Azure Container Apps Sandboxesは、エージェントの実行ごとに専用の隔離環境を用意し、作業完了後に破棄する実行基盤として紹介された。環境は数秒で作成され、制御されたIDと許可された範囲のアクセスで動作し、長時間の作業では状態を保った一時停止・再開もできる。MicrosoftはFoundryによるエージェント統制と実行環境を分ける構成を示し、この基盤となるアーキテクチャを一般提供すると述べている。",
+  "keyPoints": [
+    "記事が示す構成では、Foundryでエージェントを構築・統制し、Azure Container Appsの隔離サンドボックスに処理を実行させる。実行場所が変わっても、エージェントのID、権限、監督は維持される。",
+    "各実行環境は専用のハードウェア分離型microVM内で動き、サブ秒起動を可能にすると記事は説明する。実行時のIDやアクセス先は制御でき、認証情報は環境に保存されない。",
+    "導入例として、KPMGのDG Coworkは30,000超のAzure Container Apps Sandboxesを同時稼働させる設計とされる。Cognite Atlas AIでは、従来数日かかった調査を数分で追跡可能な回答にし、複雑な調査の一時停止・再開にも対応する。",
+    "南オーストラリア州教育省のEdChatは60,000人の生徒と40,000人超の職員を対象とし、同省はSandboxesへの移行で独自のコード実行状態管理用コードを約50,000行削減できると見積もる。",
+    "Microsoftによれば、同社内ではGitHub Copilotなどのサービスを支えるサンドボックスが本番環境で1日100万超稼働している。また、同社はこのアーキテクチャを一般提供すると述べている。"
+  ],
+  "significance": "本番運用を目指すエージェント開発チームや、セキュリティ・プラットフォーム担当者に関係する。共有基盤では実行同士の影響範囲や過剰なアクセスが課題となり、安全性を優先して制限するとエージェントの作業能力が損なわれるというトレードオフに対し、実行ごとの隔離環境を設ける設計を提示している。Microsoftは、この分離によって監督や権限を保ちながら多数のエージェントを並行稼働できるとしている。",
+  "summaryEn": "Azure Container Apps Sandboxes is presented as an execution platform that gives each agent run its own isolated environment, which is discarded when the work finishes. Environments can be created in seconds, use a controlled identity and permitted access, and be paused and resumed with their working context intact. Microsoft describes separating Foundry’s agent governance from the execution environment and says this architecture is generally available.",
+  "keyPointsEn": [
+    "The article’s design builds and governs agents in Foundry, then runs their work in isolated Azure Container Apps sandboxes. The agent’s identity, permissions, and oversight remain in place when its execution moves.",
+    "Each environment runs in its own hardware-isolated microVM, which the article says enables sub-second startup. Its identity and access can be controlled, and credentials are not stored in the environment.",
+    "As an example, KPMG’s DG Cowork is designed to run more than 30,000 Azure Container Apps Sandboxes concurrently. Cognite Atlas AI turns investigations that previously took days into traceable answers in minutes and can pause and resume complex investigations.",
+    "South Australia’s Department for Education runs EdChat for 60,000 students and more than 40,000 staff. The department estimates that moving to Sandboxes will let it retire close to 50,000 lines of custom code for managing code-interpreter state.",
+    "Microsoft says more than one million sandboxes run in production per day across its services, including GitHub Copilot. It also says this architecture is generally available."
+  ],
+  "significanceEn": "This matters to agent development teams aiming for production and to security and platform teams. Shared infrastructure can expose workloads to one another’s blast radius, while restricting an agent for safety can prevent it from doing its intended work. The article presents per-execution isolation as a way to preserve oversight and permissions while running many agents concurrently, according to Microsoft."
+}

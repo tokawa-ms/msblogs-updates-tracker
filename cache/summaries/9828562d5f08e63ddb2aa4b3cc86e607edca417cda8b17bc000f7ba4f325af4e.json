@@ -1,0 +1,18 @@
+{
+  "summary": "Azure Cobalt 200ベースの仮想マシン（VM）が一般提供（GA）となり、Cobalt 100比で最大50%高い性能をうたう。提供地域は現在14地域で、2026年末までに23地域へ拡大する予定。高メモリー向けMpsv4やローカルNVMeストレージ向けLpsv5を含む5シリーズを用意し、Microsoftは2027年から新規Azure Compute容量の大きな割合をCobalt 200が占めるとしている。",
+  "keyPoints": [
+    "新しいVMファミリーとして、高メモリー向けMpsv4はvCPU当たり16 GiB、ストレージ最適化のLpsv5はVM当たり最大23 TBのローカルNVMeストレージを提供する。",
+    "MicrosoftのベンチマークではCobalt 100比で、Web処理は最大1.5倍、Java処理は最大1.6倍、AIエージェントのツール実行は最大1.5倍、データベース処理は1.9倍の性能が報告された。",
+    "各Cobalt 200 VMにはAzure Boostが含まれ、Cobalt 100比でネットワーク帯域幅は最大15%、リモートストレージIOPSは20%、スループットは10%向上するとされる。",
+    "プロセッサー設定は、3.2 GHzで一貫して動作するDeterministic Modeと、条件が許せば最大3.6 GHzまで上げるOpportunistic Modeから選べる。後者は最大12%高い性能を得られる一方、周波数の変動がある。"
+  ],
+  "significance": "高性能・低遅延が必要なクラウドネイティブ、データ集約型、エージェント型AIのワークロードを運用する利用者にとって、性能向上に加え、メモリー量やローカルストレージ、処理の一貫性とピーク性能に応じた選択肢が増える。特にエージェントのサンドボックスやツール実行では、コア当たり性能の向上が遅延低減に役立つとMicrosoftは説明している。",
+  "summaryEn": "Azure Cobalt 200-based virtual machines (VMs) are now generally available, with Microsoft claiming up to 50% better performance than Cobalt 100. They are currently offered in 14 regions, with expansion to 23 planned by the end of 2026. The five VM series include high-memory Mpsv4 and local-NVMe-storage-oriented Lpsv5; Microsoft says Cobalt 200 will make up a significant share of new Azure Compute capacity starting in 2027.",
+  "keyPointsEn": [
+    "The new high-memory Mpsv4 family provides 16 GiB per vCPU, while storage-optimized Lpsv5 offers up to 23 TB of local NVMe storage per VM.",
+    "Microsoft benchmarks reported performance over Cobalt 100 of up to 1.5x for web serving, 1.6x for Java workloads, 1.5x for AI agent tool execution, and 1.9x for database workloads.",
+    "Azure Boost is included in every Cobalt 200 VM; compared with Cobalt 100, Microsoft reports up to 15% higher network bandwidth, 20% higher remote-storage IOPS, and 10% higher remote-storage throughput.",
+    "Users can choose Deterministic Mode, which runs consistently at 3.2 GHz, or Opportunistic Mode, which can boost to 3.6 GHz when conditions allow. The latter offers up to 12% more performance at the cost of some frequency variability."
+  ],
+  "significanceEn": "For users running cloud-native, data-intensive, or agentic AI workloads that need high performance and low latency, the offering adds performance improvements as well as choices for memory, local storage, and consistent versus peak performance. Microsoft says higher per-core performance can help reduce latency in agent sandboxes and tool execution."
+}

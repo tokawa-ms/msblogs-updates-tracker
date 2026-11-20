@@ -1,0 +1,16 @@
+{
+  "summary": "GitHubは、共同制作と包摂性を支援するオープンソースの新プロジェクトとして、デザイン用ハーネスのReplicaとOpen Source Accessibility Frameworkを公開しました。Replicaではデザインシステムに沿ったAI生成プロトタイプを作成し、GitHub Copilotと改善したり、Replica Hubで共有・議論したりできます。アクセシビリティ・フレームワークは4段階の説明責任モデルとACCESSIBILITY.mdを通じ、目標や既知の制約などを公開して追跡できるようにします。",
+  "keyPoints": [
+    "ReplicaはGitHubのデザインチームが導入したオープンソースのデザイン用ハーネスで、強化学習に取り組みます。プロトタイプはデザインシステム内で生成・改善でき、Replica Hubでチームと共有してコメントを受け、反復できます。",
+    "Open Source Accessibility Frameworkは外部の障害者・アクセシビリティコミュニティの貢献者と作成され、記事では「先月」公開とされています。4段階のモデルに加え、リポジトリ概要ページに表示されるACCESSIBILITY.mdで、目標、貢献者への期待、対応環境、既知の制約、障壁の報告方法を記載できます。",
+    "記事によると、2026年のGitHub上の公開貢献は25億件で、前年の11.2億件の2倍超でした。また、直近1年間のコード変更は179億回、全リポジトリのコミットは343億回、マージ済みプルリクエストは13億件に達しました。"
+  ],
+  "significance": "Replicaは、デザイナーや開発者がAI生成の試作を各チームのデザインシステムやワークフローに合わせ、共同で改善するための基盤を提供します。一方、アクセシビリティ・フレームワークとACCESSIBILITY.mdは、プロジェクトの目標や制約、障壁の報告先を明示し、貢献者が進捗を追えるようにします。コード変更の増加を背景に、ソフトウェアを作る過程でアクセシビリティを扱うための仕組みです。",
+  "summaryEn": "GitHub has shared two new open-source projects for collaboration and inclusion: Replica, a design harness, and the Open Source Accessibility Framework. Replica lets users create AI-generated prototypes within a design system, refine them with GitHub Copilot, and share them for feedback through Replica Hub. The accessibility framework uses a four-phase accountability model and ACCESSIBILITY.md to make goals and known limitations public and trackable.",
+  "keyPointsEn": [
+    "Replica is an open-source design harness introduced by GitHub’s design team that focuses on reinforcement learning. Users can generate and refine prototypes within a design system, then share them with teammates through Replica Hub for comments and iteration.",
+    "The Open Source Accessibility Framework, created with external contributors from disability and accessibility communities, launched “last month” according to the article. Its four-phase model and ACCESSIBILITY.md, visible on repository overview pages, let projects document accessibility goals, contributor expectations, supported environments, known limitations, and how to report barriers.",
+    "The article says public contributions on GitHub reached 2.5 billion in 2026, more than double the prior year’s 1.12 billion. In the last year, developers made 17.9 billion code changes, commits across public and private repositories reached 34.3 billion, and merged pull requests reached 1.3 billion."
+  ],
+  "significanceEn": "Replica gives designers and developers a shared foundation for refining AI-generated prototypes to fit their design systems and workflows. The accessibility framework and ACCESSIBILITY.md make project goals, limitations, and ways to report barriers explicit so contributors can track progress. Against a backdrop of growing code changes, these projects provide ways to address accessibility as software is created."
+}

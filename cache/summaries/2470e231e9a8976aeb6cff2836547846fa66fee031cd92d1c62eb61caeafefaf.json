@@ -1,0 +1,18 @@
+{
+  "summary": "GitHubの2026年版Octoverseは、2025年10月から2026年9月までの開発活動が過去最高となり、179億回のpush、343億件のcommit、13億件のマージ済みプルリクエストを記録したと報告した。AIエージェントの利用も広がり、9月にはプルリクエストの4割超がエージェント起点となったほか、業界別の公開リポジトリやモデル選択の動向もまとめている。",
+  "keyPoints": [
+    "2025年10月〜2026年9月の集計では、GitHubへのpushは179億回、全リポジトリのcommitは343億件、マージ済みプルリクエストは13億件に達した。",
+    "エージェント起点のプルリクエストは3月の17%から9月に40%超へ増え、9月だけで1億1,000万件となった。Copilot cloud agentの利用は前年比230%増で、agent chatの85%増を上回った。",
+    "9月に自分でモデルを選んだCopilot利用者の61%は複数モデルを使っていた。有料プラン利用者が使ったモデルは5月の29種類から9月には47種類に増え、同月にリクエストの25%超を占めるモデルはなかった。",
+    "公開リポジトリの業界別分類では、2022年比で鉱業・採石・石油ガス採掘が約65倍、管理・サポートサービスと建設が17〜18倍に成長した。記事は、鉱業・建設・医療・農業の各分野のリポジトリも数倍に増えたとしている。"
+  ],
+  "significance": "報告された数値は、エージェントが試用段階にとどまらず、開発者の日常的な作業やプルリクエスト作成に組み込まれつつあることを示す。一方、記事はレビューを開発者が成果を整える場と位置づけ、公開リポジトリの伸びはソフトウェア以外の業界にも広がっていると伝えている。",
+  "summaryEn": "GitHub’s 2026 Octoverse report says development activity reached record levels from October 2025 through September 2026, with 17.9 billion pushes, 34.3 billion commits, and 1.3 billion merged pull requests. AI agent use also expanded: in September, more than 40% of pull requests started with an agent, while the report also covers public repositories by industry and model-selection trends.",
+  "keyPointsEn": [
+    "From October 2025 to September 2026, GitHub recorded 17.9 billion pushes, 34.3 billion commits across all repositories, and 1.3 billion merged pull requests.",
+    "Agent-started pull requests rose from 17% in March to more than 40% in September, reaching 110 million in September alone. Copilot cloud agent usage grew 230% year over year, compared with 85% for agent chat.",
+    "In September, 61% of Copilot users who selected models themselves used more than one. Paid-plan users used 47 distinct models, up from 29 in May, and no model accounted for more than 25% of requests that month.",
+    "The industry classification of public repositories showed growth since 2022 of about 65 times for mining, quarrying, and oil and gas extraction, and 17 to 18 times for administrative and support services and construction. The report also says repositories serving mining, construction, health care, and agriculture grew several times over."
+  ],
+  "significanceEn": "The reported figures indicate that agents are moving beyond experimentation and becoming part of developers’ daily work and pull-request creation. The article describes review as where developers shape the results, and reports that growth in public repositories extends into industries beyond software."
+}
