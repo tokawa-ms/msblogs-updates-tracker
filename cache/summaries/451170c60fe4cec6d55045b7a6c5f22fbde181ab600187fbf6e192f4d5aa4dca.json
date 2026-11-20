@@ -1,0 +1,18 @@
+{
+  "summary": "Fantasy Premier League Companionは、Copilot、Microsoft Foundry、Azure OpenAI（Chat GPT 5.4を含む）とプレミアリーグ公式データを活用する対話型AIツールとして、新シーズン開幕を前に登場します。チーム編成や運営に関する質問への回答やデータに基づく助言を提供しますが、チームの決定は利用者に委ねられます。",
+  "keyPoints": [
+    "初心者から経験者まで、基本的なチーム選択から高度な統計分析まで質問でき、関連する編集コンテンツへのリンクも得られます。",
+    "得点、アシスト、出場などの試合データに加え、移籍やチップ使用などFPL固有のゲームデータを組み合わせて助言します。",
+    "試合日以外も選手を個別にフォローしてリアルタイムの更新や助言を受けられ、今後はシーズンを通じて利用者のフィードバックをもとに回答品質や情報提供を改善します。",
+    "記事は、新シーズンの開幕日を8月21日とし、1,300万人を超えるFPLマネージャーが次のシーズンに備えていると述べています。"
+  ],
+  "significance": "FPLの初心者には、信頼できるデータや案内に会話形式でアクセスでき、経験者には高度な統計分析や試合日以外の選手情報を得る手段となります。助言はチーム運営を支援するもので、自動的に判断・編成するのではなく、マネージャーが自分で決定できる設計です。",
+  "summaryEn": "Fantasy Premier League Companion arrives ahead of the new season as a conversational AI tool using Copilot, Microsoft Foundry, Azure OpenAI (including Chat GPT 5.4), and official Premier League data. It answers questions and offers data-based advice for building and managing squads, while leaving team decisions to managers.",
+  "keyPointsEn": [
+    "Managers from beginners to experienced players can ask questions ranging from basic team selection to advanced statistical analysis and receive links to relevant editorial content.",
+    "The tool combines match data such as goals, assists, and appearances with FPL-specific data such as transfers and chip usage to provide recommendations.",
+    "Outside match days, users can follow individual players for real-time updates and advice. User feedback will shape ongoing improvements to answer quality and information delivery throughout the season.",
+    "The article gives August 21 as the Premier League season kickoff and says more than 13 million FPL managers are preparing for another season."
+  ],
+  "significanceEn": "Beginners can access trusted data and guidance through conversation, while experienced managers can use advanced statistical analysis and get player updates outside match days. The advice is designed to support team management without making decisions or selecting squads automatically, leaving managers in control."
+}

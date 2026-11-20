@@ -1,0 +1,18 @@
+{
+  "summary": "Maestroは、Kinaxisの旗艦プラットフォームとして、予測AIとエージェント型AIを使い、サプライチェーンの需要予測、シナリオモデリング、適応的計画を支援する。2024年にクラウドネイティブかつAI駆動型のプラットフォームとして開始され、Microsoft Azure上で社内外のデータを統合し、変化をリアルタイムに評価する。ホルムズ海峡の紛争下で顧客のシナリオモデリングが120%以上増加したとCEOは述べており、地政学的混乱や関税の不確実性への対応を狙っている。",
+  "keyPoints": [
+    "Maestroは、リアルタイム表示用のデータファブリック、予測AIと最適化のインテリジェンス層、ダッシュボードや生成AIエージェントを備えるユーザーインターフェースからなる階層型アーキテクチャを持つ。",
+    "Microsoft Azure上で、Kubernetes Service、Databricks、Azure OpenAI、Cosmos DB、AI Content Safety、Foundry IQを組み合わせて、リアルタイム処理、自然言語対話、データ保存、ガバナンス、検索を支える。",
+    "一部顧客ですでに使用中のエージェント型AIは、検出や解決を担う専門エージェントでワークフローを自動化する一方、人間のプランナーが最終的な意思決定権を保持する。",
+    "需要予測では顧客ごとの数千のモデルを定期的に再学習し、Enterprise Demand Forecastingが複雑な環境で予測精度を補正する。エージェントには厳格な権限と保護策が設定される。"
+  ],
+  "significance": "自動車、技術、エネルギー、海運の企業など、サプライチェーンの複数機能をまたぐ意思決定を行う組織にとって、需要、在庫、物流、生産を一つの基盤で評価できることは、紛争、関税、天候、市場変動や需要の変化による影響を把握しやすくする。記事によれば、人間が意思決定権を残したまま、より多くの要素を考慮して意思決定の質を高める狙いがある。",
+  "summaryEn": "Maestro is Kinaxis’s flagship platform, using predictive and agentic AI for supply-chain forecasting, scenario modeling, and adaptive planning. Launched as a cloud-native, AI-driven platform in 2024 and running on Microsoft Azure, it integrates internal and external data to evaluate changes in real time. Kinaxis CEO Razat Gaurav says customers increased scenario modeling by more than 120% during the Strait of Hormuz conflict, amid efforts to address geopolitical and tariff uncertainty.",
+  "keyPointsEn": [
+    "Maestro has a layered architecture with a data fabric for real-time supply-chain views, an intelligence layer for predictive AI and optimization, and a user interface with dashboards, reports, and generative AI agents.",
+    "Running on Microsoft Azure, Maestro combines Kubernetes Service, Databricks, Azure OpenAI, Cosmos DB, AI Content Safety, and Foundry IQ for real-time operations, natural-language interaction, storage, governance, and search.",
+    "The agentic AI, already in use by select customers, orchestrates end-to-end workflows and uses specialized detector and resolver agents to automate tasks while human planners retain final decision-making authority.",
+    "Demand forecasting uses thousands of customer-specific models retrained regularly, and Enterprise Demand Forecasting refines forecasts in complex environments; responsible-AI safeguards include strict agent permissions."
+  ],
+  "significanceEn": "Companies in automotive, technology, energy, and shipping, among others, can evaluate demand, inventory, logistics, and production in one platform to understand disruptions from conflict, tariffs, weather, market shifts, and customer demand. The article says this helps them consider more variables and improve decision quality while human planners retain final authority."
+}

@@ -1,0 +1,20 @@
+{
+  "summary": "Microsoft CopilotのAgent Builderを使い、コードを書かずにAIエージェントを作る手順をMicrosoftが紹介している。目的や既存エージェントの確認、Copilotでの生成、知識ソースと出力形式の設定、実シナリオでのテストと改善を順に進めるガイドだ。共有や高度なツールへの移行も含め、完成度を一度に求めず継続的に役立たせる方法が説明されている。",
+  "keyPoints": [
+    "まず解決する問題と望む成果を明確にし、Copilotのエージェントストアに既存のモデルやエージェントがないか確認する。コーディング経験が少ない場合はCopilotが手早く始められるよう設計されており、高度なカスタマイズには開発者ツールが必要になる場合がある。",
+    "エージェントは、Agentsから「New Agent」を選び、求める動作を平易な言葉で説明して生成する。生成後にconfigureを開いて行動、トーン、タスクを調整し、メール分類や担当者へのルーティング、承認済み表現の使用、人間レビューへのエスカレーションなどを指定できる。",
+    "メール、文書、SharePoint、ウェブサイトなどから知識を接続し、厳選した社内データだけを使うかウェブサイトやPDFも参照するかを決める。レポート、プレゼンテーション、スプレッドシート、回答、コードなどの出力形式も指定する。",
+    "週次レポートでは過去7日間のTeamsメッセージとメールを確認し、特定プロジェクトに関係する更新、決定事項、障害、期限だけを抽出するよう指示できる。構成や文字数、平易で専門的なトーンを設定し、不足情報を推測しない境界も与えられる。",
+    "実際の業務シナリオでテストし、曖昧な更新や不整合を検出させる指示や、長すぎる報告を箇条書きの要点に短縮する指示などを設定画面またはチャットから調整する。"
+  ],
+  "significance": "オフィスで繰り返し情報収集や文書作成を行う従業員は、メールやTeamsメッセージからレポートの初稿を作成し、共有受信箱の分類や返信作成を支援してもらえる。記事では、コーディング経験が少ない利用者でも平易な指示から始められ、高度な用途ではCopilotのツールや開発者ツールが使えると説明されており、業務に応じて段階的に構築・調整できる。",
+  "summaryEn": "Microsoft explains how to build an AI agent in Microsoft Copilot's Agent Builder without writing code. The guide covers defining the goal and existing options, generating and refining the agent, configuring knowledge sources and output formats, and testing in real scenarios. It also describes sharing and expanding the agent while refining it over time rather than aiming for immediate perfection.",
+  "keyPointsEn": [
+    "First, clarify the problem and desired outcome, and check whether Microsoft Copilot's agent store already contains a suitable model or agent. Microsoft says Copilot is designed to help users with little or no coding experience start quickly, while advanced builds may require developer tools for customization and control.",
+    "Select \"New Agent\" in the Agents section and describe the desired behavior in plain language to generate a draft. After it is created, use configure to refine behavior, tone, and tasks, including email classification, routing, approved language, and escalation to a human reviewer.",
+    "Connect knowledge sources such as emails, documents, SharePoint sites, or websites, and decide whether to use only curated data or broader sources. Specify the desired output format, such as reports, presentations, spreadsheets, responses, or code.",
+    "For a weekly report, tell the agent to review Teams messages and emails from the past seven days and identify updates, decisions, blockers, or deadlines related to a particular project. It can also be instructed to control the structure and length, use a clear professional tone, and avoid inferring missing details.",
+    "Test the agent in real scenarios and refine its instructions through settings or a chat window. Examples include flagging unclear or conflicting updates and shortening an overlong report to include bulleted key points."
+  ],
+  "significanceEn": "Employees who repeatedly collect information or create reports can use an agent to draft weekly reports and assist with sorting and answering messages in shared inboxes. Microsoft says users with little or no coding experience can begin with plain-language instructions, and can then use Copilot tools or developer tools for more advanced work."
+}

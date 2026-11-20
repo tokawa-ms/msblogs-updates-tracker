@@ -1,0 +1,20 @@
+{
+  "summary": "Microsoft 365 Copilotの活用を進める建設会社Kier Groupでは、従業員11,000人の約40％が同製品を利用し、ほかの従業員もTeams PremiumのAI機能を使っている。Louisa Finlay最高執行責任者はメールの優先順位付けや調査、文書作成などにCopilotを取り入れ、同社は現場データを活用する安全支援エージェントや設備保全へのAI活用も進めている。人がAIを管理する方針を掲げ、同僚同士の学習を通じて利用を広げている。",
+  "keyPoints": [
+    "従業員約11,000人のうち約40％がMicrosoft 365 Copilotを利用し、ほかの従業員はTeams Premiumの高度なAI機能を活用している。",
+    "FinlayはOutlook、Excel、Teams、PowerPointでCopilotを使い、メールの優先順位付け、調査、職務記述書の作成、情報の把握などを行う。",
+    "安全支援エージェントはデータを集めて分析し、現場の写真やドローン映像と結び付けることで、危険な環境への立ち入りを減らすことを目指す。人がAIを管理し、データはAzure上に安全に保存するとしている。",
+    "施設管理では重要設備の保全時期を予測するためにAIを導入している。利用者の自信を高める取り組みでは、従来型ウェビナーより同僚同士の学習会を重視する。",
+    "同社の取り組みは、ディスレクシアのある現場責任者にも大きな効果があったとされ、本人はCopilotを「game changing」と評価した。"
+  ],
+  "significance": "建設現場の従業員にとっては、写真やドローン映像などを用いた安全支援により、危険な環境への曝露を抑える取り組みにつながる。重要設備の保全予測は施設管理の継続性を支え、ディスレクシアのある現場責任者の事例は、AI活用が個々のニーズを持つ従業員にも役立ちうることを示している。",
+  "summaryEn": "At construction company Kier Group, about 40 percent of its 11,000 employees use Microsoft 365 Copilot, while others use Teams Premium’s AI features. Chief Operating Officer Louisa Finlay uses Copilot for tasks such as prioritizing email, research, and drafting documents, and the company is advancing AI agents for safety and AI-supported equipment maintenance. Kier emphasizes human oversight and peer learning to broaden adoption.",
+  "keyPointsEn": [
+    "About 40 percent of Kier’s roughly 11,000 employees use Microsoft 365 Copilot, while others use Teams Premium’s advanced AI features.",
+    "Finlay uses Copilot in Outlook, Excel, Teams, and PowerPoint for prioritizing email, research, drafting job descriptions, and gaining insights.",
+    "Safety-support agents are intended to collect and analyze data linked to site photos and drone footage to reduce exposure to hazardous environments. Kier says people remain in control of AI tools and data is securely stored on Azure.",
+    "In facilities management, AI is being used to predict maintenance needs for critical equipment. To build employees’ confidence, Kier favors peer-learning sessions over traditional webinars.",
+    "The company says its approach has also helped employees with specific needs; a site manager with dyslexia described Copilot as “game changing.”"
+  ],
+  "significanceEn": "For construction workers, safety-support efforts using site photos and drone footage aim to reduce exposure to hazardous environments. Predicting maintenance needs for critical equipment supports continuity in facilities management, and the example of a site manager with dyslexia suggests AI can also help employees with individual needs."
+}

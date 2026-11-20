@@ -7,7 +7,7 @@
     "url": "https://code.visualstudio.com/blogs/2026/11/18/copilot-harness",
     "published_at": "2026-11-18T00:00:00.000Z",
     "summary": "Learn why VS Code is moving from the Local harness to the Copilot harness, guided by data and user feedback.\nRead the full article",
-    "fetched_at": "2026-11-20T19:43:41.610Z"
+    "fetched_at": "2026-11-20T19:50:44.319Z"
   },
   {
     "id": "8498dcc26b7abf49",
@@ -17,7 +17,7 @@
     "url": "https://code.visualstudio.com/blogs/2026/10/28/vscode-wrapped",
     "published_at": "2026-10-28T00:00:00.000Z",
     "summary": "Explore how VS Code evolved between GitHub Universe 2025 and 2026, with new ways to code, collaborate with agents, and manage work across tools and environments.\nRead the full article",
-    "fetched_at": "2026-11-20T19:43:41.610Z"
+    "fetched_at": "2026-11-20T19:50:44.319Z"
   },
   {
     "id": "f2d8a7a1dfa74ad3",
@@ -27,7 +27,7 @@
     "url": "https://code.visualstudio.com/blogs/2026/10/27/configurable-eagerness",
     "published_at": "2026-10-26T00:00:00.000Z",
     "summary": "Choose how proactively Copilot offers inline suggestions.\nRead the full article",
-    "fetched_at": "2026-11-20T19:43:41.610Z"
+    "fetched_at": "2026-11-20T19:50:44.319Z"
   },
   {
     "id": "3da9635ba543c1be",
@@ -37,7 +37,7 @@
     "url": "https://code.visualstudio.com/blogs/2026/10/15/modern-ui",
     "published_at": "2026-10-15T00:00:00.000Z",
     "summary": "See how developer feedback is shaping the modern VS Code interface, from layout density and editor tabs to themes and responsiveness.\nRead the full article",
-    "fetched_at": "2026-11-20T19:43:41.610Z"
+    "fetched_at": "2026-11-20T19:50:44.319Z"
   },
   {
     "id": "958c3483761172ad",
@@ -47,7 +47,7 @@
     "url": "https://code.visualstudio.com/blogs/2026/09/23/building-the-github-copilot-inline-suggestions-model-part-two",
     "published_at": "2026-09-23T00:00:00.000Z",
     "summary": "See how GitHub Copilot added completions to its unified inline suggestions model, refined ghost text and editor behavior, and improved user satisfaction.\nRead the full article",
-    "fetched_at": "2026-11-20T19:43:41.610Z"
+    "fetched_at": "2026-11-20T19:50:44.319Z"
   },
   {
     "id": "636b7671bfd5d099",
@@ -57,7 +57,7 @@
     "url": "https://code.visualstudio.com/blogs/2026/09/16/building-the-github-copilot-inline-suggestions-model-part-one",
     "published_at": "2026-09-16T00:00:00.000Z",
     "summary": "Explore how GitHub Copilot unified completion, next edit, and long-distance suggestions into one model for a faster, more cohesive coding experience.\nRead the full article",
-    "fetched_at": "2026-11-20T19:43:41.610Z"
+    "fetched_at": "2026-11-20T19:50:44.319Z"
   },
   {
     "id": "78b75c2a955b733b",
@@ -67,7 +67,7 @@
     "url": "https://code.visualstudio.com/blogs/2026/08/26/agent-host-architecture",
     "published_at": "2026-08-26T00:00:00.000Z",
     "summary": "Explore how the VS Code Agent Host and AHP support multiple agent harnesses with durable, synchronized local and remote sessions.\nRead the full article",
-    "fetched_at": "2026-11-20T19:43:41.610Z"
+    "fetched_at": "2026-11-20T19:50:44.319Z"
   },
   {
     "id": "41a705ce032dabca",
@@ -77,7 +77,7 @@
     "url": "https://code.visualstudio.com/blogs/2026/07/29/mai-code-1-flash",
     "published_at": "2026-07-29T00:00:00.000Z",
     "summary": "MAI-Code-1-Flash is a lightweight coding model purpose built for the fast, iterative work developers do every day in GitHub. In this post, we share what the data is telling us about how it performs in real developer workflows.\nRead the full article",
-    "fetched_at": "2026-11-20T19:43:41.610Z"
+    "fetched_at": "2026-11-20T19:50:44.319Z"
   },
   {
     "id": "c53fec5d48fc8b10",
@@ -87,7 +87,7 @@
     "url": "https://code.visualstudio.com/blogs/2026/07/06/optimizing-vscode-coding-harness-model-providers",
     "published_at": "2026-07-06T00:00:00.000Z",
     "summary": "See how VS Code and OpenAI tested GPT-5.5 system prompt changes in a two-week experiment, cutting tool calls and tail-end token usage while speeding up edits.\nRead the full article",
-    "fetched_at": "2026-11-20T19:43:41.610Z"
+    "fetched_at": "2026-11-20T19:50:44.319Z"
   },
   {
     "id": "73a2b6a3cf09b4d5",
@@ -97,7 +97,7 @@
     "url": "https://code.visualstudio.com/blogs/2026/06/26/iterating-faster-with-ts-7",
     "published_at": "2026-06-26T00:00:00.000Z",
     "summary": "How the VS Code and TypeScript teams collaborated to adopt TypeScript 7 and speed up VS Code development\nRead the full article",
-    "fetched_at": "2026-11-20T19:43:41.610Z"
+    "fetched_at": "2026-11-20T19:50:44.320Z"
   },
   {
     "id": "0badf82f3d5386bc",
@@ -107,7 +107,7 @@
     "url": "https://code.visualstudio.com/blogs/2026/06/19/what-50000-runs-taught-us",
     "published_at": "2026-06-19T00:00:00.000Z",
     "summary": "How AI coding models calibrate effort, token cost, and tool use on even the simplest task, and what that means for model selection and cost.\nRead the full article",
-    "fetched_at": "2026-11-20T19:43:41.610Z"
+    "fetched_at": "2026-11-20T19:50:44.320Z"
   },
   {
     "id": "2dd4ff8e6412d009",
@@ -117,6 +117,6 @@
     "url": "https://code.visualstudio.com/blogs/2026/06/18/byok-vscode",
     "published_at": "2026-06-18T00:00:00.000Z",
     "summary": "Learn how to use bring your own key (BYOK) in VS Code to add models from providers like Azure, Anthropic, Gemini, OpenAI, Huggingface, OpenRouter, or use a local model with Ollama, Foundry Local, and more.\nRead the full article",
-    "fetched_at": "2026-11-20T19:43:41.610Z"
+    "fetched_at": "2026-11-20T19:50:44.320Z"
   }
 ]

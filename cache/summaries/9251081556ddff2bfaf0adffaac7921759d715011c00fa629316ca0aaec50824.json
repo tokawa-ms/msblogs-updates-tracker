@@ -1,0 +1,16 @@
+{
+  "summary": "PRISM2は、Microsoft ResearchとPaige（現Tempus）が病理画像と実際の病理報告書に基づく言語を組み合わせて開発した病理学の基盤モデルだ。研究者らの評価では、前立腺がん、乳がん、乳腺リンパ節転移の検出など複数のベンチマークで、タスクごとに別モデルを作らずに専門システムと同等以上の性能を示し、全モデル重みは研究利用向けにHugging Faceで公開されている。",
+  "keyPoints": [
+    "病理画像と病理報告書由来の情報を組み合わせ、数百万件の質疑応答例で学習。画像のみ、または画像とテキストを使い、プロンプトで操作できる。",
+    "前立腺がん、乳がん、乳腺リンパ節転移の検出などのベンチマークで、専門特化型システムと同等以上の性能を示したと研究者らは報告。タスクごとに別モデルは作成していない。",
+    "PRISM2の全モデル重みは、研究目的でHugging Faceから公開されている。"
+  ],
+  "significance": "病理学研究者や将来の病理ツール開発者にとって、単一のモデルをプロンプトで幅広いタスクに活用し、個々の用途ごとにゼロから作り直さずにツールを構築・適応できる可能性がある。記事は、これを研究の取り組みとして説明している。",
+  "summaryEn": "PRISM2 is a pathology foundation model developed by Microsoft Research and Paige, now part of Tempus, combining tissue images with language based on real pathology reports. Researchers reported performance matching or exceeding specialized systems on several benchmarks, including prostate cancer, breast cancer, and breast lymph node metastasis detection, without building a separate model for each task. Its full weights are publicly available on Hugging Face for research use.",
+  "keyPointsEn": [
+    "The model was trained using pathology images paired with information from pathology reports, forming millions of question-and-answer examples. It can work with images alone or with images and text, and can be interacted with through prompts.",
+    "Researchers reported that it matched or exceeded specialized systems on benchmarks including prostate cancer, breast cancer, and breast lymph node metastasis detection, without creating a separate model for each task.",
+    "The full PRISM2 model weights are publicly available on Hugging Face for research use."
+  ],
+  "significanceEn": "For pathology researchers and developers of future pathology tools, a single model that can respond to prompts across a broader range of tasks may make it easier to build and adapt tools without starting from scratch for each application. The article describes this as a research effort."
+}
