@@ -1,0 +1,390 @@
+{
+  "date": "2026-11-20",
+  "compared_with": "2026-11-19",
+  "source_count": 7,
+  "new_count": 11,
+  "removed_count": 11,
+  "new_articles": [
+    {
+      "id": "897e27c9acfefedc",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "Microsoft and Oracle bring agentic AI into flow of enterprise work",
+      "url": "https://azure.microsoft.com/en-us/blog/microsoft-and-oracle-bring-agentic-ai-into-flow-of-enterprise-work/",
+      "published_at": "2026-11-17T18:35:00.000Z",
+      "summary": "Our new integrations let AI agents reason across Oracle’s business-critical data.\nThe post Microsoft and Oracle bring agentic AI into flow of enterprise work appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-11-20T03:55:08.850Z"
+    },
+    {
+      "id": "3bbf433ec4eecff6",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "Introducing Azure Catalyst agentic modernization and new AI infrastructure innovations",
+      "url": "https://azure.microsoft.com/en-us/blog/introducing-azure-catalyst-agentic-modernization-and-new-ai-infrastructure-innovations/",
+      "published_at": "2026-11-17T18:35:00.000Z",
+      "summary": "At Microsoft Ignite 2026, we’ll showcase what’s possible when models, silicon, and cloud infrastructure converge into a single, co-engineered system. By tuning the entire stack, and introducing new capabilities across isolated execution, networking, context management, and inference efficiency, we’re fundamentally improving agent speed, security, and unit economics.\nThe post Introducing Azure Catalyst agentic modernization and new AI infrastructure innovations appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-11-20T03:55:08.850Z"
+    },
+    {
+      "id": "09e16fd83a224ad8",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "Microsoft Ignite 2026: What’s new in Azure, the platform purpose-built for AI",
+      "url": "https://azure.microsoft.com/en-us/blog/microsoft-ignite-2026-whats-new-in-azure-the-platform-purpose-built-for-ai/",
+      "published_at": "2026-11-17T18:35:00.000Z",
+      "summary": "At Microsoft Ignite, we're sharing what's new across every layer of the platform. New capabilities spanning compute, storage, and networking let you run AI at scale with the control of your own infrastructure, without having to build, secure, and operate all of it yourself.\nThe post Microsoft Ignite 2026: What’s new in Azure, the platform purpose-built for AI appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-11-20T03:55:08.850Z"
+    },
+    {
+      "id": "77e62298fd221a2b",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "Azure Cobalt 200 VMs now available, proven on real workloads and built for the agentic era",
+      "url": "https://azure.microsoft.com/en-us/blog/azure-cobalt-200-vms-now-available-proven-on-real-workloads-and-built-for-the-agentic-era/",
+      "published_at": "2026-11-17T18:20:00.000Z",
+      "summary": "Azure Cobalt 200 VMs bring improved performance and efficiency to cloud-native applications, databases, developer tools, and agentic AI workloads.\nThe post Azure Cobalt 200 VMs now available, proven on real workloads and built for the agentic era appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-11-20T03:55:08.850Z"
+    },
+    {
+      "id": "776c537f1fb9964d",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "Continuous improvement comes to Microsoft Foundry",
+      "url": "https://azure.microsoft.com/en-us/blog/continuous-improvement-comes-to-microsoft-foundry/",
+      "published_at": "2026-11-17T18:15:00.000Z",
+      "summary": "Discover how continuous improvement in Microsoft Foundry helps organizations evaluate, optimize, and improve agents over time while keeping teams in control.\nThe post Continuous improvement comes to Microsoft Foundry appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-11-20T03:55:08.850Z"
+    },
+    {
+      "id": "0e87b7a4ca335ef8",
+      "source_id": "azure-blog",
+      "source_name": "Azure Blog",
+      "title": "Introducing the new Microsoft IQ: Putting your organization’s intelligence to work in every agent",
+      "url": "https://azure.microsoft.com/en-us/blog/introducing-the-new-microsoft-iq-putting-your-organizations-intelligence-to-work-in-every-agent/",
+      "published_at": "2026-11-17T18:05:00.000Z",
+      "summary": "Today, we are announcing Microsoft IQ, the enterprise context management platform that helps organizations create their own IQ. What sets an organization apart is everything around the model: its own intelligence.\nThe post Introducing the new Microsoft IQ: Putting your organization’s intelligence to work in every agent appeared first on Microsoft Azure Blog.",
+      "fetched_at": "2026-11-20T03:55:08.850Z"
+    },
+    {
+      "id": "5f364a8612fd0351",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "The best things in open source are built together",
+      "url": "https://github.blog/open-source/maintainers/the-best-things-in-open-source-are-built-together/",
+      "published_at": "2026-11-19T16:00:00.000Z",
+      "summary": "Introducing Replica and the Open Source Accessibility Framework, new open source projects for collaboration and inclusion.\nThe post The best things in open source are built together appeared first on The GitHub Blog.",
+      "fetched_at": "2026-11-20T03:55:08.260Z"
+    },
+    {
+      "id": "dd89ceb12e0814c2",
+      "source_id": "m365-blog",
+      "source_name": "Microsoft 365 Blog",
+      "title": "Introducing Microsoft 365 G7: Intelligence + Trust for the mission ahead",
+      "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/government/government-operations-and-infrastructure/2026/09/15/introducing-microsoft-365-g7-intelligence-trust-for-the-mission-ahead/",
+      "published_at": "2026-09-15T15:00:00.000Z",
+      "summary": "Microsoft 365 G7 brings AI, Copilot, agent governance, security, and compliance together to help government agencies modernize securely.\nThe post Introducing Microsoft 365 G7: Intelligence + Trust for the mission ahead appeared first on AI at Work Blog.",
+      "fetched_at": "2026-11-20T03:55:09.097Z"
+    },
+    {
+      "id": "675ce4910858546c",
+      "source_id": "m365-blog",
+      "source_name": "Microsoft 365 Blog",
+      "title": "Copilot Cowork is now generally available",
+      "url": "https://www.microsoft.com/en-us/copilot/blog/2026/06/16/copilot-cowork-is-now-generally-available/",
+      "published_at": "2026-06-16T15:00:00.000Z",
+      "summary": "Cowork is the fastest growing feature in the history of our Frontier program, and Cowork has among the highest user satisfaction of any Copilot or agent experience we have shipped.\nThe post Copilot Cowork is now generally available appeared first on AI at Work Blog.",
+      "fetched_at": "2026-11-20T03:55:09.097Z"
+    },
+    {
+      "id": "061d135e7e2d4d93",
+      "source_id": "m365-blog",
+      "source_name": "Microsoft 365 Blog",
+      "title": "Introducing Microsoft Scout: Your always-on personal agent",
+      "url": "https://www.microsoft.com/en-us/copilot/blog/2026/06/02/introducing-microsoft-scout-your-always-on-personal-agent/",
+      "published_at": "2026-06-02T18:00:00.000Z",
+      "summary": "Microsoft Scout is integrated across the Microsoft 365 apps you use every day, keeping it grounded in your flow of work.\nThe post Introducing Microsoft Scout: Your always-on personal agent appeared first on AI at Work Blog.",
+      "fetched_at": "2026-11-20T03:55:09.097Z"
+    },
+    {
+      "id": "cc0334ef418f3cdb",
+      "source_id": "m365-blog",
+      "source_name": "Microsoft 365 Blog",
+      "title": "Announcing the new Work IQ APIs",
+      "url": "https://www.microsoft.com/en-us/copilot/blog/2026/06/02/announcing-the-new-work-iq-apis/",
+      "published_at": "2026-06-02T17:00:15.000Z",
+      "summary": "Work IQ is a new intelligence layer for Microsoft 365, designed to understand how work gets done across your organizations.\nThe post Announcing the new Work IQ APIs appeared first on AI at Work Blog.",
+      "fetched_at": "2026-11-20T03:55:09.097Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 6,
+      "removed_count": 6,
+      "new_articles": [
+        {
+          "id": "897e27c9acfefedc",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Microsoft and Oracle bring agentic AI into flow of enterprise work",
+          "url": "https://azure.microsoft.com/en-us/blog/microsoft-and-oracle-bring-agentic-ai-into-flow-of-enterprise-work/",
+          "published_at": "2026-11-17T18:35:00.000Z",
+          "summary": "Our new integrations let AI agents reason across Oracle’s business-critical data.\nThe post Microsoft and Oracle bring agentic AI into flow of enterprise work appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-11-20T03:55:08.850Z"
+        },
+        {
+          "id": "3bbf433ec4eecff6",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Introducing Azure Catalyst agentic modernization and new AI infrastructure innovations",
+          "url": "https://azure.microsoft.com/en-us/blog/introducing-azure-catalyst-agentic-modernization-and-new-ai-infrastructure-innovations/",
+          "published_at": "2026-11-17T18:35:00.000Z",
+          "summary": "At Microsoft Ignite 2026, we’ll showcase what’s possible when models, silicon, and cloud infrastructure converge into a single, co-engineered system. By tuning the entire stack, and introducing new capabilities across isolated execution, networking, context management, and inference efficiency, we’re fundamentally improving agent speed, security, and unit economics.\nThe post Introducing Azure Catalyst agentic modernization and new AI infrastructure innovations appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-11-20T03:55:08.850Z"
+        },
+        {
+          "id": "09e16fd83a224ad8",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Microsoft Ignite 2026: What’s new in Azure, the platform purpose-built for AI",
+          "url": "https://azure.microsoft.com/en-us/blog/microsoft-ignite-2026-whats-new-in-azure-the-platform-purpose-built-for-ai/",
+          "published_at": "2026-11-17T18:35:00.000Z",
+          "summary": "At Microsoft Ignite, we're sharing what's new across every layer of the platform. New capabilities spanning compute, storage, and networking let you run AI at scale with the control of your own infrastructure, without having to build, secure, and operate all of it yourself.\nThe post Microsoft Ignite 2026: What’s new in Azure, the platform purpose-built for AI appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-11-20T03:55:08.850Z"
+        },
+        {
+          "id": "77e62298fd221a2b",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Azure Cobalt 200 VMs now available, proven on real workloads and built for the agentic era",
+          "url": "https://azure.microsoft.com/en-us/blog/azure-cobalt-200-vms-now-available-proven-on-real-workloads-and-built-for-the-agentic-era/",
+          "published_at": "2026-11-17T18:20:00.000Z",
+          "summary": "Azure Cobalt 200 VMs bring improved performance and efficiency to cloud-native applications, databases, developer tools, and agentic AI workloads.\nThe post Azure Cobalt 200 VMs now available, proven on real workloads and built for the agentic era appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-11-20T03:55:08.850Z"
+        },
+        {
+          "id": "776c537f1fb9964d",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Continuous improvement comes to Microsoft Foundry",
+          "url": "https://azure.microsoft.com/en-us/blog/continuous-improvement-comes-to-microsoft-foundry/",
+          "published_at": "2026-11-17T18:15:00.000Z",
+          "summary": "Discover how continuous improvement in Microsoft Foundry helps organizations evaluate, optimize, and improve agents over time while keeping teams in control.\nThe post Continuous improvement comes to Microsoft Foundry appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-11-20T03:55:08.850Z"
+        },
+        {
+          "id": "0e87b7a4ca335ef8",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Introducing the new Microsoft IQ: Putting your organization’s intelligence to work in every agent",
+          "url": "https://azure.microsoft.com/en-us/blog/introducing-the-new-microsoft-iq-putting-your-organizations-intelligence-to-work-in-every-agent/",
+          "published_at": "2026-11-17T18:05:00.000Z",
+          "summary": "Today, we are announcing Microsoft IQ, the enterprise context management platform that helps organizations create their own IQ. What sets an organization apart is everything around the model: its own intelligence.\nThe post Introducing the new Microsoft IQ: Putting your organization’s intelligence to work in every agent appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-11-20T03:55:08.850Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "c2c7b014228817a3",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "The Platform Behind the Next AI Breakthrough",
+          "url": "https://www.wired.com/sponsored/story/the-platform-behind-the-next-ai-breakthrough/",
+          "published_at": "2026-11-02T20:52:22.000Z",
+          "summary": "The next frontier of AI is coming into focus as agents take on longer, more strategic work.\nThe post The Platform Behind the Next AI Breakthrough appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-11-19T04:01:39.077Z"
+        },
+        {
+          "id": "9a0356b4ea7116d2",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Azure Cloud HSM Hardware Audit Logging: Verifiable audit trails for security and compliance",
+          "url": "https://azure.microsoft.com/en-us/blog/azure-cloud-hsm-hardware-audit-logging-verifiable-audit-trails-for-security-and-compliance/",
+          "published_at": "2026-10-29T16:00:00.000Z",
+          "summary": "Security, compliance, and operations teams can use this hardware-originated evidence for monitoring, compliance reporting, and forensic investigations.\nThe post Azure Cloud HSM Hardware Audit Logging: Verifiable audit trails for security and compliance appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-11-19T04:01:39.077Z"
+        },
+        {
+          "id": "5dbadd761c8e8714",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Introducing the Microsoft Copilot harness in Foundry Agent Service",
+          "url": "https://devblogs.microsoft.com/foundry/microsoft-copilot-harness-in-foundry/",
+          "published_at": "2026-10-28T17:40:56.000Z",
+          "summary": "Today, we’re introducing the Microsoft Copilot harness in Foundry Agent Service in public preview.\nThe post Introducing the Microsoft Copilot harness in Foundry Agent Service appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-11-19T04:01:39.077Z"
+        },
+        {
+          "id": "a9dcb410f7163a89",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Scale reservoir uncertainty analysis with agile reservoir modeling",
+          "url": "https://azure.microsoft.com/en-us/blog/scale-reservoir-uncertainty-analysis-with-agile-reservoir-modeling/",
+          "published_at": "2026-10-26T16:00:00.000Z",
+          "summary": "As subsurface data grows in scale and complexity, teams need a faster, more connected way to transform uncertainty into actionable decisions.\nThe post Scale reservoir uncertainty analysis with agile reservoir modeling appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-11-19T04:01:39.077Z"
+        },
+        {
+          "id": "02ab68be675b3bf6",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Advancing digital sovereignty with greater control and choice",
+          "url": "https://blogs.microsoft.com/blog/2026/10/20/advancing-digital-sovereignty-with-greater-control-and-choice/",
+          "published_at": "2026-10-20T17:34:47.000Z",
+          "summary": "Across conversations with leaders in government, critical infrastructure and regulated industries, one priority consistently rises to the top: putting technology to work on the most important systems while maintaining the control those systems require.\nThe post Advancing digital sovereignty with greater control and choice appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-11-19T04:01:39.077Z"
+        },
+        {
+          "id": "5560f044cfefdcbe",
+          "source_id": "azure-blog",
+          "source_name": "Azure Blog",
+          "title": "Designing for sovereign AI: A shared foundation from edge to cloud",
+          "url": "https://azure.microsoft.com/en-us/blog/designing-for-sovereign-ai-a-shared-foundation-from-edge-to-cloud/",
+          "published_at": "2026-10-19T19:00:00.000Z",
+          "summary": "A flexible sovereign architecture allows organizations to place each workload in the right environment, apply the controls it requires, and maintain consistency.\nThe post Designing for sovereign AI: A shared foundation from edge to cloud appeared first on Microsoft Azure Blog.",
+          "fetched_at": "2026-11-19T04:01:39.077Z"
+        }
+      ]
+    },
+    "commandline-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "fabric-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "github-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "5f364a8612fd0351",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "The best things in open source are built together",
+          "url": "https://github.blog/open-source/maintainers/the-best-things-in-open-source-are-built-together/",
+          "published_at": "2026-11-19T16:00:00.000Z",
+          "summary": "Introducing Replica and the Open Source Accessibility Framework, new open source projects for collaboration and inclusion.\nThe post The best things in open source are built together appeared first on The GitHub Blog.",
+          "fetched_at": "2026-11-20T03:55:08.260Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "9a97986aa28bfe34",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "Game Off 2026: The theme is SHIFT",
+          "url": "https://github.blog/open-source/gaming/game-off-2026-the-theme-is-shift/",
+          "published_at": "2026-11-01T21:36:00.000Z",
+          "summary": "GitHub’s annual month-long game jam is back for its 14th year! This November, make a game inspired by the theme SHIFT. Change gears, swap perspectives, bend reality, or just press a certain key.\nThe post Game Off 2026: The theme is SHIFT appeared first on The GitHub Blog.",
+          "fetched_at": "2026-11-19T04:01:38.926Z"
+        }
+      ]
+    },
+    "m365-blog": {
+      "new_count": 4,
+      "removed_count": 4,
+      "new_articles": [
+        {
+          "id": "dd89ceb12e0814c2",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Introducing Microsoft 365 G7: Intelligence + Trust for the mission ahead",
+          "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/government/government-operations-and-infrastructure/2026/09/15/introducing-microsoft-365-g7-intelligence-trust-for-the-mission-ahead/",
+          "published_at": "2026-09-15T15:00:00.000Z",
+          "summary": "Microsoft 365 G7 brings AI, Copilot, agent governance, security, and compliance together to help government agencies modernize securely.\nThe post Introducing Microsoft 365 G7: Intelligence + Trust for the mission ahead appeared first on AI at Work Blog.",
+          "fetched_at": "2026-11-20T03:55:09.097Z"
+        },
+        {
+          "id": "675ce4910858546c",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Copilot Cowork is now generally available",
+          "url": "https://www.microsoft.com/en-us/copilot/blog/2026/06/16/copilot-cowork-is-now-generally-available/",
+          "published_at": "2026-06-16T15:00:00.000Z",
+          "summary": "Cowork is the fastest growing feature in the history of our Frontier program, and Cowork has among the highest user satisfaction of any Copilot or agent experience we have shipped.\nThe post Copilot Cowork is now generally available appeared first on AI at Work Blog.",
+          "fetched_at": "2026-11-20T03:55:09.097Z"
+        },
+        {
+          "id": "061d135e7e2d4d93",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Introducing Microsoft Scout: Your always-on personal agent",
+          "url": "https://www.microsoft.com/en-us/copilot/blog/2026/06/02/introducing-microsoft-scout-your-always-on-personal-agent/",
+          "published_at": "2026-06-02T18:00:00.000Z",
+          "summary": "Microsoft Scout is integrated across the Microsoft 365 apps you use every day, keeping it grounded in your flow of work.\nThe post Introducing Microsoft Scout: Your always-on personal agent appeared first on AI at Work Blog.",
+          "fetched_at": "2026-11-20T03:55:09.097Z"
+        },
+        {
+          "id": "cc0334ef418f3cdb",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Announcing the new Work IQ APIs",
+          "url": "https://www.microsoft.com/en-us/copilot/blog/2026/06/02/announcing-the-new-work-iq-apis/",
+          "published_at": "2026-06-02T17:00:15.000Z",
+          "summary": "Work IQ is a new intelligence layer for Microsoft 365, designed to understand how work gets done across your organizations.\nThe post Announcing the new Work IQ APIs appeared first on AI at Work Blog.",
+          "fetched_at": "2026-11-20T03:55:09.097Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "a19ec6c0d78fb26e",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "The AI advantage your company can keep",
+          "url": "https://www.microsoft.com/en-us/copilot/blog/2026/10/27/the-ai-advantage-your-company-can-keep/",
+          "published_at": "2026-10-27T16:00:00.000Z",
+          "summary": "New research across more than 200 enterprises looks at how shared knowledge can help companies coordinate their agents—and turn lessons from their work into an operational edge.\nThe post The AI advantage your company can keep appeared first on Microsoft Copilot Blog.",
+          "fetched_at": "2026-11-19T04:01:39.174Z"
+        },
+        {
+          "id": "8cdba707ca078131",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Bringing CRM into the flow of work and agents into business process for sales and service teams",
+          "url": "https://www.microsoft.com/en-us/copilot/blog/2026/10/08/bringing-crm-into-the-flow-of-work-and-agents-into-business-process-for-sales-and-service-teams/",
+          "published_at": "2026-10-08T15:00:00.000Z",
+          "summary": "The traditional boundaries of business applications are disappearing. For decades, people went to their customer relationship management (CRM) to find customer context, take action, and move work forward. AI is inverting that model. This shift creates two complementary opportunities: greater individual productivity and organization-wide process transformation.\nThe post Bringing CRM into the flow of work and agents into business process for sales and service teams appeared first on Microsoft Copilot Blog.",
+          "fetched_at": "2026-11-19T04:01:39.174Z"
+        },
+        {
+          "id": "f524e9886f009cfd",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Introducing the new Copilot with Home, Code and Autopilot",
+          "url": "https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/",
+          "published_at": "2026-09-25T12:07:25.000Z",
+          "summary": "We’re reimagining Microsoft Copilot to enable work as it evolves and to help expand what every individual and every organization can accomplish in the flow of human ambition.\nThe post Introducing the new Copilot with Home, Code and Autopilot appeared first on Microsoft Copilot Blog.",
+          "fetched_at": "2026-11-19T04:01:39.174Z"
+        },
+        {
+          "id": "b24f6205698a0ebe",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Introducing Microsoft 365 G7: Intelligence + Trust for the mission ahead",
+          "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/us-government/2026/09/15/introducing-microsoft-365-g7-intelligence-trust-for-the-mission-ahead/",
+          "published_at": "2026-09-15T15:00:00.000Z",
+          "summary": "Microsoft 365 G7 brings AI, Copilot, agent governance, security, and compliance together to help government agencies modernize securely.\nThe post Introducing Microsoft 365 G7: Intelligence + Trust for the mission ahead appeared first on Microsoft Copilot Blog.",
+          "fetched_at": "2026-11-19T04:01:39.174Z"
+        }
+      ]
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    }
+  },
+  "diff_result": true
+}
