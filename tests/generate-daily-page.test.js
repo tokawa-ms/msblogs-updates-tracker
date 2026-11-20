@@ -268,8 +268,10 @@ describe('article extraction', () => {
   it('Fabric Community の動的ページはナビゲーションでなく Reader 本文を使う', async () => {
     const url = 'https://community.fabric.microsoft.com/blog/fbc_pbiupdatesblog/example/5295674';
     const calls = [];
-    assert.equal(await fetchArticleText(url, async (requestUrl) => {
+    assert.equal(await fetchArticleText(url, async (requestUrl, options) => {
       calls.push(requestUrl);
+      assert.match(options.headers['X-Remove-Selector'], /script/);
+      assert.equal(options.headers['X-No-Cache'], 'true');
       return { data: `Markdown Content:\n${body}` };
     }), body);
     assert.deepEqual(calls, [`https://r.jina.ai/${url}`]);
@@ -485,7 +487,7 @@ describe('grounded summary', () => {
         return JSON.stringify(ungrounded);
       }
       assert.match(prompt, /Evidence not found in article body/);
-      assert.doesNotMatch(prompt, /This invented claim/);
+      assert.match(prompt, /This invented claim/);
       return JSON.stringify(response());
     });
     assert.equal(calls, 3);

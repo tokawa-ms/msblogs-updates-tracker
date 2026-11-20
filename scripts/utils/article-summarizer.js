@@ -84,7 +84,7 @@ function validateSummary(value, body) {
       const normalizedQuote = normalize(quote);
       if (typeof quote !== 'string' || normalizedQuote.length < 15 || quote.length > 500 ||
           (!source.includes(normalizedQuote) && !normalizedEvidenceSource.includes(normalizeEvidence(quote)))) {
-        throw new Error(`Evidence not found in article body for ${label}.`);
+        throw new Error(`Evidence not found in article body for ${label}: ${JSON.stringify(quote)}. Copy an exact passage without rewriting punctuation or wording.`);
       }
     }
     return text;

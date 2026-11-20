@@ -215,7 +215,12 @@ async function fetchArticleText(url, get = axios.get, wait = (milliseconds) =>
         const response = await get(readerUrl, {
           timeout: 60000,
           maxContentLength: 5 * 1024 * 1024,
-          headers: { Accept: 'text/plain', 'User-Agent': ARTICLE_FETCH_HEADERS['User-Agent'] },
+          headers: {
+            Accept: 'text/plain',
+            'User-Agent': ARTICLE_FETCH_HEADERS['User-Agent'],
+            'X-Remove-Selector': 'script, style, nav, footer, aside, noscript',
+            'X-No-Cache': 'true',
+          },
         });
         return extractReaderArticleText(response.data);
       } catch (error) {
