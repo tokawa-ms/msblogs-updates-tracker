@@ -462,6 +462,35 @@ describe('grounded summary', () => {
     }
   });
 
+  it('失敗理由を残し、トークンと記事本文を診断に含めない', async () => {
+    const original = process.env.COPILOT_GITHUB_TOKEN;
+    process.env.COPILOT_GITHUB_TOKEN = 'test-secret-token';
+    const output = [
+      { type: 'user.message', data: { content: 'PRIVATE ARTICLE BODY' } },
+      { type: 'session.error', data: { message: 'Model is unavailable: test-secret-token' } },
+      { type: 'result', exitCode: 1 },
+    ].map((event) => JSON.stringify(event)).join('\n');
+    const execute = (command, args, options, callback) => ({
+      stdin: {
+        on: () => {},
+        end: () => callback({ code: 1 }, output,
+          '\u001b[31mAuthentication failed: github_pat_example, Bearer another-secret\u001b[0m'),
+      },
+    });
+    try {
+      await assert.rejects(runCopilot('PRIVATE ARTICLE BODY', execute), (error) => {
+        assert.match(error.message, /Model is unavailable: \[REDACTED\]/);
+        assert.match(error.message, /Authentication failed: \[REDACTED\], Bearer \[REDACTED\]/);
+        assert.doesNotMatch(error.message, /test-secret|github_pat_|another-secret|PRIVATE ARTICLE|\u001b/u);
+        return true;
+      });
+      assert.throws(() => parseCopilotOutput(output), /Model is unavailable: \[REDACTED\]/);
+    } finally {
+      if (original === undefined) delete process.env.COPILOT_GITHUB_TOKEN;
+      else process.env.COPILOT_GITHUB_TOKEN = original;
+    }
+  });
+
   it('シェルを使わず標準入力へ本文を渡し、環境・ツールを隔離して後始末する', async () => {
     const original = process.env.COPILOT_GITHUB_TOKEN;
     process.env.COPILOT_GITHUB_TOKEN = 'test-only';
