@@ -71,6 +71,16 @@ npm run build
 
 `content/updates/` と `src/content/updates/` の同日ファイルが同時に更新されます。生成した日本語を確認してから通常の公開手順で反映してください。最新の原文を取得するため、過去の公開時点と本文が異なる場合があります。
 
+失敗によってページが欠落した日だけを復元する場合は、保存済み差分を使います。現在のフィードを過去の日付で取得し直すと当時の記録を置き換えてしまうため、`fetch` と `diff` は実行しません。
+
+```bash
+npm run generate -- --missing
+# 期間を限定する場合
+npm run generate -- 2026-09-25 2026-11-20 --missing
+```
+
+両方の保存先にページがある日は変更しません。複数日を処理する場合、ある日が失敗しても後続の日付を処理し、失敗日を一覧にして終了コード1を返します。検証済み要約と生成できたページは残るため、同じコマンドで未完了分から再開できます。Actions では **Daily Blog Scan → Run workflow → `recover_missing = true`** を使用します。`target_date` や再生成範囲との併用はできません。
+
 参考: [CLI のプログラム実行と認証](https://docs.github.com/en/copilot/how-tos/copilot-cli/automate-copilot-cli/run-cli-programmatically)
 
 ### 開発用スクリプト
