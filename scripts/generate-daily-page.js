@@ -192,8 +192,8 @@ function readerRetryDelay(error, attempt) {
 
 async function fetchArticleText(url, get = axios.get, wait = (milliseconds) =>
   new Promise((resolve) => setTimeout(resolve, milliseconds))) {
-  // Fabric Community serves a dynamic shell whose navigation can look like article text.
-  const dynamicCommunityArticle = /^https:\/\/community\.fabric\.microsoft\.com\/(?:t5\/.*\/ba-p\/|blog\/)/u.test(url);
+  // Community sites serve dynamic shells whose navigation can look like article text.
+  const dynamicCommunityArticle = /^https:\/\/(?:community\.fabric\.microsoft\.com|techcommunity\.microsoft\.com)\/(?:t5\/.*\/ba-p\/|blog\/)/u.test(url);
   if (!dynamicCommunityArticle) {
     try {
       const response = await get(url, {

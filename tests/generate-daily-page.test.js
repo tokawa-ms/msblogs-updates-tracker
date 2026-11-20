@@ -277,6 +277,14 @@ describe('article extraction', () => {
     assert.deepEqual(calls, [`https://r.jina.ai/${url}`]);
   });
 
+  it('Tech Community も動的ページではなく Reader 本文を使う', async () => {
+    const url = 'https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/example/4558051';
+    assert.equal(await fetchArticleText(url, async (requestUrl) => {
+      assert.equal(requestUrl, `https://r.jina.ai/${url}`);
+      return { data: `Markdown Content:\n${body}` };
+    }), body);
+  });
+
   it('Reader の 429 は待機して最大3回まで再試行する', async () => {
     const waits = [];
     let calls = 0;
