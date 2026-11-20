@@ -506,6 +506,7 @@ describe('grounded summary', () => {
           assert.ok(args.includes('--disable-builtin-mcps'));
           assert.ok(args.includes('--no-custom-instructions'));
           assert.ok(args.includes('--no-remote-export'));
+          assert.equal(args[args.indexOf('--model') + 1], process.env.SUMMARY_MODEL || 'auto');
           assert.ok(!args.includes(prompt));
           assert.equal(options.shell, undefined);
           assert.equal(options.timeout, 180000);

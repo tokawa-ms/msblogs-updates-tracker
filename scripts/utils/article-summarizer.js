@@ -6,6 +6,7 @@ const { stripVTControlCharacters } = require('node:util');
 
 const MAX_ARTICLE_LENGTH = 100000;
 const MAX_SUMMARY_ATTEMPTS = 3;
+const DEFAULT_SUMMARY_MODEL = 'auto';
 
 function normalize(value) {
   return String(value || '').replace(/\s+/gu, ' ').trim();
@@ -182,7 +183,7 @@ async function runCopilot(prompt, execute = execFile) {
     // Text mode renders Markdown even with --silent; JSONL preserves the model's raw response.
     const args = [loader, '--silent', '--stream=off', '--output-format=json', '--available-tools=', '--no-ask-user',
       '--disable-builtin-mcps', '--no-custom-instructions', '--no-auto-update', '--no-color',
-      '--no-remote', '--no-remote-export', '--model', process.env.SUMMARY_MODEL || 'gpt-5.4'];
+      '--no-remote', '--no-remote-export', '--model', process.env.SUMMARY_MODEL || DEFAULT_SUMMARY_MODEL];
     const env = {};
     for (const key of ['PATH', 'Path', 'SystemRoot', 'WINDIR', 'TEMP', 'TMP', 'TMPDIR', 'HTTPS_PROXY', 'HTTP_PROXY', 'NO_PROXY', 'NODE_EXTRA_CA_CERTS', 'COPILOT_GITHUB_TOKEN']) {
       if (process.env[key]) env[key] = process.env[key];
@@ -232,4 +233,4 @@ Generate a corrected JSON object from the same article body. Follow the required
   }
 }
 
-module.exports = { MAX_ARTICLE_LENGTH, buildSummaryPrompt, validateSummary, summarizeArticle, parseCopilotOutput, runCopilot };
+module.exports = { DEFAULT_SUMMARY_MODEL, MAX_ARTICLE_LENGTH, buildSummaryPrompt, validateSummary, summarizeArticle, parseCopilotOutput, runCopilot };

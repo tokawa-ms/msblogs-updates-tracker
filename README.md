@@ -43,7 +43,7 @@ npm test
 **初回設定が必要です。** Copilot CLI を利用できるアカウントで、アカウント権限 **Copilot Requests** を付与した fine-grained PAT を作成してください。組織の Copilot・モデル利用ポリシーも適用されます。通常の Actions `GITHUB_TOKEN` や classic PAT は代用しません。
 
 1. GitHub の Settings → Secrets and variables → Actions に、Repository secret `COPILOT_GITHUB_TOKEN` を登録します。トークンをソースコードやチャットに貼り付けないでください。
-2. モデルの既定値は `gpt-5.4` です。別の利用可能なモデルを指定する場合は Repository variable `SUMMARY_MODEL` を設定します。
+2. モデルの既定値は `auto` です。Copilot が利用可能なモデルを選択するため、特定モデルの提供終了で停止することを避けられます。モデルを固定する場合は Repository variable `SUMMARY_MODEL` を設定し、そのモデルが利用可能であることを確認してください。
 3. ローカル生成でも同名の環境変数 `COPILOT_GITHUB_TOKEN` を安全な方法で設定します。要約用 CLI は一時ディレクトリで実行するため、通常の `copilot login` の保存済み認証は参照しません。
 4. `analyze-blogs.yml` を再利用ワークフローとして呼ぶ場合は、同名の secret を明示的に渡すか `secrets: inherit` を使用します。
 

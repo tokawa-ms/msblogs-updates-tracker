@@ -5,7 +5,7 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 const { isDateString, toDateString } = require('./utils/date-utils');
 const { diffFile, fileExists, readJson, writeJson } = require('./utils/cache-manager');
-const { MAX_ARTICLE_LENGTH, summarizeArticle } = require('./utils/article-summarizer');
+const { DEFAULT_SUMMARY_MODEL, MAX_ARTICLE_LENGTH, summarizeArticle } = require('./utils/article-summarizer');
 
 const ROOT = path.resolve(__dirname, '..');
 const UPDATES_DIR = path.join(ROOT, 'content', 'updates');
@@ -236,7 +236,7 @@ function isCompleteSummary(value) {
 async function summarizeArticleCached(article, body, summarize = summarizeArticle, cacheDir = SUMMARY_CACHE_DIR) {
   const fingerprint = crypto.createHash('sha256').update(JSON.stringify({
     schema: SUMMARY_CACHE_SCHEMA,
-    model: process.env.SUMMARY_MODEL || 'gpt-5.4',
+    model: process.env.SUMMARY_MODEL || DEFAULT_SUMMARY_MODEL,
     url: cleanText(article.url),
     body,
   })).digest('hex');
