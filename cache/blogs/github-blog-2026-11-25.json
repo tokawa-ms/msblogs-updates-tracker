@@ -1,0 +1,102 @@
+[
+  {
+    "id": "215487d78b45f131",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "These are the gifts developers will actually want",
+    "url": "https://github.blog/news-insights/company-news/these-are-the-gifts-developers-will-actually-want/",
+    "published_at": "2026-11-24T16:00:00.000Z",
+    "summary": "The developer you're shopping for hasn’t shared their holiday wish list with you yet? Check out these gifts, plus our Black Friday discount all week long.\nThe post These are the gifts developers will actually want appeared first on The GitHub Blog.",
+    "fetched_at": "2026-11-25T05:18:30.731Z"
+  },
+  {
+    "id": "5f364a8612fd0351",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "The best things in open source are built together",
+    "url": "https://github.blog/open-source/maintainers/the-best-things-in-open-source-are-built-together/",
+    "published_at": "2026-11-19T16:00:00.000Z",
+    "summary": "Introducing Replica and the Open Source Accessibility Framework, new open source projects for collaboration and inclusion.\nThe post The best things in open source are built together appeared first on The GitHub Blog.",
+    "fetched_at": "2026-11-25T05:18:30.731Z"
+  },
+  {
+    "id": "de1a299348ffc0d1",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "Maintainers don’t need more AI bug reports. They need fixes.",
+    "url": "https://github.blog/open-source/maintainers/maintainers-dont-need-more-ai-bug-reports-they-need-fixes/",
+    "published_at": "2026-11-17T18:29:29.000Z",
+    "summary": "In the Codename MDASH pilot, GitHub and Microsoft turned thousands of raw AI findings into 99 checked, private reports with suggested fixes for six widely used open source projects. Maintainers have already fixed more than half.\nThe post Maintainers don’t need more AI bug reports. They need fixes.  appeared first on The GitHub Blog.",
+    "fetched_at": "2026-11-25T05:18:30.731Z"
+  },
+  {
+    "id": "2f1c65ad4b7ec380",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "Building the Agent Host Protocol for sessions that continue across devices",
+    "url": "https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices/",
+    "published_at": "2026-11-17T18:20:40.000Z",
+    "summary": "Discover how we built the open Agent Host Protocol to keep your agent sessions accessible across editors, apps, phones, and the cloud.\nThe post Building the Agent Host Protocol for sessions that continue across devices appeared first on The GitHub Blog.",
+    "fetched_at": "2026-11-25T05:18:30.731Z"
+  },
+  {
+    "id": "7c512829bf524dd8",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "GitHub availability report: October 2026",
+    "url": "https://github.blog/news-insights/company-news/github-availability-report-october-2026/",
+    "published_at": "2026-11-13T00:20:16.000Z",
+    "summary": "In October, we experienced eight incidents that resulted in degraded performance across GitHub services.\nThe post GitHub availability report: October 2026 appeared first on The GitHub Blog.",
+    "fetched_at": "2026-11-25T05:18:30.731Z"
+  },
+  {
+    "id": "8bc9138e516754eb",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "Build once, run on any agent: A practical guide to agent skills",
+    "url": "https://github.blog/ai-and-ml/github-copilot/build-once-run-on-any-agent-a-practical-guide-to-agent-skills/",
+    "published_at": "2026-11-12T22:54:52.000Z",
+    "summary": "Agent skills capture repeatable engineering work in files teams can review and reuse, while tools, project context, and permissions remain specific to the host that runs them.\nThe post Build once, run on any agent: A practical guide to agent skills appeared first on The GitHub Blog.",
+    "fetched_at": "2026-11-25T05:18:30.731Z"
+  },
+  {
+    "id": "2c15f23ac7aa344c",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "Git security vulnerabilities announced",
+    "url": "https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/",
+    "published_at": "2026-11-10T18:00:00.000Z",
+    "summary": "Git is releasing updates addressing six security vulnerabilities affecting clones, reference handling, merges, binary patches, and imports. Here is what users need to know.\nThe post Git security vulnerabilities announced appeared first on The GitHub Blog.",
+    "fetched_at": "2026-11-25T05:18:30.731Z"
+  },
+  {
+    "id": "aff32afb63af01e7",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "Beyond code generation: A developer’s guide to agentic engineering",
+    "url": "https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/",
+    "published_at": "2026-11-06T22:15:59.000Z",
+    "summary": "Writing code got faster. The work around it didn't. See how you can plan, write code, review changes, and investigate production issues with GitHub Copilot, and what work still needs your judgment.\nThe post Beyond code generation: A developer’s guide to agentic engineering appeared first on The GitHub Blog.",
+    "fetched_at": "2026-11-25T05:18:30.731Z"
+  },
+  {
+    "id": "51dc1d2f6b3bd6df",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "Inside GitHub’s new Git storage architecture",
+    "url": "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/",
+    "published_at": "2026-11-05T20:23:21.000Z",
+    "summary": "GitHub's new Git storage architecture is built so thousands of agents can push to a single repository at once. Here's how it works.\nThe post Inside GitHub’s new Git storage architecture appeared first on The GitHub Blog.",
+    "fetched_at": "2026-11-25T05:18:30.731Z"
+  },
+  {
+    "id": "1558c78d072630b6",
+    "source_id": "github-blog",
+    "source_name": "GitHub Blog",
+    "title": "Accessibility statements now have a home on GitHub",
+    "url": "https://github.blog/open-source/maintainers/accessibility-statements-now-have-a-home-on-github/",
+    "published_at": "2026-11-05T16:00:00.000Z",
+    "summary": "GitHub now highlights ACCESSIBILITY.md files and helps maintainers document accessibility goals, known barriers, supported environments, contributor expectations, and reporting processes.\nThe post Accessibility statements now have a home on GitHub appeared first on The GitHub Blog.",
+    "fetched_at": "2026-11-25T05:18:30.731Z"
+  }
+]

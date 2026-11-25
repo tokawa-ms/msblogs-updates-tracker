@@ -1,0 +1,18 @@
+{
+  "summary": "Microsoft CopilotはIgnite 2026で、仕事の開始から委任・作成・管理までを一か所で支える機能群を発表した。HomeとCopilotアプリ内のOffice、Copilot Managed Runtimeは一般提供となり、Copilot Codeは数週間以内の一般提供、AutopilotはFrontier顧客向けに展開を開始する。業務別プラグインやAgent 365の管理・分析機能も拡充される。",
+  "keyPoints": [
+    "HomeはChatとCoworkをまとめる新しい開始地点として一般提供。メールや予定、Teamsなどを横断して状況を示すTodayは、CopilotアプリとOutlookでプライベートプレビュー中。",
+    "Copilot Codeでは自然言語でアプリやダッシュボードなどを作成でき、一般提供は数週間以内の予定。アプリをテナント内でホスト・管理するCopilot Managed Runtimeは一般提供となり、IT部門はMicrosoft 365管理センターで管理できる。",
+    "Dynamics 365のSales、Customer Service、Finance and Operations向けプラグインには100超の事前構築スキルが含まれる。Salesforce向けには38超の営業スキルを備えた新プラグインが発表された。",
+    "Agent 365 Business Analyticsは、作業完了量を基準に投資価値を測る新機能で、Frontier Publicで展開開始。Agent 365 Cost Managementでは利用状況の把握、支出ポリシーや上限、アラート、利用可能モデルの管理ができる。"
+  ],
+  "significance": "従業員はChatから複雑な作業をCoworkへ委任したり、既存のOfficeファイルを共同編集したりでき、業務の進め方をCopilot内でつなげられる。一方、導入を管理する組織は、エージェントの権限・操作記録やAI支出と利用価値を把握するための機能を利用できる。",
+  "summaryEn": "At Ignite 2026, Microsoft announced Copilot capabilities intended to bring starting, delegating, creating, and managing work into one place. Home, Office in the Copilot app, and Copilot Managed Runtime are generally available; Copilot Code is expected to become generally available in the coming weeks, and Autopilot is beginning to roll out to Frontier customers. The company also expanded business plugins and Agent 365 management and analytics.",
+  "keyPointsEn": [
+    "Home, a new starting point combining Chat and Cowork, is generally available. Today, which surfaces context across mail, calendar, Teams, and other work, is in private preview in the Copilot app and Outlook.",
+    "Copilot Code lets users create apps and dashboards using natural language and is expected to become generally available in the coming weeks. Copilot Managed Runtime, for hosting and managing apps in a tenant, is generally available, with IT management in the Microsoft 365 admin center.",
+    "Plugins for Dynamics 365 Sales, Customer Service, and Finance and Operations include more than 100 prebuilt skills. A new Salesforce plugin with more than 38 prebuilt sales skills was announced.",
+    "Agent 365 Business Analytics, a new feature for measuring investment by completed work, is rolling out in Frontier Public. Agent 365 Cost Management supports visibility into consumption and management of spending policies, limits, alerts, and available models."
+  ],
+  "significanceEn": "Employees can hand complex work from Chat to Cowork and collaborate on existing Office files, connecting more of their work within Copilot. Organizations managing deployment can use features to track agent permissions and actions and to understand AI spending and the value of its use."
+}

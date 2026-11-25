@@ -1,0 +1,20 @@
+{
+  "summary": "Microsoft Copilotは、法務向けスキル20種類超とパートナー製プラグインをMicrosoft Copilotで一般提供し、Wordでの文書作業やCoworkでの複数ファイル・複数工程の業務に対応します。法務チームは承認済みの先例や信頼できる外部システムを活用でき、Word上の編集案は利用者が承認してから適用されます。",
+  "keyPoints": [
+    "法務向けスキルは一般提供で、Wordでは書式を保った追跡変更や承認済み先例を使った契約書作成を支援し、Coworkでは契約ポートフォリオの義務・期限追跡や案件の時系列整理など複数工程の業務を扱います。",
+    "パートナー製法務プラグインは本日からMicrosoftのプラグインレジストリ経由で順次提供され、法務リサーチ、文書・案件管理、電子署名、法務AI、電子証拠開示などの分野をカバーします。追加プラグインも今後提供予定です。",
+    "定義語と文書内の定義を行き来して確認できる新しいWord体験は、今月後半にプレビュー提供予定です。",
+    "記事によると、4月のFrontier提供開始以降、1,800人超が約10万件の編集を行い、提案の約7割を採用しました。Microsoft社内評価では編集の流暢さが90%超、簡潔さが95%超、関連性が85%超とされています。",
+    "新しい法務機能はMicrosoft Copilotの顧客向けに世界各地で本日一般提供されています。Copilotは各利用者がアクセスできるコンテンツのみを扱い、機密ラベルを尊重し、プロンプト・応答・文書を基盤モデルの学習に使用しないと説明されています。"
+  ],
+  "significance": "法務専門家は、WordやCoworkで契約書の確認・編集や複数資料にまたがる作業を進めつつ、編集案の採否や最終判断を自ら担えます。利用者ごとのアクセス権と機密ラベルが尊重され、入力や文書が基盤モデルの学習に使われないという説明は、組織内の法務情報を扱うチームに関係します。",
+  "summaryEn": "Microsoft Copilot is making more than 20 legal skills and partner-built plugins generally available, supporting document work in Word and multi-file, multi-step work in Cowork. Legal teams can use approved precedents and trusted external systems, while edits in Word are applied only after user approval.",
+  "keyPointsEn": [
+    "The legal skills are generally available. In Word, they support tracked changes that preserve formatting and contract drafting from approved precedents; in Cowork, they handle multi-step work such as tracking obligations and deadlines across contract portfolios and organizing case chronologies.",
+    "Partner-built legal plugins are beginning to roll out today through Microsoft's plugin registry, covering areas including legal research, document and matter management, e-signatures, legal AI, and e-discovery. More plugins are expected over time.",
+    "A new Word experience for navigating between defined terms and their definitions across a document is expected to enter preview later this month.",
+    "According to the article, since the Frontier release in April, more than 1,800 users have generated nearly 100,000 edits and kept roughly seven in ten suggestions. Microsoft's internal evaluations report more than 90% fluency, more than 95% conciseness, and more than 85% relevance for the edits.",
+    "The new legal capabilities are generally available today worldwide to Microsoft Copilot customers. Copilot is described as using only content each user can access, honoring sensitivity labels, and not using prompts, responses, or documents to train underlying foundation models."
+  ],
+  "significanceEn": "Legal professionals can use Word and Cowork for contract review and editing and work spanning multiple materials, while retaining control over whether to accept edits and over final decisions. The stated access controls, sensitivity-label handling, and exclusion of prompts and documents from foundation-model training are relevant to teams working with internal legal information."
+}

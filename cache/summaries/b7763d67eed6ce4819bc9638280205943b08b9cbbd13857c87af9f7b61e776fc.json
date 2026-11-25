@@ -1,0 +1,20 @@
+{
+  "summary": "Microsoft Copilotは、会計、資本市場、企業財務向けに25を超える新しい finance skills とパートナー製プラグインを追加し、ExcelだけでなくCopilotアプリやCoworkで複数ファイル・会話をまたぐ業務を支援する。会計機能はFrontier、Excelのfinance skillsとCapital Markets・Financeプラグインは一般提供、Dynamics 365 ERPアプリとパートナープラグインは順次展開としている。変更履歴の確認や編集の個別取り消しにも対応し、判断・承認は専門家が担う設計だ。",
+  "keyPoints": [
+    "会計機能はFrontierで提供され、残高・取引の照合、仕訳案の作成、業績報告などを支援する。Excelでは会計機能の実行時に監査証跡を任意で残せる。限定的なInsiders提供の7日間で、8,000人超が会計スキルを4万4,000回超利用した。",
+    "CoworkのCapital Marketsプラグインは一般提供で、金融機関や投資関連の専門家が、資料の収集から分析・モデル作成、レビュー用の提案書作成までを委任できる。取引比較やLBO分析などに対応し、出典とアナリストの仮定を区別してレビューできる。",
+    "CoworkのFinanceプラグインも一般提供となり、複数ファイルや会話を横断して、決算レビュー資料の準備や予測レビューの経営層向け資料・フォローアップ作成などを支援する。",
+    "Excelのfinance skills、Fabric IQは一般提供。Dynamics 365 ERPアプリプラグインとパートナープラグインはMicrosoftプラグインレジストリを通じて順次展開される。外部サービスは別ライセンス、契約、認証、または管理者による有効化が必要な場合がある。",
+    "Copilotはユーザーがアクセスできる情報だけを扱い、既存の権限や機密ラベルを尊重する。プロンプト、応答、文書を基盤モデルの学習に使わず、Excelでは変更の履歴・実行者・分析への影響を確認し、個別編集を他の変更に影響させず取り消せる。"
+  ],
+  "significance": "会計、資本市場、企業財務の担当者は、既存のExcelや業務データを活用しながら、照合・分析からレビュー資料や連絡の準備までをCopilotに委ねられる。変更の出所や影響を追跡し、権限を保ったまま確認できる一方、提案や意思決定、承認、実行の責任は専門家に残るため、金融業務で求められるレビューと人の判断を前提にした支援である。",
+  "summaryEn": "Microsoft Copilot adds more than 25 finance skills and partner-built plugins for accounting, capital markets, and corporate finance, supporting workflows across the Copilot app, Cowork, and Excel. Accounting capabilities are available in Frontier; Excel finance skills and the Capital Markets and Finance plugins are generally available, while Dynamics 365 ERP and partner plugins are rolling out. Copilot also supports change tracking and selective reversals, while professionals retain responsibility for judgments and approvals.",
+  "keyPointsEn": [
+    "Accounting capabilities are available in Frontier and support reconciliation, journal-entry drafting, and reporting. Excel users can optionally create an audit trail when invoking an accounting capability. During seven days of limited Insiders availability, more than 8,000 users invoked accounting skills over 44,000 times.",
+    "The generally available Capital Markets plugin for Cowork lets professionals in banking, research, private equity, and wealth management delegate workflows from source materials through analysis and modeling to review-ready recommendations. It supports tasks such as transaction comparisons and LBO analysis, keeping sourced inputs distinct from analyst assumptions for review.",
+    "The generally available Finance plugin for Cowork supports work across multiple files and conversations, including close review packages and forecast reviews with leadership materials and follow-ups.",
+    "Excel finance skills and Fabric IQ are generally available. The Dynamics 365 ERP apps plugin and partner plugins are beginning to roll out through Microsoft's plugin registry. Third-party services may require separate licensing, subscriptions, authentication, or administrator enablement.",
+    "Copilot works only with content users can access, honors existing permissions and sensitivity labels, and does not use prompts, responses, or documents to train its underlying foundation models. In Excel, users can review change history, authorship, and potential analytical effects, and selectively reverse individual edits."
+  ],
+  "significanceEn": "Accounting, capital-markets, and corporate-finance professionals can use existing Excel workbooks and business data while delegating tasks from reconciliation and analysis to review materials and communications. They can trace changes and their effects while retaining access controls, but professionals remain responsible for recommendations, decisions, approvals, and actions—making the assistance compatible with the review and human judgment required in financial work."
+}

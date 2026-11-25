@@ -1,0 +1,18 @@
+{
+  "summary": "Microsoft Copilotは、Microsoftが資金提供しGigaOmと共同で実施した企業向けAIのTCO調査で、対象とした日常利用者・高度利用者の双方について、ChatGPT EnterpriseやClaude Enterpriseより推定月額費用が最も低かった。2026年10月の価格を基にした試算では日常利用者が30ドル、高度利用者が96ドルで、品質は全体として3製品でおおむね同程度だったが、結果は選定タスクや利用頻度などに依存する。",
+  "keyPoints": [
+    "調査は2026年10月に実施され、Copilot、ChatGPT Enterprise、Claude Enterpriseを対象に、37種類のプロンプトを使って日常利用者の月100タスク、高度利用者の月140タスク（エージェント型ワークフロー20件を含む）をモデル化した。Microsoftがテストとコスト分析を行い、GigaOmは調査設計や手法・結果の検証などに参加した。",
+    "推定月額費用は、日常利用者がCopilot 30ドル、Claude 205ドル、ChatGPT 81ドル、高度利用者がCopilot 96ドル、Claude 299ドル、ChatGPT 149ドル。試算は2026年10月の公表価格または未公表の場合の仮定価格に基づき、個別の割引を含まず、実際の価格は異なる可能性がある。",
+    "品質評価では、各タスクのチェックリストをすべて満たした場合だけ合格とし、部分的に正しい成果物は不合格とした。全体では3製品の品質はおおむね同程度だが、個々のタスクすべてで同じ結果になるわけではない。",
+    "記事が挙げるCopilotのコスト要因は、日常利用がユーザー向けサブスクリプションに含まれること、Work IQが業務上の文脈を探すこと、Autoがタスクに応じてモデルと推論レベルを選ぶこと。高度なエージェント型ワークフローはCopilot Creditsによる従量課金とされる。"
+  ],
+  "significance": "企業でAI導入や利用予算を検討する担当者にとって、日常業務とエージェント型業務を含めた費用比較の参考になる一方、調査結果は選んだタスク、実施頻度、設定、価格条件に左右される。記事は、各組織の業務や価格を使って同じ方法で評価することを勧めており、この試算だけで各社の実費を判断できるとはしていない。",
+  "summaryEn": "In a Microsoft-funded enterprise AI TCO study conducted with GigaOm, Microsoft Copilot had the lowest estimated monthly cost for both everyday and advanced users among the products tested. Based on October 2026 prices, the estimates were $30 for everyday users and $96 for advanced users; quality was broadly comparable overall, though results depend on the tasks and usage modeled.",
+  "keyPointsEn": [
+    "Conducted in October 2026, the study modeled Microsoft Copilot, ChatGPT Enterprise, and Claude Enterprise across 37 unique prompts: 100 monthly tasks for an everyday user and 140 for an advanced user, including 20 agentic workflows. Microsoft ran the testing and cost analysis; GigaOm contributed to the design and validated the methodology and results.",
+    "Estimated monthly costs were $30 for Copilot, $205 for Claude, and $81 for ChatGPT for an everyday user; for an advanced user, they were $96, $299, and $149, respectively. Estimates use October 2026 list prices or assumed prices where list prices were unavailable, exclude negotiated discounts, and may differ from actual prices.",
+    "Quality evaluation required each run to meet every checklist item, with partially correct work failing. Quality was broadly similar across the products over the overall workload, but results were not the same for every individual task.",
+    "The article attributes Copilot’s lower costs to everyday use being included in the user subscription, Work IQ finding relevant business context, and Auto selecting models and effort levels for each task. Advanced agentic workflows use usage-based Copilot Credits billing."
+  ],
+  "significanceEn": "For organizations evaluating AI adoption and budgets, the study offers a cost comparison covering everyday and agentic work, but its results depend on the selected tasks, frequency, settings, and pricing. The article recommends repeating the evaluation with each organization’s own work and prices, and does not present the estimates as a prediction of any company’s actual costs."
+}

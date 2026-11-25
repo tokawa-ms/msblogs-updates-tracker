@@ -1,0 +1,18 @@
+{
+  "summary": "Power BIの改ページレポートが、Fabricワークスペースの送信アクセス保護（OAP）に対応しました。ワークスペース管理者がOAPを有効にすると送信接続が既定でブロックされ、必要なコネクターや宛先を例外ルールで許可できます。許可されないデータソースへのアクセスは失敗し、外部画像や地図も表示されない場合があります。",
+  "keyPoints": [
+    "レポートの表示時に、Fabric lakehouse、Azure SQL、Power BIセマンティックモデル、ゲートウェイ、地図、外部画像ホストへの接続がOAPで評価されます。",
+    "管理者は、レポート定義と構成済み接続を確認し、Fabric Lakehouse、SQL Server、Web、Analysis Servicesなどのコネクターと宛先に対して許可ルールを設定します。",
+    "セマンティックモデルを別ワークスペースから参照する場合、レポートからモデルへの接続だけでなく、モデルの基盤データソースへの接続はモデル側ワークスペースのOAPで個別に制御されます。",
+    "導入時はテストワークスペースで代表的なレポートを実行し、データ、パラメーター、サブスクリプション、地図、外部画像を確認し、ルールのない宛先がブロックされることを検証する必要があります。"
+  ],
+  "significance": "ワークスペース管理者は意図しない送信アクセスを制限しながら、レポート作成者が承認済み接続を使って印刷可能な運用、財務、規制レポートを作成できるようになります。必要な接続やルールの管理が不十分な場合、レポートの一部またはデータ取得全体に影響する可能性があります。",
+  "summaryEn": "Paginated reports in Power BI now support outbound access protection for Fabric workspaces. When a workspace admin enables OAP, outbound connections are blocked by default, and only approved connectors and destinations can be allowed through exception rules. Disallowed data sources cannot be retrieved, and blocked external images or maps may fail to display.",
+  "keyPointsEn": [
+    "During report rendering, Fabric lakehouses, Azure SQL, Power BI semantic models, gateways, maps, and external image hosts are checked against OAP rules.",
+    "Admins should review report definitions and configured connections, then configure allowed rules for required connectors and destinations such as SQL Server, Web, and Analysis Services.",
+    "For a semantic model in another workspace, permitting report-to-model access does not permit the model's underlying data-source connections; those are controlled separately by the model workspace's OAP policy.",
+    "After enabling the policy, admins should test a representative report in a test workspace and verify data, parameters, subscriptions, maps, and external images, as well as blocking for destinations without a rule."
+  ],
+  "significanceEn": "Workspace admins can limit unintended outbound access while report authors continue using approved connections for print-ready operational, financial, and regulatory reports. Inadequate connection review or rules can prevent data retrieval or cause external report resources not to display."
+}

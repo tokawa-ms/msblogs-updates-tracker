@@ -1,0 +1,18 @@
+{
+  "summary": "Microsoftは、ClaudeのモデルをMicrosoft Copilotで2026年末までにEU Data Boundaryへ対応させると発表した。対象はEUおよびEFTAの組織で、Copilot Coworkを含む利用環境において、データが既に保存されている範囲内で処理される。これは発表時点での展開予定であり、利用可能になれば既存利用者には自動的に適用される。",
+  "keyPoints": [
+    "EUおよびEFTAの対象組織では、ClaudeをEU Data Boundary内で利用できるようになる予定だ。",
+    "対象となるMicrosoft 365顧客には契約条件にこの対応が含まれ、追加購入やオプトインは不要だ。",
+    "ClaudeはChat、Microsoft 365アプリのCopilot、Copilot Cowork、Copilot Codeなどで利用できる一方、Microsoftのエンタープライズデータ保護が適用される。管理者が利用者を決定できる。",
+    "すでにClaudeを利用している組織は操作不要だ。未設定の組織ではEUおよびEFTAで既定で無効となるため、Microsoft 365管理センターで全ユーザーまたは指定ユーザー・グループ向けに有効化できる。"
+  ],
+  "significance": "EUおよびEFTAでMicrosoft 365を利用する組織は、Claudeのモデル選択を維持しつつ、Microsoftが説明する既存の地域データ処理コミットメントをClaudeにも適用できる。規制産業や公共部門を含む組織が、組織全体へのAI展開時に対応要件を検討しやすくなる。",
+  "summaryEn": "Microsoft announced plans to bring Claude models in Microsoft Copilot into the EU Data Boundary by the end of 2026. Organizations in the EU and EFTA will be able to use Claude across Copilot experiences, including Copilot Cowork, with processing inside the boundary where their data is already stored. This is a future availability plan; once it becomes available, existing users will be moved automatically.",
+  "keyPointsEn": [
+    "Organizations in the EU and EFTA are expected to be able to use Claude models within the EU Data Boundary by the end of 2026.",
+    "Eligible Microsoft 365 customers in the EU and EFTA will have this included in their contractual terms, without opt-in or additional purchase.",
+    "Claude models operate across experiences including Chat, Copilot in Microsoft 365 apps, Copilot Cowork, and Copilot Code, and are covered by Microsoft enterprise data protection; administrators decide who can use them.",
+    "Organizations already using Claude need take no action. For those that have not enabled it, the setting is disabled by default in the EU and EFTA and administrators can enable it for all users or selected users and groups in the Microsoft 365 admin center."
+  ],
+  "significanceEn": "Organizations using Microsoft 365 in the EU and EFTA could retain Claude model choice while applying Microsoft's existing regional data-processing commitments to Claude. This may help organizations, including those in regulated industries and the public sector, address compliance requirements as they expand AI use across the organization."
+}

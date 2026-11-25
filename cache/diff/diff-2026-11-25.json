@@ -1,0 +1,300 @@
+{
+  "date": "2026-11-25",
+  "compared_with": "2026-11-24",
+  "source_count": 7,
+  "new_count": 8,
+  "removed_count": 8,
+  "new_articles": [
+    {
+      "id": "41314580208ff8a4",
+      "source_id": "fabric-blog",
+      "source_name": "Microsoft Fabric Blog",
+      "title": "Paginated reports in Power BI support outbound access protection (Preview)",
+      "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Paginated-reports-in-Power-BI-support-outbound-access-protection/ba-p/5435045",
+      "published_at": "2026-11-24T18:00:00.000Z",
+      "summary": "Paginated reports can combine data from Power BI semantic models and other data sources with external resources such as maps and images. Workspace admins can control which destinations the Power BI service can reach when it renders these reports.\r\nPaginated reports now support workspace outbound access protection (OAP). When a workspace admin enables OAP for a Fabric workspace, outbound connections from paginated reports are blocked by default. The workspace admin can then create OAP exception rules to allow the connection types and destinations that the reports in that workspace are supposed to access.\r\nWhy control outbound access at the workspace level?\r\nOAP helps workspace admins reduce unintended outbound access when the Power BI service renders paginated reports. Report authors define the data and content their reports need, and workspace admins decide which connections to allow. Authors can keep designing print-ready operational, financial, and regulatory reports using approved connections.\r\nHow OAP applies to paginated report connections\r\nA paginated report might query a Fabric lakehouse or an Azure SQL database for transaction data, query a Power BI semantic model for business metrics, and retrieve images from an external host. The Power BI service makes these requests when it renders the report. Depending on the source, the service can use a cloud connector, a configured data gateway, or a Web connection. The service, not the viewer’s browser, retrieves external images.\r\nOAP checks these outbound requests against the workspace’s data connection rules. If a required data source isn’t allowed, the report can’t retrieve data from that source. The following screenshot shows the error Power BI displays when OAP blocks a required connection.\r\nFigure: Unable to render a paginated report because OAP blocked data source access.\r\nIf OAP blocks an external image or map, that resource might not display. The rest of the report can still render if its required data sources are available.\r\nConfigure only the connections your reports need\r\nStart by identifying the connections the Power BI service needs to render your paginated reports. Review each report definition and its configured connections for data sources, semantic models, gateways, map services, and external image hosts. Embedded images don’t require an external request, but images referenced by URL do.\r\nNext, enable OAP for the workspace and add data connection rules for the required connectors and destinations. For example, use the SQL Server connector for a Fabric SQL analytics endpoint and the Web connector for maps and external images. For a report that queries a Power BI semantic model, use the Analysis Services connector and an XML for Analysis (XMLA) connection string so the report-to-model connection follows the workspace’s OAP rules.\r\nIf a paginated report queries a semantic model in another workspace, allowing the report-to-model connection doesn't allow the model to connect to its underlying data sources. Those connections are governed separately by the semantic model workspace's outbound access policy, if enabled.\r\nIn the following screenshot, you can see an example of an OAP policy with multiple exceptions, enabling a paginated report to pull data from Fabric Lakehouse and warehouse sources, query a semantic model, and fetch content from Web destinations.\r\nFigure: An OAP policy with multiple exceptions for a sample paginated report.\r\nAfter the policy takes effect, run a representative report in a test workspace. Check data retrieval and any parameters, subscriptions, maps, or external images the report uses. Confirm that destinations without an applicable rule remain blocked.\r\nNext steps\r\n\r\nLearn more about the feature in the Workspace outbound access protection overview.\r\nFollow the step-by-step setup in Enable workspace outbound access protection.\r\nShare suggestions on the Fabric Ideas site.\r\nAsk questions in the Fabric Community.",
+      "fetched_at": "2026-11-25T05:18:31.746Z"
+    },
+    {
+      "id": "dddee9e0cdc3f9cd",
+      "source_id": "fabric-blog",
+      "source_name": "Microsoft Fabric Blog",
+      "title": "Workspace outbound access protection for Power BI semantic models and interactive reports (Generally Available)",
+      "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Workspace-outbound-access-protection-for-Power-BI-semantic/ba-p/5435053",
+      "published_at": "2026-11-24T17:00:00.000Z",
+      "summary": "Workspace outbound access protection (OAP) is generally available for Power BI semantic models and interactive Power BI reports in Microsoft Fabric workspaces. With OAP, workspace admins can limit which data sources semantic models reach. They can also limit which semantic models in other workspaces interactive reports can query. These rules help reduce unintended outbound access and mitigate data exfiltration risks.\r\nSemantic model creators choose their data sources. Report authors choose their semantic models. Workspace admins decide which outbound connections they want to allow in their workspaces. You can have semantic models and reports in the same workspace if you don’t need strict governance controls. You can also place them in separate workspaces if you don’t want to give report authors direct access to the underlying data sources of the semantic models.\r\nWhich workspace controls each connection\r\nAn interactive report can always query a semantic model in its own local workspace. For a model in another workspace, however, the report workspace admin must add a Power BI Semantic Model exception to the report workspace’s OAP policy. The exception applies to the report workspace, not to individual reports.\r\nWhen OAP is on in the model workspace, that workspace’s rules control which data sources the semantic model can reach. Examples include an Azure SQL database, a Fabric lakehouse, or a source reached through a data gateway. Allowing the report-to-model connection in the report workspace doesn’t allow the model-to-source connection in the model workspace, or vice versa. Each workspace enforces its own separate OAP policy.\r\nThere are some special cases to consider:\r\n\r\nA semantic model might need an OAP exception even for a lakehouse or warehouse in the same workspace because SQL and ADLS Gen2 connections are considered external connections even if the destination is in the same Fabric workspace. Check the model’s data sources and the connection types to determine the required OAP exceptions.\r\nFor interactive Power BI reports, note that OAP only governs the connection to the semantic model. OAP does not apply to outbound requests originating from features rendered in the user’s browser, such as an ImageURL or a custom visual. To control browser connections, you must rely on firewalls and other the security controls in your local network.\r\n\r\nExample: Finance reports use a shared semantic model\r\nA finance team publishes interactive reports for regional controllers. The reports use a shared semantic model in a separate analytics workspace. Model owners maintain revenue and expense measures there. The semantic model uses DirectLake over OneLake against an approved Fabric warehouse.\r\nThe reporting workspace admin adds a Power BI Semantic Model exception for the analytics workspace. The analytics workspace admin adds a separate rule for the SQL Fabric warehouse. Looking at the data connections of the semantic model, the analytics workspace admin can see that the model uses an ADSL Gen2 connection to access the Fabric warehouse data. (Side note, for DirectLake over SQL it would be a SQL connection against the warehouses SQL endpoint.) The diagram shows which workspace controls each connection.\r\nFigure: The reporting workspace allows access to the shared semantic model. The analytics workspace allows Direct Lake access to Fabric warehouse data in OneLake.\r\nA report bound to a semantic model in an unapproved workspace can’t open because the OAP policy in the report workspace would block the connection. If a semantic model in the analytics workspace wanted to use a different data source, the connection would equally be blocked, refreshes would fail in import mode, queries would fail in DirectQuery mode, and framing would fail in DirectLake mode. The analytics workspace admin must review and approve each new destination separately by adding a corresponding OAP exception. Neither team needs to broaden the other workspace’s rules. The governance controls are managed separately for each workspace.\r\nPlan your rollout\r\nBefore you enable OAP in production, coordinate with report owners, semantic model owners, and workspace admins. Involve gateway admins if needed. Group reports and models with similar connection needs. Check that their connection formats are supported and the required rules are available.\r\nStart with a few representative reports and semantic models in a test workspace. Identify where each model resides, which sources it uses, and who owns the connections. You can use Copilot to facilitate and accelerate this process.\r\nThen set rules in each workspace. In report workspaces, allow only the other workspaces that host the semantic models your reports need. In the semantic model workspaces, allow only the data sources that the models need. Check model connections even when reports and semantic models share the same workspace. Again, you can use Copilot to facilitate the configuration or use the Fabric REST APIs (Get Outbound Cloud Connection Rules and Set Outbound Cloud Connection Rules) directly to manage OAP across multiple workspaces efficiently.\r\nAfter the rules take effect, test reports and semantic models separately. Open a report as a viewer would. Depending on the model, run an Import refresh or a DirectQuery query, or check access to the required Direct Lake tables. Confirm that unapproved destinations stay blocked in the test workspaces.\r\nRecord why each exception exists and who owns it. Review the rules when you rebind a report, move a model, or change a source endpoint. If a cross-workspace report stops opening after you rebind it, check the report workspace’s exception. If the model can’t refresh or query a source, check the model workspace’s rules. Use Copilot and Fabric REST APIs for efficiency.\r\nNext steps\r\n\r\nLearn more in the Workspace outbound access protection overview and the guidance for semantic models and interactive Power BI reports.\r\nFollow the step-by-step setup in Enable workspace outbound access protection.\r\nShare suggestions on the Fabric Ideas site.\r\nAsk questions in the Fabric Community.",
+      "fetched_at": "2026-11-25T05:18:31.746Z"
+    },
+    {
+      "id": "215487d78b45f131",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "These are the gifts developers will actually want",
+      "url": "https://github.blog/news-insights/company-news/these-are-the-gifts-developers-will-actually-want/",
+      "published_at": "2026-11-24T16:00:00.000Z",
+      "summary": "The developer you're shopping for hasn’t shared their holiday wish list with you yet? Check out these gifts, plus our Black Friday discount all week long.\nThe post These are the gifts developers will actually want appeared first on The GitHub Blog.",
+      "fetched_at": "2026-11-25T05:18:30.731Z"
+    },
+    {
+      "id": "b54e91109b0b06e7",
+      "source_id": "m365-blog",
+      "source_name": "Microsoft 365 Blog",
+      "title": "Copilot at Microsoft Ignite: Expanding what’s possible with intelligence built for work",
+      "url": "https://www.microsoft.com/en-us/copilot/blog/2026/11/17/copilot-at-microsoft-ignite-expanding-whats-possible-with-intelligence-built-for-work/",
+      "published_at": "2026-11-17T18:05:00.000Z",
+      "summary": "Explore new Microsoft Copilot experiences and capabilities announced at Microsoft Ignite 2026, including Home, Autopilot, Workspaces, and Code.\nThe post Copilot at Microsoft Ignite: Expanding what’s possible with intelligence built for work appeared first on Microsoft Copilot Blog.",
+      "fetched_at": "2026-11-25T05:18:31.017Z"
+    },
+    {
+      "id": "25e630f5df26061b",
+      "source_id": "m365-blog",
+      "source_name": "Microsoft 365 Blog",
+      "title": "What AI at work really costs",
+      "url": "https://www.microsoft.com/en-us/copilot/blog/2026/11/16/what-ai-at-work-really-costs/",
+      "published_at": "2026-11-16T16:00:00.000Z",
+      "summary": "What does AI at work really cost? New research compares the total cost of leading enterprise AI options and explores the factors that can shape the cost of everyday and advanced AI work.\nThe post What AI at work really costs appeared first on Microsoft Copilot Blog.",
+      "fetched_at": "2026-11-25T05:18:31.017Z"
+    },
+    {
+      "id": "989876ef8c0cb94c",
+      "source_id": "m365-blog",
+      "source_name": "Microsoft 365 Blog",
+      "title": "Bringing Claude models in Microsoft Copilot into the EU Data Boundary",
+      "url": "https://www.microsoft.com/en-us/copilot/blog/2026/11/05/bringing-claude-models-in-microsoft-copilot-into-the-eu-data-boundary/",
+      "published_at": "2026-11-05T16:00:00.000Z",
+      "summary": "Greater model choice, consistent protection. Claude models are coming to the EU Data Boundary in Microsoft Copilot.\nThe post Bringing Claude models in Microsoft Copilot into the EU Data Boundary appeared first on Microsoft Copilot Blog.",
+      "fetched_at": "2026-11-25T05:18:31.017Z"
+    },
+    {
+      "id": "2c145a22b0ccecd7",
+      "source_id": "m365-blog",
+      "source_name": "Microsoft 365 Blog",
+      "title": "Microsoft Copilot for finance: Purpose-built for the way finance teams work",
+      "url": "https://www.microsoft.com/en-us/copilot/blog/2026/10/29/microsoft-copilot-for-finance-purpose-built-for-the-way-finance-teams-work/",
+      "published_at": "2026-10-29T15:00:00.000Z",
+      "summary": "Discover Microsoft Copilot for finance, purpose-built skills for accounting, capital markets, and broader finance work.\nThe post Microsoft Copilot for finance: Purpose-built for the way finance teams work appeared first on Microsoft Copilot Blog.",
+      "fetched_at": "2026-11-25T05:18:31.017Z"
+    },
+    {
+      "id": "41433c06c9ce98e3",
+      "source_id": "m365-blog",
+      "source_name": "Microsoft 365 Blog",
+      "title": "Introducing Microsoft Copilot for legal",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/introducing-microsoft-copilot-for-legal/4564246",
+      "published_at": "2026-10-23T15:00:00.000Z",
+      "summary": "In legal work, the answer rarely sits neatly in one place. It may depend on precedent, organizational standards, or a regulatory consideration that changes the whole analysis.\nThe post Introducing Microsoft Copilot for legal appeared first on Microsoft Copilot Blog.",
+      "fetched_at": "2026-11-25T05:18:31.017Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "commandline-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "fabric-blog": {
+      "new_count": 2,
+      "removed_count": 2,
+      "new_articles": [
+        {
+          "id": "41314580208ff8a4",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Paginated reports in Power BI support outbound access protection (Preview)",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Paginated-reports-in-Power-BI-support-outbound-access-protection/ba-p/5435045",
+          "published_at": "2026-11-24T18:00:00.000Z",
+          "summary": "Paginated reports can combine data from Power BI semantic models and other data sources with external resources such as maps and images. Workspace admins can control which destinations the Power BI service can reach when it renders these reports.\r\nPaginated reports now support workspace outbound access protection (OAP). When a workspace admin enables OAP for a Fabric workspace, outbound connections from paginated reports are blocked by default. The workspace admin can then create OAP exception rules to allow the connection types and destinations that the reports in that workspace are supposed to access.\r\nWhy control outbound access at the workspace level?\r\nOAP helps workspace admins reduce unintended outbound access when the Power BI service renders paginated reports. Report authors define the data and content their reports need, and workspace admins decide which connections to allow. Authors can keep designing print-ready operational, financial, and regulatory reports using approved connections.\r\nHow OAP applies to paginated report connections\r\nA paginated report might query a Fabric lakehouse or an Azure SQL database for transaction data, query a Power BI semantic model for business metrics, and retrieve images from an external host. The Power BI service makes these requests when it renders the report. Depending on the source, the service can use a cloud connector, a configured data gateway, or a Web connection. The service, not the viewer’s browser, retrieves external images.\r\nOAP checks these outbound requests against the workspace’s data connection rules. If a required data source isn’t allowed, the report can’t retrieve data from that source. The following screenshot shows the error Power BI displays when OAP blocks a required connection.\r\nFigure: Unable to render a paginated report because OAP blocked data source access.\r\nIf OAP blocks an external image or map, that resource might not display. The rest of the report can still render if its required data sources are available.\r\nConfigure only the connections your reports need\r\nStart by identifying the connections the Power BI service needs to render your paginated reports. Review each report definition and its configured connections for data sources, semantic models, gateways, map services, and external image hosts. Embedded images don’t require an external request, but images referenced by URL do.\r\nNext, enable OAP for the workspace and add data connection rules for the required connectors and destinations. For example, use the SQL Server connector for a Fabric SQL analytics endpoint and the Web connector for maps and external images. For a report that queries a Power BI semantic model, use the Analysis Services connector and an XML for Analysis (XMLA) connection string so the report-to-model connection follows the workspace’s OAP rules.\r\nIf a paginated report queries a semantic model in another workspace, allowing the report-to-model connection doesn't allow the model to connect to its underlying data sources. Those connections are governed separately by the semantic model workspace's outbound access policy, if enabled.\r\nIn the following screenshot, you can see an example of an OAP policy with multiple exceptions, enabling a paginated report to pull data from Fabric Lakehouse and warehouse sources, query a semantic model, and fetch content from Web destinations.\r\nFigure: An OAP policy with multiple exceptions for a sample paginated report.\r\nAfter the policy takes effect, run a representative report in a test workspace. Check data retrieval and any parameters, subscriptions, maps, or external images the report uses. Confirm that destinations without an applicable rule remain blocked.\r\nNext steps\r\n\r\nLearn more about the feature in the Workspace outbound access protection overview.\r\nFollow the step-by-step setup in Enable workspace outbound access protection.\r\nShare suggestions on the Fabric Ideas site.\r\nAsk questions in the Fabric Community.",
+          "fetched_at": "2026-11-25T05:18:31.746Z"
+        },
+        {
+          "id": "dddee9e0cdc3f9cd",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Workspace outbound access protection for Power BI semantic models and interactive reports (Generally Available)",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Workspace-outbound-access-protection-for-Power-BI-semantic/ba-p/5435053",
+          "published_at": "2026-11-24T17:00:00.000Z",
+          "summary": "Workspace outbound access protection (OAP) is generally available for Power BI semantic models and interactive Power BI reports in Microsoft Fabric workspaces. With OAP, workspace admins can limit which data sources semantic models reach. They can also limit which semantic models in other workspaces interactive reports can query. These rules help reduce unintended outbound access and mitigate data exfiltration risks.\r\nSemantic model creators choose their data sources. Report authors choose their semantic models. Workspace admins decide which outbound connections they want to allow in their workspaces. You can have semantic models and reports in the same workspace if you don’t need strict governance controls. You can also place them in separate workspaces if you don’t want to give report authors direct access to the underlying data sources of the semantic models.\r\nWhich workspace controls each connection\r\nAn interactive report can always query a semantic model in its own local workspace. For a model in another workspace, however, the report workspace admin must add a Power BI Semantic Model exception to the report workspace’s OAP policy. The exception applies to the report workspace, not to individual reports.\r\nWhen OAP is on in the model workspace, that workspace’s rules control which data sources the semantic model can reach. Examples include an Azure SQL database, a Fabric lakehouse, or a source reached through a data gateway. Allowing the report-to-model connection in the report workspace doesn’t allow the model-to-source connection in the model workspace, or vice versa. Each workspace enforces its own separate OAP policy.\r\nThere are some special cases to consider:\r\n\r\nA semantic model might need an OAP exception even for a lakehouse or warehouse in the same workspace because SQL and ADLS Gen2 connections are considered external connections even if the destination is in the same Fabric workspace. Check the model’s data sources and the connection types to determine the required OAP exceptions.\r\nFor interactive Power BI reports, note that OAP only governs the connection to the semantic model. OAP does not apply to outbound requests originating from features rendered in the user’s browser, such as an ImageURL or a custom visual. To control browser connections, you must rely on firewalls and other the security controls in your local network.\r\n\r\nExample: Finance reports use a shared semantic model\r\nA finance team publishes interactive reports for regional controllers. The reports use a shared semantic model in a separate analytics workspace. Model owners maintain revenue and expense measures there. The semantic model uses DirectLake over OneLake against an approved Fabric warehouse.\r\nThe reporting workspace admin adds a Power BI Semantic Model exception for the analytics workspace. The analytics workspace admin adds a separate rule for the SQL Fabric warehouse. Looking at the data connections of the semantic model, the analytics workspace admin can see that the model uses an ADSL Gen2 connection to access the Fabric warehouse data. (Side note, for DirectLake over SQL it would be a SQL connection against the warehouses SQL endpoint.) The diagram shows which workspace controls each connection.\r\nFigure: The reporting workspace allows access to the shared semantic model. The analytics workspace allows Direct Lake access to Fabric warehouse data in OneLake.\r\nA report bound to a semantic model in an unapproved workspace can’t open because the OAP policy in the report workspace would block the connection. If a semantic model in the analytics workspace wanted to use a different data source, the connection would equally be blocked, refreshes would fail in import mode, queries would fail in DirectQuery mode, and framing would fail in DirectLake mode. The analytics workspace admin must review and approve each new destination separately by adding a corresponding OAP exception. Neither team needs to broaden the other workspace’s rules. The governance controls are managed separately for each workspace.\r\nPlan your rollout\r\nBefore you enable OAP in production, coordinate with report owners, semantic model owners, and workspace admins. Involve gateway admins if needed. Group reports and models with similar connection needs. Check that their connection formats are supported and the required rules are available.\r\nStart with a few representative reports and semantic models in a test workspace. Identify where each model resides, which sources it uses, and who owns the connections. You can use Copilot to facilitate and accelerate this process.\r\nThen set rules in each workspace. In report workspaces, allow only the other workspaces that host the semantic models your reports need. In the semantic model workspaces, allow only the data sources that the models need. Check model connections even when reports and semantic models share the same workspace. Again, you can use Copilot to facilitate the configuration or use the Fabric REST APIs (Get Outbound Cloud Connection Rules and Set Outbound Cloud Connection Rules) directly to manage OAP across multiple workspaces efficiently.\r\nAfter the rules take effect, test reports and semantic models separately. Open a report as a viewer would. Depending on the model, run an Import refresh or a DirectQuery query, or check access to the required Direct Lake tables. Confirm that unapproved destinations stay blocked in the test workspaces.\r\nRecord why each exception exists and who owns it. Review the rules when you rebind a report, move a model, or change a source endpoint. If a cross-workspace report stops opening after you rebind it, check the report workspace’s exception. If the model can’t refresh or query a source, check the model workspace’s rules. Use Copilot and Fabric REST APIs for efficiency.\r\nNext steps\r\n\r\nLearn more in the Workspace outbound access protection overview and the guidance for semantic models and interactive Power BI reports.\r\nFollow the step-by-step setup in Enable workspace outbound access protection.\r\nShare suggestions on the Fabric Ideas site.\r\nAsk questions in the Fabric Community.",
+          "fetched_at": "2026-11-25T05:18:31.746Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "02a6cd0df64c9ae3",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "Direct Lake Calculated Columns (Preview)",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/Direct-Lake-Calculated-Columns-Preview/ba-p/5357159",
+          "published_at": "2026-08-24T16:14:20.000Z",
+          "summary": "Calculated columns are now available in preview for Direct Lake on OneLake semantic models. This has been one of the most requested capabilities since Direct Lake launched and closes a long-standing gap with Import and DirectQuery storage modes.You can define calculated columns directly in your semantic model using DAX in web modeling and Power BI Desktop, without changing the table storage mode or modifying data upstream.The problem this solvesDirect Lake combines Import-like performance with near real-time data freshness by querying Delta tables in OneLake and loading data into memory as needed.But until now, if your model needed a derived column, you had only two options: push the logic upstream into the data source or move the table to a different storage mode. Calculated columns close that gap – you can now define columns directly in the semantic model using DAX without leaving Direct Lake.What you can buildCommon use cases include:Derived values, such as an age calculated from a birth date.Concatenating fields, such as city and region into a single field for slicers.Formatted dates like Month-Year for grouping in visuals.Multilingual reports using data translations with USERCULTURE().Personalized content based on functions like USERPRINCIPALNAME().Examples1. Age = DATEDIFF( DimCustomer[BirthDate], TODAY(), YEAR ) 2. Customer Location = DimCustomer[CityName] & \", \" & DimCustomer[ContinentName] 3. Month Name = FORMAT( DimDate[FirstOfMonth], \"mmmm\", USERCULTURE() ) The first two return the same value for every user unless security context differs. The third adapts to the language of the person viewing the report – see Month Name.How User Context worksCalculated columns now have a new Expression Context property. Direct Lake calculated columns support User Context expression context only.With User Context:The expression is evaluated when a user queries the model.Evaluation respects row-level security (RLS) and object-level security (OLS).Expressions that do not reference user-aware DAX expressions or secured columns typically return the same value for every user. Considerations:Cannot be used in relationships. Direct Lake calculated columns are evaluated at query time and do not materialize. Because of this, they cannot be used as relationship keys. Build relationship keys in the Delta table when needed.Do not observe filter context. Calculated columns return a fixed value for each row and do not respond to report filters or slicers. Use a measure when the result must change based on report interactions.Unlike standard calculated columns, Direct Lake calculated columns are evaluated in the current user's security context. This means calculations automatically respect RLS and OLS.Security behavior across expression contextsThe security difference is easiest to see with a column that references a protected value. Consider a model where OLS hides DimCustomer[Education] from a \"NoEducationOLS\" role, and a calculated column derived from it:Is Graduate = IF( DimCustomer[Education] = \"Graduate Degree\", \"Yes\", \"No\" )The result depends on the expression context:\n\n Import - StandardImport - User ContextDirect Lake - User Context\nObserves OLSNoYesYes\nResult for a restricted user\"Yes\" or \"No\", derived from the hidden valueColumn not availableColumn not available\n\nWith Standard, a restricted user still sees the derived answer and the protection is effectively bypassed. With User Context in both Import and Direct Lake, the reference to the secured column is evaluated within the user's security context, so the restricted user does not see the derived column. The sensitive value is never exposed. Direct Lake – User Context Expression Context (only option available)  Import – Standard Expression Context  Import – User Context Expression Context  Getting StartedCalculated columns for Direct Lake are available in preview. Open a Direct Lake on OneLake semantic model in the web or Desktop, create a calculated column, and begin modeling directly in DAX. To learn more, see the Create calculated columns in Power BI Desktop documentation.",
+          "fetched_at": "2026-11-24T06:51:59.837Z"
+        },
+        {
+          "id": "d9d0c0eda6851b9b",
+          "source_id": "fabric-blog",
+          "source_name": "Microsoft Fabric Blog",
+          "title": "TMDL View on the web: Edit semantic models as code in your browser (Preview)",
+          "url": "https://community.fabric.microsoft.com/t5/Power-BI-Updates-Blog/TMDL-View-on-the-web-Edit-semantic-models-as-code-in-your/ba-p/5332653",
+          "published_at": "2026-08-10T21:00:00.000Z",
+          "summary": "TMDL View on the Web is a feature in Power BI that enables developers to view and edit semantic models as code directly in the browser using TMDL. It expands the Power BI web modelling experience by introducing a rich code editor for working with TMDL scripts—giving pro developers full transparency into the semantic model code and enabling more efficient workflows through code editing.",
+          "fetched_at": "2026-11-24T06:51:59.837Z"
+        }
+      ]
+    },
+    "github-blog": {
+      "new_count": 1,
+      "removed_count": 1,
+      "new_articles": [
+        {
+          "id": "215487d78b45f131",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "These are the gifts developers will actually want",
+          "url": "https://github.blog/news-insights/company-news/these-are-the-gifts-developers-will-actually-want/",
+          "published_at": "2026-11-24T16:00:00.000Z",
+          "summary": "The developer you're shopping for hasn’t shared their holiday wish list with you yet? Check out these gifts, plus our Black Friday discount all week long.\nThe post These are the gifts developers will actually want appeared first on The GitHub Blog.",
+          "fetched_at": "2026-11-25T05:18:30.731Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "410a92595886a074",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "Arnis turns any place on Earth into a Minecraft world",
+          "url": "https://github.blog/open-source/maintainers/arnis-turns-any-place-on-earth-into-a-minecraft-world/",
+          "published_at": "2026-11-03T16:00:00.000Z",
+          "summary": "Louis Erbkamm built the first prototype in his free time. Now GitHub Copilot helps him maintain it alone.\nThe post Arnis turns any place on Earth into a Minecraft world appeared first on The GitHub Blog.",
+          "fetched_at": "2026-11-24T06:51:58.497Z"
+        }
+      ]
+    },
+    "m365-blog": {
+      "new_count": 5,
+      "removed_count": 5,
+      "new_articles": [
+        {
+          "id": "b54e91109b0b06e7",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Copilot at Microsoft Ignite: Expanding what’s possible with intelligence built for work",
+          "url": "https://www.microsoft.com/en-us/copilot/blog/2026/11/17/copilot-at-microsoft-ignite-expanding-whats-possible-with-intelligence-built-for-work/",
+          "published_at": "2026-11-17T18:05:00.000Z",
+          "summary": "Explore new Microsoft Copilot experiences and capabilities announced at Microsoft Ignite 2026, including Home, Autopilot, Workspaces, and Code.\nThe post Copilot at Microsoft Ignite: Expanding what’s possible with intelligence built for work appeared first on Microsoft Copilot Blog.",
+          "fetched_at": "2026-11-25T05:18:31.017Z"
+        },
+        {
+          "id": "25e630f5df26061b",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "What AI at work really costs",
+          "url": "https://www.microsoft.com/en-us/copilot/blog/2026/11/16/what-ai-at-work-really-costs/",
+          "published_at": "2026-11-16T16:00:00.000Z",
+          "summary": "What does AI at work really cost? New research compares the total cost of leading enterprise AI options and explores the factors that can shape the cost of everyday and advanced AI work.\nThe post What AI at work really costs appeared first on Microsoft Copilot Blog.",
+          "fetched_at": "2026-11-25T05:18:31.017Z"
+        },
+        {
+          "id": "989876ef8c0cb94c",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Bringing Claude models in Microsoft Copilot into the EU Data Boundary",
+          "url": "https://www.microsoft.com/en-us/copilot/blog/2026/11/05/bringing-claude-models-in-microsoft-copilot-into-the-eu-data-boundary/",
+          "published_at": "2026-11-05T16:00:00.000Z",
+          "summary": "Greater model choice, consistent protection. Claude models are coming to the EU Data Boundary in Microsoft Copilot.\nThe post Bringing Claude models in Microsoft Copilot into the EU Data Boundary appeared first on Microsoft Copilot Blog.",
+          "fetched_at": "2026-11-25T05:18:31.017Z"
+        },
+        {
+          "id": "2c145a22b0ccecd7",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Microsoft Copilot for finance: Purpose-built for the way finance teams work",
+          "url": "https://www.microsoft.com/en-us/copilot/blog/2026/10/29/microsoft-copilot-for-finance-purpose-built-for-the-way-finance-teams-work/",
+          "published_at": "2026-10-29T15:00:00.000Z",
+          "summary": "Discover Microsoft Copilot for finance, purpose-built skills for accounting, capital markets, and broader finance work.\nThe post Microsoft Copilot for finance: Purpose-built for the way finance teams work appeared first on Microsoft Copilot Blog.",
+          "fetched_at": "2026-11-25T05:18:31.017Z"
+        },
+        {
+          "id": "41433c06c9ce98e3",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Introducing Microsoft Copilot for legal",
+          "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/introducing-microsoft-copilot-for-legal/4564246",
+          "published_at": "2026-10-23T15:00:00.000Z",
+          "summary": "In legal work, the answer rarely sits neatly in one place. It may depend on precedent, organizational standards, or a regulatory consideration that changes the whole analysis.\nThe post Introducing Microsoft Copilot for legal appeared first on Microsoft Copilot Blog.",
+          "fetched_at": "2026-11-25T05:18:31.017Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "38743e726510bef0",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "ESPC 2026 is coming to Amsterdam: Bringing Microsoft and the community together",
+          "url": "https://www.microsoft.com/en-us/copilot/blog/2026/09/10/espc-2026-is-coming-to-amsterdam-bringing-microsoft-and-the-community-together/",
+          "published_at": "2026-09-10T16:00:00.000Z",
+          "summary": "Join Microsoft at ESPC 2026 in Amsterdam to explore the latest innovations in Microsoft 365, Copilot, agents, and AI.\nThe post ESPC 2026 is coming to Amsterdam: Bringing Microsoft and the community together appeared first on Microsoft Copilot Blog.",
+          "fetched_at": "2026-11-24T06:51:59.001Z"
+        },
+        {
+          "id": "adf7f96060f51b6b",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Build apps in Copilot Cowork and Copilot Studio",
+          "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/build-apps-in-copilot-cowork-and-copilot-studio/",
+          "published_at": "2026-09-10T15:00:00.000Z",
+          "summary": "Create full-stack business apps through conversation, grounded in your data with app building in Copilot Cowork and Copilot Studio.\nThe post Build apps in Copilot Cowork and Copilot Studio appeared first on Microsoft Copilot Blog.",
+          "fetched_at": "2026-11-24T06:51:59.001Z"
+        },
+        {
+          "id": "bdd72dc151c82c8e",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "PPCC 2026: Bringing AI and your business processes together",
+          "url": "https://www.microsoft.com/en-us/copilot/blog/2026/09/03/ppcc-2026-bringing-ai-and-your-business-processes-together/",
+          "published_at": "2026-09-03T15:00:00.000Z",
+          "summary": "Every enterprise runs on business processes, but it's the people that provide judgment, manage exceptions, and often connect systems that were never designed to work together.\nThe post PPCC 2026: Bringing AI and your business processes together appeared first on Microsoft Copilot Blog.",
+          "fetched_at": "2026-11-24T06:51:59.001Z"
+        },
+        {
+          "id": "098e62ed9eaf8e76",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "The next measure of AI momentum is work transformed",
+          "url": "https://www.microsoft.com/en-us/copilot/blog/2026/07/30/the-next-measure-of-ai-momentum-is-work-transformed/",
+          "published_at": "2026-07-30T13:00:00.000Z",
+          "summary": "In yesterday’s earnings call, we shared that Microsoft 365 Copilot has surpassed 30 million paid seats, with net seat adds more than doubling quarter over quarter.\nThe post The next measure of AI momentum is work transformed appeared first on Microsoft Copilot Blog.",
+          "fetched_at": "2026-11-24T06:51:59.001Z"
+        },
+        {
+          "id": "ddcc2b8f74866cbf",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Copilot in Excel: Built for the era of Frontier Finance",
+          "url": "https://www.microsoft.com/en-us/copilot/blog/2026/06/25/copilot-in-excel-built-for-the-era-of-frontier-finance/",
+          "published_at": "2026-06-25T13:00:00.000Z",
+          "summary": "Plenty of AI tools claim to be built for finance; Microsoft 365 Copilot in Excel is proving it in practice.\nThe post Copilot in Excel: Built for the era of Frontier Finance appeared first on Microsoft Copilot Blog.",
+          "fetched_at": "2026-11-24T06:51:59.001Z"
+        }
+      ]
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    }
+  },
+  "diff_result": true
+}

@@ -1,0 +1,18 @@
+{
+  "summary": "Power BI セマンティックモデルとインタラクティブレポート向けのワークスペース送信アクセス保護（OAP）が一般提供になりました。ワークスペース管理者は、モデルが接続できるデータソースや、レポートが別ワークスペースで照会できるモデルを制限し、意図しない外部アクセスやデータ持ち出しのリスクを抑えられます。",
+  "keyPoints": [
+    "同じワークスペース内のセマンティックモデルはレポートから常に照会できます。別ワークスペースのモデルを使うには、レポート側ワークスペースの管理者が、そのワークスペース全体に適用される例外を追加します。",
+    "モデルからデータソースへの接続はモデル側ワークスペースのルールで制御され、レポート側の許可とは別に審査されます。SQLやADLS Gen2接続は、宛先が同じワークスペース内でも外部接続として扱われ、例外が必要になる場合があります。",
+    "インタラクティブレポートのOAPが制御するのはセマンティックモデルへの接続です。ImageURLやカスタムビジュアルなど、ユーザーのブラウザー内で動く機能からの送信要求には適用されず、制御にはローカルネットワークのファイアウォールなどが必要です。",
+    "本番で有効化する前に、代表的なレポートとモデルをテストワークスペースで確認し、ルール適用後はレポート表示とモデルの更新・クエリ・Direct Lakeテーブルへのアクセスを個別にテストするよう説明されています。"
+  ],
+  "significance": "レポート作成者やモデル所有者は、別々のワークスペースに分けたまま、レポートから使うモデルとモデルが接続するデータソースをそれぞれ管理者の承認下に置けます。一方、ブラウザー発の通信はOAPの対象外なので、ワークスペースの接続制御だけではすべての送信要求を管理できません。",
+  "summaryEn": "Workspace outbound access protection (OAP) is now generally available for Power BI semantic models and interactive reports. Workspace admins can restrict the data sources models connect to and the models that reports can query in other workspaces, helping reduce unintended outbound access and data exfiltration risks.",
+  "keyPointsEn": [
+    "Reports can always query semantic models in the same workspace. To use a model in another workspace, its report workspace admin must add an exception that applies to the entire report workspace.",
+    "Connections from models to data sources are controlled separately by the model workspace’s rules; report-side approval does not grant source access. SQL and ADLS Gen2 connections may require exceptions even when the destination is in the same workspace.",
+    "For interactive reports, OAP governs only the connection to the semantic model. It does not cover outbound requests from browser-rendered features such as ImageURL or custom visuals; local network firewalls and other controls are needed for those.",
+    "Before production enablement, the article advises testing representative reports and models in a test workspace, then separately testing report access and model refreshes, queries, or Direct Lake table access."
+  ],
+  "significanceEn": "Report authors and model owners can keep reports and models in separate workspaces while placing access to the models used by reports and the data sources those models reach under separate admin approval. However, browser-originated requests are outside OAP’s scope, so workspace connection controls alone do not govern every outbound request."
+}
