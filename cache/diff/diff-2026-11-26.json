@@ -1,0 +1,127 @@
+{
+  "date": "2026-11-26",
+  "compared_with": "2026-11-25",
+  "source_count": 7,
+  "new_count": 2,
+  "removed_count": 3,
+  "new_articles": [
+    {
+      "id": "0ef8b273cccd0c03",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "Art of play in the age of AI",
+      "url": "https://github.blog/news-insights/company-news/art-of-play-in-the-age-of-ai/",
+      "published_at": "2026-11-25T16:00:00.000Z",
+      "summary": "Now that code ships faster than ever, you have more time to spend on projects just for the fun of it. Here's what we can learn through that process as developers.\nThe post Art of play in the age of AI appeared first on The GitHub Blog.",
+      "fetched_at": "2026-11-26T04:49:03.479Z"
+    },
+    {
+      "id": "7d5c43e3274406d0",
+      "source_id": "github-blog",
+      "source_name": "GitHub Blog",
+      "title": "How to choose the next safe step in application modernization",
+      "url": "https://github.blog/ai-and-ml/github-copilot/how-to-choose-the-next-safe-step-in-application-modernization/",
+      "published_at": "2026-11-25T15:00:00.000Z",
+      "summary": "Learn how to assess a legacy application, choose a bounded modernization step, and reuse the method with a GitHub Copilot agent skill.\nThe post How to choose the next safe step in application modernization appeared first on The GitHub Blog.",
+      "fetched_at": "2026-11-26T04:49:03.479Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "commandline-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "fabric-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "github-blog": {
+      "new_count": 2,
+      "removed_count": 2,
+      "new_articles": [
+        {
+          "id": "0ef8b273cccd0c03",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "Art of play in the age of AI",
+          "url": "https://github.blog/news-insights/company-news/art-of-play-in-the-age-of-ai/",
+          "published_at": "2026-11-25T16:00:00.000Z",
+          "summary": "Now that code ships faster than ever, you have more time to spend on projects just for the fun of it. Here's what we can learn through that process as developers.\nThe post Art of play in the age of AI appeared first on The GitHub Blog.",
+          "fetched_at": "2026-11-26T04:49:03.479Z"
+        },
+        {
+          "id": "7d5c43e3274406d0",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "How to choose the next safe step in application modernization",
+          "url": "https://github.blog/ai-and-ml/github-copilot/how-to-choose-the-next-safe-step-in-application-modernization/",
+          "published_at": "2026-11-25T15:00:00.000Z",
+          "summary": "Learn how to assess a legacy application, choose a bounded modernization step, and reuse the method with a GitHub Copilot agent skill.\nThe post How to choose the next safe step in application modernization appeared first on The GitHub Blog.",
+          "fetched_at": "2026-11-26T04:49:03.479Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "51dc1d2f6b3bd6df",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "Inside GitHub’s new Git storage architecture",
+          "url": "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture/",
+          "published_at": "2026-11-05T20:23:21.000Z",
+          "summary": "GitHub's new Git storage architecture is built so thousands of agents can push to a single repository at once. Here's how it works.\nThe post Inside GitHub’s new Git storage architecture appeared first on The GitHub Blog.",
+          "fetched_at": "2026-11-25T05:18:30.731Z"
+        },
+        {
+          "id": "1558c78d072630b6",
+          "source_id": "github-blog",
+          "source_name": "GitHub Blog",
+          "title": "Accessibility statements now have a home on GitHub",
+          "url": "https://github.blog/open-source/maintainers/accessibility-statements-now-have-a-home-on-github/",
+          "published_at": "2026-11-05T16:00:00.000Z",
+          "summary": "GitHub now highlights ACCESSIBILITY.md files and helps maintainers document accessibility goals, known barriers, supported environments, contributor expectations, and reporting processes.\nThe post Accessibility statements now have a home on GitHub appeared first on The GitHub Blog.",
+          "fetched_at": "2026-11-25T05:18:30.731Z"
+        }
+      ]
+    },
+    "m365-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 1,
+      "new_articles": [],
+      "removed_articles": [
+        {
+          "id": "2dd4ff8e6412d009",
+          "source_id": "vscode-blog",
+          "source_name": "VSCode Blog",
+          "title": "Use your own language model key in VS Code",
+          "url": "https://code.visualstudio.com/blogs/2026/06/18/byok-vscode",
+          "published_at": "2026-06-18T00:00:00.000Z",
+          "summary": "Learn how to use bring your own key (BYOK) in VS Code to add models from providers like Azure, Anthropic, Gemini, OpenAI, Huggingface, OpenRouter, or use a local model with Ollama, Foundry Local, and more.\nRead the full article",
+          "fetched_at": "2026-11-25T05:18:30.803Z"
+        }
+      ]
+    }
+  },
+  "diff_result": true
+}

@@ -1,0 +1,20 @@
+{
+  "summary": "GitHub Copilot向けの「doc-and-modernize」エージェントスキルは、レガシーアプリの証拠収集と段階的な近代化判断を再利用できる手順としてまとめている。記事では4つの公開アプリに適用し、実行可能性を時間を区切って調べ、旧動作を記録して更新するか、小さな新方式の機能から検証する方法を示す。スキルは証拠や判断基準を明示するが、アーキテクチャ判断はシステムの担当者に残す。",
+  "keyPoints": [
+    "近代化の前に、マニフェストや実行コマンド、ランタイム設定、外部契約、古い依存関係を調べ、根拠の確度を「記録済み・推定・未検証」に分ける。必要な機能は、維持、アップグレード、置換、ラップ、書き換えの順に、より変更の少ない選択肢から検討する。",
+    "まず時間を区切って依存関係の導入、ビルド、起動、意味のあるテストを試す。旧アプリが許容できるコストで動けば挙動を記録してから更新し、変更前に動かせない場合は小さな新方式の機能を先に作って検証する。回帰保護の強さはL0からL4で表す。",
+    "PiggyMetricsでは、旧環境のJDK 8で設定モジュールのコンパイルに成功し、account-serviceの14テスト中5件が成功、9件は組み込みMongoDBの取得エラーとなった。この証拠からテスト依存関係の置換を先行し、計画ではJava 21とSpring Boot 3.3へ更新しつつマイクロサービス構成を維持、対象ビルドを9モジュールから7モジュールにした。",
+    "大規模ERPのADempiereでは、JDK 21への移行やSOAP契約の維持などを行い、30件のマージ済み近代化PRを経て、旧アプリの結果と照合した業務データ書き込みを含むデモを実証した。報告された102,587.72 Copilotクレジットはドル費用ではなく、全画面や本番環境の近代化完了を示すものでもない。",
+    "手順をまとめた公開スキルでは、SKILL.mdが必須で、参照資料やスクリプトのフォルダーは任意。GitHub CLIのgh skillコマンドはパブリックプレビューとして案内されており、記事は利用時に最新の導入手順を確認するよう述べている。"
+  ],
+  "significance": "レガシーシステムの担当者や近代化に取り組む開発チームは、推測ではなくリポジトリの証拠と小さな実験をもとに、変更範囲や残るリスクを判断できる。手順をスキルとして共有しても、組織固有の許容リスクやアーキテクチャ承認まで自動化せず、責任者の判断を保つ点が重要だ。",
+  "summaryEn": "The doc-and-modernize agent skill for GitHub Copilot packages evidence gathering and incremental modernization decisions for legacy applications into a reusable procedure. The article applies it to four public applications, showing how to time-box feasibility checks and either capture existing behavior before upgrading or verify a small modern slice first. The skill makes evidence and decision criteria explicit while leaving architectural judgment to the people responsible for the system.",
+  "keyPointsEn": [
+    "Before modernization, inspect manifests, commands, runtime settings, external contracts, and old dependencies, and label evidence as documented, inferred, or unverified. For needed capabilities, consider the least disruptive options first: keep, upgrade, swap, wrap, or rewrite.",
+    "Start with a time-boxed attempt to install dependencies, build, run, and execute a meaningful test. If the old application runs at acceptable cost, capture its behavior before upgrading; if it cannot run without changes, build and verify a small modern slice first. Regression protection is described on levels L0 through L4.",
+    "For PiggyMetrics, the legacy JDK 8 environment compiled the config module; five of 14 account-service tests passed, while nine errored because of embedded MongoDB download failures. This evidence led to replacing the test dependency first; the plan then moved to Java 21 and Spring Boot 3.3 while retaining the microservice decomposition, and the in-scope build went from nine modules to seven.",
+    "For the large ADempiere ERP suite, the work included moving to JDK 21 and preserving SOAP contracts. After 30 merged modernization pull requests, a demo demonstrated a business data write compared with the legacy result. The reported 102,587.72 Copilot credits are not a dollar cost and do not mean every screen or production deployment was modernized.",
+    "The public skill requires SKILL.md; reference and script folders are optional. GitHub CLI's gh skill commands are in public preview, and the article advises checking current installation guidance before using them."
+  ],
+  "significanceEn": "People responsible for legacy systems and the teams modernizing them can use repository evidence and small experiments, rather than guesses, to decide the scope of changes and understand remaining risks. Sharing the procedure as a skill does not automate organization-specific risk tolerance or architectural approval; those decisions remain with the responsible people."
+}
