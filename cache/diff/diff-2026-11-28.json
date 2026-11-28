@@ -1,0 +1,206 @@
+{
+  "date": "2026-11-28",
+  "compared_with": "2026-11-27",
+  "source_count": 7,
+  "new_count": 5,
+  "removed_count": 5,
+  "new_articles": [
+    {
+      "id": "38743e726510bef0",
+      "source_id": "m365-blog",
+      "source_name": "Microsoft 365 Blog",
+      "title": "ESPC 2026 is coming to Amsterdam: Bringing Microsoft and the community together",
+      "url": "https://www.microsoft.com/en-us/copilot/blog/2026/09/10/espc-2026-is-coming-to-amsterdam-bringing-microsoft-and-the-community-together/",
+      "published_at": "2026-09-10T16:00:00.000Z",
+      "summary": "Join Microsoft at ESPC 2026 in Amsterdam to explore the latest innovations in Microsoft 365, Copilot, agents, and AI.\nThe post ESPC 2026 is coming to Amsterdam: Bringing Microsoft and the community together appeared first on Microsoft Copilot Blog.",
+      "fetched_at": "2026-11-28T04:38:05.095Z"
+    },
+    {
+      "id": "adf7f96060f51b6b",
+      "source_id": "m365-blog",
+      "source_name": "Microsoft 365 Blog",
+      "title": "Build apps in Copilot Cowork and Copilot Studio",
+      "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/build-apps-in-copilot-cowork-and-copilot-studio/",
+      "published_at": "2026-09-10T15:00:00.000Z",
+      "summary": "Create full-stack business apps through conversation, grounded in your data with app building in Copilot Cowork and Copilot Studio.\nThe post Build apps in Copilot Cowork and Copilot Studio appeared first on Microsoft Copilot Blog.",
+      "fetched_at": "2026-11-28T04:38:05.095Z"
+    },
+    {
+      "id": "bdd72dc151c82c8e",
+      "source_id": "m365-blog",
+      "source_name": "Microsoft 365 Blog",
+      "title": "PPCC 2026: Bringing AI and your business processes together",
+      "url": "https://www.microsoft.com/en-us/copilot/blog/2026/09/03/ppcc-2026-bringing-ai-and-your-business-processes-together/",
+      "published_at": "2026-09-03T15:00:00.000Z",
+      "summary": "Every enterprise runs on business processes, but it's the people that provide judgment, manage exceptions, and often connect systems that were never designed to work together.\nThe post PPCC 2026: Bringing AI and your business processes together appeared first on Microsoft Copilot Blog.",
+      "fetched_at": "2026-11-28T04:38:05.095Z"
+    },
+    {
+      "id": "098e62ed9eaf8e76",
+      "source_id": "m365-blog",
+      "source_name": "Microsoft 365 Blog",
+      "title": "The next measure of AI momentum is work transformed",
+      "url": "https://www.microsoft.com/en-us/copilot/blog/2026/07/30/the-next-measure-of-ai-momentum-is-work-transformed/",
+      "published_at": "2026-07-30T13:00:00.000Z",
+      "summary": "In yesterday’s earnings call, we shared that Microsoft 365 Copilot has surpassed 30 million paid seats, with net seat adds more than doubling quarter over quarter.\nThe post The next measure of AI momentum is work transformed appeared first on Microsoft Copilot Blog.",
+      "fetched_at": "2026-11-28T04:38:05.095Z"
+    },
+    {
+      "id": "ddcc2b8f74866cbf",
+      "source_id": "m365-blog",
+      "source_name": "Microsoft 365 Blog",
+      "title": "Copilot in Excel: Built for the era of Frontier Finance",
+      "url": "https://www.microsoft.com/en-us/copilot/blog/2026/06/25/copilot-in-excel-built-for-the-era-of-frontier-finance/",
+      "published_at": "2026-06-25T13:00:00.000Z",
+      "summary": "Plenty of AI tools claim to be built for finance; Microsoft 365 Copilot in Excel is proving it in practice.\nThe post Copilot in Excel: Built for the era of Frontier Finance appeared first on Microsoft Copilot Blog.",
+      "fetched_at": "2026-11-28T04:38:05.095Z"
+    }
+  ],
+  "by_source": {
+    "azure-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "commandline-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "fabric-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "github-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "m365-blog": {
+      "new_count": 5,
+      "removed_count": 5,
+      "new_articles": [
+        {
+          "id": "38743e726510bef0",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "ESPC 2026 is coming to Amsterdam: Bringing Microsoft and the community together",
+          "url": "https://www.microsoft.com/en-us/copilot/blog/2026/09/10/espc-2026-is-coming-to-amsterdam-bringing-microsoft-and-the-community-together/",
+          "published_at": "2026-09-10T16:00:00.000Z",
+          "summary": "Join Microsoft at ESPC 2026 in Amsterdam to explore the latest innovations in Microsoft 365, Copilot, agents, and AI.\nThe post ESPC 2026 is coming to Amsterdam: Bringing Microsoft and the community together appeared first on Microsoft Copilot Blog.",
+          "fetched_at": "2026-11-28T04:38:05.095Z"
+        },
+        {
+          "id": "adf7f96060f51b6b",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Build apps in Copilot Cowork and Copilot Studio",
+          "url": "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/build-apps-in-copilot-cowork-and-copilot-studio/",
+          "published_at": "2026-09-10T15:00:00.000Z",
+          "summary": "Create full-stack business apps through conversation, grounded in your data with app building in Copilot Cowork and Copilot Studio.\nThe post Build apps in Copilot Cowork and Copilot Studio appeared first on Microsoft Copilot Blog.",
+          "fetched_at": "2026-11-28T04:38:05.095Z"
+        },
+        {
+          "id": "bdd72dc151c82c8e",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "PPCC 2026: Bringing AI and your business processes together",
+          "url": "https://www.microsoft.com/en-us/copilot/blog/2026/09/03/ppcc-2026-bringing-ai-and-your-business-processes-together/",
+          "published_at": "2026-09-03T15:00:00.000Z",
+          "summary": "Every enterprise runs on business processes, but it's the people that provide judgment, manage exceptions, and often connect systems that were never designed to work together.\nThe post PPCC 2026: Bringing AI and your business processes together appeared first on Microsoft Copilot Blog.",
+          "fetched_at": "2026-11-28T04:38:05.095Z"
+        },
+        {
+          "id": "098e62ed9eaf8e76",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "The next measure of AI momentum is work transformed",
+          "url": "https://www.microsoft.com/en-us/copilot/blog/2026/07/30/the-next-measure-of-ai-momentum-is-work-transformed/",
+          "published_at": "2026-07-30T13:00:00.000Z",
+          "summary": "In yesterday’s earnings call, we shared that Microsoft 365 Copilot has surpassed 30 million paid seats, with net seat adds more than doubling quarter over quarter.\nThe post The next measure of AI momentum is work transformed appeared first on Microsoft Copilot Blog.",
+          "fetched_at": "2026-11-28T04:38:05.095Z"
+        },
+        {
+          "id": "ddcc2b8f74866cbf",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Copilot in Excel: Built for the era of Frontier Finance",
+          "url": "https://www.microsoft.com/en-us/copilot/blog/2026/06/25/copilot-in-excel-built-for-the-era-of-frontier-finance/",
+          "published_at": "2026-06-25T13:00:00.000Z",
+          "summary": "Plenty of AI tools claim to be built for finance; Microsoft 365 Copilot in Excel is proving it in practice.\nThe post Copilot in Excel: Built for the era of Frontier Finance appeared first on Microsoft Copilot Blog.",
+          "fetched_at": "2026-11-28T04:38:05.095Z"
+        }
+      ],
+      "removed_articles": [
+        {
+          "id": "b54e91109b0b06e7",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Copilot at Microsoft Ignite: Expanding what’s possible with intelligence built for work",
+          "url": "https://www.microsoft.com/en-us/copilot/blog/2026/11/17/copilot-at-microsoft-ignite-expanding-whats-possible-with-intelligence-built-for-work/",
+          "published_at": "2026-11-17T18:05:00.000Z",
+          "summary": "Explore new Microsoft Copilot experiences and capabilities announced at Microsoft Ignite 2026, including Home, Autopilot, Workspaces, and Code.\nThe post Copilot at Microsoft Ignite: Expanding what’s possible with intelligence built for work appeared first on Microsoft Copilot Blog.",
+          "fetched_at": "2026-11-27T04:53:16.125Z"
+        },
+        {
+          "id": "25e630f5df26061b",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "What AI at work really costs",
+          "url": "https://www.microsoft.com/en-us/copilot/blog/2026/11/16/what-ai-at-work-really-costs/",
+          "published_at": "2026-11-16T16:00:00.000Z",
+          "summary": "What does AI at work really cost? New research compares the total cost of leading enterprise AI options and explores the factors that can shape the cost of everyday and advanced AI work.\nThe post What AI at work really costs appeared first on Microsoft Copilot Blog.",
+          "fetched_at": "2026-11-27T04:53:16.125Z"
+        },
+        {
+          "id": "989876ef8c0cb94c",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Bringing Claude models in Microsoft Copilot into the EU Data Boundary",
+          "url": "https://www.microsoft.com/en-us/copilot/blog/2026/11/05/bringing-claude-models-in-microsoft-copilot-into-the-eu-data-boundary/",
+          "published_at": "2026-11-05T16:00:00.000Z",
+          "summary": "Greater model choice, consistent protection. Claude models are coming to the EU Data Boundary in Microsoft Copilot.\nThe post Bringing Claude models in Microsoft Copilot into the EU Data Boundary appeared first on Microsoft Copilot Blog.",
+          "fetched_at": "2026-11-27T04:53:16.125Z"
+        },
+        {
+          "id": "2c145a22b0ccecd7",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Microsoft Copilot for finance: Purpose-built for the way finance teams work",
+          "url": "https://www.microsoft.com/en-us/copilot/blog/2026/10/29/microsoft-copilot-for-finance-purpose-built-for-the-way-finance-teams-work/",
+          "published_at": "2026-10-29T15:00:00.000Z",
+          "summary": "Discover Microsoft Copilot for finance, purpose-built skills for accounting, capital markets, and broader finance work.\nThe post Microsoft Copilot for finance: Purpose-built for the way finance teams work appeared first on Microsoft Copilot Blog.",
+          "fetched_at": "2026-11-27T04:53:16.125Z"
+        },
+        {
+          "id": "41433c06c9ce98e3",
+          "source_id": "m365-blog",
+          "source_name": "Microsoft 365 Blog",
+          "title": "Introducing Microsoft Copilot for legal",
+          "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/introducing-microsoft-copilot-for-legal/4564246",
+          "published_at": "2026-10-23T15:00:00.000Z",
+          "summary": "In legal work, the answer rarely sits neatly in one place. It may depend on precedent, organizational standards, or a regulatory consideration that changes the whole analysis.\nThe post Introducing Microsoft Copilot for legal appeared first on Microsoft Copilot Blog.",
+          "fetched_at": "2026-11-27T04:53:16.125Z"
+        }
+      ]
+    },
+    "microsoft-ai-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    },
+    "vscode-blog": {
+      "new_count": 0,
+      "removed_count": 0,
+      "new_articles": [],
+      "removed_articles": []
+    }
+  },
+  "diff_result": true
+}
